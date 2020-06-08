@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* CSS Document */
+
+footer, #navbar {
+    font-family: 'Source Sans Pro',sans-serif;
+    margin: 0;
+    position: relative;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+footer, header, main, nav, div {
+    display: block;
+}
+
+.tmp-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.tmp-container a {
+    text-decoration: none;
+    background: transparent;
+}
+.tmp-container a:-webkit-any-link {
+    cursor: auto;
+}
+.tmp-container:before, .tmp-container:after {
+    content: " ";
+    display: table;
+}
+.tmp-container:after {
+    clear: both;
+}
+
+hr {
+    width: 100%;
+    margin-top: 42px;
+}
+@media only screen and (max-width:490px) {
+    hr {
+        margin-top: 60px;
+    }
+}
+
+/* header (only) nav */
+.header-nav {
+    background: #00264c;
+}
+
+.logo-header img {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.header-search form {
+    float: right;
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.header-search input[type="search"] {
+    height: 30px;
+    width: 260px;
+    margin-top: 18px;
+}
+.header-search button[type="submit"] {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    border: 0;
+    color: #666;
+    background: transparent;
+    padding: 0;
+    width: 39px;
+    height: 39px;
+    margin-top: 21px;
+}
+
+input{line-height:normal}
+input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+input,button{font-family:inherit;font-size:inherit;line-height:inherit}
+
+
+/* Always float the navbar header */
+.navbar-header {
+    float: left;
+}
+
+/* footer (only) css */
+
+.menu.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav:before, .nav:after {
+    content: none;
+}
+footer.footer {
+    background: #00264c;
+    padding-bottom: 0px;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #E5E5E5;
+}
+
+footer.footer .footer-doi {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+footer.footer .footer-doi ul.menu li a {
+    padding: 5px 0px;
+    color: #ffffff;
+    float: left;
+    font-size: 12px;
+}
+
+footer.footer .footer-doi ul.menu li:first-of-type {
+    padding-left: 0px;
+}
+
+footer.footer .footer-doi ul.menu li {
+    float: left;
+    padding-right: 2px;
+    padding-left: 5px;
+}
+
+footer.footer .footer-doi ul.menu li:after {
+    content: "|";
+    color: #ffffff;
+    float: left;
+    padding-top: 5px;
+    padding-left: 7px;
+    font-size: 12px;
+}
+
+footer.footer .footer-doi ul.menu li:last-child:after {
+    content: "";
+}
+
+footer.footer .footer-wrap .menu.nav a {
+    padding: 4px 0px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+footer.footer .footer-social-links {
+    color: #ffffff;
+    font-size: 12px;
+    padding-right: 0;
+}
+
+footer.footer .footer-social-links ul {
+    float: right;
+    margin-top: 0px;
+}
+
+footer.footer .footer-social-links ul li.follow {
+    padding-top: 6px;
+    padding-right: 5px;
+}
+
+footer.footer .footer-social-links ul li {
+    float: left;
+    height: 24px;
+    margin: 0 2px;
+    list-style: none;
+    list-style-type: none;
+}
+
+footer.footer .footer-social-links ul li:last-of-type {
+    margin-right: 0px;
+}
+
+footer.footer .footer-social-links ul li a i {
+    color:#fff;
+    font-size: 24px;
+}
+
+
