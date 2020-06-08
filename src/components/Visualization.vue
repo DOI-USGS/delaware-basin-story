@@ -11,7 +11,7 @@
         props: {
             title: {
                 type: String,
-                default: 'Add your title in App.vue'
+                default: process.env.VUE_APP_TITLE
             }
         }
     }
