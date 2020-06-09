@@ -1,29 +1,25 @@
-import Vue from "vue";
-import Router from "vue-router";
-import Visualization from "./components/Visualization";
+import Vue from 'vue';
+import Router from 'vue-router';
 
 Vue.use(Router);
-function lazyLoad(view){
-    return() => import(`@/views/${view}.vue`)
-}
 
 export default new Router({
     routes: [
         {
             path: '/',
             name: 'Visualization',
-            component: Visualization
+            component: () =>
+                    import('@/views/Visualization.vue')
         },
         {
-            path: "/404",
-            name: "Error404",
-            component: lazyLoad('Error404')
+            path: '/404',
+            name: 'error404',
+            component: () =>
+                    import('@/views/Error404.vue')
         },
         {
-            path: "*",
-            redirect: { name: "Error404" }
+            path: '*',
+            redirect: { name: 'error404' }
         }
     ]
 });
-
-
