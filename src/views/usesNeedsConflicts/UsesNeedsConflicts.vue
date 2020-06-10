@@ -20,6 +20,26 @@
       X at a Montague and Y at Trenton.
     </p>
     <p />
+    <p>
+      So how does the River Master orchestrate everyone?​
+      Let’s imagine a single reservoir.  ​
+      Water is always entering the reservoir, so any extra water above the “normal” flow rate downstream is saved for later.​
+      (make a joke about how it’s the opposite of a “rainy day fund”????)
+    </p>
+    <img src="@/assets/usesNeedsConflicts/images/normal.png">
+    <p>In the late summer, when there’s less rain, the River Master can decide to release more stored water in the reservoirs to make sure the Delaware River doesn’t turn into a trickle.</p>
+    <img src="@/assets/usesNeedsConflicts/images/lessRain.png">
+    <p>
+      Each Reservoir has to know what to do to make sure that all their discharge, minus whatever is used up by NYC, NJ, etc, adds up to at least the minimum flow level at the two important checkpoints.​
+      It’s a complicated job, not just because each reservoir and tributary has its own unique environmental and societal decisions to make.  It becomes a monumental mathematical (and political?) task to make sure that every person, town, industry, and ecosystem gets all the water they need to be stable and healthy.
+    </p>
+    <img src="@/assets/usesNeedsConflicts/images/one.png">
+    <p>
+      It becomes even more complicated when the release decisions take into account more than just water quantity.​
+      Maintaining minimum flow is one thing… but we have other water quality factors to take into account. ​
+      ….dun dun dun, segue into Grand Challenges!
+    </p>
+    <img src="@/assets/usesNeedsConflicts/images/two.png">
   </div>
 </template>
 
