@@ -54,5 +54,9 @@
       display: flex;
       flex-direction: column;
     }
+    .usa-banner__inner {
+      margin-left: 10px;
+      padding-left: 5px;
+    }
   }
 </style>
