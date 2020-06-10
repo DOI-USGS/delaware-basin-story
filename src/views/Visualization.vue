@@ -4,17 +4,12 @@
     <intro />
     <usesNeedsConflicts />
     <grandChallenges />
+    <salinity />
     <temperature />
     <sediment />
-    <salinity />
     <monitoring />
     <outro />
-    <textarea
-      v-model="title"
-    ></textarea>
-    <button @click="restoreTitle">
-      Restore Title
-    </button>
+
   </div>
 </template>
 
@@ -40,23 +35,9 @@
             monitoring,
             outro
         },
-
         data() {
             return {
                 title: process.env.VUE_APP_TITLE
-            }
-        },
-        created() {
-            console.log('this will run automatically and before mounted')
-        },
-        mounted() {
-            console.log('this will run automatically and after mounted')
-        },
-        methods: {
-            restoreTitle() {
-                if (this.title !== process.env.VUE_APP_TITLE) {
-                   this.title = process.env.VUE_APP_TITLE
-                }
             }
         }
     }
