@@ -52,21 +52,21 @@ pipeline {
             steps {
                 script {
                     if ("${params.BUILD_DEST}" == "prod") {
-                        targetDomain = "s3://delaware-basin-prod-website/delaware-basin-story"
+                        targetDomain = "s3://delaware-basin-prod-website/visualizations/delaware-basin-story"
                     }
                     else if ("${params.BUILD_DEST}" == "qa") {
-                        targetDomain = "s3://delaware-basin-prod-website/delaware-basin-story"
+                        targetDomain = "s3://delaware-basin-prod-website/visualizations/delaware-basin-story"
                     }
                     else if ("${params.BUILD_DEST}" == "beta") {
-                        targetDomain = "s3://delaware-basin-prod-website/delaware-basin-story"
+                        targetDomain = "s3://delaware-basin-prod-website/visualizations/delaware-basin-story"
                     }
                     else {
-                        targetDomain = "s3://delaware-basin-prod-website/delaware-basin-story"
+                        targetDomain = "s3://delaware-basin-prod-website/visualizations/delaware-basin-story"
                     }
                 }
                 sh """
                     aws s3 rm "${targetDomain}"
-                    aws s3 cp "$WORKSPACE/dist" "${targetDomain}"/estimated-availability --recursive
+                    aws s3 cp "$WORKSPACE/dist" "${targetDomain}" --recursive
                 """
             }
         }
