@@ -39,7 +39,7 @@ pipeline {
                 sh """
                     docker build . --tag="delaware-basin-story-docker" --build-arg BUILDTARGET=${params.BUILD_DEST} --build-arg VUE_BUILD_MODE=${params.VUE_BUILD_MODE}
                     docker run delaware-basin-story-docker
-                    pathtemplate=":tmp/delaware-basin-story-app/dist"
+                    pathtemplate=":tmp/delaware-basin-story/dist"
                     dockerinstanceid=\$( docker ps -l -q )
                     docker cp  "\${dockerinstanceid}\${pathtemplate}" "$WORKSPACE"
                     docker rm "\${dockerinstanceid}"
