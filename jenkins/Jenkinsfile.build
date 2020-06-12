@@ -61,7 +61,7 @@ pipeline {
                         targetDomain = "s3://water-visualizations-beta-website.s3.amazonaws.com/visualizations/delaware-basin-story"
                     }
                     else {
-                        targetDomain = targetDomain = "s3://water-visualizations-prod-website.s3.amazonaws.com/visualizations/delaware-basin-story"
+                        targetDomain = "s3://water-visualizations-prod-website.s3.amazonaws.com/visualizations/delaware-basin-story"
                     }
                 }
                 sh """
