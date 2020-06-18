@@ -62,7 +62,7 @@ pipeline {
                     }
                 }
                 sh """
-                    aws s3 rm "${targetDomain}"
+                    aws s3 rm "${targetDomain}" --recursive
                     aws s3 cp "$WORKSPACE/dist" "${targetDomain}" --recursive
                 """
             }
