@@ -52,13 +52,13 @@ pipeline {
             steps {
                 script {
                     if ("${params.BUILD_DEST}" == "prod") {
-                        targetDomain = "s3://water-visualizations-prod-website.s3.amazonaws.com/visualizations/delaware-basin-story"
+                        targetDomain = "s3://water-visualizations-prod-website/visualizations/delaware-basin-story"
                     }
                     else if ("${params.BUILD_DEST}" == "beta") {
-                        targetDomain = "s3://water-visualizations-beta-website.s3.amazonaws.com/visualizations/delaware-basin-story"
+                        targetDomain = "s3://water-visualizations-beta-website/visualizations/delaware-basin-story"
                     }
                     else {
-                        targetDomain = "s3://water-visualizations-test-website.s3.amazonaws.com/visualizations/delaware-basin-story"
+                        targetDomain = "s3://water-visualizations-test-website/visualizations/delaware-basin-story"
                     }
                 }
                 sh """
