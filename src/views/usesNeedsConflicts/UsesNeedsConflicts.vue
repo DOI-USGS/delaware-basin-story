@@ -13,13 +13,13 @@
       At those two checkpoints – USGS river monitoring stations in Montague and Trenton, NJ – the minimum amount of flow has to still be able to provide enough water for agriculture, industry, ___, and recreation.  It is also set to make sure there’s enough freshwater flowing into the estuary at the mouth of the river to maintain the right mix of fresh-and-saltiness for the important ecological communities there.
     </p>
     <p>
-     The Delaware River Master – a position established by the Supreme Court ruling – relies on rain, snowmelt, runoff, and streamflow data collected by hundreds of USGS-affiliated monitoring stations through the basin to calculate how much water needs to be stored or released from the reservoirs along its tributaries to meet its flow goals.  
+     The Delaware River Master – a position established by the Supreme Court ruling – relies on rain, snowmelt, runoff, and streamflow data collected by hundreds of USGS-affiliated monitoring stations through the basin to calculate how much water needs to be stored or released from the reservoirs along its tributaries to meet its flow goals.
     </p>
     <p>
-      But alone, enough water is not enough. Water quantity and quality are deeply intertwined.  
+      But alone, enough water is not enough. Water quantity and quality are deeply intertwined.
     </p>
     <p>
-      Humans have enormous power to alter the ecosystems they are a part of, both intentionally and unintentionally.  On top of all the competing water needs of the Basin’s cities, agriculture, ___ and ecosystems, every activity in the Basin has an impact on water quality measures as well. 
+      Humans have enormous power to alter the ecosystems they are a part of, both intentionally and unintentionally.  On top of all the competing water needs of the Basin’s cities, agriculture, ___ and ecosystems, every activity in the Basin has an impact on water quality measures as well.
     </p>
     <p />
     <p>
@@ -37,18 +37,28 @@
       But if the extra water is released all at once, the pulse of cool, clear reservoir water could drop the water temperature of all the river reaches downstream by several degrees. The species that live in those reaches – like mussels which like it warm, and trout which like it cool – could suddenly see their environment shift dramatically with no time to adapt.
     </p>
     <img src="@/assets/usesNeedsConflicts/images/two.png">
+
+    <TransformSVG />
+    <TransformJSON />
   </div>
 </template>
 
 <script>
-    export default {
-        name: 'UsesNeedsConflicts',
-        data() {
-            return {
+  import TransformSVG from"./subViews/TransformTestBasicSVG"
+  import TransformJSON from "./subViews/TransformJSON";
 
-            }
-        }
-    }
+  export default {
+      name: 'UsesNeedsConflicts',
+      components: {
+        TransformJSON,
+        TransformSVG
+      },
+      data() {
+          return {
+
+          }
+      }
+  }
 </script>
 
 <style scoped lang="scss">
