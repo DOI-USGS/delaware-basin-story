@@ -33,13 +33,11 @@
             d3.shuffle(states);
             draw();
             function draw(i) {
-                console.log('draw')
                 let a = states[0],
                         b = states[1],
                         interpolator = flubber.interpolate(a, b);
 
                 states.push(states.shift());
-                console.log('the new path ', interpolator(0))
                 let path = d3.select("#transform-circle-test path");
                 path.attr("d", interpolator(0));
 
