@@ -11,8 +11,7 @@
         {src: 'https://s3-us-west-2.amazonaws.com/internal.wma.chs.usgs.gov/makerspace-portfolio/salt-pulse-mock-up/final-product/saltVizMockup_compressed.mp4', res: 638, autoplay: true, poster: '@/assets/usesNeedsConflicts/images/watercolor.png'}
       ]"
       style="max-height: 800px; height: 100vh;"
-    >
-    </video-background>
+    />
   </div>
 </template>
 

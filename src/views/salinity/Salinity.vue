@@ -15,7 +15,7 @@
   import road from "./subViews/SalinityRoad"
 
     export default {
-        name: 'salinity',
+        name: 'Salinity',
         components: {
             dichotomy,
             sea,

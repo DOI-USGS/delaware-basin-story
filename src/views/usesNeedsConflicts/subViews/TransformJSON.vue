@@ -2,7 +2,11 @@
   <div>
     <hr>
     <h1>transform from JSON test</h1>
-    <svg id="transform-circle-test" height=800 width=1920></svg>
+    <svg
+      id="transform-circle-test"
+      height="800"
+      width="1920"
+    />
     <hr>
   </div>
 </template>

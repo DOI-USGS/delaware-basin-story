@@ -13,7 +13,7 @@
       At those two checkpoints – USGS river monitoring stations in Montague and Trenton, NJ – the minimum amount of flow has to still be able to provide enough water for agriculture, industry, ___, and recreation.  It is also set to make sure there’s enough freshwater flowing into the estuary at the mouth of the river to maintain the right mix of fresh-and-saltiness for the important ecological communities there.
     </p>
     <p>
-     The Delaware River Master – a position established by the Supreme Court ruling – relies on rain, snowmelt, runoff, and streamflow data collected by hundreds of USGS-affiliated monitoring stations through the basin to calculate how much water needs to be stored or released from the reservoirs along its tributaries to meet its flow goals.
+      The Delaware River Master – a position established by the Supreme Court ruling – relies on rain, snowmelt, runoff, and streamflow data collected by hundreds of USGS-affiliated monitoring stations through the basin to calculate how much water needs to be stored or released from the reservoirs along its tributaries to meet its flow goals.
     </p>
     <p>
       But alone, enough water is not enough. Water quantity and quality are deeply intertwined.
