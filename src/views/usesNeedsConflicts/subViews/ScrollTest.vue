@@ -23,6 +23,31 @@
         </p>
       </div>
     </div>
+    <div>
+      <h2 class="spacer usa-prose">
+        Demo of scroll over image
+      </h2>
+      <div id="scroll-over-image">
+        <div class="content">
+          <p v-custom-scroll>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p v-custom-scroll>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p v-custom-scroll>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p v-custom-scroll>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="spacer usa-prose">
+        Demo Full screen video
+      </h2>
+    </div>
     <div class="video-container">
       <video
         id="video-start-on-scroll"
@@ -38,7 +63,13 @@
         >
       </video>
     </div>
-    <div id="video-container-small" class="video-container-small">
+    <h2 class="spacer usa-prose">
+      Example of video contained in box with scrolling text
+    </h2>
+    <div
+      id="video-container-small"
+      class="video-container-small"
+    >
       <div class="video-small-internal-containers">
         <video
           id="video-group-with-text"
@@ -213,6 +244,12 @@
   }
 }
 
+.spacer {
+  margin-top: 10em;
+  padding-left: 2em;
+  height: 5em;
+}
+
 
   /* the following section controls the small video and scrolling text */
 
@@ -250,5 +287,30 @@
       flex-direction: row;
     }
   }
+
+
+/* for text over image */
+  #scroll-over-image {
+    width: 100%;
+    height:250px;
+    padding: 0;
+    margin: 0;
+    background-image: url('~@/assets/usesNeedsConflicts/images/river-shots.png');
+    background-attachment: fixed;
+    overflow:scroll;
+    .content {
+      background-color: black;
+      opacity: 0.75;
+      margin: 0;
+      padding: 0 2em 5em 2em;
+      p:first-of-type {
+        margin: 150px 0 0 0;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+
 
 </style>
