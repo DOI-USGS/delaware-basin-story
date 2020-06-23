@@ -40,18 +40,21 @@
 
     <TransformSVG />
     <TransformJSON />
+    <ScrollTest />
   </div>
 </template>
 
 <script>
   import TransformSVG from"./subViews/TransformTestBasicSVG"
   import TransformJSON from "./subViews/TransformJSON";
+  import ScrollTest from "./subViews/ScrollTest";
 
   export default {
       name: 'UsesNeedsConflicts',
       components: {
         TransformJSON,
-        TransformSVG
+        TransformSVG,
+        ScrollTest
       },
       data() {
           return {

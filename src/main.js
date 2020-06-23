@@ -8,6 +8,7 @@ import App from './App.vue';
 import uswds from 'uswds';
 import browserDetect from 'vue-browser-detect-plugin';
 import { Plugin } from 'vue-responsive-video-background-player'
+import CustomScroll from './directives/customScroll'
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -22,6 +23,7 @@ import { faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.directive('customScroll', CustomScroll)
 
 
 // social icons
