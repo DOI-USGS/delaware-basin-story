@@ -71,7 +71,7 @@ const clientID = function() {
 // Note: to add additional custom dimensions, you must first register the new dimension on the analytics dash board. Then
 // you can set the dimension's value using the plugin.
 Vue.use(VueAnalytics, {
-  id: 'need-to-add-your-own-id-here',
+  id: 'UA-78530187-15',
   debug: {
     enabled: false, // default value is 'false'; for more complete output set to true. Just remember to turn it back to 'false' before putting into production.
     trace: false, // default value is 'false'; for more complete output set to true. Just remember to turn it back to 'false' before putting into production.
