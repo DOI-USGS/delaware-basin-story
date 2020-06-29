@@ -37,24 +37,13 @@
       But if the extra water is released all at once, the pulse of cool, clear reservoir water could drop the water temperature of all the river reaches downstream by several degrees. The species that live in those reaches – like mussels which like it warm, and trout which like it cool – could suddenly see their environment shift dramatically with no time to adapt.
     </p>
     <img src="@/assets/usesNeedsConflicts/images/two.png">
-
-    <TransformSVG />
-    <TransformJSON />
-    <ScrollTest />
   </div>
 </template>
 
 <script>
-  import TransformSVG from"./subViews/TransformTestBasicSVG"
-  import TransformJSON from "./subViews/TransformJSON";
-  import ScrollTest from "./subViews/ScrollTest";
-
   export default {
       name: 'UsesNeedsConflicts',
       components: {
-        TransformJSON,
-        TransformSVG,
-        ScrollTest
       },
       data() {
           return {
