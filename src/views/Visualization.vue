@@ -1,6 +1,5 @@
 <template>
   <div id="visualization">
-    <h1>{{ title }}</h1>
     <intro />
     <usesNeedsConflicts />
     <grandChallenges />
@@ -33,11 +32,6 @@
             salinity,
             monitoring,
             outro
-        },
-        data() {
-            return {
-                title: process.env.VUE_APP_TITLE
-            }
         }
     }
 </script>

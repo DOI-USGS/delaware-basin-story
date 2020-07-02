@@ -75,21 +75,25 @@
 </template>
 
 <script>
-import iconDot from '../../node_modules/uswds/dist/img/icon-dot-gov.svg';
-import iconHTTPS from '../../node_modules/uswds/dist/img/icon-https.svg';
+    import iconDot from '../../node_modules/uswds/dist/img/icon-dot-gov.svg';
+    import iconHTTPS from '../../node_modules/uswds/dist/img/icon-https.svg';
     export default {
         name: 'HeaderUSWDSBanner',
         components: {
-          iconDot,
-          iconHTTPS
+            iconDot,
+            iconHTTPS
+        },
+        mounted() {
+            // This is a fix for the weird USWDS glitch that causes the official united states banner pop and then close as the page loads
+            const bannerElement = document.querySelector('#gov-banner');
+            bannerElement.setAttribute('hidden', '""');
         }
     }
-
 </script>
 
 <style lang="scss">
-    @import '~uswds/dist/css/uswds.css';
-    .usa-banner__icon {
-      width: 4rem;
-    }
+  @import '~uswds/dist/css/uswds.css';
+  .usa-banner__icon {
+    width: 4rem;
+  }
 </style>
