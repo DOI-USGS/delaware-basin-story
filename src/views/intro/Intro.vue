@@ -29,10 +29,7 @@
 
 <style scoped lang="scss">
   /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {}
-
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+  @media only screen and (max-width: 600px) {
     section {
       display: flex;
       flex-direction: column;
@@ -58,11 +55,36 @@
     }
   }
 
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      .container-section-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        color: white;
+        img {
+          width: 100%;
+        }
+        .section-title {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    section {
-      flex-direction: row;
-    }
+
   }
 
   /* Large devices (laptops/desktops, 992px and up) */
