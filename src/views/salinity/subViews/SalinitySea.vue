@@ -6,7 +6,7 @@
       When river flow slows, the salt wedge pushes​
       higher upstream. If it gets to high upstream, it can corrode industrial infrastructure, hurt ecosystems that can’t survive in brackish water, or even contaminate drinking water supplies. We can push it back towards the ocean by releasing more water from reservoirs. But knowing exactly where it is and how it’s changing is important, so we know just what kind of decision we need to make.​
     </p>
-    <p>To do this, ECOMAPPER!! And other stuff.</p>
+    <img src="@/assets/salinity/salinitySea/images/watercolorMapSaltFront.png">
   </div>
 </template>
 
