@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <WindowSize v-if="checkTypeOfEnv === '-test build-'" />
     <HeaderUSWDSBanner />
     <HeaderUSGS />
     <router-view
@@ -11,19 +12,21 @@
 </template>
 
 <script>
+    import WindowSize from "./components/WindowSize";
     import HeaderUSWDSBanner from './components/HeaderUSWDSBanner'
     import HeaderUSGS from './components/HeaderUSGS'
 
     export default {
         name: 'App',
         components: {
+            WindowSize,
             HeaderUSWDSBanner,
             HeaderUSGS,
             FooterUSGS: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "usgs-footer"*/ "./components/FooterUSGS")
         },
         data() {
             return {
-                isInternetExplorer: false,
+                isInternetExplorer: false
             }
         },
         computed: {
@@ -32,24 +35,27 @@
             },
             checkIfIntroSectionIsRendered() {
                 return this.$store.state.introSectionRendered;
+            },
+            checkTypeOfEnv() {
+              return process.env.VUE_APP_TIER
+            }
+        },
+        created() {
+            // We are ending support for Internet Explorer, so let's test to see if the browser used is IE.
+            this.$browserDetect.isIE ? this.isInternetExplorer = true : this.isInternetExplorer = false;
+            // Add window size tracking by adding a listener and a way to store the values in the Vuex state
+            window.addEventListener('resize', this.handleResize);
+            this.handleResize();
+        },
+        destroyed() {
+            window.removeEventListener('resize', this.handleResize);
+        },
+        methods: {
+            handleResize() {
+                this.$store.commit('recordWindowWidth', window.innerWidth);
+                this.$store.commit('recordWindowHeight', window.innerHeight);
             }
         }
-
-        // created() {
-        //     // We are ending support for Internet Explorer, so let's test to see if the browser used is IE.
-        //     this.$browserDetect.isIE ? this.isInternetExplorer = true : this.isInternetExplorer = false;
-        //     window.addEventListener('resize', this.handleResize);
-        //     this.handleResize();
-        // },
-        // destroyed() {
-        //     window.removeEventListener('resize', this.handleResize);
-        // },
-        // methods: {
-        //     handleResize() {
-        //         this.window.width = window.innerWidth;
-        //         this.window.height = window.innerHeight;
-        //     }
-        // }
     }
 </script>
 

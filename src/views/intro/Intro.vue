@@ -21,7 +21,6 @@
         name: 'Intro',
         data() {
             return {
-
             }
         },
         mounted() {

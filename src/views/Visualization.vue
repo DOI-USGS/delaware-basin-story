@@ -23,7 +23,6 @@
             salinity: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "salinity"*/ "./salinity/Salinity"),
             monitoring: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "monitoring"*/ "./monitoring/Monitoring"),
             outro: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "outro"*/ "./outro/Outro")
-
         },
         computed: {
             checkIfIntroSectionIsRendered() {
