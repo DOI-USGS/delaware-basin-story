@@ -3,6 +3,7 @@
     <WindowSize v-if="checkTypeOfEnv === '-test build-'" />
     <HeaderUSWDSBanner />
     <HeaderUSGS />
+    <WorkInProgressWarning v-if="checkReleaseState !== 'released'"/>
     <router-view
       v-if="checkIfUSGSHeaderIsRendered"
       :is-internet-explorer="isInternetExplorer"
@@ -22,6 +23,7 @@
             WindowSize,
             HeaderUSWDSBanner,
             HeaderUSGS,
+            WorkInProgressWarning: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "work-in-progress-warning"*/ "./components/WorkInProgressWarning"),
             FooterUSGS: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "usgs-footer"*/ "./components/FooterUSGS")
         },
         data() {
@@ -38,6 +40,9 @@
             },
             checkTypeOfEnv() {
               return process.env.VUE_APP_TIER
+            },
+            checkReleaseState() {
+                return process.env.VUE_APP_RELEASE_STATE
             }
         },
         created() {
