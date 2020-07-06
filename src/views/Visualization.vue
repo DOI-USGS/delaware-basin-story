@@ -1,37 +1,36 @@
 <template>
   <div id="visualization">
     <intro />
-    <usesNeedsConflicts />
-    <grandChallenges />
-    <salinity />
-    <temperature />
-    <sediment />
-    <monitoring />
-    <outro />
+    <usesNeedsConflicts v-if="checkIfIntroSectionIsRendered" />
+    <grandChallenges v-if="checkIfIntroSectionIsRendered" />
+    <salinity v-if="checkIfIntroSectionIsRendered" />
+    <temperature v-if="checkIfIntroSectionIsRendered" />
+    <sediment v-if="checkIfIntroSectionIsRendered" />
+    <monitoring v-if="checkIfIntroSectionIsRendered" />
+    <outro v-if="checkIfIntroSectionIsRendered" />
   </div>
 </template>
 
 <script>
   import intro from "./intro/Intro";
-  import usesNeedsConflicts from "./usesNeedsConflicts/UsesNeedsConflicts"
-  import grandChallenges from "./grandChallenges/GrandChallenges.vue"
-  import temperature from "./temperature/Temperature"
-  import sediment from "./sediment/Sediment"
-  import salinity from "./salinity/Salinity"
-  import monitoring from "./monitoring/Monitoring"
-  import outro from "./outro/Outro"
 
     export default {
         name: 'Visualization',
         components: {
             intro,
-            usesNeedsConflicts,
-            grandChallenges,
-            temperature,
-            sediment,
-            salinity,
-            monitoring,
-            outro
+            usesNeedsConflicts: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "usesNeedsConflicts"*/ "./usesNeedsConflicts/UsesNeedsConflicts"),
+            grandChallenges: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "grandChallenges"*/ "./grandChallenges/GrandChallenges"),
+            temperature: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "temperature"*/ "./temperature/Temperature"),
+            sediment: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "sediment"*/ "./sediment/Sediment"),
+            salinity: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "salinity"*/ "./salinity/Salinity"),
+            monitoring: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "monitoring"*/ "./monitoring/Monitoring"),
+            outro: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "outro"*/ "./outro/Outro")
+
+        },
+        computed: {
+            checkIfIntroSectionIsRendered() {
+                return this.$store.state.introSectionRendered;
+            }
         }
     }
 </script>

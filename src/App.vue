@@ -2,32 +2,51 @@
   <div id="app">
     <HeaderUSWDSBanner />
     <HeaderUSGS />
-    <router-view :is-internet-explorer="isInternetExplorer" />
-    <FooterUSGS />
+    <router-view :is-internet-explorer="isInternetExplorer" v-if="checkIfUSGSHeaderIsRendered" />
+    <FooterUSGS v-if="checkIfIntroSectionIsRendered" />
   </div>
 </template>
 
 <script>
     import HeaderUSWDSBanner from './components/HeaderUSWDSBanner'
     import HeaderUSGS from './components/HeaderUSGS'
-    import FooterUSGS from './components/FooterUSGS'
 
     export default {
         name: 'App',
         components: {
             HeaderUSWDSBanner,
             HeaderUSGS,
-            FooterUSGS
+            FooterUSGS: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "usgs-footer"*/ "./components/FooterUSGS")
         },
         data() {
             return {
                 isInternetExplorer: false,
             }
         },
-        created() {
-            // We are ending support for Internet Explorer, so let's test to see if the browser used is IE.
-            this.$browserDetect.isIE ? this.isInternetExplorer = true : this.isInternetExplorer = false;
+        computed: {
+            checkIfUSGSHeaderIsRendered() {
+                return this.$store.state.usgsHeaderRendered;
+            },
+            checkIfIntroSectionIsRendered() {
+                return this.$store.state.introSectionRendered;
+            }
         }
+
+        // created() {
+        //     // We are ending support for Internet Explorer, so let's test to see if the browser used is IE.
+        //     this.$browserDetect.isIE ? this.isInternetExplorer = true : this.isInternetExplorer = false;
+        //     window.addEventListener('resize', this.handleResize);
+        //     this.handleResize();
+        // },
+        // destroyed() {
+        //     window.removeEventListener('resize', this.handleResize);
+        // },
+        // methods: {
+        //     handleResize() {
+        //         this.window.width = window.innerWidth;
+        //         this.window.height = window.innerHeight;
+        //     }
+        // }
     }
 </script>
 
