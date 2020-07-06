@@ -12,12 +12,10 @@
 </template>
 
 <script>
-  import intro from "./intro/Intro";
-
     export default {
         name: 'Visualization',
         components: {
-            intro,
+            intro: () => import(/* webpackPrefetch: true */ /*webpackChunkName: "intro"*/ "./intro/Intro"),
             usesNeedsConflicts: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "usesNeedsConflicts"*/ "./usesNeedsConflicts/UsesNeedsConflicts"),
             grandChallenges: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "grandChallenges"*/ "./grandChallenges/GrandChallenges"),
             temperature: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "temperature"*/ "./temperature/Temperature"),

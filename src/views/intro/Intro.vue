@@ -29,7 +29,6 @@
             // it will change the Vuex state so that other components will know the 'intro' section has loaded
             this.$nextTick(function () {
                 this.$store.commit('changeBooleanStateWhenIntroSectionRendered');
-                console.log('intro loaded')
             });
         }
     }

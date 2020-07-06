@@ -6,19 +6,17 @@
       role="banner"
     >
       <div class="tmp-container">
-        <div class="header-search">
-          <a
-            class="logo-header"
-            href="https://www.usgs.gov/"
-            title="Home"
+        <a
+          class="logo-header"
+          href="https://www.usgs.gov/"
+          title="Home"
+        >
+          <img
+            class="img"
+            src="@/assets/usgsHeaderAndFooter/images/logo.png"
+            alt="Home"
           >
-            <img
-              class="img"
-              src="@/assets/usgsHeaderAndFooter/images/logo.png"
-              alt="Home"
-            >
-          </a>
-        </div>
+        </a>
       </div>
     </header>
   </div>
@@ -69,9 +67,6 @@
     border: 0;
     max-width: 100%;
     height: auto;
-  }
-  .nav:before, .nav:after {
-    content: none;
   }
   .logo-header img {
     height: 65px;

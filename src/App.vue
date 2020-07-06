@@ -2,7 +2,10 @@
   <div id="app">
     <HeaderUSWDSBanner />
     <HeaderUSGS />
-    <router-view :is-internet-explorer="isInternetExplorer" v-if="checkIfUSGSHeaderIsRendered" />
+    <router-view
+      v-if="checkIfUSGSHeaderIsRendered"
+      :is-internet-explorer="isInternetExplorer"
+    />
     <FooterUSGS v-if="checkIfIntroSectionIsRendered" />
   </div>
 </template>
