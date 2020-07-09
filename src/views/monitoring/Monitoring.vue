@@ -8,7 +8,10 @@
         alt="watercolor illustration of delaware river basin with monitoring locations marked"
       >
       <div id="big-number-icons-container">
-        <div class="big-number-icon-container">
+        <div
+          id="list-1"
+          class="big-number-icon-container"
+        >
           <img
             src="@/assets/monitoring/images/blueCircle1.png"
             alt=""
@@ -20,7 +23,10 @@
             new locations
           </p>
         </div>
-        <div class="big-number-icon-container">
+        <div
+          id="list-2"
+          class="big-number-icon-container"
+        >
           <img
             src="@/assets/monitoring/images/greenCircle1.png"
             alt=""
@@ -32,7 +38,10 @@
             upgrades
           </p>
         </div>
-        <div class="big-number-icon-container">
+        <div
+          id="list-3"
+          class="big-number-icon-container"
+        >
           <img
             src="@/assets/monitoring/images/blueCircle2.png"
             alt=""
@@ -44,7 +53,10 @@
             new specific conductance
           </p>
         </div>
-        <div class="big-number-icon-container">
+        <div
+          id="list-4"
+          class="big-number-icon-container"
+        >
           <img
             src="@/assets/monitoring/images/greenCircle2.png"
             alt=""
@@ -56,7 +68,10 @@
             new temperature sensors
           </p>
         </div>
-        <div class="big-number-icon-container">
+        <div
+          id="list-5"
+          class="big-number-icon-container"
+        >
           <img
             src="@/assets/monitoring/images/orangeCircle1.png"
             alt=""
@@ -69,7 +84,10 @@
           </p>
         </div>
 
-        <div class="big-number-icon-container">
+        <div
+          id="list-6"
+          class="big-number-icon-container"
+        >
           <img
             src="@/assets/monitoring/images/orangeCircle2.png"
             alt=""
@@ -85,27 +103,51 @@
     </div>
     <div id="monitoring-details">
       <div class="monitoring-details">
-        <div id="new-locations" v-custom-scroll>
+        <div
+          id="details-1"
+          v-custom-scroll
+          v-observe-visibility="visibilityChanged"
+        >
           <h4>New Locations</h4>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
         </div>
-        <div id="upgrades" v-custom-scroll>
+        <div
+          id="details-2"
+          v-custom-scroll
+          v-observe-visibility="visibilityChanged"
+        >
           <h4>Upgrades</h4>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
         </div>
-        <div id="conductance" v-custom-scroll>
+        <div
+          id="details-3"
+          v-custom-scroll
+          v-observe-visibility="visibilityChanged"
+        >
           <h4>New Specific Conductance</h4>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
         </div>
-        <div id="temperature" v-custom-scroll>
+        <div
+          id="details-4"
+          v-custom-scroll
+          v-observe-visibility="visibilityChanged"
+        >
           <h4>New Temperature Sensors</h4>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
         </div>
-        <div id="cameras" v-custom-scroll>
+        <div
+          id="details-5"
+          v-custom-scroll
+          v-observe-visibility="visibilityChanged"
+        >
           <h4>New Cameras</h4>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
         </div>
-        <div id="sensor" v-custom-scroll>
+        <div
+          id="details-6"
+          v-custom-scroll
+          v-observe-visibility="visibilityChanged"
+        >
           <h4>Another sensor</h4>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
         </div>
@@ -114,6 +156,7 @@
         <p>scroll</p>
       </div>
     </div>
+
 
     <p />
     <p>USGS monitoring at a more zoomed out level</p>
@@ -132,6 +175,21 @@
         data() {
             return {
 
+            }
+        },
+        methods: {
+            visibilityChanged (isVisible, entry) {
+                this.isVisible = isVisible;
+                const targetId = 'list-' + entry.target.id[entry.target.id.length -1];
+                const targetElement = document.getElementById(targetId);
+
+                if (isVisible === true) {
+                    console.log('target element ', targetElement)
+                    targetElement.classList.add("glow");
+                } else if (isVisible === false) {
+                    console.log('ran false')
+                    targetElement.classList.remove("glow");
+                }
             }
         }
     }
@@ -210,6 +268,25 @@
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
+
+    .glow {
+      font-size: 70px;
+      color: #ffffff;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #d46e21, 0 0 30px #d46e21, 0 0 40px #d46e21,
+        0 0 50px #e7cd73, 0 0 60px #e7cd73, 0 0 70px #e7cd73;
+      }
+      to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #fffc4d, 0 0 40px #fffc4d, 0 0 50px #fffc4d,
+        0 0 60px #fffc4d, 0 0 70px #fffc4d, 0 0 80px #fffc4d;
+      }
+    }
     #monitoring {
       #monitoring-big-numbers-container {
         display: flex;
