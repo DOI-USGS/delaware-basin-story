@@ -184,10 +184,8 @@
                 const targetElement = document.getElementById(targetId);
 
                 if (isVisible === true) {
-                    console.log('target element ', targetElement)
                     targetElement.classList.add("glow");
                 } else if (isVisible === false) {
-                    console.log('ran false')
                     targetElement.classList.remove("glow");
                 }
             }
@@ -199,6 +197,24 @@
 
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
+    .glow {
+      font-size: 70px;
+      color: #ffffff;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #d46e21, 0 0 30px #d46e21, 0 0 40px #d46e21,
+        0 0 50px #e7cd73, 0 0 60px #e7cd73, 0 0 70px #e7cd73;
+      }
+      to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #fffc4d, 0 0 40px #fffc4d, 0 0 50px #fffc4d,
+        0 0 60px #fffc4d, 0 0 70px #fffc4d, 0 0 80px #fffc4d;
+      }
+    }
     #monitoring {
       #monitoring-big-numbers-container {
         display: flex;
