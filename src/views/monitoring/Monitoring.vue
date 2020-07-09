@@ -2,11 +2,49 @@
   <section id="monitoring">
     <h2>Place holder for Monitoring</h2>
     <div id="monitoring-big-numbers-container">
-      <img
-        id="big-number-image"
-        src="@/assets/monitoring/images/sampleMapWithDots.jpg"
-        alt="watercolor illustration of delaware river basin with monitoring locations marked"
-      >
+      <div id="monitoring-big-numbers-main-image-container">
+        <img
+          id="big-number-image-base-1"
+          class="big-number-map-locations"
+          src="@/assets/monitoring/images/sampleMap_1.png"
+          alt="watercolor illustration of delaware river basin with monitoring locations marked"
+        >
+        <img
+          id="big-number-image-base-2"
+          class="big-number-map-locations"
+          src="@/assets/monitoring/images/sampleMap_2.png"
+          alt="watercolor illustration of delaware river basin with monitoring locations marked"
+          hidden
+        >
+        <img
+          id="big-number-image-base-3"
+          class="big-number-map-locations"
+          src="@/assets/monitoring/images/sampleMap_3.png"
+          alt="watercolor illustration of delaware river basin with monitoring locations marked"
+          hidden
+        >
+        <img
+          id="big-number-image-base-4"
+          class="big-number-map-locations"
+          src="@/assets/monitoring/images/sampleMap_1.png"
+          alt="watercolor illustration of delaware river basin with monitoring locations marked"
+          hidden
+        >
+        <img
+          id="big-number-image-base-5"
+          class="big-number-map-locations"
+          src="@/assets/monitoring/images/sampleMap_2.png"
+          alt="watercolor illustration of delaware river basin with monitoring locations marked"
+          hidden
+        >
+        <img
+          id="big-number-image-base-6"
+          class="big-number-map-locations"
+          src="@/assets/monitoring/images/sampleMap_3.png"
+          alt="watercolor illustration of delaware river basin with monitoring locations marked"
+          hidden
+        >
+      </div>
       <div id="big-number-icons-container">
         <div
           id="list-1"
@@ -172,21 +210,21 @@
 <script>
     export default {
         name: 'Monitoring',
-        data() {
-            return {
-
-            }
-        },
         methods: {
             visibilityChanged (isVisible, entry) {
                 this.isVisible = isVisible;
-                const targetId = 'list-' + entry.target.id[entry.target.id.length -1];
-                const targetElement = document.getElementById(targetId);
+                const numberIconTargetId = 'list-' + entry.target.id[entry.target.id.length -1];
+                const mapTargetId = 'big-number-image-base-' + entry.target.id[entry.target.id.length -1];
+                const numberIconTargetElement = document.getElementById(numberIconTargetId);
+                const mapTargetElement = document.getElementById(mapTargetId);
 
                 if (isVisible === true) {
-                    targetElement.classList.add("glow");
+                    numberIconTargetElement.classList.add('glow');
+                    mapTargetElement.removeAttribute('hidden');
+
                 } else if (isVisible === false) {
-                    targetElement.classList.remove("glow");
+                    numberIconTargetElement.classList.remove('glow');
+                    mapTargetElement.setAttribute('hidden', 'true');
                 }
             }
         }
@@ -194,7 +232,6 @@
 </script>
 
 <style scoped lang="scss">
-
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     .glow {
@@ -215,6 +252,17 @@
         0 0 60px #fffc4d, 0 0 70px #fffc4d, 0 0 80px #fffc4d;
       }
     }
+
+    #monitoring-big-numbers-main-image-container {
+      position: relative;
+      flex: 1;
+      height: 467px;
+      width: 250px;
+      .big-number-map-locations {
+        position:absolute;
+      }
+    }
+
     #monitoring {
       #monitoring-big-numbers-container {
         display: flex;
@@ -303,14 +351,21 @@
         0 0 60px #fffc4d, 0 0 70px #fffc4d, 0 0 80px #fffc4d;
       }
     }
+
+    #monitoring-big-numbers-main-image-container {
+      position: relative;
+      flex: 1;
+      height: 467px;
+      width: 250px;
+      .big-number-map-locations {
+        position:absolute;
+      }
+    }
+
     #monitoring {
-      #monitoring-big-numbers-container {
+      /*background-image: url("~@/assets/monitoring/images/crumpledPaper.png");*/
+        #monitoring-big-numbers-container {
         display: flex;
-        #big-number-image {
-          height: 467px;
-          width: 250px;
-          flex: 1;
-        }
         #big-number-icons-container {
           flex: 2;
           display: flex;
