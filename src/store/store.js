@@ -8,7 +8,7 @@ export const store = new Vuex.Store({
         usgsHeaderRendered: false,
         introSectionRendered: false,
         windowWidth: 0,
-        windowHeight: 0,
+        windowHeight: 0
     },
     mutations: {
         changeBooleanStateWhenUSGSHeaderRendered(state) {

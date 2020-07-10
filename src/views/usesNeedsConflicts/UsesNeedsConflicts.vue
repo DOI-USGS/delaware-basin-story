@@ -2,6 +2,24 @@
   <section id="uses-needs-conflicts">
     <h2>2020 River of the Year</h2>
     <h3>U.S. Geological Service</h3>
+    <carousel autoplay="true" autoplayHoverPause="true" perPage="1">
+      <slide>
+        <img src="@/assets/usesNeedsConflicts/images/imageSlider/slider_01.jpg">
+        <p>great information here</p>
+      </slide>
+      <slide>
+        <img src="@/assets/usesNeedsConflicts/images/imageSlider/slider_02.jpg">
+        <p>great information here</p>
+      </slide>
+      <slide>
+        <img src="@/assets/usesNeedsConflicts/images/imageSlider/slider_03.jpg">
+        <p>great information here</p>
+      </slide>
+      <slide>
+        <img src="@/assets/usesNeedsConflicts/images/imageSlider/slider_04.jpg">
+        <p>great information here</p>
+      </slide>
+    </carousel>
     <p>
       Throughout its history, the Delaware River Basin has been a crucible of competing interests and water needs, and a clear example of the complex interplay between water quality and quantity.  Water is a finite resource, after all.
     </p>
@@ -33,6 +51,7 @@
   export default {
       name: 'UsesNeedsConflicts',
       components: {
+
       },
       data() {
           return {
@@ -43,5 +62,7 @@
 </script>
 
 <style scoped lang="scss">
-
+  img {
+    padding: 0 5px 0 5px;
+  }
 </style>
