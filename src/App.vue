@@ -4,11 +4,11 @@
     <HeaderUSWDSBanner />
     <HeaderUSGS />
     <InternetExplorerPage v-if="isInternetExplorer" />
-    <WorkInProgressWarning v-if="checkTypeOfEnv !== ''" /> <!-- an empty string in this case means the 'prod' version of the application   -->
+    <WorkInProgressWarning v-if="checkTypeOfEnv !== '' & !isInternetExplorer" /> <!-- an empty string in this case means the 'prod' version of the application   -->
     <router-view
       v-if="!isInternetExplorer & checkIfUSGSHeaderIsRendered"
     />
-    <FooterUSGS v-if="checkIfIntroSectionIsRendered" />
+    <FooterUSGS v-if="checkIfIntroSectionIsRendered || isInternetExplorer" />
   </div>
 </template>
 
