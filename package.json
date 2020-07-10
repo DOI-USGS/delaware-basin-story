@@ -22,8 +22,8 @@
     "d3": "^5.16.0",
     "dns": "^0.2.2",
     "flubber": "^0.4.2",
-    "mapbox-gl": "^1.11.0",
-    "uswds": "^2.7.1",
+    "mapbox-gl": "^1.11.1",
+    "uswds": "^2.8.0",
     "vue": "^2.6.11",
     "vue-analytics": "^5.22.1",
     "vue-browser-detect-plugin": "^0.1.13",
@@ -41,7 +41,7 @@
     "eslint": "^7.4.0",
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.14.1",
-    "sass-loader": "^9.0.1",
+    "sass-loader": "^9.0.2",
     "vue-svg-loader": "^0.16.0",
     "vue-template-compiler": "^2.6.11"
   }
