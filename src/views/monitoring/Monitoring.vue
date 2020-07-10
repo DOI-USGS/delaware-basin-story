@@ -363,8 +363,8 @@
     }
 
     #monitoring {
-      /*background-image: url("~@/assets/monitoring/images/crumpledPaper.png");*/
         #monitoring-big-numbers-container {
+        background-color: antiquewhite;
         display: flex;
         #big-number-icons-container {
           flex: 2;
@@ -411,6 +411,7 @@
         transform: translateY(100px);
         transition: all 2s ease-out;
       }
+
       .enter {
         opacity: 1;
         transform: translateY(0px);
@@ -420,9 +421,15 @@
         padding: 0.5rem;
         width: 100%;
         height: 10rem;
-        overflow-x: hidden;
-        overflow-y: auto;
-        text-align:justify;
+        overflow-y: scroll;
+        text-align: justify;
+        -ms-overflow-style: none; /* no scroll bar for IE and Edge */
+        scrollbar-width: none; /* no scroll bar for Firefox */
+      }
+
+      /* no scroll bar for Chrome, Safari and Opera */
+      .monitoring-details::-webkit-scrollbar {
+        display: none;
       }
     }
     .scroll-indicator {
