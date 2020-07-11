@@ -3,12 +3,12 @@
     <WindowSize v-if="checkTypeOfEnv === '-test build-'" />
     <HeaderUSWDSBanner />
     <HeaderUSGS />
-    <WorkInProgressWarning v-if="checkTypeOfEnv !== ''" /> <!-- an empty string in this case means the 'prod' version of the application   -->
+    <InternetExplorerPage v-if="isInternetExplorer" />
+    <WorkInProgressWarning v-if="checkTypeOfEnv !== '' & !isInternetExplorer" /> <!-- an empty string in this case means the 'prod' version of the application   -->
     <router-view
-      v-if="checkIfUSGSHeaderIsRendered"
-      :is-internet-explorer="isInternetExplorer"
+      v-if="!isInternetExplorer & checkIfUSGSHeaderIsRendered"
     />
-    <FooterUSGS v-if="checkIfIntroSectionIsRendered" />
+    <FooterUSGS v-if="checkIfIntroSectionIsRendered || isInternetExplorer" />
   </div>
 </template>
 
@@ -16,6 +16,7 @@
     import WindowSize from "./components/WindowSize";
     import HeaderUSWDSBanner from './components/HeaderUSWDSBanner'
     import HeaderUSGS from './components/HeaderUSGS'
+    import InternetExplorerPage from "./components/InternetExplorerPage";
 
     export default {
         name: 'App',
@@ -23,6 +24,7 @@
             WindowSize,
             HeaderUSWDSBanner,
             HeaderUSGS,
+            InternetExplorerPage,
             WorkInProgressWarning: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "work-in-progress-warning"*/ "./components/WorkInProgressWarning"),
             FooterUSGS: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "usgs-footer"*/ "./components/FooterUSGS")
         },

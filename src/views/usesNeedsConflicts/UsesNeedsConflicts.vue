@@ -2,6 +2,37 @@
   <section id="uses-needs-conflicts">
     <h2>2020 River of the Year</h2>
     <h3>U.S. Geological Service</h3>
+    <carousel
+      id="image-slider"
+      autoplay="true"
+      autoplay-hover-pause="true"
+      per-page="2"
+    >
+      <slide class="slide">
+        <div class="slider-image-container">
+          <img src="@/assets/usesNeedsConflicts/images/imageSlider/slider_01.jpg">
+          <p>great information here</p>
+        </div>
+      </slide>
+      <slide class="slide">
+        <div class="slider-image-container">
+          <img src="@/assets/usesNeedsConflicts/images/imageSlider/slider_02.jpg">
+          <p>great information here</p>
+        </div>
+      </slide>
+      <slide class="slide">
+        <div class="slider-image-container">
+          <img src="@/assets/usesNeedsConflicts/images/imageSlider/slider_03.jpg">
+          <p>great information here</p>
+        </div>
+      </slide>
+      <slide class="slide">
+        <div class="slider-image-container">
+          <img src="@/assets/usesNeedsConflicts/images/imageSlider/slider_04.jpg">
+          <p>great information here</p>
+        </div>
+      </slide>
+    </carousel>
     <p>
       Throughout its history, the Delaware River Basin has been a crucible of competing interests and water needs, and a clear example of the complex interplay between water quality and quantity.  Water is a finite resource, after all.
     </p>
@@ -33,6 +64,7 @@
   export default {
       name: 'UsesNeedsConflicts',
       components: {
+
       },
       data() {
           return {
@@ -43,5 +75,27 @@
 </script>
 
 <style scoped lang="scss">
+  #image-slider {
+    *:focus{
+      outline: none;
+    }
+  }
+  .slide {
+    padding: 0 5px 0 5px;
+    select:focus{
+      outline: none;
+    }
+  }
+  .slider-image-container {
+    padding: 5px;
+    text-align: left;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    max-width: 400px;
+    img {
+      width: 100%;
+    }
+  }
 
 </style>
