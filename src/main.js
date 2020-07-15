@@ -8,9 +8,9 @@ import App from './App.vue';
 import uswds from 'uswds';
 import browserDetect from 'vue-browser-detect-plugin';
 import VueObserveVisibility from 'vue-observe-visibility'
+import VueCarousel from 'vue-carousel';
 
 import CustomScroll from './directives/customScroll'
-
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -26,7 +26,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.directive('customScroll', CustomScroll)
-
+Vue.use(VueCarousel);
 
 // social icons
 library.add(faTwitterSquare);
@@ -40,7 +40,6 @@ Vue.config.productionTip = false;
 Vue.use(uswds);
 Vue.use(browserDetect);
 Vue.use(VueObserveVisibility);
-
 
 
 // create a unique ID that can be used to identify user sessions

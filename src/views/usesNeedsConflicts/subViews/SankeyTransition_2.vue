@@ -72,10 +72,8 @@
                 const imageElement= document.getElementById('image-div-' + entry.target.id[entry.target.id.length -1]);
                 if (isVisible === true) {
                     imageElement.classList.add('sankey-visible');
-                    console.log('image element in true', imageElement)
                 } else if (isVisible === false) {
                     imageElement.classList.remove('sankey-visible');
-                    console.log('image element in false', imageElement)
                 }
             }
         }
