@@ -4,9 +4,9 @@
     <h3>U.S. Geological Service</h3>
     <carousel
       id="image-slider"
-      autoplay="true"
-      autoplay-hover-pause="true"
-      per-page="2"
+      :autoplay="true"
+      :autoplay-hover-pause="true"
+      :per-page="2"
     >
       <slide class="slide">
         <div class="slider-image-container">
@@ -39,8 +39,8 @@
     <p>
       Balancing the just needs of the people and ecosystems in the Basin to get <em>enough</em> water has been the focus of years of research, collaboration among federal, state, and local water management groups, and even a Supreme Court decision in 1954.  That court decree gave guidelines for how much water individual players like New York City or New Jersey State is allowed to divert for its drinking water, as well as how much remaining water has to be allowed to flow at two important checkpoints along its way to the ocean.
     </p>
-    <img src="@/assets/usesNeedsConflicts/images/sankey.png">
-
+    <SankeyTransition />
+    <SankeyTransition_2 />
     <p>
       At those two checkpoints – USGS river monitoring stations in Montague and Trenton, NJ – the minimum amount of flow has to still be able to provide enough water for agriculture, industry, ___, and recreation.  It is also set to make sure there’s enough freshwater flowing into the estuary at the mouth of the river to maintain the right mix of fresh-and-saltiness for the important ecological communities there.
     </p>
@@ -61,10 +61,14 @@
 </template>
 
 <script>
+  import SankeyTransition from "./subViews/SankeyTransition";
+  import SankeyTransition_2 from "./subViews/SankeyTransition_2";
+
   export default {
       name: 'UsesNeedsConflicts',
       components: {
-
+          SankeyTransition,
+          SankeyTransition_2
       },
       data() {
           return {
@@ -75,27 +79,30 @@
 </script>
 
 <style scoped lang="scss">
-  #image-slider {
-    *:focus{
-      outline: none;
-    }
-  }
-  .slide {
-    padding: 0 5px 0 5px;
-    select:focus{
-      outline: none;
-    }
-  }
-  .slider-image-container {
-    padding: 5px;
-    text-align: left;
-    display: block;
-    margin: auto;
-    border: 1px solid black;
-    max-width: 400px;
-    img {
-      width: 100%;
-    }
-  }
+#uses-needs-conflicts {
+  background-color: rgba(229, 229, 229, 0.3);
+}
 
+#image-slider {
+  *:focus{
+    outline: none;
+  }
+}
+.slide {
+  padding: 0 5px 0 5px;
+  select:focus{
+    outline: none;
+  }
+}
+.slider-image-container {
+  padding: 5px;
+  text-align: left;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+  max-width: 400px;
+  img {
+    width: 100%;
+  }
+}
 </style>
