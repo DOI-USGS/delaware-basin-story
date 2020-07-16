@@ -8,8 +8,8 @@
     <slide class="slide">
       <div class="slider-image-container">
         <img
-            src="@/assets/usesNeedsConflicts/images/imageSlider/slider_01.jpg"
-            alt=""
+          src="@/assets/usesNeedsConflicts/images/imageSlider/slider_01.jpg"
+          alt=""
         >
         <p>great information here</p>
       </div>
@@ -17,22 +17,27 @@
     <slide class="slide">
       <div class="slider-image-container">
         <img
-            src="@/assets/usesNeedsConflicts/images/imageSlider/slider_02.jpg"
-            alt="">
+          src="@/assets/usesNeedsConflicts/images/imageSlider/slider_02.jpg"
+          alt=""
+        >
         <p>great information here</p>
       </div>
     </slide>
     <slide class="slide">
       <div class="slider-image-container">
-        <img src="@/assets/usesNeedsConflicts/images/imageSlider/slider_03.jpg"
-             alt="">
+        <img
+          src="@/assets/usesNeedsConflicts/images/imageSlider/slider_03.jpg"
+          alt=""
+        >
         <p>great information here</p>
       </div>
     </slide>
     <slide class="slide">
       <div class="slider-image-container">
-        <img src="@/assets/usesNeedsConflicts/images/imageSlider/slider_04.jpg"
-             alt="">
+        <img
+          src="@/assets/usesNeedsConflicts/images/imageSlider/slider_04.jpg"
+          alt=""
+        >
         <p>great information here</p>
       </div>
     </slide>
