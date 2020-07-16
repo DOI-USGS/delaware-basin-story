@@ -1,13 +1,12 @@
 <template>
   <div id="visualization">
-    <intro />
-    <usesNeedsConflicts v-if="checkIfIntroSectionIsRendered" />
-    <grandChallenges v-if="checkIfIntroSectionIsRendered" />
-    <salinity v-if="checkIfIntroSectionIsRendered" />
-    <temperature v-if="checkIfIntroSectionIsRendered" />
-    <sediment v-if="checkIfIntroSectionIsRendered" />
-    <monitoring v-if="checkIfIntroSectionIsRendered" />
-    <outro v-if="checkIfIntroSectionIsRendered" />
+    <Intro />
+    <Flow v-if="checkIfIntroSectionIsRendered" />
+    <QualityChallenges v-if="checkIfIntroSectionIsRendered" />
+    <Salinity v-if="checkIfIntroSectionIsRendered" />
+    <Temperature v-if="checkIfIntroSectionIsRendered" />
+    <Monitoring v-if="checkIfIntroSectionIsRendered" />
+    <Conclusion v-if="checkIfIntroSectionIsRendered" />
   </div>
 </template>
 
@@ -15,14 +14,13 @@
     export default {
         name: 'Visualization',
         components: {
-            intro: () => import(/* webpackPrefetch: true */ /*webpackChunkName: "intro"*/ "./intro/Intro"),
-            usesNeedsConflicts: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "usesNeedsConflicts"*/ "./usesNeedsConflicts/UsesNeedsConflicts"),
-            grandChallenges: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "grandChallenges"*/ "./grandChallenges/GrandChallenges"),
-            temperature: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "temperature"*/ "./temperature/Temperature"),
-            sediment: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "sediment"*/ "./sediment/Sediment"),
-            salinity: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "salinity"*/ "./salinity/Salinity"),
-            monitoring: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "monitoring"*/ "./monitoring/Monitoring"),
-            outro: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "outro"*/ "./outro/Outro")
+            Intro: () => import(/* webpackPrefetch: true */ /*webpackChunkName: "intro"*/ "./intro/Intro"),
+            Flow: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "flow"*/ "./flow/Flow"),
+            QualityChallenges:() => import( /* webpackPrefetch: true */ /*webpackChunkName: "quality-challenges"*/ "./qualityChallenges/QualityChallenges"),
+            Temperature: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "temperature"*/ "./temperature/Temperature"),
+            Salinity: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "salinity"*/ "./salinity/Salinity"),
+            Monitoring: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "monitoring"*/ "./monitoring/Monitoring"),
+            Conclusion: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "conclusion"*/ "./conclusion/Conclusion")
         },
         computed: {
             checkIfIntroSectionIsRendered() {

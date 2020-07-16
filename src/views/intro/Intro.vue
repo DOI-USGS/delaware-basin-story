@@ -13,12 +13,21 @@
         Delaware River Basin
       </h1>
     </div>
+    <IntroTextContents />
+    <ImageCarousel />
   </section>
 </template>
 
 <script>
+  import IntroTextContents from "./subViews/IntroTextContents";
+  import ImageCarousel from "../../components/ImageCarousel";
+
     export default {
         name: 'Intro',
+        components: {
+            ImageCarousel,
+            IntroTextContents
+        },
         data() {
             return {
             }
