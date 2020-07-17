@@ -64,27 +64,21 @@
 </script>
 
 <style lang="scss">
+  @import url("https://use.typekit.net/jja8kth.css");
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
   body{
     margin: 0;
     padding: 0;
   }
   #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
+    p {
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: lighter;
+    }
+    h1, h2, h3 {
+      font-family: chantal, sans-serif;
+      font-weight: bold;
+    }
     width: 100%;
-  }
-
-  @media screen and (min-width: 601px){
-    body{
-      height: 100vh;
-    }
-    #app{
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
   }
 </style>
