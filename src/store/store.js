@@ -8,7 +8,9 @@ export const store = new Vuex.Store({
         usgsHeaderRendered: false,
         introSectionRendered: false,
         windowWidth: 0,
-        windowHeight: 0
+        windowHeight: 0,
+        uswdsBannerHeight: 0,
+        warningHeight: 0
     },
     mutations: {
         changeBooleanStateWhenUSGSHeaderRendered(state) {
@@ -22,6 +24,12 @@ export const store = new Vuex.Store({
         },
         recordWindowHeight (state, payload) {
             state.windowHeight = payload
+        },
+        recordUSWDSBannerHeight (state, payload) {
+            state.uswdsBannerHeight = payload
+        },
+        recordWarningHeight (state, payload) {
+            state.warningHeight = payload
         }
     }
 });

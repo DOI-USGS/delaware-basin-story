@@ -1,5 +1,5 @@
 <template>
-  <div id="header">
+  <section id="usgs-header">
     <header
       id="navbar"
       class="header-nav"
@@ -19,7 +19,7 @@
         </a>
       </div>
     </header>
-  </div>
+  </section>
 </template>
 
 <script>

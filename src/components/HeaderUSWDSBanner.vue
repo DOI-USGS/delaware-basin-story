@@ -100,10 +100,22 @@
             iconDot,
             iconHTTPS
         },
+        destroyed() {
+            window.removeEventListener('resize', this.handleResize);
+        },
         mounted() {
+            // Add window size tracking by adding a listener and a way to store the values in the Vuex state
+            window.addEventListener('resize', this.handleResize);
+            this.handleResize();
             // This is a fix for the weird USWDS glitch that causes the official united states banner pop and then close as the page loads
             const bannerElement = document.querySelector('#gov-banner');
             bannerElement.setAttribute('hidden', '""');
+        },
+        methods: {
+            handleResize() {
+                const heightOfUSWDSBanner = document.getElementById('HeaderUSWDSBanner').clientHeight;
+                this.$store.commit('recordUSWDSBannerHeight', heightOfUSWDSBanner);
+            }
         }
     }
 </script>
