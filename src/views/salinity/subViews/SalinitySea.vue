@@ -428,11 +428,6 @@ h2, h3, h4, h5, h6 {
     color: black;
     font-family: 'Noto Sans', sans-serif;
 }
-p {
-    color: black;
-    font-family: 'Noto Sans', sans-serif;
-}
-
 #dash, #s, #a, #l, #t, #f, #r, #o, #n, #t2 {
     stroke: black;
     fill: black;
