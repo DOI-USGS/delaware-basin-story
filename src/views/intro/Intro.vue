@@ -1,17 +1,22 @@
 <template>
   <section id="intro">
-    <img
-      src="@/assets/intro/images/watercolorMap.png"
-      alt="watercolor illustration of delaware river basin"
+    <div
+      id="intro-banner-container"
+      :style="{ 'height' : windowHeight }"
     >
-    <div class="container-section-title">
       <img
-        src="@/assets/intro/images/background_rainbowLarge.png"
-        alt="image of watercolor cloud of color"
+        src="@/assets/intro/images/watercolorMap.png"
+        alt="watercolor illustration of delaware river basin"
       >
-      <h1 class="section-title">
-        Delaware River Basin
-      </h1>
+      <div class="container-section-title">
+        <img
+          src="@/assets/intro/images/background_rainbowLarge.png"
+          alt="image of watercolor cloud of color"
+        >
+        <h1 class="section-title">
+          Delaware River Basin
+        </h1>
+      </div>
     </div>
     <IntroTextContents />
     <ImageCarousel />
@@ -30,6 +35,13 @@
         },
         data() {
             return {
+
+            }
+        },
+        computed: {
+            windowHeight: function () {
+                const usgsBannerHeight = 85;
+                return Number(this.$store.state.windowHeight - this.$store.state.warningHeight - usgsBannerHeight) + 'px';
             }
         },
         mounted() {
@@ -45,7 +57,7 @@
 <style scoped lang="scss">
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
-    section {
+    #intro-banner-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -72,7 +84,7 @@
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
-    section {
+    #intro-banner-container {
       display: flex;
       flex-direction: row;
       justify-content: center;
