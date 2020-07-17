@@ -66,7 +66,7 @@
 <style lang="scss">
   @import url("https://use.typekit.net/jja8kth.css");
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-  $wrinkledPaper: '~@/assets/app/images/backgroundPaperTexture.png';
+  $wrinkledPaper: '~@/assets/app/images/backgroundPaperTexture.jpg';
 
 
   body {
