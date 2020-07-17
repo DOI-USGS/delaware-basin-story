@@ -1,6 +1,7 @@
 <template>
   <section id="monitoring">
     <h2>Place holder for Monitoring</h2>
+    <p>The investments in water monitoring are diverse and numerous. Each new piece of technology helps paint a clearer picture of local water dynamics in the river, including assessing current water availability and water quality in hundreds of locations throughout the DRB.  </p>
     <div id="monitoring-big-numbers-container">
       <div id="monitoring-big-numbers-main-image-container">
         <img
@@ -55,10 +56,10 @@
             alt=""
           >
           <p class="big-number-number">
-            23
+            34
           </p>
           <p class="big-number-text">
-            new locations
+            new gages
           </p>
         </div>
         <div
@@ -70,7 +71,7 @@
             alt=""
           >
           <p class="big-number-number">
-            38
+            28
           </p>
           <p class="big-number-text">
             upgrades
@@ -85,10 +86,10 @@
             alt=""
           >
           <p class="big-number-number">
-            77
+            56
           </p>
           <p class="big-number-text">
-            new specific conductance
+            specific conductance
           </p>
         </div>
         <div
@@ -100,10 +101,10 @@
             alt=""
           >
           <p class="big-number-number">
-            49
+            98
           </p>
           <p class="big-number-text">
-            new temperature sensors
+            temperature
           </p>
         </div>
         <div
@@ -115,26 +116,10 @@
             alt=""
           >
           <p class="big-number-number">
-            68
+            8
           </p>
           <p class="big-number-text">
-            new cameras
-          </p>
-        </div>
-
-        <div
-          id="list-6"
-          class="big-number-icon-container"
-        >
-          <img
-            src="@/assets/monitoring/images/orangeCircle2.png"
-            alt=""
-          >
-          <p class="big-number-number">
-            17
-          </p>
-          <p class="big-number-text">
-            another sensor
+            cameras
           </p>
         </div>
       </div>
@@ -146,8 +131,8 @@
           v-custom-scroll
           v-observe-visibility="visibilityChanged"
         >
-          <h4>New Locations</h4>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+          <h4>New Gages</h4>
+          <p>Measurements of real-time flows are critical to the decision makers of the DRB. To support the continued need to better understand streamflow in various locations of the basin, 34 new NGWOS streamgages have been installed the last three years. </p>
         </div>
         <div
           id="details-2"
@@ -155,31 +140,31 @@
           v-observe-visibility="visibilityChanged"
         >
           <h4>Upgrades</h4>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+          <p>Equipment and communication in 28 stations has been upgraded to support the type of advanced monitoring made possible by direct two-way communication. Not only are near real-time measurements delivered from the field to the web with minimal delay, technicians can also alter the cadence of monitoring from a remote location, providing the potential to optimize data collection for current needs even during extreme events. </p>
         </div>
         <div
           id="details-3"
           v-custom-scroll
           v-observe-visibility="visibilityChanged"
         >
-          <h4>New Specific Conductance</h4>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+          <h4>Specific Conductance</h4>
+          <p>Keeping tabs on the evolving salinity issues in the headwaters and the mainstem of the Delaware River is important to understand changes to the location of the salt front and to better understand ecosystem health in streams that are impacted by road salting. Specific conductivity sensors measure a variable related to salinity – the ability of the water to conduct electricity – and relationships between conductivity and salinity can be used to fill in the picture of salt concentrations in 56 new locations in the DRB. </p>
         </div>
         <div
           id="details-4"
           v-custom-scroll
           v-observe-visibility="visibilityChanged"
         >
-          <h4>New Temperature Sensors</h4>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+          <h4>Temperature</h4>
+          <p>Water temperature is a key factor in the health of many aquatic organisms, and better, broader, and faster delivery of water temperature data can help plan reservoir releases and decide when to fish. New temperature sensors were added to 98 locations in the DRB. </p>
         </div>
         <div
           id="details-5"
           v-custom-scroll
           v-observe-visibility="visibilityChanged"
         >
-          <h4>New Cameras</h4>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+          <h4>Cameras</h4>
+          <p>Installations of 8 cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These new cameras open up new realms of science and data processing, and support USGS sharing more views of the dynamic lives of rivers and streams.</p>
         </div>
         <div
           id="details-6"
@@ -194,15 +179,6 @@
         <p>scroll</p>
       </div>
     </div>
-
-
-    <p />
-    <p>USGS monitoring at a more zoomed out level</p>
-    <p>Why it all matters</p>
-    <p>Chapters give details on cool uses and tools, this should highlight the collective effort and collaboration that makes all of that possible, back to the big picture from intro/roadmap</p>
-    <p>The USGS has made all these monitoring investments over the last ## years so that we can provide the best, most detailed data possible to the people who need to make water management decisions. It’s allowed us to _____.</p>
-    <p>[ Viz about the scale of monitoring...without being dots on a map?</p>
-    <p>are just the beginning of the next generation of water monitoring. Our monitoring stations also do _____, and the federal government has authorized ____ as a next step for pushing this forward</p>
     <hr>
   </section>
 </template>

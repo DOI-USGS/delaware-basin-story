@@ -67,7 +67,7 @@
 
 <script>
     export default {
-        name: 'SankeyTransition2',
+        name: 'SankeyTransition',
         methods: {
             visibilityChanged (isVisible, entry) {
                 const imageElement= document.getElementById('image-div-' + entry.target.id[entry.target.id.length -1]);
