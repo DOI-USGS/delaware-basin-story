@@ -5,46 +5,36 @@
     <div id="monitoring-big-numbers-container">
       <div id="monitoring-big-numbers-main-image-container">
         <img
+          id="big-number-image-base-master"
+          class="big-number-map-locations"
+          src="@/assets/monitoring/images/togggleableSVGsAndBase/basemap-01_1080.jpg"
+          alt="watercolor illustration of delaware river basin with monitoring locations marked"
+        >
+        <SVGNewGages
           id="big-number-image-base-1"
-          class="big-number-map-locations"
-          src="@/assets/monitoring/images/sampleMap_1.png"
-          alt="watercolor illustration of delaware river basin with monitoring locations marked"
-        >
-        <img
+          alt=""
+          hidden
+        />
+        <SVGEnhanced
           id="big-number-image-base-2"
-          class="big-number-map-locations"
-          src="@/assets/monitoring/images/sampleMap_2.png"
-          alt="watercolor illustration of delaware river basin with monitoring locations marked"
+          alt=""
           hidden
-        >
-        <img
+        />
+        <SVGConductance
           id="big-number-image-base-3"
-          class="big-number-map-locations"
-          src="@/assets/monitoring/images/sampleMap_3.png"
-          alt="watercolor illustration of delaware river basin with monitoring locations marked"
+          alt=""
           hidden
-        >
-        <img
+        />
+        <SVGTemperature
           id="big-number-image-base-4"
-          class="big-number-map-locations"
-          src="@/assets/monitoring/images/sampleMap_1.png"
-          alt="watercolor illustration of delaware river basin with monitoring locations marked"
+          alt=""
           hidden
-        >
-        <img
+        />
+        <SVGCameras
           id="big-number-image-base-5"
-          class="big-number-map-locations"
-          src="@/assets/monitoring/images/sampleMap_2.png"
-          alt="watercolor illustration of delaware river basin with monitoring locations marked"
+          alt=""
           hidden
-        >
-        <img
-          id="big-number-image-base-6"
-          class="big-number-map-locations"
-          src="@/assets/monitoring/images/sampleMap_3.png"
-          alt="watercolor illustration of delaware river basin with monitoring locations marked"
-          hidden
-        >
+        />
       </div>
       <div id="big-number-icons-container">
         <div
@@ -176,8 +166,21 @@
 </template>
 
 <script>
+  import SVGNewGages from "@/assets/monitoring/images/togggleableSVGsAndBase/new-01.svg"
+  import SVGEnhanced from "@/assets/monitoring/images/togggleableSVGsAndBase/enhanced-01.svg"
+  import SVGConductance from "@/assets/monitoring/images/togggleableSVGsAndBase/specificConductance-01.svg"
+  import SVGTemperature from "@/assets/monitoring/images/togggleableSVGsAndBase/temperature-01.svg"
+  import SVGCameras from "@/assets/monitoring/images/togggleableSVGsAndBase/cameras-01.svg"
+
     export default {
         name: 'Monitoring',
+        components: {
+            SVGNewGages,
+            SVGEnhanced,
+            SVGConductance,
+            SVGTemperature,
+            SVGCameras
+        },
         methods: {
             visibilityChanged (isVisible, entry) {
                 this.isVisible = isVisible;
@@ -201,106 +204,10 @@
 
 <style scoped lang="scss">
   /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
-    .glow {
-      font-size: 70px;
-      color: #ffffff;
-      text-align: center;
-      -webkit-animation: glow 1s ease-in-out infinite alternate;
-      -moz-animation: glow 1s ease-in-out infinite alternate;
-      animation: glow 1s ease-in-out infinite alternate;
-    }
-    @-webkit-keyframes glow {
-      from {
-        text-shadow: 0 0 10px #eeeeee, 0 0 20px #d46e21, 0 0 30px #d46e21, 0 0 40px #d46e21,
-        0 0 50px #e7cd73, 0 0 60px #e7cd73, 0 0 70px #e7cd73;
-      }
-      to {
-        text-shadow: 0 0 20px #eeeeee, 0 0 30px #fffc4d, 0 0 40px #fffc4d, 0 0 50px #fffc4d,
-        0 0 60px #fffc4d, 0 0 70px #fffc4d, 0 0 80px #fffc4d;
-      }
-    }
 
-    #monitoring-big-numbers-main-image-container {
-      position: relative;
-      flex: 1;
-      height: 467px;
-      width: 250px;
-      .big-number-map-locations {
-        position:absolute;
-      }
-    }
-
-    #monitoring {
-      #monitoring-big-numbers-container {
-        display: flex;
-        #big-number-image {
-          height: 467px;
-          width: 250px;
-          flex: 1;
-        }
-        #big-number-icons-container {
-          flex: 2;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          img {
-            height: 80px;
-            width: 80px;
-          }
-          .big-number-icon-container {
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            text-align: center;
-            color: white;
-            .big-number-number {
-              position: absolute;
-              top: 35%;
-              left: 50%;
-              transform: translate(-50%, -100%);
-              font-size: 1.9rem;
-              font-weight: bold;
-            }
-            .big-number-text {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-    #monitoring-details {
-      background-color: antiquewhite;
-      .before-enter {
-        opacity: 0;
-        transform: translateY(100px);
-        transition: all 2s ease-out;
-      }
-      .enter {
-        opacity: 1;
-        transform: translateY(0px);
-      }
-
-      .monitoring-details {
-        padding: 0.5rem;
-        width: 100%;
-        height: 10rem;
-        overflow-x: hidden;
-        overflow-y: auto;
-        text-align:justify;
-      }
-    }
-    .scroll-indicator {
-      p {
-        text-align: center;
-        margin: 0;
-      }
-    }
-  }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
-
     .glow {
       font-size: 70px;
       color: #ffffff;
@@ -329,10 +236,12 @@
         position:absolute;
       }
     }
-
+#big-number-image-base-master {
+  z-index: -1;
+}
     #monitoring {
         #monitoring-big-numbers-container {
-        background-color: antiquewhite;
+
         display: flex;
         #big-number-icons-container {
           flex: 2;
@@ -373,7 +282,7 @@
     }
 
     #monitoring-details {
-      background-color: antiquewhite;
+      background-color: #eeeeee;
       .before-enter {
         opacity: 0;
         transform: translateY(100px);
