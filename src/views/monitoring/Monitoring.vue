@@ -242,6 +242,7 @@
     #monitoring {
         #monitoring-big-numbers-container {
 
+
         display: flex;
         #big-number-icons-container {
           flex: 2;
@@ -263,6 +264,7 @@
               top: 35%;
               left: 50%;
               transform: translate(-50%, -100%);
+              font-family: chantal, sans-serif;
               font-size: 1.9rem;
               font-weight: bold;
             }
