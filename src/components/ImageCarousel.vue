@@ -8,7 +8,7 @@
     <slide class="slide">
       <div class="slider-image-container">
         <img
-          src="@/assets/usesNeedsConflicts/images/imageSlider/slider_01.jpg"
+          src="@/assets/components/imageCarousel/images/slider_01.jpg"
           alt=""
         >
         <p>great information here</p>
@@ -17,7 +17,7 @@
     <slide class="slide">
       <div class="slider-image-container">
         <img
-          src="@/assets/usesNeedsConflicts/images/imageSlider/slider_02.jpg"
+          src="@/assets/components/imageCarousel/images//slider_02.jpg"
           alt=""
         >
         <p>great information here</p>
@@ -26,7 +26,7 @@
     <slide class="slide">
       <div class="slider-image-container">
         <img
-          src="@/assets/usesNeedsConflicts/images/imageSlider/slider_03.jpg"
+          src="@/assets/components/imageCarousel/images//slider_03.jpg"
           alt=""
         >
         <p>great information here</p>
@@ -35,7 +35,7 @@
     <slide class="slide">
       <div class="slider-image-container">
         <img
-          src="@/assets/usesNeedsConflicts/images/imageSlider/slider_04.jpg"
+          src="@/assets/components/imageCarousel/images/slider_04.jpg"
           alt=""
         >
         <p>great information here</p>
