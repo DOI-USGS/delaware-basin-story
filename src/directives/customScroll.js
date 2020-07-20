@@ -5,7 +5,7 @@ const customScrollObserver = new IntersectionObserver(
                     entry.target.classList.add('enter');
                     customScrollObserver.unobserve(entry.target);
                 }
-            }, { threshold: [0.9] });
+            }, { threshold: [0.3] });
         }
 )
 export default {

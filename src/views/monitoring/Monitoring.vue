@@ -1,7 +1,5 @@
 <template>
   <section id="monitoring">
-    <h2>Place holder for Monitoring</h2>
-    <p>The investments in water monitoring are diverse and numerous. Each new piece of technology helps paint a clearer picture of local water dynamics in the river, including assessing current water availability and water quality in hundreds of locations throughout the DRB.  </p>
     <div id="monitoring-big-numbers-container">
       <div id="monitoring-big-numbers-main-image-container">
         <img
@@ -125,6 +123,7 @@
           id="details-1"
           v-custom-scroll
           v-observe-visibility="visibilityChanged"
+          class="single-detail"
         >
           <h4>New Gages</h4>
           <p>Measurements of real-time flows are critical to the decision makers of the DRB. To support the continued need to better understand streamflow in various locations of the basin, 34 new NGWOS streamgages have been installed the last three years. </p>
@@ -133,6 +132,7 @@
           id="details-2"
           v-custom-scroll
           v-observe-visibility="visibilityChanged"
+          class="single-detail"
         >
           <h4>Upgrades</h4>
           <p>Equipment and communication in 28 stations has been upgraded to support the type of advanced monitoring made possible by direct two-way communication. Not only are near real-time measurements delivered from the field to the web with minimal delay, technicians can also alter the cadence of monitoring from a remote location, providing the potential to optimize data collection for current needs even during extreme events. </p>
@@ -141,6 +141,7 @@
           id="details-3"
           v-custom-scroll
           v-observe-visibility="visibilityChanged"
+          class="single-detail"
         >
           <h4>Specific Conductance</h4>
           <p>Keeping tabs on the evolving salinity issues in the headwaters and the mainstem of the Delaware River is important to understand changes to the location of the salt front and to better understand ecosystem health in streams that are impacted by road salting. Specific conductivity sensors measure a variable related to salinity – the ability of the water to conduct electricity – and relationships between conductivity and salinity can be used to fill in the picture of salt concentrations in 56 new locations in the DRB. </p>
@@ -149,6 +150,7 @@
           id="details-4"
           v-custom-scroll
           v-observe-visibility="visibilityChanged"
+          class="single-detail"
         >
           <h4>Temperature</h4>
           <p>Water temperature is a key factor in the health of many aquatic organisms, and better, broader, and faster delivery of water temperature data can help plan reservoir releases and decide when to fish. New temperature sensors were added to 98 locations in the DRB. </p>
@@ -157,6 +159,7 @@
           id="details-5"
           v-custom-scroll
           v-observe-visibility="visibilityChanged"
+          class="single-detail"
         >
           <h4>Cameras</h4>
           <p>Installations of 8 cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These new cameras open up new realms of science and data processing, and support USGS sharing more views of the dynamic lives of rivers and streams.</p>
@@ -242,18 +245,17 @@
       }
     }
 #big-number-image-base {
+  position: relative;
   z-index: 1;
 }
 .big-number-map-locations-svg {
+  position: absolute;
   z-index: 2;
 }
     #monitoring {
-
         #monitoring-big-numbers-container {
-          background-color: red;
-          height: 1080px;
-
-        display: flex;
+          height: 623px;
+          display: flex;
         #big-number-icons-container {
           flex: 2;
           display: flex;
@@ -294,26 +296,31 @@
     }
 
     #monitoring-details {
-      background-color: #eeeeee;
       .before-enter {
         opacity: 0;
-        transform: translateY(100px);
         transition: all 2s ease-out;
       }
 
       .enter {
         opacity: 1;
-        transform: translateY(0px);
       }
 
       .monitoring-details {
-        padding: 0.5rem;
-        width: 100%;
-        height: 10rem;
+        padding-bottom: 10em;
+        max-width: 45em;
+        margin: 0 auto;
+        height: 150px;
+        font-size: 0.9rem;
         overflow-y: scroll;
         text-align: justify;
         -ms-overflow-style: none; /* no scroll bar for IE and Edge */
         scrollbar-width: none; /* no scroll bar for Firefox */
+        p {
+          display: block;
+          max-width: 55em;
+          margin: 0 auto;
+          padding-bottom: 10em;
+        }
       }
 
       /* no scroll bar for Chrome, Safari and Opera */
