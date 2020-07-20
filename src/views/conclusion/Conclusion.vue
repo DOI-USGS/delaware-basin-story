@@ -1,5 +1,5 @@
 <template>
-  <section id="conclusion">
+  <section id="outro">
     <div class="inking">
       <img
         id="watercolor"
@@ -7,6 +7,7 @@
         alt="watercolor map of delaware river basin"
       >
       <svg
+        v-if="isSectionInView"
         id="Annotations"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 2520 1656"
@@ -67,15 +68,15 @@
             <g class="sketch-black">
               <path
                 d="M580.76,841.86l-1,8.8c6.49-.16,13.37-.56,20.62-1.28a272,272,0,0,0,31.44-5"
-                class="a, animated-conclusion-svg"
+                class="a"
               />
               <path
                 d="M454.16,745.14l.7,8.14q-8.55-.85-17.53-2.07c-9.78-1.32-19.14-2.88-28.05-4.6"
-                class="a, animated-conclusion-svg"
+                class="a"
               />
               <path
                 d="M423.51,701.73a11.63,11.63,0,0,1,.39,2.41,17.76,17.76,0,0,1-2.27,8.6h0l-2.08,2.19c-3.11.06-6.29.07-9.55,0a234.75,234.75,0,0,1-29.94-2.57"
-                class="a, animated-conclusion-svg"
+                class="a"
               />
               <path
                 d="M540.68,918.66l1,3.22-.84,9c-6.46,1.69-13.33,3.3-20.58,4.73-8.65,1.72-16.89,3-24.65,4"
@@ -519,8 +520,8 @@
                 class="b"
                 d="M544 893a19 19 0 010 3 7 7 0 01-1 2 5 5 0 01-2 2 6 6 0 01-2 1 6 6 0 01-5-3 6 6 0 01-2-2 6 6 0 010-3 11 11 0 014-6 5 5 0 013-1 5 5 0 013 1 4 4 0 011 2 7 7 0 011 2v2z"
               />
-              <path
-                class="w"
+              <pathc
+                lass="w"
                 d="M544 893a3 3 0 00-1-1 3 3 0 00-1-1l-3-1a6 6 0 00-2-1 3 3 0 00-1 1 3 3 0 00-1 1 3 3 0 000 2 5 5 0 001 3 5 5 0 003 0 6 6 0 001 0 8 8 0 002 0 3 3 0 001-1 3 3 0 001-2z"
                 fill="#f4f7f9"
               />
@@ -1711,9 +1712,9 @@
       </svg>
     </div>
     <div
-        id="scroll-target"
-        v-observe-visibility="visibilityChanged"
-    ></div>
+      id="scroll-target"
+      v-observe-visibility="visibilityChanged"
+    />
   </section>
 </template>
 
@@ -1722,38 +1723,15 @@
         name: 'Conclusion',
         data() {
             return {
-
+                isSectionInView: false
             }
         },
         methods: {
             visibilityChanged (isVisible, entry) {
                 this.isVisible = isVisible;
-                const reservoirSVG = document.getElementById('Reservoirs');
-                const EcomapperSVG = document.getElementById('Ecomapper');
-                const Road_SaltSVG = document.getElementById('Road_Salt');
-                const GagesSVG = document.getElementById('Gages');
-                const NYCSVG = document.getElementById('NYC');
-                const MusselsSVG = document.getElementById('Mussels');
-                const TroutSVG = document.getElementById('Trout');
 
                 if (isVisible === true) {
-console.log('run animation')
-                    reservoirSVG.classList.remove('paused');
-                    EcomapperSVG.classList.remove('paused');
-                    Road_SaltSVG.classList.remove('paused');
-                    GagesSVG.classList.remove('paused');
-                    NYCSVG.classList.remove('paused');
-                    MusselsSVG.classList.remove('paused');
-                    TroutSVG.classList.remove('paused');
-                } else if (isVisible === false) {
-console.log('pause animation')
-                    reservoirSVG.classList.add('paused');
-                    EcomapperSVG.classList.add('paused');
-                    Road_SaltSVG.classList.add('paused');
-                    GagesSVG.classList.add('paused');
-                    NYCSVG.classList.add('paused');
-                    MusselsSVG.classList.add('paused');
-                    TroutSVG.classList.add('paused');
+                    this.isSectionInView = true;
                 }
             }
         }
@@ -1957,8 +1935,6 @@ console.log('pause animation')
         -webkit-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
         -moz-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
         -o-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
-        -webkit-animation-play-state: paused;
-        animation-play-state: paused;
       }
       .b{
         $ord-group: 2;
@@ -1966,8 +1942,6 @@ console.log('pause animation')
         -webkit-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
         -moz-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
         -o-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
-        -webkit-animation-play-state: paused;
-        animation-play-state: paused;
       }
       .c{
         $ord-group: 3;
@@ -1975,8 +1949,6 @@ console.log('pause animation')
         -webkit-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
         -moz-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
         -o-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
-        -webkit-animation-play-state: paused;
-        animation-play-state: paused;
       }
       .g{
         $ord-group: 4;
@@ -1984,8 +1956,6 @@ console.log('pause animation')
         -webkit-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
         -moz-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
         -o-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
-        -webkit-animation-play-state: paused;
-        animation-play-state: paused;
       }
     }
     .sketch-white {
