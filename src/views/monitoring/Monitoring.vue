@@ -5,33 +5,38 @@
     <div id="monitoring-big-numbers-container">
       <div id="monitoring-big-numbers-main-image-container">
         <img
-          id="big-number-image-base-master"
+          id="big-number-image-base"
           class="big-number-map-locations"
           src="@/assets/monitoring/images/togggleableSVGsAndBase/basemap-01_1080.jpg"
           alt="watercolor illustration of delaware river basin with monitoring locations marked"
         >
         <SVGNewGages
-          id="big-number-image-base-1"
+          id="big-number-svg-1"
+          class="big-number-map-locations-svg"
           alt=""
           hidden
         />
         <SVGEnhanced
-          id="big-number-image-base-2"
+          id="big-number-svg-2"
+          class="big-number-map-locations-svg"
           alt=""
           hidden
         />
         <SVGConductance
-          id="big-number-image-base-3"
+          id="big-number-svg-3"
+          class="big-number-map-locations-svg"
           alt=""
           hidden
         />
         <SVGTemperature
-          id="big-number-image-base-4"
+          id="big-number-svg-4"
+          class="big-number-map-locations-svg"
           alt=""
           hidden
         />
         <SVGCameras
-          id="big-number-image-base-5"
+          id="big-number-svg-5"
+          class="big-number-map-locations-svg"
           alt=""
           hidden
         />
@@ -185,7 +190,7 @@
             visibilityChanged (isVisible, entry) {
                 this.isVisible = isVisible;
                 const numberIconTargetId = 'list-' + entry.target.id[entry.target.id.length -1];
-                const mapTargetId = 'big-number-image-base-' + entry.target.id[entry.target.id.length -1];
+                const mapTargetId = 'big-number-svg-' + entry.target.id[entry.target.id.length -1];
                 const numberIconTargetElement = document.getElementById(numberIconTargetId);
                 const mapTargetElement = document.getElementById(mapTargetId);
 
@@ -236,12 +241,17 @@
         position:absolute;
       }
     }
-#big-number-image-base-master {
-  z-index: -1;
+#big-number-image-base {
+  z-index: 1;
+}
+.big-number-map-locations-svg {
+  z-index: 2;
 }
     #monitoring {
-        #monitoring-big-numbers-container {
 
+        #monitoring-big-numbers-container {
+          background-color: red;
+          height: 1080px;
 
         display: flex;
         #big-number-icons-container {
