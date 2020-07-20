@@ -1740,11 +1740,6 @@
 
 
 <style scoped lang="scss">
-  .paused {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-  }
-
   .inking {
     position: sticky;
     display: inline-block;
