@@ -72,8 +72,7 @@
   body {
     margin: 0;
     padding: 0;
-    background-image: url($wrinkledPaper);
-    background-color: rgba(238, 235, 231, 0.3);
+    background-color: white;
   }
   #app {
     p {

@@ -1,5 +1,8 @@
 <template>
-  <section id="monitoring">
+  <section
+      id="monitoring"
+      :style="{ 'height' : windowHeight }"
+  >
     <div id="monitoring-big-numbers-container">
       <div id="monitoring-big-numbers-main-image-container">
         <img
@@ -188,6 +191,11 @@
             SVGConductance,
             SVGTemperature,
             SVGCameras
+        },
+        computed: {
+            windowHeight: function () {
+                return Number(this.$store.state.windowHeight) + 'px';
+            }
         },
         methods: {
             visibilityChanged (isVisible, entry) {

@@ -1,5 +1,7 @@
 <template>
-  <section id="salinity-sea">
+  <section
+      id="salinity-sea"
+  >
     <div class="row">
       <div class="column right">
         <div class="container-section-title">
@@ -12,9 +14,19 @@
           </h1>
         </div>
         <div class="lefttext">
-          <p>As freshwater spills from the river into the saltier, ocean-influenced waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the intruding ocean. The bounds of that wedge – the “salt front” – migrate up and down the river channel over the daily cycle of ocean tides, the seasonal cycle of lower and higher river flows, and the multi-year fluctuations into and out of droughts. </p>
-          <p>While these natural variations usually pose no problems, sea level rise is expected to push the salt front so far inland – especially during droughts – that water at the major Trenton, NJ intake could be contaminated. Salty water corrodes surface water intake pipes, raises the cost of drinking water treatment, and is potentially toxic to aquatic plants and fish. </p>
-          <p>Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. Remember those Supreme-Court-mandated flow targets at Montague and Trenton? One key motivation for those targets is to keep pressing the salt front toward the ocean to protect our current uses of freshwater in the lower Basin. Good data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location. </p>
+          <div class="sea-salt-text-section">
+            <h3>The Salt Wedge</h3>
+            <p>As freshwater spills from the river into the saltier, ocean-influenced waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the intruding ocean. The bounds of that wedge – the “salt front” – migrate up and down the river channel over the daily cycle of ocean tides, the seasonal cycle of lower and higher river flows, and the multi-year fluctuations into and out of droughts. </p>
+          </div>
+          <div
+            id="sea-salt-scroll-target"
+            class="sea-salt-text-section"
+            v-observe-visibility="visibilityChanged"
+          >
+            <h3>Sea level Rise</h3>
+            <p>While these natural variations usually pose no problems, sea level rise is expected to push the salt front so far inland – especially during droughts – that water at the major Trenton, NJ intake could be contaminated. Salty water corrodes surface water intake pipes, raises the cost of drinking water treatment, and is potentially toxic to aquatic plants and fish. </p>
+            <p>Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. Remember those Supreme-Court-mandated flow targets at Montague and Trenton? One key motivation for those targets is to keep pressing the salt front toward the ocean to protect our current uses of freshwater in the lower Basin. Good data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location. </p>
+          </div>
         </div>
       </div>
       <div class="column left">
@@ -102,6 +114,7 @@
           </svg>
           <svg
             id="sealevelrise"
+            v-if="isSectionInView"
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 2284.73 1459"
@@ -306,11 +319,7 @@
                 d="M1312.2,337.84c-7.84-4.57-15.59-4.71-19.07-1-.43.46-2.28,2.44-1.87,4.69,1.11,6.18,17.51,5.11,18.87,11.31.58,2.67-1.85,5.62-4,7-4.34,2.78-9.35.31-9.62.17"
                 style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 5px"
               />
-
             </g>
-
-
-
           </svg>
         </div>
       </div>
@@ -323,13 +332,27 @@
         name: 'SalinitySea',
         data() {
             return {
+                isSectionInView: false
+            }
+        },
+        methods: {
+            visibilityChanged(isVisible, entry) {
+                this.isVisible = isVisible;
 
+                if (isVisible === true) {
+                    this.isSectionInView = true;
+                } else if (isVisible !== true) {
+                    this.isSectionInView = false;
+                }
             }
         }
     }
 </script>
 
 <style scoped lang="scss">
+  .sea-salt-text-section {
+    padding-bottom: 5rem;
+  }
 /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     section {
@@ -435,10 +458,17 @@ h2, h3, h4, h5, h6 {
 }
 
 .lefttext {
-    margin: 10% 10% 0% 10%;
+  margin: 10% 10% 0 10%;
+  height: 15rem;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* no scroll bar for IE and Edge */
+  scrollbar-width: none; /* no scroll bar for Firefox */
 }
+  .lefttext::-webkit-scrollbar {
+    display: none;
+  }
 .header {
-    margin: 1% 10% 0% 10%;
+    margin: 1% 10% 0 10%;
     width: 80%;
     position: sticky;
     top: 0;
@@ -491,18 +521,17 @@ h2, h3, h4, h5, h6 {
 
 /* lines for sea level predictions */
 #ft1 {
-
-    Animation: write300 .4s ease-in-out 12s forwards;
-    -webkit-animation: write300 .4s ease-in-out 12s forwards;
-    -moz-animaion: write300 .4s ease-in-out 12s forwards;
-    -o-animation: write300 .4s ease-in-out 12s forwards;
+    Animation: write300 .4s ease-in-out forwards;
+    -webkit-animation: write300 .4s ease-in-out  forwards;
+    -moz-animaion: write300 .4s ease-in-out  forwards;
+    -o-animation: write300 .4s ease-in-out  forwards;
 }
 
 #ft2 {
-    Animation: write300 .4s ease-in-out 12.2s forwards;
-    -webkit-animation: write300 .4s ease-in-out 12.2s forwards;
-    -moz-animaion: write300 .4s ease-in-out 12.2s forwards;
-    -o-animation: write300 .4s ease-in-out 12.2s forwards;
+    Animation: write300 .4s ease-in-out forwards;
+    -webkit-animation: write300 .4s ease-in-out forwards;
+    -moz-animaion: write300 .4s ease-in-out  forwards;
+    -o-animation: write300 .4s ease-in-out  forwards;
 }
 
 #ft3 {
