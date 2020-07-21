@@ -261,6 +261,8 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
+          font-family: chantal, sans-serif;
+          font-weight: bold;
           img {
             height: 80px;
             width: 80px;
@@ -282,13 +284,14 @@
             }
             .big-number-text {
               color: black;
+              font-family: chantal, sans-serif;
+              font-size: 1rem;
+              font-weight: bold;
               position: absolute;
               text-align: left;
               top: 35%;
-              left: 60%;
+              left: 55%;
               transform: translate(0%, -60%);
-              font-size: 0.9rem;
-              font-weight: bold;
             }
           }
         }

@@ -7,6 +7,7 @@
         alt="watercolor map of delaware river basin"
       >
       <svg
+        v-if="isSectionInView"
         id="Annotations"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 2520 1656"
@@ -205,7 +206,7 @@
             />
             <path
               d="M570 1358a8 8 0 00-1 3 9 9 0 00-1 5h1a8 8 0 01-1-2 9 9 0 013-6M556 1356a8 8 0 00-2 3 9 9 0 000 5h0a8 8 0 010-2 9 9 0 012-6M587 1366a1 1 0 00-1 0 1 1 0 000 1 1 1 0 001 1l1-1a1 1 0 000-1 1 1 0 00-2 0 1 1 0 00-1 1 2 2 0 001 1 2 2 0 002 0v-1a2 2 0 000-2 2 2 0 00-2-1 2 2 0 00-1 2 2 2 0 000 2 2 2 0 002 1"
-              cclass="sketch-fine"
+              class="sketch-fine"
             />
           </g>
           <g
@@ -1710,15 +1711,28 @@
           <div class="box" /></g>
       </svg>
     </div>
+    <div
+      id="scroll-target"
+      v-observe-visibility="visibilityChanged"
+    />
   </section>
 </template>
 
 <script>
     export default {
-        name: 'Outro',
+        name: 'Conclusion',
         data() {
             return {
+                isSectionInView: false
+            }
+        },
+        methods: {
+            visibilityChanged (isVisible, entry) {
+                this.isVisible = isVisible;
 
+                if (isVisible === true) {
+                    this.isSectionInView = true;
+                }
             }
         }
     }
@@ -1726,7 +1740,6 @@
 
 
 <style scoped lang="scss">
-
   .inking {
     position: sticky;
     display: inline-block;
