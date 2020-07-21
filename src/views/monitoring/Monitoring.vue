@@ -1,7 +1,7 @@
 <template>
   <section
-      id="monitoring"
-      :style="{ 'height' : windowHeight }"
+    id="monitoring"
+    :style="{ 'height' : windowHeight }"
   >
     <div id="monitoring-big-numbers-container">
       <div id="monitoring-big-numbers-main-image-container">

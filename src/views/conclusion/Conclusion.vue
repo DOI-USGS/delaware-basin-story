@@ -1,7 +1,7 @@
 <template>
   <section
-      id="conclusion"
-      :style="{ 'height' : windowHeight }"
+    id="conclusion"
+    :style="{ 'height' : windowHeight }"
   >
     <div class="inking">
       <img

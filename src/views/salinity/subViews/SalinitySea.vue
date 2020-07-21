@@ -1,6 +1,6 @@
 <template>
   <section
-      id="salinity-sea"
+    id="salinity-sea"
   >
     <div class="row">
       <div class="column right">
@@ -20,8 +20,8 @@
           </div>
           <div
             id="sea-salt-scroll-target"
-            class="sea-salt-text-section"
             v-observe-visibility="visibilityChanged"
+            class="sea-salt-text-section"
           >
             <h3>Sea level Rise</h3>
             <p>While these natural variations usually pose no problems, sea level rise is expected to push the salt front so far inland – especially during droughts – that water at the major Trenton, NJ intake could be contaminated. Salty water corrodes surface water intake pipes, raises the cost of drinking water treatment, and is potentially toxic to aquatic plants and fish. </p>
@@ -113,8 +113,8 @@
             </g>
           </svg>
           <svg
-            id="sealevelrise"
             v-if="isSectionInView"
+            id="sealevelrise"
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 2284.73 1459"
