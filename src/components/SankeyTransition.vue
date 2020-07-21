@@ -7,7 +7,7 @@
       >
         <img
           id="sankey-image-1"
-          src="@/assets/components/sankeyTransition/images/sankey_1.png"
+          src="@/assets/components/sankeyTransition/images/sankeyNormal1080.png"
           alt=""
         >
       </div>
@@ -17,7 +17,7 @@
       >
         <img
           id="sankey-image-2"
-          src="@/assets/components/sankeyTransition/images/sankey_2.png"
+          src="@/assets/components/sankeyTransition/images/sankeyDrought1080.png"
           alt=""
         >
       </div>
@@ -27,7 +27,7 @@
       >
         <img
           id="sankey-image-3"
-          src="@/assets/components/sankeyTransition/images/sankey_3.png"
+          src="@/assets/components/sankeyTransition/images/sankeyFlowAdded1080.png"
           alt=""
         >
       </div>

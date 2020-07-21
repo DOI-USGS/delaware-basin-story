@@ -11,7 +11,6 @@
           src="@/assets/components/imageCarousel/images/slider_01.jpg"
           alt=""
         >
-
       </div>
     </slide>
 
@@ -21,7 +20,6 @@
           src="@/assets/components/imageCarousel/images//slider_02.jpg"
           alt=""
         >
-
       </div>
     </slide>
 
@@ -31,7 +29,6 @@
           src="@/assets/components/imageCarousel/images//slider_03.jpg"
           alt=""
         >
-
       </div>
     </slide>
 

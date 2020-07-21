@@ -1,8 +1,5 @@
 <template>
-  <section
-    id="monitoring"
-    :style="{ 'height' : windowHeight }"
-  >
+  <section id="monitoring">
     <div id="monitoring-big-numbers-container">
       <div id="monitoring-big-numbers-main-image-container">
         <img
@@ -220,14 +217,9 @@
 </script>
 
 <style scoped lang="scss">
-  monitoring {
-    position: sticky;
-  }
   h4 {
     font-family: chantal, sans-serif;
   }
-
-
 
     .glow {
       font-size: 70px;
