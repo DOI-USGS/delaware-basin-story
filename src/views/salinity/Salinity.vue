@@ -1,6 +1,9 @@
 <template>
   <div id="salinity">
-    <sea />
+    <sea
+      id="sea-salt-component"
+      class="sticky"
+    />
     <road />
 
     <hr>
@@ -27,7 +30,9 @@
 
 <style scoped lang="scss">
   #salinity {
+    #sea-salt-component {
 
+    }
   }
 
 </style>
