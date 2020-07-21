@@ -1,7 +1,5 @@
 <template>
   <div id="salinity">
-    <h2>Place holder for Salinity</h2>
-    <dichotomy />
     <sea />
     <road />
 
@@ -10,14 +8,12 @@
 </template>
 
 <script>
-  import dichotomy from "./subViews/SalinityDichcotomy"
   import sea from "./subViews/SalinitySea"
   import road from "./subViews/SalinityRoad"
 
     export default {
         name: 'Salinity',
         components: {
-            dichotomy,
             sea,
             road
         },
@@ -30,5 +26,8 @@
 </script>
 
 <style scoped lang="scss">
+  #salinity {
+
+  }
 
 </style>

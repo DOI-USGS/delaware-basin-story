@@ -1,5 +1,8 @@
 <template>
-  <section id="outro">
+  <section
+    id="conclusion"
+    :style="{ 'height' : windowHeight }"
+  >
     <div class="inking">
       <img
         id="watercolor"
@@ -520,7 +523,7 @@
                 class="b"
                 d="M544 893a19 19 0 010 3 7 7 0 01-1 2 5 5 0 01-2 2 6 6 0 01-2 1 6 6 0 01-5-3 6 6 0 01-2-2 6 6 0 010-3 11 11 0 014-6 5 5 0 013-1 5 5 0 013 1 4 4 0 011 2 7 7 0 011 2v2z"
               />
-              <pathc
+              <path
                 lass="w"
                 d="M544 893a3 3 0 00-1-1 3 3 0 00-1-1l-3-1a6 6 0 00-2-1 3 3 0 00-1 1 3 3 0 00-1 1 3 3 0 000 2 5 5 0 001 3 5 5 0 003 0 6 6 0 001 0 8 8 0 002 0 3 3 0 001-1 3 3 0 001-2z"
                 fill="#f4f7f9"
@@ -1708,7 +1711,8 @@
             </g>
           </g>
 
-          <div class="box" /></g>
+          <div class="box" />
+        </g>
       </svg>
     </div>
     <div
@@ -1726,12 +1730,19 @@
                 isSectionInView: false
             }
         },
+        computed: {
+            windowHeight: function () {
+                return Number(this.$store.state.windowHeight) + 'px';
+            }
+        },
         methods: {
-            visibilityChanged (isVisible, entry) {
+            visibilityChanged(isVisible, entry) {
                 this.isVisible = isVisible;
 
                 if (isVisible === true) {
                     this.isSectionInView = true;
+                } else if (isVisible !== true) {
+                    this.isSectionInView = false;
                 }
             }
         }
