@@ -7,7 +7,7 @@
       >
         <img
           id="sankey-image-1"
-          src="@/assets/usesNeedsConflicts/images/sankey_1.png"
+          src="@/assets/components/sankeyTransition/images/sankey_1.png"
           alt=""
         >
       </div>
@@ -17,7 +17,7 @@
       >
         <img
           id="sankey-image-2"
-          src="@/assets/usesNeedsConflicts/images/sankey_2.png"
+          src="@/assets/components/sankeyTransition/images/sankey_2.png"
           alt=""
         >
       </div>
@@ -27,7 +27,7 @@
       >
         <img
           id="sankey-image-3"
-          src="@/assets/usesNeedsConflicts/images/sankey_3.png"
+          src="@/assets/components/sankeyTransition/images/sankey_3.png"
           alt=""
         >
       </div>
@@ -87,7 +87,7 @@
     max-width: 65em;
     max-height: 733px;
     margin: 0 auto;
-    color: white;
+    color: black;
     width: 100%;
     #sankey-image-container {
       justify-content: center;
@@ -128,8 +128,6 @@
       text-align: justify;
       -ms-overflow-style: none; /* no scroll bar for IE and Edge */
       scrollbar-width: none; /* no scroll bar for Firefox */
-      background: rgb(2,0,36);
-      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
       .sankey-text-and-title {
         padding: 10em 2em 15em 2em;
       }

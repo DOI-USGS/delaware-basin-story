@@ -156,7 +156,7 @@
           class="single-detail"
         >
           <h4>Temperature</h4>
-          <p>Water temperature is a key factor in the health of many aquatic organisms, and better, broader, and faster delivery of water temperature data can help plan reservoir releases and decide when to fish. New temperature sensors were added to 98 locations in the DRB. </p>
+          <p>Water temperature is a key factor in the health of many aquatic organisms, and better, broader, and faster delivery of water temperature data can help plan reservoir releases and decide when to fish. New temperature sensors were added to 98 locations in the DRB.</p>
         </div>
         <div
           id="details-5"
@@ -166,6 +166,7 @@
         >
           <h4>Cameras</h4>
           <p>Installations of 8 cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These new cameras open up new realms of science and data processing, and support USGS sharing more views of the dynamic lives of rivers and streams.</p>
+          <div id="monitoring-scroll-out-target" />
         </div>
       </div>
       <div class="scroll-indicator">
@@ -219,11 +220,15 @@
 </script>
 
 <style scoped lang="scss">
-  /* Extra small devices (phones, 600px and down) */
+  monitoring {
+    position: sticky;
+  }
+  h4 {
+    font-family: chantal, sans-serif;
+  }
 
 
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+
     .glow {
       font-size: 70px;
       color: #ffffff;
@@ -345,7 +350,11 @@
         margin: 0;
       }
     }
-  }
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 599px) {}
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {}
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {}

@@ -24,7 +24,7 @@
 
 <style scoped lang="scss">
   #uses-needs-conflicts {
-    background-color: rgba(229, 229, 229, 0.3);
+    background-color: white;
   }
 
   #image-slider {
