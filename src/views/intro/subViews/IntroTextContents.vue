@@ -11,5 +11,11 @@
 </script>
 
 <style scoped lang="scss">
-
+#intro-text-content {
+  p {
+    margin: 0 auto;
+    width: 60rem;
+    padding: 2em;
+  }
+}
 </style>

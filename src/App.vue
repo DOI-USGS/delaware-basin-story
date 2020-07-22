@@ -8,7 +8,7 @@
     <router-view
       v-if="!isInternetExplorer & checkIfUSGSHeaderIsRendered"
     />
-    <FooterUSGS v-if="checkIfIntroSectionIsRendered || isInternetExplorer" />
+    <FooterUSGS v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfMonitoringSection || isInternetExplorer" />
   </div>
 </template>
 
@@ -42,6 +42,9 @@
             },
             checkTypeOfEnv() {
               return process.env.VUE_APP_TIER
+            },
+            checkIfUserAtEndOfMonitoringSection: function () {
+                return this.$store.state.isUserAtEndOfMonitoringSection
             }
         },
         created() {
@@ -66,8 +69,6 @@
 <style lang="scss">
   @import url("https://use.typekit.net/jja8kth.css");
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-  $wrinkledPaper: '~@/assets/app/images/backgroundPaperTexture.jpg';
-
 
   body {
     margin: 0;

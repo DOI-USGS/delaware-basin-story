@@ -1,7 +1,6 @@
 <template>
   <section
     id="conclusion"
-    :style="{ 'height' : windowHeight }"
   >
     <div class="inking">
       <img
@@ -1728,11 +1727,6 @@
         data() {
             return {
                 isSectionInView: false
-            }
-        },
-        computed: {
-            windowHeight: function () {
-                return Number(this.$store.state.windowHeight) + 'px';
             }
         },
         methods: {
