@@ -7,6 +7,8 @@ export const store = new Vuex.Store({
     state: {
         usgsHeaderRendered: false,
         introSectionRendered: false,
+        isUserAtEndOfMonitoringSection: false,
+        isUserAtEndOfSankeySection: false,
         windowWidth: 0,
         windowHeight: 0,
         uswdsBannerHeight: 0,
@@ -14,22 +16,28 @@ export const store = new Vuex.Store({
     },
     mutations: {
         changeBooleanStateWhenUSGSHeaderRendered(state) {
-            state.usgsHeaderRendered = true
+            state.usgsHeaderRendered = true;
         },
         changeBooleanStateWhenIntroSectionRendered(state) {
-            state.introSectionRendered = true
+            state.introSectionRendered = true;
         },
-        recordWindowWidth (state, payload) {
-            state.windowWidth = payload
+        changeBooleanStateForEndOfMonitoringSection(state, payload) {
+            state.isUserAtEndOfMonitoringSection = payload;
         },
-        recordWindowHeight (state, payload) {
-            state.windowHeight = payload
+        changeBooleanStateForIsUserAtEndOfSankeySection(state, payload) {
+            state.isUserAtEndOfSankeySection = payload;
         },
-        recordUSWDSBannerHeight (state, payload) {
-            state.uswdsBannerHeight = payload
+        recordWindowWidth(state, payload) {
+            state.windowWidth = payload;
         },
-        recordWarningHeight (state, payload) {
-            state.warningHeight = payload
+        recordWindowHeight(state, payload) {
+            state.windowHeight = payload;
+        },
+        recordUSWDSBannerHeight(state, payload) {
+            state.uswdsBannerHeight = payload;
+        },
+        recordWarningHeight(state, payload) {
+            state.warningHeight = payload;
         }
     }
 });

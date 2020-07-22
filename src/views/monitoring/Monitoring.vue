@@ -165,9 +165,10 @@
           <p>Installations of 8 cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These new cameras open up new realms of science and data processing, and support USGS sharing more views of the dynamic lives of rivers and streams.</p>
           <div id="monitoring-scroll-out-target" />
         </div>
-      </div>
-      <div class="scroll-indicator">
-        <p>scroll</p>
+        <div
+          id="monitoring-load-next-section-target"
+          v-observe-visibility="changeStateForIsUserAtEndOfMonitoringSection"
+        />
       </div>
     </div>
     <hr>
@@ -211,15 +212,19 @@
                     numberIconTargetElement.classList.remove('glow');
                     mapTargetElement.setAttribute('hidden', 'true');
                 }
+            },
+            changeStateForIsUserAtEndOfMonitoringSection(isVisible, entry) {
+                this.isVisible = isVisible;
+                if (this.isVisible === true) {
+                    this.$store.commit('changeBooleanStateForEndOfMonitoringSection', true);
+                }
             }
         }
     }
 </script>
 
 <style scoped lang="scss">
-  h4 {
-    font-family: chantal, sans-serif;
-  }
+
 
     .glow {
       font-size: 70px;
@@ -258,6 +263,7 @@
   z-index: 2;
 }
     #monitoring {
+
         #monitoring-big-numbers-container {
           height: 623px;
           display: flex;
@@ -329,6 +335,10 @@
           margin: 0 auto;
           padding-bottom: 10em;
         }
+        h4 {
+          font-family: chantal, sans-serif;
+          font-size: 1rem;
+        }
       }
 
       /* no scroll bar for Chrome, Safari and Opera */
@@ -336,12 +346,7 @@
         display: none;
       }
     }
-    .scroll-indicator {
-      p {
-        text-align: center;
-        margin: 0;
-      }
-    }
+
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 599px) {}
 
