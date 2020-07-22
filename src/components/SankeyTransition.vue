@@ -66,33 +66,49 @@
         />
       </div>
     </div>
+    <ScrollIndicator
+      v-if="isUserAtEndOfScrollText === false"
+      id="sankey-transition-scroll-indicator"
+    />
   </div>
 </template>
 
 <script>
-    export default {
-        name: 'SankeyTransition',
-        methods: {
-            visibilityChanged (isVisible, entry) {
-                const imageElement= document.getElementById('image-div-' + entry.target.id[entry.target.id.length -1]);
-                if (isVisible === true) {
-                    imageElement.classList.add('sankey-visible');
-                } else if (isVisible === false) {
-                    imageElement.classList.remove('sankey-visible');
-                }
-            },
-            changeStateForIsUserAtEndOfSankeySection(isVisible, entry) {
-                this.isVisible = isVisible;
-                if (this.isVisible === true) {
-                    this.$store.commit('changeBooleanStateForIsUserAtEndOfSankeySection', true);
-                }
-            }
-        }
-    }
+  import ScrollIndicator from "./ScrollIndicator";
+
+  export default {
+      name: 'SankeyTransition',
+      components: {
+          ScrollIndicator
+      },
+      data() {
+          return {
+              isUserAtEndOfScrollText: false
+          }
+      },
+      methods: {
+          visibilityChanged (isVisible, entry) {
+              const imageElement= document.getElementById('image-div-' + entry.target.id[entry.target.id.length -1]);
+              if (isVisible === true) {
+                  imageElement.classList.add('sankey-visible');
+              } else if (isVisible === false) {
+                  imageElement.classList.remove('sankey-visible');
+              }
+          },
+          changeStateForIsUserAtEndOfSankeySection(isVisible, entry) {
+              this.isVisible = isVisible;
+              if (this.isVisible === true) {
+                  this.$store.commit('changeBooleanStateForIsUserAtEndOfSankeySection', true);
+                  this.isUserAtEndOfScrollText = true;
+              }
+          }
+      }
+  }
 </script>
 
 <style scoped lang="scss">
   #sankey-transition {
+    position: relative;
     display: flex;
     max-width: 65em;
     max-height: 733px;
@@ -132,6 +148,7 @@
       }
     }
     #sankey-text-container {
+      position:relative;
       flex: 1;
       padding: 1em;
       overflow-y: scroll;
@@ -145,6 +162,13 @@
     /* no scroll bar for Chrome, Safari and Opera */
     #sankey-text-container::-webkit-scrollbar {
       display: none;
+    }
+    #sankey-transition-scroll-indicator {
+
+      position: fixed;
+      bottom: 0;
+      left: 60%;
+
     }
   }
 </style>
