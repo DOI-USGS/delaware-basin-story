@@ -25,7 +25,6 @@ export const store = new Vuex.Store({
             state.isUserAtEndOfMonitoringSection = payload;
         },
         changeBooleanStateForIsUserAtEndOfSankeySection(state, payload) {
-            console.log('sankey state')
             state.isUserAtEndOfSankeySection = payload;
         },
         recordWindowWidth(state, payload) {
