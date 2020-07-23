@@ -67,7 +67,7 @@
       </div>
     </div>
     <ScrollIndicator
-      v-if="isUserAtEndOfScrollText === false"
+      v-if="isUserAtEndOfScrollText === false || isUserAtEndOfScrollText === true"
       id="sankey-transition-scroll-indicator"
     />
   </div>
