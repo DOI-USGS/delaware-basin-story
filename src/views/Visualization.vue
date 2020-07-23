@@ -2,11 +2,11 @@
   <div id="visualization">
     <Intro />
     <Flow v-if="checkIfIntroSectionIsRendered" />
-    <QualityChallenges v-if="checkIfIntroSectionIsRendered" />
-    <Salinity v-if="checkIfIntroSectionIsRendered" />
-    <Temperature v-if="checkIfIntroSectionIsRendered" />
-    <Monitoring v-if="checkIfIntroSectionIsRendered" />
-    <Conclusion v-if="checkIfIntroSectionIsRendered" />
+    <QualityChallenges v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfSankeySection" />
+    <Salinity v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfSankeySection" />
+    <Temperature v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfSankeySection" />
+    <Monitoring v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfSankeySection" />
+    <Conclusion v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfSankeySection" />
   </div>
 </template>
 
@@ -25,7 +25,13 @@
         computed: {
             checkIfIntroSectionIsRendered() {
                 return this.$store.state.introSectionRendered;
-            }
+            },
+            checkIfUserAtEndOfMonitoringSection: function () {
+                return this.$store.state.isUserAtEndOfMonitoringSection;
+            },
+            checkIfUserAtEndOfSankeySection: function () {
+                return this.$store.state.isUserAtEndOfSankeySection;
+            },
         }
     }
 </script>
