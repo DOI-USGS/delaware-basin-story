@@ -60,6 +60,10 @@
           <p>Through judicious water storage in the winter and timed releases in the summer, reservoir managers can provide a buffer against excessively low flows. Reservoirs in the Basin are also used for flood control, hydroelectric power, water supply, and recreation.  </p>
           <p>There’s a balance to strike with reservoir management – in spring, a too-full reservoir may be primed for summer drought protection or recreation but then can’t protect against a spring flood. Reservoir managers, along with the Delaware River Master and Delaware River Basin Commission, rely on extensive scientific monitoring and modeling to predict the optimal rates of storage and release throughout the year. </p>
         </h3>
+        <div
+          id="sankey-transition-load-next-section-target"
+          v-observe-visibility="changeStateForIsUserAtEndOfSankeySection"
+        />
       </div>
     </div>
   </div>
@@ -75,6 +79,12 @@
                     imageElement.classList.add('sankey-visible');
                 } else if (isVisible === false) {
                     imageElement.classList.remove('sankey-visible');
+                }
+            },
+            changeStateForIsUserAtEndOfSankeySection(isVisible, entry) {
+                this.isVisible = isVisible;
+                if (this.isVisible === true) {
+                    this.$store.commit('changeBooleanStateForIsUserAtEndOfSankeySection', true);
                 }
             }
         }

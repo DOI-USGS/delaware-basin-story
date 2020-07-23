@@ -1,5 +1,5 @@
 <template>
-  <section id="uses-needs-conflicts">
+  <section id="flow">
     <h2>2020 River of the Year</h2>
     <h3>U.S. Geological Service</h3>
     <p>The Delaware River – named the 2020 River of the Year by American Rivers for its rich history and thriving communities – forms a main artery that drains the river basin and connects the people, cities, industries, and ecosystems around it.  </p>
@@ -60,7 +60,7 @@
 </script>
 
 <style scoped lang="scss">
-#uses-needs-conflicts {
+#flow {
   background-color: rgba(229, 229, 229, 0.3);
 }
 
