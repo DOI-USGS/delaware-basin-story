@@ -151,7 +151,7 @@
       position:relative;
       flex: 1;
       padding: 1em;
-      overflow-y: scroll;
+      // overflow-y: scroll;
       text-align: justify;
       -ms-overflow-style: none; /* no scroll bar for IE and Edge */
       scrollbar-width: none; /* no scroll bar for Firefox */

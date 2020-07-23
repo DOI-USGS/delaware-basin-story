@@ -5,7 +5,7 @@
     <div class="inking">
       <img
         id="watercolor"
-        src="@/assets/conclusion/images/drbWatercolorDesktop.png"
+        src="@/assets/conclusion/images/DRBWatercolor-01.png"
         alt="watercolor map of delaware river basin"
       >
       <svg

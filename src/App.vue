@@ -79,11 +79,36 @@
     p {
       font-family: 'Noto Sans', sans-serif;
       font-weight: lighter;
+      font-size: 12pt;
+      line-height: 1.5;
+      padding: 5px;
     }
-    h1, h2, h3 {
+    h1 {
       font-family: chantal, sans-serif;
       font-weight: bold;
+      font-size: 2em;
     }
-    width: 100%;
+    h2 {
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: bolder;
+      font-size: 2em;
+    }
+    h3 {
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: bolder;
+      font-size: 1em;
+    }
+
+    .text-content {
+      min-width: 350px;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2.3em;
+    }
+
+    .text-content-side {
+      
+    }
+    // width: 100%;
   }
 </style>
