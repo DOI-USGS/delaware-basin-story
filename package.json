@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "serve": "NODE_ENV=development vue-cli-service serve --mode test_tier",
+    "serve": "vue-cli-service serve --mode test_tier",
     "serve-test": "NODE_ENV=development vue-cli-service serve --mode test_tier",
     "serve-beta": "NODE_ENV=development vue-cli-service serve --mode beta_tier",
     "serve-prod": "NODE_ENV=development vue-cli-service serve --mode prod_tier",
