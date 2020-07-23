@@ -6,7 +6,7 @@
     <Salinity v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfSankeySection" />
     <Temperature v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfSankeySection" />
     <Monitoring v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfSankeySection" />
-    <Conclusion v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfMonitoringSection && checkIfUserAtEndOfSankeySection" />
+    <Conclusion v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfSankeySection" />
   </div>
 </template>
 
