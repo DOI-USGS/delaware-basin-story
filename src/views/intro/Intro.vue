@@ -2,13 +2,12 @@
   <section id="intro">
     <div
       id="intro-banner-container"
-     
     >
       <img
         id="watercolor"
         src="@/assets/conclusion/images/DRBWatercolor-01.png"
         alt="watercolor map of delaware river basin"
-        width=100%
+        width="100%"
       >
       <div class="container-section-title">
         <img
@@ -19,7 +18,6 @@
           <h1>Cool, Clean, and Confident</h1>
           <h3>How science informs water management in the Delaware River Basin</h3>
         </div>
-        
       </div>
     </div>
     <IntroTextContents />
