@@ -8,9 +8,9 @@
     <router-view
       v-if="!isInternetExplorer & checkIfUSGSHeaderIsRendered"
     />
-    <PreFooterVisualizationsLinks v-if="!isInternetExplorer & checkIfBarChartIsRendered" />
-    <PreFooterCodeLinks v-if="checkIfBarChartIsRendered || isInternetExplorer" />
-    <FooterUSGS v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfMonitoringSection || isInternetExplorer" />
+    <PreFooterVisualizationsLinks v-if="checkIfIntroSectionIsRendered || !isInternetExplorer" />
+    <PreFooterCodeLinks v-if="checkIfIntroSectionIsRendered || !isInternetExplorer" />
+    <FooterUSGS v-if="checkIfIntroSectionIsRendered || isInternetExplorer" />
   </div>
 </template>
 

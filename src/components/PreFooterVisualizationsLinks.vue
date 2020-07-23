@@ -4,24 +4,24 @@
       <p>Other visualizations of interest</p>
       <div class="footer-viz-links">
         <a
-          :href="mariaLink"
+          :href="LinkOne"
         >
           <figure>
-            <figcaption>Hurricane Maria's Water Footprint</figcaption>
+            <figcaption>Enter appropriate caption</figcaption>
             <img
-              src="@/assets/images/thumbnailMaria.png"
-              alt="thumbnail for Hurricane Maria visualization link"
+              src="@/assets/components/PreFooterVisualizationsLinks/images/thumbnailGeneric.png"
+              alt=""
             >
           </figure>
         </a>
         <a
-          :href="waterUseLink"
+          :href="LinkTwo"
         >
           <figure>
-            <figcaption>Water use in the U.S., 2015</figcaption>
+            <figcaption>Enter appropriate caption</figcaption>
             <img
-              src="@/assets/images/thumbnailWaterUse.png"
-              alt="thumbnail for Water Use visualization link"
+              src="@/assets/components/PreFooterVisualizationsLinks/images/thumbnailGeneric.png"
+              alt=""
             >
           </figure>
         </a>
@@ -35,8 +35,8 @@
         name: 'PreFooterVisualizationsLinks',
         data() {
             return {
-                mariaLink: process.env.VUE_APP_FOOTER_LINK_MARIA,
-                waterUseLink: process.env.VUE_APP_FOOTER_LINK_WATER_USE
+                LinkOne: process.env.VUE_APP_FOOTER_LINK_1,
+                LinkTwo: process.env.VUE_APP_FOOTER_LINK_2
             };
         }
     }
