@@ -2,20 +2,24 @@
   <section id="intro">
     <div
       id="intro-banner-container"
-      :style="{ 'height' : windowHeight }"
+     
     >
       <img
-        src="@/assets/intro/images/watercolorMap.png"
-        alt="watercolor illustration of delaware river basin"
+        id="watercolor"
+        src="@/assets/conclusion/images/DRBWatercolor-01.png"
+        alt="watercolor map of delaware river basin"
+        width=100%
       >
       <div class="container-section-title">
         <img
-          src="@/assets/intro/images/background_rainbowLarge.png"
+          src="@/assets/intro/images/title-cloud.png"
           alt="image of watercolor cloud of color"
         >
-        <h1 class="section-title">
-          Delaware River Basin
-        </h1>
+        <div class="section-title">
+          <h1>Cool, Clean, and Confident</h1>
+          <h3>How science informs water management in the Delaware River Basin</h3>
+        </div>
+        
       </div>
     </div>
     <IntroTextContents />
@@ -64,9 +68,10 @@
       align-content: center;
       .container-section-title {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        position: relative;
+        position: absolute;
         text-align: center;
         color: white;
         img {
@@ -93,14 +98,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
+        position: absolute;
+        right: 5%;
+        top: 70%;
         text-align: center;
+        
         color: white;
         img {
           width: 100%;
         }
         .section-title {
           position: absolute;
+          width: 100%;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);

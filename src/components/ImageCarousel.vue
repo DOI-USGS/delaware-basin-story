@@ -64,7 +64,7 @@
     }
   }
   .slider-image-container {
-    padding: 0;
+    padding: 10px;
     display: block;
     margin: auto;
     max-width: 400px;
