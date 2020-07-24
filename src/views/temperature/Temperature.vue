@@ -1,14 +1,24 @@
 <template>
   <div id="temperature">
     <div id="header">
-      <img id="waterline" src="@/assets/temperature/images/waterHeader.png" alt="water line for the top of a stream cross-section" />
-      <img id="tempheader" src="@/assets/temperature/images/BlueLarge.png" alt="a blue cloud of watercolor paint" />
+      <img
+        id="waterline"
+        src="@/assets/temperature/images/waterHeader.png"
+        alt="water line for the top of a stream cross-section"
+      >
+      <img
+        id="tempheader"
+        src="@/assets/temperature/images/BlueLarge.png"
+        alt="a blue cloud of watercolor paint"
+      >
       <h1 class="section-title">
-      Temperature
+        Temperature
       </h1>
-
     </div>
-    <div id="content" class="text-content">
+    <div
+      id="content"
+      class="text-content"
+    >
       <div class="row-fish">
         <div class="left">
           <div class="temperature-text">
@@ -18,17 +28,33 @@
         </div>
         <div class="right">
           <div class="image-stack">
-            <img id="sadfish" src="@/assets/temperature/images/hank_freida_sad.png" alt="a couple of sad fishes" />
-            <img id="happyfish" src="@/assets/temperature/images/hank_freida_happy.png" alt="a couple of happy fishes ready to spawn" />
+            <img
+              id="sadfish"
+              src="@/assets/temperature/images/hank_freida_sad.png"
+              alt="a couple of sad fishes"
+            >
+            <img
+              id="happyfish"
+              src="@/assets/temperature/images/hank_freida_happy.png"
+              alt="a couple of happy fishes ready to spawn"
+            >
           </div>
         </div>
       </div>
       <div class="row-mussels">
         <div class="left">
           <div class="image-stack">
-            <img id="sadmussel" src="@/assets/temperature/images/mussel_outline_sad.png" alt="mussels looking sad in a streambed" />
-            <img id="happymussel" src="@/assets/temperature/images/mussel_outline_happy.png" alt="a robust colony of mussels in a streambed" />
-            </div>
+            <img
+              id="sadmussel"
+              src="@/assets/temperature/images/mussel_outline_sad.png"
+              alt="mussels looking sad in a streambed"
+            >
+            <img
+              id="happymussel"
+              src="@/assets/temperature/images/mussel_outline_happy.png"
+              alt="a robust colony of mussels in a streambed"
+            >
+          </div>
         </div>
         <div class="right">
           <div class="temperature-text">
@@ -40,7 +66,11 @@
     </div>
 
     <div id="footer">
-      <img id="pebbles" src="@/assets/temperature/images/pebbleFooter.png" alt="drawing of rocky ground in stream cross-section" />
+      <img
+        id="pebbles"
+        src="@/assets/temperature/images/pebbleFooter.png"
+        alt="drawing of rocky ground in stream cross-section"
+      >
     </div>
     <hr>
   </div>

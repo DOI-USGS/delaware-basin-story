@@ -1,6 +1,9 @@
 <template>
   <div id="sankey-transition">
-    <div id="sankey-image-container" class="sticky">
+    <div
+      id="sankey-image-container"
+      class="sticky"
+    >
       <div
         id="image-div-1"
         class="sankey-image"
@@ -32,7 +35,10 @@
         >
       </div>
     </div>
-    <div id="sankey-text-container" class="side-text">
+    <div
+      id="sankey-text-container"
+      class="side-text"
+    >
       <div class="sankey-text-and-title">
         <h3
           id="sankey-title-1"
