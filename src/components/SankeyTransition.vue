@@ -1,6 +1,6 @@
 <template>
   <div id="sankey-transition">
-    <div id="sankey-image-container">
+    <div id="sankey-image-container" class="sticky">
       <div
         id="image-div-1"
         class="sankey-image"
@@ -32,7 +32,7 @@
         >
       </div>
     </div>
-    <div id="sankey-text-container">
+    <div id="sankey-text-container" class="side-text">
       <div class="sankey-text-and-title">
         <h3
           id="sankey-title-1"
@@ -66,10 +66,10 @@
         />
       </div>
     </div>
-    <ScrollIndicator
+    <!-- <ScrollIndicator
       v-if="isUserAtEndOfScrollText === false || isUserAtEndOfScrollText === true"
       id="sankey-transition-scroll-indicator"
-    />
+    /> -->
   </div>
 </template>
 
@@ -79,16 +79,43 @@
   export default {
       name: 'SankeyTransition',
       components: {
-          ScrollIndicator
+          // ScrollIndicator
       },
       data() {
           return {
               isUserAtEndOfScrollText: false
           }
       },
+
+      // // attempt at scroll triggering for sticky sankey images
+      
+      // mounted() {
+      //   // When the user scrolls the page, execute myFunction
+      //   window.onscroll = function() {myFunction()};
+
+      //   // Get the navbar
+      //   var sankey = document.getElementById("sankey-image-container");
+
+      //   // Get the offset position of the sankey container
+      //   var sticky = sankey.offsetTop;
+
+      //   // Add the sticky class to the sankey when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      //   function myFunction() {
+      //     if (window.pageYOffset >= sticky) {
+      //       sankey.classList.add("sticky");
+      //       console.log("sticky is on!");
+      //       console.log("sticky value is ", sticky);
+      //       console.log("window.pageYOffset value is ", window.pageYOffset);
+      //     } else {
+      //       sankey.classList.remove("sticky");
+      //       console.log("sticky is off");
+      //     }
+      //   }
+      // },
+
       methods: {
           visibilityChanged (isVisible, entry) {
-              const imageElement= document.getElementById('image-div-' + entry.target.id[entry.target.id.length -1]);
+              const imageElement = document.getElementById('image-div-' + entry.target.id[entry.target.id.length -1]);
               if (isVisible === true) {
                   imageElement.classList.add('sankey-visible');
               } else if (isVisible === false) {
@@ -108,35 +135,26 @@
 
 <style scoped lang="scss">
   #sankey-transition {
-    position: relative;
     display: flex;
-    max-width: 65em;
-    max-height: 733px;
-    margin: 0 auto;
     color: black;
-    width: 100%;
+
     #sankey-image-container {
-      justify-content: center;
-      width: 100%;
-      margin: 0 auto;
       flex: 1;
-      position: relative;
+      flex-shrink: 0;
+      text-align:center;
       .sankey-image {
-        height: 733px;
-        min-height: 733px;
-        width: 538px;
-        min-width: 538px;
+        min-width: 50vw;
+        padding: 10px;
         position: absolute;
         opacity: 0;
-        -webkit-transition: opacity 1s ease-in-out;
-        -moz-transition: opacity 1s ease-in-out;
-        -o-transition: opacity 1s ease-in-out;
-        transition: opacity 1s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out;
       }
       .sankey-visible {
         opacity: 1;
       }
-
       #sankey-image-1 {
         z-index: 3;
       }
@@ -147,28 +165,26 @@
         z-index: 1;
       }
     }
+
+
+
     #sankey-text-container {
-      position:relative;
       flex: 1;
-      padding: 1em;
-      // overflow-y: scroll;
-      text-align: justify;
-      -ms-overflow-style: none; /* no scroll bar for IE and Edge */
-      scrollbar-width: none; /* no scroll bar for Firefox */
       .sankey-text-and-title {
         padding: 10em 2em 15em 2em;
       }
     }
-    /* no scroll bar for Chrome, Safari and Opera */
-    #sankey-text-container::-webkit-scrollbar {
-      display: none;
-    }
-    #sankey-transition-scroll-indicator {
+  
+  }
 
-      position: fixed;
-      bottom: 0;
-      left: 60%;
+  img {
+    max-height: 90vh;
+  }
 
-    }
+  .sticky {
+    position: fixed;
+    top: 1vh;
+    transition: 50ms;
+
   }
 </style>

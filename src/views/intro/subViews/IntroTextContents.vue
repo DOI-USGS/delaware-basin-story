@@ -15,8 +15,5 @@
 </script>
 
 <style scoped lang="scss">
-#intro-text-content {
-  p {
-  }
-}
+
 </style>

@@ -96,11 +96,13 @@
       font-family: 'Noto Sans', sans-serif;
       font-weight: bolder;
       font-size: 2em;
+      line-height: 1.4em;
     }
     h3 {
       font-family: 'Noto Sans', sans-serif;
       font-weight: bolder;
-      font-size: 1em;
+      font-size: 1.75em;
+      line-height: 1.4em;
     }
 
     .text-content {
@@ -110,9 +112,11 @@
       padding: 2.3em;
     }
 
-    .text-content-side {
-      
+    .side-text {
+      max-width: 40vw;
+      padding: 2em;
+      text-align: left;
+      margin-left: 50vw;
     }
-    // width: 100%;
   }
 </style>

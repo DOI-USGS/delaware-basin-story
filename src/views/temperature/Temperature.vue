@@ -8,7 +8,7 @@
       </h1>
 
     </div>
-    <div id="content">
+    <div id="content" class="text-content">
       <div class="row-fish">
         <div class="left">
           <div class="temperature-text">
