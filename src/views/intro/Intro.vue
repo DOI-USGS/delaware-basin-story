@@ -15,7 +15,7 @@
           alt="image of watercolor cloud of color"
         >
         <div class="section-title">
-          <h1>Cool, Clean, and Confident</h1>
+          <h1>{{ title }}</h1>
           <h3>How science informs water management in the Delaware River Basin</h3>
         </div>
       </div>
@@ -37,7 +37,7 @@
         },
         data() {
             return {
-
+              title: process.env.VUE_APP_TITLE
             }
         },
         computed: {
@@ -100,7 +100,7 @@
         right: 5%;
         top: 70%;
         text-align: center;
-        
+
         color: white;
         img {
           width: 100%;
