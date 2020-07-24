@@ -2,13 +2,12 @@
   <section id="intro">
     <div
       id="intro-banner-container"
-     
     >
       <img
         id="watercolor"
         src="@/assets/conclusion/images/DRBWatercolor-01.png"
         alt="watercolor map of delaware river basin"
-        width=100%
+        width="100%"
       >
       <div class="container-section-title">
         <img
@@ -16,10 +15,9 @@
           alt="image of watercolor cloud of color"
         >
         <div class="section-title">
-          <h1>Cool, Clean, and Confident</h1>
+          <h1>{{ title }}</h1>
           <h3>How science informs water management in the Delaware River Basin</h3>
         </div>
-        
       </div>
     </div>
     <IntroTextContents />
@@ -39,7 +37,7 @@
         },
         data() {
             return {
-
+              title: process.env.VUE_APP_TITLE
             }
         },
         computed: {
@@ -102,7 +100,7 @@
         right: 5%;
         top: 70%;
         text-align: center;
-        
+
         color: white;
         img {
           width: 100%;

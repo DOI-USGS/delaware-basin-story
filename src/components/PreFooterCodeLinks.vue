@@ -4,7 +4,7 @@
       :href="gitHubRepositoryLink"
       target="_blank"
       aria-label="github link"
-    >Get the {{ projectTitle }} code
+    >Get this visualization's code
       <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'github' }" />
     </a>
   </div>
