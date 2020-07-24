@@ -1772,8 +1772,34 @@
     0% {stroke-dashoffset: -100px}
     100% {stroke-dashoffset: 0px;}
   }
+ @-o-keyframes draw100 {
+    0% {stroke-dashoffset: -100px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-moz-keyframes draw100 {
+    0% {stroke-dashoffset: -100px}
+    100% {stroke-dashoffset: 0px;}
+  } 
+  @-webkit-keyframes draw100 {
+    0% {stroke-dashoffset: -100px}
+    100% {stroke-dashoffset: 0px;}
+  }
+
 
   @keyframes draw200 {
+    0% {stroke-dashoffset: -200px}
+    100% {stroke-dashoffset: 0px;}
+  }
+
+  @-o-keyframes draw200 {
+    0% {stroke-dashoffset: -200px}
+    100% {stroke-dashoffset: 0px;}
+  }
+   @-moz-keyframes draw200 {
+    0% {stroke-dashoffset: -200px}
+    100% {stroke-dashoffset: 0px;}
+  }
+   @-webkit-keyframes draw200 {
     0% {stroke-dashoffset: -200px}
     100% {stroke-dashoffset: 0px;}
   }
@@ -1782,8 +1808,32 @@
     0% {stroke-dashoffset: -500px}
     100% {stroke-dashoffset: 0px;}
   }
+  @-o-keyframes draw500 {
+    0% {stroke-dashoffset: -500px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-moz-keyframes draw500 {
+    0% {stroke-dashoffset: -500px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-webkit-keyframes draw500 {
+    0% {stroke-dashoffset: -500px}
+    100% {stroke-dashoffset: 0px;}
+  }
 
   @keyframes draw400 {
+    0% {stroke-dashoffset: -400px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-o-keyframes draw400 {
+    0% {stroke-dashoffset: -400px}
+    100% {stroke-dashoffset: 0px;}
+  }
+   @-moz-keyframes draw400 {
+    0% {stroke-dashoffset: -400px}
+    100% {stroke-dashoffset: 0px;}
+  }
+   @-webkit-keyframes draw400 {
     0% {stroke-dashoffset: -400px}
     100% {stroke-dashoffset: 0px;}
   }
@@ -1792,11 +1842,49 @@
     0% {stroke-dashoffset: -300px}
     100% {stroke-dashoffset: 0px;}
   }
+  @-o-keyframes draw300 {
+    0% {stroke-dashoffset: -300px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-moz-keyframes draw300 {
+    0% {stroke-dashoffset: -300px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-webkit-keyframes draw300 {
+    0% {stroke-dashoffset: -300px}
+    100% {stroke-dashoffset: 0px;}
+  }
   @keyframes draw900 {
     0% {stroke-dashoffset: -900px}
     100% {stroke-dashoffset: 0px;}
   }
+  @-o-keyframes draw900 {
+    0% {stroke-dashoffset: -900px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-moz-keyframes draw900 {
+    0% {stroke-dashoffset: -900px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-webkit-keyframes draw900 {
+    0% {stroke-dashoffset: -900px}
+    100% {stroke-dashoffset: 0px;}
+  }
   @keyframes draw700 {
+    0% {stroke-dashoffset: -700px}
+    100% {stroke-dashoffset: 0px;}
+  }
+@-o-keyframes draw700 {
+    0% {stroke-dashoffset: -700px}
+    100% {stroke-dashoffset: 0px;}
+  }
+
+@-moz-keyframes draw700 {
+    0% {stroke-dashoffset: -700px}
+    100% {stroke-dashoffset: 0px;}
+  }
+
+@-webkit-keyframes draw700 {
     0% {stroke-dashoffset: -700px}
     100% {stroke-dashoffset: 0px;}
   }
