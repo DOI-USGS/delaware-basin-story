@@ -338,7 +338,7 @@
       .left{
         display: flex;
         flex-direction: column;
-        flex-basis: 100%;
+        flex-basis: 50%;
         flex: 1;
         padding: 2%;
 
@@ -373,7 +373,7 @@
       .right {
         display: flex;
         flex-direction: column;
-        flex-basis: 100%;
+        flex-basis: 50%;
         flex: 1;
         padding: 2%;
 
