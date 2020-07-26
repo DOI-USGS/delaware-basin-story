@@ -313,14 +313,14 @@
         </h1>
       </div>
       <div>
-        <div class="sea-salt-text-section">
+        <div class="road-salt-text-section">
           <h3>The Salt Wedge</h3>
           <p>As freshwater spills from the river into the saltier, ocean-influenced waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the intruding ocean. The bounds of that wedge – the “salt front” – migrate up and down the river channel over the daily cycle of ocean tides, the seasonal cycle of lower and higher river flows, and the multi-year fluctuations into and out of droughts. </p>
         </div>
         <div
           id="sea-salt-scroll-target"
           v-observe-visibility="visibilityChanged"
-          class="sea-salt-text-section"
+          class="road-salt-text-section"
         >
           <h3>Sea level Rise</h3>
           <p>While these natural variations usually pose no problems, sea level rise is expected to push the salt front so far inland – especially during droughts – that water at the major Trenton, NJ intake could be contaminated. Salty water corrodes surface water intake pipes, raises the cost of drinking water treatment, and is potentially toxic to aquatic plants and fish. </p>
@@ -355,7 +355,7 @@
 </script>
 
 <style scoped lang="scss">
-  .sea-salt-text-section {
+  .road-salt-text-section {
     padding-bottom: 5rem;
   }
 /* Extra small devices (phones, 600px and down) */
@@ -449,14 +449,6 @@
     }
   }
 
-h1 {
-    color: white;
-    font-family: 'Noto Sans', sans-serif;
-}
-h2, h3, h4, h5, h6 {
-    color: black;
-    font-family: 'Noto Sans', sans-serif;
-}
 #dash, #s, #a, #l, #t, #f, #r, #o, #n, #t2 {
     stroke: black;
     fill: black;
@@ -488,284 +480,5 @@ h2, h3, h4, h5, h6 {
     padding-top: 20vh;
 }
 
-/* markers for sea level rise */
-
-#seasalt-svg {
-    stroke: black;
-    fill: transparent;
-    stroke-linecap:round;
-    stroke-linejoin:round;
-    stroke-width: 5.5px;
-}
-
-#ft1, #ft2, #ft3 {
-    stroke-width: 5.5px;
-    stroke-dasharray: 300px;
-    stroke-dashoffset: -300px;
-}
-
-#num1, #num2, #num3, #f2a, #f2b, #t4a, #t4b, #f3a, #f3b, #t5a, #t5b, #f1a, #f1b, #t3a, #t3b, #intake {
-    stroke-dasharray: 200px;
-    stroke-dashoffset: -200px;
-}
-
-/* lines for sea level predictions */
-#ft1 {
-    Animation: write300 .4s ease-in-out 0s forwards;
-    -webkit-animation: write300 .4s ease-in-out 0s forwards;
-    -moz-animaion: write300 .4s ease-in-out 0s forwards;
-    -o-animation: write300 .4s ease-in-out 0s forwards;
-}
-
-#ft2 {
-    Animation: write300 .4s ease-in-out 0.2s forwards;
-    -webkit-animation: write300 .4s ease-in-out 0.2s forwards;
-    -moz-animaion: write300 .4s ease-in-out 0.2s forwards;
-    -o-animation: write300 .4s ease-in-out 0.2s forwards;
-}
-
-#ft3 {
-    Animation: write300 .4s ease-in-out 0.4s forwards;
-    -webkit-animation: write300 .4s ease-in-out 0.4s forwards;
-    -moz-animaion: write300 .4s ease-in-out 0.4s forwards;
-    -o-animation: write300 .4s ease-in-out 0.4s forwards;
-}
-/* annotations for sea level predictions */
-/* 1 ft */
-#num1 {
-    Animation: write200 .2s ease-in-out 0.6s forwards;
-    -webkit-animation: write200 .2s ease-in-out 0.6s forwards;
-    -moz-animaion: write200 .2s ease-in-out 0.6s forwards;
-    -o-animation: write200 .2s ease-in-out 0.6s forwards;
-}
-#f3a, #f3b {
-    Animation: write200 .3s ease-in-out 0.7s forwards;
-    -webkit-animation: write200 .3s ease-in-out 0.7s forwards;
-    -moz-animaion: write200 .3s ease-in-out 0.7s forwards;
-    -o-animation: write200 .3s ease-in-out 0.7s forwards;
-}
-#t5a, #t5b {
-    Animation: write200 .3s ease-in-out 0.9s forwards;
-    -webkit-animation: write200 .3s ease-in-out 0.9s forwards;
-    -moz-animaion: write200 .3s ease-in-out 0.9s forwards;
-    -o-animation: write200 .3s ease-in-out 0.9s forwards;
-}
-/* 2 ft */
-#num2 {
-    Animation: write200 .2s ease-in-out 1.1s forwards;
-    -webkit-animation: write200 .2s ease-in-out 1.1s forwards;
-    -moz-animaion: write200 .2s ease-in-out 1.1s forwards;
-    -o-animation: write200 .2s ease-in-out 1.1s forwards;
-}
-#f2a, #f2b {
-    Animation: write200 .3s ease-in-out 1.25s forward;
-    -webkit-animation: write200 .3s ease-in-out 1.25s forwards;
-    -moz-animaion: write200 .3s ease-in-out 1.25s forwards;
-    -o-animation: write200 .3s ease-in-out 1.25s forwards;
-}
-#t4a, #t4b {
-    Animation: write200 .3s ease-in-out 1.45s forward;
-    -webkit-animation:  write200 .3s ease-in-out 1.45s forwards;
-    -moz-animaion: write200 .3s ease-in-out 1.45s forwards;
-    -o-animation: write200 .3s ease-in-out 1.45s forwards;
-}
-/* 3ft */
-#num3 {
-    Animation: write200 .2s ease-in-out 1.65s forwards;
-    -webkit-animation: write200 .2s ease-in-out 1.65s forwards;
-    -moz-animaion: write200 .2s ease-in-out 1.65s forwards;
-    -o-animation: write200 .2s ease-in-out 1.65s forwards;
-}
-#f1a, #f1b {
-    Animation: write200 .3s ease-in-out 1.8s forwards;
-    -webkit-animation: write200 .3s ease-in-out 1.8s forwards;
-    -moz-animaion: write200 .3s ease-in-out 1.8s forwards;
-    -o-animation: write200 .3s ease-in-out 1.8s forwards;
-}
-#t3a, #t3b {
-    Animation: write200 .3s ease-in-out 2s forwards;
-    -webkit-animation: write200 .3s ease-in-out 2s forwards;
-    -moz-animaion: write200 .3s ease-in-out 2s forwards;
-    -o-animation: write200 .3s ease-in-out 2s forwards;
-}
-
-/* intakes line */
-#intake {
-    Animation: write200 .2s ease-in-out 2s forwards;
-    -webkit-animation: write200 .2s ease-in-out 2s forwards;
-    -moz-animaion:write200 .2s ease-in-out 2s forwards;
-    -o-animation: write200 .2s ease-in-out 2s forwards;
-}
-
-/* letter writing animation */
-#d, #r1, #i1, #n1, #k1a, #k1b, #i2, #n2, #g, #w, #a1a, #a1b, #t1a, #t1b, #e1a, #e1b, #r2, #i3, #n3, #t2a, #t2b, #a2a, #a2b,#k2a, #k2b, #k2c, #e2a, #e2b, #s {
-    stroke-dasharray: 200px;
-    stroke-dashoffset: -200px;
-}
-
-/* define vars for letter timing */
-/* :root {
-	  --anim-time: 0.23s;
-    --anim-delay: 0.15s;
-    --intake-start: 14s;
-} */
-
-/* each letter is animated individually so time sequentially */
-#d {
-    Animation: write200 0.23s ease-in-out 2s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 2s forwards;
-    -moz-animation: write200 0.23s ease-in-out 2s forwards;
-    -o-animation: write200 0.23s ease-in-out 2s forwards;
-
-}
-#r1 {
-   Animation: write200 0.23s ease-in-out 2.15s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 2.15s forwards;
-    -moz-animation: write200 0.23s ease-in-out 2.15s forwards;
-    -o-animation: write200 0.23s ease-in-out 2.15s forwards;
-
-}
-
-#i1 {
-    Animation: write200 0.23s ease-in-out 2.3s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 2.3s forwards;
-    -moz-animation: write200 0.23s ease-in-out 2.3s forwards;
-    -o-animation: write200 0.23s ease-in-out 2.3s forwards;
-
-}
-#n1 {
-    animation: write200 0.23s ease-in-out 2.45s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 2.45s forwards;
-    -moz-animation: write200 0.23s ease-in-out 2.45s forwards;
-    -o-animation: write200 0.23s ease-in-out 2.45s forwards;
-
-}
-#k1a, #k1b {
-    animation: write200 0.23s ease-in-out 2.6s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 2.6s forwards;
-    -moz-animation: write200 0.23s ease-in-out 2.6s forwards;
-    -o-animation: write200 0.23s ease-in-out 2.6s forwards;
-
-}
-#i2 {
-    animation: write200 0.23s ease-in-out 2.75s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 2.75s forwards;
-    -moz-animation: write200 0.23s ease-in-out 2.75s forwards;
-    -o-animation: write200 0.23s ease-in-out 2.75s forwards;
-
-}
-#n2 {
-    animation: write200 0.23s ease-in-out 2.9s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 2.9s forwards;
-    -moz-animation: write200 0.23s ease-in-out 2.9s forwards;
-    -o-animation: write200 0.23s ease-in-out 2.9s forwards;
-
-}
-#g {
-    animation: write200 0.23s ease-in-out 3.05s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 3.05s forwards;
-    -moz-animation: write200 0.23s ease-in-out 3.05s forwards;
-    -o-animation: write200 0.23s ease-in-out 3.05s forwards;
-
-}
-#w {
-    animation: write200 0.23s ease-in-out 3.2s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 3.2s forwards;
-    -moz-animation: write200 0.23s ease-in-out 3.2s forwards;
-    -o-animation: write200 0.23s ease-in-out 3.2s forwards;
-
-}
-#a1a, #a1b {
-    animation: write200 0.23s ease-in-out 3.35s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 3.35s forwards;
-    -moz-animation: write200 0.23s ease-in-out 3.35s forwards;
-    -o-animation: write200 0.23s ease-in-out 3.35s forwards;
-
-}
-#t1a, #t1b {
-    animation: write200 0.23s ease-in-out 3.5s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 3.5s forwards;
-    -moz-animation: write200 0.23s ease-in-out 3.5s forwards;
-    -o-animation: write200 0.23s ease-in-out 3.5s forwards;
-
-}
-#e1a, #e1b {
-    animation: write200 0.23s ease-in-out 3.65s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 3.65s forwards;
-    -moz-animation: write200 0.23s ease-in-out 3.65s forwards;
-    -o-animation: write200 0.23s ease-in-out 3.65s forwards;
-
-}
-#r2 {
-    animation: write200 0.23s ease-in-out 3.8s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 3.8s forwards;
-    -moz-animation: write200 0.23s ease-in-out 3.8s forwards;
-    -o-animation: write200 0.23s ease-in-out 3.8s forwards;
-
-}
-#i3 {
-    animation: write200 0.23s ease-in-out 3.95s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 3.95s forwards;
-    -moz-animation: write200 0.23s ease-in-out 3.95s forwards;
-    -o-animation: write200 0.23s ease-in-out 3.95s forwards;
-
-}
-#n3 {
-    animation: write200 0.23s ease-in-out 4.1s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 4.1s forwards;
-    -moz-animation: write200 0.23s ease-in-out 4.1s forwards;
-    -o-animation: write200 0.23s ease-in-out 4.1s forwards;
-
-}
-#t2a, #t2b {
-    animation: write200 0.23s ease-in-out 4.25s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 4.25s forwards;
-    -moz-animation: write200 0.23s ease-in-out 4.25s forwards;
-    -o-animation: write200 0.23s ease-in-out 4.25s forwards;
-
-}
-#a2a, #a2b {
-    animation: write200 0.23s ease-in-out 4.4s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 4.4s forwards;
-    -moz-animation: write200 0.23s ease-in-out 4.4s forwards;
-    -o-animation: write200 0.23s ease-in-out 4.4s forwards;
-
-}
-#k2a, #k2b, #k2c {
-    animation: write200 0.23s ease-in-out 4.55s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 4.55s forwards;
-    -moz-animation: write200 0.23s ease-in-out 4.55s forwards;
-    -o-animation: write200 0.23s ease-in-out 4.55s forwards;
-
-}
-#e2a, #e2b {
-    animation: write200 0.23s ease-in-out 4.7s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 4.7s forwards;
-    -moz-animation: write200 0.23s ease-in-out 4.7s forwards;
-    -o-animation: write200 0.23s ease-in-out 4.7s forwards;
-
-}
-#s {
-    animation: write200 0.23s ease-in-out 4.85s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 4.85s forwards;
-    -moz-animation: write200 0.23s ease-in-out 4.85s forwards;
-    -o-animation: write200 0.23s ease-in-out 4.85s forwards;
-
-}
-
-@keyframes write500 {
-    0% {stroke-dashoffset: -500px}
-    100% {stroke-dashoffset: 0px;}
-}
-
-@keyframes write300 {
-    0% {stroke-dashoffset: -300px}
-    100% {stroke-dashoffset: 0px;}
-}
-
-@keyframes write200 {
-    0% {stroke-dashoffset: -200px}
-    100% {stroke-dashoffset: 0px;}
-}
 
 </style>

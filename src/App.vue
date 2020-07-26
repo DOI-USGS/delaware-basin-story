@@ -86,32 +86,36 @@
       font-weight: lighter;
       font-size: 12pt;
       line-height: 1.5;
-      padding: 5px;
     }
     h1 {
       font-family: chantal, sans-serif;
       font-weight: bold;
-      font-size: 2em;
+      font-size: 3em;
     }
     h2 {
       font-family: 'Noto Sans', sans-serif;
-      font-weight: bolder;
+      font-weight: 300;
       font-size: 2em;
       
     }
     h3 {
       font-family: 'Noto Sans', sans-serif;
       font-weight: bolder;
-      font-size: 1em;
+      font-size: 1.4em;
     }
 
-
+    .byline {
+      font-family: 'Noto Sans', sans-serif;
+      font-style: italic
+  
+    }
+    
     // Text-only
     .text-content {
       min-width: 350px;
-      max-width: 720px;
+      max-width: 700px;
       margin: 0 auto;
-      padding: 2.3em;
+      padding: 50px 20px;
     }
 
     // Text and Content side-by-side
@@ -122,6 +126,10 @@
 
     .vis-content-side {
       min-width: 500px;
+      max-width: 50vw;
+      position: -webkit-sticky;
+      position: sticky; 
+      display: block;
     }
 
     .center-container {
@@ -139,9 +147,9 @@
 
     .text-content-side {
       min-width: 350px;
-      max-width: 40vw;
-      margin-right: 5vw;
-      margin-left: 50vw;
+      max-width: 500px;
+      padding: 0 20px;
+      background: rgba(255, 255, 255, 0.9);
     }
     // width: 100%;
   }
