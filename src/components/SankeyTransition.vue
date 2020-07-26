@@ -153,9 +153,9 @@
     #sankey-text-container {
       position:relative;
       flex: 1;
-      padding: 1em;
+      margin-left: 50vw;
       .sankey-text-and-title {
-        padding: 10em 2em 15em 2em;
+        padding: 10em 0 15em 0;
       }
     }
     /* no scroll bar for Chrome, Safari and Opera */

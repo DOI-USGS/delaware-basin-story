@@ -1,6 +1,6 @@
 <template>
   <section id="quality-challenges">
-    <div class="quality-challenges-section-text">
+    <div class="quality-challenges-section-text text-content">
       <h3>Taken alone, enough water is not enough – it needs to be of sufficient quality, too. </h3>
       <p>Water quality affects the suitability of water for drinking, recreation, agriculture, industry, and aquatic life. Reservoir releases, water withdrawals, wastewater discharges, land use and management, and many other human activities affect many dimensions of water quality: </p>
       <ul>
@@ -25,11 +25,4 @@
 </script>
 
 <style scoped lang='scss'>
-  #quality-challenges {
-    .quality-challenges-section-text {
-      margin: 0 auto;
-      width: 60rem;
-      padding: 2em;
-    }
-  }
-</style>
+ </style>
