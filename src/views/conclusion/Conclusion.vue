@@ -4,9 +4,9 @@
   >
     <div class="inking">
       <div
-          id="scroll-target"
-          v-observe-visibility="visibilityChanged"
-        />
+        id="scroll-target"
+        v-observe-visibility="visibilityChanged"
+      />
       <img
         id="watercolor"
         src="@/assets/conclusion/images/DRBWatercolor-01.png"
@@ -1719,12 +1719,14 @@
         </g>
       </svg>
     </div>
-     <div id="text-conclusion" class="text-content-side">
-
-        <p>Water uses in the Delaware Basin are diverse and complicated, and the need for information that describes the present and future conditions of water availability and water quality is more pressing than ever. The advancements in water science and monitoring paint a clearer picture of how the DRB has changed, and new efforts are building models that better predict the health and function of the river in the future. </p>
-        <p>While our story focused on flow, temperature, and salinity in the Basin, a multitude of other water quality factors are being studied in the basin by USGS and collaborators.  We could make tell stories about the sediment, turbidity, nutrients, dissolved oxygen, pathogens, heavy metals and chemical contaminants (including PCBs and PFAS). Many people dedicate their entire careers to understanding the details and nuances of how these factors affect the water in the Basin, and our current understanding of the science is thanks in part to many decades of hard work from these people. Many important findings..[or close this off in some way speaking to the depth of science in the basin]. </p>
-        <p>USGS is continuously refining its priorities.  It continues to partner with numerous stakeholders in the Basin, listen to water managers, and an increasingly water-aware public . As a result, the new advanced monitoring strategy of the Next-Generation Water Observing System is enhancing water data collection, and the modernized data management – like public availability, rapid data downloads, and interactive views of current conditions – makes it possible to study the health of Basin rapid data downloads and interactive views of current conditions [link here to new site pages?]. USGS is also actively researching drivers and controls of water availability and focusing on new methods to forecast future water demands and water supplies.</p>
-      </div>
+    <div
+      id="text-conclusion"
+      class="text-content-side"
+    >
+      <p>Water uses in the Delaware Basin are diverse and complicated, and the need for information that describes the present and future conditions of water availability and water quality is more pressing than ever. The advancements in water science and monitoring paint a clearer picture of how the DRB has changed, and new efforts are building models that better predict the health and function of the river in the future. </p>
+      <p>While our story focused on flow, temperature, and salinity in the Basin, a multitude of other water quality factors are being studied in the basin by USGS and collaborators.  We could make tell stories about the sediment, turbidity, nutrients, dissolved oxygen, pathogens, heavy metals and chemical contaminants (including PCBs and PFAS). Many people dedicate their entire careers to understanding the details and nuances of how these factors affect the water in the Basin, and our current understanding of the science is thanks in part to many decades of hard work from these people. Many important findings..[or close this off in some way speaking to the depth of science in the basin]. </p>
+      <p>USGS is continuously refining its priorities.  It continues to partner with numerous stakeholders in the Basin, listen to water managers, and an increasingly water-aware public . As a result, the new advanced monitoring strategy of the Next-Generation Water Observing System is enhancing water data collection, and the modernized data management – like public availability, rapid data downloads, and interactive views of current conditions – makes it possible to study the health of Basin rapid data downloads and interactive views of current conditions [link here to new site pages?]. USGS is also actively researching drivers and controls of water availability and focusing on new methods to forecast future water demands and water supplies.</p>
+    </div>
   </section>
 </template>
 

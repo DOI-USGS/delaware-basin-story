@@ -4,26 +4,26 @@
   >
     <!-- <div class="side-by-side"> -->
       
-      <div id="salinity-vis" class="vis-content-side">
-        <div class="outer">
-          <img
-            id="map"
-            src="@/assets/salinity/salinityRoad/images/roadsalt.png"
-          >
+    <div
+      id="salinity-vis"
+      class="vis-content-side"
+    >
+      <div class="outer">
+        <img
+          id="map"
+          src="@/assets/salinity/salinityRoad/images/roadsalt.png"
+        >
+      </div>
+    </div>
+    <div class="text-content-side">
+      <div>
+        <div class="road-salt-text-section">
+          <h3>Road Salt in the Upper Basin</h3>
+          <p>Even as we toil to keep ocean salt out of the lower Delaware River, we actively add salt to waters throughout the Basin. Most prominently, rock salt is applied to roads in winter to make driving and walking safer. But melting snow and ice carry dissolved salt into streams and rivers, contaminating those waters with levels of chloride that can be toxic to aquatic plants and animals and can even threaten drinking water quality. </p>
+          <p>Solutions to excess road salt in streams include the use of chemical deicing alternatives and moderation of road salt applications. But the stakes are high, because safer roads are an undeniable public good. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs. </p>
         </div>
       </div>
-      <div class="text-content-side">
-        
-        <div>
-          <div class="road-salt-text-section">
-            <h3>Road Salt in the Upper Basin</h3>
-            <p>Even as we toil to keep ocean salt out of the lower Delaware River, we actively add salt to waters throughout the Basin. Most prominently, rock salt is applied to roads in winter to make driving and walking safer. But melting snow and ice carry dissolved salt into streams and rivers, contaminating those waters with levels of chloride that can be toxic to aquatic plants and animals and can even threaten drinking water quality. </p>
-            <p>Solutions to excess road salt in streams include the use of chemical deicing alternatives and moderation of road salt applications. But the stakes are high, because safer roads are an undeniable public good. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs. </p>
-      
-          </div>
-        
-        </div>
-      </div>
+    </div>
     <!-- </div> -->
   </section>
 </template>
