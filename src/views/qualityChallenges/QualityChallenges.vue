@@ -26,5 +26,6 @@
 
 <style scoped lang='scss'>
   #quality-challenges {
+
   }
 </style>

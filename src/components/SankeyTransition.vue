@@ -137,7 +137,6 @@
 <style scoped lang="scss">
   #sankey-transition {
     display: flex;
-    z-index: 1;
     margin: 0 auto;
     color: black;
     width: 100%;

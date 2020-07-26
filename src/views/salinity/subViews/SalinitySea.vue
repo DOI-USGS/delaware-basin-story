@@ -3,7 +3,7 @@
     id="salinity-sea"
   >
     <!-- <div class="side-by-side"> -->
-      
+
     <div
       id="salinity-vis"
       class="vis-content-side"
@@ -319,12 +319,22 @@
         </div>
         <div
           id="sea-salt-scroll-target"
-          v-observe-visibility="visibilityChanged"
-          class="sea-salt-text-section"
+          v-observe-visibility="{
+            callback: visibilityChanged,
+            intersection: {
+              rootMargin: '-30% 0% -50% 0%',
+              threshold: 0
+            }
+          }"
         >
-          <h3>Sea level Rise</h3>
-          <p>While these natural variations usually pose no problems, sea level rise is expected to push the salt front so far inland – especially during droughts – that water at the major Trenton, NJ intake could be contaminated. Salty water corrodes surface water intake pipes, raises the cost of drinking water treatment, and is potentially toxic to aquatic plants and fish. </p>
-          <p>Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. Remember those Supreme-Court-mandated flow targets at Montague and Trenton? One key motivation for those targets is to keep pressing the salt front toward the ocean to protect our current uses of freshwater in the lower Basin. Good data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location. </p>
+          <div
+            id="sea-salt-rise-text"
+            class="sea-salt-text-section not-visible"
+          >
+            <h3>Sea level Rise</h3>
+            <p>While these natural variations usually pose no problems, sea level rise is expected to push the salt front so far inland – especially during droughts – that water at the major Trenton, NJ intake could be contaminated. Salty water corrodes surface water intake pipes, raises the cost of drinking water treatment, and is potentially toxic to aquatic plants and fish. </p>
+            <p>Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. Remember those Supreme-Court-mandated flow targets at Montague and Trenton? One key motivation for those targets is to keep pressing the salt front toward the ocean to protect our current uses of freshwater in the lower Basin. Good data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location. </p>
+          </div>
         </div>
       </div>
     </div>
@@ -343,11 +353,16 @@
         methods: {
             visibilityChanged(isVisible, entry) {
                 this.isVisible = isVisible;
-
+                const targetElement = document.querySelector('#sea-salt-rise-text');
                 if (isVisible === true) {
                     this.isSectionInView = true;
+                    targetElement.classList.remove('not-visible')
+                    targetElement.classList.add('visible');
+
                 } else if (isVisible !== true) {
                     this.isSectionInView = false;
+                    targetElement.classList.remove('visible');
+                    targetElement.classList.add('not-visible')
                 }
             }
         }
@@ -356,11 +371,24 @@
 
 <style scoped lang="scss">
   .sea-salt-text-section {
-    padding-bottom: 5rem;
+    padding-bottom: 15rem;
   }
+  #sea-salt-rise-text {
+    .sea-salt-text-section {
+      background-color: #8b00ff;
+      opacity: 0.5;
+      transition: all 2s ease-out;
+    }
+
+    .sea-salt-text-section .visible {
+      opacity: 1;
+    }
+  }
+
 /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     section {
+      padding-bottom: 40em;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -388,7 +416,6 @@
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
     section {
-      
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -414,9 +441,7 @@
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-
-  }
+  @media only screen and (min-width: 768px) {}
 
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {}
