@@ -1,6 +1,12 @@
 <template>
-  <div id="sankey-transition">
-    <div id="sankey-image-container">
+  <div
+    id="sankey-transition"
+    class="side-by-side"
+  >
+    <div
+      id="sankey-image-container"
+      class="vis-content-side"
+    >
       <div
         id="image-div-1"
         class="sankey-image"
@@ -32,7 +38,10 @@
         >
       </div>
     </div>
-    <div id="sankey-text-container">
+    <div
+      id="sankey-text-container"
+      class="text-content-side"
+    >
       <div class="sankey-text-and-title">
         <h3
           id="sankey-title-1"
@@ -108,24 +117,18 @@
 
 <style scoped lang="scss">
   #sankey-transition {
-    position: relative;
     display: flex;
-    max-width: 65em;
-    max-height: 733px;
     margin: 0 auto;
     color: black;
     width: 100%;
     #sankey-image-container {
       justify-content: center;
-      width: 100%;
-      margin: 0 auto;
       flex: 1;
-      position: relative;
+      position: fixed;
+      top: 20%;
+      left: 20%;
+      transform: translate(-20%, -20%);
       .sankey-image {
-        height: 733px;
-        min-height: 733px;
-        width: 538px;
-        min-width: 538px;
         position: absolute;
         opacity: 0;
         -webkit-transition: opacity 1s ease-in-out;
@@ -151,10 +154,6 @@
       position:relative;
       flex: 1;
       padding: 1em;
-      // overflow-y: scroll;
-      text-align: justify;
-      -ms-overflow-style: none; /* no scroll bar for IE and Edge */
-      scrollbar-width: none; /* no scroll bar for Firefox */
       .sankey-text-and-title {
         padding: 10em 2em 15em 2em;
       }

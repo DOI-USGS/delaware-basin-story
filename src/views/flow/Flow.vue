@@ -1,7 +1,6 @@
 <template>
   <section id="flow">
     <div class="text-flow-section text-content">
-      
       <p>
         The Delaware River Basin supplies water to 16 million people in four states, including water that is piped in miles-long tunnels to New York City. How water is shared among those millions of users – not to mention the countless fish, birds, and other organisms that rely on the river for food and habitat – has been the focus of decades of research, inter-state conflict, and cooperation.
       </p>
