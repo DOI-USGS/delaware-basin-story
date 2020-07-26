@@ -132,8 +132,6 @@
                   imageElement.classList.remove('sankey-visible');
               }
           },
-          intersectsTargetElement_not(isVisible, entry) {},
-
           changeStateForIsUserAtEndOfSankeySection(isVisible, entry) {
               this.isVisible = isVisible;
               if (this.isVisible === true) {
