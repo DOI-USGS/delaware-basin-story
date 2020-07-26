@@ -128,10 +128,8 @@
               const imageElement= document.getElementById('image-div-' + entry.target.id[entry.target.id.length -1]);
               if (isVisible === true) {
                   imageElement.classList.add('sankey-visible');
-                  console.log('text is in element')
               } else if (isVisible === false) {
                   imageElement.classList.remove('sankey-visible');
-                  console.log('text is NOT in element')
               }
           },
           intersectsTargetElement_not(isVisible, entry) {},
