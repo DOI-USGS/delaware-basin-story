@@ -78,6 +78,7 @@
     margin: 0;
     padding: 0;
     background-color: white;
+    line-height: 1.5;
   }
   #app {
     p {
@@ -96,6 +97,7 @@
       font-family: 'Noto Sans', sans-serif;
       font-weight: bolder;
       font-size: 2em;
+      
     }
     h3 {
       font-family: 'Noto Sans', sans-serif;
@@ -103,6 +105,8 @@
       font-size: 1em;
     }
 
+
+    // Text-only
     .text-content {
       min-width: 350px;
       max-width: 720px;
@@ -110,8 +114,34 @@
       padding: 2.3em;
     }
 
+    // Text and Content side-by-side
+
+    .side-by-side{
+      max-width: 1200px;
+    }
+
+    .vis-content-side {
+      min-width: 500px;
+    }
+
+    .center-container {
+      position: relative;
+    }
+
+    .center-content {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
     .text-content-side {
-      
+      min-width: 350px;
+      max-width: 40vw;
+      margin-right: 5vw;
+      margin-left: 50vw;
     }
     // width: 100%;
   }
