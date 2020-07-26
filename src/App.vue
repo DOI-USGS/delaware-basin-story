@@ -8,6 +8,7 @@
     <router-view
       v-if="!isInternetExplorer & checkIfUSGSHeaderIsRendered"
     />
+    <div id="trigger-target" />
     <PreFooterVisualizationsLinks v-if="checkIfIntroSectionIsRendered || !isInternetExplorer" />
     <PreFooterCodeLinks v-if="checkIfIntroSectionIsRendered || !isInternetExplorer" />
     <FooterUSGS v-if="checkIfIntroSectionIsRendered || isInternetExplorer" />
@@ -78,6 +79,16 @@
     margin: 0;
     padding: 0;
     background-color: white;
+
+    #trigger-target {
+      padding: 0;
+      margin: 0;
+      background-color: #e7cd73;
+      position: fixed;
+      bottom: 50vh;
+      height: 100px;
+      width: 100vw;
+    }
   }
   #app {
     p {
@@ -111,8 +122,7 @@
     }
 
     .text-content-side {
-      
+
     }
-    // width: 100%;
   }
 </style>

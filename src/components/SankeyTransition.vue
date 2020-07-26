@@ -36,7 +36,12 @@
       <div class="sankey-text-and-title">
         <h3
           id="sankey-title-1"
-          v-observe-visibility="visibilityChanged"
+          v-observe-visibility="{callback: intersectsTargetElement, intersection: {
+            root: scrollTriggerTargetElement,
+            rootMargin: '0px',
+            threshold: 1
+          }
+          }"
         >
           Withdrawals, discharges, and reservoir management affect where water is available in the Basin.
         </h3>
@@ -45,7 +50,7 @@
       <div class="sankey-text-and-title">
         <h3
           id="sankey-title-2"
-          v-observe-visibility="visibilityChanged"
+          v-observe-visibility="intersectsTargetElement"
         >
           The water cycle has a big say in how much water is available, too.
         </h3>
@@ -54,7 +59,7 @@
       <div class="sankey-text-and-title">
         <h3
           id="sankey-title-3"
-          v-observe-visibility="visibilityChanged"
+          v-observe-visibility="intersectsTargetElement"
         >
           Reservoirs are effective short-term buffers against extreme flows – but only given the right information.
           <p>Through judicious water storage in the winter and timed releases in the summer, reservoir managers can provide a buffer against excessively low flows. Reservoirs in the Basin are also used for flood control, hydroelectric power, water supply, and recreation.  </p>
@@ -83,16 +88,19 @@
       },
       data() {
           return {
-              isUserAtEndOfScrollText: false
+              isUserAtEndOfScrollText: false,
+              scrollTriggerTargetElement: document.querySelector('#trigger-target')
           }
       },
       methods: {
-          visibilityChanged (isVisible, entry) {
+          intersectsTargetElement (isVisible, entry) {
               const imageElement= document.getElementById('image-div-' + entry.target.id[entry.target.id.length -1]);
               if (isVisible === true) {
                   imageElement.classList.add('sankey-visible');
+                  console.log('text is in element')
               } else if (isVisible === false) {
                   imageElement.classList.remove('sankey-visible');
+                  console.log('text is NOT in element')
               }
           },
           changeStateForIsUserAtEndOfSankeySection(isVisible, entry) {
