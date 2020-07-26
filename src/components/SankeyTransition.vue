@@ -42,28 +42,56 @@
       id="sankey-text-container"
       class="text-content-side"
     >
-      <div class="sankey-text-and-title">
+      <div
+        id="sankey-text-and-title-1"
+        v-observe-visibility="{
+          callback: visibilityChanged,
+          intersection: {
+            root: null,
+            rootMargin: '-49% 0% -49% 0%',
+            threshold: 0,
+          },
+        }"
+        class="sankey-text-and-title"
+      >
         <h3
           id="sankey-title-1"
-          v-observe-visibility="intersectsTargetElement"
         >
           Withdrawals, discharges, and reservoir management affect where water is available in the Basin.
         </h3>
         <p>Today’s management of flows in the Basin is handled through formal cooperation among federal, state, and local entities. At the highest level, the <a href="https://webapps.usgs.gov/odrm/about/about-odrm">USGS Delaware River Master</a> and the <a href="https://www.state.nj.us/drbc/programs/">Delaware River Basin Commission</a> review development proposals, regulate water withdrawals and diversions, and evaluate the effects of human activities throughout the Basin. In addition, these two regulatory groups sometimes intervene to direct water releases from major reservoirs throughout the Basin at key times of year. </p>
       </div>
-      <div class="sankey-text-and-title">
-        <h3
-          id="sankey-title-2"
-          v-observe-visibility="intersectsTargetElement_not"
-        >
+      <div
+        id="sankey-text-and-title-2"
+        v-observe-visibility="{
+          callback: visibilityChanged,
+          intersection: {
+            root: null,
+            rootMargin: '-49% 0% -49% 0%',
+            threshold: 0,
+          },
+        }"
+        class="sankey-text-and-title"
+      >
+        <h3 id="sankey-title-2">
           The water cycle has a big say in how much water is available, too.
         </h3>
         <p>In the late summer of most years, and especially during droughts, the streams and rivers of the Basin have lower, slower flows. But human water demands don’t let up! The flow targets at Montague and Trenton are designed to protect against water hoarding upstream that would deprive downstream users – human and otherwise – of fair access to water. </p>
       </div>
-      <div class="sankey-text-and-title">
+      <div
+        id="sankey-text-and-title-3"
+        v-observe-visibility="{
+          callback: visibilityChanged,
+          intersection: {
+            root: null,
+            rootMargin: '-40% 0% -40% 0%',
+            threshold: 0,
+          },
+        }"
+        class="sankey-text-and-title"
+      >
         <h3
           id="sankey-title-3"
-          v-observe-visibility="intersectsTargetElement_not"
         >
           Reservoirs are effective short-term buffers against extreme flows – but only given the right information.
           <p>Through judicious water storage in the winter and timed releases in the summer, reservoir managers can provide a buffer against excessively low flows. Reservoirs in the Basin are also used for flood control, hydroelectric power, water supply, and recreation.  </p>
@@ -92,12 +120,11 @@
       },
       data() {
           return {
-              isUserAtEndOfScrollText: false,
-              scrollTriggerTargetElement: document.querySelector('#trigger-target')
+              isUserAtEndOfScrollText: false
           }
       },
       methods: {
-          intersectsTargetElement (isVisible, entry) {
+          visibilityChanged (isVisible, entry) {
               const imageElement= document.getElementById('image-div-' + entry.target.id[entry.target.id.length -1]);
               if (isVisible === true) {
                   imageElement.classList.add('sankey-visible');
