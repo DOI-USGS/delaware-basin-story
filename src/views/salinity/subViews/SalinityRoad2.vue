@@ -3,7 +3,7 @@
     id="salinity-sea"
   >
     <!-- <div class="side-by-side"> -->
-      
+
     <div
       id="salinity-vis"
       class="vis-content-side"
@@ -313,13 +313,14 @@
         </h1>
       </div>
       <div>
-        <div class="road-salt-text-section">
+        <div id="salt-wedge-text" class="road-salt-text-section">
           <h3>The Salt Wedge</h3>
           <p>As freshwater spills from the river into the saltier, ocean-influenced waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the intruding ocean. The bounds of that wedge – the “salt front” – migrate up and down the river channel over the daily cycle of ocean tides, the seasonal cycle of lower and higher river flows, and the multi-year fluctuations into and out of droughts. </p>
         </div>
         <div
           id="sea-salt-scroll-target"
           v-observe-visibility="visibilityChanged"
+          v-custom-scroll
           class="road-salt-text-section"
         >
           <h3>Sea level Rise</h3>
@@ -355,8 +356,14 @@
 </script>
 
 <style scoped lang="scss">
-  .road-salt-text-section {
-    padding-bottom: 5rem;
+  #sea-salt-scroll-target {
+    .before-enter {
+      opacity: 0;
+      transition: all 2s ease-out;
+    }
+    .enter {
+      opacity: 1;
+    }
   }
 /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
@@ -388,7 +395,7 @@
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
     section {
-      
+
       display: flex;
       flex-direction: row;
       justify-content: center;

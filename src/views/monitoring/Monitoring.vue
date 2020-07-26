@@ -5,7 +5,7 @@
         <img
           id="big-number-image-base"
           class="big-number-map-locations"
-          src="@/assets/monitoring/images/togggleableSVGsAndBase/basemap-01_1080.jpg"
+          src="@/assets/monitoring/images/togggleableSVGsAndBase/basemap-01.png"
           alt="watercolor illustration of delaware river basin with monitoring locations marked"
         >
         <SVGNewGages
@@ -252,6 +252,8 @@
       width: 250px;
       .big-number-map-locations {
         position:absolute;
+        left: 0;
+        top: 0;
       }
     }
 #big-number-image-base {

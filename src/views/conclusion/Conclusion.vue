@@ -3,16 +3,12 @@
     id="conclusion"
   >
     <div class="inking">
-      <div
-        id="scroll-target"
-        v-observe-visibility="visibilityChanged"
-      />
       <img
         id="watercolor"
         src="@/assets/conclusion/images/DRBWatercolor-01.png"
         alt="watercolor map of delaware river basin"
       >
-     
+
       <svg
         v-if="isSectionInView"
         id="Annotations"
@@ -1721,6 +1717,7 @@
     </div>
     <div
       id="text-conclusion"
+      v-observe-visibility="visibilityChanged"
       class="text-content-side"
     >
       <p>Water uses in the Delaware Basin are diverse and complicated, and the need for information that describes the present and future conditions of water availability and water quality is more pressing than ever. The advancements in water science and monitoring paint a clearer picture of how the DRB has changed, and new efforts are building models that better predict the health and function of the river in the future. </p>
@@ -1762,7 +1759,7 @@
     top: 0;
     z-index: -1;
     padding-top: 10vh;
-   
+
     img {
       display: block;
       max-height: 100%;
@@ -1785,8 +1782,6 @@
     padding: 25px;
   }
 
-
-
   @keyframes draw100 {
     0% {stroke-dashoffset: -100px}
     100% {stroke-dashoffset: 0px;}
@@ -1798,7 +1793,7 @@
   @-moz-keyframes draw100 {
     0% {stroke-dashoffset: -100px}
     100% {stroke-dashoffset: 0px;}
-  } 
+  }
   @-webkit-keyframes draw100 {
     0% {stroke-dashoffset: -100px}
     100% {stroke-dashoffset: 0px;}
