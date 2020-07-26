@@ -96,7 +96,6 @@
       font-family: 'Noto Sans', sans-serif;
       font-weight: 300;
       font-size: 2em;
-      
     }
     h3 {
       font-family: 'Noto Sans', sans-serif;
@@ -107,9 +106,9 @@
     .byline {
       font-family: 'Noto Sans', sans-serif;
       font-style: italic
-  
+
     }
-    
+
     // Text-only
     .text-content {
       min-width: 350px;
@@ -128,7 +127,7 @@
       min-width: 500px;
       max-width: 50vw;
       position: -webkit-sticky;
-      position: sticky; 
+      position: sticky;
       display: block;
     }
 
