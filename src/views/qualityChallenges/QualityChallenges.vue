@@ -25,4 +25,6 @@
 </script>
 
 <style scoped lang='scss'>
- </style>
+  #quality-challenges {
+  }
+</style>
