@@ -1,6 +1,12 @@
 <template>
-  <div id="sankey-transition" class="side-by-side">
-    <div id="sankey-image-container" class="vis-content-side">
+  <div
+    id="sankey-transition"
+    class="side-by-side"
+  >
+    <div
+      id="sankey-image-container"
+      class="vis-content-side"
+    >
       <div
         id="image-div-1"
         class="sankey-image"
@@ -32,7 +38,10 @@
         >
       </div>
     </div>
-    <div id="sankey-text-container" class="text-content-side">
+    <div
+      id="sankey-text-container"
+      class="text-content-side"
+    >
       <div class="sankey-text-and-title">
         <h3
           id="sankey-title-1"
