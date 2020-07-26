@@ -312,8 +312,8 @@
           Salinity
         </h1>
       </div>
-      <div>
-        <div class="sea-salt-text-section">
+      <div id="salinity-section-text">
+        <div id="sea-salt-wedge-text">
           <h3>The Salt Wedge</h3>
           <p>As freshwater spills from the river into the saltier, ocean-influenced waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the intruding ocean. The bounds of that wedge – the “salt front” – migrate up and down the river channel over the daily cycle of ocean tides, the seasonal cycle of lower and higher river flows, and the multi-year fluctuations into and out of droughts. </p>
         </div>
@@ -329,7 +329,6 @@
         >
           <div
             id="sea-salt-rise-text"
-            class="sea-salt-text-section not-visible"
           >
             <h3>Sea level Rise</h3>
             <p>While these natural variations usually pose no problems, sea level rise is expected to push the salt front so far inland – especially during droughts – that water at the major Trenton, NJ intake could be contaminated. Salty water corrodes surface water intake pipes, raises the cost of drinking water treatment, and is potentially toxic to aquatic plants and fish. </p>
@@ -356,13 +355,11 @@
                 const targetElement = document.querySelector('#sea-salt-rise-text');
                 if (isVisible === true) {
                     this.isSectionInView = true;
-                    targetElement.classList.remove('not-visible')
                     targetElement.classList.add('visible');
 
                 } else if (isVisible !== true) {
                     this.isSectionInView = false;
                     targetElement.classList.remove('visible');
-                    targetElement.classList.add('not-visible')
                 }
             }
         }
@@ -370,25 +367,27 @@
 </script>
 
 <style scoped lang="scss">
-  .sea-salt-text-section {
-    padding-bottom: 15rem;
-  }
-  #sea-salt-rise-text {
-    .sea-salt-text-section {
-      background-color: #8b00ff;
-      opacity: 0.5;
-      transition: all 2s ease-out;
+  #salinity-section-text {
+    #sea-salt-wedge-text {
+      padding-bottom: 15rem;
     }
-
-    .sea-salt-text-section .visible {
+    #sea-salt-rise-text {
+      opacity: 0;
+      transition: opacity 2s;
+    }
+    #sea-salt-rise-text.visible {
       opacity: 1;
     }
   }
 
+
+
+
+
+
 /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     section {
-      padding-bottom: 40em;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -416,6 +415,7 @@
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
     section {
+      margin-bottom: 10em;
       display: flex;
       flex-direction: row;
       justify-content: center;
