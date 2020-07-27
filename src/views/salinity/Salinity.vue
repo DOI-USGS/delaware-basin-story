@@ -4,8 +4,6 @@
       id="sea-salt-component"
     />
     <road />
-
-    <hr>
   </div>
 </template>
 
@@ -28,5 +26,5 @@
 </script>
 
 <style scoped lang="scss">
-  
+
 </style>
