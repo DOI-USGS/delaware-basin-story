@@ -313,7 +313,10 @@
         </h1>
       </div>
       <div>
-        <div id="salt-wedge-text" class="road-salt-text-section">
+        <div
+          id="salt-wedge-text"
+          class="road-salt-text-section"
+        >
           <h3>The Salt Wedge</h3>
           <p>As freshwater spills from the river into the saltier, ocean-influenced waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the intruding ocean. The bounds of that wedge – the “salt front” – migrate up and down the river channel over the daily cycle of ocean tides, the seasonal cycle of lower and higher river flows, and the multi-year fluctuations into and out of droughts. </p>
         </div>

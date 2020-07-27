@@ -2,7 +2,6 @@
   <div id="salinity">
     <sea
       id="sea-salt-component"
-      
     />
     <road />
 

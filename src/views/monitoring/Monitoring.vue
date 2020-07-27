@@ -1,132 +1,176 @@
 <template>
   <section id="monitoring">
-   
-      <!-- Begin Image Side -->
+    <!-- Begin Image Side -->
 
-      <div id="monitoring-big-numbers-main-image-container" class="vis-content-side">
-        <img
-          id="big-number-image-base"
-          class="big-number-map-locations"
-          src="@/assets/monitoring/images/togggleableSVGsAndBase/basemap-01.png"
-          alt="watercolor illustration of delaware river basin with monitoring locations marked"
-        >
-        <SVGNewGages
-          id="big-number-svg-1"
-          class="big-number-map-locations-svg"
-          alt=""
-          hidden
-        />
-        <SVGEnhanced
-          id="big-number-svg-2"
-          class="big-number-map-locations-svg"
-          alt=""
-          hidden
-        />
-        <SVGConductance
-          id="big-number-svg-3"
-          class="big-number-map-locations-svg"
-          alt=""
-          hidden
-        />
-        <SVGTemperature
-          id="big-number-svg-4"
-          class="big-number-map-locations-svg"
-          alt=""
-          hidden
-        />
-        <SVGCameras
-          id="big-number-svg-5"
-          class="big-number-map-locations-svg"
-          alt=""
-          hidden
-        />
+    <div
+      id="monitoring-big-numbers-main-image-container"
+      class="vis-content-side"
+    >
+      <img
+        id="big-number-image-base"
+        class="big-number-map-locations"
+        src="@/assets/monitoring/images/togggleableSVGsAndBase/basemap-01.png"
+        alt="watercolor illustration of delaware river basin with monitoring locations marked"
+      >
+      <SVGNewGages
+        id="big-number-svg-1"
+        class="big-number-map-locations-svg"
+        alt=""
+        hidden
+      />
+      <SVGEnhanced
+        id="big-number-svg-2"
+        class="big-number-map-locations-svg"
+        alt=""
+        hidden
+      />
+      <SVGConductance
+        id="big-number-svg-3"
+        class="big-number-map-locations-svg"
+        alt=""
+        hidden
+      />
+      <SVGTemperature
+        id="big-number-svg-4"
+        class="big-number-map-locations-svg"
+        alt=""
+        hidden
+      />
+      <SVGCameras
+        id="big-number-svg-5"
+        class="big-number-map-locations-svg"
+        alt=""
+        hidden
+      />
+    </div>
+
+    <!-- Begin Text Side -->
+    <div
+      id="big-number-icons-container"
+      class="text-content-side"
+    >
+      <div
+        id="list-1"
+        class="big-number-icon-container accordion"
+      >
+        <div class="big-num"> 
+          <img
+            src="@/assets/monitoring/images/blueCircle1.png"
+            alt=""
+          >
+          <h2 class="big-number-number">
+            34
+          </h2>
+        </div>
+
+        <h2 class="big-number-text">
+          new gages
+        </h2>
+      </div>
+      <div
+        id="details-1"
+        class="single-detail panel"
+      >
+        <p>Measurements of real-time flows are critical to the decision makers of the DRB. To support the continued need to better understand streamflow in various locations of the basin, 34 new NGWOS streamgages have been installed the last three years. </p>
       </div>
 
-      <!-- Begin Text Side -->
-      <div id="big-number-icons-container" class="text-content-side">
-        <div id="list-1" class="big-number-icon-container accordion">
-          <div class="big-num"> 
-            <img
-              src="@/assets/monitoring/images/blueCircle1.png"
-              alt=""
-            >
-            <h2 class="big-number-number">
-              34
-            </h2>
-          </div>
-
-          <h2 class="big-number-text">new gages</h2>
+      <div
+        id="list-2"
+        class="big-number-icon-container accordion"
+      >
+        <div class="big-num"> 
+          <img
+            src="@/assets/monitoring/images/greenCircle1.png"
+            alt=""
+          >
+          <h2 class="big-number-number">
+            28
+          </h2>
         </div>
-        <div id="details-1" class="single-detail panel">
-          <p>Measurements of real-time flows are critical to the decision makers of the DRB. To support the continued need to better understand streamflow in various locations of the basin, 34 new NGWOS streamgages have been installed the last three years. </p>
-        </div>
-
-        <div id="list-2" class="big-number-icon-container accordion">
-          <div class="big-num"> 
-            <img
-              src="@/assets/monitoring/images/greenCircle1.png"
-              alt=""
-            >
-            <h2 class="big-number-number">
-              28
-            </h2>
-          </div>
-          <h2 class="big-number-text">upgrades</h2>
-        </div>
-        <div id="details-2" class="single-detail panel">
-          <p>Equipment and communication in 28 stations has been upgraded to support the type of advanced monitoring made possible by direct two-way communication. Not only are near real-time measurements delivered from the field to the web with minimal delay, technicians can also alter the cadence of monitoring from a remote location, providing the potential to optimize data collection for current needs even during extreme events. </p>
-        </div>
-
-        <div id="list-3" class="big-number-icon-container accordion">
-          <div class="big-num"> 
-            <img
-              src="@/assets/monitoring/images/blueCircle2.png"
-              alt=""
-            >
-            <h2 class="big-number-number">
-              56
-            </h2>
-          </div>
-          <h2 class="big-number-text">specific conductance</h2>
-        </div>
-        <div id="details-3" class="single-detail panel">
-          <p>Keeping tabs on the evolving salinity issues in the headwaters and the mainstem of the Delaware River is important to understand changes to the location of the salt front and to better understand ecosystem health in streams that are impacted by road salting. Specific conductivity sensors measure a variable related to salinity – the ability of the water to conduct electricity – and relationships between conductivity and salinity can be used to fill in the picture of salt concentrations in 56 new locations in the DRB. </p>
-        </div>
-
-        <div id="list-4" class="big-number-icon-container accordion">
-          <div class="big-num"> 
-            <img
-              src="@/assets/monitoring/images/greenCircle2.png"
-              alt=""
-            >
-            <h2 class="big-number-number">
-              98
-            </h2>
-          </div>
-          <h2 class="big-number-text">temperature</h2>
-        </div>
-        <div id="details-4" class="single-detail panel">
-          <p>Water temperature is a key factor in the health of many aquatic organisms, and better, broader, and faster delivery of water temperature data can help plan reservoir releases and decide when to fish. New temperature sensors were added to 98 locations in the DRB.</p>
-        </div>
-
-        <div id="list-5" class="big-number-icon-container accordion">
-          <div class="big-num"> 
-            <img
-              src="@/assets/monitoring/images/orangeCircle1.png"
-              alt=""
-            >
-            <h2 class="big-number-number">
-              8
-            </h2>
-          </div>
-          <h2 class="big-number-text">cameras</h2>
-        </div>
-        <div id="details-5" class="single-detail panel">
-          <p>Installations of 8 cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These new cameras open up new realms of science and data processing, and support USGS sharing more views of the dynamic lives of rivers and streams.</p>
-          <div id="monitoring-scroll-out-target" />
-        </div>
+        <h2 class="big-number-text">
+          upgrades
+        </h2>
+      </div>
+      <div
+        id="details-2"
+        class="single-detail panel"
+      >
+        <p>Equipment and communication in 28 stations has been upgraded to support the type of advanced monitoring made possible by direct two-way communication. Not only are near real-time measurements delivered from the field to the web with minimal delay, technicians can also alter the cadence of monitoring from a remote location, providing the potential to optimize data collection for current needs even during extreme events. </p>
       </div>
 
+      <div
+        id="list-3"
+        class="big-number-icon-container accordion"
+      >
+        <div class="big-num"> 
+          <img
+            src="@/assets/monitoring/images/blueCircle2.png"
+            alt=""
+          >
+          <h2 class="big-number-number">
+            56
+          </h2>
+        </div>
+        <h2 class="big-number-text">
+          specific conductance
+        </h2>
+      </div>
+      <div
+        id="details-3"
+        class="single-detail panel"
+      >
+        <p>Keeping tabs on the evolving salinity issues in the headwaters and the mainstem of the Delaware River is important to understand changes to the location of the salt front and to better understand ecosystem health in streams that are impacted by road salting. Specific conductivity sensors measure a variable related to salinity – the ability of the water to conduct electricity – and relationships between conductivity and salinity can be used to fill in the picture of salt concentrations in 56 new locations in the DRB. </p>
+      </div>
+
+      <div
+        id="list-4"
+        class="big-number-icon-container accordion"
+      >
+        <div class="big-num"> 
+          <img
+            src="@/assets/monitoring/images/greenCircle2.png"
+            alt=""
+          >
+          <h2 class="big-number-number">
+            98
+          </h2>
+        </div>
+        <h2 class="big-number-text">
+          temperature
+        </h2>
+      </div>
+      <div
+        id="details-4"
+        class="single-detail panel"
+      >
+        <p>Water temperature is a key factor in the health of many aquatic organisms, and better, broader, and faster delivery of water temperature data can help plan reservoir releases and decide when to fish. New temperature sensors were added to 98 locations in the DRB.</p>
+      </div>
+
+      <div
+        id="list-5"
+        class="big-number-icon-container accordion"
+      >
+        <div class="big-num"> 
+          <img
+            src="@/assets/monitoring/images/orangeCircle1.png"
+            alt=""
+          >
+          <h2 class="big-number-number">
+            8
+          </h2>
+        </div>
+        <h2 class="big-number-text">
+          cameras
+        </h2>
+      </div>
+      <div
+        id="details-5"
+        class="single-detail panel"
+      >
+        <p>Installations of 8 cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These new cameras open up new realms of science and data processing, and support USGS sharing more views of the dynamic lives of rivers and streams.</p>
+        <div id="monitoring-scroll-out-target" />
+      </div>
+    </div>
   </section>
 </template>
 
