@@ -322,11 +322,10 @@
 
 <style scoped lang="scss">
   #mussels-swap-container {
-    position: relative;
-    display: block;
+    height: 100vh;
     #row-mussels-container {
       display: block;
-      position: absolute;
+      position: relative;;
       top: 0;
       left: 0;
       height: 100vh;

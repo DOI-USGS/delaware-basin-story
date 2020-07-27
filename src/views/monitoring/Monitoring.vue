@@ -40,7 +40,7 @@
         id="big-number-svg-5"
         class="big-number-map-locations-svg"
         alt=""
-        
+
         hidden
       />
     </div>
@@ -54,7 +54,7 @@
         id="list-1"
         class="big-number-icon-container accordion"
       >
-        <div class="big-num"> 
+        <div class="big-num">
           <img
             src="@/assets/monitoring/images/blueCircle1.png"
             alt=""
@@ -79,7 +79,7 @@
         id="list-2"
         class="big-number-icon-container accordion"
       >
-        <div class="big-num"> 
+        <div class="big-num">
           <img
             src="@/assets/monitoring/images/greenCircle1.png"
             alt=""
@@ -103,7 +103,7 @@
         id="list-3"
         class="big-number-icon-container accordion"
       >
-        <div class="big-num"> 
+        <div class="big-num">
           <img
             src="@/assets/monitoring/images/blueCircle2.png"
             alt=""
@@ -127,7 +127,7 @@
         id="list-4"
         class="big-number-icon-container accordion"
       >
-        <div class="big-num"> 
+        <div class="big-num">
           <img
             src="@/assets/monitoring/images/greenCircle2.png"
             alt=""
@@ -151,7 +151,7 @@
         id="list-5"
         class="big-number-icon-container accordion"
       >
-        <div class="big-num"> 
+        <div class="big-num">
           <img
             src="@/assets/monitoring/images/orangeCircle1.png"
             alt=""
@@ -224,8 +224,6 @@
 </script>
 
 <style scoped lang="scss">
-
-
 /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     section {
@@ -294,24 +292,7 @@
 
 
 
-    // .glow {
-    //   font-size: 70px;
-    //   color: #ffffff;
-    //   text-align: center;
-    //   -webkit-animation: glow 1s ease-in-out infinite alternate;
-    //   -moz-animation: glow 1s ease-in-out infinite alternate;
-    //   animation: glow 1s ease-in-out infinite alternate;
-    // }
-    // @-webkit-keyframes glow {
-    //   from {
-    //     text-shadow: 0 0 10px #eeeeee, 0 0 20px #d46e21, 0 0 30px #d46e21, 0 0 40px #d46e21,
-    //     0 0 50px #e7cd73, 0 0 60px #e7cd73, 0 0 70px #e7cd73;
-    //   }
-    //   to {
-    //     text-shadow: 0 0 20px #eeeeee, 0 0 30px #fffc4d, 0 0 40px #fffc4d, 0 0 50px #fffc4d,
-    //     0 0 60px #fffc4d, 0 0 70px #fffc4d, 0 0 80px #fffc4d;
-    //   }
-    // }
+
 
 #monitoring-big-numbers-main-image-container  {
   position: relative;
@@ -341,14 +322,14 @@
 
     #monitoring {
 
-        
+
         #big-number-icons-container {
 
           // justify-content: center;
           // font-family: chantal, sans-serif;
           // font-weight: bold;
 
-          
+
           img {
             position: absolute;
           }
@@ -373,7 +354,7 @@
               align-items: left;
               }
               .big-number-number {
-              
+
               // top: -50%;
               // left: 50%;
               // transform: translate(-50%, -100%);
@@ -381,13 +362,13 @@
               font-weight: bold;
               color: white;
               z-index: 2;
-    
-            
+
+
               }
-              
+
 
             }
-            
+
             .big-number-text {
               color: black;
               font-family: chantal, sans-serif;
@@ -401,7 +382,7 @@
             }
           }
         }
-    
+
     }
 
     #monitoring-details {
@@ -415,7 +396,7 @@
       }
 
       .monitoring-details {
-        
+
         p {
           display: block;
           max-width: 55em;
