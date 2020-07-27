@@ -35,53 +35,60 @@
           <g id="saltline">
             <path
               id="dash"
-              d="M732.81,932c10.07,5.29,20.81,9.16,30.79,14.61a1.92,1.92,0,0,0,2.32-3c-11.73-11.77-26.64-19.56-39.71-29.65a98.61,98.61,0,0,1-10.4-9.19l-2.32,3a388.07,388.07,0,0,0,48.61,28q7.1,3.35,14.39,6.27a1.92,1.92,0,0,0,2.16-.88,2,2,0,0,0-.3-2.32c-9.74-11.87-24.61-17.64-37.3-25.6a67.45,67.45,0,0,1-9.87-7.35c-1.81-1.66-4.52,1-2.71,2.71,11.21,10.29,25.95,15.44,38.09,24.41a50.74,50.74,0,0,1,9.09,8.54l1.86-3.2c-17.08-6.82-33.3-15.7-48.9-25.38q-6.66-4.12-13.18-8.47c-1.85-1.23-3.8,1.47-2.32,3,11.61,12,26.53,19.89,39.73,29.88a98.39,98.39,0,0,1,10.38,9l2.31-3c-10-5.46-20.72-9.33-30.79-14.61-2.18-1.15-4.12,2.16-1.93,3.3Z"
-              transform="translate(-712.58 -904.2)"
+              d="M734.8,932.35a226.51,226.51,0,0,1,28.35,12.28c1.71.88,3.23-1.7,1.51-2.59-13.47-7-23.93-18.23-35.75-27.52a105.27,105.27,0,0,0-10.38-7.3c-1.66-1-3.12,1.53-1.51,2.59a267.07,267.07,0,0,0,45.62,24q6.86,2.79,13.86,5.2c1.64.56,2.58-1.89,1.15-2.75q-23.8-14.38-47.1-29.59c-1.63-1.06-3.13,1.54-1.52,2.59q23.29,15.19,47.11,29.59l1.16-2.74a261.74,261.74,0,0,1-46.38-21.21c-4.2-2.44-8.33-5-12.39-7.67L717,909.81c12.93,7.87,23.24,19.18,35.41,28.08a83.88,83.88,0,0,0,10.72,6.74l1.51-2.59a234.29,234.29,0,0,0-29.06-12.59c-1.82-.64-2.61,2.25-.8,2.9Z" 
+              transform="translate(-716.32 -906.41)"
             />
             <path
               id="s"
-              d="M834.78,951.67a1.93,1.93,0,0,1-1-.24,3.61,3.61,0,0,0-1.76-.32c-5,0-14.59,3.63-16.67,5.75a12.4,12.4,0,0,0,1.52.36c2.08.44,9.87,2,11.19,2.84.68.4,2.48,2.16,2.64,3.72a1.61,1.61,0,0,1-.64,1.63c-1.28,1-8,4-9.71,4-1.52,0-4.44-1.16-4.56-2.2a1,1,0,0,1,.2-.68c.8-1.28,9.2-2.71,9.36-3.63,0,0-.12,0-.2,0l-1-.2c-3.2-.84-9.95-1.52-12.35-4a3.85,3.85,0,0,1-.88-2.16,4,4,0,0,1,.8-3.19c1.88-1.76,11.71-6.44,19.14-6.44a7.5,7.5,0,0,1,6.07,2.64,1.39,1.39,0,0,1,.28.6C837.29,950.87,835.78,951.67,834.78,951.67Z"
-              transform="translate(-712.58 -904.2)"
+              d="M820.2,942.05c-14.42-8.41-28.67-8.66-35.08-1.82-.79.85-4.19,4.48-3.44,8.62,2.05,11.37,32.22,9.41,34.71,20.81,1.07,4.9-3.4,10.34-7.36,12.87-8,5.11-17.19.57-17.69.31" transform="translate(-716.32 -906.41)" 
             />
             <path
-              id="a"
-              d="M856.23,968.41a4.16,4.16,0,0,1-3.07-1.32c-.56-.72-1.36-4.23-1.68-5.31a82.46,82.46,0,0,1-10,1.84c-1.2,2.39-2,5-3,7.43a10.34,10.34,0,0,1-.68,1.36,3.53,3.53,0,0,1-2.4,1,1.37,1.37,0,0,1-1.52-1.16c-.24-4.28,9.71-25.7,10.67-26.34a6.21,6.21,0,0,1,3.32-1,3.25,3.25,0,0,1,2.44.88c2.56,2.88,7.47,17,7.91,20.58C858.31,967.69,857.71,968.41,856.23,968.41Zm-9-18.82a75.52,75.52,0,0,0-4,9.19,29.43,29.43,0,0,1,6.88-1.72C849.36,955.06,847.84,950.79,847.24,949.59Z"
-              transform="translate(-712.58 -904.2)"
+              id="ab"
+              d="M829.33,970.56l22.07-7.36" transform="translate(-716.32 -906.41)"
+            />
+            <path
+              id="aa"
+              d="M822,987.11c3.08-8.56,5.78-15.74,7.87-21.21,1.33-3.5,2.45-6.38,3.17-8.21,2.89-7.43,5.42-13.68,7.35-18.4a6.12,6.12,0,0,1,3.68,0,7.13,7.13,0,0,1,3.68,3.68c1.91,3.65,6.16,16.92,11,34.95" transform="translate(-716.32 -906.41)"
             />
             <path
               id="l"
-              d="M877.89,970c-1,1.24-7.68,4.24-9.63,4.68-.16,0-.32,0-.52,0a6.62,6.62,0,0,1-3.48-1.52,3.07,3.07,0,0,1-.64-1.64c-.56-4.6-1.08-23.62-.2-27.18a1.55,1.55,0,0,1,1.64-1.16,3.35,3.35,0,0,1,2.6,1.48,3.25,3.25,0,0,1,.32,1c.4,3.16-.48,16.83.28,23a5.84,5.84,0,0,0,.12.88c2.15-.6,5.51-1.72,6.47-2.08a2.52,2.52,0,0,1,.88-.2c.8,0,2.32.48,2.48,1.72A1.23,1.23,0,0,1,877.89,970Z"
-              transform="translate(-712.58 -904.2)"
+              d="M869.5,935.5q.5,24.5,1,49l19-2" transform="translate(-716.32 -906.41)"
             />
             <path
-              id="t"
-              d="M896.07,943.71a8.5,8.5,0,0,1-1.44.4c-1.76.36-3.52.64-5.28,1-.6.08-1,.16-1.08.28-.48.88-.83,20.5-.92,23.3,0,2.52-.11,4.44-.19,4.8s-.72.84-1.56.84a3.43,3.43,0,0,1-3.44-2.72c-.16-1.56.08-8.23.32-14.43.2-4.51.4-8.87.52-10.91a17,17,0,0,1-4.48.8c-1.4,0-3.75-1.28-3.91-2.6-.2-1.64,2.47-1.31,3.43-1.47,1.44-.25,3-.88,5.48-1.4a49,49,0,0,1,10.83-1,2.5,2.5,0,0,1,2.48,1.84A1.29,1.29,0,0,1,896.07,943.71Z"
-              transform="translate(-712.58 -904.2)"
+              id="ta"
+              d="M1111.56,988c.56-17.78,1.17-33.72,1.84-55.17" transform="translate(-716.32 -906.41)"
             />
             <path
-              id="f"
-              d="M923.44,963.38a39.09,39.09,0,0,1-5.2,1c-1.84.29-3.8.6-5,.84,0,1.24.08,5-.28,6a2.32,2.32,0,0,1-2.07,1.52,1.91,1.91,0,0,1-.8-.16c-.64-.28-1.36-3.2-1.68-6a61.85,61.85,0,0,1-.56-6.63c0-2.2.84-16.07,1.4-16.23a36.59,36.59,0,0,1,8.31-1.39A5.67,5.67,0,0,1,922,944a2.06,2.06,0,0,1,.6,1.12,1.11,1.11,0,0,1-.68,1.2,5.64,5.64,0,0,1-1.24.28,41.39,41.39,0,0,0-6.72,1.16,68.36,68.36,0,0,0-.72,13,36,36,0,0,1,6.6-1c1.12,0,4,.92,4.23,2.56A1,1,0,0,1,923.44,963.38Z"
-              transform="translate(-712.58 -904.2)"
+              id="tb"
+              d="M1096.85,934.67l34.94-5.52" transform="translate(-716.32 -906.41)"
+            />
+            <path
+              id="fa"
+              d="M965.5,955.5h-14" transform="translate(-716.32 -906.41)"
+            />
+            <path
+              id="fb"
+              d="M951.5,983.5q-1-26-2-52l20-2" transform="translate(-716.32 -906.41)"
             />
             <path
               id="r"
-              d="M936.38,962.26c1.76,1.08,4.08,2.32,6.19,3.55a1.48,1.48,0,0,1,.72,1c.08.84-1.44,1.72-2.75,1.72a6.82,6.82,0,0,1-3.36-1.36,49.17,49.17,0,0,0-5.12-3.07c.28,1.27.8,2.91.88,3.51.16,1.2-1.12,1.6-2,1.6a3.23,3.23,0,0,1-2.59-1.24c-.8-1.16-1.56-4-1.92-7-.12-.84-.16-1.72-.2-2.6-.16-4.12.8-9.95,1.44-10a60.12,60.12,0,0,1,6.91-.4,32.32,32.32,0,0,1,8.35.84c2.52.8,5.72,2.64,6,4.88C949.37,957.46,939.18,961.34,936.38,962.26Zm-.72-10.75c-1.12,0-2.24,0-3.32.12a27.7,27.7,0,0,0-.68,7.71c3.6-1.12,11.75-4.88,11.67-6.67C942.57,952,939.42,951.51,935.66,951.51Z"
-              transform="translate(-712.58 -904.2)"
+              d="M982.91,975.8a63.9,63.9,0,0,1-3.68-34.94,41,41,0,0,1,11-1.84c9.48-.23,15.4,3,16.55,3.68,2.34,1.33,5.64,3.21,5.52,5.52-.05,1-.71,2.12-7.36,5.51-5.28,2.7-8.93,4-14.62,6.59-2.42,1.08-4.37,2-5.61,2.61l16.55,11" transform="translate(-716.32 -906.41)"
             />
             <path
               id="o"
-              d="M958,966.05a7.29,7.29,0,0,1-7.11-6.35c-.48-3.92,2.24-10.59,7.91-10.59a3.82,3.82,0,0,1,2.64.84c1.68.08,4.16,1.24,4.68,5.51,0,.48.12,1,.12,1.6C966.23,961.14,962.19,966.05,958,966.05Zm3.4-12.18a2.28,2.28,0,0,0-.88-.16c-2.76,0-5.75,4.19-5.43,6.59.08.64.28,1,1,1a6.07,6.07,0,0,0,4-2.32,10.88,10.88,0,0,0,1.36-5.07Z"
-              transform="translate(-712.58 -904.2)"
+              d="M1039.5,941.5c-3.53-1.1-7,.85-9,2-5.78,3.27-11.38,10.68-10,19,.69,4.13,3.44,10.58,9,12,7.14,1.83,14.82-5.67,17-13C1048.83,953.69,1045.69,943.42,1039.5,941.5Z" transform="translate(-716.32 -906.41)"
             />
             <path
               id="n"
-              d="M993.48,965.29c.12,1.52-2.24,2.12-3.16,2.12a2.43,2.43,0,0,1-1.24-.28,77,77,0,0,1-6.43-6c-1.64-1.64-3.32-3.32-5.08-4.92.2,4,.36,10.67.2,12.39a1.27,1.27,0,0,1-1.32,1.24c-1.64,0-3.47-2.24-3.63-3.48-.24-2.12.32-13.9,0-16.7-.08-1.08,1.28-1.72,2.31-1.72a2.5,2.5,0,0,1,1.28.36c.52.4,3.64,3.48,6.68,6.51,2,2,4.15,4.12,5.55,5.56-.16-4-.4-12.47,0-14.91a1.26,1.26,0,0,1,1.36-1,4.29,4.29,0,0,1,3.76,3.44,16.47,16.47,0,0,1,0,2.84A126.53,126.53,0,0,0,993.48,965.29Z"
-              transform="translate(-712.58 -904.2)"
+              d="M1057.5,976.5V945.23l29.43,27.59q.91-18.39,1.84-36.78" transform="translate(-716.32 -906.41)"
             />
             <path
-              id="t2"
-              d="M1017.61,943.71a8.5,8.5,0,0,1-1.44.4c-1.76.36-3.52.64-5.27,1-.6.08-1,.16-1.08.28-.48.88-.84,20.5-.92,23.3,0,2.52-.12,4.44-.2,4.8s-.72.84-1.56.84a3.43,3.43,0,0,1-3.44-2.72c-.16-1.56.08-8.23.32-14.43.2-4.51.4-8.87.52-10.91a17,17,0,0,1-4.47.8c-1.4,0-3.76-1.28-3.92-2.6-.2-1.64,2.48-1.31,3.44-1.47,1.44-.25,3-.88,5.47-1.4a49.07,49.07,0,0,1,10.83-1,2.5,2.5,0,0,1,2.48,1.84A1.29,1.29,0,0,1,1017.61,943.71Z"
-              transform="translate(-712.58 -904.2)"
+              id="ta2"
+              d="M906.56,991c.56-17.78,1.17-33.72,1.84-55.17" transform="translate(-716.32 -906.41)"
+            />
+            <path
+              id="tb2"
+              d="M891.85,937.67l34.94-5.52" transform="translate(-716.32 -906.41)"
             />
             <animateMotion
               dur="12s"
@@ -99,205 +106,205 @@
           viewBox="0 0 2284.73 1459"
         >
           <path
-            id="ft1"
-            d="M1119 665l-9-36c-6-23-9-32-8-33 1 0 24 73 26 73l-19-67"
-          />
-          <path
-            id="ft2"
-            d="M1181 617l-23-15-37-24c0-1 64 36 65 35l-58-37"
-          />
-          <path
-            id="ft3"
-            d="M1115 531l68 17c-1 1-76-16-76-13l34 11 35 10"
-          />
-          <path
-            id="intake"
-            d="M1282 380l48 48"
-          />
-          <g id="slr1ft">
-            <path
-              id="num1"
-              d="M1114 691l12-7v18"
+              id="ft1"
+              d="M1119 665l-9-36c-6-23-9-32-8-33 1 0 24 73 26 73l-19-67"
             />
             <path
-              id="f3a"
-              d="M1151 709l-1-9 1-19 10-1"
+              id="ft2"
+              d="M1181 617l-23-15-37-24c0-1 64 36 65 35l-58-37"
             />
             <path
-              id="f3b"
-              d="M1163 699l-11 1"
+              id="ft3"
+              d="M1115 531l68 17c-1 1-76-16-76-13l34 11 35 10"
             />
             <path
-              id="t5a"
-              d="M1175 679l-1 29"
+              id="intake"
+              d="M1282 380l48 48"
             />
-            <path
-              id="t5b"
-              d="M1167 681l18-4"
-            />
-          </g>
-          <g id="slr2ft">
-            <path
-              id="num2"
-              d="M1210 614a21 21 0 016-4c2-1 6-3 8-1a4 4 0 011 3c0 2-2 3-3 4-2 2-4 4-6 9l9-1"
-            />
-            <path
-              id="f2a"
-              d="M1244 633l-1-9 1-19 10-1"
-            />
-            <path
-              id="f2b"
-              d="M1256 623l-11 1"
-            />
-            <path
-              id="t4a"
-              d="M1268 603l-1 29"
-            />
-            <path
-              id="t4b"
-              d="M1260 605l18-4"
-            />
-          </g>
-          <g id="slr3ft">
-            <path
-              id="num3"
-              d="M1209 539l13-3 3 1-7 6a8 8 0 015 2 7 7 0 012 3c1 3-4 8-11 11"
-            />
-            <path
-              id="f1a"
-              d="M1239 561l-1-9 1-19 10-1"
-            />
-            <path
-              id="f1b"
-              d="M1251 551l-11 1"
-            />
-            <path
-              id="t3a"
-              d="M1263 531l-1 29"
-            />
-            <path
-              id="t3b"
-              d="M1255 533l18-4"
-            />
-          </g>
-          <g id="intakestext">
-            <path
-              id="d"
-              d="M1111 290c0 3-1 12 1 18a68 68 0 0010-4l9-6c2-1 4-3 4-5l-3-3c-5-2-21-3-24-3"
-            />
-            <path
-              id="r1"
-              d="M1147 310a34 34 0 01-2-7 35 35 0 010-12 22 22 0 016-1 17 17 0 019 2l3 3-4 3-8 4-3 1 9 6"
-            />
-            <path
-              id="i1"
-              d="M1173 293v14"
-            />
-            <path
-              id="n1"
-              d="M1185 309v-17l16 15 1-20"
-            />
-            <path
-              id="k1a"
-              d="M1215 287v22"
-            />
-            <path
-              id="k1b"
-              d="M1230 292l-13 8a20 20 0 003 3 21 21 0 008 4"
-            />
-            <path
-              id="i2"
-              d="M1239 293v14"
-            />
-            <path
-              id="n2"
-              d="M1251 307v-17l16 15 1-20"
-            />
-            <path
-              id="g"
-              d="M1293 288a26 26 0 00-5 2c-3 2-8 4-9 9 0 1-1 4 1 6 3 3 9 1 10 0a17 17 0 007-5l-3-2-8 2"
-            />
-            <path
-              id="w"
-              d="M1025 339l6 20 7-13 7 13 7-20"
-            />
-            <path
-              id="a1a"
-              d="M1057 364l4-12 2-4 4-10a3 3 0 012 0 4 4 0 012 2l6 19"
-            />
-            <path
-              id="a1b"
-              d="M1064 354l12-4"
-            />
-            <path
-              id="t1b"
-              d="M1081 336l19-3"
-            />
-            <path
-              id="t1a"
-              d="M1089 365l1-30"
-            />
-            <path
-              id="e1a"
-              d="M1115 336l-11 2a54 54 0 001 25l9-2"
-            />
-            <path
-              id="e1b"
-              d="M1114 353a17 17 0 00-8 1"
-            />
-            <path
-              id="r2"
-              d="M1125 360a34 34 0 01-2-7 35 35 0 010-12 22 22 0 016-1 17 17 0 019 2l3 3-4 3-8 4-3 1 9 6"
-            />
-            <path
-              id="i3"
-              d="M1164 344v14"
-            />
-            <path
-              id="n3"
-              d="M1176 360v-17l16 15 1-20"
-            />
-            <path
-              id="t2b"
-              d="M1200 336l19-3"
-            />
-            <path
-              id="t2a"
-              d="M1208 365l1-30"
-            />
-            <path
-              id="a2a"
-              d="M1220 364l4-12 2-4 4-10a3 3 0 012 0 4 4 0 012 2l6 19"
-            />
-            <path
-              id="a2b"
-              d="M1227 354l12-4"
-            />
-            <path
-              id="k2a"
-              d="M1250 337v23"
-            />
-            <path
-              id="k2b"
-              d="M1266 340l-16 11"
-            />
-            <path
-              id="k2c"
-              d="M1264 357l-13-5"
-            />
-            <path
-              id="e2a"
-              d="M1285 336l-11 2a54 54 0 001 25l9-2"
-            />
-            <path
-              id="e2b"
-              d="M1284 353a17 17 0 00-8 1"
-            />
-            <path
-              id="s"
-              d="M1312.2,337.84c-7.84-4.57-15.59-4.71-19.07-1-.43.46-2.28,2.44-1.87,4.69,1.11,6.18,17.51,5.11,18.87,11.31.58,2.67-1.85,5.62-4,7-4.34,2.78-9.35.31-9.62.17"
-              style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 5px"
-            />
+            <g id="slr1ft">
+              <path
+                id="num1"
+                d="M1079 694l18-10v27"
+              />
+              <path
+                id="f3a"
+                d="M1135 722l-1-13 1-30 15-2"
+              />
+              <path
+                id="f3b"
+                d="M1153 706l-16 2"
+              />
+              <path
+                id="t5a"
+                d="M1172 676l-2 44"
+              />
+              <path
+                id="t5b"
+                d="M1160 679l27-6"
+              />
+            </g>
+            <g id="slr2ft">
+              <path
+                id="num2"
+                d="M1192 625a33 33 0 019-6c3-1 9-4 12-1 2 1 2 4 2 4 0 3-3 5-5 7-3 2-6 6-9 13l14-1"
+              />
+              <path
+                id="f2a"
+                d="M1244 654l-1-13 1-30 15-1"
+              />
+              <path
+                id="f2b"
+                d="M1262 639l-17 2"
+              />
+              <path
+                id="t4a"
+                d="M1280 608l-1 45"
+              />
+              <path
+                id="t4b"
+                d="M1268 611l28-6"
+              />
+            </g>
+            <g id="slr3ft">
+              <path
+                id="num3"
+                d="M1196 535l20-5 5 2-11 9a12 12 0 018 3 10 10 0 013 5c1 4-6 12-17 17"
+              />
+              <path
+                id="f1a"
+                d="M1242 568l-1-13 1-29 15-2"
+              />
+              <path
+                id="f1b"
+                d="M1260 553l-16 2"
+              />
+              <path
+                id="t3a"
+                d="M1279 523l-2 44"
+              />
+              <path
+                id="t3b"
+                d="M1267 526l27-6"
+              />
+            </g>
+            <g id="intakestext">
+              <path
+                id="d"
+                d="M942 227c0 6-2 22 2 33a126 126 0 0018-7c7-3 10-6 17-11 3-3 7-7 7-9 0-3-2-4-5-6-9-4-40-5-44-5"
+              />
+              <path
+                id="r1"
+                d="M1008 264a64 64 0 01-3-35 40 40 0 0111-2c9 0 15 3 16 4 3 1 6 3 6 5l-8 6-14 6-6 3 17 11"
+              />
+              <path
+                id="i1"
+                d="M1056 233v25"
+              />
+              <path
+                id="n1"
+                d="M1078 262v-31l30 27 2-36"
+              />
+              <path
+                id="k1a"
+                d="M1133 222v40"
+              />
+              <path
+                id="k1b"
+                d="M1161 231l-24 14a38 38 0 006 6 39 39 0 0014 7"
+              />
+              <path
+                id="i2"
+                d="M1178 233v25"
+              />
+              <path
+                id="n2"
+                d="M1200 258v-31l29 28 2-37"
+              />
+              <path
+                id="g"
+                d="M1277 223a48 48 0 00-9 4c-6 3-15 8-17 17 0 1-1 7 2 11 5 5 16 1 18 0a32 32 0 0013-10l-5-3-15 3"
+              />
+              <path
+                id="w"
+                d="M784 317l11 37 13-24 13 24 13-37"
+              />
+              <path
+                id="a1a"
+                d="M843 363a1149 1149 0 0118-48 6 6 0 014 0 7 7 0 014 4l11 35"
+              />
+              <path
+                id="a1b"
+                d="M850 347l22-8"
+              />
+              <path
+                id="t1b"
+                d="M887 312l35-6"
+              />
+              <path
+                id="t1a"
+                d="M902 365l2-55"
+              />
+              <path
+                id="e1a"
+                d="M950 312l-21 3a98 98 0 002 46l17-3"
+              />
+              <path
+                id="e1b"
+                d="M948 343a31 31 0 00-15 2"
+              />
+              <path
+                id="r2"
+                d="M968 356a64 64 0 01-4-35 41 41 0 0111-2c10 0 16 3 17 4 2 1 5 3 5 5 0 1 0 2-7 6l-15 6-5 3 16 11"
+              />
+              <path
+                id="i3"
+                d="M1040 326v26"
+              />
+              <path
+                id="n3"
+                d="M1062 356v-31l29 27 2-37"
+              />
+              <path
+                id="t2b"
+                d="M1106 312l35-6"
+              />
+              <path
+                id="t2a"
+                d="M1121 365l1-55"
+              />
+              <path
+                id="a2a"
+                d="M1143 363a1149 1149 0 0118-48 6 6 0 014 0 7 7 0 013 4c2 4 7 17 11 35"
+              />
+              <path
+                id="a2b"
+                d="M1150 345l22-8"
+              />
+              <path
+                id="k2a"
+                d="M1198 314v42"
+              />
+              <path
+                id="k2b"
+                d="M1227 319l-29 21"
+              />
+              <path
+                id="k2c"
+                d="M1223 350l-23-8"
+              />
+              <path
+                id="e2a"
+                d="M1262 312l-20 3a98 98 0 002 46l16-3"
+              />
+              <path
+                id="e2b"
+                d="M1260 343a31 31 0 00-14 2"
+              />
+              <path
+                id="s"
+                d="M1312 315c-14-8-28-9-35-2-1 1-4 5-3 9 2 11 32 9 34 21 1 5-3 10-7 13-8 5-17 0-18 0"
+                style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 9px"
+              />
           </g>
         </svg>
       </div>
@@ -482,10 +489,10 @@ h2, h3, h4, h5, h6 {
     color: black;
     font-family: 'Noto Sans', sans-serif;
 }
-#dash, #s, #a, #l, #t, #f, #r, #o, #n, #t2 {
+#dash, #s, #aa, #ab, #l, #ta, #tb, #fa, #fb, #r, #o, #n, #ta2, #tb2 {
     stroke: black;
-    fill: black;
-    stroke-width: 1px;
+    fill: transparent;
+    stroke-width: 9px;
 }
 
 .outer {
@@ -520,11 +527,11 @@ h2, h3, h4, h5, h6 {
     fill: transparent;
     stroke-linecap:round;
     stroke-linejoin:round;
-    stroke-width: 5.5px;
+    stroke-width: 9px;
 }
 
 #ft1, #ft2, #ft3 {
-    stroke-width: 5.5px;
+    stroke-width: 9px;
     stroke-dasharray: 300px;
     stroke-dashoffset: -300px;
 }
@@ -536,21 +543,21 @@ h2, h3, h4, h5, h6 {
 
 /* lines for sea level predictions */
 #ft1 {
-    Animation: write300 .4s ease-in-out 0s forwards;
+    animation: write300 .4s ease-in-out 0s forwards;
     -webkit-animation: write300 .4s ease-in-out 0s forwards;
     -moz-animaion: write300 .4s ease-in-out 0s forwards;
     -o-animation: write300 .4s ease-in-out 0s forwards;
 }
 
 #ft2 {
-    Animation: write300 .4s ease-in-out 0.2s forwards;
+    animation: write300 .4s ease-in-out 0.2s forwards;
     -webkit-animation: write300 .4s ease-in-out 0.2s forwards;
     -moz-animaion: write300 .4s ease-in-out 0.2s forwards;
     -o-animation: write300 .4s ease-in-out 0.2s forwards;
 }
 
 #ft3 {
-    Animation: write300 .4s ease-in-out 0.4s forwards;
+    animation: write300 .4s ease-in-out 0.4s forwards;
     -webkit-animation: write300 .4s ease-in-out 0.4s forwards;
     -moz-animaion: write300 .4s ease-in-out 0.4s forwards;
     -o-animation: write300 .4s ease-in-out 0.4s forwards;
@@ -558,13 +565,13 @@ h2, h3, h4, h5, h6 {
 /* annotations for sea level predictions */
 /* 1 ft */
 #num1 {
-    Animation: write200 .2s ease-in-out 0.6s forwards;
+    animation: write200 .2s ease-in-out 0.6s forwards;
     -webkit-animation: write200 .2s ease-in-out 0.6s forwards;
     -moz-animaion: write200 .2s ease-in-out 0.6s forwards;
     -o-animation: write200 .2s ease-in-out 0.6s forwards;
 }
 #f3a, #f3b {
-    Animation: write200 .3s ease-in-out 0.7s forwards;
+    animation: write200 .3s ease-in-out 0.7s forwards;
     -webkit-animation: write200 .3s ease-in-out 0.7s forwards;
     -moz-animaion: write200 .3s ease-in-out 0.7s forwards;
     -o-animation: write200 .3s ease-in-out 0.7s forwards;
@@ -577,38 +584,38 @@ h2, h3, h4, h5, h6 {
 }
 /* 2 ft */
 #num2 {
-    Animation: write200 .2s ease-in-out 1.1s forwards;
+    animation: write200 .2s ease-in-out 1.1s forwards;
     -webkit-animation: write200 .2s ease-in-out 1.1s forwards;
     -moz-animaion: write200 .2s ease-in-out 1.1s forwards;
     -o-animation: write200 .2s ease-in-out 1.1s forwards;
 }
 #f2a, #f2b {
-    Animation: write200 .3s ease-in-out 1.25s forward;
+    animation: write200 .3s ease-in-out 1.25s forward;
     -webkit-animation: write200 .3s ease-in-out 1.25s forwards;
     -moz-animaion: write200 .3s ease-in-out 1.25s forwards;
     -o-animation: write200 .3s ease-in-out 1.25s forwards;
 }
 #t4a, #t4b {
-    Animation: write200 .3s ease-in-out 1.45s forward;
+    animation: write200 .3s ease-in-out 1.45s forward;
     -webkit-animation:  write200 .3s ease-in-out 1.45s forwards;
     -moz-animaion: write200 .3s ease-in-out 1.45s forwards;
     -o-animation: write200 .3s ease-in-out 1.45s forwards;
 }
 /* 3ft */
 #num3 {
-    Animation: write200 .2s ease-in-out 1.65s forwards;
+    animation: write200 .2s ease-in-out 1.65s forwards;
     -webkit-animation: write200 .2s ease-in-out 1.65s forwards;
     -moz-animaion: write200 .2s ease-in-out 1.65s forwards;
     -o-animation: write200 .2s ease-in-out 1.65s forwards;
 }
 #f1a, #f1b {
-    Animation: write200 .3s ease-in-out 1.8s forwards;
+    animation: write200 .3s ease-in-out 1.8s forwards;
     -webkit-animation: write200 .3s ease-in-out 1.8s forwards;
     -moz-animaion: write200 .3s ease-in-out 1.8s forwards;
     -o-animation: write200 .3s ease-in-out 1.8s forwards;
 }
 #t3a, #t3b {
-    Animation: write200 .3s ease-in-out 2s forwards;
+    animation: write200 .3s ease-in-out 2s forwards;
     -webkit-animation: write200 .3s ease-in-out 2s forwards;
     -moz-animaion: write200 .3s ease-in-out 2s forwards;
     -o-animation: write200 .3s ease-in-out 2s forwards;
@@ -616,7 +623,7 @@ h2, h3, h4, h5, h6 {
 
 /* intakes line */
 #intake {
-    Animation: write200 .2s ease-in-out 2s forwards;
+    animation: write200 .2s ease-in-out 2s forwards;
     -webkit-animation: write200 .2s ease-in-out 2s forwards;
     -moz-animaion:write200 .2s ease-in-out 2s forwards;
     -o-animation: write200 .2s ease-in-out 2s forwards;
@@ -637,14 +644,14 @@ h2, h3, h4, h5, h6 {
 
 /* each letter is animated individually so time sequentially */
 #d {
-    Animation: write200 0.23s ease-in-out 2s forwards;
+    animation: write200 0.23s ease-in-out 2s forwards;
     -webkit-animation: write200 0.23s ease-in-out 2s forwards;
     -moz-animation: write200 0.23s ease-in-out 2s forwards;
     -o-animation: write200 0.23s ease-in-out 2s forwards;
 
 }
 #r1 {
-   Animation: write200 0.23s ease-in-out 2.15s forwards;
+   animation: write200 0.23s ease-in-out 2.15s forwards;
     -webkit-animation: write200 0.23s ease-in-out 2.15s forwards;
     -moz-animation: write200 0.23s ease-in-out 2.15s forwards;
     -o-animation: write200 0.23s ease-in-out 2.15s forwards;
@@ -652,7 +659,7 @@ h2, h3, h4, h5, h6 {
 }
 
 #i1 {
-    Animation: write200 0.23s ease-in-out 2.3s forwards;
+    animation: write200 0.23s ease-in-out 2.3s forwards;
     -webkit-animation: write200 0.23s ease-in-out 2.3s forwards;
     -moz-animation: write200 0.23s ease-in-out 2.3s forwards;
     -o-animation: write200 0.23s ease-in-out 2.3s forwards;
@@ -783,12 +790,51 @@ h2, h3, h4, h5, h6 {
     100% {stroke-dashoffset: 0px;}
 }
 
+@-o-keyframes write500 {
+    0% {stroke-dashoffset: -500px}
+    100% {stroke-dashoffset: 0px;}
+}
+
+@-moz-keyframes write500 {
+    0% {stroke-dashoffset: -500px}
+    100% {stroke-dashoffset: 0px;}
+}
+
+@-webkit-keyframes write500 {
+    0% {stroke-dashoffset: -500px}
+    100% {stroke-dashoffset: 0px;}
+}
+
 @keyframes write300 {
+    0% {stroke-dashoffset: -300px}
+    100% {stroke-dashoffset: 0px;}
+}
+@-o-keyframes write300 {
+    0% {stroke-dashoffset: -300px}
+    100% {stroke-dashoffset: 0px;}
+}
+@-moz-keyframes write300 {
+    0% {stroke-dashoffset: -300px}
+    100% {stroke-dashoffset: 0px;}
+}
+@-webkit-keyframes write300 {
     0% {stroke-dashoffset: -300px}
     100% {stroke-dashoffset: 0px;}
 }
 
 @keyframes write200 {
+    0% {stroke-dashoffset: -200px}
+    100% {stroke-dashoffset: 0px;}
+}
+@-o-keyframes write200 {
+    0% {stroke-dashoffset: -200px}
+    100% {stroke-dashoffset: 0px;}
+}
+@-moz-keyframes write200 {
+    0% {stroke-dashoffset: -200px}
+    100% {stroke-dashoffset: 0px;}
+}
+@-webkit-keyframes write200 {
     0% {stroke-dashoffset: -200px}
     100% {stroke-dashoffset: 0px;}
 }
