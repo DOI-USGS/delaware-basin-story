@@ -311,10 +311,8 @@
 
                 this.isVisible = isVisible;
                 if (isVisible === true) {
-                    console.log('target in view')
                     this.isMusselsTextInView = true;
                 } else if (isVisible !== true) {
-                    console.log('target OUT of view')
                     this.isMusselsTextInView = false;
                 }
             }
