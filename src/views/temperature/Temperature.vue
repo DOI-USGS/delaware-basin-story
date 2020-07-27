@@ -43,16 +43,31 @@
           </h3>
         </div>
       </div>
-      <div class="row-mussels">
+      <div id="scroll-target-mussel"
+           v-observe-visibility="{
+              callback: visibilityChanged,
+              intersection: {
+                rootMargin: '40% 0% -60% 0%',
+                threshold: 0
+              }
+            }"
+      />
+      <transition name="fade">
+      <div v-show="!isMusselsTextInView" id="hold-place-for-mussels-when-they-are-out-before" />
+      </transition>
+      <transition name="fade">
+        <div v-show="isMusselsTextInView" class="row-mussels">
         <div class="temperature-text">
           <p>Simultaneously, the federally protected dwarf wedgemussels have their own preferences for water temperatures and river flow rates. Efforts to manage water in the modern era often require consideration of the impacts of altering flows, groundwater connectivity, and stream shading on water temperatures and aquatic life.  </p>
           <p>The USGS has a long history of monitoring water resources in the DRB, in partnership with ### stakeholders and cooperators. A recent Federal funding initiative, the Next-Generation Water Observing System (NGWOS), has made new investments in water monitoring and information delivery for DRB stakeholders. The DRB was chosen as the pilot basin for NGWOS in 2017(?verify?) and the unique needs for monitoring were taken into account as new sensor deployments were designed, old infrastructure was upgraded, and innovations in non-contact measurement techniques were tested and improved.  </p>
+
+
           <h3
             id="mussel-h3"
             class="appear"
           >
             NEED HEADER ABOUT MUSSELS: Thermal diversity is important for robust and diverse aquatic communities
-          </h3>     
+          </h3>
         </div>
         <div class="image-stack">
           <img
@@ -190,7 +205,7 @@
               <path d="M581 449c-1 7-9 10-15 13-7 3-15 6-24 7a81 81 0 01-44-7c-7-3-14-7-16-15h-1c2 7 8 11 13 14a80 80 0 0021 7 80 80 0 0049-5c7-2 16-6 18-14h-1z" />
               <path d="M582 456c-1 5-7 6-12 7l-20 8c-14 4-29 3-43 1l-13-2a113 113 0 01-12-3v1l22 4a174 174 0 0023 2 87 87 0 0022-2l21-8c4-1 11-3 13-8h-1z" />
             </g>
-   
+
             <g
               id="top_left"
               class="appear"
@@ -231,7 +246,7 @@
               <path d="M191 46c3 5 7 10 6 16s-5 11-9 14c-9 8-19 11-30 12a97 97 0 01-19 0v1c12 1 23 1 34-3a47 47 0 0014-8c5-4 9-8 10-14 2-7-2-13-6-18 0-1-1-1 0 0z" />
               <path d="M183 48c2 2 2 5 3 8a29 29 0 01-1 9 15 15 0 01-6 8 24 24 0 01-10 4l1 1c6-1 13-6 15-12a29 29 0 001-10c0-3-1-6-3-8 0-1 0 0 0 0z" />
             </g>
-     
+
             <g
               id="top_right"
               class="appear"
@@ -265,8 +280,11 @@
           </svg>
         </div>
       </div>
+      </transition>
+      <transition name="fade">
+        <div v-show="!isMusselsTextInView" id="hold-place-for-mussels-when-they-are-out-after" />
+      </transition>
     </div>
-    <hr>
   </div>
 </template>
 
@@ -275,17 +293,41 @@
         name: 'Temperature',
         data() {
             return {
+              isMusselsTextInView: false
+            }
+        },
+        methods: {
+            visibilityChanged(isVisible, entry) {
 
+                this.isVisible = isVisible;
+                if (isVisible === true) {
+                    console.log('target in view')
+                    this.isMusselsTextInView = true;
+                } else if (isVisible !== true) {
+                    console.log('target OUT of view')
+                    this.isMusselsTextInView = false;
+                }
             }
         }
     }
 </script>
 
 <style scoped lang="scss">
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 1.5s;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+#hold-place-for-mussels-when-they-are-out {
+  height: 85vh;
+  width: 100%;
+  background-color: white;
+}
 
 
 #temperature {
-  padding: 2%;
+  padding: 2% 2% 30% 2%;
   height: auto;
 
   #header {
@@ -315,8 +357,8 @@
         margin-top: 100px;
         background: white;
         width: 100%;
-      } 
-    
+      }
+
   }
 
   #content {
@@ -327,16 +369,15 @@
       padding: 2em;
       margin-top: 5%;
 
-  
+
       #mussel-h3 {
-        
-          animation: appear 30s ease-in 2s forwards infinite;
-          -webkit-animation: appear 30s ease-in 2s forwards infinite;
-          -moz-animation: appear 30s ease-in 2s forwards infinite;
-          -o-animation: appear 30s ease-in 2s forwards infinite;
+          animation: appear 30s ease-in 2s forwards 1;
+          -webkit-animation: appear 30s ease-in 2s forwards 1;
+          -moz-animation: appear 30s ease-in 2s forwards 1;
+          -o-animation: appear 30s ease-in 2s forwards 1;
       }
     }
-    
+
     .row-fish {
       width: 100%;
 
@@ -348,21 +389,21 @@
           display:grid;
           grid-template-columns: 1;
           position: relative;
-          margin-bottom: 0px;
+          margin-bottom: 0;
 
           #sadfish {
             grid-column: 1 ;
             grid-row: 1;
             z-index: 1;
           }
-          
+
           #happyfish {
             grid-column: 1 / span 12;
             grid-row: 1;
-            animation: color-change 15s linear 5s forwards infinite;
-            -webkit-animation: color-change 15s linear 5s forwards infinite;
-            -moz-animation: color-change 15s linear 5s forwards infinite;
-            -o-animation: color-change 15s linear 5s forwards infinite;
+            animation: color-change 15s linear 5s forwards 1;
+            -webkit-animation: color-change 15s linear 5s forwards 1;
+            -moz-animation: color-change 15s linear 5s forwards 1;
+            -o-animation: color-change 15s linear 5s forwards 1;
 
           }
           #sadfish:hover {
@@ -385,7 +426,6 @@
         grid-template-columns: 1;
         height: auto;
         width: 100%;
-       
 
         #substrate {
           display: block;
@@ -394,8 +434,6 @@
           z-index:0;
           grid-column: 1 ;
           grid-row: 1;
-           
-
         }
 
         #fill-fade, #solita, #big_b-fill, #fanny-all, #bottom-right, #bottom-left, #bottom_right_big, #hungry {
@@ -409,50 +447,48 @@
         }
 
         .appear {
-              animation: fade-in 6s ease-in 2s forwards infinite;
-              -webkit-animation: fade-in 6s ease-in 2s forwards infinite;
-              -moz-animation: fade-in 6s ease-in 2s forwards infinite;
-              -o-animation: fade-in 6s ease-in 2s forwards infinite;
+              animation: fade-in 6s ease-in 2s forwards 1;
+              -webkit-animation: fade-in 6s ease-in 2s forwards 1;
+              -moz-animation: fade-in 6s ease-in 2s forwards 1;
+              -o-animation: fade-in 6s ease-in 2s forwards 1;
           }
           #big_b-fill {
-              animation: grow-big_b 6s linear 2s forwards infinite;
-              -webkit-animation: grow-big_b 6s linear 2s forwards infinite;
-              -moz-animation: grow-big_b 6s linear 2s forwards infinite;
-              -o-animation: grow-big_b 6s linear 2s forwards infinite;
+              animation: grow-big_b 6s linear 2s forwards 1;
+              -webkit-animation: grow-big_b 6s linear 2s forwards 1;
+              -moz-animation: grow-big_b 6s linear 2s forwards 1;
+              -o-animation: grow-big_b 6s linear 2s forwards 1;
           }
           #fanny-all {
-              animation: grow-fanny 6s linear 2s forwards infinite;
-              -webkit-animation: grow-fanny 6s linear 2s forwards infinite;
-              -moz-animation: grow-fanny 6s linear 2s forwards infinite;
-              -o-animation: grow-fanny 6s linear 2s forwards infinite;
+              animation: grow-fanny 6s linear 2s forwards 1;
+              -webkit-animation: grow-fanny 6s linear 2s forwards 1;
+              -moz-animation: grow-fanny 6s linear 2s forwards 1;
+              -o-animation: grow-fanny 6s linear 2s forwards 1;
           }
           #bottom-right {
-              animation: grow-rt_b 6s linear 2s forwards infinite;
-              -webkit-animation: grow-rt_b 6s linear 2s forwards infinite;
-              -moz-animation: grow-rt_b 6s linear 2s forwards infinite;
-              -o-animation: grow-rt_b 6s linear 2s forwards infinite;
+              animation: grow-rt_b 6s linear 2s forwards 1;
+              -webkit-animation: grow-rt_b 6s linear 2s forwards 1;
+              -moz-animation: grow-rt_b 6s linear 2s forwards 1;
+              -o-animation: grow-rt_b 6s linear 2s forwards 1;
           }
           #bottom-left {
-              animation: grow-left_bottom 6s linear 2s forwards infinite;
-              -webkit-animation: grow-left_bottom 6s linear 2s forwards infinite;
-              -moz-animation: grow-left_bottom 6s linear 2s forwards infinite;
-              -o-animation: grow-left_bottom 6s linear 2s forwards infinite;
+              animation: grow-left_bottom 6s linear 2s forwards 1;
+              -webkit-animation: grow-left_bottom 6s linear 2s forwards 1;
+              -moz-animation: grow-left_bottom 6s linear 2s forwards 1;
+              -o-animation: grow-left_bottom 6s linear 2s forwards 1;
           }
           #bottom_right_big  {
             transform: scale(.9);
-            animation: slide-bottom_right_big 6s ease-out 2s forwards infinite;
-            -webkit-animation: slide-bottom_right_big 6s ease-out 2s forwards infinite;
-            -moz-animation: slide-bottom_right_big 6s ease-out 2s forwards infinite;
-            -o-animation: slide-bottom_right_big 6s ease-out 2s forwards infinite;
+            animation: slide-bottom_right_big 6s ease-out 2s forwards 1;
+            -webkit-animation: slide-bottom_right_big 6s ease-out 2s forwards 1;
+            -moz-animation: slide-bottom_right_big 6s ease-out 2s forwards 1;
+            -o-animation: slide-bottom_right_big 6s ease-out 2s forwards 1;
 
           }
           #hungry  {
-
-              animation: slide-hungry 6s ease-out 2s forwards infinite;
-              -webkit-animation: slide-hungry 6s ease-out 2s forwards infinite;
-              -moz-animation: slide-hungry 6s ease-out 2s forwards infinite;
-              -o-animation: slide-hungry 6s ease-out 2s forwards infinite;
-
+              animation: slide-hungry 6s ease-out 2s forwards 1;
+              -webkit-animation: slide-hungry 6s ease-out 2s forwards 1;
+              -moz-animation: slide-hungry 6s ease-out 2s forwards 1;
+              -o-animation: slide-hungry 6s ease-out 2s forwards 1;
           }
 
         #mussels {
@@ -463,83 +499,83 @@
           top: 0;
           left: 0;
           z-index: 1;
-          
+
 
           .appear {
-              animation: fade-in 6s cubic-bezier(0,0,0.5,1) 2s forwards infinite;
-              -webkit-animation: fade-in 6s cubic-bezier(0,0,0.5,1) 2s forwards infinite;
-              -moz-animation: fade-in 6s cubic-bezier(0,0,0.5,1) 2s forwards infinite;
-              -o-animation: fade-in 6s cubic-bezier(0,0,0.5,1) 2s forwards infinite;
+              animation: fade-in 6s cubic-bezier(0,0,0.5,1) 2s forwards 1;
+              -webkit-animation: fade-in 6s cubic-bezier(0,0,0.5,1) 2s forwards 1;
+              -moz-animation: fade-in 6s cubic-bezier(0,0,0.5,1) 2s forwards 1;
+              -o-animation: fade-in 6s cubic-bezier(0,0,0.5,1) 2s forwards 1;
           }
-              
+
           .disappear {
-            animation: fade-out 6s ease-out 2s forwards infinite;
-            -webkit-animation: fade-out 6s ease-out 2s forwards infinite;
-            -moz-animation: fade-out 6s ease-out 2s forwards infinite;
-            -o-animation: fade-out 6s ease-out 2s forwards infinite;
+            animation: fade-out 6s ease-out 2s forwards 1;
+            -webkit-animation: fade-out 6s ease-out 2s forwards 1;
+            -moz-animation: fade-out 6s ease-out 2s forwards 1;
+            -o-animation: fade-out 6s ease-out 2s forwards 1;
           }
-        
+
         }
       }
-               
+
     }
   }
 }
 
 
 @keyframes grow-fanny {
-  0%    { transform: scale(.9); 
+  0%    { transform: scale(.9);
           transform-origin: 0px 200px; }
-  100%  { transform: scale(1.1);  
+  100%  { transform: scale(1.1);
           transform-origin: 0px 200px; }
 }
 
 @keyframes grow-big_b {
-  0%    { transform: scale(.9); 
+  0%    { transform: scale(.9);
           transform-origin: 400px 170px; }
-  100%  { transform: scale(1.1);  
+  100%  { transform: scale(1.1);
           transform-origin: 400px 130px; }
 }
 @keyframes grow-rt_b {
-  0%    { transform: scale(1); 
+  0%    { transform: scale(1);
           transform-origin: 350px 180px; }
-  100%  { transform: scale(1.25);  
+  100%  { transform: scale(1.25);
           transform-origin: 350px 180px; }
 }
 @keyframes grow-left_bottom {
-  0%    { transform: scale(.8); 
+  0%    { transform: scale(.8);
           transform-origin: -50px 200px; }
-  100%  { transform: scale(1.2);  
+  100%  { transform: scale(1.2);
           transform-origin: 100px 200px; }
 }
 
 @keyframes slide-hungry {
   0%    { opacity: 0;
-          transform: scale(1); 
+          transform: scale(1);
           transform: translate(-100px,0px); }
   70%    { opacity: 0;
-          transform: scale(1); 
+          transform: scale(1);
           transform: translate(-20px,0px); }
   100%  { opacity: 1;
-          transform: scale(1);  
+          transform: scale(1);
           transform: translate(0px,0px); }
 }
 @keyframes slide-h3 {
-  0%    { transform: scale(1); 
+  0%    { transform: scale(1);
           transform: translate(-2500px,0px); }
 
-  100%  { transform: scale(1);  
+  100%  { transform: scale(1);
         transform: translate(0px,0px); }
 }
 @keyframes slide-bottom_right_big {
   0%    { opacity: 0;
-          transform: scale(.9); 
+          transform: scale(.9);
           transform: translate(0px,200px); }
   70%    { opacity: 0;
-          transform: scale(.9); 
+          transform: scale(.9);
           transform: translate(0px,30px); }
   100%  { opacity: 1;
-          transform: scale(.9);  
+          transform: scale(.9);
           transform: translate(0px,0px); }
 }
 
@@ -619,7 +655,7 @@
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-  
+
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
@@ -638,7 +674,7 @@
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-  
+
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
@@ -656,7 +692,7 @@
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-  
+
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
@@ -674,7 +710,7 @@
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-  
+
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }

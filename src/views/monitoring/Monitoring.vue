@@ -171,7 +171,6 @@
         />
       </div>
     </div>
-    <hr>
   </section>
 </template>
 

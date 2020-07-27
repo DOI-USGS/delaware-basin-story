@@ -5,8 +5,6 @@
       class="sticky"
     />
     <road />
-
-    <hr>
   </div>
 </template>
 
@@ -34,5 +32,4 @@
 
     }
   }
-
 </style>
