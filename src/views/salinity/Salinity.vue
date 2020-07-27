@@ -2,7 +2,6 @@
   <div id="salinity">
     <sea
       id="sea-salt-component"
-      class="sticky"
     />
     <road />
   </div>
@@ -27,9 +26,5 @@
 </script>
 
 <style scoped lang="scss">
-  #salinity {
-    #sea-salt-component {
 
-    }
-  }
 </style>

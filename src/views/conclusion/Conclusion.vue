@@ -1758,22 +1758,22 @@
     width: 100%;
     top: 0;
     z-index: -1;
-    padding-top: 10vh;
+   
 
     img {
       display: block;
       max-height: 100%;
       height: auto;
-      right: 0;
+      left: 0;
       overflow-x: hidden;
     }
     svg {
       position: absolute;
       display: inline-block;
       height: auto;
-      width: 100%;
-      top: 0;
-      left: 0;
+      width: 92%;
+      top: 15px;
+      left: 0px;
     }
   }
 
