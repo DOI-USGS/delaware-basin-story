@@ -103,21 +103,12 @@
         />
       </div>
     </div>
-    <ScrollIndicator
-      v-if="isUserAtEndOfScrollText === false || isUserAtEndOfScrollText === true"
-      id="sankey-transition-scroll-indicator"
-    />
   </div>
 </template>
 
 <script>
-  import ScrollIndicator from "./ScrollIndicator";
-
   export default {
       name: 'SankeyTransition',
-      components: {
-          ScrollIndicator
-      },
       data() {
           return {
               isUserAtEndOfScrollText: false
@@ -149,6 +140,8 @@
     margin: 0 auto;
     color: black;
     width: 100%;
+    padding-top: 25rem;
+    padding-bottom: 25rem;
     #sankey-image-container {
       justify-content: center;
       flex: 1;
@@ -185,17 +178,13 @@
       .sankey-text-and-title {
         padding: 10em 0 15em 0;
       }
-    }
-    /* no scroll bar for Chrome, Safari and Opera */
-    #sankey-text-container::-webkit-scrollbar {
-      display: none;
-    }
-    #sankey-transition-scroll-indicator {
-
-      position: fixed;
-      bottom: 0;
-      left: 60%;
-
+      #sankey-text-and-title-1 {
+        padding-top: 0;
+      }
+      #sankey-text-and-title-3 {
+        padding-bottom: 0;
+      }
     }
   }
+
 </style>
