@@ -40,6 +40,7 @@
         id="big-number-svg-5"
         class="big-number-map-locations-svg"
         alt=""
+        
         hidden
       />
     </div>
@@ -312,15 +313,32 @@
     //   }
     // }
 
- 
-#big-number-image-base {
+#monitoring-big-numbers-main-image-container  {
   position: relative;
-  z-index: 1;
+  width: 100%;
+  height: auto;
+
+  #big-number-image-base  {
+    display: block;
+    z-index: 1;
+
+  }
+
+  svg   {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left:0;
+    z-index: 2;
+
+
+
+
+  }
 }
-.big-number-map-locations-svg {
-  position: absolute;
-  z-index: 2;
-}
+
     #monitoring {
 
         
@@ -332,7 +350,6 @@
 
           
           img {
-            
             position: absolute;
           }
 
@@ -342,24 +359,40 @@
             text-align: center;
             display: flex;
             flex-direction: row;
+            z-index: 1;
+
             .big-num{
               text-align: center;
               height: 100px;
               width: 100px;
-            }
-            .big-number-number {
+
+              img {
+              width: 30%;
+              z-index: -1;
+              left: 0;
+              align-items: left;
+              }
+              .big-number-number {
               
               // top: -50%;
               // left: 50%;
               // transform: translate(-50%, -100%);
               font-family: chantal, sans-serif;
               font-weight: bold;
-              color: green;
+              color: white;
+              z-index: 2;
+    
+            
+              }
+              
+
             }
+            
             .big-number-text {
               color: black;
               font-family: chantal, sans-serif;
               font-weight: bold;
+              z-index: -1;
               // position: absolute;
               // text-align: left;
               // top: 35%;
