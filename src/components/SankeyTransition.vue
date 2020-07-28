@@ -93,8 +93,9 @@
         <h3
           id="sankey-title-3"
         >
-          Reservoirs are effective short-term buffers against late summer extreme low flows.  But only given the right information.</h3>
-          <p>Through judicious water storage in the winter and timed releases in the summer, reservoir managers can provide a buffer against excessively low flows by carefully releasing some of the stored water at just the right rate. Reservoirs in the Basin are also used for flood control, hydroelectric power, water supply, and recreation.</p>
+          Reservoirs are effective short-term buffers against late summer extreme low flows.  But only given the right information.
+        </h3>
+        <p>Through judicious water storage in the winter and timed releases in the summer, reservoir managers can provide a buffer against excessively low flows by carefully releasing some of the stored water at just the right rate. Reservoirs in the Basin are also used for flood control, hydroelectric power, water supply, and recreation.</p>
         
         <div
           id="sankey-transition-load-next-section-target"
@@ -102,8 +103,6 @@
         />
       </div>
     </div>
-
-    
   </div>
 </template>
 

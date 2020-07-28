@@ -10,7 +10,10 @@
         <h1>Clean, Cool, and Confident</h1>
       </div>
     </div>
-    <div id="intro-text-content" class="text-content">
+    <div
+      id="intro-text-content"
+      class="text-content"
+    >
       <div>
         <h2>How science informs water management in the Delaware River Basin</h2>
         <p class="byline">
