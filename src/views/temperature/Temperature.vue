@@ -41,7 +41,6 @@
           </div>
         </div>
         <div class="text-content">
-
           <p>Brookies are the only native trout species within the Basin, and theyhave been used as indicators of water quality due to their sensitivity to water temperatures.</p>
           <p>In the fall, trout need a cool temperature to signal the beginning of their reproductive cycle.  Historically, this corresponds with a certain time of year, usually November. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water, and once the egg are fertilized the mating pair bury the nest for protection. The eggs remain unhatched all winter, and require the cool water to develop properly.</p>
           <p>Warmer water temperatures are bad news for Brookies even outside of the reproductive cycle.  Brookies can survive in warmer waters than they like, but they can’t compete well with non-native Brown trout.The warm water reduces growth rates and can make trout more susceptible to diseases. Brookies instead thrive in river reaches with super cold water where the Brown trout can’t survive.</p>
@@ -71,7 +70,6 @@
             class="row-mussels"
           >
             <div class="text-content">
-              
               <h3
                 id="mussel-h3"
                 class="appear"
@@ -292,9 +290,6 @@
                 </g>
               </svg>
             </div>
-
-             
-
           </div>
           <div
             v-show="!isMusselsTextInView"
