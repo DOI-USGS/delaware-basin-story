@@ -346,9 +346,6 @@
     .fade-enter, .fade-leave-to {
       opacity: 0;
     }
-    #hold-place-for-mussels-when-they-are-out-before {
-
-    }
   }
 
 
