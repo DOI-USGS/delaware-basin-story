@@ -380,7 +380,7 @@
 
       #waterline {
         margin-top: 100px;
-        background: transparent;
+        background: white;
         width: 100%;
       }
 
