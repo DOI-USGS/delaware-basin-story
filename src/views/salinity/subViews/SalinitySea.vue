@@ -335,7 +335,8 @@
       <div id="salinity-section-text">
         <div id="sea-salt-wedge-text">
           <h3>The Salt Wedge</h3>
-          <p>As freshwater spills from the river into the saltier, ocean-influenced waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the intruding ocean. The bounds of that wedge – the “salt front” – migrate up and down the river channel over the daily cycle of ocean tides, the seasonal cycle of lower and higher river flows, and the multi-year fluctuations into and out of droughts. </p>
+          <p>As freshwater spills from the river into the saltier, ocean-influenced waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the intruding ocean.</p>
+          <p>The bounds of that wedge – the “salt front” – migrate up and down the river channel over the daily cycle of ocean tides, the seasonal cycle of lower and higher river flows, and the multi-year fluctuations of higher and lower flows.</p>
         </div>
         <div
           id="sea-salt-scroll-target"
@@ -350,9 +351,10 @@
           <div
             id="sea-salt-rise-text"
           >
-            <h3>Sea level Rise</h3>
-            <p>While these natural variations usually pose no problems, sea level rise is expected to push the salt front so far inland – especially during droughts – that water at the major Trenton, NJ intake could be contaminated. Salty water corrodes surface water intake pipes, raises the cost of drinking water treatment, and is potentially toxic to aquatic plants and fish. </p>
-            <p>Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. Remember those Supreme-Court-mandated flow targets at Montague and Trenton? One key motivation for those targets is to keep pressing the salt front toward the ocean to protect our current uses of freshwater in the lower Basin. Good data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location. </p>
+            <h3>While these natural variations usually pose no problems, sea level rise is expected to push the salt front so far inland – especially during droughts – that water at the major Trenton, NJ intake could be contaminated.</h3>
+            <p>Salty water corrodes surface water intake pipes, raises the cost of drinking water treatment, and is potentially toxic to aquatic plants and fish.</p>
+            <p>Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front.</p>
+            <p>Remember the Supreme-Court-mandated flow targets at Montague and Trenton? One key motivation for setting the targets where they are is to keep pressing the salt front toward the ocean.  Maintaining the target flow is an important tool for protecting our current uses of freshwater in the lower Basin. Good data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location.</p>
           </div>
         </div>
       </div>

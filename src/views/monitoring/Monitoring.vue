@@ -1,5 +1,10 @@
 <template>
   <section id="monitoring">
+
+    <div class="text-content">
+      <p>The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators. The United States chose the Delaware River Basin as the pilot site for the <em>Next-Generation Water Observing System (NGWOS).</em></p>
+      <p>The investments in water monitoring are diverse and numerous. As part of NGOWS, the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep. Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current water availability and water quality.</p>
+    </div>
     <!-- Begin Image Side -->
 
     <div
@@ -255,8 +260,6 @@
   @media only screen and (min-width: 600px) {
     section {
       margin-bottom: 10em;
-      display: flex;
-      flex-direction: row;
       justify-content: center;
       align-content: center;
       .container-section-title {
