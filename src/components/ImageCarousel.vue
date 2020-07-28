@@ -8,7 +8,7 @@
     <slide class="slide">
       <div class="slider-image-container">
         <img
-          src="@/assets/components/imageCarousel/images/slider_01.jpg"
+          src="@/assets/intro/images/imageSlider/slider_01.png"
           alt=""
         >
       </div>
@@ -17,7 +17,7 @@
     <slide class="slide">
       <div class="slider-image-container">
         <img
-          src="@/assets/components/imageCarousel/images//slider_02.jpg"
+          src="@/assets/intro/images/imageSlider/slider_02.png"
           alt=""
         >
       </div>
@@ -26,16 +26,24 @@
     <slide class="slide">
       <div class="slider-image-container">
         <img
-          src="@/assets/components/imageCarousel/images//slider_03.jpg"
+          src="@/assets/intro/images/imageSlider/slider_03.png"
           alt=""
         >
       </div>
     </slide>
 
+    <!-- <slide class="slide">
+      <div class="slider-image-container">
+        <img
+          src="@/assets/imageCarousel/images/slider_04.jpg"
+          alt=""
+        >
+      </div>
+    </slide> -->
     <slide class="slide">
       <div class="slider-image-container">
         <img
-          src="@/assets/components/imageCarousel/images/slider_04.jpg"
+          src="@/assets/intro/images/imageSlider/slider_05.png"
           alt=""
         >
       </div>
