@@ -496,14 +496,6 @@
     }
   }
 
-h1 {
-    color: white;
-    font-family: 'Noto Sans', sans-serif;
-}
-h2, h3, h4, h5, h6 {
-    color: black;
-    font-family: 'Noto Sans', sans-serif;
-}
 #dash, #s, #aa, #ab, #l, #ta, #tb, #fa, #fb, #r, #o, #n, #ta2, #tb2 {
     stroke: black;
     fill: transparent;
