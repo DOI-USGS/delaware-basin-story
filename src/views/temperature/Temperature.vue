@@ -39,7 +39,7 @@
         </div>
         <div class="temperature-text">
           <h3 id="trout-h3">
-            HEADER ABOUT TROUT: Brook trout have been used as indicators of water quality due to their sensitivity to water temperatures
+            Brook trout have been used as indicators of water quality due to their sensitivity to water temperatures
           </h3>
         </div>
       </div>
@@ -73,7 +73,7 @@
                 id="mussel-h3"
                 class="appear"
               >
-                NEED HEADER ABOUT MUSSELS: Thermal diversity is important for robust and diverse aquatic communities
+                Thermal diversity is important for robust and diverse aquatic communities
               </h3>
             </div>
             <div class="image-stack">
@@ -365,14 +365,14 @@
     #label-container {
 
       #tempheader{
-        width: 35%;
+        width: 40%;
         margin-left: 0;
 
       }
       .section-title {
         position: absolute;
-        top: 70%;
-        margin-left: 7%;
+        top: 65%;
+        margin-left: 5%;
         color: white;
 
       }
@@ -405,16 +405,19 @@
 
     .row-fish {
       width: 100%;
+      height: auto;
 
       .right {
         float: right;
-        width: 80%;
+        width: 100%;
 
         .image-stack {
           display:grid;
           grid-template-columns: 1;
           position: relative;
           margin-bottom: 0;
+          width: 80%;
+          float: right;
 
           #sadfish {
             grid-column: 1 ;
@@ -425,10 +428,10 @@
           #happyfish {
             grid-column: 1 / span 12;
             grid-row: 1;
-            animation: color-change 15s linear 5s forwards 1;
-            -webkit-animation: color-change 15s linear 5s forwards 1;
-            -moz-animation: color-change 15s linear 5s forwards 1;
-            -o-animation: color-change 15s linear 5s forwards 1;
+            animation: color-change 15s linear 5s forwards infinite;
+            -webkit-animation: color-change 15s linear 5s forwards infinite;
+            -moz-animation: color-change 15s linear 5s forwards infinite;
+            -o-animation: color-change 15s linear 5s forwards infinite;
 
           }
           #sadfish:hover {
