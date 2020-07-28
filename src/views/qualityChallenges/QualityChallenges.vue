@@ -1,6 +1,7 @@
 <template>
   <section id="quality-challenges">
     <div class="quality-challenges-section-text text-content">
+      <p>There’s a balance to strike with reservoir management – in spring, a too-full reservoir may be primed for summer drought protection or recreation but might not have room to protect against a spring flood. A not-full-enough reservoir might not be able to compensate for low flows in the late summer. Reservoir managers, along with the Delaware River Master and Delaware River Basin Commission, rely on extensive scientific monitoring and modeling to predict the optimal rates of storage and release throughout the year.</p>
       <h3>Taken alone, enough water is not enough – it needs to be of sufficient quality, too. </h3>
       <p>Water quality affects the suitability of water for drinking, recreation, agriculture, industry, and aquatic life. Reservoir releases, water withdrawals, wastewater discharges, land use and management, and many other human activities affect many dimensions of water quality: </p>
       <ul>
