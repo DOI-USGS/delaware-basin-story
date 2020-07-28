@@ -33,8 +33,6 @@
           id="big-number-svg-5"
           alt=""
         />
-
-
       </div>
     </div>
     <!-- Begin Text Side -->
