@@ -6,7 +6,7 @@
         src="@/assets/temperature/images/waterHeader.png"
         alt="water line for the top of a stream cross-section"
       >
-      <div id="label-container">
+      <!-- <div id="label-container">
         <img
           id="tempheader"
           src="@/assets/temperature/images/BlueLarge.png"
@@ -15,13 +15,16 @@
         <h1 class="section-title">
           Temperature
         </h1>
-      </div>
+      </div> -->
     </div>
     <div id="content">
       <div class="row-fish">
-        <div class="temperature-text">
-          <p>Water temperature is inherently linked to the health and reproduction of aquatic organisms, such as trout and mussels. In the DRB there are diverse thermal habitats that support vibrant communities of aquatic life. Some factors that modify temperature (e.g. weather/climate) are not easily controlled by DRB decisionmakers, while other factors (reservoir releases and riparian land-use) may be strategically used to maintain or modify thermal regimes. A combination of monitoring and modeling lends important information to policymakers, anglers, land resource planners, and water managers; these decisions can impact economic and ecological health.  </p>
-          <p>Brook trout are the only native trout species within the DRB and prefer cold water temperatures. For brook trout, fall water temperatures are an important environmental cue to initiate the reproductive cycle. Trout can also be negatively impacted when water temperatures are too high in other seasons, as warming reduces growth rates and can make trout more susceptible to diseases. </p>
+        <div class="text-content">
+          <p>Water temperature is closely linked to the health of aquatic organisms, especially the health of their reproductive cycle. In the Basin, there are many different thermal habitats that support a diversity of vibrant communities of aquatic life. Decisionmakers in the Basin have to know what species live where, what kinds of water temperature they prefer, and how their management decisions could impact those species.</p>
+          <p>Some factors that modify temperature – like weather and climate – cannot be controlled by decisionmakers in the Basin.  Other factors – like reservoir releases and riparian land-use – can be strategically used to maintain or modify temperatures in certain river reaches.</p>
+          <h3 id="trout-h3">
+            Take Brook trout, for example.
+          </h3>
         </div>
         <div class="right">
           <div class="image-stack">
@@ -37,10 +40,12 @@
             >
           </div>
         </div>
-        <div class="temperature-text">
-          <h3 id="trout-h3">
-            Brook trout have been used as indicators of water quality due to their sensitivity to water temperatures
-          </h3>
+        <div class="text-content">
+          <p>Brookies are the only native trout species within the Basin, and theyhave been used as indicators of water quality due to their sensitivity to water temperatures.</p>
+          <p>In the fall, trout need a cool temperature to signal the beginning of their reproductive cycle.  Historically, this corresponds with a certain time of year, usually November. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water, and once the egg are fertilized the mating pair bury the nest for protection. The eggs remain unhatched all winter, and require the cool water to develop properly.</p>
+          <p>Warmer water temperatures are bad news for Brookies even outside of the reproductive cycle.  Brookies can survive in warmer waters than they like, but they can’t compete well with non-native Brown trout.The warm water reduces growth rates and can make trout more susceptible to diseases. Brookies instead thrive in river reaches with super cold water where the Brown trout can’t survive.</p>
+          <h3>That’s why reservoir release decisions are such an important management tool.  </h3>
+          <p>The extra rush of cool reservoir water not only increases the river flow but also brings down the temperature of the water downstream into a range that’s healthy for trout.</p>
         </div>
       </div>
       <div
@@ -64,17 +69,16 @@
             key="mussels-animation"
             class="row-mussels"
           >
-            <div class="temperature-text">
-              <p>Simultaneously, the federally protected dwarf wedgemussels have their own preferences for water temperatures and river flow rates. Efforts to manage water in the modern era often require consideration of the impacts of altering flows, groundwater connectivity, and stream shading on water temperatures and aquatic life.  </p>
-              <p>The USGS has a long history of monitoring water resources in the DRB, in partnership with ### stakeholders and cooperators. A recent Federal funding initiative, the Next-Generation Water Observing System (NGWOS), has made new investments in water monitoring and information delivery for DRB stakeholders. The DRB was chosen as the pilot basin for NGWOS in 2017(?verify?) and the unique needs for monitoring were taken into account as new sensor deployments were designed, old infrastructure was upgraded, and innovations in non-contact measurement techniques were tested and improved.  </p>
-
-
+            <div class="text-content">
               <h3
                 id="mussel-h3"
                 class="appear"
               >
-                Thermal diversity is important for robust and diverse aquatic communities
+                Now, meet the Dwarf Wedgemussel, an endangered species.
               </h3>
+
+              <p>Dwarf wedgemussels have their own preferences for water temperatures and river flow rates which are distinctly different than brook trout. Wedgemussels prefer warmer temperatures, so reservoir releases have to be carefully calculated and monitored to protect mussel habitat from getting too cool.</p>
+              <p>Managing water temperature in the modern era also requires that we consider the impacts of changing flows, groundwater connectivity, and stream shading, which require advanced monitoring and modeling. A combination of temperature monitoring and modeling provides policymakers, anglers, land resource planners, and water managers with important information. This information is used to make decisions that can impact economic and ecological health throughout the entire river basin.</p>
             </div>
             <div class="image-stack">
               <img
@@ -295,6 +299,11 @@
         </transition-group>
       </div>
     </div>
+    <div class="text-content">
+      <h3>The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators.</h3>
+      <p>The United States chose the Delaware River Basin as the pilot site for the Next-Generation Water Observing System (NGWOS). The investments in water monitoring are diverse and numerous. As part of NGOWS, the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep.</p>
+      <p>Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current water availability and water quality.</p>
+    </div>
   </div>
 </template>
 
@@ -352,7 +361,7 @@
 
 
 #temperature {
-  padding: 2% 2% 30% 2%;
+  padding: 2% 2% 2% 2%;
   height: auto;
 
   #header {
@@ -380,7 +389,6 @@
 
       #waterline {
         margin-top: 100px;
-        background: white;
         width: 100%;
       }
 
