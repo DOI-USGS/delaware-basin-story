@@ -94,13 +94,13 @@
     }
     h2 {
       font-family: 'Noto Sans', sans-serif;
-      font-weight: 300;
+      font-weight: 500;
       font-size: 2em;
     }
     h3 {
       font-family: 'Noto Sans', sans-serif;
       font-weight: bolder;
-      font-size: 1.4em;
+      font-size: 1.8em;
     }
 
     .byline {
@@ -148,7 +148,7 @@
       min-width: 350px;
       max-width: 500px;
       padding: 0 20px;
-      background: rgba(255, 255, 255, 0.9);
+      // background: rgba(255, 255, 255, 0.9);
     }
     // width: 100%;
   }
