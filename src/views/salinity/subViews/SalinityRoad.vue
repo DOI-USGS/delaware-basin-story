@@ -11,7 +11,8 @@
       <div class="outer">
         <img
           id="map"
-          src="@/assets/salinity/salinityRoad/images/roadsalt.png"
+          src="@/assets/salinity/salinityRoad/images/truckin-slow.gif"
+          width="80%"
         >
       </div>
     </div>
@@ -153,6 +154,7 @@
     display: block;
     max-width: 100%;
     height: auto;
+    margin-left:10%;
 }
 
 .outer svg {
