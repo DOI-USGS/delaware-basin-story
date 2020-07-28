@@ -15,33 +15,23 @@
         >
         <SVGNewGages
           id="big-number-svg-1"
-          class="big-number-map-locations-svg"
           alt=""
-          hidden
         />
         <SVGEnhanced
           id="big-number-svg-2"
-          class="big-number-map-locations-svg"
           alt=""
-          hidden
         />
         <SVGConductance
           id="big-number-svg-3"
-          class="big-number-map-locations-svg"
           alt=""
-          hidden
         />
         <SVGTemperature
           id="big-number-svg-4"
-          class="big-number-map-locations-svg"
           alt=""
-          hidden
         />
         <SVGCameras
           id="big-number-svg-5"
-          class="big-number-map-locations-svg"
           alt=""
-          hidden
         />
       </div>
     </div>
@@ -241,7 +231,7 @@
         >
           <transition name="fade">
             <p id="p-5">
-              Installation of 8 new cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These cameras open up the potential for new realms of science and data processing for flow measurement, and support USGS visually sharing the dynamic lives of rivers and streams. 
+              Installation of 8 new cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These cameras open up the potential for new realms of science and data processing for flow measurement, and support USGS visually sharing the dynamic lives of rivers and streams.
             </p>
           </transition>
           <div id="monitoring-scroll-out-target" />
@@ -322,15 +312,19 @@
             visibilityChanged(isVisible, entry) {
                 this.isVisible = isVisible;
                 const paragraphTargetId = 'p-' + entry.target.id[entry.target.id.length -1];
+                const svgTargetId = 'big-number-svg-' + entry.target.id[entry.target.id.length -1];
                 const targetElement = document.querySelector('#' + paragraphTargetId);
+                const svgTarget = document.querySelector('#' + svgTargetId)
 
                 if (isVisible === true) {
                     this.isSectionInView = true;
                     targetElement.classList.add('visible');
+                    svgTarget.classList.add('visible');
 
                 } else if (isVisible !== true) {
                     this.isSectionInView = false;
                     targetElement.classList.remove('visible');
+                    svgTarget.classList.remove('visible');
                 }
             },
             numberIconVisibilityChanged(isVisible, entry) {
@@ -414,10 +408,6 @@
 
 
 
-
-
-
-
 #monitoring-big-numbers-main-image-container  {
   position: relative;
   width: 100%;
@@ -434,6 +424,11 @@
     top: 0;
     left:0;
     z-index: 2;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  svg.visible {
+    opacity: 1;
   }
 }
 
