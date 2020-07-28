@@ -425,10 +425,10 @@
           #happyfish {
             grid-column: 1 / span 12;
             grid-row: 1;
-            animation: color-change 15s linear 5s forwards 1;
-            -webkit-animation: color-change 15s linear 5s forwards 1;
-            -moz-animation: color-change 15s linear 5s forwards 1;
-            -o-animation: color-change 15s linear 5s forwards 1;
+            animation: color-change 15s linear 5s forwards infinite;
+            -webkit-animation: color-change 15s linear 5s forwards infinite;
+            -moz-animation: color-change 15s linear 5s forwards infinite;
+            -o-animation: color-change 15s linear 5s forwards infinite;
 
           }
           #sadfish:hover {

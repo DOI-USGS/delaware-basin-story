@@ -11,7 +11,7 @@
       <div class="outer">
         <img
           id="map"
-          src="@/assets/salinity/salinityRoad/images/roadsalt.png"
+          src="@/assets/salinity/salinityRoad/images/truckin-slow.gif"
         >
       </div>
     </div>
