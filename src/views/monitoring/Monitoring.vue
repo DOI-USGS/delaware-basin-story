@@ -299,15 +299,6 @@
             SVGTemperature,
             SVGCameras
         },
-        data() {
-            return {
-                isDetailShowing1: false,
-                isDetailShowing2: false,
-                isDetailShowing3: false,
-                isDetailShowing4: false,
-                isDetailShowing5: false
-            }
-        },
         methods: {
             visibilityChanged(isVisible, entry) {
                 this.isVisible = isVisible;
@@ -325,45 +316,6 @@
                     this.isSectionInView = false;
                     targetElement.classList.remove('visible');
                     svgTarget.classList.remove('visible');
-                }
-            },
-            numberIconVisibilityChanged(isVisible, entry) {
-              // this is not used at the moment, but might use later so keeping
-                this.isVisible = isVisible;
-                const ordinalNumber = entry.target.id[entry.target.id.length -1];
-                const mapTargetId = 'big-number-svg-' + entry.target.id[entry.target.id.length -1];
-                const mapTargetElement = document.getElementById(mapTargetId);
-
-                if (isVisible === true) {
-                    switch (ordinalNumber) {
-                        case '1': this.isDetailShowing1 = true;
-                            break;
-                        case '2': this.isDetailShowing2 = true;
-                            break;
-                        case '3': this.isDetailShowing3 = true;
-                            break;
-                        case '4': this.isDetailShowing4 = true;
-                            break;
-                        case '5': this.isDetailShowing5 = true;
-                            break;
-                    }
-
-                    mapTargetElement.removeAttribute('hidden');
-                } else if (isVisible !== true) {
-                    switch (ordinalNumber) {
-                        case '1': this.isDetailShowing1 = false;
-                            break;
-                        case '2': this.isDetailShowing2 = false;
-                            break;
-                        case '3': this.isDetailShowing3 = false;
-                            break;
-                        case '4': this.isDetailShowing4 = false;
-                            break;
-                        case '5': this.isDetailShowing5 = false;
-                            break;
-                    }
-
-                    mapTargetElement.hidden = true;
                 }
             }
         }
