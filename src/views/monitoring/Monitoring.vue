@@ -234,7 +234,6 @@
               Installation of 8 new cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These cameras open up the potential for new realms of science and data processing for flow measurement, and support USGS visually sharing the dynamic lives of rivers and streams.
             </p>
           </transition>
-          <div id="monitoring-scroll-out-target" />
         </div>
       </div>
 
@@ -272,11 +271,10 @@
           class="single-detail panel"
         >
           <transition name="fade">
-            <p id="p-5">
+            <p id="p-6">
               Installation of 8 new cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These cameras open up the potential for new realms of science and data processing for flow measurement, and support USGS visually sharing the dynamic lives of rivers and streams.
             </p>
           </transition>
-          <div id="monitoring-scroll-out-target" />
         </div>
       </div>
     </div>
