@@ -2,11 +2,10 @@
   <div id="visualization">
     <Intro />
     <Flow v-if="checkIfIntroSectionIsRendered" />
-    <QualityChallenges v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfSankeySection" />
-    <Salinity v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfSankeySection" />
-    <Temperature v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfSankeySection" />
-    <Monitoring v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfSankeySection" />
-    <Conclusion v-if="checkIfIntroSectionIsRendered && checkIfUserAtEndOfSankeySection" />
+    <QualityChallenges v-if="checkIfIntroSectionIsRendered" />
+    <Salinity v-if="checkIfIntroSectionIsRendered" />
+    <Temperature v-if="checkIfIntroSectionIsRendered" />
+    <MonitoringConclusion v-if="checkIfIntroSectionIsRendered" />
   </div>
 </template>
 
@@ -19,19 +18,12 @@
             QualityChallenges:() => import( /* webpackPrefetch: true */ /*webpackChunkName: "quality-challenges"*/ "./qualityChallenges/QualityChallenges"),
             Temperature: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "temperature"*/ "./temperature/Temperature"),
             Salinity: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "salinity"*/ "./salinity/Salinity"),
-            Monitoring: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "monitoring"*/ "./monitoring/Monitoring"),
-            Conclusion: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "conclusion"*/ "./conclusion/Conclusion")
+            MonitoringConclusion: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "monitoringConclusion"*/ "./monitoringConclusion/MonitoringConclusion")
         },
         computed: {
             checkIfIntroSectionIsRendered() {
                 return this.$store.state.introSectionRendered;
-            },
-            checkIfUserAtEndOfMonitoringSection: function () {
-                return this.$store.state.isUserAtEndOfMonitoringSection;
-            },
-            checkIfUserAtEndOfSankeySection: function () {
-                return this.$store.state.isUserAtEndOfSankeySection;
-            },
+            }
         }
     }
 </script>
