@@ -3,6 +3,7 @@
     <div id="image-container">
       <div class="inking">
         <svg
+          id="monitoring-locations"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 1920 1080"
@@ -29,7 +30,10 @@
             height="100%"
             width="100%"
           />
-          <g id="gages">
+          <g
+            id="gages"
+            class="svg-monitoring-locations"
+          >
             <g id="salinity">
               <use
                 width="17.82"
@@ -2501,7 +2505,7 @@
               />
             </g>
           </g>
-          <g id="Road_Salt">
+          <g id="Road_Salt" v-if="testValue">
             <g class="sketch-white">
               <path d="M749 464a25 25 0 005 9 26 26 0 0012 8c11 4 23 1 27-1a83 83 0 01-12-1l-13-3c-4-2-8-4-10-8a18 18 0 01-3-11 52 52 0 016 8l6 7 7 1 12 1a99 99 0 0013 0 58 58 0 00-8-3 178 178 0 00-20-4c-2 0-4 0-6-2l-3-6-2-5 4 4a12 12 0 006 2c4 0 12 2 32 11l-5-4c-7-4-10-4-13-8l-3-8c0-1 3 5 8 9 6 4 13 4 18 3-13 2-21-1-25-3-3-1-7-3-7-5s3-4 4-4a8 8 0 001 5c3 6 16 4 16 3 1-1-3-1-7-4a22 22 0 01-5-5M826 387h-8 0-15 0l-16-1 25-6-17 1 22 2M858 437l2-1-1 4 5-6-2 7 3 3v-3l-2 7z" />
             </g>
@@ -2744,7 +2748,10 @@
               </g>
             </g>
           </g>
-          <g id="Gages">
+          <g
+            v-if="false"
+            id="Gages"
+          >
             <g class="sketch">
               <g id="l">
                 <path
@@ -3980,40 +3987,93 @@
           class="conclusion-text-section"
         >
           <div class="text-content-side">
-            <h2>new and enhanced</h2>
+            <h2
+              id="text-block-new_enhanced"
+              v-observe-visibility="{
+                callback: visibilityChanged,
+                intersection: {
+                  rootMargin: '-20% 0% -50% 0%',
+                  threshold: 0
+                }
+              }"
+            >
+              new and enhanced
+            </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="text-content-side">
-            <h2>salinity</h2>
+            <h2
+              id="text-block-salinity"
+              v-observe-visibility="{
+                callback: visibilityChanged,
+                intersection: {
+                  rootMargin: '-20% 0% -50% 0%',
+                  threshold: 0
+                }
+              }"
+            >
+              salinity
+            </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="text-content-side">
-            <h2>temperature</h2>
+            <h2
+              id="text-block-temp"
+              v-observe-visibility="{
+                callback: visibilityChanged,
+                intersection: {
+                  rootMargin: '-20% 0% -50% 0%',
+                  threshold: 0
+                }
+              }"
+            >
+              temperature
+            </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="text-content-side">
-            <h2>R&D</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-        <div
-          id="conclusion-text-details"
-          class="conclusion-text-section"
-        >
-          <div class="text-content-side">
-            <h2>conclusion topic</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="text-content-side">
-            <h2>conclusion topic</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="text-content-side">
-            <h2>conclusion topic</h2>
+            <h2
+              id="text-block-cameras"
+              v-observe-visibility="{
+                callback: visibilityChanged,
+                intersection: {
+                  rootMargin: '-20% 0% -50% 0%',
+                  threshold: 0
+                }
+              }"
+            >
+              cameras
+            </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="text-content-side">
-            <h2>conclusion topic</h2>
+            <h2
+              id="text-block-r-d"
+              v-observe-visibility="{
+                callback: visibilityChanged,
+                intersection: {
+                  rootMargin: '-20% 0% -50% 0%',
+                  threshold: 0
+                }
+              }"
+            >
+              R&D
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="text-content-side">
+            <h2
+              id="text-block-all"
+              v-observe-visibility="{
+                callback: visibilityChanged,
+                intersection: {
+                  rootMargin: '-20% 0% -50% 0%',
+                  threshold: 0
+                }
+              }"
+            >
+              all
+            </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
@@ -4024,12 +4084,59 @@
 
 <script>
 export default {
-  name: 'MonitoringConclusion'
-}
+  name: 'MonitoringConclusion',
+  data() {
+    return {
+      testValue: false,
+      isShowingCity: false,
+      isShowingReservoirs: false,
+      isShowingSaltTruck: false,
+      isShowingMussels: false,
+      isShowingTrout: false,
+      isShowingEcomapper: false
+    }
+  },
+  methods: {
+    visibilityChanged(isVisible, entry) {
+      this.isVisible = isVisible;
+      const monitoringLocationTargetId = entry.target.id.slice(11);
+      const targetElement = document.querySelector('#' + monitoringLocationTargetId)
 
+      if(monitoringLocationTargetId === 'salinity' || monitoringLocationTargetId === 'temp' || monitoringLocationTargetId === 'new_enhanced' || monitoringLocationTargetId === 'cameras' || monitoringLocationTargetId === 'all') {
+        if (isVisible === true) {
+          console.log('this is the target', entry.target.id.slice(11))
+          targetElement.classList.add('visible');
+          switch(monitoringLocationTargetId) {
+            case 'salinity':
+              console.log('ran sal')
+                this.testValue = true;
+              this.isShowingSaltTruck = true;
+              break;
+            case 'temp':
+              console.log('ran temp')
+              this.isShowingMussels = true;
+              this.isShowingTrout = true;
+              break;
+            case 'r-d':
+              console.log('ran r-d')
+              this.isShowingTrout = true;
+              break;
+            default:
+              break;
+          }
+        } else if (isVisible !== true) {
+          targetElement.classList.remove('visible');
+        }
+      }
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">
+
+
+
 #image-container {
   position: sticky;
   top: 0;
@@ -4050,7 +4157,1020 @@ export default {
       left: 0;
     }
   }
+  @keyframes draw100 {
+    0% {stroke-dashoffset: -100px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-o-keyframes draw100 {
+    0% {stroke-dashoffset: -100px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-moz-keyframes draw100 {
+    0% {stroke-dashoffset: -100px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-webkit-keyframes draw100 {
+    0% {stroke-dashoffset: -100px}
+    100% {stroke-dashoffset: 0px;}
+  }
+
+
+  @keyframes draw200 {
+    0% {stroke-dashoffset: -200px}
+    100% {stroke-dashoffset: 0px;}
+  }
+
+  @-o-keyframes draw200 {
+    0% {stroke-dashoffset: -200px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-moz-keyframes draw200 {
+    0% {stroke-dashoffset: -200px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-webkit-keyframes draw200 {
+    0% {stroke-dashoffset: -200px}
+    100% {stroke-dashoffset: 0px;}
+  }
+
+  @keyframes draw500 {
+    0% {stroke-dashoffset: -500px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-o-keyframes draw500 {
+    0% {stroke-dashoffset: -500px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-moz-keyframes draw500 {
+    0% {stroke-dashoffset: -500px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-webkit-keyframes draw500 {
+    0% {stroke-dashoffset: -500px}
+    100% {stroke-dashoffset: 0px;}
+  }
+
+  @keyframes draw400 {
+    0% {stroke-dashoffset: -400px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-o-keyframes draw400 {
+    0% {stroke-dashoffset: -400px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-moz-keyframes draw400 {
+    0% {stroke-dashoffset: -400px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-webkit-keyframes draw400 {
+    0% {stroke-dashoffset: -400px}
+    100% {stroke-dashoffset: 0px;}
+  }
+
+  @keyframes draw300 {
+    0% {stroke-dashoffset: -300px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-o-keyframes draw300 {
+    0% {stroke-dashoffset: -300px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-moz-keyframes draw300 {
+    0% {stroke-dashoffset: -300px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-webkit-keyframes draw300 {
+    0% {stroke-dashoffset: -300px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @keyframes draw900 {
+    0% {stroke-dashoffset: -900px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-o-keyframes draw900 {
+    0% {stroke-dashoffset: -900px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-moz-keyframes draw900 {
+    0% {stroke-dashoffset: -900px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-webkit-keyframes draw900 {
+    0% {stroke-dashoffset: -900px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @keyframes draw700 {
+    0% {stroke-dashoffset: -700px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  @-o-keyframes draw700 {
+    0% {stroke-dashoffset: -700px}
+    100% {stroke-dashoffset: 0px;}
+  }
+
+  @-moz-keyframes draw700 {
+    0% {stroke-dashoffset: -700px}
+    100% {stroke-dashoffset: 0px;}
+  }
+
+  @-webkit-keyframes draw700 {
+    0% {stroke-dashoffset: -700px}
+    100% {stroke-dashoffset: 0px;}
+  }
+  #Reservoirs, #Ecomapper, #Road_Salt, #Gages, #NYC, #Mussels, #Trout {
+
+    .writing {
+      stroke: black;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 6.5px;
+
+    }
+    .arrow {
+      stroke: black;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 3px;
+    }
+    .sketch-black {
+      stroke: black;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      z-index: 5;
+      stroke-width: 6.5px;
+
+      .sketch-1 {
+        stroke-width: 1px;
+      }
+      .sketch-2 {
+        stroke-width: 2px;
+      }
+      .sketch-3 {
+        stroke-width: 3px;
+      }
+      .sketch-4 {
+        stroke-width: 4px;
+      }
+      .sketch-fine {
+        stroke-width: .5px;
+      }
+
+    }
+    .sketch-white {
+      stroke: white;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 7px;
+      z-index: 1;
+      stroke-dasharray: 300px;
+      stroke-dasharray: -300px;
+
+    }
+    .sketch-white-3 {
+      stroke: white;
+      fill: white;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width:1px;
+
+    }
+
+  }
+
+
+
+  /* line animations in order of appearance */
+
+  $time-dur-long: .5s;
+  $time-delay-long: .4s;
+  $time-dur-med: .3s;
+  $time-delay-med: .2s;
+  $time-dur-short: .2s;
+  $time-delay-short: .1s;
+  $sect-start-uses: 2s;
+  $sect-start-salt: 0s;
+  $sect-start-temp: 13s;
+
+  #NYC {
+    $ord-sect: 1;
+    stroke-dasharray: 200px;
+    stroke-dashoffset: -200px;
+    .sketch-black {
+      .a{
+        $ord-group: 1;
+        animation: draw200 $time-dur-med linear $ord-sect*$ord-group forwards;
+        -webkit-animation: draw200 $time-dur-med linear $ord-sect*$ord-group forwards;
+        -moz-animation: draw200 $time-dur-med linear $ord-sect*$ord-group forwards;
+        -o-animation: draw200 $time-dur-med linear $ord-sect*$ord-group forwards;
+      }
+      .b{
+        $ord-group: 2;
+        animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+        -webkit-animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+        -moz-animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+        -o-animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+      }
+      .c{
+        $ord-group: 3;
+        animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+        -webkit-animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+        -moz-animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+        -o-animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+      }
+      .d{
+        $ord-group: 4;
+        animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+        -webkit-animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+        -moz-animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+        -o-animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+      }
+    }
+    .sketch-white {
+      $ord-group: 5;
+      animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+      -webkit-animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+      -moz-animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+      -o-animation: draw200 $time-dur-med linear $ord-sect*$ord-group*$time-delay-med forwards;
+    }
+  }
+
+  #Reservoirs {
+    $ord-sect: 2;
+    stroke-dasharray: 100px;
+    stroke-dashoffset: -100px;
+
+    .sketch-black{
+
+      .a{
+        $ord-group: 1;
+        animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+      }
+      .b{
+        $ord-group: 2;
+        animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+      }
+      .c{
+        $ord-group: 3;
+        animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+      }
+      .g{
+        $ord-group: 4;
+        animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw100 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+      }
+    }
+    .sketch-white {
+      stroke-dasharray: 200px;
+      stroke-dashoffset: -200px;
+      .d{
+        $ord-group: 5;
+        animation: draw200 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+      }
+      .e{   $ord-group: 6;
+        animation: draw200 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+      }
+      .f{   $ord-group: 7;
+        animation: draw200 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-med linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+      }
+    }
+
+    .arrow {
+      stroke-dasharray: 200px;
+      stroke-dashoffset: -200px;
+
+      #cap {
+        $ord-group: 8;
+        animation: draw200 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+      }
+      #body, #wt {
+        $ord-group: 9;
+        animation: draw200 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+      }
+    }
+
+    #reservoirs_label {
+      stroke-dasharray: 300px;
+      stroke-dashoffset: -300px;
+
+      #r1 {
+        $ord-group: 10;
+        animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+      }
+      #e1 {
+        $ord-group: 11;
+        animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+      }
+      #s1 {
+        $ord-group: 12;
+        animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+      }
+      #e2 {
+        $ord-group: 13;
+        animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+      }
+      #r2 {
+        $ord-group: 14;
+        animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med) forwards;
+      }
+      #v {
+        $ord-group: 15;
+        animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+      }
+      #o {
+        $ord-group: 16;
+        animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+      }
+      #i {
+        $ord-group: 17;
+        animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+      }
+      #r3 {
+        $ord-group: 18;
+        animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+      }
+      #s2 {
+        $ord-group: 19;
+        animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw300 $time-dur-long linear $sect-start-uses+($ord-group*$time-delay-med)  forwards;
+      }
+    }
+  }
+
+  #Road_Salt {
+    .sketch-black {
+
+      .sketch-3 {
+        stroke-dasharray:300px;
+        stroke-dashoffset: -300px;
+        .a {
+          $ord-group: 1;
+          animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -webkit-animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -moz-animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -o-animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        }
+        .b {
+          $ord-group: 2;
+          animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -webkit-animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -moz-animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -o-animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+        }
+        .c {
+          $ord-group: 3;
+          animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -webkit-animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -moz-animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -o-animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+        }
+      }
+      .sketch-2, .sketch-1 {
+        stroke-dasharray:200px;
+        stroke-dashoffset: -200px;
+
+        .d {
+          $ord-group: 4;
+          animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -webkit-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -moz-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -o-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+        }
+        .e {
+          $ord-group: 5;
+          animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -webkit-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -moz-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -o-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+        }
+        .f {
+          $ord-group: 6;
+          animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -webkit-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -moz-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -o-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        }
+        .g {
+          $ord-group: 7;
+          animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -webkit-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -moz-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -o-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+        }
+        .h {
+          $ord-group: 8;
+          animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -webkit-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -moz-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -o-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+        }
+        .i {
+          $ord-group: 9;
+          animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -webkit-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -moz-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -o-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        }
+        .j {
+          $ord-group: 10;
+          animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -webkit-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -moz-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -o-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+        }
+        .k {
+          $ord-group: 11;
+          animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -webkit-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -moz-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -o-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        }
+        .l {
+          $ord-group: 12;
+          animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -webkit-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -moz-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+          -o-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        }
+        .m {
+          $ord-group: 13;
+          animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -webkit-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -moz-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+          -o-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med)  forwards;
+        }
+      }
+
+    }
+    .sketch-white {
+      stroke-dasharray:400px;
+      stroke-dashoffset: -400px;
+      $ord-group: 14;
+      animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      -webkit-animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      -moz-animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      -o-animation: draw300 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+    }
+
+
+  }
+
+  #Ecomapper {
+    .writing {
+      stroke-dasharray: 200px;
+      stroke-dashoffset: -200px;
+
+      #e1 {
+        $ord-group: 14;
+        animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      }
+      #c {
+        $ord-group: 15;
+        animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      }
+      #o {
+        $ord-group: 16;
+        animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      }
+      #m {
+        $ord-group: 17;
+        animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      }
+      #a {
+        $ord-group: 18;
+        animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      }
+      #p1 {
+        $ord-group: 19;
+        animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      }
+      #p1-2 {
+        $ord-group: 20;
+        animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      }
+      #e1-2 {
+        $ord-group: 21;
+        animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      }
+      #r1-3 {
+        $ord-group: 22;
+        animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      }
+    }
+    .arrow {
+      stroke-dasharray: 200px;
+      stroke-dashoffset: -200px;
+
+      #eco_arrow_body {
+        $ord-group: 23;
+        animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      }
+      #eco_arrow_head {
+        $ord-group: 24;
+        animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-med linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      }
+    }
+    .sketch-black {
+      stroke-dasharray: 200px;
+      stroke-dashoffset: -200px;
+
+      .sketch-2 {
+        $ord-group: 25;
+        animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      }
+      .sketch-fine {
+        $ord-group: 26;
+        animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      }
+
+    }
+    .sketch-white {
+      stroke-dasharray: 200px;
+      stroke-dashoffset: -200px;
+      $ord-group: 27;
+      animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      -webkit-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      -moz-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+      -o-animation: draw200 $time-dur-long linear $sect-start-salt+($ord-group*$time-delay-med) forwards;
+    }
+  }
+
+  @keyframes appear {
+    0% {opacity: 0}
+    100% {opacity: 1;}
+  }
+
+  #Gages {
+    .sketch {
+      #a {
+        $ord-group: 14;
+        opacity: 0;
+        animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+      }
+      #b {
+        $ord-group: 15;
+        opacity: 0;
+        animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+      }
+      #c {
+        $ord-group: 16;
+        opacity: 0;
+        animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+      #d {
+
+        $ord-group: 17;
+        opacity: 0;
+        animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+      #e {
+
+        $ord-group: 18;
+        opacity: 0;
+        animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+      }
+      #f {
+        $ord-group: 19;
+        opacity: 0;
+        animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+      #g {
+        $ord-group: 20;
+        opacity: 0;
+        animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+      #h {
+        $ord-group: 21;
+        opacity: 0;
+        animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+      #i {
+        $ord-group: 22;
+        opacity: 0;
+        animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+      #j {
+        $ord-group: 23;
+        opacity: 0;
+        animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+      #k {
+        $ord-group: 24;
+        opacity: 0;
+        animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+      }
+      #l {
+        $ord-group: 25;
+        opacity: 0;
+        animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: appear $time-dur-short linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+    }
+    .arrow {
+      stroke-dasharray: 200px;
+      stroke-dashoffset: -200px;
+
+      #a {
+        $ord-group: 26;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+      }
+      #b {
+        $ord-group: 27;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+      }
+    }
+
+    #gages-label {
+      stroke-dasharray: 200px;
+      stroke-dashoffset: -200px;
+      #s1  {
+        $ord-group: 28;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+      }
+      #ta, #tb  {
+        $ord-group: 28;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+      }
+      #r1  {
+        $ord-group: 30;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+      }
+      #e1  {
+        $ord-group: 31;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+      }
+      #a1  {
+        $ord-group: 32;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+      }
+      #m  {
+        $ord-group: 33;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+      }
+      #g1  {
+        $ord-group: 34;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+      }
+      #a2  {
+        $ord-group: 35;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+      }
+      #g2  {
+        $ord-group: 36;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+      }
+
+      #e2 {
+        $ord-group: 37;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+      }
+      #s2  {
+        $ord-group: 38;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med)  forwards;
+      }
+    }
+
+  }
+
+  #Mussels {
+    .sketch-black {
+      stroke-dasharray: 200px;
+      stroke-dashoffset: -200px;
+      #d {
+        stroke-dasharray: 500px;
+        stroke-dashoffset: -500px;
+        $ord-group: 1;
+        stroke-width: 2.5px;
+        animation: draw400 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw400 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw400 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw400 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+
+      #a {
+        $ord-group: 2;
+        stroke-width: 1px;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+
+      #b {
+        $ord-group: 3;
+        stroke-width: 1px;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+
+      #c {
+        $ord-group: 4;
+        stroke-width: 1px;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+
+    }
+    .sketch-white {
+      $ord-group: 5;
+      stroke-width:15px;
+      stroke-dasharray: 900px;
+      stroke-dashoffset: -900px;
+      animation: draw900 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+      -webkit-animation: draw900 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+      -moz-animation: draw900 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+      -o-animation: draw900 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+    }
+  }
+
+  #Trout {
+    .sketch-black {
+      stroke-dasharray: 200px;
+      stroke-dashoffset: -200px;
+      fill: transparent;
+
+      #outline {
+        stroke-dasharray: 700px;
+        stroke-dashoffset: -700px;
+        $ord-group: 5;
+        stroke-width: 2.5px;
+        animation: draw700 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw700 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw700 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw700 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+
+      #fins {
+        $ord-group: 6;
+        stroke-width: 1px;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+
+      #fin_top {
+        $ord-group: 7;
+        stroke-width: 1px;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+
+      #fin_belly {
+        $ord-group: 8;
+        stroke-width: 1px;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+      #fin_front {
+        $ord-group: 9;
+        stroke-width: 1px;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+      #fin_tail {
+        $ord-group: 10;
+        stroke-width: 1px;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+
+      #eye {
+        $ord-group: 11;
+        stroke-width: 1.5px;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+      #spots {
+        $ord-group: 12;
+        stroke-width: 1px;
+        animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -webkit-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -moz-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+        -o-animation: draw200 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+      }
+
+    }
+    .sketch-white {
+      $ord-group: 13;
+      stroke-width:15px;
+      stroke-dasharray: 900px;
+      stroke-dashoffset: -900px;
+      animation: draw900 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+      -webkit-animation: draw900 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+      -moz-animation: draw900 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+      -o-animation: draw900 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
+
+    }
+  }
 }
+
 #text-container {
   display: flex;
   padding-bottom: 100em;
@@ -4063,6 +5183,17 @@ export default {
       padding-bottom: 10em;
     }
   }
+}
+
+#monitoring-locations {
+  g {
+    opacity: 0;
+
+    .visible {
+      opacity: 1;
+    }
+  }
+
 }
 
 </style>
