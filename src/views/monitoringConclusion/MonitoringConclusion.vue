@@ -2265,7 +2265,7 @@
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 2520 1656"
         >
-          <g id="Reservoirs">
+          <g id="Reservoirs" v-if="isShowingReservoirs" >
             <g
               id="res_arrow"
               class="arrow"
@@ -2418,8 +2418,7 @@
               />
             </g>
           </g>
-
-          <g id="Ecomapper">
+          <g id="Ecomapper" v-if="isShowingEcomapper" >
             <g
               id="eco_arrow"
               class="arrow"
@@ -2505,7 +2504,7 @@
               />
             </g>
           </g>
-          <g id="Road_Salt" v-if="testValue">
+          <g id="Road_Salt" v-if="isShowingSaltTruck">
             <g class="sketch-white">
               <path d="M749 464a25 25 0 005 9 26 26 0 0012 8c11 4 23 1 27-1a83 83 0 01-12-1l-13-3c-4-2-8-4-10-8a18 18 0 01-3-11 52 52 0 016 8l6 7 7 1 12 1a99 99 0 0013 0 58 58 0 00-8-3 178 178 0 00-20-4c-2 0-4 0-6-2l-3-6-2-5 4 4a12 12 0 006 2c4 0 12 2 32 11l-5-4c-7-4-10-4-13-8l-3-8c0-1 3 5 8 9 6 4 13 4 18 3-13 2-21-1-25-3-3-1-7-3-7-5s3-4 4-4a8 8 0 001 5c3 6 16 4 16 3 1-1-3-1-7-4a22 22 0 01-5-5M826 387h-8 0-15 0l-16-1 25-6-17 1 22 2M858 437l2-1-1 4 5-6-2 7 3 3v-3l-2 7z" />
             </g>
@@ -3853,7 +3852,7 @@
             </g>
 
           </g>
-          <g id="NYC">
+          <g id="NYC" v-if="isShowingCity" >
             <g
               class="sketch-white"
               stroke-width="13px"
@@ -3896,7 +3895,7 @@
               </g>
             </g>
           </g>
-          <g id="Mussels">
+          <g id="Mussels" v-if="isShowingMussels">
             <g class="sketch-white">
               <path
                 d="M199 879c-6 0-17 1-27 9-3 2-8 6-9 12-1 5 1 10 3 10s2-6 8-13a33 33 0 0111-8c5-2 11-2 22-2h14l-24 5a30 30 0 00-12 5c-3 2-6 5-7 9a10 10 0 002 7c2 2 5 5 7 4 3-1-1-9 3-15 3-3 6-1 20-5 6-2 9-3 13-2s8 3 8 5c-1 2-9-1-19 4-6 3-7 6-7 7s-1 4 1 7 9 2 12 0 3-6 7-9l6-2c3-2 3-3 4-2 2 0 2 4 3 6 4 7 31 0 31-3l-8-2-14-4-7-3c0-2 5-3 6-3l1-1a68 68 0 0114-1l9 1 7 2a12 12 0 007-2c6-3 9-10 10-12 9-18 26-26 23-31-2-2-9-1-10-1-9 2-13 10-19 18-14 15-31 18-31 19 1 1 35-10 34-14 0-2-12-4-21 1-6 4-8 8-17 12-3 1-6 3-8 1-3-2-2-9 2-12s11 1 12-2c1-2-2-7-7-10l-4-3c-1-3 0-8 4-10s9 0 11 2l4 6c2 0 6-11 2-18-2-5-7-5-8-9-1-6 13-15 17-12 2 1 0 6 0 8-6 17-28 17-35 32-2 4-4 12 0 24"
@@ -3926,7 +3925,7 @@
               </g>
             </g>
           </g>
-          <g id="Trout">
+          <g id="Trout" v-if="isShowingTrout">
             <g class="sketch-white">
               <path d="M149 713a145 145 0 0050 19c27 5 37-2 67-1 46 0 88 16 87 22-1 4-14 5-28 5a271 271 0 01-69-4c-41-9-54-21-87-19-6 0-26 0-27 7-1 2 3 6 6 8 10 6 21-7 41-5 8 1 6 4 24 10 8 3 14 4 36 8l41 7c33 4 73 1 74-3 0-6-77-28-114 3-6 4-11 10-13 9-6-4 11-41 27-73" />
             </g>
@@ -3977,7 +3976,16 @@
           class="conclusion-text-section"
         >
           <div class="text-content-side">
-            <h3>The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators.</h3>
+            <h3
+                id="text-block-intro"
+                v-observe-visibility="{
+                callback: visibilityChanged,
+                intersection: {
+                  rootMargin: '-20% 0% -50% 0%',
+                  threshold: 0
+                }
+              }"
+            >The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators.</h3>
             <p>The United States chose the Delaware River Basin as the pilot site for the Next-Generation Water Observing System (NGWOS). The investments in water monitoring are diverse and numerous. As part of NGOWS, the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep.</p>
             <p>Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current water availability and water quality.</p>
           </div>
@@ -4102,29 +4110,32 @@ export default {
       const monitoringLocationTargetId = entry.target.id.slice(11);
       const targetElement = document.querySelector('#' + monitoringLocationTargetId)
 
-      if(monitoringLocationTargetId === 'salinity' || monitoringLocationTargetId === 'temp' || monitoringLocationTargetId === 'new_enhanced' || monitoringLocationTargetId === 'cameras' || monitoringLocationTargetId === 'all') {
-        if (isVisible === true) {
+      if (isVisible === true) {
+        // if there is a monitoring location SVG layer for this target, add the visible class to control the CSS fade
+        if(monitoringLocationTargetId === 'salinity' || monitoringLocationTargetId === 'temp' || monitoringLocationTargetId === 'new_enhanced' || monitoringLocationTargetId === 'cameras' || monitoringLocationTargetId === 'all') {
           console.log('this is the target', entry.target.id.slice(11))
           targetElement.classList.add('visible');
-          switch(monitoringLocationTargetId) {
-            case 'salinity':
-              console.log('ran sal')
-                this.testValue = true;
-              this.isShowingSaltTruck = true;
-              break;
-            case 'temp':
-              console.log('ran temp')
-              this.isShowingMussels = true;
-              this.isShowingTrout = true;
-              break;
-            case 'r-d':
-              console.log('ran r-d')
-              this.isShowingTrout = true;
-              break;
-            default:
-              break;
-          }
-        } else if (isVisible !== true) {
+        }
+        switch(monitoringLocationTargetId) {
+          case 'salinity':
+            this.isShowingSaltTruck = true;
+            break;
+          case 'temp':
+            this.isShowingMussels = true;
+            this.isShowingTrout = true;
+            break;
+          case 'r-d':
+            this.isShowingEcomapper = true;
+            break;
+          case 'intro':
+            this.isShowingCity = true;
+            this.isShowingReservoirs = true;
+            break;
+          default:
+            break;
+        }
+      } else if (isVisible !== true) {
+        if(monitoringLocationTargetId === 'salinity' || monitoringLocationTargetId === 'temp' || monitoringLocationTargetId === 'new_enhanced' || monitoringLocationTargetId === 'cameras' || monitoringLocationTargetId === 'all') {
           targetElement.classList.remove('visible');
         }
       }
@@ -4344,7 +4355,6 @@ export default {
 
 
   /* line animations in order of appearance */
-
   $time-dur-long: .5s;
   $time-delay-long: .4s;
   $time-dur-med: .3s;
@@ -4353,7 +4363,7 @@ export default {
   $time-delay-short: .1s;
   $sect-start-uses: 2s;
   $sect-start-salt: 0s;
-  $sect-start-temp: 13s;
+  $sect-start-temp: 0s;
 
   #NYC {
     $ord-sect: 1;
