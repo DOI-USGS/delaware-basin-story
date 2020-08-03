@@ -291,11 +291,6 @@
               </svg>
             </div>
           </div>
-          <div
-            v-show="!isMusselsTextInView"
-            id="hold-place-for-mussels-when-they-are-out"
-            key="mussels-placeholder"
-          />
         </transition-group>
       </div>
     </div>
@@ -334,16 +329,6 @@
       left: 0;
       height: 100vh;
     }
-    #hold-place-for-mussels-when-they-are-out {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100%;
-      background-color: white;
-    }
-
     .fade-enter-active, .fade-leave-active {
       transition: opacity 1.5s;
     }

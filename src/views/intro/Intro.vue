@@ -9,16 +9,6 @@
         alt="watercolor map of delaware river basin"
         width="100%"
       >
-      <div class="container-section-title">
-        <!-- <img
-          src="@/assets/intro/images/title-cloud.png"
-          alt="image of watercolor cloud of color"
-        > -->
-        <!-- <div class="section-title">
-          <h1>{{ title }}</h1>
-          <h3>How science informs water management in the Delaware River Basin</h3>
-        </div> -->
-      </div>
     </div>
     <IntroTextContents />
     <ImageCarousel />
