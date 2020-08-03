@@ -34,7 +34,8 @@
             id="gages"
             class="svg-monitoring-locations"
           >
-            <g id="salinity">
+            <transition name="fade">
+              <g id="salinity" v-if="isShowingSalinityLocations" >
               <use
                 width="17.82"
                 height="21.18"
@@ -372,7 +373,9 @@
                 xlink:href="#DRBgage"
               />
             </g>
-            <g id="temp">
+            </transition>
+            <transition name="fade">
+              <g id="temp" v-if="isShowingTempLocations" >
               <use
                 width="17.82"
                 height="21.18"
@@ -896,7 +899,9 @@
                 xlink:href="#DRBgage"
               />
             </g>
-            <g id="new_enhanced">
+            </transition>
+            <transition name="fade">
+              <g id="new_enhanced" v-if="isShowingNewEnhancedLocations"  >
               <use
                 width="17.82"
                 height="21.18"
@@ -1522,7 +1527,9 @@
                 xlink:href="#DRBgage"
               />
             </g>
-            <g id="cameras">
+            </transition>
+            <transition name="fade">
+              <g id="cameras" v-if="isShowingCamerasLocations" >
               <use
                 width="17.82"
                 height="21.18"
@@ -1578,7 +1585,9 @@
                 xlink:href="#DRBgage"
               />
             </g>
-            <g id="all">
+            </transition>
+            <transition name="fade">
+              <g id="all" v-if="isShowingAllLocations" >
               <use
                 width="17.82"
                 height="21.18"
@@ -2258,6 +2267,7 @@
                 xlink:href="#DRBgage"
               />
             </g>
+            </transition>
           </g>
         </svg>
         <svg
@@ -3986,8 +3996,8 @@
                 }
               }"
             >The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators.</h3>
-            <p>The United States chose the Delaware River Basin as the pilot site for the Next-Generation Water Observing System (NGWOS). The investments in water monitoring are diverse and numerous. As part of NGOWS, the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep.</p>
-            <p>Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current water availability and water quality.</p>
+            <p id="p-intro" class="visible">The United States chose the Delaware River Basin as the pilot site for the Next-Generation Water Observing System (NGWOS). The investments in water monitoring are diverse and numerous. As part of NGOWS, the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep.</p>
+            <p class="visible">Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current water availability and water quality.</p>
           </div>
         </div>
         <div
@@ -4007,7 +4017,7 @@
             >
               new and enhanced
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id="p-new_enhanced">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="text-content-side">
             <h2
@@ -4022,7 +4032,7 @@
             >
               salinity
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id="p-salinity">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="text-content-side">
             <h2
@@ -4037,7 +4047,7 @@
             >
               temperature
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id="p-temp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="text-content-side">
             <h2
@@ -4052,7 +4062,7 @@
             >
               cameras
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id="p-cameras">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="text-content-side">
             <h2
@@ -4067,7 +4077,7 @@
             >
               R&D
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id="p-r-d">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="text-content-side">
             <h2
@@ -4082,7 +4092,7 @@
             >
               all
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id="p-all">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
       </div>
@@ -4095,34 +4105,48 @@ export default {
   name: 'MonitoringConclusion',
   data() {
     return {
-      testValue: false,
       isShowingCity: false,
       isShowingReservoirs: false,
       isShowingSaltTruck: false,
       isShowingMussels: false,
       isShowingTrout: false,
-      isShowingEcomapper: false
+      isShowingEcomapper: false,
+      isShowingSalinityLocations: false,
+      isShowingTempLocations: false,
+      isShowingNewEnhancedLocations: false,
+      isShowingCamerasLocations: false,
+      isShowingAllLocations: false,
     }
   },
   methods: {
     visibilityChanged(isVisible, entry) {
       this.isVisible = isVisible;
       const monitoringLocationTargetId = entry.target.id.slice(11);
-      const targetElement = document.querySelector('#' + monitoringLocationTargetId)
+      const paragraphTargetId = 'p-' + entry.target.id.slice(11);
+      console.log('targent', paragraphTargetId)
+      const targetElement = document.querySelector('#' + paragraphTargetId)
 
       if (isVisible === true) {
-        // if there is a monitoring location SVG layer for this target, add the visible class to control the CSS fade
-        if(monitoringLocationTargetId === 'salinity' || monitoringLocationTargetId === 'temp' || monitoringLocationTargetId === 'new_enhanced' || monitoringLocationTargetId === 'cameras' || monitoringLocationTargetId === 'all') {
-          console.log('this is the target', entry.target.id.slice(11))
-          targetElement.classList.add('visible');
-        }
+        targetElement.classList.add('visible');
+
         switch(monitoringLocationTargetId) {
+          case 'new_enhanced':
+            this.isShowingNewEnhancedLocations = true;
+            break;
+          case 'cameras':
+            this.isShowingCamerasLocations = true;
+            break;
+          case 'all':
+            this.isShowingAllLocations = true;
+            break;
           case 'salinity':
             this.isShowingSaltTruck = true;
+            this.isShowingSalinityLocations = true;
             break;
           case 'temp':
             this.isShowingMussels = true;
             this.isShowingTrout = true;
+            this.isShowingTempLocations = true;
             break;
           case 'r-d':
             this.isShowingEcomapper = true;
@@ -4135,8 +4159,26 @@ export default {
             break;
         }
       } else if (isVisible !== true) {
-        if(monitoringLocationTargetId === 'salinity' || monitoringLocationTargetId === 'temp' || monitoringLocationTargetId === 'new_enhanced' || monitoringLocationTargetId === 'cameras' || monitoringLocationTargetId === 'all') {
-          targetElement.classList.remove('visible');
+        targetElement.classList.remove('visible');
+
+        switch(monitoringLocationTargetId) {
+          case 'new_enhanced':
+            this.isShowingNewEnhancedLocations = false;
+            break;
+          case 'cameras':
+            this.isShowingCamerasLocations = false;
+            break;
+          case 'all':
+            this.isShowingAllLocations = false;
+            break;
+          case 'salinity':
+            this.isShowingSalinityLocations = false;
+            break;
+          case 'temp':
+            this.isShowingTempLocations = false;
+            break;
+          default:
+            break;
         }
       }
     }
@@ -4145,8 +4187,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-
 
 #image-container {
   position: sticky;
@@ -4349,10 +4389,7 @@ export default {
       stroke-width:1px;
 
     }
-
   }
-
-
 
   /* line animations in order of appearance */
   $time-dur-long: .5s;
@@ -5195,15 +5232,20 @@ export default {
   }
 }
 
-#monitoring-locations {
-  g {
-    opacity: 0;
 
-    .visible {
-      opacity: 1;
-    }
-  }
 
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to  {
+  opacity: 0;
 }
 
+p {
+  opacity: 0;
+  transition: opacity 2s;
+}
+p.visible {
+  opacity: 1;
+}
 </style>

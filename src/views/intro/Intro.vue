@@ -5,7 +5,7 @@
     >
       <img
         id="watercolor"
-        src="@/assets/conclusion/images/DRBWatercolor-01.png"
+        src="@/assets/intro/images/DRB_full-01-min.jpg"
         alt="watercolor map of delaware river basin"
         width="100%"
       >
