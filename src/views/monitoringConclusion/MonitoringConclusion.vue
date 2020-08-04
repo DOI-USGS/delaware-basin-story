@@ -3996,8 +3996,10 @@
                 }
               }"
             >The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators.</h3>
-            <p id="p-intro" class="visible">The United States chose the Delaware River Basin as the pilot site for the Next-Generation Water Observing System (NGWOS). The investments in water monitoring are diverse and numerous. As part of NGOWS, the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep.</p>
-            <p class="visible">Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current water availability and water quality.</p>
+            <div id="p-container-intro" class="p-container">
+              <p>The United States chose the Delaware River Basin as the pilot site for the Next-Generation Water Observing System (NGWOS). The investments in water monitoring are diverse and numerous. As part of NGOWS, the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep.</p>
+              <p>Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current water availability and water quality.</p>
+            </div>
           </div>
         </div>
         <div
@@ -4017,7 +4019,9 @@
             >
               new and enhanced
             </h2>
-            <p id="p-new_enhanced">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div id="p-container-new_enhanced" class="p-container">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
           </div>
           <div class="text-content-side">
             <h2
@@ -4032,7 +4036,9 @@
             >
               salinity
             </h2>
-            <p id="p-salinity">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div id="p-container-salinity" class="p-container">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
           </div>
           <div class="text-content-side">
             <h2
@@ -4047,8 +4053,10 @@
             >
               temperature
             </h2>
-            <p id="p-temp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
+            <div id="p-container-temp" class="p-container">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            </div>
           <div class="text-content-side">
             <h2
               id="text-block-cameras"
@@ -4062,7 +4070,9 @@
             >
               cameras
             </h2>
-            <p id="p-cameras">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div id="p-container-cameras" class="p-container">
+              <p id="p-cameras">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
           </div>
           <div class="text-content-side">
             <h2
@@ -4077,7 +4087,9 @@
             >
               R&D
             </h2>
-            <p id="p-r-d">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div id="p-container-r-d" class="p-container">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
           </div>
           <div class="text-content-side">
             <h2
@@ -4092,7 +4104,9 @@
             >
               all
             </h2>
-            <p id="p-all">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div id="p-container-all" class="p-container">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -4123,11 +4137,17 @@ export default {
       this.isVisible = isVisible;
       const monitoringLocationTargetId = entry.target.id.slice(11);
       const paragraphTargetId = 'p-' + entry.target.id.slice(11);
-      console.log('targent', paragraphTargetId)
-      const targetElement = document.querySelector('#' + paragraphTargetId)
+      const paragraphContainerTargetId = 'p-container-' + entry.target.id.slice(11);
+      console.log('container target', paragraphContainerTargetId)
+      const targetElement = document.querySelector('#' + paragraphTargetId);
+      const paragraphContainerTargetElement = document.querySelector('#' + paragraphContainerTargetId);
 
       if (isVisible === true) {
-        targetElement.classList.add('visible');
+        // targetElement.classList.add('visible');
+        if (paragraphContainerTargetElement) {
+          paragraphContainerTargetElement.classList.add('visible');
+        }
+
 
         switch(monitoringLocationTargetId) {
           case 'new_enhanced':
@@ -4159,7 +4179,10 @@ export default {
             break;
         }
       } else if (isVisible !== true) {
-        targetElement.classList.remove('visible');
+        // targetElement.classList.remove('visible');
+        if (paragraphContainerTargetElement) {
+          paragraphContainerTargetElement.classList.remove('visible');
+        }
 
         switch(monitoringLocationTargetId) {
           case 'new_enhanced':
@@ -5241,11 +5264,12 @@ export default {
   opacity: 0;
 }
 
-p {
+.p-container {
+  padding-bottom: 4em;
   opacity: 0;
   transition: opacity 2s;
 }
-p.visible {
+.p-container.visible {
   opacity: 1;
 }
 </style>
