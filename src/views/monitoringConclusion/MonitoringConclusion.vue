@@ -3980,6 +3980,52 @@
     </div>
     <div id="text-container">
       <div id="text-position-container-left" />
+      <div id="text-position-container-center">
+        <div id="number-cloud-new_enhanced" class="number-cloud-container">
+          <img class="cloud-as-number-backing"
+               src="@/assets/monitoring/images/orangeCircle1.png"
+               alt=""
+          >
+          <h2 class="monitoring-location-number">28~</h2>
+        </div>
+
+        <div id="number-cloud-salinity" class="number-cloud-container">
+          <img class="cloud-as-number-backing"
+               src="@/assets/monitoring/images/blueCircle1.png"
+               alt=""
+          >
+          <h2 class="monitoring-location-number">56~</h2>
+        </div>
+        <div id="number-cloud-temp" class="number-cloud-container">
+          <img class="cloud-as-number-backing"
+               src="@/assets/monitoring/images/greenCircle1.png"
+               alt=""
+          >
+          <h2 class="monitoring-location-number">98~</h2>
+        </div>
+        <div id="number-cloud-cameras" class="number-cloud-container">
+          <img class="cloud-as-number-backing"
+               src="@/assets/monitoring/images/orangeCircle1.png"
+               alt=""
+          >
+          <h2 class="monitoring-location-number">8~</h2>
+        </div>
+        <div id="number-cloud-r-d" class="number-cloud-container">
+          <img class="cloud-as-number-backing"
+               src="@/assets/monitoring/images/blueCircle1.png"
+               alt=""
+          >
+          <h2 class="monitoring-location-number">3~</h2>
+        </div>
+        <div id="number-cloud-all" class="number-cloud-container">
+          <img class="cloud-as-number-backing"
+               src="@/assets/monitoring/images/greenCircle1.png"
+               alt=""
+          >
+          <h2 class="monitoring-location-number">190~</h2>
+        </div>
+
+      </div>
       <div id="text-position-container-right">
         <div
           id="monitoring-intro-text"
@@ -4007,6 +4053,7 @@
           class="conclusion-text-section"
         >
           <div class="text-content-side">
+
             <h2
               id="text-block-new_enhanced"
               v-observe-visibility="{
@@ -4016,8 +4063,7 @@
                   threshold: 0
                 }
               }"
-            >
-              new and enhanced
+            >new and enhanced
             </h2>
             <div id="p-container-new_enhanced" class="p-container">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -5241,29 +5287,14 @@ export default {
   }
 }
 
-#text-container {
-  display: flex;
-  padding-bottom: 100em;
-  #text-position-container-left {
-    flex: 1;
-  }
-  #text-position-container-right {
-    flex: 1;
-    #monitoring-text-details {
-      padding-bottom: 10em;
-    }
-  }
-}
-
-
-
+// controls the monitoring location fades
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
 .fade-enter, .fade-leave-to  {
   opacity: 0;
 }
-
+// controls the text fades
 .p-container {
   padding-bottom: 4em;
   opacity: 0;
@@ -5271,5 +5302,47 @@ export default {
 }
 .p-container.visible {
   opacity: 1;
+}
+
+#text-container {
+  display: grid;
+  padding-bottom: 50em;
+  grid-template-columns: 4fr 1fr 4fr;
+}
+
+.cloud-as-number-backing {
+  height: 150px;
+  width: 150px;
+}
+#app h2.monitoring-location-number {
+  font-family: chantal, sans-serif;
+  color: white;
+}
+
+#text-position-container-left{}
+#text-position-container-center {
+  background-color: #00bde3;
+  .number-cloud-container {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    .monitoring-location-number {
+      grid-column: 1;
+      grid-row: 1;
+      position: relative;
+      left: 40px;
+      top: 20px;
+    }
+    .cloud-as-number-backing {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+}
+#text-position-container-right {
+  background-color: #004ce3;
+  #monitoring-text-details {
+    padding-bottom: 10em;
+  }
 }
 </style>
