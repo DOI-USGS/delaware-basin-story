@@ -3981,13 +3981,7 @@
     <div id="text-container">
       <div id="text-position-container-left" />
       <div id="text-position-container-center">
-        <div id="number-cloud-new_enhanced" class="number-cloud-container">
-          <img class="cloud-as-number-backing"
-               src="@/assets/monitoring/images/orangeCircle1.png"
-               alt=""
-          >
-          <h2 class="monitoring-location-number">28~</h2>
-        </div>
+
 
         <div id="number-cloud-salinity" class="number-cloud-container">
           <img class="cloud-as-number-backing"
@@ -4053,7 +4047,16 @@
           class="conclusion-text-section"
         >
           <div class="text-content-side">
-
+            <div class="subtext-cloud-number-container">
+              <div id="number-cloud-new_enhanced" class="number-cloud-container">
+                <img class="cloud-as-number-backing"
+                     src="@/assets/monitoring/images/orangeCircle1.png"
+                     alt=""
+                >
+                <h2 class="monitoring-location-number">28~</h2>
+              </div>
+            </div>
+            <div class="subtext-text-container">
             <h2
               id="text-block-new_enhanced"
               v-observe-visibility="{
@@ -4068,6 +4071,7 @@
             <div id="p-container-new_enhanced" class="p-container">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
+        </div>
           </div>
           <div class="text-content-side">
             <h2
@@ -5341,6 +5345,7 @@ export default {
 }
 #text-position-container-right {
   background-color: #004ce3;
+
   #monitoring-text-details {
     padding-bottom: 10em;
   }
