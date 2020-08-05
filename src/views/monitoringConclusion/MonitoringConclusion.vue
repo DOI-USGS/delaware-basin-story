@@ -4276,7 +4276,6 @@ export default {
     visibilityChanged(isVisible, entry) {
       this.isVisible = isVisible;
       const monitoringLocationTargetId = entry.target.id.slice(11);
-      const paragraphTargetId = 'p-' + entry.target.id.slice(11);
       const paragraphContainerTargetId = 'p-container-' + entry.target.id.slice(11);
       const paragraphContainerTargetElement = document.querySelector('#' + paragraphContainerTargetId);
 
