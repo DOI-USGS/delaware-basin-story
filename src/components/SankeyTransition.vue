@@ -154,6 +154,14 @@ export default {
   #sankey-text-and-title-3 {
     padding-bottom: 20em;
   }
-}
 
+  // controls the text fades
+  .p-container {
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  .p-container.visible {
+    opacity: 1;
+  }
+}
 </style>
