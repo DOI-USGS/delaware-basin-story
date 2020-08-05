@@ -34,14 +34,17 @@
         }"
         class="sankey-text-and-title"
       >
-        <h3 id="sankey-title-1" class="text-content-side">
+        <h3
+          id="sankey-title-1"
+          class="text-content-side"
+        >
           Withdrawals, discharges, and reservoir management affect where water is available in the Basin.
         </h3>
         <div
-            id="p-container-1"
-            class="p-container text-content-side"
+          id="p-container-1"
+          class="p-container text-content-side"
         >
-        <p>Today’s flow management in the Basin is handled through formal cooperation among federal, state, and local entities. At the highest level, the USGS Delaware River Master and the Delaware River Basin Commission review development proposals, regulate water withdrawals and diversions, and evaluate the effects of human activities throughout the Basin. In addition, these two regulatory groups sometimes releases water from major reservoirs throughout the Basin at key times of year.</p>
+          <p>Today’s flow management in the Basin is handled through formal cooperation among federal, state, and local entities. At the highest level, the USGS Delaware River Master and the Delaware River Basin Commission review development proposals, regulate water withdrawals and diversions, and evaluate the effects of human activities throughout the Basin. In addition, these two regulatory groups sometimes releases water from major reservoirs throughout the Basin at key times of year.</p>
         </div>
       </div>
       <div
@@ -55,14 +58,17 @@
         }"
         class="sankey-text-and-title"
       >
-        <h3 id="sankey-title-2" class="text-content-side">
+        <h3
+          id="sankey-title-2"
+          class="text-content-side"
+        >
           The water cycle has a big say in how much water is available, too.
         </h3>
         <div
-            id="p-container-2"
-            class="p-container text-content-side"
+          id="p-container-2"
+          class="p-container text-content-side"
         >
-        <p>Most years, during the late summer and especially during droughts, the streams and rivers of the Basin have lower, slower flows. But human water demands don’t let up! The flow targets at Montague and Trenton are designed to protect against water hoarding upstream that would deprive downstream users – human and otherwise – of fair access to water.</p>
+          <p>Most years, during the late summer and especially during droughts, the streams and rivers of the Basin have lower, slower flows. But human water demands don’t let up! The flow targets at Montague and Trenton are designed to protect against water hoarding upstream that would deprive downstream users – human and otherwise – of fair access to water.</p>
         </div>
       </div>
       <div
@@ -77,17 +83,18 @@
         class="sankey-text-and-title"
       >
         <h3
-          id="sankey-title-3" class="text-content-side"
+          id="sankey-title-3"
+          class="text-content-side"
         >
           Reservoirs are effective short-term buffers against extreme flows – but only given the right information.
         </h3>
         <div
-            id="p-container-3"
-            class="p-container text-content-side"
+          id="p-container-3"
+          class="p-container text-content-side"
         >
           <p>Through judicious water storage in the winter and timed releases in the summer, reservoir managers can provide a buffer against excessively low flows by carefully releasing some of the stored water at just the right rate. Reservoirs in the Basin are also used for flood control, hydroelectric power, water supply, and recreation.</p>
         </div>
-       </div>
+      </div>
     </div>
   </div>
 </template>
