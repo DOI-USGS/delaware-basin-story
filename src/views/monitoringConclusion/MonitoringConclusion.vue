@@ -4345,26 +4345,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#image-container {
-  position: sticky;
-  top: 0;
-  z-index: -1;
-  .inking {
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    width: 100%;
-    top: 0;
-    z-index: -1;
 
-    svg {
-      position: absolute;
-      display: inline-block;
-      height: auto;
-      width: 100%;
-      left: 0;
-    }
-  }
+#image-container {
   @keyframes draw100 {
     0% {stroke-dashoffset: -100px}
     100% {stroke-dashoffset: 0px;}
@@ -5375,6 +5357,34 @@ export default {
   }
 }
 
+#image-container {
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  position: sticky;
+  display: block;
+  top: 0;
+  z-index: -1;
+
+  .inking {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+
+    svg {
+      position: absolute;
+      display: inline-block;
+      height: auto;
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
 // controls the monitoring location fades
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
@@ -5404,11 +5414,9 @@ export default {
     grid-template-columns: 1fr 4fr;
     justify-items: center;
     align-items: center;
-
     .cloud-as-number-backing {
       grid-column: 1;
       grid-row: 1;
-
     }
     .monitoring-location-number {
       grid-column: 1;
