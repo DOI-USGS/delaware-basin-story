@@ -4276,7 +4276,6 @@ export default {
     visibilityChanged(isVisible, entry) {
       this.isVisible = isVisible;
       const monitoringLocationTargetId = entry.target.id.slice(11);
-      const paragraphTargetId = 'p-' + entry.target.id.slice(11);
       const paragraphContainerTargetId = 'p-container-' + entry.target.id.slice(11);
       const paragraphContainerTargetElement = document.querySelector('#' + paragraphContainerTargetId);
 
@@ -5359,7 +5358,7 @@ export default {
 
 #image-container {
   object-fit: cover;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   overflow: auto;
   position: sticky;
