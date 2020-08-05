@@ -3978,56 +3978,17 @@
         </svg>
       </div>
     </div>
-    <div id="text-container">
+    <div id="text-container" >
       <div id="text-position-container-left" />
-      <div id="text-position-container-center">
-
-
-        <div id="number-cloud-salinity" class="number-cloud-container">
-          <img class="cloud-as-number-backing"
-               src="@/assets/monitoring/images/blueCircle1.png"
-               alt=""
-          >
-          <h2 class="monitoring-location-number">56~</h2>
-        </div>
-        <div id="number-cloud-temp" class="number-cloud-container">
-          <img class="cloud-as-number-backing"
-               src="@/assets/monitoring/images/greenCircle1.png"
-               alt=""
-          >
-          <h2 class="monitoring-location-number">98~</h2>
-        </div>
-        <div id="number-cloud-cameras" class="number-cloud-container">
-          <img class="cloud-as-number-backing"
-               src="@/assets/monitoring/images/orangeCircle1.png"
-               alt=""
-          >
-          <h2 class="monitoring-location-number">8~</h2>
-        </div>
-        <div id="number-cloud-r-d" class="number-cloud-container">
-          <img class="cloud-as-number-backing"
-               src="@/assets/monitoring/images/blueCircle1.png"
-               alt=""
-          >
-          <h2 class="monitoring-location-number">3~</h2>
-        </div>
-        <div id="number-cloud-all" class="number-cloud-container">
-          <img class="cloud-as-number-backing"
-               src="@/assets/monitoring/images/greenCircle1.png"
-               alt=""
-          >
-          <h2 class="monitoring-location-number">190~</h2>
-        </div>
-
-      </div>
       <div id="text-position-container-right">
         <div
           id="monitoring-intro-text"
           class="conclusion-text-section"
         >
-          <div class="text-content-side">
+          <div >
             <h3
                 id="text-block-intro"
+                class="text-content-side"
                 v-observe-visibility="{
                 callback: visibilityChanged,
                 intersection: {
@@ -4036,7 +3997,7 @@
                 }
               }"
             >The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators.</h3>
-            <div id="p-container-intro" class="p-container">
+            <div id="p-container-intro" class="p-container text-content-side">
               <p>The United States chose the Delaware River Basin as the pilot site for the Next-Generation Water Observing System (NGWOS). The investments in water monitoring are diverse and numerous. As part of NGOWS, the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep.</p>
               <p>Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current water availability and water quality.</p>
             </div>
@@ -4044,118 +4005,167 @@
         </div>
         <div
           id="monitoring-text-details"
-          class="conclusion-text-section"
         >
-          <div class="text-content-side">
+          <div class="number-cloud-title-container">
             <div class="subtext-cloud-number-container">
-              <div id="number-cloud-new_enhanced" class="number-cloud-container">
-                <img class="cloud-as-number-backing"
+              <img id="number-cloud-new_enhanced" class="cloud-as-number-backing"
                      src="@/assets/monitoring/images/orangeCircle1.png"
                      alt=""
                 >
-                <h2 class="monitoring-location-number">28~</h2>
-              </div>
+              <h2 class="monitoring-location-number">28~</h2>
+              <h2
+                  id="text-block-new_enhanced" class="monitoring-title"
+                  v-observe-visibility="{
+                callback: visibilityChanged,
+                intersection: {
+                  rootMargin: '-20% 0% -50% 0%',
+                  threshold: 0
+                }
+              }"
+              >new and enhanced
+              </h2>
+            </div>
+            <div id="p-container-new_enhanced" class="p-container text-content-side">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="number-cloud-title-container">
+            <div class="subtext-cloud-number-container">
+              <img id="number-cloud-salinity" class="cloud-as-number-backing"
+                   src="@/assets/monitoring/images/blueCircle1.png"
+                   alt=""
+              >
+              <h2 class="monitoring-location-number">56~</h2>
+              <h2
+                    id="text-block-salinity"
+                    class="monitoring-title"
+                    v-observe-visibility="{
+                callback: visibilityChanged,
+                intersection: {
+                  rootMargin: '-20% 0% -50% 0%',
+                  threshold: 0
+                }
+              }"
+                >
+                  salinity
+                </h2>
             </div>
             <div class="subtext-text-container">
-            <h2
-              id="text-block-new_enhanced"
-              v-observe-visibility="{
-                callback: visibilityChanged,
-                intersection: {
-                  rootMargin: '-20% 0% -50% 0%',
-                  threshold: 0
-                }
-              }"
-            >new and enhanced
-            </h2>
-            <div id="p-container-new_enhanced" class="p-container">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-          </div>
-          <div class="text-content-side">
-            <h2
-              id="text-block-salinity"
-              v-observe-visibility="{
-                callback: visibilityChanged,
-                intersection: {
-                  rootMargin: '-20% 0% -50% 0%',
-                  threshold: 0
-                }
-              }"
-            >
-              salinity
-            </h2>
-            <div id="p-container-salinity" class="p-container">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+              <div id="p-container-salinity" class="p-container text-content-side">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
             </div>
           </div>
-          <div class="text-content-side">
-            <h2
-              id="text-block-temp"
-              v-observe-visibility="{
+          <div class="number-cloud-title-container">
+            <div class="subtext-cloud-number-container">
+                <img id="number-cloud-temp" class="cloud-as-number-backing"
+                     src="@/assets/monitoring/images/greenCircle1.png"
+                     alt=""
+                >
+                <h2 class="monitoring-location-number">98~</h2>
+                <h2
+                    id="text-block-temp"
+                    class="monitoring-title"
+                    v-observe-visibility="{
                 callback: visibilityChanged,
                 intersection: {
                   rootMargin: '-20% 0% -50% 0%',
                   threshold: 0
                 }
               }"
-            >
-              temperature
-            </h2>
-            <div id="p-container-temp" class="p-container">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                >
+                  temperature
+                </h2>
             </div>
-            </div>
-          <div class="text-content-side">
-            <h2
-              id="text-block-cameras"
-              v-observe-visibility="{
-                callback: visibilityChanged,
-                intersection: {
-                  rootMargin: '-20% 0% -50% 0%',
-                  threshold: 0
-                }
-              }"
-            >
-              cameras
-            </h2>
-            <div id="p-container-cameras" class="p-container">
-              <p id="p-cameras">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="subtext-text-container">
+              <div id="p-container-temp" class="p-container text-content-side">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
             </div>
           </div>
-          <div class="text-content-side">
-            <h2
-              id="text-block-r-d"
-              v-observe-visibility="{
+          <div class="number-cloud-title-container">
+            <div class="subtext-cloud-number-container">
+                <img id="number-cloud-cameras" class="cloud-as-number-backing"
+                     src="@/assets/monitoring/images/orangeCircle1.png"
+                     alt=""
+                >
+                <h2 class="monitoring-location-number">8~</h2>
+                <h2
+                    id="text-block-cameras"
+                    class="monitoring-title"
+                    v-observe-visibility="{
                 callback: visibilityChanged,
                 intersection: {
                   rootMargin: '-20% 0% -50% 0%',
                   threshold: 0
                 }
               }"
-            >
-              R&D
-            </h2>
-            <div id="p-container-r-d" class="p-container">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                >
+                  cameras
+                </h2>
+            </div>
+            <div class="subtext-text-container">
+
+              <div id="p-container-cameras" class="p-container text-content-side">
+                <p id="p-cameras">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
             </div>
           </div>
-          <div class="text-content-side">
-            <h2
-              id="text-block-all"
-              v-observe-visibility="{
+          <div class="number-cloud-title-container">
+            <div class="subtext-cloud-number-container">
+                <img id="number-cloud-r-d" class="cloud-as-number-backing"
+                     src="@/assets/monitoring/images/blueCircle1.png"
+                     alt=""
+                >
+                <h2 class="monitoring-location-number">3~</h2>
+                <h2
+                    id="text-block-r-d"
+                    class="monitoring-title"
+                    v-observe-visibility="{
                 callback: visibilityChanged,
                 intersection: {
                   rootMargin: '-20% 0% -50% 0%',
                   threshold: 0
                 }
               }"
-            >
-              all
-            </h2>
-            <div id="p-container-all" class="p-container">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                >
+                  R&D
+                </h2>
+              </div>
+            <div class="subtext-text-container">
+
+              <div id="p-container-r-d" class="p-container text-content-side">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="number-cloud-title-container">
+            <div class="subtext-cloud-number-container">
+                <img id="number-cloud-all" class="cloud-as-number-backing"
+                     src="@/assets/monitoring/images/greenCircle1.png"
+                     alt=""
+                >
+                <h2 class="monitoring-location-number">190~</h2>
+                <h2
+                    id="text-block-all"
+                    class="monitoring-title"
+                    v-observe-visibility="{
+                callback: visibilityChanged,
+                intersection: {
+                  rootMargin: '-20% 0% -50% 0%',
+                  threshold: 0
+                }
+              }"
+                >
+                  all
+                </h2>
+            </div>
+            <div class="subtext-text-container">
+
+              <div id="p-container-all" class="p-container text-content-side">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -4188,16 +4198,12 @@ export default {
       const monitoringLocationTargetId = entry.target.id.slice(11);
       const paragraphTargetId = 'p-' + entry.target.id.slice(11);
       const paragraphContainerTargetId = 'p-container-' + entry.target.id.slice(11);
-      console.log('container target', paragraphContainerTargetId)
-      const targetElement = document.querySelector('#' + paragraphTargetId);
       const paragraphContainerTargetElement = document.querySelector('#' + paragraphContainerTargetId);
 
       if (isVisible === true) {
-        // targetElement.classList.add('visible');
         if (paragraphContainerTargetElement) {
           paragraphContainerTargetElement.classList.add('visible');
         }
-
 
         switch(monitoringLocationTargetId) {
           case 'new_enhanced':
@@ -4229,7 +4235,6 @@ export default {
             break;
         }
       } else if (isVisible !== true) {
-        // targetElement.classList.remove('visible');
         if (paragraphContainerTargetElement) {
           paragraphContainerTargetElement.classList.remove('visible');
         }
@@ -5295,12 +5300,11 @@ export default {
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
-.fade-enter, .fade-leave-to  {
+.fade-enter, .fade-leave-to {
   opacity: 0;
 }
 // controls the text fades
 .p-container {
-  padding-bottom: 4em;
   opacity: 0;
   transition: opacity 2s;
 }
@@ -5310,44 +5314,49 @@ export default {
 
 #text-container {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   padding-bottom: 50em;
-  grid-template-columns: 4fr 1fr 4fr;
-}
 
-.cloud-as-number-backing {
-  height: 150px;
-  width: 150px;
-}
-#app h2.monitoring-location-number {
-  font-family: chantal, sans-serif;
-  color: white;
-}
-
-#text-position-container-left{}
-#text-position-container-center {
-  background-color: #00bde3;
-  .number-cloud-container {
+  .subtext-cloud-number-container {
+    padding-top: 5em;
     display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-items: center;
+    align-items: center;
 
-    grid-template-columns: 1fr;
-    .monitoring-location-number {
-      grid-column: 1;
-      grid-row: 1;
-      position: relative;
-      left: 40px;
-      top: 20px;
-    }
     .cloud-as-number-backing {
       grid-column: 1;
       grid-row: 1;
-    }
-  }
-}
-#text-position-container-right {
-  background-color: #004ce3;
 
-  #monitoring-text-details {
-    padding-bottom: 10em;
-  }
+    }
+    .monitoring-location-number {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .monitoring-title {
+      grid-column: 2;
+      grid-row: 1;
+      justify-self: start;
+    }
 }
+}
+.cloud-as-number-backing {
+  height: 120px;
+  width: 120px;
+}
+
+#app h2.monitoring-location-number {
+  font-family: chantal, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: white;
+}
+
+#app h2.monitoring-title {
+  font-family: chantal, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: black;
+}
+
 </style>
