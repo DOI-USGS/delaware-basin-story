@@ -1,6 +1,9 @@
 <template>
   <div id="salinity">
-    <SectionTitle :title="title" :image="titleBackingImage" />
+    <SectionTitle
+      :title="title"
+      :image="titleBackingImage"
+    />
     <SalinitySea
       id="sea-salt-component"
     />

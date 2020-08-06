@@ -1,6 +1,9 @@
 <template>
   <div id="temperature">
-    <SectionTitle :title="title" :image="titleBackingImage" />
+    <SectionTitle
+      :title="title"
+      :image="titleBackingImage"
+    />
     <div id="header">
       <img
         id="waterline"

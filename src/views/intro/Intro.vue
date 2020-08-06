@@ -10,7 +10,10 @@
         width="100%"
       >
     </div>
-    <SectionTitle :title="title" :image="titleBackingImage" />
+    <SectionTitle
+      :title="title"
+      :image="titleBackingImage"
+    />
     <IntroTextContents />
     <ImageCarousel />
   </section>

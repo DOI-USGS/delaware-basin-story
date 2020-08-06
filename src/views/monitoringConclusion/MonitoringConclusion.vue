@@ -1,6 +1,9 @@
 <template>
   <section id="monitoringConclusion">
-    <SectionTitle :title="title" :image="titleBackingImage" />
+    <SectionTitle
+      :title="title"
+      :image="titleBackingImage"
+    />
     <div id="image-container">
       <div class="inking">
         <svg
