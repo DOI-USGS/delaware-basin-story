@@ -171,4 +171,36 @@ export default {
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  #sankey-transition {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    #sankey-text-container {
+      z-index: 2;
+      .sankey-text-and-title {
+        padding-top: 40em;
+      }
+      .text-content-side {
+        background-color: rgba(255,255,255, 0.75);
+      }
+    }
+  }
+
+  #sankey-image-container-outer {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+  }
+  #sankey-text-container {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+  }
+}
 </style>
