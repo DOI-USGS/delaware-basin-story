@@ -6,10 +6,10 @@
     <InternetExplorerPage v-if="isInternetExplorer" />
     <WorkInProgressWarning v-if="checkTypeOfEnv !== '' & !isInternetExplorer" /> <!-- an empty string in this case means the 'prod' version of the application   -->
     <router-view
-      v-if="!isInternetExplorer"
+      v-if="!isInternetExplorer & checkIfUSGSHeaderIsRendered"
     />
-    <PreFooterVisualizationsLinks v-if="checkIfIntroSectionIsRendered || !isInternetExplorer" />
-    <PreFooterCodeLinks v-if="checkIfIntroSectionIsRendered || !isInternetExplorer" />
+    <PreFooterVisualizationsLinks v-if="!isInternetExplorer" />
+    <PreFooterCodeLinks v-if="!isInternetExplorer" />
     <FooterUSGS />
   </div>
 </template>
@@ -39,9 +39,6 @@
         computed: {
             checkIfUSGSHeaderIsRendered() {
                 return this.$store.state.usgsHeaderRendered;
-            },
-            checkIfIntroSectionIsRendered() {
-                return this.$store.state.introSectionRendered;
             },
             checkTypeOfEnv() {
               return process.env.VUE_APP_TIER
