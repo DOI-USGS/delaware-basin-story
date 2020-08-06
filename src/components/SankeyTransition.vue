@@ -179,20 +179,25 @@ export default {
     justify-items: center;
 
     #sankey-text-container {
+      z-index: 2;
       .sankey-text-and-title {
-        background-color: #04c585;
+        padding-top: 40em;
+      }
+      .text-content-side {
+        background-color: rgba(255,255,255, 0.75);
       }
     }
   }
 
   #sankey-image-container-outer {
-    background-color: #97d4ea;
+    z-index: 1;
+    position: sticky;
+    top: 0;
     grid-column: 1;
     grid-row: 1;
     align-self: start;
   }
   #sankey-text-container {
-    background-color: #d46e21;
     grid-column: 1;
     grid-row: 1;
     align-self: start;
