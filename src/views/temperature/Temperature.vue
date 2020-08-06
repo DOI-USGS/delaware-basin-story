@@ -1,21 +1,15 @@
 <template>
   <div id="temperature">
+    <SectionTitle
+      :title="title"
+      :image="titleBackingImage"
+    />
     <div id="header">
       <img
         id="waterline"
         src="@/assets/temperature/images/waterHeader.png"
         alt="water line for the top of a stream cross-section"
       >
-      <!-- <div id="label-container">
-        <img
-          id="tempheader"
-          src="@/assets/temperature/images/BlueLarge.png"
-          alt="a blue cloud of watercolor paint"
-        >
-        <h1 class="section-title">
-          Temperature
-        </h1>
-      </div> -->
     </div>
     <div id="content">
       <div class="row-fish">
@@ -298,11 +292,18 @@
 </template>
 
 <script>
+    import SectionTitle from "@/components/SectionTitle";
+
     export default {
         name: 'Temperature',
+        components: {
+          SectionTitle
+        },
         data() {
             return {
-              isMusselsTextInView: false
+              isMusselsTextInView: false,
+              title: 'Temperature',
+              titleBackingImage: require('@/assets/intro/images/background_rainbowLarge.png')
             }
         },
         methods: {

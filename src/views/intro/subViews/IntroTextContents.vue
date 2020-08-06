@@ -1,15 +1,5 @@
 <template>
   <section>
-    <div id="section-title-container">
-      <img
-        src="@/assets/intro/images/background_rainbowLarge.png"
-        alt="image of watercolor cloud of color"
-      >
-      <!-- <h1>{{ title }}</h1> -->
-      <div id="section-title">
-        <h1>Clean, Cool, and Confident</h1>
-      </div>
-    </div>
     <div
       id="intro-text-content"
       class="text-content"

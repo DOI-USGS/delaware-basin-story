@@ -1,28 +1,35 @@
 <template>
   <div id="salinity">
-    <sea
+    <SectionTitle
+      :title="title"
+      :image="titleBackingImage"
+    />
+    <SalinitySea
       id="sea-salt-component"
     />
-    <road />
+    <SalinityRoad id="road-salt-component" />
   </div>
 </template>
 
 <script>
-  import sea from "./subViews/SalinitySea"
-  import road from "./subViews/SalinityRoad"
+  import SectionTitle from "@/components/SectionTitle";
+  import SalinitySea from "@/views/salinity/subViews/SalinitySea";
+  import SalinityRoad from "@/views/salinity/subViews/SalinityRoad";
 
-    export default {
-        name: 'Salinity',
-        components: {
-            sea,
-            road
-        },
-        data() {
-            return {
-
-            }
+  export default {
+      name: 'Salinity',
+      components: {
+        SectionTitle,
+        SalinitySea,
+        SalinityRoad
+      },
+      data() {
+        return {
+          title: 'Salinity',
+          titleBackingImage:require('@/assets/salinity/salinitySea/images/GreenLarge.png')
         }
-    }
+      }
+  }
 </script>
 
 <style scoped lang="scss">
