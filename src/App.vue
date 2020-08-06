@@ -38,18 +38,10 @@
         },
         computed: {
             checkIfUSGSHeaderIsRendered() {
-              if(!this.isInternetExplorer) {
                 return this.$store.state.usgsHeaderRendered;
-              } else {
-                return true;
-              }
             },
             checkIfIntroSectionIsRendered() {
-              if(!this.isInternetExplorer) {
                 return this.$store.state.introSectionRendered;
-              } else {
-                return true;
-              }
             },
             checkTypeOfEnv() {
               return process.env.VUE_APP_TIER
