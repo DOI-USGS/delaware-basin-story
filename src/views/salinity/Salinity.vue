@@ -1,28 +1,26 @@
 <template>
   <div id="salinity">
-    <sea
+    <SalinityTitle id="salt-title-component" />
+    <SalinitySea
       id="sea-salt-component"
     />
-    <road />
+    <SalinityRoad id="road-salt-component"/>
   </div>
 </template>
 
 <script>
-  import sea from "./subViews/SalinitySea"
-  import road from "./subViews/SalinityRoad"
+  import SalinityTitle from "@/views/salinity/subViews/SalinityTitle";
+  import SalinitySea from "@/views/salinity/subViews/SalinitySea";
+  import SalinityRoad from "@/views/salinity/subViews/SalinityRoad";
 
-    export default {
-        name: 'Salinity',
-        components: {
-            sea,
-            road
-        },
-        data() {
-            return {
-
-            }
-        }
-    }
+  export default {
+      name: 'Salinity',
+      components: {
+        SalinityTitle,
+        SalinitySea,
+        SalinityRoad
+      }
+  }
 </script>
 
 <style scoped lang="scss">

@@ -323,15 +323,7 @@
       </div>
     </div>
     <div class="text-content-side">
-      <div class="container-section-title">
-        <img
-          src="@/assets/salinity/salinitySea/images/GreenLarge.png"
-          alt="image of watercolor cloud of color"
-        >
-        <h1 class="section-title">
-          Salinity
-        </h1>
-      </div>
+
       <div id="salinity-section-text">
         <div id="sea-salt-wedge-text">
           <h3>The Salt Wedge</h3>
