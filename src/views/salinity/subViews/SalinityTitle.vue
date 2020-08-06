@@ -1,15 +1,14 @@
 <template>
-
-    <div id="container-salinity-title">
-      <img class="title-salinity-cloud-backing"
-        src="@/assets/salinity/salinitySea/images/GreenLarge.png"
-        alt="image of watercolor cloud of color"
-      >
-      <h1 class="section-title">
-        Salinity
-      </h1>
-    </div>
-
+  <div id="container-salinity-title">
+    <img
+      class="title-salinity-cloud-backing"
+      src="@/assets/salinity/salinitySea/images/GreenLarge.png"
+      alt="image of watercolor cloud of color"
+    >
+    <h1 class="section-title">
+      Salinity
+    </h1>
+  </div>
 </template>
 
 <script>

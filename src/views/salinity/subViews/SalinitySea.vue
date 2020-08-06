@@ -323,7 +323,6 @@
       </div>
     </div>
     <div class="text-content-side">
-
       <div id="salinity-section-text">
         <div id="sea-salt-wedge-text">
           <h3>The Salt Wedge</h3>

@@ -4,7 +4,7 @@
     <SalinitySea
       id="sea-salt-component"
     />
-    <SalinityRoad id="road-salt-component"/>
+    <SalinityRoad id="road-salt-component" />
   </div>
 </template>
 
