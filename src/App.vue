@@ -6,11 +6,11 @@
     <InternetExplorerPage v-if="isInternetExplorer" />
     <WorkInProgressWarning v-if="checkTypeOfEnv !== '' & !isInternetExplorer" /> <!-- an empty string in this case means the 'prod' version of the application   -->
     <router-view
-      v-if="!isInternetExplorer & checkIfUSGSHeaderIsRendered"
+      v-if="!isInternetExplorer"
     />
     <PreFooterVisualizationsLinks v-if="checkIfIntroSectionIsRendered || !isInternetExplorer" />
     <PreFooterCodeLinks v-if="checkIfIntroSectionIsRendered || !isInternetExplorer" />
-    <FooterUSGS v-if="checkIfIntroSectionIsRendered || isInternetExplorer" />
+    <FooterUSGS />
   </div>
 </template>
 
@@ -18,7 +18,6 @@
     import WindowSize from "./components/WindowSize";
     import HeaderUSWDSBanner from './components/HeaderUSWDSBanner'
     import HeaderUSGS from './components/HeaderUSGS'
-    import InternetExplorerPage from "./components/InternetExplorerPage";
 
     export default {
         name: 'App',
@@ -26,7 +25,7 @@
             WindowSize,
             HeaderUSWDSBanner,
             HeaderUSGS,
-            InternetExplorerPage,
+            InternetExplorerPage: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "internet-explorer-page"*/ "./components/InternetExplorerPage"),
             WorkInProgressWarning: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "work-in-progress-warning"*/ "./components/WorkInProgressWarning"),
             PreFooterVisualizationsLinks: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "pre-footer-links-visualizations"*/ "./components/PreFooterVisualizationsLinks"),
             PreFooterCodeLinks: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "pre-footer-links-code"*/ "./components/PreFooterCodeLinks"),
@@ -39,16 +38,21 @@
         },
         computed: {
             checkIfUSGSHeaderIsRendered() {
+              if(!this.isInternetExplorer) {
                 return this.$store.state.usgsHeaderRendered;
+              } else {
+                return true;
+              }
             },
             checkIfIntroSectionIsRendered() {
+              if(!this.isInternetExplorer) {
                 return this.$store.state.introSectionRendered;
+              } else {
+                return true;
+              }
             },
             checkTypeOfEnv() {
               return process.env.VUE_APP_TIER
-            },
-            checkIfUserAtEndOfMonitoringSection: function () {
-                return this.$store.state.isUserAtEndOfMonitoringSection
             }
         },
         created() {
