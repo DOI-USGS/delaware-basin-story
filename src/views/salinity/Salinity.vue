@@ -1,6 +1,6 @@
 <template>
   <div id="salinity">
-    <SalinityTitle id="salt-title-component" />
+    <SectionTitle :title="title" :image="titleBackingImage" />
     <SalinitySea
       id="sea-salt-component"
     />
@@ -9,16 +9,22 @@
 </template>
 
 <script>
-  import SalinityTitle from "@/views/salinity/subViews/SalinityTitle";
+  import SectionTitle from "@/components/SectionTitle";
   import SalinitySea from "@/views/salinity/subViews/SalinitySea";
   import SalinityRoad from "@/views/salinity/subViews/SalinityRoad";
 
   export default {
       name: 'Salinity',
       components: {
-        SalinityTitle,
+        SectionTitle,
         SalinitySea,
         SalinityRoad
+      },
+      data() {
+        return {
+          title: 'Salinity',
+          titleBackingImage:require('@/assets/salinity/salinitySea/images/GreenLarge.png')
+        }
       }
   }
 </script>

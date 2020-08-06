@@ -1,5 +1,6 @@
 <template>
   <section id="monitoringConclusion">
+    <SectionTitle :title="title" :image="titleBackingImage" />
     <div id="image-container">
       <div class="inking">
         <svg
@@ -4255,8 +4256,13 @@
 </template>
 
 <script>
+import SectionTitle from "@/components/SectionTitle";
+
 export default {
   name: 'MonitoringConclusion',
+  components: {
+    SectionTitle
+  },
   data() {
     return {
       isShowingCity: false,
@@ -4270,6 +4276,8 @@ export default {
       isShowingNewEnhancedLocations: false,
       isShowingCamerasLocations: false,
       isShowingAllLocations: false,
+      title: 'Monitoring',
+      titleBackingImage:require('@/assets/salinity/salinitySea/images/GreenLarge.png')
     }
   },
   methods: {

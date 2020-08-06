@@ -10,24 +10,28 @@
         width="100%"
       >
     </div>
+    <SectionTitle :title="title" :image="titleBackingImage" />
     <IntroTextContents />
     <ImageCarousel />
   </section>
 </template>
 
 <script>
+  import SectionTitle from "@/components/SectionTitle";
   import IntroTextContents from "./subViews/IntroTextContents";
   import ImageCarousel from "../../components/ImageCarousel";
 
     export default {
         name: 'Intro',
         components: {
-            ImageCarousel,
-            IntroTextContents
+          SectionTitle,
+          ImageCarousel,
+          IntroTextContents
         },
         data() {
             return {
-              title: process.env.VUE_APP_TITLE
+              title: process.env.VUE_APP_TITLE,
+              titleBackingImage: require('@/assets/intro/images/background_rainbowLarge.png')
             }
         },
         computed: {
