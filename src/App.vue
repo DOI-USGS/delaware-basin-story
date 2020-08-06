@@ -141,8 +141,17 @@
       min-width: 350px;
       max-width: 500px;
       padding: 0 20px;
-      // background: rgba(255, 255, 255, 0.9);
     }
-    // width: 100%;
+  }
+
+  @media only screen and (max-width: 992px) {
+    #app h1 {
+      font-size:2em;
+    }
+  }
+  @media only screen and (max-width: 508px) {
+    #app h1 {
+      font-size:1.5em;
+    }
   }
 </style>
