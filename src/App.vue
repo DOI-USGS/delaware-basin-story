@@ -8,9 +8,9 @@
     <router-view
       v-if="!isInternetExplorer & checkIfUSGSHeaderIsRendered"
     />
-    <PreFooterVisualizationsLinks v-if="checkIfIntroSectionIsRendered || !isInternetExplorer" />
-    <PreFooterCodeLinks v-if="checkIfIntroSectionIsRendered || !isInternetExplorer" />
-    <FooterUSGS v-if="checkIfIntroSectionIsRendered || isInternetExplorer" />
+    <PreFooterVisualizationsLinks v-if="!isInternetExplorer" />
+    <PreFooterCodeLinks v-if="!isInternetExplorer" />
+    <FooterUSGS />
   </div>
 </template>
 
@@ -18,7 +18,6 @@
     import WindowSize from "./components/WindowSize";
     import HeaderUSWDSBanner from './components/HeaderUSWDSBanner'
     import HeaderUSGS from './components/HeaderUSGS'
-    import InternetExplorerPage from "./components/InternetExplorerPage";
 
     export default {
         name: 'App',
@@ -26,7 +25,7 @@
             WindowSize,
             HeaderUSWDSBanner,
             HeaderUSGS,
-            InternetExplorerPage,
+            InternetExplorerPage: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "internet-explorer-page"*/ "./components/InternetExplorerPage"),
             WorkInProgressWarning: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "work-in-progress-warning"*/ "./components/WorkInProgressWarning"),
             PreFooterVisualizationsLinks: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "pre-footer-links-visualizations"*/ "./components/PreFooterVisualizationsLinks"),
             PreFooterCodeLinks: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "pre-footer-links-code"*/ "./components/PreFooterCodeLinks"),
@@ -41,14 +40,8 @@
             checkIfUSGSHeaderIsRendered() {
                 return this.$store.state.usgsHeaderRendered;
             },
-            checkIfIntroSectionIsRendered() {
-                return this.$store.state.introSectionRendered;
-            },
             checkTypeOfEnv() {
               return process.env.VUE_APP_TIER
-            },
-            checkIfUserAtEndOfMonitoringSection: function () {
-                return this.$store.state.isUserAtEndOfMonitoringSection
             }
         },
         created() {
