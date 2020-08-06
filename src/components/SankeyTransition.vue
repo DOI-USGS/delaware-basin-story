@@ -171,4 +171,31 @@ export default {
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  #sankey-transition {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    #sankey-text-container {
+      .sankey-text-and-title {
+        background-color: #04c585;
+      }
+    }
+  }
+
+  #sankey-image-container-outer {
+    background-color: #97d4ea;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+  }
+  #sankey-text-container {
+    background-color: #d46e21;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+  }
+}
 </style>
