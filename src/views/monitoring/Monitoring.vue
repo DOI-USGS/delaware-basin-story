@@ -452,7 +452,7 @@
 }
 
 .sticky {
-  position: -webkit-sticky; /* for Safari */
+
   position: sticky;
   top: 0;
   align-self: flex-start; /* <-- this is the fix */
