@@ -2,8 +2,6 @@
   <section
     id="salinity-sea"
   >
-    <!-- <div class="side-by-side"> -->
-
     <div
       id="salinity-vis"
       class="vis-content-side"
@@ -348,7 +346,6 @@
         </div>
       </div>
     </div>
-    <!-- </div> -->
   </section>
 </template>
 
@@ -451,14 +448,6 @@
     }
   }
 
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {}
-
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {}
-
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {}
 
 * {
     box-sizing: border-box;
@@ -505,7 +494,7 @@ h2, h3, h4, h5, h6 {
     display: inline-block;
     text-align: center;
     top: 0;
-    padding-top: 20vh;
+    padding-top: 20em;
 }
 
 .outer img {
@@ -521,7 +510,7 @@ h2, h3, h4, h5, h6 {
     width: 100%;
     top: 0;
     left: 0;
-    padding-top: 20vh;
+    padding-top: 20em;
 }
 
 /* markers for sea level rise */
