@@ -4,10 +4,8 @@
       :title="title"
       :image="titleBackingImage"
     />
-    <SalinitySea
-      id="sea-salt-component"
-    />
-    <SalinityRoad id="road-salt-component" />
+    <SalinitySea />
+    <SalinityRoad />
   </div>
 </template>
 

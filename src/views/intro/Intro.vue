@@ -68,9 +68,6 @@
         justify-content: center;
         position: absolute;
         text-align: center;
-        // img {
-        //   width: 100%;
-        // }
         .section-title {
           position: absolute;
           top: 50%;
