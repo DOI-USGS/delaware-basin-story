@@ -2,9 +2,7 @@
   <section id="salinity-sea">
     <div id="salinity-sea-container">
 <!--      <div class="salinity-sea-section-image">-->
-<!--        <img-->
-<!--          src="@/assets/salinity/salinitySea/images/zoom_map_big.png"-->
-<!--        >-->
+
 <!--        <svg-->
 <!--          id="svg-salt-front"-->
 <!--          xmlns="http://www.w3.org/2000/svg"-->
@@ -313,13 +311,15 @@
 <!--          </g>-->
 <!--        </svg>-->
 <!--      </div>-->
-<div class="salinity-sea-section-image">
-  <div id="container-salinity-sea-image-background">
-1
-  </div>
-  <div id="container-salinity-sea-svg-salt-front">2</div>
-  <div id="container-salinity-sea-svg-salt-feet">3</div>
-</div>
+      <div class="salinity-sea-section-image">
+        <div id="container-salinity-sea-image-background">
+          <img
+              src="@/assets/salinity/salinitySea/images/zoom_map_big.png"
+          >
+        </div>
+        <div id="container-salinity-sea-svg-salt-front">2</div>
+        <div id="container-salinity-sea-svg-salt-feet">3</div>
+        </div>
       <div class="salinity-sea-section-text">
         <div id="sea-salt-wedge-text">
           <h3 class="text-content-side">The Salt Wedge</h3>
@@ -726,10 +726,10 @@
     align-self: start;
     position: sticky;
     top: 0;
-
+    z-index: 1;
   }
   .salinity-sea-section-text {
-
+    z-index: 2;
     #sea-salt-wedge-text {
       padding-bottom: 15rem;
     }
@@ -739,6 +739,9 @@
     }
     #sea-salt-rise-text.visible {
       opacity: 1;
+    }
+    div:last-child {
+      padding-bottom: 30em;
     }
   }
 }
@@ -751,14 +754,10 @@
       .salinity-sea-section-image {
         display: grid;
         grid-template-columns: 1fr;
-        background-color: #00a91c;
+
         #container-salinity-sea-image-background {
-          width: 100%;
-          height: 20px;
-          background-color: #ea97af;
           grid-column: 1;
           grid-row: 1;
-
         }
         #container-salinity-sea-svg-salt-front {
           width: 100%;
@@ -779,11 +778,15 @@
 
       }
       .salinity-sea-section-text {
+        padding-top: 40em;
+        padding-bottom: 0;
+        .text-content-side  {
+          background-color: rgba(255,255,255, 0.75);
+        }
 
-        background-color: maroon;
       }
     }
   }
 }
-
+// will need to pad at several break points
 </style>
