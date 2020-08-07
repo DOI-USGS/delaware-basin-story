@@ -50,7 +50,7 @@
 #intro-text-content {
   padding-top: 0;
   #first-line {
-    padding-top: 20vh;
+    padding-top: 20em;
   }
 }
 

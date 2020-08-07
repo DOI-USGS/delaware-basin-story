@@ -494,7 +494,7 @@ h2, h3, h4, h5, h6 {
     display: inline-block;
     text-align: center;
     top: 0;
-    padding-top: 20vh;
+    padding-top: 20em;
 }
 
 .outer img {
@@ -510,7 +510,7 @@ h2, h3, h4, h5, h6 {
     width: 100%;
     top: 0;
     left: 0;
-    padding-top: 20vh;
+    padding-top: 20em;
 }
 
 /* markers for sea level rise */
