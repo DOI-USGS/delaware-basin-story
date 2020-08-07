@@ -119,7 +119,6 @@
     .vis-content-side {
       min-width: 500px;
       max-width: 50vw;
-      position: -webkit-sticky;
       position: sticky;
       display: block;
     }
