@@ -404,95 +404,111 @@ h2, h3, h4, h5, h6 {
 }
 
 /* lines for sea level predictions */
+$ft-dur: 0.2s;
+$ft-delay: 0.15s;
+
 #ft1 {
-    animation: write300 .4s linear 0s forwards;
-    -webkit-animation: write300 .4s linear 0s forwards;
-    -moz-animaion: write300 .4s linear 0s forwards;
-    -o-animation: write300 .4s linear 0s forwards;
+  $grp-ord: 1;
+    animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -webkit-animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -moz-animaion: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -o-animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
 }
 
 #ft2 {
-    animation: write300 .4s linear 0.2s forwards;
-    -webkit-animation: write300 .4s linear 0.2s forwards;
-    -moz-animaion: write300 .4s linear 0.2s forwards;
-    -o-animation: write300 .4s linear 0.2s forwards;
+  $grp-ord: 2;
+    animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -webkit-animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -moz-animaion: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -o-animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
 }
 
 #ft3 {
-    animation: write300 .4s linear 0.4s forwards;
-    -webkit-animation: write300 .4s linear 0.4s forwards;
-    -moz-animaion: write300 .4s linear 0.4s forwards;
-    -o-animation: write300 .4s linear 0.4s forwards;
+  $grp-ord: 3;
+    animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -webkit-animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -moz-animaion: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -o-animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
 }
 /* annotations for sea level predictions */
 /* 1 ft */
 #num1 {
-    animation: write200 .2s linear 0.6s forwards;
-    -webkit-animation: write200 .2s linear 0.6s forwards;
-    -moz-animaion: write200 .2s linear 0.6s forwards;
-    -o-animation: write200 .2s linear 0.6s forwards;
+  $grp-ord: 4;
+    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
 }
 #ft1_f {
-    animation: write200 .3s linear 0.7s forwards;
-    -webkit-animation: write200 .3s linear 0.7s forwards;
-    -moz-animaion: write200 .3s linear 0.7s forwards;
-    -o-animation: write200 .3s linear 0.7s forwards;
+  $grp-ord: 5;
+    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
 }
 #ft1_t {
-    animation: write200 .3s linear 0.9s forwards;
-    -webkit-animation: write200 .3s linear 0.9s forwards;
-    -moz-animaion: write200 .3s linear 0.9s forwards;
-    -o-animation: write200 .3s linear 0.9s forwards;
+  $grp-ord: 6;
+    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
 }
 /* 2 ft */
 #num2 {
-    animation: write200 .2s linear 1.1s forwards;
-    -webkit-animation: write200 .2s linear 1.1s forwards;
-    -moz-animaion: write200 .2s linear 1.1s forwards;
-    -o-animation: write200 .2s linear 1.1s forwards;
+  $grp-ord: 7;
+    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
 }
 #ft2_f {
-    animation: write200 .3s linear 1.25s forward;
-    -webkit-animation: write200 .3s linear 1.25s forwards;
-    -moz-animaion: write200 .3s linear 1.25s forwards;
-    -o-animation: write200 .3s linear 1.25s forwards;
+  $grp-ord: 8;
+    animation: write200 $ft-dur linear $grp-ord*$ft-delay forward;
+    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
 }
 #ft2_t {
-    animation: write200 .3s linear 1.45s forward;
-    -webkit-animation:  write200 .3s linear 1.45s forwards;
-    -moz-animaion: write200 .3s linear 1.45s forwards;
-    -o-animation: write200 .3s linear 1.45s forwards;
+  $grp-ord: 9;
+    animation: write200 $ft-dur linear $grp-ord*$ft-delay forward;
+    -webkit-animation:  write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
 }
 /* 3ft */
 #num3 {
-    animation: write200 .2s linear 1.65s forwards;
-    -webkit-animation: write200 .2s linear 1.65s forwards;
-    -moz-animaion: write200 .2s linear 1.65s forwards;
-    -o-animation: write200 .2s linear 1.65s forwards;
+  $grp-ord: 10;
+    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
 }
 #ft3_f {
-    animation: write200 .3s linear 1.8s forwards;
-    -webkit-animation: write200 .3s linear 1.8s forwards;
-    -moz-animaion: write200 .3s linear 1.8s forwards;
-    -o-animation: write200 .3s linear 1.8s forwards;
+  $grp-ord: 11;
+    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
 }
 #ft3_t {
-    animation: write200 .3s linear 2s forwards;
-    -webkit-animation: write200 .3s linear 2s forwards;
-    -moz-animaion: write200 .3s linear 2s forwards;
-    -o-animation: write200 .3s linear 2s forwards;
+  $grp-ord: 12;
+    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
 }
 
 /* intakes line */
 #intake {
-    animation: write200 .2s linear 2s forwards;
-    -webkit-animation: write200 .2s linear 2s forwards;
-    -moz-animaion:write200 .2s linear 2s forwards;
-    -o-animation: write200 .2s linear 2s forwards;
+  $grp-ord: 13;
+    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -moz-animaion:write200 $ft-dur linear $grp-ord*$ft-delay forwards;
+    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
 }
 
 /* letter writing animation */
-#intakes-text, #arrow_intake {
+#intakes-text, #arrow_intake, #cities {
     stroke-dasharray: 200px;
     stroke-dashoffset: -200px;
 }
@@ -570,19 +586,19 @@ $slr-delay: 0.1s;
 
 #arrow_intake {
   $grp-ord: 4;
-    animation: write200 0.5s linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 0.5s linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 0.5s linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 0.5s linear $slr-delay*$grp-ord forwards;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 
 #water_w {
   $grp-ord: 5;
-    animation: write200 0.3s linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 0.3s linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 0.3s linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 0.3s linear $slr-delay*$grp-ord forwards;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #water_a {
@@ -673,6 +689,171 @@ $slr-delay: 0.1s;
     -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
+
+/* cities */
+#philly_p {
+  $grp-ord: 1;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#philly_h {
+  $grp-ord: 2;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#philly_i {
+  $grp-ord: 3;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#philly_l1 {
+  $grp-ord: 4;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#philly_a {
+  $grp-ord: 5;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#philly_d {
+  $grp-ord: 6;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#philly_e {
+  $grp-ord: 7;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#philly_l2 {
+  $grp-ord: 8;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#philly_p2 {
+  $grp-ord: 9;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#philly_h2 {
+  $grp-ord: 10;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#philly_i2 {
+  $grp-ord: 11;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#philly_a2 {
+  $grp-ord: 12;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#arrow_philly {
+  $grp-ord: 12;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#arrow_camden {
+  $grp-ord: 2;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#camden_c {
+  $grp-ord: 3;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#camden_a {
+  $grp-ord: 4;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#camden_m {
+  $grp-ord: 5;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#camden_d {
+  $grp-ord: 6;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#camden_e {
+  $grp-ord: 7;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+#camden_n {
+  $grp-ord: 8;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+
+
+
 
 @keyframes write500 {
     0% {stroke-dashoffset: -500px}
