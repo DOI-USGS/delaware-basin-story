@@ -9,100 +9,38 @@
       <div class="outer">
         <img
           id="map"
-          src="@/assets/salinity/salinitySea/images/zoom_map_big.png"
+          src="@/assets/salinity/salinitySea/images/salt_zoom_map-01.jpg"
         >
-        <svg
-          id="test"
-          xmlns="http://www.w3.org/2000/svg"
-          width="1321"
-          height="830.92"
-          viewBox="0 0 2284.73 1459"
-        >
-          <path
-            id="mask"
-            d="M784 1322l-13-10c-6-6-4-17 4-21 2-2 7-17 5-19l-4-2c-11 2-16-5-21-13-2-5-4-9-11-8l-5-5-28-35c-9-10-18-20-25-30-9-11-10-24-7-37l20-77c2-10 4-21 2-31-3-15-15-21-29-24l-13-1a8 8 0 01-4-1c-2-2-3-18-2-20 2-3 4-7 3-10 0-7-2-13-4-20 0-4-1-8 5-9 3 0 7-2 8-5 7-15 20-23 32-33 19-14 35-32 46-53l49-98c4-8 11-14 18-19 33-30 71-52 110-73 10-6 20-11 29-18 13-9 28-5 42-5s28 3 41-1c16-5 31-13 40-31 3-6 9-11 15-15 6-3 13 1 17 7l4 3c7 0 16 1 19-2 5-7 8-16 9-24 1-7-3-13-3-20-1-11-4-22-1-32 3-17 16-27 31-33l31-10c3-1 7-4 8-7 4-16 14-27 27-36l33-20c11-8 21-18 33-25l51-8c-13 4-24 12-36 20-3 2-4 8-5 12-3 11-4 12-15 13-4 0-9 3-11 6-5 9-14 12-25 13-10 1-18 6-24 16l-23 40c-1 2-4 4-6 4-10-1-15 6-22 10-4 2-9 5-14 5-12 1-18 9-16 21 3 15 6 30 7 45 1 22-12 36-34 35-17-1-30 6-42 17-16 14-37 19-57 24-28 7-57 13-85 21-20 6-37 18-49 36a15 15 0 01-8 5c-22 5-39 18-50 37s-21 40-31 60c-5 8-12 15-17 24-5 10-12 21-14 32-6 23-18 39-39 50a34 34 0 00-10 7c-8 8-10 16-4 25a79 79 0 0034 28c16 7 17 19 15 31l-12 48c-2 12-1 25-1 37v10c-1 9-4 12-14 10l-4 3c-3 8 1 17 9 21a16 16 0 004 2c19 5 34 19 51 30 5 3 12 4 15 9a120 120 0 0116 24c8 15 13 31 29 41a33 33 0 0011 4c11 2 14 4 16 16 3 17 5 18 22 20 13 2 27 4 37 14z"
-            fill="none"
-            stroke="#00000"
-            stroke-miterlimit="10"
-          />
-          <path
-            id="saltmvmt"
-            style="fill:none;stroke:#00000;stroke-miterlimit:10;"
-            d="M720.18,848.47c17.22-31.75,25.19-45.73,23.72-46.2-2-.63-8.22,17.29-15.73,28.81-19.87,30.48-40.45,61.11-41.61,61.39-9.18,2.23,6.77-12.76,23.72-30.29,5.5-5.7,9.53-9.82,14.32-17.79,3.43-5.69,8.06-13.78,13.29-24.45,16.33-33.3,26.12-48.35,40.05-73.84,4.29-7.85,22.21-31.91,33.06-45.1-12.54,10.86-40.46,47.6-60.06,88.31-4.42,9.19-5.1,21.72-18.78,41.05-5.72,8.08-11.54,15-16.41,18.11"
-          />
+        <svg id="front_animation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 638.59">
+          <path id="saltmvmt" style="stroke:none; fill: none;" d="M316.23,371.05c7.53-13.87,11-20,10.37-20.19-.89-.28-3.6,7.56-6.88,12.59-8.68,13.32-17.67,26.7-18.18,26.83-4,1,3-5.58,10.37-13.24a38.91,38.91,0,0,0,6.26-7.77c1.49-2.49,3.52-6,5.8-10.69,7.14-14.55,11.42-21.13,17.5-32.26,1.88-3.43,9.71-13.95,14.45-19.71-5.48,4.75-17.68,20.8-26.25,38.59-1.93,4-2.22,9.49-8.2,17.94-2.5,3.53-5,6.53-7.17,7.91" />
+           <path id="saltmvmt_slr" d="M474,255.29c8.81-7.55,12.49-1.66,11-6-.3-.87-4,6-11.18,6.47A43.09,43.09,0,0,0,449,265.29c-4,1,6.59-1.33,14-9,2.41-2.49,5.9,3.49,8,0,1.5-2.48,11.71-2.33,14-7,7.14-14.55-5.09-24.86,1-36,1.87-3.43,18-10,24-10-7-2-31.77,9.79-24,35,1.31,4.26-2,13-10.44,17.15-3.88,1.91-12.43-.52-14.56.85l-2,3c-13,14-52,11-60,16-1.25.79-20.93,14.36-28,17-18.73,7-24.61,29.88-25,26-.67-6.62,7.61-18.58,22-21,4.67-.78,6.36-4.05,11-6,3.31-1.39,9.22-6.08,14-10,11-9,17-8,27-9a186.94,186.94,0,0,0,25-4c-10.25.91-26,6-50,9-5.25.66-8.41,10.88-21,15-5.26,1.73-14,12-18,14" style="fill: none;stroke: none;"/>
           <g id="saltline">
-            <path
-              id="dash"
-              d="M734.8,932.35a226.51,226.51,0,0,1,28.35,12.28c1.71.88,3.23-1.7,1.51-2.59-13.47-7-23.93-18.23-35.75-27.52a105.27,105.27,0,0,0-10.38-7.3c-1.66-1-3.12,1.53-1.51,2.59a267.07,267.07,0,0,0,45.62,24q6.86,2.79,13.86,5.2c1.64.56,2.58-1.89,1.15-2.75q-23.8-14.38-47.1-29.59c-1.63-1.06-3.13,1.54-1.52,2.59q23.29,15.19,47.11,29.59l1.16-2.74a261.74,261.74,0,0,1-46.38-21.21c-4.2-2.44-8.33-5-12.39-7.67L717,909.81c12.93,7.87,23.24,19.18,35.41,28.08a83.88,83.88,0,0,0,10.72,6.74l1.51-2.59a234.29,234.29,0,0,0-29.06-12.59c-1.82-.64-2.61,2.25-.8,2.9Z" 
-              transform="translate(-716.32 -906.41)"
-            />
-            <path
-              id="s"
-              d="M820.2,942.05c-14.42-8.41-28.67-8.66-35.08-1.82-.79.85-4.19,4.48-3.44,8.62,2.05,11.37,32.22,9.41,34.71,20.81,1.07,4.9-3.4,10.34-7.36,12.87-8,5.11-17.19.57-17.69.31"
-              transform="translate(-716.32 -906.41)" 
-            />
-            <path
-              id="ab"
-              d="M829.33,970.56l22.07-7.36"
-              transform="translate(-716.32 -906.41)"
-            />
-            <path
-              id="aa"
-              d="M822,987.11c3.08-8.56,5.78-15.74,7.87-21.21,1.33-3.5,2.45-6.38,3.17-8.21,2.89-7.43,5.42-13.68,7.35-18.4a6.12,6.12,0,0,1,3.68,0,7.13,7.13,0,0,1,3.68,3.68c1.91,3.65,6.16,16.92,11,34.95"
-              transform="translate(-716.32 -906.41)"
-            />
-            <path
-              id="l"
-              d="M869.5,935.5q.5,24.5,1,49l19-2"
-              transform="translate(-716.32 -906.41)"
-            />
-            <path
-              id="ta"
-              d="M1111.56,988c.56-17.78,1.17-33.72,1.84-55.17"
-              transform="translate(-716.32 -906.41)"
-            />
-            <path
-              id="tb"
-              d="M1096.85,934.67l34.94-5.52"
-              transform="translate(-716.32 -906.41)"
-            />
-            <path
-              id="fa"
-              d="M965.5,955.5h-14"
-              transform="translate(-716.32 -906.41)"
-            />
-            <path
-              id="fb"
-              d="M951.5,983.5q-1-26-2-52l20-2"
-              transform="translate(-716.32 -906.41)"
-            />
-            <path
-              id="r"
-              d="M982.91,975.8a63.9,63.9,0,0,1-3.68-34.94,41,41,0,0,1,11-1.84c9.48-.23,15.4,3,16.55,3.68,2.34,1.33,5.64,3.21,5.52,5.52-.05,1-.71,2.12-7.36,5.51-5.28,2.7-8.93,4-14.62,6.59-2.42,1.08-4.37,2-5.61,2.61l16.55,11"
-              transform="translate(-716.32 -906.41)"
-            />
-            <path
-              id="o"
-              d="M1039.5,941.5c-3.53-1.1-7,.85-9,2-5.78,3.27-11.38,10.68-10,19,.69,4.13,3.44,10.58,9,12,7.14,1.83,14.82-5.67,17-13C1048.83,953.69,1045.69,943.42,1039.5,941.5Z"
-              transform="translate(-716.32 -906.41)"
-            />
-            <path
-              id="n"
-              d="M1057.5,976.5V945.23l29.43,27.59q.91-18.39,1.84-36.78"
-              transform="translate(-716.32 -906.41)"
-            />
-            <path
-              id="ta2"
-              d="M906.56,991c.56-17.78,1.17-33.72,1.84-55.17"
-              transform="translate(-716.32 -906.41)"
-            />
-            <path
-              id="tb2"
-              d="M891.85,937.67l34.94-5.52"
-              transform="translate(-716.32 -906.41)"
-            />
+              <g id="dash" class="marker">
+                <path d="M306.62,406a202.4,202.4,0,0,1,25.17,10.91c1.52.79,2.87-1.5,1.35-2.3-15.32-8-26.29-22-41-30.93-1.48-.89-2.77,1.37-1.35,2.31a237.11,237.11,0,0,0,40.48,21.29q6.1,2.49,12.35,4.63c1.45.5,2.28-1.67,1-2.44q-21.14-12.78-41.83-26.28c-1.44-.94-2.78,1.37-1.35,2.3q20.7,13.5,41.84,26.28l1-2.43a233,233,0,0,1-52.18-25.66L290.82,386c14.68,8.94,25.64,22.93,41,30.92l1.35-2.3a207.51,207.51,0,0,0-25.81-11.18c-1.62-.57-2.32,2-.71,2.57Z" transform="translate(-300.21 -382.93)"/>
+              </g>
+              <g id="salt_t" class="marker" >
+                <path d="M390.09,425.24l15.27-2.41" transform="translate(-290.21 -382.93)" />
+                <path d="M396.52,448.55c.24-7.77.51-14.73.8-24.11" transform="translate(-290.21 -382.93)" />
+              </g>
+              <path  class="marker" id="front_n" d="M462.47,442.21V428.55l12.86,12.06q.41-8,.8-16.08" transform="translate(-290.21 -382.93)" />
+              <path  class="marker" id="front_o" d="M454.61,426.92c-1.55-.48-3.05.37-3.94.87-2.52,1.43-5,4.67-4.37,8.31.3,1.8,1.51,4.62,3.94,5.24,3.12.8,6.47-2.48,7.43-5.68C458.68,432.25,457.31,427.76,454.61,426.92Z" transform="translate(-290.21 -382.93)" />
+              <path  class="marker" id="front_r" d="M429.88,441.91a28.59,28.59,0,0,1-1.61-5.63,28.19,28.19,0,0,1,0-9.64,17.47,17.47,0,0,1,4.82-.8,14.06,14.06,0,0,1,7.24,1.6c1,.59,2.46,1.41,2.41,2.41,0,.43-.31.93-3.22,2.42-2.31,1.17-3.9,1.76-6.39,2.87l-2.45,1.14,7.24,4.83" transform="translate(-290.21 -382.93)" />
+              <g id="front_f" class="marker" >
+                <path d="M416.15,445.27l-.87-22.72,8.74-.87" transform="translate(-290.21 -382.93)" />
+                <path d="M422.27,433h-6.12" transform="translate(-290.21 -382.93)" />
+              </g>
+              <g id="front_t" class="marker" >
+                <path d="M479.67,423.93l15.27-2.41" transform="translate(-290.21 -382.93)" />
+                <path d="M486.1,447.24c.24-7.77.51-14.74.8-24.11" transform="translate(-290.21 -382.93)" />
+              </g>
+              <path id="salt_l"  class="marker" d="M380.32,424.3q.23,10.69.44,21.41l8.3-.87" transform="translate(-290.21 -382.93)" />
+              <g id="salt_a" class="marker" >
+                <path d="M359.55,446.85c1.35-3.74,2.53-6.88,3.44-9.27.58-1.53,1.07-2.79,1.39-3.59,1.26-3.24,2.37-6,3.21-8a2.63,2.63,0,0,1,1.61,0,3.07,3.07,0,0,1,1.6,1.6c.84,1.6,2.7,7.39,4.83,15.27" transform="translate(-290.21 -382.93)" />
+                <path d="M362.77,439.62l9.64-3.22" transform="translate(-290.21 -382.93)" />
+              </g>
+              <path id="salt_s"  class="marker" d="M356.78,427.16c-6.3-3.67-12.53-3.78-15.33-.8-.34.38-1.83,2-1.5,3.77.9,5,14.07,4.11,15.16,9.09.47,2.15-1.48,4.52-3.21,5.63-3.49,2.23-7.51.25-7.73.13" transform="translate(-290.21 -382.93)" style="fill: none;stroke: #000;"/>
             <animateMotion
-              dur="12s"
+              dur="10s"
               repeatCount="indefinite"
             >
               <mpath href="#saltmvmt" />
@@ -112,211 +50,136 @@
         <svg
           v-if="isSectionInView"
           id="seasalt-svg"
-          data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 2284.73 1459"
+          viewBox="0 0 1000 638.59"
         >
-          <path
-            id="ft1"
-            d="M1119 665l-9-36c-6-23-9-32-8-33 1 0 24 73 26 73l-19-67"
-          />
-          <path
-            id="ft2"
-            d="M1181 617l-23-15-37-24c0-1 64 36 65 35l-58-37"
-          />
-          <path
-            id="ft3"
-            d="M1115 531l68 17c-1 1-76-16-76-13l34 11 35 10"
-          />
-          <path
-            id="intake"
-            d="M1282 380l48 48"
-          />
-          <g id="slr1ft">
-            <path
-              id="num1"
-              d="M1079 694l18-10v27"
-            />
-            <path
-              id="f3a"
-              d="M1135 722l-1-13 1-30 15-2"
-            />
-            <path
-              id="f3b"
-              d="M1153 706l-16 2"
-            />
-            <path
-              id="t5a"
-              d="M1172 676l-2 44"
-            />
-            <path
-              id="t5b"
-              d="M1160 679l27-6"
-            />
-          </g>
-          <g id="slr2ft">
-            <path
-              id="num2"
-              d="M1192 625a33 33 0 019-6c3-1 9-4 12-1 2 1 2 4 2 4 0 3-3 5-5 7-3 2-6 6-9 13l14-1"
-            />
-            <path
-              id="f2a"
-              d="M1244 654l-1-13 1-30 15-1"
-            />
-            <path
-              id="f2b"
-              d="M1262 639l-17 2"
-            />
-            <path
-              id="t4a"
-              d="M1280 608l-1 45"
-            />
-            <path
-              id="t4b"
-              d="M1268 611l28-6"
-            />
-          </g>
-          <g id="slr3ft">
-            <path
-              id="num3"
-              d="M1196 535l20-5 5 2-11 9a12 12 0 018 3 10 10 0 013 5c1 4-6 12-17 17"
-            />
-            <path
-              id="f1a"
-              d="M1242 568l-1-13 1-29 15-2"
-            />
-            <path
-              id="f1b"
-              d="M1260 553l-16 2"
-            />
-            <path
-              id="t3a"
-              d="M1279 523l-2 44"
-            />
-            <path
-              id="t3b"
-              d="M1267 526l27-6"
-            />
-          </g>
-          <g id="intakestext">
-            <path
-              id="d"
-              d="M942 227c0 6-2 22 2 33a126 126 0 0018-7c7-3 10-6 17-11 3-3 7-7 7-9 0-3-2-4-5-6-9-4-40-5-44-5"
-            />
-            <path
-              id="r1"
-              d="M1008 264a64 64 0 01-3-35 40 40 0 0111-2c9 0 15 3 16 4 3 1 6 3 6 5l-8 6-14 6-6 3 17 11"
-            />
-            <path
-              id="i1"
-              d="M1056 233v25"
-            />
-            <path
-              id="n1"
-              d="M1078 262v-31l30 27 2-36"
-            />
-            <path
-              id="k1a"
-              d="M1133 222v40"
-            />
-            <path
-              id="k1b"
-              d="M1161 231l-24 14a38 38 0 006 6 39 39 0 0014 7"
-            />
-            <path
-              id="i2"
-              d="M1178 233v25"
-            />
-            <path
-              id="n2"
-              d="M1200 258v-31l29 28 2-37"
-            />
-            <path
-              id="g"
-              d="M1277 223a48 48 0 00-9 4c-6 3-15 8-17 17 0 1-1 7 2 11 5 5 16 1 18 0a32 32 0 0013-10l-5-3-15 3"
-            />
-            <path
-              id="w"
-              d="M784 317l11 37 13-24 13 24 13-37"
-            />
-            <path
-              id="a1a"
-              d="M843 363a1149 1149 0 0118-48 6 6 0 014 0 7 7 0 014 4l11 35"
-            />
-            <path
-              id="a1b"
-              d="M850 347l22-8"
-            />
-            <path
-              id="t1b"
-              d="M887 312l35-6"
-            />
-            <path
-              id="t1a"
-              d="M902 365l2-55"
-            />
-            <path
-              id="e1a"
-              d="M950 312l-21 3a98 98 0 002 46l17-3"
-            />
-            <path
-              id="e1b"
-              d="M948 343a31 31 0 00-15 2"
-            />
-            <path
-              id="r2"
-              d="M968 356a64 64 0 01-4-35 41 41 0 0111-2c10 0 16 3 17 4 2 1 5 3 5 5 0 1 0 2-7 6l-15 6-5 3 16 11"
-            />
-            <path
-              id="i3"
-              d="M1040 326v26"
-            />
-            <path
-              id="n3"
-              d="M1062 356v-31l29 27 2-37"
-            />
-            <path
-              id="t2b"
-              d="M1106 312l35-6"
-            />
-            <path
-              id="t2a"
-              d="M1121 365l1-55"
-            />
-            <path
-              id="a2a"
-              d="M1143 363a1149 1149 0 0118-48 6 6 0 014 0 7 7 0 013 4c2 4 7 17 11 35"
-            />
-            <path
-              id="a2b"
-              d="M1150 345l22-8"
-            />
-            <path
-              id="k2a"
-              d="M1198 314v42"
-            />
-            <path
-              id="k2b"
-              d="M1227 319l-29 21"
-            />
-            <path
-              id="k2c"
-              d="M1223 350l-23-8"
-            />
-            <path
-              id="e2a"
-              d="M1262 312l-20 3a98 98 0 002 46l16-3"
-            />
-            <path
-              id="e2b"
-              d="M1260 343a31 31 0 00-14 2"
-            />
-            <path
-              id="s"
-              d="M1312 315c-14-8-28-9-35-2-1 1-4 5-3 9 2 11 32 9 34 21 1 5-3 10-7 13-8 5-17 0-18 0"
-              style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 9px"
-            />
-          </g>
+
+        <path id="ft1" class="marker" d="M490.29 290.66c-.89-3.67-2.21-9-3.86-15.45-2.56-10-3.78-14.2-3.57-14.26.58-.19 10.87 31.61 11.36 31.46.29-.09-3-11.39-8.3-29.28" />
+        <path id="ft2" class="marker"  d="M517.38 269.69c-2.48-1.63-5.92-3.87-10-6.53-11.51-7.43-16.28-10.34-16.18-10.52.25-.41 28.12 15.77 28.4 15.3.17-.28-9.06-6.13-25.34-16.17" />
+        <path id="ft3" class="marker" d="M488.54 232.11c18.47 4.35 29.78 7.13 29.71 7.42-.11.5-33-6.62-33.21-5.68-.08.38 5.08 1.91 14.86 4.81 6.26 1.86 11.51 3.33 15.29 4.37" />
+        <path id="intake" class="marker" d="M561.73 166.34l21 21" />
+  
+        <g class="marker">
+          <path id="num1" d="M472.89 303.64l8-4.66v12" />
+          <path id="ft1_f"  d="M497.56 315.65c-.22-2-.11-3.67-.33-5.67.22-4.22.11-8.78.33-13l6.67-.67M505.56 309l-7.33.67"/>
+          <path id="ft1_t" d="M513.57 295.64q-.35 9.67-.67 19.34M508.23 297l12-2.67"/>
+        </g> 
+        <g class="marker">
+          <path id="num2" d="M522.38 273.61a14.21 14.21 0 014-2.67c1.47-.65 4.07-1.79 5.33-.66a2.55 2.55 0 01.67 2c-.14 1.32-1.36 2.16-2 2.66a13 13 0 00-4 6l6-.66" />
+          <path id="ft2_f" d="M545 286.16c-.23-2-.12-3.66-.34-5.66.22-4.23.11-8.78.34-13l6.66-.66M553 279.5l-7.34.66"/>
+          <path id="ft2_t" d="M561 266.16q-.33 9.68-.67 19.34M555.67 267.49l12-2.66"/>
+        </g>
+        <g class="marker">
+          <path id="num3" d="M524.33 234.09l8.67-2 2 .66-4.66 4a5.31 5.31 0 013.33 1.34 4.55 4.55 0 011.33 2c.51 2-2.38 5.19-7.33 7.33" />
+          <path id="ft3_f" d="M544.29 248.64c-.22-2-.11-3.67-.33-5.67.22-4.22.11-8.78.33-13l6.67-.67M552.29 242l-7.33.67"/>
+          <path id="ft3_t"  d="M560.3 228.64q-.34 9.66-.67 19.33M555 230l12-2.67"/>
+        </g>
+          <g id="intakes-text" class="marker">
+            <path id="arrow_intake" d="M624,214.17A28.51,28.51,0,0,1,588,195l-4.5,11.25,3.38-13.5,12.37,1.13L588,195" />
+            <path id="drink_d" d="M628.27,167.27c0,2.45-.82,9.79.82,14.69a55.69,55.69,0,0,0,8.15-3.27,38.66,38.66,0,0,0,7.35-4.89c1.36-1.05,3.3-2.83,3.26-4.08s-.82-1.63-2.45-2.45c-3.72-1.86-17.53-2.34-19.58-2.44" />
+            <path id="drink_r" d="M657.64,183.59a27.89,27.89,0,0,1-1.63-5.71,28.55,28.55,0,0,1,0-9.79,18.06,18.06,0,0,1,4.89-.82,14.24,14.24,0,0,1,7.34,1.63c1,.6,2.5,1.43,2.45,2.45,0,.43-.31.94-3.26,2.45-2.35,1.19-4,1.79-6.49,2.92-1.07.48-1.94.89-2.49,1.16l7.34,4.89" />
+            <path id="drink_i" d="M678.85,169.72v11.42" />
+            <path id="drink_n" d="M688.64,182.77V168.9l13.05,12.24.81-16.31" />
+            <g id="drink_k">
+              <path d="M713.11,164.83v17.94" />
+              <path d="M725.34,168.9l-10.6,6.53a16.81,16.81,0,0,0,9,5.71" />
+            </g>
+            <path id="ing_i" d="M732.69,169.72v11.42" />
+            <path id="ing_n" d="M742.48,181.14V167.27l13,12.24.81-16.32" />
+            <path id="ing_g" d="M776.74,165.64a21.21,21.21,0,0,0-4.08,1.63c-2.42,1.27-6.47,3.4-7.34,7.34-.11.49-.73,3.28.81,4.9,2.18,2.28,7,.44,8.16,0a14.24,14.24,0,0,0,5.71-4.08l-2.45-1.63L771,175.43" />
+            <path id="water_w" d="M629.12,196.89,633.94,213l5.63-10.45q2.8,5.22,5.62,10.45l5.63-16.08" />
+            <g id="water_a">
+              <path d="M654.84,217c1.34-3.74,2.52-6.87,3.43-9.27.59-1.53,1.08-2.78,1.39-3.58,1.26-3.25,2.37-6,3.21-8a2.63,2.63,0,0,1,1.61,0,3.11,3.11,0,0,1,1.61,1.61c.83,1.59,2.69,7.39,4.82,15.27" />
+              <path d="M658.05,209.75l9.65-3.21" />
+            </g>
+            <g id="water_t">
+              <path d="M674.12,194.48l15.27-2.41" />
+              <path d="M680.55,217.79c.27-8.57.54-15.54.81-24.11" />
+            </g>
+            <g id="water_e">
+              <path d="M701.45,194.48l-8.84,1.61a42.83,42.83,0,0,0-.81,9.64,43.44,43.44,0,0,0,1.61,10.45l7.23-1.61" />
+              <path d="M700.64,208.14a13.63,13.63,0,0,0-3.21,0,13.3,13.3,0,0,0-3.21.81" />
+            </g>
+            <path id="water_r" d="M709.49,213.77a27.29,27.29,0,0,1-1.61-5.63,28.19,28.19,0,0,1,0-9.64,17.41,17.41,0,0,1,4.82-.8,14,14,0,0,1,7.23,1.6c1,.59,2.47,1.41,2.41,2.41,0,.43-.3.93-3.21,2.42-2.31,1.17-3.9,1.76-6.39,2.87-1.06.48-1.91.88-2.45,1.14l7.23,4.83" />
+            <path id="intakes_i" d="M740.83,200.91v11.25" />
+            <path id="intakes_n" d="M750.47,213.77V200.11l12.86,12q.4-8,.8-16.07" />
+            <g id="intakes_t">
+              <path d="M769.76,194.48,785,192.07" />
+              <path d="M776.19,217.79c.24-7.77.51-14.74.8-24.11" />
+            </g>
+            <g id="intakes_a">
+              <path d="M785.83,217c1.35-3.74,2.52-6.87,3.44-9.27.58-1.53,1.07-2.78,1.38-3.58,1.27-3.25,2.37-6,3.22-8a2.6,2.6,0,0,1,1.6,0,3.07,3.07,0,0,1,1.61,1.61c.84,1.59,2.7,7.39,4.82,15.27" />
+              <path d="M789.05,209l9.64-3.22" />
+            </g>
+            <g id="intakes_k">
+              <path d="M809.94,195.29v18.48" />
+              <path d="M822.8,197.7l-12.75,9.1"  />
+              <path d="M821,211.36l-10-3.64"  />
+            </g>
+            <g id="intakes_e">
+              <path d="M838.07,194.48l-8.84,1.61a42.83,42.83,0,0,0-.81,9.64A43.44,43.44,0,0,0,830,216.18l7.23-1.61" />
+              <path d="M837.26,208.14a13.63,13.63,0,0,0-3.21,0,13.3,13.3,0,0,0-3.21.81" />
+            </g>
+            <path id="intakes_s" d="M859.93,196c-6.3-3.67-12.53-3.78-15.33-.79-.35.37-1.83,2-1.5,3.76.89,5,14.07,4.11,15.16,9.09.47,2.15-1.48,4.52-3.21,5.63-3.49,2.23-7.51.25-7.73.14" />
+          
+          </g>  
+          <g id="cities" class="marker">
+                    <g id="philly">
+              <path id="arrow_philly" d="M430.2,185.49a28.5,28.5,0,0,1,40.56,4.07l-.09-12.12,2,13.77-11.88,3.65,10-5.3" />
+              <path id="dot_philly" d="M510.94,196.12c0-4.8-4.22-8.7-9.42-8.7s-9.43,3.9-9.43,8.7,4.22,8.7,9.43,8.7S510.94,200.93,510.94,196.12Z" />
+              <path id="philly_d" d="M300.3,179.41c0,2.45-.82,9.79.82,14.68a54.71,54.71,0,0,0,8.15-3.26,38.66,38.66,0,0,0,7.35-4.89c1.36-1.06,3.3-2.83,3.26-4.08s-.82-1.63-2.45-2.45c-3.72-1.86-17.53-2.34-19.58-2.45" />
+              <path id="philly_i" d="M253.87,180.9v11.25" />
+              <g id="philly_a">
+                <path d="M275.83,197c1.35-3.74,2.52-6.88,3.44-9.27.58-1.53,1.07-2.79,1.38-3.59,1.27-3.24,2.37-6,3.22-8a2.6,2.6,0,0,1,1.6,0,3.06,3.06,0,0,1,1.61,1.6c.84,1.6,2.69,7.39,4.82,15.27" />
+                <path d="M279,189.81l9.65-3.22" />
+              </g>
+              <path id="philly_i2" d="M400.87,180.9v11.25" />
+              <g id="philly_a2">
+                <path d="M407.83,198c1.35-3.74,2.52-6.88,3.44-9.27.58-1.53,1.07-2.79,1.38-3.59,1.27-3.24,2.37-6,3.22-8a2.6,2.6,0,0,1,1.6,0,3.06,3.06,0,0,1,1.61,1.6c.84,1.6,2.69,7.39,4.82,15.27" />
+                <path d="M411,190.81l9.65-3.22" />
+              </g>
+              <g id="philly_e">
+                <path d="M334.7,175.68l-8.84,1.61a42.78,42.78,0,0,0-.81,9.64,43.53,43.53,0,0,0,1.61,10.45l7.23-1.61" />
+                <path d="M333.89,189.34a13.28,13.28,0,0,0-6.43.81" />
+              </g>
+              <g id="philly_p2">
+                <path id="drink_d" d="M358.34,189.29a34.43,34.43,0,0,0,5.5-2.42,26.1,26.1,0,0,0,5-3.63c.92-.78,2.23-2.1,2.2-3s-.55-1.21-1.65-1.82c-2.51-1.38-11.84-1.74-13.22-1.82" />
+                <path d="M357,195.39c.2-6.27.39-10.36.59-16.62" />
+              </g>
+              <g id="philly_p">
+                <path d="M211.34,190.29a34.43,34.43,0,0,0,5.5-2.42,26.1,26.1,0,0,0,5-3.63c.92-.78,2.23-2.1,2.2-3s-.55-1.21-1.65-1.82c-2.51-1.38-11.84-1.74-13.22-1.82" />
+                <path d="M210,196.39c.2-6.27.39-10.36.59-16.62" />
+              </g>
+              <g id="philly_h2">
+                <path d="M379.23,188.08l15.27-2.41" />
+                <path d="M390.66,197.39c.27-8.57.54-12.54.8-21.11" />
+                <path d="M378.5,194.79c.27-8.57,0-4,0-16" />
+              </g>
+              <g id="philly_h">
+                <path d="M232.23,189.08l15.27-2.41" />
+                <path d="M243.66,198.39c.27-8.57.54-12.54.8-21.11" />
+                <path d="M231.5,195.79c.27-8.57,0-4,0-16" />
+              </g>
+              <path id="philly_l1" d="M343,175.29a114.83,114.83,0,0,0,0,13c.2,3.58.56,6.92,1,10l8-4" />
+              <path id="philly_l2" d="M263,175.29a114.83,114.83,0,0,0,0,13c.2,3.58.56,6.92,1,10l8-4" />
+            </g>
+            <g id="camden">
+              <path id="camden_c" d="M509,286.29a17.81,17.81,0,0,0-6,3c-1,.8-5.8,4.48-6,10-.05,1.29-.12,3.15,1,4,1.72,1.32,5.68-.16,10-4" />
+              <g id="camden_a">
+                <path d="M512.14,308.42c1.35-3.74,2.53-6.88,3.44-9.27.58-1.53,1.07-2.78,1.38-3.59,1.27-3.24,2.37-6,3.22-8a2.63,2.63,0,0,1,1.61,0,3.05,3.05,0,0,1,1.6,1.61c.84,1.59,2.7,7.39,4.82,15.26" />
+                <path d="M515.36,301.19,525,298" />
+              </g>
+              <path id="camden_m" d="M535.5,301.79l7-14,3,14,8-9,3,7" />
+              <path id="camden_d" d="M565.61,288.79c0,2.45-.81,9.79.82,14.69a56.35,56.35,0,0,0,8.16-3.27,38.93,38.93,0,0,0,7.34-4.89c1.36-1.05,3.3-2.83,3.26-4.08s-.82-1.63-2.45-2.45c-3.72-1.86-17.53-2.34-19.57-2.44" />
+              <g id="camden_e">
+                <path d="M602,286.06l-8.84,1.61a42.37,42.37,0,0,0-.8,9.64,43,43,0,0,0,1.6,10.45l7.24-1.61" />
+                <path d="M601.21,299.72a13.73,13.73,0,0,0-3.22,0,13.3,13.3,0,0,0-3.21.81" />
+              </g>
+              <path id="camden_n" d="M609.5,303.79V289.93l13,12.23q.41-8.16.82-16.31" />
+              <path id="dot_camden" d="M526.55,242.91a9.43,9.43,0,1,0-9.43,9.43A9.43,9.43,0,0,0,526.55,242.91Z" />
+              <path id="arrow_camden" d="M554.9,286.17a21.31,21.31,0,0,0-1.39-18.49c-4.83-8.31-13.56-11.13-15.33-11.66l10.65-3.28L536.12,255l.66,10.17c.47-3.06.94-6.11,1.4-9.17" />
+            </g>
+            </g>
         </svg>
       </div>
     </div>
@@ -341,6 +204,10 @@
           >
             <h3>The salt front will likely move upstream as sea levels rise</h3>
             <p>While these natural variations usually pose no problems, sea level rise is expected to push the salt front so far inland – especially during droughts – that water at the major Trenton, NJ intake could be contaminated. Salty water corrodes surface water intake pipes, raises the cost of drinking water treatment, and is potentially toxic to aquatic plants and fish.</p>
+          </div>
+          <div
+            id="sea-salt-drinking-text"
+          >
             <p>Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. Remember the Supreme-Court-mandated flow targets at Montague and Trenton? One key motivation for setting the targets where they are is to keep pressing the salt front toward the ocean.  Maintaining the target flow is an important tool for protecting our current uses of freshwater in the lower Basin. Good data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location.</p>
           </div>
         </div>
@@ -460,11 +327,11 @@
 }
 
 .left {
-    width: 65%;
+    width: 70%;
 }
 
 .right {
-    width: 35%;
+    width: 25%;
 }
 
 /*  add breakpoint */
@@ -482,11 +349,7 @@ h2, h3, h4, h5, h6 {
     color: black;
     font-family: 'Noto Sans', sans-serif;
 }
-#dash, #s, #aa, #ab, #l, #ta, #tb, #fa, #fb, #r, #o, #n, #ta2, #tb2 {
-    stroke: black;
-    fill: transparent;
-    stroke-width: 9px;
-}
+
 
 .outer {
     background-color: white;
@@ -512,6 +375,13 @@ h2, h3, h4, h5, h6 {
     left: 0;
     padding-top: 20em;
 }
+.marker {
+  fill: none;
+  stroke: black;
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
 /* markers for sea level rise */
 
@@ -524,7 +394,6 @@ h2, h3, h4, h5, h6 {
 }
 
 #ft1, #ft2, #ft3 {
-    stroke-width: 9px;
     stroke-dasharray: 300px;
     stroke-dashoffset: -300px;
 }
@@ -563,14 +432,14 @@ h2, h3, h4, h5, h6 {
     -moz-animaion: write200 .2s ease-in-out 0.6s forwards;
     -o-animation: write200 .2s ease-in-out 0.6s forwards;
 }
-#f3a, #f3b {
+#ft1_f {
     animation: write200 .3s ease-in-out 0.7s forwards;
     -webkit-animation: write200 .3s ease-in-out 0.7s forwards;
     -moz-animaion: write200 .3s ease-in-out 0.7s forwards;
     -o-animation: write200 .3s ease-in-out 0.7s forwards;
 }
-#t5a, #t5b {
-    Animation: write200 .3s ease-in-out 0.9s forwards;
+#ft1_t {
+    animation: write200 .3s ease-in-out 0.9s forwards;
     -webkit-animation: write200 .3s ease-in-out 0.9s forwards;
     -moz-animaion: write200 .3s ease-in-out 0.9s forwards;
     -o-animation: write200 .3s ease-in-out 0.9s forwards;
@@ -582,13 +451,13 @@ h2, h3, h4, h5, h6 {
     -moz-animaion: write200 .2s ease-in-out 1.1s forwards;
     -o-animation: write200 .2s ease-in-out 1.1s forwards;
 }
-#f2a, #f2b {
+#ft2_f {
     animation: write200 .3s ease-in-out 1.25s forward;
     -webkit-animation: write200 .3s ease-in-out 1.25s forwards;
     -moz-animaion: write200 .3s ease-in-out 1.25s forwards;
     -o-animation: write200 .3s ease-in-out 1.25s forwards;
 }
-#t4a, #t4b {
+#ft2_t {
     animation: write200 .3s ease-in-out 1.45s forward;
     -webkit-animation:  write200 .3s ease-in-out 1.45s forwards;
     -moz-animaion: write200 .3s ease-in-out 1.45s forwards;
@@ -601,13 +470,13 @@ h2, h3, h4, h5, h6 {
     -moz-animaion: write200 .2s ease-in-out 1.65s forwards;
     -o-animation: write200 .2s ease-in-out 1.65s forwards;
 }
-#f1a, #f1b {
+#ft3_f {
     animation: write200 .3s ease-in-out 1.8s forwards;
     -webkit-animation: write200 .3s ease-in-out 1.8s forwards;
     -moz-animaion: write200 .3s ease-in-out 1.8s forwards;
     -o-animation: write200 .3s ease-in-out 1.8s forwards;
 }
-#t3a, #t3b {
+#ft3_t {
     animation: write200 .3s ease-in-out 2s forwards;
     -webkit-animation: write200 .3s ease-in-out 2s forwards;
     -moz-animaion: write200 .3s ease-in-out 2s forwards;
@@ -623,158 +492,163 @@ h2, h3, h4, h5, h6 {
 }
 
 /* letter writing animation */
-#d, #r1, #i1, #n1, #k1a, #k1b, #i2, #n2, #g, #w, #a1a, #a1b, #t1a, #t1b, #e1a, #e1b, #r2, #i3, #n3, #t2a, #t2b, #a2a, #a2b,#k2a, #k2b, #k2c, #e2a, #e2b, #s {
+#intakes-text, #arrow_intake {
     stroke-dasharray: 200px;
     stroke-dashoffset: -200px;
 }
 
 /* define vars for letter timing */
-/* :root {
-	  --anim-time: 0.23s;
-    --anim-delay: 0.15s;
-    --intake-start: 14s;
-} */
+$slr-dur: 0.3s;
 
 /* each letter is animated individually so time sequentially */
-#d {
-    animation: write200 0.23s ease-in-out 2s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 2s forwards;
-    -moz-animation: write200 0.23s ease-in-out 2s forwards;
-    -o-animation: write200 0.23s ease-in-out 2s forwards;
+#drink_d {
+    animation: write200 $slr-dur ease-in-out 2s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 2s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 2s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 2s forwards;
 
 }
-#r1 {
-   animation: write200 0.23s ease-in-out 2.15s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 2.15s forwards;
-    -moz-animation: write200 0.23s ease-in-out 2.15s forwards;
-    -o-animation: write200 0.23s ease-in-out 2.15s forwards;
+#drink_r {
+   animation: write200 $slr-dur ease-in-out 2.15s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 2.15s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 2.15s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 2.15s forwards;
 
 }
 
-#i1 {
-    animation: write200 0.23s ease-in-out 2.3s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 2.3s forwards;
-    -moz-animation: write200 0.23s ease-in-out 2.3s forwards;
-    -o-animation: write200 0.23s ease-in-out 2.3s forwards;
+#drink_i {
+    animation: write200 $slr-dur ease-in-out 2.3s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 2.3s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 2.3s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 2.3s forwards;
 
 }
-#n1 {
-    animation: write200 0.23s ease-in-out 2.45s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 2.45s forwards;
-    -moz-animation: write200 0.23s ease-in-out 2.45s forwards;
-    -o-animation: write200 0.23s ease-in-out 2.45s forwards;
+#drink_n {
+    animation: write200 $slr-dur ease-in-out 2.45s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 2.45s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 2.45s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 2.45s forwards;
 
 }
-#k1a, #k1b {
-    animation: write200 0.23s ease-in-out 2.6s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 2.6s forwards;
-    -moz-animation: write200 0.23s ease-in-out 2.6s forwards;
-    -o-animation: write200 0.23s ease-in-out 2.6s forwards;
+#drink_k {
+    animation: write200 $slr-dur ease-in-out 2.6s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 2.6s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 2.6s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 2.6s forwards;
 
 }
-#i2 {
-    animation: write200 0.23s ease-in-out 2.75s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 2.75s forwards;
-    -moz-animation: write200 0.23s ease-in-out 2.75s forwards;
-    -o-animation: write200 0.23s ease-in-out 2.75s forwards;
+#ing_i {
+    animation: write200 $slr-dur ease-in-out 2.75s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 2.75s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 2.75s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 2.75s forwards;
 
 }
-#n2 {
-    animation: write200 0.23s ease-in-out 2.9s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 2.9s forwards;
-    -moz-animation: write200 0.23s ease-in-out 2.9s forwards;
-    -o-animation: write200 0.23s ease-in-out 2.9s forwards;
+#ing_n {
+    animation: write200 $slr-dur ease-in-out 2.9s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 2.9s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 2.9s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 2.9s forwards;
 
 }
-#g {
-    animation: write200 0.23s ease-in-out 3.05s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 3.05s forwards;
-    -moz-animation: write200 0.23s ease-in-out 3.05s forwards;
-    -o-animation: write200 0.23s ease-in-out 3.05s forwards;
+#ing_g {
+    animation: write200 $slr-dur ease-in-out 3.05s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 3.05s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 3.05s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 3.05s forwards;
 
 }
-#w {
-    animation: write200 0.23s ease-in-out 3.2s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 3.2s forwards;
-    -moz-animation: write200 0.23s ease-in-out 3.2s forwards;
-    -o-animation: write200 0.23s ease-in-out 3.2s forwards;
+
+#arrow_intake {
+    animation: write200 0.5s ease-in-out 3.2s forwards;
+    -webkit-animation: write200 0.5s ease-in-out 3.2s forwards;
+    -moz-animation: write200 0.5s ease-in-out 3.2s forwards;
+    -o-animation: write200 0.5s ease-in-out 3.2s forwards;
 
 }
-#a1a, #a1b {
-    animation: write200 0.23s ease-in-out 3.35s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 3.35s forwards;
-    -moz-animation: write200 0.23s ease-in-out 3.35s forwards;
-    -o-animation: write200 0.23s ease-in-out 3.35s forwards;
+
+#water_w {
+    animation: write200 0.3s ease-in-out 3.2s forwards;
+    -webkit-animation: write200 0.3s ease-in-out 3.2s forwards;
+    -moz-animation: write200 0.3s ease-in-out 3.2s forwards;
+    -o-animation: write200 0.3s ease-in-out 3.2s forwards;
 
 }
-#t1a, #t1b {
-    animation: write200 0.23s ease-in-out 3.5s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 3.5s forwards;
-    -moz-animation: write200 0.23s ease-in-out 3.5s forwards;
-    -o-animation: write200 0.23s ease-in-out 3.5s forwards;
+#water_a {
+    animation: write200 $slr-dur ease-in-out 3.35s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 3.35s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 3.35s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 3.35s forwards;
 
 }
-#e1a, #e1b {
-    animation: write200 0.23s ease-in-out 3.65s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 3.65s forwards;
-    -moz-animation: write200 0.23s ease-in-out 3.65s forwards;
-    -o-animation: write200 0.23s ease-in-out 3.65s forwards;
+#water_t {
+    animation: write200 $slr-dur ease-in-out 3.5s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 3.5s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 3.5s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 3.5s forwards;
 
 }
-#r2 {
-    animation: write200 0.23s ease-in-out 3.8s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 3.8s forwards;
-    -moz-animation: write200 0.23s ease-in-out 3.8s forwards;
-    -o-animation: write200 0.23s ease-in-out 3.8s forwards;
+#water_e {
+    animation: write200 $slr-dur ease-in-out 3.65s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 3.65s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 3.65s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 3.65s forwards;
 
 }
-#i3 {
-    animation: write200 0.23s ease-in-out 3.95s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 3.95s forwards;
-    -moz-animation: write200 0.23s ease-in-out 3.95s forwards;
-    -o-animation: write200 0.23s ease-in-out 3.95s forwards;
+#water_r {
+    animation: write200 $slr-dur ease-in-out 3.8s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 3.8s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 3.8s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 3.8s forwards;
 
 }
-#n3 {
-    animation: write200 0.23s ease-in-out 4.1s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 4.1s forwards;
-    -moz-animation: write200 0.23s ease-in-out 4.1s forwards;
-    -o-animation: write200 0.23s ease-in-out 4.1s forwards;
+#intakes_i {
+    animation: write200 $slr-dur ease-in-out 3.95s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 3.95s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 3.95s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 3.95s forwards;
 
 }
-#t2a, #t2b {
-    animation: write200 0.23s ease-in-out 4.25s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 4.25s forwards;
-    -moz-animation: write200 0.23s ease-in-out 4.25s forwards;
-    -o-animation: write200 0.23s ease-in-out 4.25s forwards;
+#intakes_n {
+    animation: write200 $slr-dur ease-in-out 4.1s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 4.1s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 4.1s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 4.1s forwards;
 
 }
-#a2a, #a2b {
-    animation: write200 0.23s ease-in-out 4.4s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 4.4s forwards;
-    -moz-animation: write200 0.23s ease-in-out 4.4s forwards;
-    -o-animation: write200 0.23s ease-in-out 4.4s forwards;
+#intakes_t {
+    animation: write200 $slr-dur ease-in-out 4.25s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 4.25s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 4.25s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 4.25s forwards;
 
 }
-#k2a, #k2b, #k2c {
-    animation: write200 0.23s ease-in-out 4.55s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 4.55s forwards;
-    -moz-animation: write200 0.23s ease-in-out 4.55s forwards;
-    -o-animation: write200 0.23s ease-in-out 4.55s forwards;
+#intakes_a {
+    animation: write200 $slr-dur ease-in-out 4.4s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 4.4s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 4.4s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 4.4s forwards;
 
 }
-#e2a, #e2b {
-    animation: write200 0.23s ease-in-out 4.7s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 4.7s forwards;
-    -moz-animation: write200 0.23s ease-in-out 4.7s forwards;
-    -o-animation: write200 0.23s ease-in-out 4.7s forwards;
+#intakes_k {
+    animation: write200 $slr-dur ease-in-out 4.55s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 4.55s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 4.55s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 4.55s forwards;
 
 }
-#s {
-    animation: write200 0.23s ease-in-out 4.85s forwards;
-    -webkit-animation: write200 0.23s ease-in-out 4.85s forwards;
-    -moz-animation: write200 0.23s ease-in-out 4.85s forwards;
-    -o-animation: write200 0.23s ease-in-out 4.85s forwards;
+#intakes_e {
+    animation: write200 $slr-dur ease-in-out 4.7s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 4.7s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 4.7s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 4.7s forwards;
+
+}
+#intakes_s {
+    animation: write200 $slr-dur ease-in-out 4.85s forwards;
+    -webkit-animation: write200 $slr-dur ease-in-out 4.85s forwards;
+    -moz-animation: write200 $slr-dur ease-in-out 4.85s forwards;
+    -o-animation: write200 $slr-dur ease-in-out 4.85s forwards;
 
 }
 
