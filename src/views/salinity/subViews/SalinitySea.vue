@@ -405,90 +405,90 @@ h2, h3, h4, h5, h6 {
 
 /* lines for sea level predictions */
 #ft1 {
-    animation: write300 .4s ease-in-out 0s forwards;
-    -webkit-animation: write300 .4s ease-in-out 0s forwards;
-    -moz-animaion: write300 .4s ease-in-out 0s forwards;
-    -o-animation: write300 .4s ease-in-out 0s forwards;
+    animation: write300 .4s linear 0s forwards;
+    -webkit-animation: write300 .4s linear 0s forwards;
+    -moz-animaion: write300 .4s linear 0s forwards;
+    -o-animation: write300 .4s linear 0s forwards;
 }
 
 #ft2 {
-    animation: write300 .4s ease-in-out 0.2s forwards;
-    -webkit-animation: write300 .4s ease-in-out 0.2s forwards;
-    -moz-animaion: write300 .4s ease-in-out 0.2s forwards;
-    -o-animation: write300 .4s ease-in-out 0.2s forwards;
+    animation: write300 .4s linear 0.2s forwards;
+    -webkit-animation: write300 .4s linear 0.2s forwards;
+    -moz-animaion: write300 .4s linear 0.2s forwards;
+    -o-animation: write300 .4s linear 0.2s forwards;
 }
 
 #ft3 {
-    animation: write300 .4s ease-in-out 0.4s forwards;
-    -webkit-animation: write300 .4s ease-in-out 0.4s forwards;
-    -moz-animaion: write300 .4s ease-in-out 0.4s forwards;
-    -o-animation: write300 .4s ease-in-out 0.4s forwards;
+    animation: write300 .4s linear 0.4s forwards;
+    -webkit-animation: write300 .4s linear 0.4s forwards;
+    -moz-animaion: write300 .4s linear 0.4s forwards;
+    -o-animation: write300 .4s linear 0.4s forwards;
 }
 /* annotations for sea level predictions */
 /* 1 ft */
 #num1 {
-    animation: write200 .2s ease-in-out 0.6s forwards;
-    -webkit-animation: write200 .2s ease-in-out 0.6s forwards;
-    -moz-animaion: write200 .2s ease-in-out 0.6s forwards;
-    -o-animation: write200 .2s ease-in-out 0.6s forwards;
+    animation: write200 .2s linear 0.6s forwards;
+    -webkit-animation: write200 .2s linear 0.6s forwards;
+    -moz-animaion: write200 .2s linear 0.6s forwards;
+    -o-animation: write200 .2s linear 0.6s forwards;
 }
 #ft1_f {
-    animation: write200 .3s ease-in-out 0.7s forwards;
-    -webkit-animation: write200 .3s ease-in-out 0.7s forwards;
-    -moz-animaion: write200 .3s ease-in-out 0.7s forwards;
-    -o-animation: write200 .3s ease-in-out 0.7s forwards;
+    animation: write200 .3s linear 0.7s forwards;
+    -webkit-animation: write200 .3s linear 0.7s forwards;
+    -moz-animaion: write200 .3s linear 0.7s forwards;
+    -o-animation: write200 .3s linear 0.7s forwards;
 }
 #ft1_t {
-    animation: write200 .3s ease-in-out 0.9s forwards;
-    -webkit-animation: write200 .3s ease-in-out 0.9s forwards;
-    -moz-animaion: write200 .3s ease-in-out 0.9s forwards;
-    -o-animation: write200 .3s ease-in-out 0.9s forwards;
+    animation: write200 .3s linear 0.9s forwards;
+    -webkit-animation: write200 .3s linear 0.9s forwards;
+    -moz-animaion: write200 .3s linear 0.9s forwards;
+    -o-animation: write200 .3s linear 0.9s forwards;
 }
 /* 2 ft */
 #num2 {
-    animation: write200 .2s ease-in-out 1.1s forwards;
-    -webkit-animation: write200 .2s ease-in-out 1.1s forwards;
-    -moz-animaion: write200 .2s ease-in-out 1.1s forwards;
-    -o-animation: write200 .2s ease-in-out 1.1s forwards;
+    animation: write200 .2s linear 1.1s forwards;
+    -webkit-animation: write200 .2s linear 1.1s forwards;
+    -moz-animaion: write200 .2s linear 1.1s forwards;
+    -o-animation: write200 .2s linear 1.1s forwards;
 }
 #ft2_f {
-    animation: write200 .3s ease-in-out 1.25s forward;
-    -webkit-animation: write200 .3s ease-in-out 1.25s forwards;
-    -moz-animaion: write200 .3s ease-in-out 1.25s forwards;
-    -o-animation: write200 .3s ease-in-out 1.25s forwards;
+    animation: write200 .3s linear 1.25s forward;
+    -webkit-animation: write200 .3s linear 1.25s forwards;
+    -moz-animaion: write200 .3s linear 1.25s forwards;
+    -o-animation: write200 .3s linear 1.25s forwards;
 }
 #ft2_t {
-    animation: write200 .3s ease-in-out 1.45s forward;
-    -webkit-animation:  write200 .3s ease-in-out 1.45s forwards;
-    -moz-animaion: write200 .3s ease-in-out 1.45s forwards;
-    -o-animation: write200 .3s ease-in-out 1.45s forwards;
+    animation: write200 .3s linear 1.45s forward;
+    -webkit-animation:  write200 .3s linear 1.45s forwards;
+    -moz-animaion: write200 .3s linear 1.45s forwards;
+    -o-animation: write200 .3s linear 1.45s forwards;
 }
 /* 3ft */
 #num3 {
-    animation: write200 .2s ease-in-out 1.65s forwards;
-    -webkit-animation: write200 .2s ease-in-out 1.65s forwards;
-    -moz-animaion: write200 .2s ease-in-out 1.65s forwards;
-    -o-animation: write200 .2s ease-in-out 1.65s forwards;
+    animation: write200 .2s linear 1.65s forwards;
+    -webkit-animation: write200 .2s linear 1.65s forwards;
+    -moz-animaion: write200 .2s linear 1.65s forwards;
+    -o-animation: write200 .2s linear 1.65s forwards;
 }
 #ft3_f {
-    animation: write200 .3s ease-in-out 1.8s forwards;
-    -webkit-animation: write200 .3s ease-in-out 1.8s forwards;
-    -moz-animaion: write200 .3s ease-in-out 1.8s forwards;
-    -o-animation: write200 .3s ease-in-out 1.8s forwards;
+    animation: write200 .3s linear 1.8s forwards;
+    -webkit-animation: write200 .3s linear 1.8s forwards;
+    -moz-animaion: write200 .3s linear 1.8s forwards;
+    -o-animation: write200 .3s linear 1.8s forwards;
 }
 #ft3_t {
-    animation: write200 .3s ease-in-out 2s forwards;
-    -webkit-animation: write200 .3s ease-in-out 2s forwards;
-    -moz-animaion: write200 .3s ease-in-out 2s forwards;
-    -o-animation: write200 .3s ease-in-out 2s forwards;
+    animation: write200 .3s linear 2s forwards;
+    -webkit-animation: write200 .3s linear 2s forwards;
+    -moz-animaion: write200 .3s linear 2s forwards;
+    -o-animation: write200 .3s linear 2s forwards;
 }
 
 /* intakes line */
 #intake {
-    animation: write200 .2s ease-in-out 2s forwards;
-    -webkit-animation: write200 .2s ease-in-out 2s forwards;
-    -moz-animaion:write200 .2s ease-in-out 2s forwards;
-    -o-animation: write200 .2s ease-in-out 2s forwards;
+    animation: write200 .2s linear 2s forwards;
+    -webkit-animation: write200 .2s linear 2s forwards;
+    -moz-animaion:write200 .2s linear 2s forwards;
+    -o-animation: write200 .2s linear 2s forwards;
 }
 
 /* letter writing animation */
@@ -499,156 +499,178 @@ h2, h3, h4, h5, h6 {
 
 /* define vars for letter timing */
 $slr-dur: 0.3s;
+$slr-delay: 0.1s;
 
 /* each letter is animated individually so time sequentially */
 #drink_d {
-    animation: write200 $slr-dur ease-in-out 2s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 2s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 2s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 2s forwards;
+  $grp-ord: 1;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #drink_r {
-   animation: write200 $slr-dur ease-in-out 2.15s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 2.15s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 2.15s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 2.15s forwards;
+  $grp-ord: 2;
+   animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 
 #drink_i {
-    animation: write200 $slr-dur ease-in-out 2.3s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 2.3s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 2.3s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 2.3s forwards;
+  $grp-ord: 3;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #drink_n {
-    animation: write200 $slr-dur ease-in-out 2.45s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 2.45s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 2.45s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 2.45s forwards;
+  $grp-ord: 4;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #drink_k {
-    animation: write200 $slr-dur ease-in-out 2.6s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 2.6s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 2.6s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 2.6s forwards;
+  $grp-ord: 5;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #ing_i {
-    animation: write200 $slr-dur ease-in-out 2.75s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 2.75s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 2.75s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 2.75s forwards;
+  $grp-ord: 6;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #ing_n {
-    animation: write200 $slr-dur ease-in-out 2.9s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 2.9s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 2.9s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 2.9s forwards;
+  $grp-ord: 7;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #ing_g {
-    animation: write200 $slr-dur ease-in-out 3.05s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 3.05s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 3.05s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 3.05s forwards;
+  $grp-ord: 8;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 
 #arrow_intake {
-    animation: write200 0.5s ease-in-out 3.2s forwards;
-    -webkit-animation: write200 0.5s ease-in-out 3.2s forwards;
-    -moz-animation: write200 0.5s ease-in-out 3.2s forwards;
-    -o-animation: write200 0.5s ease-in-out 3.2s forwards;
+  $grp-ord: 4;
+    animation: write200 0.5s linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 0.5s linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 0.5s linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 0.5s linear $slr-delay*$grp-ord forwards;
 
 }
 
 #water_w {
-    animation: write200 0.3s ease-in-out 3.2s forwards;
-    -webkit-animation: write200 0.3s ease-in-out 3.2s forwards;
-    -moz-animation: write200 0.3s ease-in-out 3.2s forwards;
-    -o-animation: write200 0.3s ease-in-out 3.2s forwards;
+  $grp-ord: 5;
+    animation: write200 0.3s linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 0.3s linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 0.3s linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 0.3s linear $slr-delay*$grp-ord forwards;
 
 }
 #water_a {
-    animation: write200 $slr-dur ease-in-out 3.35s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 3.35s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 3.35s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 3.35s forwards;
+  $grp-ord: 6;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #water_t {
-    animation: write200 $slr-dur ease-in-out 3.5s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 3.5s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 3.5s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 3.5s forwards;
+  $grp-ord: 7;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #water_e {
-    animation: write200 $slr-dur ease-in-out 3.65s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 3.65s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 3.65s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 3.65s forwards;
+  $grp-ord: 8;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #water_r {
-    animation: write200 $slr-dur ease-in-out 3.8s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 3.8s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 3.8s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 3.8s forwards;
+  $grp-ord: 9;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #intakes_i {
-    animation: write200 $slr-dur ease-in-out 3.95s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 3.95s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 3.95s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 3.95s forwards;
+  $grp-ord: 10;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #intakes_n {
-    animation: write200 $slr-dur ease-in-out 4.1s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 4.1s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 4.1s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 4.1s forwards;
+  $grp-ord: 11;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #intakes_t {
-    animation: write200 $slr-dur ease-in-out 4.25s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 4.25s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 4.25s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 4.25s forwards;
+  $grp-ord: 12;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #intakes_a {
-    animation: write200 $slr-dur ease-in-out 4.4s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 4.4s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 4.4s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 4.4s forwards;
+  $grp-ord: 13;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #intakes_k {
-    animation: write200 $slr-dur ease-in-out 4.55s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 4.55s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 4.55s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 4.55s forwards;
+  $grp-ord: 14;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #intakes_e {
-    animation: write200 $slr-dur ease-in-out 4.7s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 4.7s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 4.7s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 4.7s forwards;
+  $grp-ord: 15;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 #intakes_s {
-    animation: write200 $slr-dur ease-in-out 4.85s forwards;
-    -webkit-animation: write200 $slr-dur ease-in-out 4.85s forwards;
-    -moz-animation: write200 $slr-dur ease-in-out 4.85s forwards;
-    -o-animation: write200 $slr-dur ease-in-out 4.85s forwards;
+  $grp-ord: 16;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
 
 }
 
