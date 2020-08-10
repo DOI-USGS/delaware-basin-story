@@ -74,6 +74,14 @@
           <path id="ft3_f" d="M544.29 248.64c-.22-2-.11-3.67-.33-5.67.22-4.22.11-8.78.33-13l6.67-.67M552.29 242l-7.33.67"/>
           <path id="ft3_t"  d="M560.3 228.64q-.34 9.66-.67 19.33M555 230l12-2.67"/>
         </g>
+        </svg>
+        <svg
+          v-if="isSectionInView"
+          id="intakes-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 638.59"
+        >
+
           <g id="intakes-text" class="marker">
             <path id="arrow_intake" d="M624,214.17A28.51,28.51,0,0,1,588,195l-4.5,11.25,3.38-13.5,12.37,1.13L588,195" />
             <path id="drink_d" d="M628.27,167.27c0,2.45-.82,9.79.82,14.69a55.69,55.69,0,0,0,8.15-3.27,38.66,38.66,0,0,0,7.35-4.89c1.36-1.05,3.3-2.83,3.26-4.08s-.82-1.63-2.45-2.45c-3.72-1.86-17.53-2.34-19.58-2.44" />
@@ -190,7 +198,7 @@
           <p>As freshwater spills from the river onto the saltier, ocean-influenced waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the intruding ocean. The bounds of that wedge – the “salt front” – migrate up and down the river channel over the daily cycle of ocean tides, the seasonal cycle of lower and higher river flows, and the multi-year fluctuations of higher and lower flows. </p>
         </div>
         <div
-          id="sea-salt-scroll-target"
+        id="sea-salt-scroll-target"
           v-observe-visibility="{
             callback: visibilityChanged,
             intersection: {
@@ -198,13 +206,24 @@
               threshold: 0
             }
           }"
-        >
+          >
           <div
             id="sea-salt-rise-text"
           >
             <h3>The salt front will likely move upstream as sea levels rise</h3>
             <p>While these natural variations usually pose no problems, sea level rise is expected to push the salt front so far inland – especially during droughts – that water at the major Trenton, NJ intake could be contaminated. Salty water corrodes surface water intake pipes, raises the cost of drinking water treatment, and is potentially toxic to aquatic plants and fish.</p>
           </div>
+          </div>
+          <div
+            id="sea-drink-scroll-target"
+              v-observe-visibility="{
+                callback: visibilityChanged,
+                intersection: {
+                  rootMargin: '-30% 0% -50% 0%',
+                  threshold: 0
+                }
+              }"
+            >
           <div
             id="sea-salt-drinking-text"
           >
@@ -250,7 +269,14 @@
       opacity: 0;
       transition: opacity 2s;
     }
+    #sea-salt-drinking-text {
+      opacity: 0;
+      transition: opacity 2s;
+    }
     #sea-salt-rise-text.visible {
+      opacity: 1;
+    }
+    #sea-salt-drinking-text.visible {
       opacity: 1;
     }
   }
@@ -585,6 +611,24 @@ $slr-delay: 0.1s;
 }
 
 #arrow_intake {
+  $grp-ord: 4;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+
+#dot_camden {
+  $grp-ord: 4;
+    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
+
+}
+
+#dot_philly {
   $grp-ord: 4;
     animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
     -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
