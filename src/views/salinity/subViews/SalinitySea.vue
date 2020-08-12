@@ -3,331 +3,281 @@
     <div id="salinity-sea-container">
       <div class="salinity-sea-section-image">
         <div id="container-salinity-sea-image-background">
-          <img
-            src="@/assets/salinity/salinitySea/images/zoom_map_big.png"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 1000 638.59"
           >
-        </div>
-        <div id="container-salinity-sea-svg-salt-front">
-          <img
-            src="@/assets/salinity/salinitySea/images/zoom_map_big.png"
-          >
-          <!--          <svg-->
-          <!--            id="svg-salt-front"-->
-          <!--            xmlns="http://www.w3.org/2000/svg"-->
-          <!--            width="1321"-->
-          <!--            height="830.92"-->
-          <!--            viewBox="0 0 2284.73 1459"-->
-          <!--          >-->
-          <!--            <path-->
-          <!--              id="mask"-->
-          <!--              d="M784 1322l-13-10c-6-6-4-17 4-21 2-2 7-17 5-19l-4-2c-11 2-16-5-21-13-2-5-4-9-11-8l-5-5-28-35c-9-10-18-20-25-30-9-11-10-24-7-37l20-77c2-10 4-21 2-31-3-15-15-21-29-24l-13-1a8 8 0 01-4-1c-2-2-3-18-2-20 2-3 4-7 3-10 0-7-2-13-4-20 0-4-1-8 5-9 3 0 7-2 8-5 7-15 20-23 32-33 19-14 35-32 46-53l49-98c4-8 11-14 18-19 33-30 71-52 110-73 10-6 20-11 29-18 13-9 28-5 42-5s28 3 41-1c16-5 31-13 40-31 3-6 9-11 15-15 6-3 13 1 17 7l4 3c7 0 16 1 19-2 5-7 8-16 9-24 1-7-3-13-3-20-1-11-4-22-1-32 3-17 16-27 31-33l31-10c3-1 7-4 8-7 4-16 14-27 27-36l33-20c11-8 21-18 33-25l51-8c-13 4-24 12-36 20-3 2-4 8-5 12-3 11-4 12-15 13-4 0-9 3-11 6-5 9-14 12-25 13-10 1-18 6-24 16l-23 40c-1 2-4 4-6 4-10-1-15 6-22 10-4 2-9 5-14 5-12 1-18 9-16 21 3 15 6 30 7 45 1 22-12 36-34 35-17-1-30 6-42 17-16 14-37 19-57 24-28 7-57 13-85 21-20 6-37 18-49 36a15 15 0 01-8 5c-22 5-39 18-50 37s-21 40-31 60c-5 8-12 15-17 24-5 10-12 21-14 32-6 23-18 39-39 50a34 34 0 00-10 7c-8 8-10 16-4 25a79 79 0 0034 28c16 7 17 19 15 31l-12 48c-2 12-1 25-1 37v10c-1 9-4 12-14 10l-4 3c-3 8 1 17 9 21a16 16 0 004 2c19 5 34 19 51 30 5 3 12 4 15 9a120 120 0 0116 24c8 15 13 31 29 41a33 33 0 0011 4c11 2 14 4 16 16 3 17 5 18 22 20 13 2 27 4 37 14z"-->
-          <!--              fill="none"-->
-          <!--              stroke="#00000"-->
-          <!--              stroke-miterlimit="10"-->
-          <!--            />-->
-          <!--            <path-->
-          <!--              id="saltmvmt"-->
-          <!--              style="fill:none;stroke:#00000;stroke-miterlimit:10;"-->
-          <!--              d="M720.18,848.47c17.22-31.75,25.19-45.73,23.72-46.2-2-.63-8.22,17.29-15.73,28.81-19.87,30.48-40.45,61.11-41.61,61.39-9.18,2.23,6.77-12.76,23.72-30.29,5.5-5.7,9.53-9.82,14.32-17.79,3.43-5.69,8.06-13.78,13.29-24.45,16.33-33.3,26.12-48.35,40.05-73.84,4.29-7.85,22.21-31.91,33.06-45.1-12.54,10.86-40.46,47.6-60.06,88.31-4.42,9.19-5.1,21.72-18.78,41.05-5.72,8.08-11.54,15-16.41,18.11"-->
-          <!--            />-->
-          <!--            <g id="saltline">-->
-          <!--              <path-->
-          <!--                id="dash"-->
-          <!--                d="M734.8,932.35a226.51,226.51,0,0,1,28.35,12.28c1.71.88,3.23-1.7,1.51-2.59-13.47-7-23.93-18.23-35.75-27.52a105.27,105.27,0,0,0-10.38-7.3c-1.66-1-3.12,1.53-1.51,2.59a267.07,267.07,0,0,0,45.62,24q6.86,2.79,13.86,5.2c1.64.56,2.58-1.89,1.15-2.75q-23.8-14.38-47.1-29.59c-1.63-1.06-3.13,1.54-1.52,2.59q23.29,15.19,47.11,29.59l1.16-2.74a261.74,261.74,0,0,1-46.38-21.21c-4.2-2.44-8.33-5-12.39-7.67L717,909.81c12.93,7.87,23.24,19.18,35.41,28.08a83.88,83.88,0,0,0,10.72,6.74l1.51-2.59a234.29,234.29,0,0,0-29.06-12.59c-1.82-.64-2.61,2.25-.8,2.9Z"-->
-          <!--                transform="translate(-716.32 -906.41)"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="s"-->
-          <!--                d="M820.2,942.05c-14.42-8.41-28.67-8.66-35.08-1.82-.79.85-4.19,4.48-3.44,8.62,2.05,11.37,32.22,9.41,34.71,20.81,1.07,4.9-3.4,10.34-7.36,12.87-8,5.11-17.19.57-17.69.31"-->
-          <!--                transform="translate(-716.32 -906.41)"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="ab"-->
-          <!--                d="M829.33,970.56l22.07-7.36"-->
-          <!--                transform="translate(-716.32 -906.41)"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="aa"-->
-          <!--                d="M822,987.11c3.08-8.56,5.78-15.74,7.87-21.21,1.33-3.5,2.45-6.38,3.17-8.21,2.89-7.43,5.42-13.68,7.35-18.4a6.12,6.12,0,0,1,3.68,0,7.13,7.13,0,0,1,3.68,3.68c1.91,3.65,6.16,16.92,11,34.95"-->
-          <!--                transform="translate(-716.32 -906.41)"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="l"-->
-          <!--                d="M869.5,935.5q.5,24.5,1,49l19-2"-->
-          <!--                transform="translate(-716.32 -906.41)"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="ta"-->
-          <!--                d="M1111.56,988c.56-17.78,1.17-33.72,1.84-55.17"-->
-          <!--                transform="translate(-716.32 -906.41)"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="tb"-->
-          <!--                d="M1096.85,934.67l34.94-5.52"-->
-          <!--                transform="translate(-716.32 -906.41)"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="fa"-->
-          <!--                d="M965.5,955.5h-14"-->
-          <!--                transform="translate(-716.32 -906.41)"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="fb"-->
-          <!--                d="M951.5,983.5q-1-26-2-52l20-2"-->
-          <!--                transform="translate(-716.32 -906.41)"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="r"-->
-          <!--                d="M982.91,975.8a63.9,63.9,0,0,1-3.68-34.94,41,41,0,0,1,11-1.84c9.48-.23,15.4,3,16.55,3.68,2.34,1.33,5.64,3.21,5.52,5.52-.05,1-.71,2.12-7.36,5.51-5.28,2.7-8.93,4-14.62,6.59-2.42,1.08-4.37,2-5.61,2.61l16.55,11"-->
-          <!--                transform="translate(-716.32 -906.41)"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="o"-->
-          <!--                d="M1039.5,941.5c-3.53-1.1-7,.85-9,2-5.78,3.27-11.38,10.68-10,19,.69,4.13,3.44,10.58,9,12,7.14,1.83,14.82-5.67,17-13C1048.83,953.69,1045.69,943.42,1039.5,941.5Z"-->
-          <!--                transform="translate(-716.32 -906.41)"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="n"-->
-          <!--                d="M1057.5,976.5V945.23l29.43,27.59q.91-18.39,1.84-36.78"-->
-          <!--                transform="translate(-716.32 -906.41)"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="ta2"-->
-          <!--                d="M906.56,991c.56-17.78,1.17-33.72,1.84-55.17"-->
-          <!--                transform="translate(-716.32 -906.41)"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="tb2"-->
-          <!--                d="M891.85,937.67l34.94-5.52"-->
-          <!--                transform="translate(-716.32 -906.41)"-->
-          <!--              />-->
-          <!--              <animateMotion-->
-          <!--                dur="12s"-->
-          <!--                repeatCount="indefinite"-->
-          <!--              >-->
-          <!--                <mpath href="#saltmvmt" />-->
-          <!--              </animateMotion>-->
-          <!--            </g>-->
-          <!--          </svg>-->
-        </div>
-        <div id="container-salinity-sea-svg-salt-feet">
-          <img
-            src="@/assets/salinity/salinitySea/images/zoom_map_big.png"
-          >
-          <!--          <svg-->
-          <!--            v-if="isSectionInView"-->
-          <!--            id="svg-salt-foot-marks"-->
-          <!--            data-name="Layer 1"-->
-          <!--            xmlns="http://www.w3.org/2000/svg"-->
-          <!--            viewBox="0 0 2284.73 1459"-->
-          <!--          >-->
-          <!--            <path-->
-          <!--              id="ft1"-->
-          <!--              d="M1119 665l-9-36c-6-23-9-32-8-33 1 0 24 73 26 73l-19-67"-->
-          <!--            />-->
-          <!--            <path-->
-          <!--              id="ft2"-->
-          <!--              d="M1181 617l-23-15-37-24c0-1 64 36 65 35l-58-37"-->
-          <!--            />-->
-          <!--            <path-->
-          <!--              id="ft3"-->
-          <!--              d="M1115 531l68 17c-1 1-76-16-76-13l34 11 35 10"-->
-          <!--            />-->
-          <!--            <path-->
-          <!--              id="intake"-->
-          <!--              d="M1282 380l48 48"-->
-          <!--            />-->
-          <!--            <g id="slr1ft">-->
-          <!--              <path-->
-          <!--                id="num1"-->
-          <!--                d="M1079 694l18-10v27"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="f3a"-->
-          <!--                d="M1135 722l-1-13 1-30 15-2"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="f3b"-->
-          <!--                d="M1153 706l-16 2"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="t5a"-->
-          <!--                d="M1172 676l-2 44"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="t5b"-->
-          <!--                d="M1160 679l27-6"-->
-          <!--              />-->
-          <!--            </g>-->
-          <!--            <g id="slr2ft">-->
-          <!--              <path-->
-          <!--                id="num2"-->
-          <!--                d="M1192 625a33 33 0 019-6c3-1 9-4 12-1 2 1 2 4 2 4 0 3-3 5-5 7-3 2-6 6-9 13l14-1"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="f2a"-->
-          <!--                d="M1244 654l-1-13 1-30 15-1"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="f2b"-->
-          <!--                d="M1262 639l-17 2"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="t4a"-->
-          <!--                d="M1280 608l-1 45"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="t4b"-->
-          <!--                d="M1268 611l28-6"-->
-          <!--              />-->
-          <!--            </g>-->
-          <!--            <g id="slr3ft">-->
-          <!--              <path-->
-          <!--                id="num3"-->
-          <!--                d="M1196 535l20-5 5 2-11 9a12 12 0 018 3 10 10 0 013 5c1 4-6 12-17 17"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="f1a"-->
-          <!--                d="M1242 568l-1-13 1-29 15-2"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="f1b"-->
-          <!--                d="M1260 553l-16 2"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="t3a"-->
-          <!--                d="M1279 523l-2 44"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="t3b"-->
-          <!--                d="M1267 526l27-6"-->
-          <!--              />-->
-          <!--            </g>-->
-          <!--            <g id="intakestext">-->
-          <!--              <path-->
-          <!--                id="d"-->
-          <!--                d="M942 227c0 6-2 22 2 33a126 126 0 0018-7c7-3 10-6 17-11 3-3 7-7 7-9 0-3-2-4-5-6-9-4-40-5-44-5"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="r1"-->
-          <!--                d="M1008 264a64 64 0 01-3-35 40 40 0 0111-2c9 0 15 3 16 4 3 1 6 3 6 5l-8 6-14 6-6 3 17 11"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="i1"-->
-          <!--                d="M1056 233v25"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="n1"-->
-          <!--                d="M1078 262v-31l30 27 2-36"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="k1a"-->
-          <!--                d="M1133 222v40"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="k1b"-->
-          <!--                d="M1161 231l-24 14a38 38 0 006 6 39 39 0 0014 7"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="i2"-->
-          <!--                d="M1178 233v25"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="n2"-->
-          <!--                d="M1200 258v-31l29 28 2-37"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="g"-->
-          <!--                d="M1277 223a48 48 0 00-9 4c-6 3-15 8-17 17 0 1-1 7 2 11 5 5 16 1 18 0a32 32 0 0013-10l-5-3-15 3"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="w"-->
-          <!--                d="M784 317l11 37 13-24 13 24 13-37"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="a1a"-->
-          <!--                d="M843 363a1149 1149 0 0118-48 6 6 0 014 0 7 7 0 014 4l11 35"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="a1b"-->
-          <!--                d="M850 347l22-8"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="t1b"-->
-          <!--                d="M887 312l35-6"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="t1a"-->
-          <!--                d="M902 365l2-55"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="e1a"-->
-          <!--                d="M950 312l-21 3a98 98 0 002 46l17-3"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="e1b"-->
-          <!--                d="M948 343a31 31 0 00-15 2"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="r2"-->
-          <!--                d="M968 356a64 64 0 01-4-35 41 41 0 0111-2c10 0 16 3 17 4 2 1 5 3 5 5 0 1 0 2-7 6l-15 6-5 3 16 11"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="i3"-->
-          <!--                d="M1040 326v26"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="n3"-->
-          <!--                d="M1062 356v-31l29 27 2-37"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="t2b"-->
-          <!--                d="M1106 312l35-6"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="t2a"-->
-          <!--                d="M1121 365l1-55"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="a2a"-->
-          <!--                d="M1143 363a1149 1149 0 0118-48 6 6 0 014 0 7 7 0 013 4c2 4 7 17 11 35"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="a2b"-->
-          <!--                d="M1150 345l22-8"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="k2a"-->
-          <!--                d="M1198 314v42"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="k2b"-->
-          <!--                d="M1227 319l-29 21"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="k2c"-->
-          <!--                d="M1223 350l-23-8"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="e2a"-->
-          <!--                d="M1262 312l-20 3a98 98 0 002 46l16-3"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="e2b"-->
-          <!--                d="M1260 343a31 31 0 00-14 2"-->
-          <!--              />-->
-          <!--              <path-->
-          <!--                id="s"-->
-          <!--                d="M1312 315c-14-8-28-9-35-2-1 1-4 5-3 9 2 11 32 9 34 21 1 5-3 10-7 13-8 5-17 0-18 0"-->
-          <!--                style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 9px"-->
-          <!--              />-->
-          <!--            </g>-->
-          <!--          </svg>-->
+            <g id="map">
+              <image
+                width="766"
+                height="489"
+                transform="translate(1.32 0.29) scale(1.3)"
+                xlink:href="@/assets/salinity/salinitySea/images/salt_zoom_map-01.jpg"
+              />
+            </g>
+            <g
+              id="Layer_1"
+              data-name="Layer 1"
+            >
+              <g v-if="isSeaLevelRiseMarkShowing">
+                <path
+                  id="ft1"
+                  d="M490.29,290.66c-.89-3.67-2.21-9-3.86-15.45-2.56-10-3.78-14.2-3.57-14.26.58-.19,10.87,31.61,11.36,31.46.29-.09-3-11.39-8.3-29.28"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.8739399392171521px"
+                />
+                <path
+                  id="ft2"
+                  d="M517.38,269.69c-2.48-1.63-5.92-3.87-10-6.53-11.51-7.43-16.28-10.34-16.18-10.52.25-.41,28.12,15.77,28.4,15.3.17-.28-9.06-6.13-25.34-16.17"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.8739399392171521px"
+                />
+                <path
+                  id="ft3"
+                  d="M488.54,232.11c18.47,4.35,29.78,7.13,29.71,7.42-.11.5-33-6.62-33.21-5.68-.08.38,5.08,1.91,14.86,4.81,6.26,1.86,11.51,3.33,15.29,4.37"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 0.8739399392171521px"
+                />
+                <path
+                  id="intake"
+                  d="M561.73,166.34l21,21"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.0587897872600323px"
+                />
+                <path
+                  id="num1"
+                  d="M472.89,303.64l8-4.66v12"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                />
+                <g id="ft1_f">
+                  <path
+                    d="M497.56,315.65c-.22-2-.11-3.67-.33-5.67.22-4.22.11-8.78.33-13l6.67-.67"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                  />
+                  <path
+                    d="M505.56,309l-7.33.67"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                  />
+                </g>
+                <g id="ft1_t">
+                  <path
+                    d="M513.57,295.64q-.35,9.67-.67,19.34"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                  />
+                  <path
+                    d="M508.23,297l12-2.67"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                  />
+                </g>
+                <path
+                  id="num2"
+                  d="M522.38,273.61a14.21,14.21,0,0,1,4-2.67c1.47-.65,4.07-1.79,5.33-.66a2.55,2.55,0,0,1,.67,2c-.14,1.32-1.36,2.16-2,2.66a13,13,0,0,0-4,6l6-.66"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                />
+                <g id="ft2_f">
+                  <path
+                    d="M545,286.16c-.23-2-.12-3.66-.34-5.66.22-4.23.11-8.78.34-13l6.66-.66"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                  />
+                  <path
+                    d="M553,279.5l-7.34.66"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                  />
+                </g>
+                <g id="ft2_t">
+                  <path
+                    d="M561,266.16q-.33,9.68-.67,19.34"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                  />
+                  <path
+                    d="M555.67,267.49l12-2.66"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                  />
+                </g>
+                <path
+                  id="num3"
+                  d="M524.33,234.09l8.67-2,2,.66-4.66,4a5.31,5.31,0,0,1,3.33,1.34,4.55,4.55,0,0,1,1.33,2c.51,2-2.38,5.19-7.33,7.33"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                />
+                <g id="ft3_f">
+                  <path
+                    d="M544.29,248.64c-.22-2-.11-3.67-.33-5.67.22-4.22.11-8.78.33-13l6.67-.67"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                  />
+                  <path
+                    d="M552.29,242l-7.33.67"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                  />
+                </g>
+                <g id="ft3_t">
+                  <path
+                    d="M560.3,228.64q-.34,9.66-.67,19.33"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                  />
+                  <path
+                    d="M555,230l12-2.67"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.667192223992096px"
+                  />
+                </g>
+              </g>
+              <g v-if="isDrinkingWaterIntakesShowing">
+                <path
+                  id="drink_d"
+                  d="M628.27,167.27c0,2.45-.82,9.79.82,14.69a55.69,55.69,0,0,0,8.15-3.27,38.66,38.66,0,0,0,7.35-4.89c1.36-1.05,3.3-2.83,3.26-4.08s-.82-1.63-2.45-2.45c-3.72-1.86-17.53-2.34-19.58-2.44"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.263003515098081px"
+                />
+                <path
+                  id="drink_r"
+                  d="M657.64,183.59a27.89,27.89,0,0,1-1.63-5.71,28.55,28.55,0,0,1,0-9.79,18.06,18.06,0,0,1,4.89-.82,14.24,14.24,0,0,1,7.34,1.63c1,.6,2.5,1.43,2.45,2.45,0,.43-.31.94-3.26,2.45-2.35,1.19-4,1.79-6.49,2.92-1.07.48-1.94.89-2.49,1.16l7.34,4.89"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.263003515098081px"
+                />
+                <path
+                  id="drink_i"
+                  d="M678.85,169.72v11.42"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.263003515098081px"
+                />
+                <path
+                  id="drink_n"
+                  d="M688.64,182.77V168.9l13.05,12.24.81-16.31"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.263003515098081px"
+                />
+                <g id="drink_k">
+                  <path
+                    d="M713.11,164.83v17.94"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.263003515098081px"
+                  />
+                  <path
+                    d="M725.34,168.9l-10.6,6.53a16.81,16.81,0,0,0,9,5.71"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.263003515098081px"
+                  />
+                </g>
+                <path
+                  id="ing_i"
+                  d="M732.69,169.72v11.42"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.263003515098081px"
+                />
+                <path
+                  id="ing_n"
+                  d="M742.48,181.14V167.27l13,12.24.81-16.32"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.263003515098081px"
+                />
+                <path
+                  id="ing_g"
+                  d="M776.74,165.64a21.21,21.21,0,0,0-4.08,1.63c-2.42,1.27-6.47,3.4-7.34,7.34-.11.49-.73,3.28.81,4.9,2.18,2.28,7,.44,8.16,0a14.24,14.24,0,0,0,5.71-4.08l-2.45-1.63L771,175.43"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.263003515098081px"
+                />
+                <path
+                  id="water_w"
+                  d="M629.12,196.89,633.94,213l5.63-10.45q2.8,5.22,5.62,10.45l5.63-16.08"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                />
+                <g id="water_a">
+                  <path
+                    d="M654.84,217c1.34-3.74,2.52-6.87,3.43-9.27.59-1.53,1.08-2.78,1.39-3.58,1.26-3.25,2.37-6,3.21-8a2.63,2.63,0,0,1,1.61,0,3.11,3.11,0,0,1,1.61,1.61c.83,1.59,2.69,7.39,4.82,15.27"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                  />
+                  <path
+                    d="M658.05,209.75l9.65-3.21"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                  />
+                </g>
+                <g id="water_t">
+                  <path
+                    d="M674.12,194.48l15.27-2.41"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                  />
+                  <path
+                    d="M680.55,217.79c.27-8.57.54-15.54.81-24.11"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                  />
+                </g>
+                <g id="water_e">
+                  <path
+                    d="M701.45,194.48l-8.84,1.61a42.83,42.83,0,0,0-.81,9.64,43.44,43.44,0,0,0,1.61,10.45l7.23-1.61"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                  />
+                  <path
+                    d="M700.64,208.14a13.63,13.63,0,0,0-3.21,0,13.3,13.3,0,0,0-3.21.81"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                  />
+                </g>
+                <path
+                  id="water_r"
+                  d="M709.49,213.77a27.29,27.29,0,0,1-1.61-5.63,28.19,28.19,0,0,1,0-9.64,17.41,17.41,0,0,1,4.82-.8,14,14,0,0,1,7.23,1.6c1,.59,2.47,1.41,2.41,2.41,0,.43-.3.93-3.21,2.42-2.31,1.17-3.9,1.76-6.39,2.87-1.06.48-1.91.88-2.45,1.14l7.23,4.83"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                />
+                <path
+                  id="intakes_i"
+                  d="M740.83,200.91v11.25"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                />
+                <path
+                  id="intakes_n"
+                  d="M750.47,213.77V200.11l12.86,12q.4-8,.8-16.07"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                />
+                <g id="intakes_t">
+                  <path
+                    d="M769.76,194.48,785,192.07"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                  />
+                  <path
+                    d="M776.19,217.79c.24-7.77.51-14.74.8-24.11"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                  />
+                </g>
+                <g id="intakes_a">
+                  <path
+                    d="M785.83,217c1.35-3.74,2.52-6.87,3.44-9.27.58-1.53,1.07-2.78,1.38-3.58,1.27-3.25,2.37-6,3.22-8a2.6,2.6,0,0,1,1.6,0,3.07,3.07,0,0,1,1.61,1.61c.84,1.59,2.7,7.39,4.82,15.27"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                  />
+                  <path
+                    d="M789.05,209l9.64-3.22"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                  />
+                </g>
+                <g id="intakes_k">
+                  <path
+                    d="M809.94,195.29v18.48"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                  />
+                  <path
+                    d="M822.8,197.7l-12.75,9.1"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.6431874083106233px"
+                  />
+                  <path
+                    d="M821,211.36l-10-3.64"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.6431874083106233px"
+                  />
+                </g>
+                <g id="intakes_e">
+                  <path
+                    d="M838.07,194.48l-8.84,1.61a42.83,42.83,0,0,0-.81,9.64A43.44,43.44,0,0,0,830,216.18l7.23-1.61"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                  />
+                  <path
+                    d="M837.26,208.14a13.63,13.63,0,0,0-3.21,0,13.3,13.3,0,0,0-3.21.81"
+                    style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.2145771475215748px"
+                  />
+                </g>
+                <path
+                  id="intakes_s"
+                  d="M859.93,196c-6.3-3.67-12.53-3.78-15.33-.79-.35.37-1.83,2-1.5,3.76.89,5,14.07,4.11,15.16,9.09.47,2.15-1.48,4.52-3.21,5.63-3.49,2.23-7.51.25-7.73.14"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.9606188022845683px"
+                />
+                <path
+                  id="arrow_intake"
+                  d="M624,214.17A28.51,28.51,0,0,1,588,195l-4.5,11.25,3.38-13.5,12.37,1.13L588,195"
+                  style="fill: none;stroke: #000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.6163992909617715px"
+                />
+              </g>
+            </g>
+          </svg>
         </div>
       </div>
       <div class="salinity-sea-section-text">
         <div id="sea-salt-wedge-text">
-          <h3 class="text-content-side">
+          <h3
+            id="header-salt-front-intro-text"
+            class="text-content-side"
+          >
             The Salt Wedge
           </h3>
           <p class="text-content-side">
@@ -335,7 +285,7 @@
           </p>
         </div>
         <div
-          id="sea-salt-scroll-target"
+          id="sea-level-scroll-target"
           v-observe-visibility="{
             callback: visibilityChanged,
             intersection: {
@@ -347,7 +297,10 @@
           <div
             id="sea-salt-rise-text"
           >
-            <h3 class="text-content-side">
+            <h3
+              id="header-salt-front-move-text"
+              class="text-content-side"
+            >
               The salt front will likely move upstream as sea levels rise
             </h3>
             <p class="text-content-side">
@@ -364,28 +317,42 @@
 </template>
 
 <script>
-    export default {
-        name: 'SalinitySea',
-        data() {
-            return {
-                isSectionInView: false
-            }
-        },
-        methods: {
-            visibilityChanged(isVisible, entry) {
-                this.isVisible = isVisible;
-                const targetElement = document.querySelector('#sea-salt-rise-text');
-                if (isVisible === true) {
-                    this.isSectionInView = true;
-                    targetElement.classList.add('visible');
-
-                } else if (isVisible !== true) {
-                    this.isSectionInView = false;
-                    targetElement.classList.remove('visible');
-                }
-            }
-        }
+export default {
+  name: 'SalinitySea',
+  data() {
+    return {
+      isSeaLevelRiseMarkShowing: false,
+      isDrinkingWaterIntakesShowing: false
     }
+  },
+  methods: {
+    visibilityChanged(isVisible, entry) {
+      this.isVisible = isVisible;
+      const targetElement = document.querySelector('#sea-salt-rise-text');
+      if (isVisible === true) {
+        targetElement.classList.add('visible');
+        switch(entry.target.id) { // this is set up for more conditions, right now the switch statement is not needed since there is only one condition
+          case 'sea-level-scroll-target' :
+            this.isSeaLevelRiseMarkShowing = true;
+            this.isDrinkingWaterIntakesShowing = true;
+            break;
+          default:
+            break;
+        }
+      } else if (isVisible !== true) {
+        targetElement.classList.remove('visible');
+        switch(entry.target.id) {  // this is set up for more conditions, right now the switch statement is not needed since there is only one condition
+          case 'sea-level-scroll-target' :
+            this.isSeaLevelRiseMarkShowing = false
+            this.isDrinkingWaterIntakesShowing = false;
+            break;
+          default:
+            break;
+        }
+      }
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">
@@ -733,20 +700,14 @@
       grid-row: 1;
       align-self: start;
     }
-    #container-salinity-sea-svg-salt-front {
-      grid-column: 1;
-      grid-row: 1;
-      align-self: start;
-    }
-    #container-salinity-sea-svg-salt-feet {
-      grid-column: 1;
-      grid-row: 1;
-    }
   }
   .salinity-sea-section-text {
     z-index: 2;
     #sea-salt-wedge-text {
       padding-bottom: 15rem;
+    }
+    div:last-child {
+      padding-bottom: 30em;
     }
     #sea-salt-rise-text {
       opacity: 0;
@@ -754,9 +715,6 @@
     }
     #sea-salt-rise-text.visible {
       opacity: 1;
-    }
-    div:last-child {
-      padding-bottom: 30em;
     }
   }
 }
@@ -766,12 +724,20 @@
     #salinity-sea-container {
       grid-template-columns: 1fr;
       justify-items: center;
-
+      .salinity-sea-section-image {
+        top: 15em;
+      }
       .salinity-sea-section-text {
         padding-top: 40em;
         padding-bottom: 0;
         .text-content-side  {
           background-color: rgba(255,255,255, 0.75);
+        }
+        #header-salt-front-move-text {
+          margin-top: 10em;
+        }
+        #sea-salt-rise-text {
+          opacity: 1;
         }
       }
     }
