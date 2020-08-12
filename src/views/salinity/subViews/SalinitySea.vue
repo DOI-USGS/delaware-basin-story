@@ -327,7 +327,6 @@ export default {
   },
   methods: {
     visibilityChanged(isVisible, entry) {
-      console.log('entry ', entry.target.id)
       this.isVisible = isVisible;
       const targetElement = document.querySelector('#sea-salt-rise-text');
       if (isVisible === true) {
