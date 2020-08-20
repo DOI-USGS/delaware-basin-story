@@ -25,6 +25,8 @@
         return {
           title: 'Salinity',
           titleBackingImage:require('@/assets/salinity/salinitySea/images/GreenLarge.png')
+
+          
         }
       }
   }

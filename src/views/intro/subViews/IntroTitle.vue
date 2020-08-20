@@ -2,7 +2,7 @@
   <div id="container-intro-title">
     <img
       class="title-intro-cloud-backing"
-      src="@/assets/intro/images/background_rainbowLarge.png"
+      src="@/assets/intro/images/rainbow-min.png"
       alt="image of watercolor cloud of color"
     >
     <h1 class="section-title">

@@ -67,6 +67,19 @@
   @import url("https://use.typekit.net/jja8kth.css");
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
+
+  // Import Colors
+
+  $offWhite: rgb(236,227,220);
+  $darkBlue: rgb(30, 86,120);
+  $lightBlue: rgb(73,166,206);
+  $darkGreen: rgb(46,131,107);
+  $lightGreen: rgb(184,215,203);
+  $tan: rgb(223,196,163);
+  $orange: rgb(222,121,38);
+
+  // General Styling
+
   body {
     margin: 0;
     padding: 0;
@@ -83,7 +96,7 @@
     h1 {
       font-family: chantal, sans-serif;
       font-weight: bold;
-      font-size: 3em;
+      font-size: 4em;
     }
     h2 {
       font-family: 'Noto Sans', sans-serif;
@@ -93,7 +106,11 @@
     h3 {
       font-family: 'Noto Sans', sans-serif;
       font-weight: bolder;
-      font-size: 1.8em;
+      font-size: 1.6em;
+    }
+    h4{
+      font-size: 1.2em;
+      font-weight: bolder;
     }
 
     .byline {
@@ -102,12 +119,15 @@
 
     }
 
+    .emph {
+      font-weight: bold;
+    }
     // Text-only
     .text-content {
       min-width: 350px;
       max-width: 700px;
       margin: 0 auto;
-      padding: 50px 20px;
+      padding: 5em 0 5em 0;
     }
 
     // Text and Content side-by-side
@@ -152,5 +172,34 @@
     #app h1 {
       font-size:1.5em;
     }
+  }
+
+  // Link Styling
+  /* unvisited link */
+  a{
+    text-decoration-color: none;
+  }
+
+  a:link {
+    color: $darkGreen;
+  }
+
+  /* visited link */
+  a:visited {
+    color: $darkGreen;
+  }
+
+  /* mouse over link */
+  a:hover {
+    cursor: pointer;
+    text-decoration-color: $darkGreen;
+    text-decoration-thickness: .01em;
+    text-underline-offset: 3px;
+    text-decoration-style: wavy;
+  }
+
+  /* selected link */
+  a:active {
+    color: $orange;
   }
 </style>

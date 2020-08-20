@@ -7,14 +7,14 @@
         >
       </div>
       <div class="salinity-road-text-container">
-        <h3 class="text-content-side">
-          There are other sources of salt besides the sea.
-        </h3>
+        <h4 class="text-content-side">
+          Road Salt
+        </h4>
         <p class="text-content-side">
-          Even as we toil to keep ocean salt out of the lower Delaware River, we actively add salt to waters throughout the Basin. Most prominently, rock salt is applied to roads in winter to make driving and walking safer. But melting snow and ice carry dissolved salt into streams and rivers, contaminating those waters with levels of chloride that can be toxic to aquatic plants and animals and can even threaten drinking water quality.
+          Even as we manage river flow to keep the ocean salt out of the lower Delaware River, we work against ourselves by actively adding salt to waters throughout the Basin. Rock salt applied to roads in winter to makes driving and walking safer. But when the snow and ice melts, the runoff carries dissolved salt into streams and rivers, contaminating those waters with <a href="https://www.usgs.gov/news/urban-stream-contamination-increasing-rapidly-due-road-salt">levels of chloride that can be toxic</a> to aquatic plants and animals and can even threaten drinking water quality.
         </p>
         <p class="text-content-side">
-          Solutions to that excess reduce road salt in streams include using chemical deicing alternatives and moderating road salt applications. But the stakes are high, because safer roads are an undeniable public good. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs.
+          Reducing road salt concentrations in streams can involve chemical deicing alternatives and moderating road salt applications. But safe roads are important too. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs.
         </p>
       </div>
     </div>
