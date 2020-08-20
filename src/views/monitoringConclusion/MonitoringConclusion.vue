@@ -2901,7 +2901,7 @@
           class="conclusion-text-section"
         >
           <div>
-            <h3
+            <h4
               id="text-block-intro"
               v-observe-visibility="{
                 callback: visibilityChanged,
@@ -2912,14 +2912,13 @@
               }"
               class="text-content-side"
             >
-              The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators.
-            </h3>
+              The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators. 
+            </h4>
             <div
               id="p-container-intro"
               class="p-container text-content-side"
             >
-              <p>The United States chose the Delaware River Basin as the pilot site for the Next-Generation Water Observing System (NGWOS). The investments in water monitoring are diverse and numerous. As part of NGOWS, the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep.</p>
-              <p>Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current water availability and water quality.</p>
+              <p>The US federal government chose the Delaware River Basin as the pilot site for the Next-Generation Water Observing System (NGWOS). As part of the pilot, the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep. Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current water availability and water quality.</p>
             </div>
           </div>
         </div>
@@ -2935,9 +2934,9 @@
                 alt=""
               >
               <h2 class="monitoring-location-number">
-                28~
+                34
               </h2>
-              <h2
+              <h4
                 id="text-block-new_enhanced"
                 v-observe-visibility="{
                   callback: visibilityChanged,
@@ -2948,14 +2947,14 @@
                 }"
                 class="monitoring-title"
               >
-                new and enhanced
-              </h2>
+                New and Enhanced Gages
+              </h4>
             </div>
             <div
               id="p-container-new_enhanced"
               class="p-container text-content-side"
             >
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Measurements of real-time flow levels are critical to the decision makers of the Basin, especially in the River Master’s office during late-summer low flows. To better understand streamflow in various locations of the basin, 34 new stream gages have been installed the last three years, each housing delicate monitoring equipment that is collecting data all day, every day. </p>
             </div>
           </div>
           <div class="number-cloud-title-container">
@@ -2967,9 +2966,9 @@
                 alt=""
               >
               <h2 class="monitoring-location-number">
-                56~
+                56
               </h2>
-              <h2
+              <h4
                 id="text-block-salinity"
                 v-observe-visibility="{
                   callback: visibilityChanged,
@@ -2980,15 +2979,15 @@
                 }"
                 class="monitoring-title"
               >
-                salinity
-              </h2>
+                Salinity
+              </h4>
             </div>
             <div class="subtext-text-container">
               <div
                 id="p-container-salinity"
                 class="p-container text-content-side"
               >
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Keeping tabs on the evolving salinity issues in the Delaware River is important to understanding how the location of the salt front is changing.  It also allows scientists to better understand ecosystem health in streams that are impacted by road salting. Specific conductivity sensors measure a variable related to salinity – the ability of the water to conduct electricity – and relationships between conductivity and salinity can be used to provide a picture of salt concentration in the water in 56 new locations in the Basin.</p>
               </div>
             </div>
           </div>
@@ -3001,9 +3000,9 @@
                 alt=""
               >
               <h2 class="monitoring-location-number">
-                98~
+                98
               </h2>
-              <h2
+              <h4
                 id="text-block-temp"
                 v-observe-visibility="{
                   callback: visibilityChanged,
@@ -3014,15 +3013,15 @@
                 }"
                 class="monitoring-title"
               >
-                temperature
-              </h2>
+                Temperature
+              </h4>
             </div>
             <div class="subtext-text-container">
               <div
                 id="p-container-temp"
                 class="p-container text-content-side"
               >
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Water temperature is a key factor in the health of many aquatic organisms, and better, broader, and faster delivery of water temperature data can help inform reservoir releases and help anglers decide when to fish. New temperature sensors were added to 98 locations in the Basin.</p>
               </div>
             </div>
           </div>
@@ -3035,9 +3034,9 @@
                 alt=""
               >
               <h2 class="monitoring-location-number">
-                8~
+                8
               </h2>
-              <h2
+              <h4
                 id="text-block-cameras"
                 v-observe-visibility="{
                   callback: visibilityChanged,
@@ -3048,8 +3047,8 @@
                 }"
                 class="monitoring-title"
               >
-                cameras
-              </h2>
+                Cameras
+              </h4>
             </div>
             <div class="subtext-text-container">
               <div
@@ -3057,7 +3056,7 @@
                 class="p-container text-content-side"
               >
                 <p id="p-cameras">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Eight new cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These cameras open up the potential for new realms of science and data processing for flow measurement, and support USGS visually sharing the dynamic lives of rivers and streams.
                 </p>
               </div>
             </div>
@@ -3071,9 +3070,9 @@
                 alt=""
               >
               <h2 class="monitoring-location-number">
-                3~
+                3
               </h2>
-              <h2
+              <h4
                 id="text-block-r-d"
                 v-observe-visibility="{
                   callback: visibilityChanged,
@@ -3084,15 +3083,15 @@
                 }"
                 class="monitoring-title"
               >
-                R&D
-              </h2>
+                R+D
+              </h4>
             </div>
             <div class="subtext-text-container">
               <div
                 id="p-container-r-d"
                 class="p-container text-content-side"
               >
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>USGS field staff collect various water-quality data using a programmable  underwater robot – the EcoMapper. The EcoMapper’s back-and-forth scanning of the lower waters of the Basin provides data that can be used to build maps of how water quality changes through the 3D space of the Delaware Bay.</p>
               </div>
             </div>
           </div>
@@ -3105,9 +3104,9 @@
                 alt=""
               >
               <h2 class="monitoring-location-number">
-                190~
+                190
               </h2>
-              <h2
+              <h4
                 id="text-block-all"
                 v-observe-visibility="{
                   callback: visibilityChanged,
@@ -3118,8 +3117,8 @@
                 }"
                 class="monitoring-title"
               >
-                all
-              </h2>
+                All
+              </h4>
             </div>
             <div class="subtext-text-container">
               <div
@@ -3130,6 +3129,13 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="text-content-side">
+          <h4>A New Generation of Water Science in the Delaware River Basin</h4>
+          <p>Water uses in the Delaware Basin are diverse and complicated, and the need for information that describes the present and future conditions of water availability and water quality are more pressing than ever.</p>
+          <p>The advancements in water science and monitoring paint a clearer picture of how the DRB has changed, and new efforts are building models that better predict the health and function of the river in the future. As a result, the new advanced monitoring strategy of the NGWOS is enhancing water data collection, and the modernized data management – with increased public availability, rapid data downloads, and interactive views of current conditions – makes it easier to study the health of Basin.</p>
+          <p>While this story focused on flow, salinity, and water temperature, the USGS and collaborators study a multitude of other water-quality factors in the Basin.  We could tell additional stories about sediment, turbidity, nutrients, dissolved oxygen, pathogens, heavy metals, and chemical contaminants.</p>
+          <p>With all these aspects of a healthy river basin, monitoring and modeling enables wiser management decisions, a more optimal balance of water uses, and a richer understanding of this beautiful and life-sustaining river.</p>
         </div>
       </div>
     </div>
