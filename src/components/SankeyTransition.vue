@@ -34,17 +34,19 @@
         }"
         class="sankey-text-and-title"
       >
-        <h3
+        <h4
           id="sankey-title-1"
           class="text-content-side"
         >
-          Withdrawals, discharges, and reservoir management affect where water is available in the Basin.
-        </h3>
+          Flow in the Basin today is managed through formal cooperation among federal, state, and local entities.
+        </h4>
         <div
           id="p-container-1"
           class="p-container text-content-side"
         >
-          <p>Today’s flow management in the Basin is handled through formal cooperation among federal, state, and local entities. At the highest level, the USGS Delaware River Master and the Delaware River Basin Commission review development proposals, regulate water withdrawals and diversions, and evaluate the effects of human activities throughout the Basin. In addition, these two regulatory groups sometimes releases water from major reservoirs throughout the Basin at key times of year.</p>
+          <p>The River Master and the DRBC use water monitoring data to decide how and when to release water from major <span class="emph">reservoirs</span> throughout the Basin at key times of the year. Those reservoirs are generally used for flood control, hydroelectric power, water supply, and recreation.</p>
+          <p>Withdrawals, discharges, and reservoir management affect where water is available in the Basin.</p>
+          <p>But the water cycle has a big say in how much water is available, too.</p>
         </div>
       </div>
       <div
@@ -58,17 +60,18 @@
         }"
         class="sankey-text-and-title"
       >
-        <h3
+        <h4
           id="sankey-title-2"
           class="text-content-side"
         >
-          The water cycle has a big say in how much water is available, too.
-        </h3>
+          Summer Lows
+        </h4>
         <div
           id="p-container-2"
           class="p-container text-content-side"
         >
-          <p>Most years, during the late summer and especially during droughts, the streams and rivers of the Basin have lower, slower flows. But human water demands don’t let up! The flow targets at Montague and Trenton are designed to protect against water hoarding upstream that would deprive downstream users – human and otherwise – of fair access to water.</p>
+          <p>In the late summer of most years, the streams and rivers of the Basin have lower, slower flows.  The normal low flows are exacerbated during summers with droughts.  With the right conditions, the river flow has a chance of falling below the target levels set by the 1954 Supreme Court decree.</p>
+          <p>Even with low flows, human water demands don’t let up! The flow targets at Montague and Trenton are designed to protect against water hoarding upstream that would deprive downstream users – human and otherwise – of fair access to water.</p>
         </div>
       </div>
       <div
@@ -82,17 +85,18 @@
         }"
         class="sankey-text-and-title"
       >
-        <h3
+        <h4
           id="sankey-title-3"
           class="text-content-side"
         >
-          Reservoirs are effective short-term buffers against extreme flows – but only given the right information.
-        </h3>
+          Reservoir Releases
+        </h4>
         <div
           id="p-container-3"
           class="p-container text-content-side"
         >
-          <p>Through judicious water storage in the winter and timed releases in the summer, reservoir managers can provide a buffer against excessively low flows by carefully releasing some of the stored water at just the right rate. Reservoirs in the Basin are also used for flood control, hydroelectric power, water supply, and recreation.</p>
+          <p>But with careful management, reservoirs can provide a buffer against these excessively low flows.  Reservoirs store water during times when there’s plenty of it. When the River flow has a chance of dropping below the flow targets set by the 1954 decree, the River Master can decide to carefully release some of the stored water in the summer at just the right rate and time to fill the gap.</p>
+          <p>With accurate data and smart management, there’s enough water available for everyone. </p>
         </div>
       </div>
     </div>

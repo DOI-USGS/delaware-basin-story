@@ -108,6 +108,10 @@
       font-weight: bolder;
       font-size: 1.6em;
     }
+    h4{
+      font-size: 1.2em;
+      font-weight: bolder;
+    }
 
     .byline {
       font-family: 'Noto Sans', sans-serif;
