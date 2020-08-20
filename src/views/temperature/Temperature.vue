@@ -4,6 +4,11 @@
       :title="title"
       :image="titleBackingImage"
     />
+    <div class="text-content">
+      <p>Water temperature is water-quality measure that is closely linked to the health of aquatic organisms.  Some habitats exist only within certain temperature ranges, it can make organisms more or less susceptible to diseases, and temperature changes act as cues to begin a species’ reproductive cycle. </p>
+      <p>In the Basin, there are many different thermal habitats that support diverse, vibrant communities of aquatic life. Decisionmakers in the Basin need to know what species live where, what kinds of water temperature they prefer, and how their management decisions could impact those species.</p>
+      <p>Some factors that modify temperature – like weather and climate – cannot be controlled by decisionmakers in the Basin.  Other factors – like reservoir releases and land-use – can be strategically managed to maintain or modify temperatures in certain river reaches.</p>    
+    </div>
     <div id="header">
       <img
         id="waterline"
@@ -14,11 +19,9 @@
     <div id="content">
       <div class="row-fish">
         <div class="text-content">
-          <p>Water temperature is closely linked to the health of aquatic organisms, especially the health of their reproductive cycle. In the Basin, there are many different thermal habitats that support a diversity of vibrant communities of aquatic life. Decisionmakers in the Basin have to know what species live where, what kinds of water temperature they prefer, and how their management decisions could impact those species.</p>
-          <p>Some factors that modify temperature – like weather and climate – cannot be controlled by decisionmakers in the Basin.  Other factors – like reservoir releases and riparian land-use – can be strategically used to maintain or modify temperatures in certain river reaches.</p>
-          <h3 id="trout-h3">
+          <h4 id="trout-h3">
             Take Brook trout, for example.
-          </h3>
+          </h4>
         </div>
         <div class="right">
           <div class="image-stack">
@@ -35,11 +38,15 @@
           </div>
         </div>
         <div class="text-content">
-          <p>Brookies are the only native trout species within the Basin, and theyhave been used as indicators of water quality due to their sensitivity to water temperatures.</p>
-          <p>In the fall, trout need a cool temperature to signal the beginning of their reproductive cycle.  Historically, this corresponds with a certain time of year, usually November. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water, and once the egg are fertilized the mating pair bury the nest for protection. The eggs remain unhatched all winter, and require the cool water to develop properly.</p>
-          <p>Warmer water temperatures are bad news for Brookies even outside of the reproductive cycle.  Brookies can survive in warmer waters than they like, but they can’t compete well with non-native Brown trout.The warm water reduces growth rates and can make trout more susceptible to diseases. Brookies instead thrive in river reaches with super cold water where the Brown trout can’t survive.</p>
-          <h3>That’s why reservoir release decisions are such an important management tool.  </h3>
-          <p>The extra rush of cool reservoir water not only increases the river flow but also brings down the temperature of the water downstream into a range that’s healthy for trout.</p>
+          <p>Brookies are the only native trout species within the Basin, and they are used as indicators of water quality due to their sensitivity to water temperatures.</p>
+          <p>In the fall, trout wait for a drop in water temperature drop begin their reproductive cycle.  Historically, this happens in November.</p>
+          <p>With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection.</p>
+          <p>The eggs rest there all winter, and require the water to stay cool to develop properly.</p>
+        </div>
+        <div class="text-content">
+          <h4>Water Temperature matters for the health of the species</h4>
+          <p>If the river water doesn’t cool down enough in the fall, brookies could miss their reproductive cue.  If the waters stay warmer than usual in the winter, the eggs won’t develop properly.</p>
+          <p>Warming water temperature is bad news for brookies even outside of the reproductive cycle.  Brookies can certainly survive in warmer waters, but they grow more slowly and are more susceptible to disease, meaning that they can’t compete well with non-native Brown trout. They instead thrive in river reaches with very cold water where the Brown trout can’t survive at all.</p>
         </div>
       </div>
       <div
@@ -64,16 +71,19 @@
             class="row-mussels"
           >
             <div class="text-content">
-              <h3
-                id="mussel-h3"
+              <h4 
+                id="mussel-h3" 
                 class="appear"
               >
                 Now, meet the Dwarf Wedgemussel, an endangered species.
-              </h3>
-
-              <p>Dwarf wedgemussels have their own preferences for water temperatures and river flow rates which are distinctly different than brook trout. Wedgemussels prefer warmer temperatures, so reservoir releases have to be carefully calculated and monitored to protect mussel habitat from getting too cool.</p>
-              <p>Managing water temperature in the modern era also requires that we consider the impacts of changing flows, groundwater connectivity, and stream shading, which require advanced monitoring and modeling. A combination of temperature monitoring and modeling provides policymakers, anglers, land resource planners, and water managers with important information. This information is used to make decisions that can impact economic and ecological health throughout the entire river basin.</p>
+              </h4>
             </div>
+            <div class="text-content">
+              <p>Dwarf wedgemussels have their own preferences for water temperatures and river flow rates, preferences that are distinctly different than brookies. Wedgemussels like their watery habitats to stay at a warmer temperatures than the brookies do.</p>
+              <p>That’s why reservoir release decisions are such an important management tool.</p>
+              <p>Reservoir water stays cool. When managers release reservoir water, the release sends an extra rush of cool reservoir water downstream.  With the right data and monitoring, managers can make sure that release decisions to maintain enough flow also keep water temperature in a healthy range for the species that live there.</p>
+            </div>
+
             <div class="image-stack">
               <img
                 id="substrate"
@@ -287,6 +297,13 @@
           </div>
         </transition-group>
       </div>
+      <div class="text-content">
+        <h4>
+          Managing for Quality and Quantity
+        </h4>
+        <p>Managing water in the modern era requires that we consider as many facets of an ecosystem as possible – flow, temperature, salinity, and many other water-quality dimensions. These decisions impact economic and ecological health throughout the entire river basin.  To be able to know when, how, and what decisions to make, managers have to have lots of accurate data at their fingertips.</p>
+        <p>That’s where the USGS comes in.</p>
+      </div>
     </div>
   </div>
 </template>
@@ -322,7 +339,7 @@
 
 <style scoped lang="scss">
   #mussels-swap-container {
-    height: 100vh;
+    height: 70vh;
     #row-mussels-container {
       display: block;
       position: relative;;
@@ -404,7 +421,7 @@
           display:grid;
           grid-template-columns: 1;
           position: relative;
-          margin-bottom: 0;
+          margin-bottom: 5em;
           width: 80%;
           float: right;
 
