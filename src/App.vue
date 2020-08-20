@@ -96,7 +96,7 @@
     h1 {
       font-family: chantal, sans-serif;
       font-weight: bold;
-      font-size: 3em;
+      font-size: 4em;
     }
     h2 {
       font-family: 'Noto Sans', sans-serif;

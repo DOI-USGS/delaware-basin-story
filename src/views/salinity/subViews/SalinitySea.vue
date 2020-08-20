@@ -1,5 +1,8 @@
 <template>
   <section id="salinity-sea">
+    <div class="text-content">
+      <p>As freshwater spills from the river onto the saltier, ocean-influenced waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the ocean as it intrudes into the bay and estuary. The boundary of that wedge is called the “salt front.”</p>
+    </div>
     <div id="salinity-sea-container">
       <div class="salinity-sea-section-image">
         <div id="container-salinity-sea-image-background">
@@ -292,15 +295,16 @@
       </div>
       <div class="salinity-sea-section-text">
         <div id="sea-salt-wedge-text">
-          <h3
+          <h4
             id="header-salt-front-intro-text"
             class="text-content-side"
           >
-            The Salt Wedge
-          </h3>
+            Seasonal Changes
+          </h4>
           <p class="text-content-side">
-            As freshwater spills from the river onto the saltier, ocean-influenced waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the intruding ocean. The bounds of that wedge – the “salt front” – migrate up and down the river channel over the daily cycle of ocean tides, the seasonal cycle of lower and higher river flows, and the multi-year fluctuations of higher and lower flows.
+            The salt front migrates up and down the river channel over the daily cycle of ocean tides.  The location of the salt front is also impacted by occasional storm surges, the seasonal cycle of high or low river flows, and fluctuations as the river changes over the course of many years.
           </p>
+          <p class="text-content-side">Fluctuations within a normal range are good for the ecosystems that are used to brackish water. </p>
         </div>
         <div
           id="sea-level-scroll-target"
@@ -312,24 +316,26 @@
             }
           }"
         >
-          <div
-            id="sea-salt-rise-text"
-          >
-            <h3
-              id="header-salt-front-move-text"
-              class="text-content-side"
-            >
-              The salt front will likely move upstream as sea levels rise
-            </h3>
+          <div id="sea-salt-rise-text" >
+            <h4 id="header-salt-front-move-text" class="text-content-side">
+              Sea Level Rise
+            </h4>
             <p class="text-content-side">
-              While these natural variations usually pose no problems, sea level rise is expected to push the salt front so far inland – especially during droughts – that water at the major Trenton, NJ intake could be contaminated. Salty water corrodes surface water intake pipes, raises the cost of drinking water treatment, and is potentially toxic to aquatic plants and fish.
+              While these natural variations usually pose no problems, sea level rise is expected to push the salt front much farther inland.
             </p>
             <p class="text-content-side">
-              Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. Remember the Supreme-Court-mandated flow targets at Montague and Trenton? One key motivation for setting the targets where they are is to keep pressing the salt front toward the ocean.  Maintaining the target flow is an important tool for protecting our current uses of freshwater in the lower Basin. Good data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location.
+              Projections suggest that with just 3 feet of sea level rise, the salt front could push several miles upriver where water at public supply intakes, such as Philadelphia’s, could be contaminated. Salty water corrodes water intake pipes, raises the cost of drinking water treatment, and is toxic to many freshwater aquatic plants and fish.
             </p>
           </div>
         </div>
+        <div class="text-content-side">
+          <h4>How Monitoring and Flow Management Help</h4>
+          <p>Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. One key motivation for the 1954 Supreme Court decree to set the flow targets is to keep enough freshwater flowing down the Delaware River to press the salt front back toward the ocean.</p>
+          <p>Maintaining the target flow is an important tool for protecting our current uses of freshwater in the lower Basin. Accurate data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location.</p>
+        </div>
+
       </div>
+      
     </div>
   </section>
 </template>
