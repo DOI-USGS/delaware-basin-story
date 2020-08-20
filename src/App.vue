@@ -106,7 +106,7 @@
     h3 {
       font-family: 'Noto Sans', sans-serif;
       font-weight: bolder;
-      font-size: 1.8em;
+      font-size: 1.6em;
     }
 
     .byline {
@@ -123,6 +123,7 @@
       min-width: 350px;
       max-width: 700px;
       margin: 0 auto;
+      padding: 5em 0 5em 0;
     }
 
     // Text and Content side-by-side

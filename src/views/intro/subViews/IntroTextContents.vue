@@ -48,13 +48,6 @@
   color: white;
 }
 
-#intro-text-content {
-  padding-top: 0;
-  #first-line {
-    padding: 5em 0 5em 0;
-
-  }
-}
 
 .byline {
   font-style: italic;
