@@ -50,12 +50,12 @@
 #intro-text-content {
   padding-top: 0;
   #first-line {
-    padding-top: 20em;
+    padding: 5em 0 5em 0;
+
   }
 }
 
 .byline {
-  padding-left: 20px;
   font-style: italic;
 }
 

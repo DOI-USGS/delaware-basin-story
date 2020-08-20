@@ -25,7 +25,7 @@
     data() {
       return {
         title: 'Flow',
-        image: require('../../assets/salinity/salinitySea/images/GreenLarge.png')
+        image: require('../../assets/flow/images/blue-min.png')
       }
     }
   }

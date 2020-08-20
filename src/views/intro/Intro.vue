@@ -34,7 +34,7 @@
         data() {
             return {
               title: process.env.VUE_APP_TITLE,
-              titleBackingImage: require('@/assets/intro/images/background_rainbowLarge.png')
+              titleBackingImage: require('@/assets/intro/images/rainbow-min.png')
             }
         },
         computed: {

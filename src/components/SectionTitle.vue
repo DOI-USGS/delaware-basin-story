@@ -26,7 +26,6 @@ export default {
   },
   data() {
     return {
-      test: require('../assets/salinity/salinitySea/images/GreenLarge.png')
     }
   }
 }
@@ -41,6 +40,7 @@ export default {
   .title-cloud-backing {
     grid-column: 1;
     grid-row: 1;
+    max-width: 1000px;
   }
   .section-title {
     color: white;

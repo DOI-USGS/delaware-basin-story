@@ -303,7 +303,7 @@
             return {
               isMusselsTextInView: false,
               title: 'Temperature',
-              titleBackingImage: require('@/assets/intro/images/background_rainbowLarge.png')
+              titleBackingImage: require('@/assets/temperature/images/dark-orange-min.png')
             }
         },
         methods: {

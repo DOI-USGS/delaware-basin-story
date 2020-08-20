@@ -3158,7 +3158,7 @@ export default {
       isShowingCamerasLocations: false,
       isShowingAllLocations: false,
       title: 'Monitoring',
-      titleBackingImage:require('@/assets/salinity/salinitySea/images/GreenLarge.png')
+      titleBackingImage:require('@/assets/intro/images/rainbow-min.png')
     }
   },
   methods: {
