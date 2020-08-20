@@ -67,6 +67,19 @@
   @import url("https://use.typekit.net/jja8kth.css");
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
+
+  // Import Colors
+
+  $offWhite: rgb(236,227,220);
+  $darkBlue: rgb(30, 86,120);
+  $lightBlue: rgb(73,166,206);
+  $darkGreen: rgb(46,131,107);
+  $lightGreen: rgb(184,215,203);
+  $tan: rgb(223,196,163);
+  $orange: rgb(222,121,38);
+
+  // General Styling
+
   body {
     margin: 0;
     padding: 0;
@@ -102,6 +115,9 @@
 
     }
 
+    .emph {
+      font-weight: bold;
+    }
     // Text-only
     .text-content {
       min-width: 350px;
@@ -151,5 +167,34 @@
     #app h1 {
       font-size:1.5em;
     }
+  }
+
+  // Link Styling
+  /* unvisited link */
+  a{
+    text-decoration-color: none;
+  }
+
+  a:link {
+    color: $darkGreen;
+  }
+
+  /* visited link */
+  a:visited {
+    color: $darkGreen;
+  }
+
+  /* mouse over link */
+  a:hover {
+    cursor: pointer;
+    text-decoration-color: $darkGreen;
+    text-decoration-thickness: .01em;
+    text-underline-offset: 3px;
+    text-decoration-style: wavy;
+  }
+
+  /* selected link */
+  a:active {
+    color: $orange;
   }
 </style>
