@@ -339,7 +339,7 @@
 
 <style scoped lang="scss">
   #mussels-swap-container {
-    height: 70vh;
+    height: 90vh;
     #row-mussels-container {
       display: block;
       position: relative;;
@@ -434,10 +434,10 @@
           #happyfish {
             grid-column: 1 / span 12;
             grid-row: 1;
-            animation: color-change 15s linear 5s forwards infinite;
-            -webkit-animation: color-change 15s linear 5s forwards infinite;
-            -moz-animation: color-change 15s linear 5s forwards infinite;
-            -o-animation: color-change 15s linear 5s forwards infinite;
+            animation: color-change 3s linear 3s forwards infinite;
+            -webkit-animation: color-change 3s linear 3s forwards infinite;
+            -moz-animation: color-change 3s linear 3s forwards infinite;
+            -o-animation: color-change 3s linear 3s forwards infinite;
 
           }
           #sadfish:hover {
