@@ -127,7 +127,7 @@
       min-width: 350px;
       max-width: 700px;
       margin: 0 auto;
-      padding: 5em 0 5em 0;
+      padding: 5em 20px 5em 20px;      
     }
 
     // Text and Content side-by-side
@@ -200,6 +200,10 @@
 
   /* selected link */
   a:active {
-    color: $orange;
+    font-style: bold;
+    text-decoration-color: $darkGreen;
+    text-decoration-thickness: .01em;
+    text-underline-offset: 3px;
+    text-decoration-style: wavy;
   }
 </style>

@@ -4256,6 +4256,7 @@ export default {
   object-fit: cover;
   height: 100vh;
   width: 100%;
+  min-width: 900px;
   overflow: auto;
   position: sticky;
   display: block;
