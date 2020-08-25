@@ -1,8 +1,5 @@
 <template>
   <section id="salinity-sea">
-    <div class="text-content">
-      <p>As freshwater spills from the river onto the saltier, ocean-influenced waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the ocean as it intrudes into the bay and estuary. The boundary of that wedge is called the “salt front.”</p>
-    </div>
     <div id="salinity-sea-container">
       <div class="salinity-sea-section-image">
         <div id="container-salinity-sea-image-background">
@@ -12,61 +9,19 @@
             viewBox="0 0 1000 638.59"
           >
             <defs>
-              <linearGradient
-                id="linear"
-                x1="0%"
-                y1="0%"
-                x2="-23%"
-                y2="100%"
-              >
-                <stop
-                  class="stop1"
-                  offset="0%"
-                  stop-opacity="0"
-                />
-                <stop
-                  class="stop1"
-                  offset="43%"
-                  stop-opacity="0"
-                />
-                <stop
-                  class="stop1"
-                  stop-opacity=".1"
-                >
-                  <animate
-                    attributeName="offset"
-                    values=".51;.49;.50;.54;.52;.51;.50;.50;.43;.47;.50;.51"
-                    dur="12s"
-                    repeatCount="indefinite"
-                  />
+              <linearGradient id="linear" x1="0%" y1="0%" x2="-23%" y2="100%">
+                <stop class="stop1" offset="0%" stop-opacity="0" />
+                <stop class="stop1" offset="43%" stop-opacity="0" />
+                <stop class="stop1"  stop-opacity=".1" >
+                  <animate attributeName="offset" values= ".51;.49;.50;.54;.52;.51;.50;.50;.43;.47;.50;.51"  dur="12s" repeatCount="indefinite" />
                 </stop>
-                <stop
-                  class="stop2"
-                  stop-opacity=".3"
-                >
-                  <animate
-                    attributeName="offset"
-                    values=".555;.53;.54;.58;.565;.555;.54;.54;.47;.515;.54;.555"
-                    dur="12s"
-                    repeatCount="indefinite"
-                  />
+                <stop class="stop2"  stop-opacity=".3" >
+                  <animate attributeName="offset" values=".555;.53;.54;.58;.565;.555;.54;.54;.47;.515;.54;.555"  dur="12s" repeatCount="indefinite" />
                 </stop>
-                <stop
-                  class="stop3"
-                  stop-opacity=".7"
-                >
-                  <animate
-                    attributeName="offset"
-                    values=".595;.57;.58;.62;.605;.595;.58;.58;.51;.555;.58;.595"
-                    dur="12s"
-                    repeatCount="indefinite"
-                  />
+                <stop class="stop3"  stop-opacity=".7" >
+                  <animate attributeName="offset" values=".595;.57;.58;.62;.605;.595;.58;.58;.51;.555;.58;.595"  dur="12s" repeatCount="indefinite" />
                 </stop>
-                <stop
-                  class="stop5"
-                  offset="80%"
-                  stop-opacity=".7"
-                />
+                <stop class="stop5" offset="80%"  stop-opacity=".7" />
               </linearGradient>
             
             </defs>
@@ -86,79 +41,34 @@
               
             </g>
             <g id="salty-water">
-              <path
-                fill="url(#linear)"
-                d="M580.22,12C592,25.43,615,28.58,615.67,49.67c5,18.71,32.73,20.1,40.24,37.65.81,12,3.32,16.36,6.18,18s7.08-.21,8.85,2.15c1.21,1.61.66,4.06.06,5.78-.7,5.79-4.25,9.33-7.18,9.12-.35,0-2.14-.21-3.89-2.69-1.4.32-.54,2.49-.83,3.29-1-1.12-.83-2.25-1.92-3.27-4.23-.38-1,9-5.61,6.4a27.73,27.73,0,0,1-14,1.07c1.59-3.1,1.38-4.32.9-4.86-1.42-1.61-6.92,1-10.52,2.94a33.12,33.12,0,0,1-12,19,31.9,31.9,0,0,1-5.21,5.8A32.81,32.81,0,0,1,597.42,157c-1.92-3-3.3,1-4.65,1.27a8.1,8.1,0,0,0-4.77-2,7.8,7.8,0,0,0-4,1c-15,7.92-20,12-20,12-6,4.79-10.94,9.64-17,14a33.75,33.75,0,0,1-7,4c-3.12,1.31-3.57.92-6,2-1.34.6-6.1,2.73-8.4,7.1-2.14,4.07.19,5.67-1.6,8.9-1.52,2.76-3.76,2.6-15,7-6.76,2.66-9.58,4.14-12,7a18.53,18.53,0,0,0-3,5,31.85,31.85,0,0,0-1,12c.4,3.61,1.12,4.15,1.68,8.12.77,5.5,1.56,11.09-1.68,14.88-3,3.57-9.09,4.94-11.68,2.94-1.37-1.06-1.27-2.54-2.93-3.58-.95-.59-2.48-.74-5.47.15-4.12-.59-5.15,2.33-3,5.34-4.23,3.09-6.85,7.8-11.81,10C439.34,285.42,412.16,270.6,394,292a115.15,115.15,0,0,0-67,76.26c-7.36,11.09-14.1,17.84-19,22a148.76,148.76,0,0,0-12,11c-3.55,3.66-6.26,6.86-8,9a2.69,2.69,0,0,0-2,1c-1,1.51,1,3.67,2,9,.55,2.84.24,3.59,0,4-.55.93-1.58,1.47-2,3-.2.72-.06.93,0,1,.39.48,1.41-.21,3,0,.78.11,1.95.46,2,1s-.54.83-1,1c-.73.28-1.1-.09-2,0a3,3,0,0,0-2,1c-.7.91-.72,2.47,0,3,.46.34,1.12.2,2,0a6.59,6.59,0,0,0,1.66-.61A14.7,14.7,0,0,1,300,436.29a15.66,15.66,0,0,1,4,5,25.1,25.1,0,0,1,3,9c1.53,9.9-2.35,22-3,24a28.65,28.65,0,0,0-7,14,29,29,0,0,0,1,14c2,6.8,5.8,11.24,9,15s3.62,3.27,7,7c6,6.67,9.32,13.37,13,21,2.87,6,2.84,6.92,6,13,4.22,8.12,6.43,10.53,8,12,2.3,2.17,2.15,1.31,8,6,4.78,3.84,7.18,5.76,8,7a7.63,7.63,0,0,0,3,3c1.51.75,2.15.27,3,1s1,1.83,1,6c0,1.48,0,3.16,0,5,1.56,2.15,3.68,5.2,6,9a77.5,77.5,0,0,1,5,9,38.57,38.57,0,0,1,3,17H482a14.31,14.31,0,0,0-5-9,12.15,12.15,0,0,0-2.55-1.51,61.1,61.1,0,0,0-9.65-8.35A47.71,47.71,0,0,0,452.5,608c-2.38-2.5-1.91-1.77-.05-4.13-.47-2.53-5.36-6.34-4.74-9.76a16.43,16.43,0,0,0-8.71-3.86c-1.63-.16-4.09-.42-6,1-.39.29-.14.2-2,2-1.46,1.43-2.47,2.32-2.24,2.8a.42.42,0,0,0,.24.2,45,45,0,0,1-14.71-21.37c1.51-8-13.3-14.9-16.31-6.15-.52-8.55-13.27-4.48-12.77-13.26.15-10.32-18-10.22-22.47-23-5.29-5.44-3.5-18.83-13.62-18.22-8-3-11.66-12.13-20.63-11.95-11.18,2-12.05-22-2.64-14.52,1.94-5.43,3.9-22.51-.4-28,32.77-39.05-41.61-31.37-6.41-56.73,18.83-8.09,13-36.76,29.3-41.27,2.44-18.74,17.84-43,36.51-47.29,2.69.11,8.32-5.57,7.18-8.13,5.53-7.19,24-8.74,31.54-16.69,10.7.67,18.72.52,29.36-5,3.17,2.08,15.25-1.61,11.86-4.45-.39-1,4.36.94,4.4-2.56,7.76-9.23,19.57-4.55,29.66-11.29,8.78-12.53-3-26.55,2.5-39.81,8.48,3.55,13.76-7.73,21.93-6.24,4.48-.55,2.4-3.47,2.23-6.3,3.27-.81,6.36-4.82,7.28-8.12,1.4-10,8.21-10.22,16-12.45,7.55-2.32,9.33-9.34,16.7-9,1.52-11,11.83-13.16,20.33-21C597,164.64,608,159.26,617.45,155c12.74,4.28,9.75-26.43,17.31-24,5.74,1.84,12.07,6.15,17.77,1.43,2.52-3.41,2.71,1.74,5.75,1,4.44,1.4,11.15-2.83,9.76-6.75,1.29-4.1,13.19-8.45,9.11-12.35.47-9.55-6.4-16.31-15-19.3-2.46-3.94-1.2-9.15-5.18-11.74-5-17.45-32.25-16-36.43-33.33-5.47-24.64-18-22.79-32.82-36Z"
-              />
+              <path fill="url(#linear)" d="M580.22,12C592,25.43,615,28.58,615.67,49.67c5,18.71,32.73,20.1,40.24,37.65.81,12,3.32,16.36,6.18,18s7.08-.21,8.85,2.15c1.21,1.61.66,4.06.06,5.78-.7,5.79-4.25,9.33-7.18,9.12-.35,0-2.14-.21-3.89-2.69-1.4.32-.54,2.49-.83,3.29-1-1.12-.83-2.25-1.92-3.27-4.23-.38-1,9-5.61,6.4a27.73,27.73,0,0,1-14,1.07c1.59-3.1,1.38-4.32.9-4.86-1.42-1.61-6.92,1-10.52,2.94a33.12,33.12,0,0,1-12,19,31.9,31.9,0,0,1-5.21,5.8A32.81,32.81,0,0,1,597.42,157c-1.92-3-3.3,1-4.65,1.27a8.1,8.1,0,0,0-4.77-2,7.8,7.8,0,0,0-4,1c-15,7.92-20,12-20,12-6,4.79-10.94,9.64-17,14a33.75,33.75,0,0,1-7,4c-3.12,1.31-3.57.92-6,2-1.34.6-6.1,2.73-8.4,7.1-2.14,4.07.19,5.67-1.6,8.9-1.52,2.76-3.76,2.6-15,7-6.76,2.66-9.58,4.14-12,7a18.53,18.53,0,0,0-3,5,31.85,31.85,0,0,0-1,12c.4,3.61,1.12,4.15,1.68,8.12.77,5.5,1.56,11.09-1.68,14.88-3,3.57-9.09,4.94-11.68,2.94-1.37-1.06-1.27-2.54-2.93-3.58-.95-.59-2.48-.74-5.47.15-4.12-.59-5.15,2.33-3,5.34-4.23,3.09-6.85,7.8-11.81,10C439.34,285.42,412.16,270.6,394,292a115.15,115.15,0,0,0-67,76.26c-7.36,11.09-14.1,17.84-19,22a148.76,148.76,0,0,0-12,11c-3.55,3.66-6.26,6.86-8,9a2.69,2.69,0,0,0-2,1c-1,1.51,1,3.67,2,9,.55,2.84.24,3.59,0,4-.55.93-1.58,1.47-2,3-.2.72-.06.93,0,1,.39.48,1.41-.21,3,0,.78.11,1.95.46,2,1s-.54.83-1,1c-.73.28-1.1-.09-2,0a3,3,0,0,0-2,1c-.7.91-.72,2.47,0,3,.46.34,1.12.2,2,0a6.59,6.59,0,0,0,1.66-.61A14.7,14.7,0,0,1,300,436.29a15.66,15.66,0,0,1,4,5,25.1,25.1,0,0,1,3,9c1.53,9.9-2.35,22-3,24a28.65,28.65,0,0,0-7,14,29,29,0,0,0,1,14c2,6.8,5.8,11.24,9,15s3.62,3.27,7,7c6,6.67,9.32,13.37,13,21,2.87,6,2.84,6.92,6,13,4.22,8.12,6.43,10.53,8,12,2.3,2.17,2.15,1.31,8,6,4.78,3.84,7.18,5.76,8,7a7.63,7.63,0,0,0,3,3c1.51.75,2.15.27,3,1s1,1.83,1,6c0,1.48,0,3.16,0,5,1.56,2.15,3.68,5.2,6,9a77.5,77.5,0,0,1,5,9,38.57,38.57,0,0,1,3,17H482a14.31,14.31,0,0,0-5-9,12.15,12.15,0,0,0-2.55-1.51,61.1,61.1,0,0,0-9.65-8.35A47.71,47.71,0,0,0,452.5,608c-2.38-2.5-1.91-1.77-.05-4.13-.47-2.53-5.36-6.34-4.74-9.76a16.43,16.43,0,0,0-8.71-3.86c-1.63-.16-4.09-.42-6,1-.39.29-.14.2-2,2-1.46,1.43-2.47,2.32-2.24,2.8a.42.42,0,0,0,.24.2,45,45,0,0,1-14.71-21.37c1.51-8-13.3-14.9-16.31-6.15-.52-8.55-13.27-4.48-12.77-13.26.15-10.32-18-10.22-22.47-23-5.29-5.44-3.5-18.83-13.62-18.22-8-3-11.66-12.13-20.63-11.95-11.18,2-12.05-22-2.64-14.52,1.94-5.43,3.9-22.51-.4-28,32.77-39.05-41.61-31.37-6.41-56.73,18.83-8.09,13-36.76,29.3-41.27,2.44-18.74,17.84-43,36.51-47.29,2.69.11,8.32-5.57,7.18-8.13,5.53-7.19,24-8.74,31.54-16.69,10.7.67,18.72.52,29.36-5,3.17,2.08,15.25-1.61,11.86-4.45-.39-1,4.36.94,4.4-2.56,7.76-9.23,19.57-4.55,29.66-11.29,8.78-12.53-3-26.55,2.5-39.81,8.48,3.55,13.76-7.73,21.93-6.24,4.48-.55,2.4-3.47,2.23-6.3,3.27-.81,6.36-4.82,7.28-8.12,1.4-10,8.21-10.22,16-12.45,7.55-2.32,9.33-9.34,16.7-9,1.52-11,11.83-13.16,20.33-21C597,164.64,608,159.26,617.45,155c12.74,4.28,9.75-26.43,17.31-24,5.74,1.84,12.07,6.15,17.77,1.43,2.52-3.41,2.71,1.74,5.75,1,4.44,1.4,11.15-2.83,9.76-6.75,1.29-4.1,13.19-8.45,9.11-12.35.47-9.55-6.4-16.31-15-19.3-2.46-3.94-1.2-9.15-5.18-11.74-5-17.45-32.25-16-36.43-33.33-5.47-24.64-18-22.79-32.82-36Z" />
             </g>
             <g v-if="isSeaLevelRiseMarkShowing">
               
-              <path
-                id="ft1"
-                class="marker"
-                d="M490.29 290.66c-.89-3.67-2.21-9-3.86-15.45-2.56-10-3.78-14.2-3.57-14.26.58-.19 10.87 31.61 11.36 31.46.29-.09-3-11.39-8.3-29.28"
-              />
-              <path
-                id="ft2"
-                class="marker"
-                d="M517.38 269.69c-2.48-1.63-5.92-3.87-10-6.53-11.51-7.43-16.28-10.34-16.18-10.52.25-.41 28.12 15.77 28.4 15.3.17-.28-9.06-6.13-25.34-16.17"
-              />
-              <path
-                id="ft3"
-                class="marker"
-                d="M488.54 232.11c18.47 4.35 29.78 7.13 29.71 7.42-.11.5-33-6.62-33.21-5.68-.08.38 5.08 1.91 14.86 4.81 6.26 1.86 11.51 3.33 15.29 4.37"
-              />
-              <path
-                id="intake"
-                class="marker"
-                d="M561.73 166.34l21 21"
-              />
+              <path id="ft1" class="marker" d="M490.29 290.66c-.89-3.67-2.21-9-3.86-15.45-2.56-10-3.78-14.2-3.57-14.26.58-.19 10.87 31.61 11.36 31.46.29-.09-3-11.39-8.3-29.28" />
+              <path id="ft2" class="marker"  d="M517.38 269.69c-2.48-1.63-5.92-3.87-10-6.53-11.51-7.43-16.28-10.34-16.18-10.52.25-.41 28.12 15.77 28.4 15.3.17-.28-9.06-6.13-25.34-16.17" />
+              <path id="ft3" class="marker" d="M488.54 232.11c18.47 4.35 29.78 7.13 29.71 7.42-.11.5-33-6.62-33.21-5.68-.08.38 5.08 1.91 14.86 4.81 6.26 1.86 11.51 3.33 15.29 4.37" />
+              <path id="intake" class="marker" d="M561.73 166.34l21 21" />
           
-              <g class="marker">
-                <path
-                  id="num1"
-                  d="M472.89 303.64l8-4.66v12"
-                />
-                <path
-                  id="ft1_f"
-                  d="M497.56 315.65c-.22-2-.11-3.67-.33-5.67.22-4.22.11-8.78.33-13l6.67-.67M505.56 309l-7.33.67"
-                />
-                <path
-                  id="ft1_t"
-                  d="M513.57 295.64q-.35 9.67-.67 19.34M508.23 297l12-2.67"
-                />
-              </g> 
-              <g class="marker">
-                <path
-                  id="num2"
-                  d="M522.38 273.61a14.21 14.21 0 014-2.67c1.47-.65 4.07-1.79 5.33-.66a2.55 2.55 0 01.67 2c-.14 1.32-1.36 2.16-2 2.66a13 13 0 00-4 6l6-.66"
-                />
-                <path
-                  id="ft2_f"
-                  d="M545 286.16c-.23-2-.12-3.66-.34-5.66.22-4.23.11-8.78.34-13l6.66-.66M553 279.5l-7.34.66"
-                />
-                <path
-                  id="ft2_t"
-                  d="M561 266.16q-.33 9.68-.67 19.34M555.67 267.49l12-2.66"
-                />
-              </g>
-              <g class="marker">
-                <path
-                  id="num3"
-                  d="M524.33 234.09l8.67-2 2 .66-4.66 4a5.31 5.31 0 013.33 1.34 4.55 4.55 0 011.33 2c.51 2-2.38 5.19-7.33 7.33"
-                />
-                <path
-                  id="ft3_f"
-                  d="M544.29 248.64c-.22-2-.11-3.67-.33-5.67.22-4.22.11-8.78.33-13l6.67-.67M552.29 242l-7.33.67"
-                />
-                <path
-                  id="ft3_t"
-                  d="M560.3 228.64q-.34 9.66-.67 19.33M555 230l12-2.67"
-                />
-              </g>
+                <g class="marker">
+                  <path id="num1" d="M472.89 303.64l8-4.66v12" />
+                  <path id="ft1_f"  d="M497.56 315.65c-.22-2-.11-3.67-.33-5.67.22-4.22.11-8.78.33-13l6.67-.67M505.56 309l-7.33.67"/>
+                  <path id="ft1_t" d="M513.57 295.64q-.35 9.67-.67 19.34M508.23 297l12-2.67"/>
+                </g> 
+                <g class="marker">
+                  <path id="num2" d="M522.38 273.61a14.21 14.21 0 014-2.67c1.47-.65 4.07-1.79 5.33-.66a2.55 2.55 0 01.67 2c-.14 1.32-1.36 2.16-2 2.66a13 13 0 00-4 6l6-.66" />
+                  <path id="ft2_f" d="M545 286.16c-.23-2-.12-3.66-.34-5.66.22-4.23.11-8.78.34-13l6.66-.66M553 279.5l-7.34.66"/>
+                  <path id="ft2_t" d="M561 266.16q-.33 9.68-.67 19.34M555.67 267.49l12-2.66"/>
+                </g>
+                <g class="marker">
+                  <path id="num3" d="M524.33 234.09l8.67-2 2 .66-4.66 4a5.31 5.31 0 013.33 1.34 4.55 4.55 0 011.33 2c.51 2-2.38 5.19-7.33 7.33" />
+                  <path id="ft3_f" d="M544.29 248.64c-.22-2-.11-3.67-.33-5.67.22-4.22.11-8.78.33-13l6.67-.67M552.29 242l-7.33.67"/>
+                  <path id="ft3_t"  d="M560.3 228.64q-.34 9.66-.67 19.33M555 230l12-2.67"/>
+                </g>
+
             </g>
             <g v-if="isDrinkingWaterIntakesShowing">
-              <!-- <g
+             <g
                 id="intakes-text"
                 class="marker"
               >
@@ -247,9 +157,9 @@
                   id="intakes_s"
                   d="M859.93,196c-6.3-3.67-12.53-3.78-15.33-.79-.35.37-1.83,2-1.5,3.76.89,5,14.07,4.11,15.16,9.09.47,2.15-1.48,4.52-3.21,5.63-3.49,2.23-7.51.25-7.73.14"
                 />
-              </g>   -->
+              </g>  
             
-              <!-- <g
+              <g
                 id="city-labels"
                 class="marker"
               >
@@ -286,7 +196,6 @@
                       d="M440.34 182.29a34.43 34.43 0 005.5-2.42 26.1 26.1 0 005-3.63c.92-.78 2.23-2.1 2.2-3s-.55-1.21-1.65-1.82c-2.51-1.38-11.84-1.74-13.22-1.82"
                     />
                     <path
-                      stroke-width="2.34960166"
                       d="M439 188.39c.2-6.27.39-10.36.59-16.62"
                     />
                   </g>
@@ -316,7 +225,7 @@
                     d="M345 168.29a114.83 114.83 0 000 13c.2 3.58.56 6.92 1 10l8-4"
                   />
                 </g>
-                <g id="camden">
+                <!-- <g id="camden">
                   <path
                     id="camden_c"
                     d="M522 245.29a17.81 17.81 0 00-6 3c-1 .8-5.8 4.48-6 10-.05 1.29-.12 3.15 1 4 1.72 1.32 5.68-.16 10-4"
@@ -345,10 +254,10 @@
                     fill-rule="evenodd"
                     d="M518.42 237.4a3.88 3.88 0 10-3.87 3.85 3.86 3.86 0 003.87-3.85z"
                   />
-                </g>
-              </g> -->
+                </g> -->
+              </g>
                 
-              <!-- <g
+              <g
                 id="skyline-sketch"
                 class="city-lines"
               >
@@ -376,24 +285,21 @@
                   <path d="M547.46 230.86h1.16c.34 0 .68.07 1 .09M547.5 229.66a6 6 0 011.89 0M548.85 229.86a.34.34 0 10.37.24.35.35 0 00-.37-.24zM547.73 230.07a.31.31 0 00-.15.15.15.15 0 000 .19.16.16 0 00.24-.1.27.27 0 00-.11-.27M548.39 233.8H554l.12.09-.08 4.58.18.05 5.78.19M524.31 231.2l-.1 5.13M522.67 233.05l1.59-.37h3.64M529.54 231.77a29.44 29.44 0 01.05 5.31M529.89 231.85a2.18 2.18 0 01.88 0 7.93 7.93 0 002.12-.06M522.3 233v3.23" />
                   <path d="M524.81 231.78v4.61h.24v-4.65zM526 231.78v4.61h.24l.05-4.65zM527.13 231.78v4.61h.23v-4.65zM536.78 235v.54a.32.32 0 00.14 0 .41.41 0 00.16 0v-.55h-.32M536.8 234.32v.54a.32.32 0 00.14 0h.16v-.56h-.32M536.78 235.82v.53H537.08v-.56h-.32M536.78 236.66v.53a.32.32 0 00.14 0h.16v-.56h-.32M536.78 237.35v.54a.32.32 0 00.14 0 .41.41 0 00.16 0v-.55h-.32M535.87 235v.53H536.17v-.56h-.32M535.89 234.28v.54h.28v-.56h-.32M535.87 235.77v.54h.13a.76.76 0 00.16 0v-.56h-.32M535.87 236.61v.54H536.16v-.56h-.32M535.87 237.31v.53H536.17v-.56h-.32" />
                 </g>
-              </g> -->
+              </g>
             </g>
           </svg>
         </div>
       </div>
       <div class="salinity-sea-section-text">
         <div id="sea-salt-wedge-text">
-          <h4
+          <h3
             id="header-salt-front-intro-text"
             class="text-content-side"
           >
-            Seasonal Changes
-          </h4>
+            The Salt Wedge
+          </h3>
           <p class="text-content-side">
-            The salt front migrates up and down the river channel over the daily cycle of ocean tides.  The location of the salt front is also impacted by occasional storm surges, the seasonal cycle of high or low river flows, and fluctuations as the river changes over the course of many years.
-          </p>
-          <p class="text-content-side">
-            Fluctuations within a normal range are good for the ecosystems that are used to brackish water.
+            As freshwater spills from the river onto the saltier, ocean-influenced waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the intruding ocean. The bounds of that wedge – the “salt front” – migrate up and down the river channel over the daily cycle of ocean tides, the seasonal cycle of lower and higher river flows, and the multi-year fluctuations of higher and lower flows.
           </p>
         </div>
         <div
@@ -401,30 +307,27 @@
           v-observe-visibility="{
             callback: visibilityChanged,
             intersection: {
-              rootMargin: '-30% 0% -50% 0%',
+              rootMargin: '-10% 0% -50% 0%',
               threshold: 0
             }
           }"
         >
-          <div id="sea-salt-rise-text">
-            <h4
+          <div
+            id="sea-salt-rise-text"
+          >
+            <h3
               id="header-salt-front-move-text"
               class="text-content-side"
             >
-              Sea Level Rise
-            </h4>
+              The salt front will likely move upstream as sea levels rise
+            </h3>
             <p class="text-content-side">
-              While these natural variations usually pose no problems, sea level rise is expected to push the salt front much farther inland.
+              While these natural variations usually pose no problems, sea level rise is expected to push the salt front so far inland – especially during droughts – that water at the major Trenton, NJ intake could be contaminated. Salty water corrodes surface water intake pipes, raises the cost of drinking water treatment, and is potentially toxic to aquatic plants and fish.
             </p>
             <p class="text-content-side">
-              Projections suggest that with just 3 feet of sea level rise, the salt front could push several miles upriver where water at public supply intakes, such as Philadelphia’s, could be contaminated. Salty water corrodes water intake pipes, raises the cost of drinking water treatment, and is toxic to many freshwater aquatic plants and fish.
+              Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. Remember the Supreme-Court-mandated flow targets at Montague and Trenton? One key motivation for setting the targets where they are is to keep pressing the salt front toward the ocean.  Maintaining the target flow is an important tool for protecting our current uses of freshwater in the lower Basin. Good data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location.
             </p>
           </div>
-        </div>
-        <div class="text-content-side">
-          <h4>How Monitoring and Flow Management Help</h4>
-          <p>Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. One key motivation for the 1954 Supreme Court decree to set the flow targets is to keep enough freshwater flowing down the Delaware River to press the salt front back toward the ocean.</p>
-          <p>Maintaining the target flow is an important tool for protecting our current uses of freshwater in the lower Basin. Accurate data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location.</p>
         </div>
       </div>
     </div>
@@ -470,7 +373,97 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="less">
+
+//mixin for writing effect
+.hide-text(@stroke-length) {
+  stroke-dasharray: @stroke-length;
+  stroke-dashoffset: 0px-@stroke-length;
+}
+
+//define frames
+.ghostwrite-frames(@stroke-length) {
+  0% {stroke-dashoffset: 0px-@stroke-length;}
+  100% {stroke-dashoffset: 0px;}
+}
+
+//animation mixin for full browser support
+.animation (@name, @duration: 1s, @delay: 0) {
+	-webkit-animation: @name @duration linear @delay forwards;
+	-moz-animation:    @name @duration linear @delay forwards;
+  -ms-animation:     @name @duration linear @delay forwards;
+  -o-animation:     @name @duration linear @delay forwards;
+  animation:     @name @duration linear @delay forwards;
+}
+
+//write animations
+  @-webkit-keyframes ghostwrite-100 {.ghostwrite-frames(100px);}
+  @-moz-keyframes ghostwrite-100 {.ghostwrite-frames(100px);}
+  @-ms-keyframes ghostwrite-100 {.ghostwrite-frames(100px);}
+  @-o-keyframes ghostwrite-100 {.ghostwrite-frames(100px);}
+  @keyframes ghostwrite-100 {.ghostwrite-frames(100px);}
+
+  @-webkit-keyframes ghostwrite-200 {.ghostwrite-frames(200px);}
+  @-moz-keyframes ghostwrite-200 {.ghostwrite-frames(200px);}
+  @-ms-keyframes ghostwrite-200 {.ghostwrite-frames(200px);}
+  @-o-keyframes ghostwrite-200 {.ghostwrite-frames(200px);}
+  @keyframes ghostwrite-200 {.ghostwrite-frames(200px);}
+
+  @-webkit-keyframes ghostwrite-50 {.ghostwrite-frames(50px);}
+  @-moz-keyframes ghostwrite-50 {.ghostwrite-frames(50px);}
+  @-ms-keyframes ghostwrite-50 {.ghostwrite-frames(50px);}
+  @-o-keyframes ghostwrite-50 {.ghostwrite-frames(50px);}
+  @keyframes ghostwrite-50 {.ghostwrite-frames(50px);}
+
+  @-webkit-keyframes ghostwrite-500 {.ghostwrite-frames(500px);}
+  @-moz-keyframes ghostwrite-500 {.ghostwrite-frames(500px);}
+  @-ms-keyframes ghostwrite-500 {.ghostwrite-frames(500px);}
+  @-o-keyframes ghostwrite-500 {.ghostwrite-frames(500px);}
+  @keyframes ghostwrite-500 {.ghostwrite-frames(500px);}
+
+//apply keyframes for writing
+#num1, #num2, #num3, #ft1_f, #ft1_t, #ft2_f, #ft2_t, #ft3_f, #ft3_t, #intake  {
+  @stroke-length: 50px;
+  .hide-text(@stroke-length);
+  .animation(@name: ghostwrite-50, @duration: 1s, @delay: .8s);
+}
+
+#ft1, #ft2, #ft3 {
+  @stroke-length: 100px;
+    .hide-text(@stroke-length);
+    .animation(@name: ghostwrite-100, @duration: 1s, @delay: 0s);
+  }
+
+#intakes-text, #arrow_intake, #cities, #philly, #camden {
+    @stroke-length: 200px;
+    .hide-text(@stroke-length);
+    .animation(@name: ghostwrite-200, @duration: 1.2s, @delay: 1.5s);
+  }
+  #silhouette, #city-details, #camden-skyline {
+    @stroke-length: 500px;
+    .hide-text(@stroke-length);
+    .animation(@name: ghostwrite-500, @duration: 2.3s, @delay: 2.5s);
+  }
+
+#drink_d, #drink_r, #drink_i, #drink_n, #drink_k, #ing_i, #ing_n, #ing_g  {
+  @stroke-length: 200px;
+    .hide-text(@stroke-length);
+    .animation(@name: ghostwrite-200, @duration: 1.1s, @delay: 4.5s);
+}
+
+
+#arrow_intake, #dot_camden, #dot_philly { 
+  @stroke-length: 100px;
+    .hide-text(@stroke-length);
+    .animation(@name: ghostwrite-100, @duration: .55s, @delay: 4s);
+}
+
+#water_w, #water_a, #water_t, #water_e , #water_r, #intakes_i, #intakes_n, #intakes_t, #intakes_a, #intakes_k, #intakes_e, #intakes_s {
+  @stroke-length: 200px;
+    .hide-text(@stroke-length);
+    .animation(@name: ghostwrite-200, @duration: .5s, @delay: 5s);
+}
+
 .salinity-sea-section-image {
 
   .marker {
@@ -479,23 +472,16 @@ export default {
   stroke-width: 3px;
   stroke-linecap: round;
   stroke-linejoin: round;
+
 }
-
-  #ft1, #ft2, #ft3 {
-    stroke-dasharray: 300px;
-    stroke-dashoffset: -300px;
-  }
-
-  #num1, #num2, #num3, #ft1_f, #ft1_t, #ft2_f, #ft2_t, #ft3_f, #ft3_t, #intake {
-    stroke-dasharray: 200px;
-    stroke-dashoffset: -200px;
-  }
+ 
   .city-lines {
   fill:none;
   stroke:#000;
   stroke-miterlimit:10;
   stroke-width:1;
 
+}
 }
 
 /* clip-path animation for salt front */
@@ -524,7 +510,7 @@ export default {
   100%  {clip-path: inset(59.5% 0 0 0);}
 } */
 /* paced to be even with time */
-@keyframes salt-mvmt {
+/* @keyframes salt-mvmt {
   0%  {clip-path: inset(59.5% 0 0 0);}
   9%  {clip-path: inset(57% 0 0 0);}
   18%  {clip-path: inset(58% 0 0 0);}
@@ -538,410 +524,7 @@ export default {
   90%  {clip-path: inset(58% 0 0 0);}
   100%  {clip-path: inset(59.5% 0 0 0);}
 }
-
-
-/* lines for sea level predictions */
-$ft-dur: 0.2s;
-$ft-delay: 0.15s;
-
-#ft1 {
-  $grp-ord: 1;
-    animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -webkit-animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -moz-animaion: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -o-animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
-}
-
-#ft2 {
-  $grp-ord: 2;
-    animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -webkit-animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -moz-animaion: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -o-animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
-}
-
-#ft3 {
-  $grp-ord: 3;
-    animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -webkit-animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -moz-animaion: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -o-animation: write300 $ft-dur linear $grp-ord*$ft-delay forwards;
-}
-/* annotations for sea level predictions */
-/* 1 ft */
-#num1 {
-  $grp-ord: 4;
-    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-}
-#ft1_f {
-  $grp-ord: 5;
-    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-}
-#ft1_t {
-  $grp-ord: 6;
-    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-}
-/* 2 ft */
-#num2 {
-  $grp-ord: 7;
-    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-}
-#ft2_f {
-  $grp-ord: 8;
-    animation: write200 $ft-dur linear $grp-ord*$ft-delay forward;
-    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-}
-#ft2_t {
-  $grp-ord: 9;
-    animation: write200 $ft-dur linear $grp-ord*$ft-delay forward;
-    -webkit-animation:  write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-}
-/* 3ft */
-#num3 {
-  $grp-ord: 10;
-    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-}
-#ft3_f {
-  $grp-ord: 11;
-    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-}
-#ft3_t {
-  $grp-ord: 12;
-    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -moz-animaion: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-}
-
-/* intakes line */
-#intake {
-  $grp-ord: 13;
-    animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -webkit-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -moz-animaion:write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-    -o-animation: write200 $ft-dur linear $grp-ord*$ft-delay forwards;
-}
-
-/* letter writing animation */
-#intakes-text, #arrow_intake, #cities {
-    stroke-dasharray: 200px;
-    stroke-dashoffset: -200px;
-  }
-  #silhouette, #city-details, #camden-skyline {
-    stroke-dasharray: 1000px;
-    stroke-dashoffset:-1000px;
-  }
-
-/* define vars for letter timing */
-$slr-dur: 0.3s;
-$slr-delay: 0.1s;
-$slr-delay-long: 1s;
-
-/* each letter is animated individually so time sequentially */
-#silhouette {
-  $grp-ord: 1;
-    animation: write1000 1s linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write1000 1s linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write1000 1s linear $slr-delay*$grp-ord forwards;
-    -o-animation: write1000 1s linear $slr-delay*$grp-ord forwards;
-
-}
-#camden-skyline {
-  $grp-ord: 1;
-    animation: write1000 1s linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write1000 1s linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write1000 1s linear $slr-delay*$grp-ord forwards;
-    -o-animation: write1000 1s linear $slr-delay*$grp-ord forwards;
-
-}
-#city-details {
-  $grp-ord: 2;
-    animation: write1000 0.5s linear 0.5s forwards;
-    -webkit-animation: write1000 0.5s linear 0.5s forwards;
-    -moz-animation: write1000 0.5s linear 0.5s forwards;
-    -o-animation: write1000 0.5s linear 0.5s forwards;
-
-}
-
-#drink_d {
-  $grp-ord: 1;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#drink_r {
-  $grp-ord: 2;
-   animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-
-#drink_i {
-  $grp-ord: 3;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#drink_n {
-  $grp-ord: 4;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#drink_k {
-  $grp-ord: 5;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#ing_i {
-  $grp-ord: 6;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#ing_n {
-  $grp-ord: 7;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#ing_g {
-  $grp-ord: 8;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-
-#arrow_intake {
-  $grp-ord: 4;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-
-#dot_camden {
-  $grp-ord: 4;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-
-#dot_philly {
-  $grp-ord: 4;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-
-#water_w {
-  $grp-ord: 5;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#water_a {
-  $grp-ord: 6;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#water_t {
-  $grp-ord: 7;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#water_e {
-  $grp-ord: 8;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#water_r {
-  $grp-ord: 9;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#intakes_i {
-  $grp-ord: 10;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#intakes_n {
-  $grp-ord: 11;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#intakes_t {
-  $grp-ord: 12;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#intakes_a {
-  $grp-ord: 13;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#intakes_k {
-  $grp-ord: 14;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#intakes_e {
-  $grp-ord: 15;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-#intakes_s {
-  $grp-ord: 16;
-    animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -webkit-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -moz-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-    -o-animation: write200 $slr-dur linear $slr-delay*$grp-ord forwards;
-
-}
-
-
-  @keyframes write500 {
-    0% {stroke-dashoffset: -500px}
-    100% {stroke-dashoffset: 0px;}
-  }
-  @-o-keyframes write500 {
-    0% {stroke-dashoffset: -500px}
-    100% {stroke-dashoffset: 0px;}
-  }
-  @-moz-keyframes write500 {
-    0% {stroke-dashoffset: -500px}
-    100% {stroke-dashoffset: 0px;}
-  }
-  @-webkit-keyframes write500 {
-    0% {stroke-dashoffset: -500px}
-    100% {stroke-dashoffset: 0px;}
-  }
-  @keyframes write300 {
-    0% {stroke-dashoffset: -300px}
-    100% {stroke-dashoffset: 0px;}
-  }
-  @-o-keyframes write300 {
-    0% {stroke-dashoffset: -300px}
-    100% {stroke-dashoffset: 0px;}
-  }
-  @-moz-keyframes write300 {
-    0% {stroke-dashoffset: -300px}
-    100% {stroke-dashoffset: 0px;}
-  }
-  @-webkit-keyframes write300 {
-    0% {stroke-dashoffset: -300px}
-    100% {stroke-dashoffset: 0px;}
-  }
-  @keyframes write200 {
-    0% {stroke-dashoffset: -200px}
-    100% {stroke-dashoffset: 0px;}
-  }
-  @-o-keyframes write200 {
-    0% {stroke-dashoffset: -200px}
-    100% {stroke-dashoffset: 0px;}
-  }
-  @-moz-keyframes write200 {
-    0% {stroke-dashoffset: -200px}
-    100% {stroke-dashoffset: 0px;}
-  }
-  @-webkit-keyframes write200 {
-    0% {stroke-dashoffset: -200px}
-    100% {stroke-dashoffset: 0px;}
-  }
-}
-
-@keyframes write1000 {
-    0% {stroke-dashoffset: -1000px}
-    100% {stroke-dashoffset: 0px;}
-  }
-  @-o-keyframes write1000 {
-    0% {stroke-dashoffset: -1000px}
-    100% {stroke-dashoffset: 0px;}
-  }
-  @-moz-keyframes write1000 {
-    0% {stroke-dashoffset: -1000px}
-    100% {stroke-dashoffset: 0px;}
-  }
-  @-webkit-keyframes write1000 {
-    0% {stroke-dashoffset: -1000px}
-    100% {stroke-dashoffset: 0px;}
-  }
+ */
 
 // what follows controls the general layout, grid pattern, and text fades
 #salinity-sea {
@@ -1003,5 +586,6 @@ $slr-delay-long: 1s;
     }
   }
 }
+
 // will need to pad text at several break points
 </style>
