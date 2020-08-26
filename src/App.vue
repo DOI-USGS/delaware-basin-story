@@ -121,6 +121,13 @@
 
     .emph {
       font-weight: bold;
+      //background: linear-gradient(180deg,hsla(0,0%,100%,0) 70%,#ffc833 0);
+      background-image: url('assets/stroke.png'), .5;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      
+
     }
     // Text-only
     .text-content {
@@ -181,18 +188,18 @@
   }
 
   a:link {
-    color: $darkGreen;
+    color: $lightBlue;
   }
 
   /* visited link */
   a:visited {
-    color: $darkGreen;
+    color: $lightBlue;
   }
 
   /* mouse over link */
   a:hover {
     cursor: pointer;
-    text-decoration-color: $darkGreen;
+    text-decoration-color: $lightBlue;
     text-decoration-thickness: .01em;
     text-underline-offset: 3px;
     text-decoration-style: wavy;
@@ -201,7 +208,7 @@
   /* selected link */
   a:active {
     font-style: bold;
-    text-decoration-color: $darkGreen;
+    text-decoration-color: $lightBlue;
     text-decoration-thickness: .01em;
     text-underline-offset: 3px;
     text-decoration-style: wavy;
