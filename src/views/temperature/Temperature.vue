@@ -5,11 +5,21 @@
       :image="titleBackingImage"
     />
     <div class="text-content">
-      <p>Water temperature is water-quality measure that is closely linked to the health of aquatic organisms.  Some habitats exist only within certain temperature ranges, it can make organisms more or less susceptible to diseases, and temperature changes act as cues to begin a species’ reproductive cycle. </p>
+      <p>Water temperature is water-quality measure that is closely linked to the health of aquatic organisms.  Some habitats exist only when water remains within a certain temperature ranges.  When the water temperature exceeds a certain threshold, the heat can make organisms more or less susceptible to diseases or mess with a species’ reproductive cycle.</p>
       <p>In the Basin, there are many different thermal habitats that support diverse, vibrant communities of aquatic life. Decisionmakers in the Basin need to know what species live where, what kinds of water temperature they prefer, and how their management decisions could impact those species.</p>
       <p>Some factors that modify temperature – like weather and climate – cannot be controlled by decisionmakers in the Basin.  Other factors – like reservoir releases and land-use – can be strategically managed to maintain or modify temperatures in certain river reaches.</p>    
     </div>
     <div id="header">
+      <img
+        id="warm-water"
+        src="@/assets/temperature/images/warm.png"
+        alt="light blue background color representing warmer water"
+      >
+      <img
+        id="cold-water"
+        src="@/assets/temperature/images/cold.png"
+        alt="dark blue background color representing cold water"
+      >
       <img
         id="waterline"
         src="@/assets/temperature/images/waterHeader.png"
@@ -39,14 +49,12 @@
         </div>
         <div class="text-content">
           <p>Brookies are the only native trout species within the Basin, and they are used as indicators of water quality due to their sensitivity to water temperatures.</p>
-          <p>In the fall, trout wait for a drop in water temperature drop begin their reproductive cycle.  Historically, this happens in November.</p>
-          <p>With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection.</p>
-          <p>The eggs rest there all winter, and require the water to stay cool to develop properly.</p>
+          <p>In the summer, long hot days and low river flows can warm up the river water.  The heat can be lethal for Brookies and other trout species.</p>
+          <p>In the fall, trout wait for a drop in water temperature drop begin their reproductive cycle. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection. The eggs rest there all winter, and require the water to stay cool to develop properly.</p>
         </div>
         <div class="text-content">
-          <h4>Water Temperature matters for the health of the species</h4>
-          <p>If the river water doesn’t cool down enough in the fall, brookies could miss their reproductive cue.  If the waters stay warmer than usual in the winter, the eggs won’t develop properly.</p>
-          <p>Warming water temperature is bad news for brookies even outside of the reproductive cycle.  Brookies can certainly survive in warmer waters, but they grow more slowly and are more susceptible to disease, meaning that they can’t compete well with non-native Brown trout. They instead thrive in river reaches with very cold water where the Brown trout can’t survive at all.</p>
+          <h4>Water Temperature matters for the health of aquatic species</h4>
+          <p>Warming temperatures can disrupt the reproductive cycle of Brook trout and ultimately its population stability.  If the river water doesn’t cool down enough in the fall, brookies could miss their reproductive cue.  If the waters stay warmer than usual in the winter, their eggs won’t develop properly.  Moreover, USGS research has shown that water temperature can influence their growth rates and disease susceptibility, which can make them poor competitors against non-native species like Brown trout.</p>
         </div>
       </div>
       <div
@@ -365,9 +373,18 @@
   #header {
     position: sticky;
     width: 95%;
-    margin-right: auto;
-    margin-left: auto;
     top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    justify-items: center;
+    margin: 10em auto 0 auto;
+
+    img {
+      grid-column: 1;
+      grid-row: 1;
+      background-color: none;
+    }
 
     #label-container {
 
@@ -386,8 +403,8 @@
     }
 
       #waterline {
-        margin-top: 100px;
         width: 100%;
+        margin-top: -40px;
       }
 
   }
