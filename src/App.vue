@@ -122,10 +122,11 @@
     .emph {
       font-weight: bold;
       //background: linear-gradient(180deg,hsla(0,0%,100%,0) 70%,#ffc833 0);
-      background-image: url('assets/stroke.png'), .5;
-      background-size: contain;
+      background-image: url('assets/stroke.png');
+      background-size: 100% 50%;
       background-repeat: no-repeat;
       background-position: bottom;
+      padding: 0 0 .2em 0;
       
 
     }
