@@ -1,5 +1,9 @@
 <template>
   <section id="intro">
+    <SectionTitle
+      :title="title"
+      :image="titleBackingImage"
+    />
     <div
       id="intro-banner-container"
     >
@@ -10,10 +14,7 @@
         width="100%"
       >
     </div>
-    <SectionTitle
-      :title="title"
-      :image="titleBackingImage"
-    />
+
     <IntroTextContents />
     <ImageCarousel />
   </section>
@@ -61,6 +62,7 @@
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     #intro-banner-container {
+      position: sticky;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -72,12 +74,7 @@
         justify-content: center;
         position: absolute;
         text-align: center;
-        .section-title {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
+
       }
     }
   }

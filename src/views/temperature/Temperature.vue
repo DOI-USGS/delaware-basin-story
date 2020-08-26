@@ -11,11 +11,13 @@
     </div>
     <div id="header">
       <img
+        v-show="isWaterWarm"
         id="warm-water"
         src="@/assets/temperature/images/warm.png"
         alt="light blue background color representing warmer water"
       >
       <img
+        v-show="isWaterCold"
         id="cold-water"
         src="@/assets/temperature/images/cold.png"
         alt="dark blue background color representing cold water"
@@ -327,6 +329,8 @@
         data() {
             return {
               isMusselsTextInView: false,
+              isWaterCold: true,
+              isWaterWarm: false,
               title: 'Temperature',
               titleBackingImage: require('@/assets/temperature/images/dark-orange-min.png')
             }
@@ -337,8 +341,12 @@
                 this.isVisible = isVisible;
                 if (isVisible === true) {
                     this.isMusselsTextInView = true;
+                    this.isWaterWarm = true;
+                    this.isWaterCold = false;
                 } else if (isVisible !== true) {
                     this.isMusselsTextInView = false;
+                    this.isWaterCold = true;
+                    this.isWaterWarm = false;
                 }
             }
         }
