@@ -26,11 +26,6 @@
 </script>
 
 <style scoped lang="scss">
-// .intro-em {
-//   font-family: chantal,'Noto Sans', sans-serif;
-//   font-weight: bold;
-//   font-size: 2.1em;
-// }
 
 #section-title-container {
   display: flex;

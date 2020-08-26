@@ -1,10 +1,11 @@
 <template>
   <section id="quality-challenges">
     <div class="quality-challenges-section-text text-content">
-      <h4>Taken alone, managing to make sure there’s enough water is not enough.  Water needs to be of good quality, too.</h4>
-      <p>Water quality affects the suitability of water for drinking, recreation, agriculture, industry, and aquatic life. But it goes the other way too – human activities like reservoir releases, water withdrawals, wastewater discharges, land use and management, and many others affect water quality as well.</p>
+      <h4>Quality and Quantity</h4>
+      <p>Taken alone, managing to make sure there’s <span class="emph">enough water is not enough.</span>  Water needs to be of <span class="emph">good quality,</span> too.</p>
+      <p>Water quality affects whether Delaware River water is suitable for drinking, recreation, agriculture, industry, and aquatic life. But it goes the other way too – human activities like reservoir releases, water withdrawals, wastewater discharges, land use and management, and many others affect water quality as well.</p>
       <p>Water quality in the Delaware River Basin has improved greatly since the mid-20th century. It's inspiring water quality history can be explored at the <a href="https://www.nj.gov/drbc/quality/">Delaware River Basin Commission's recap</a>, and raw data can be downloaded from the <a href="https://waterdata.usgs.gov/nwis/qw">National Water Information System</a> and <a href="https://www.waterqualitydata.us/">Water Quality Portal.</a></p>
-      <p>The USGS monitors lots of water-quality measures, such as:</p>
+      <p>The USGS monitors lots of water quality measures, such as:</p>
       <ul>
         <li>Temperature</li>
         <li>Salinity</li>
