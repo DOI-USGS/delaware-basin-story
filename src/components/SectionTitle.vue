@@ -41,7 +41,7 @@ export default {
   .title-cloud-backing {
     grid-column: 1;
     grid-row: 1;
-    max-width: 1000px;
+    min-height: 6em;
   }
   .section-title {
     color: white;

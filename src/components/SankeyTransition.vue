@@ -3,18 +3,28 @@
     <div id="sankey-image-container-outer">
       <div id="sankey-image-container-inner">
         <img
+          id="sankey-image-5"
+          src="@/assets/components/sankeyTransition/images/sankey-res-shapes_Release.png"
+          alt=""
+        >
+        <img
+          id="sankey-image-4"
+          src="@/assets/components/sankeyTransition/images/sankey-res-shapes_LowFlow.png"
+          alt=""
+        >
+        <img
           id="sankey-image-3"
-          src="@/assets/components/sankeyTransition/images/sankeyFlowAdded1080.png"
+          src="@/assets/components/sankeyTransition/images/sankey-res-shapes_Withdrawals.png"
           alt=""
         >
         <img
           id="sankey-image-2"
-          src="@/assets/components/sankeyTransition/images/sankeyDrought1080.png"
+          src="@/assets/components/sankeyTransition/images/sankey-res-shapes_Reservoirs.png"
           alt=""
         >
         <img
           id="sankey-image-1"
-          src="@/assets/components/sankeyTransition/images/sankeyNormal1080.png"
+          src="@/assets/components/sankeyTransition/images/sankey-res-shapes_Basin.png"
           alt=""
         >
       </div>
@@ -34,21 +44,20 @@
         }"
         class="sankey-text-and-title"
       >
-        <h4
-          id="sankey-title-1"
-          class="text-content-side"
-        >
-          Flow in the Basin today is managed through formal cooperation among federal, state, and local entities.
-        </h4>
         <div
           id="p-container-1"
           class="p-container text-content-side"
         >
-          <p>The River Master and the DRBC use water monitoring data to decide how and when to release water from major <span class="emph">reservoirs</span> throughout the Basin at key times of the year. Those reservoirs are generally used for flood control, hydroelectric power, water supply, and recreation.</p>
-          <p>Withdrawals, discharges, and reservoir management affect where water is available in the Basin.</p>
-          <p>But the water cycle has a big say in how much water is available, too.</p>
+          <h4
+            id="sankey-title-1"
+          >
+            How the River Flows
+          </h4>
+          <p>Flow in the Basin today is managed through formal cooperation among federal, state, and local entities. The Supreme Court decree sets water withdrawal limits so that even at times of greatest need, there’s still plenty of water to flow downriver into the Delaware Bay.</p>
+          <p>Reservoirs help us manage that flow. </p>
         </div>
       </div>
+
       <div
         id="sankey-text-and-title-2"
         v-observe-visibility="{
@@ -60,18 +69,16 @@
         }"
         class="sankey-text-and-title"
       >
-        <h4
-          id="sankey-title-2"
-          class="text-content-side"
-        >
-          Summer Lows
-        </h4>
         <div
           id="p-container-2"
           class="p-container text-content-side"
         >
-          <p>In the late summer of most years, the streams and rivers of the Basin have lower, slower flows.  The normal low flows are exacerbated during summers with droughts.  With the right conditions, the river flow has a chance of falling below the target levels set by the 1954 Supreme Court decree.</p>
-          <p>Even with low flows, human water demands don’t let up! The flow targets at Montague and Trenton are designed to protect against water hoarding upstream that would deprive downstream users – human and otherwise – of fair access to water.</p>
+          <h4
+            id="sankey-title-2"
+          >
+            Reservoirs
+          </h4>
+          <p>All that water comes from tributaries upstream, where a system of <span class="emph">reservoirs</span> use sections of the river as storage tanks to store enormous amounts of water for times when we need it. They are also used for other kinds of water management - flood control, hydroelectric power, and recreation.</p>
         </div>
       </div>
       <div
@@ -85,17 +92,64 @@
         }"
         class="sankey-text-and-title"
       >
-        <h4
-          id="sankey-title-3"
-          class="text-content-side"
-        >
-          Reservoir Releases
-        </h4>
         <div
           id="p-container-3"
           class="p-container text-content-side"
         >
-          <p>But with careful management, reservoirs can provide a buffer against these excessively low flows.  Reservoirs store water during times when there’s plenty of it. When the River flow has a chance of dropping below the flow targets set by the 1954 decree, the River Master can decide to carefully release some of the stored water in the summer at just the right rate and time to fill the gap.</p>
+          <h4
+            id="sankey-title-3"
+          >
+            Using the Reservoirs
+          </h4>
+          <p>Major water users like New York City, Philadelphia, and the entire state of New Jersey are allowed to draw lots of water out of the river for drinking water. The River Master and the DRBC use <a href="https://waterdata.usgs.gov/usa/nwis/">water monitoring data collected by the USGS</a> to decide how and when to store water in these reservoirs.</p>
+          <p>But the water cycle has a big say in how much water is available, too.</p>
+        </div>
+      </div>
+      <div
+        id="sankey-text-and-title-4"
+        v-observe-visibility="{
+          callback: visibilityChanged,
+          intersection: {
+            rootMargin: '-48% 0% -50% 0%',
+            threshold: 0
+          }
+        }"
+        class="sankey-text-and-title"
+      >
+        <div
+          id="p-container-4"
+          class="p-container text-content-side"
+        >
+          <h4
+            id="sankey-title-4"
+          >
+            Summer Lows
+          </h4>
+          <p>In the late summer of most years, the streams and rivers of the Basin have lower, slower flows.  The normal low flows are exacerbated during summers with droughts.  But even with low flows, human water demands don’t let up!</p>
+          <p>The flow targets at Montague, NJ and Trenton, NJ are designed to protect against water hoarding upstream that would deprive downstream users – human and otherwise – of fair access to water. With the right conditions, the river flow has a chance of falling below the target levels set by the 1954 Supreme Court decree.</p>
+        </div>
+      </div>
+      <div
+        id="sankey-text-and-title-5"
+        v-observe-visibility="{
+          callback: visibilityChanged,
+          intersection: {
+            rootMargin: '-48% 0% -50% 0%',
+            threshold: 0
+          }
+        }"
+        class="sankey-text-and-title"
+      >
+        <div
+          id="p-container-5"
+          class="p-container text-content-side"
+        >
+          <h4
+            id="sankey-title-5"
+          >
+            Reservoir Releases
+          </h4>
+          <p>But with careful management, reservoirs can provide a buffer against these excessively low flows.  When the River flow has a chance of dropping below the flow targets set by the 1954 decree, the River Master can decide to carefully release some of the stored water in the summer at just the right rate and time to fill the gap.</p>
           <p>With accurate data and smart management, there’s enough water available for everyone. </p>
         </div>
       </div>
@@ -130,7 +184,7 @@ export default {
   grid-template-columns: 1fr 1fr;
   #sankey-image-container-inner {
     position: sticky;
-    top: 0;
+    top: 10em;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -149,6 +203,16 @@ export default {
       grid-row: 1;
       align-self: start;
     }
+    #sankey-image-4 {
+      grid-column: 1;
+      grid-row: 1;
+      align-self: start;
+    }
+    #sankey-image-5 {
+      grid-column: 1;
+      grid-row: 1;
+      align-self: start;
+    }
     img {
       opacity: 0;
       transition: opacity 1s;
@@ -162,7 +226,7 @@ export default {
       padding-top: 20em;
     }
   }
-  #sankey-text-and-title-3 {
+  #sankey-text-and-title-5 {
     padding-bottom: 20em;
   }
 
