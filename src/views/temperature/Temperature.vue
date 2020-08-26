@@ -309,7 +309,7 @@
         <h4>
           Managing for Quality and Quantity
         </h4>
-        <p>Managing water in the modern era requires that we consider as many facets of an ecosystem as possible – flow, temperature, salinity, and many other water-quality dimensions. These decisions impact economic and ecological health throughout the entire river basin.  To be able to know when, how, and what decisions to make, managers have to have lots of accurate data at their fingertips.</p>
+        <p>Managing water in the modern era requires that we consider as many facets of an ecosystem as possible, including <span class="emph">flow,</span> <span class="emph">temperature,</span> and <span class="emph">salinity,</span> as well as many other water-quality dimensions. These decisions impact economic and ecological health throughout the entire river basin.  To be able to know when, how, and what decisions to make, managers have to have lots of accurate data at their fingertips.</p>
         <p>That’s where the USGS comes in.</p>
       </div>
     </div>
@@ -404,7 +404,14 @@
 
       #waterline {
         width: 100%;
-        margin-top: -40px;
+      }
+
+      #cold-water {
+        margin-top: 3%;
+      }
+
+      #warm-water {
+        margin-top: 3%;
       }
 
   }
