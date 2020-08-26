@@ -54,7 +54,7 @@
             How the River Flows
           </h4>
           <p>Flow in the Basin today is managed through formal cooperation among federal, state, and local entities. The Supreme Court decree sets water withdrawal limits so that even at times of greatest need, there’s still plenty of water to flow downriver into the Delaware Bay.</p>
-          <p>Reservoirs help us manage that flow. </p>
+          <p><span class="emph">Reservoirs</span> help us manage that flow. </p>
         </div>
       </div>
 
@@ -78,7 +78,7 @@
           >
             Reservoirs
           </h4>
-          <p>All that water comes from tributaries upstream, where a system of <span class="emph">reservoirs</span> use sections of the river as storage tanks to store enormous amounts of water for times when we need it. They are also used for other kinds of water management - flood control, hydroelectric power, and recreation.</p>
+          <p>All that water comes from tributaries upstream, where a system of reservoirs use sections of the river as storage tanks to store enormous amounts of water for times when we need it. They are also used for other kinds of water management - flood control, hydroelectric power, and recreation.</p>
         </div>
       </div>
       <div
@@ -216,6 +216,7 @@ export default {
     img {
       opacity: 0;
       transition: opacity 1s;
+      max-height: 80vh;
     }
     img.visible {
       opacity: 1;
