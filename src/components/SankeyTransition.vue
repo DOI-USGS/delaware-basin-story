@@ -3,23 +3,28 @@
     <div id="sankey-image-container-outer">
       <div id="sankey-image-container-inner">
         <img
+          id="sankey-image-5"
+          src="@/assets/components/sankeyTransition/images/sankey-res-shapes_Release.png"
+          alt=""
+        >
+        <img
           id="sankey-image-4"
-          src="@/assets/components/sankeyTransition/images/sankey-res-shapes_FlowAdded.png"
+          src="@/assets/components/sankeyTransition/images/sankey-res-shapes_LowFlow.png"
           alt=""
         >
         <img
           id="sankey-image-3"
-          src="@/assets/components/sankeyTransition/images/sankey-res-shapes_Drought.png"
+          src="@/assets/components/sankeyTransition/images/sankey-res-shapes_Withdrawals.png"
           alt=""
         >
         <img
           id="sankey-image-2"
-          src="@/assets/components/sankeyTransition/images/sankey-res-shapes_Normal.png"
+          src="@/assets/components/sankeyTransition/images/sankey-res-shapes_Reservoirs.png"
           alt=""
         >
         <img
           id="sankey-image-1"
-          src="@/assets/components/sankeyTransition/images/sankey-res-shapes-1.png"
+          src="@/assets/components/sankeyTransition/images/sankey-res-shapes_Basin.png"
           alt=""
         >
       </div>
@@ -218,6 +223,11 @@ export default {
       grid-row: 1;
       align-self: start;
     }
+    #sankey-image-5 {
+      grid-column: 1;
+      grid-row: 1;
+      align-self: start;
+    }
     img {
       opacity: 0;
       transition: opacity 1s;
@@ -231,7 +241,7 @@ export default {
       padding-top: 20em;
     }
   }
-  #sankey-text-and-title-4 {
+  #sankey-text-and-title-5 {
     padding-bottom: 20em;
   }
 
