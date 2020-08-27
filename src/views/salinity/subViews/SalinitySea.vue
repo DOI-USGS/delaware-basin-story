@@ -364,7 +364,7 @@
         </div>
       </div>
       <div class="salinity-sea-section-text">
-        <div id="sea-salt-one">
+        <div id="sea-salt-one" class="text-chunk">
           <h3
             id="header-salt-front-intro-text"
             class="text-content-side"
@@ -390,6 +390,7 @@
         >
           <div
             id="sea-salt-two"
+            class="text-chunk"
           >
             <h3
               id="header-salt-front-move-text"
@@ -407,6 +408,7 @@
         </div>
         <div
           id="sea-salt-three"
+
           v-observe-visibility="{
             callback: visibilityChangedThree,
             intersection: {
@@ -414,6 +416,7 @@
               threshold: 0
             }
           }"
+          class="text-chunk"
         >
           <h3
             class="text-content-side"
@@ -436,7 +439,7 @@
               threshold: 0
             }
           }"
-          class="salinity-road-text-container"
+          class="salinity-road-text-container text-chunk"
         >
           <h3 class="text-content-side">
             Road Salt
@@ -566,7 +569,7 @@ export default {
   #salinity-sea-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding-bottom: 10rem;
+    margin-bottom: 10rem;
   }
   #salinityMap.visible  {
     opacity: 1;
@@ -609,22 +612,22 @@ export default {
   .salinity-sea-section-text {
     z-index: 2;
     #sea-salt-one {
-      padding-top: 30vh;
+      margin-top: 30vh;
     }
     #salt-wedge-container img {
-      padding-top: 2rem;
+      margin-top: 2rem;
     }
     #salt-wedge-container figcaption {
       text-align: center;
     }
 
     div:last-child {
-      padding-bottom: 30em;
+      margin-bottom: 30em;
     }
     #sea-salt-two {
       opacity: 0;
       transition: opacity 1s;
-      padding-bottom: 10rem;
+      margin-bottom: 10rem;
     }
     #sea-salt-two.visible {
       opacity: 1;
@@ -632,7 +635,7 @@ export default {
     #sea-salt-three {
       opacity: 0;
       transition: opacity 1s;
-      padding-bottom: 10rem;
+      margin-bottom: 10rem;
     }
     #sea-salt-three.visible {
       opacity: 1;
@@ -640,7 +643,7 @@ export default {
     #RoadSalt {
       opacity: 0;
       transition: opacity 1s;
-      padding-bottom: 20rem;
+      margin-bottom: 20rem;
     }
     #RoadSalt.visible {
       opacity: 1;
@@ -656,11 +659,8 @@ export default {
         top: 15rem;
       }
       .salinity-sea-section-text {
-        padding-top: 40rem;
-        padding-bottom: 40rem;
-        .text-content-side  {
-          background-color: rgba(255,255,255, 0.75);
-        }
+        margin-top: 40rem;
+        margin-bottom: 40rem;
         #header-salt-front-move-text {
           margin-top: 10em;
         }
