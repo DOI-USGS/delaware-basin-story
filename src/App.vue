@@ -189,12 +189,14 @@
   }
 
   a:link {
-    color: $lightBlue;
+    color: black;
+    text-decoration-color: $lightBlue;
   }
 
   /* visited link */
   a:visited {
-    color: $lightBlue;
+    color: black;
+    text-decoration-color: $lightGreen;
   }
 
   /* mouse over link */
@@ -209,6 +211,7 @@
   /* selected link */
   a:active {
     font-style: bold;
+    color: black;
     text-decoration-color: $lightBlue;
     text-decoration-thickness: .01em;
     text-underline-offset: 3px;
