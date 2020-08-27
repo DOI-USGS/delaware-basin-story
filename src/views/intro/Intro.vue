@@ -2,13 +2,14 @@
   <section id="intro">
     <div
       id="intro-banner-container"
+      class="parallax"
     >
-      <img
+      <!-- <img
         id="watercolor"
         src="@/assets/intro/images/DRB_all-01.jpg"
         alt="watercolor map of delaware river basin"
         width="100%"
-      >
+      > -->      
     </div>
     <SectionTitle
       :title="title"
@@ -55,9 +56,41 @@
 
 <style scoped lang="scss">
 
-  #intro-banner-container {
-    min-width: 1000px;
-    overflow: auto;
+  // #intro-banner-container {
+  //   min-width: 1000px;
+  //   overflow: auto;
+  // }
+
+  .parallax {
+    background-image: url("../../assets/intro/images/DRB_all-01.jpg");
+    height: auto;
+    padding-top: 100%;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 120% auto;
   }
 
+  // // small Screens
+  // @media only screen and (max-width: 300px) {
+  //   .parallax {
+  //     height: 30vh;
+  //   }
+  // }
+
+  // // Medium Screens
+  // @media only screen and (max-width: 500px) {
+  //   .parallax {
+  //     height: 50vh;
+  //   }
+  // }
+
+  
+  // // Large Screens
+  // @media only screen and (max-width: 700px) {
+  //   .parallax {
+  //     height: 70vh;
+  //   }
+  // }
+  
 </style>

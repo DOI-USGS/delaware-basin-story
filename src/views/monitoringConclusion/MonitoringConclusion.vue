@@ -3378,7 +3378,7 @@ export default {
       fill: none;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke-width: 5px;
+      stroke-width: 2px;
 
     }
     .arrow {
@@ -3393,7 +3393,7 @@ export default {
       fill: none;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke-width: 5px;
+      stroke-width: 2px;
       z-index: 1;
 
       .sketch-1 {
@@ -3406,7 +3406,7 @@ export default {
         stroke-width: 3px;
       }
       .sketch-4 {
-        stroke-width: 4px;
+        stroke-width: 2px;
       }
       .sketch-fine {
         stroke-width: 1px;
@@ -3418,7 +3418,7 @@ export default {
       fill: none;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke-width: 7px;
+      stroke-width: 5px;
       z-index: -1;
       stroke-dasharray: 300px;
       stroke-dasharray: -300px;
@@ -4171,7 +4171,7 @@ export default {
         stroke-dasharray: 700px;
         stroke-dashoffset: -700px;
         $ord-group: 5;
-        stroke-width: 2.5px;
+        stroke-width: 2px;
         animation: draw700 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
         -webkit-animation: draw700 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
         -moz-animation: draw700 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
