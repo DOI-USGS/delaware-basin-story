@@ -27,8 +27,18 @@
         src="@/assets/temperature/images/waterHeader.png"
         alt="water line for the top of a stream cross-section"
       >
-      <p v-show="isWaterWarm" class="temp-indicator">Warm Water</p>
-      <p v-show="isWaterCold" class="temp-indicator">Cold Water</p>
+      <p
+        v-show="isWaterWarm"
+        class="temp-indicator"
+      >
+        Warm Water
+      </p>
+      <p
+        v-show="isWaterCold"
+        class="temp-indicator"
+      >
+        Cold Water
+      </p>
     </div>
     <div id="content">
       <div class="row-fish">
@@ -96,7 +106,10 @@
               <p>Reservoir water stays cool. When managers release reservoir water, the release sends an extra rush of cool reservoir water downstream.  With the right data and monitoring, managers can make sure that release decisions to maintain enough flow also keep water temperature in a healthy range for the species that live there.</p>
             </div>
 
-            <div v-show="isMusselsTextInView" class="image-stack">
+            <div
+              v-show="isMusselsTextInView"
+              class="image-stack"
+            >
               <img
                 id="substrate"
                 src="@/assets/temperature/images/substrate-01.png"
