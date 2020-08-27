@@ -27,6 +27,8 @@
         src="@/assets/temperature/images/waterHeader.png"
         alt="water line for the top of a stream cross-section"
       >
+      <p v-show="isWaterWarm" class="temp-indicator">Warm Water</p>
+      <p v-show="isWaterCold" class="temp-indicator">Cold Water</p>
     </div>
     <div id="content">
       <div class="row-fish">
@@ -64,7 +66,7 @@
         v-observe-visibility="{
           callback: visibilityChanged,
           intersection: {
-            rootMargin: '40% 0% -60% 0%',
+            rootMargin: '80% 0% -40% 0%',
             threshold: 0
           }
         }"
@@ -94,7 +96,7 @@
               <p>Reservoir water stays cool. When managers release reservoir water, the release sends an extra rush of cool reservoir water downstream.  With the right data and monitoring, managers can make sure that release decisions to maintain enough flow also keep water temperature in a healthy range for the species that live there.</p>
             </div>
 
-            <div class="image-stack">
+            <div v-show="isMusselsTextInView" class="image-stack">
               <img
                 id="substrate"
                 src="@/assets/temperature/images/substrate-01.png"
@@ -307,13 +309,6 @@
           </div>
         </transition-group>
       </div>
-      <div class="text-content">
-        <h4>
-          Managing for Quality and Quantity
-        </h4>
-        <p>Managing water in the modern era requires that we consider as many facets of an ecosystem as possible, including <span class="emph">flow,</span> <span class="emph">temperature,</span> and <span class="emph">salinity,</span> as well as many other water-quality dimensions. These decisions impact economic and ecological health throughout the entire river basin.  To be able to know when, how, and what decisions to make, managers have to have lots of accurate data at their fingertips.</p>
-        <p>That’s where the USGS comes in.</p>
-      </div>
     </div>
   </div>
 </template>
@@ -329,7 +324,7 @@
         data() {
             return {
               isMusselsTextInView: false,
-              isWaterCold: true,
+              isWaterCold: false,
               isWaterWarm: false,
               title: 'Temperature',
               titleBackingImage: require('@/assets/temperature/images/dark-orange-min.png')
@@ -355,7 +350,7 @@
 
 <style scoped lang="scss">
   #mussels-swap-container {
-    height: 90vh;
+    height: 80vh;
     #row-mussels-container {
       display: block;
       position: relative;;
@@ -384,43 +379,34 @@
     top: 0;
     display: grid;
     grid-template-columns: 1fr;
-    align-items: start;
-    justify-items: center;
     margin: 10em auto 0 auto;
 
     img {
       grid-column: 1;
       grid-row: 1;
       background-color: none;
+      align-self: start;
+      justify-self: center;
+      width: 100%;
     }
 
-    #label-container {
-
-      #tempheader{
-        width: 40%;
-        margin-left: 0;
-
-      }
-      .section-title {
-        position: absolute;
-        top: 65%;
-        margin-left: 5%;
-        color: white;
-
-      }
+    #cold-water {
+      margin-top: 3%;
     }
 
-      #waterline {
-        width: 100%;
-      }
+    #warm-water {
+      margin-top: 3%;
+    }
 
-      #cold-water {
-        margin-top: 3%;
-      }
-
-      #warm-water {
-        margin-top: 3%;
-      }
+    .temp-indicator{
+      grid-column: 1;
+      grid-row: 1;
+      font-family: chantal, 'Noto Sans', sans-serif;
+      font-weight: bold;
+      color: white;
+      text-align: right;
+      margin: 10% 10% 0 0;
+    }
 
   }
 
