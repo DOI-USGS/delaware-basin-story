@@ -62,7 +62,7 @@
           </div>
         </div>
         <div class="text-content">
-          <p>Brookies are the only native trout species within the Basin, and they are used as indicators of water quality due to their sensitivity to water temperatures.</p>
+          <p>Brookies are the only native trout species within the Basin, and they love to live in reaches with <span class="emph">cold water.</span> This particular species is used as an indicator of water quality due to its sensitivity to water temperatures.</p>
           <p>In the summer, long hot days and low river flows can warm up the river water.  The heat can be lethal for Brookies and other trout species.</p>
           <p>In the fall, trout wait for a drop in water temperature drop begin their reproductive cycle. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection. The eggs rest there all winter, and require the water to stay cool to develop properly.</p>
         </div>
@@ -101,7 +101,7 @@
               </h4>
             </div>
             <div class="text-content">
-              <p>Dwarf wedgemussels have their own preferences for water temperatures and river flow rates, preferences that are distinctly different than brookies. Wedgemussels like their watery habitats to stay at a warmer temperatures than the brookies do.</p>
+              <p>Dwarf wedgemussels have their own preferences for water temperatures and river flow rates, preferences that are distinctly different than brookies. Wedgemussels like to live in <span class="emph">warmer water</span> than the brookies do.</p>
               <p>That’s why reservoir release decisions are such an important management tool.</p>
               <p>Reservoir water stays cool. When managers release reservoir water, the release sends an extra rush of cool reservoir water downstream.  With the right data and monitoring, managers can make sure that release decisions to maintain enough flow also keep water temperature in a healthy range for the species that live there.</p>
             </div>
