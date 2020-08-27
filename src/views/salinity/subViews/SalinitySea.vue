@@ -10,7 +10,7 @@
           >
             <defs>
               <linearGradient
-                id="linear"
+                id="linear-moving"
                 x1="0%"
                 y1="0%"
                 x2="-23%"
@@ -43,7 +43,7 @@
                 >
                   <animate
                     attributeName="offset"
-                    values=".555;.53;.54;.58;.565;.555;.54;.54;.47;.515;.54;.555"
+                    values=".56;.53;.54;.58;.57;.56;.54;.54;.47;.52;.54;.56"
                     dur="12s"
                     repeatCount="indefinite"
                   />
@@ -62,100 +62,114 @@
                 <stop
                   class="stop5"
                   offset="80%"
-                  stop-opacity=".7"
+                  stop-opacity=".6"
                 />
               </linearGradient>
+              
             
             </defs>
-            <g id="map">
-              <image
-                width="766"
-                height="489"
-                transform="translate(1.32 0.29) scale(1.3)"
-                xlink:href="@/assets/salinity/salinitySea/images/saltmap-background-01.jpg"
-              />
-              <image
-                width="766"
-                height="489"
-                transform="translate(1.32 0.29) scale(1.3)"
-                xlink:href="@/assets/salinity/salinitySea/images/saltmap-river-01.png"
-              />
+            <g id="salinityMap">
+              <g id="map">
+                <image
+                  xlink:href="@/assets/salinity/salinitySea/images/saltmap-background-01-01.jpg"
+                />
+                <image
+                  xlink:href="@/assets/salinity/salinitySea/images/saltmap-river-01-01.png"
+                />
+                <g id="salty-water-rising">
+                  <path
+                    fill="url(#linear-moving)"
+                    d="M583.22,17C595,30.43,618,33.58,618.67,54.67c5,18.71,32.73,20.1,40.24,37.65.81,12,3.32,16.36,6.18,18s7.08-.21,8.85,2.15c1.21,1.61.66,4.06.06,5.78-.7,5.79-4.25,9.33-7.18,9.12-.35,0-2.14-.21-3.89-2.69-1.4.32-.54,2.49-.83,3.29-1-1.12-.83-2.25-1.92-3.27-4.23-.38-1,9-5.61,6.4a27.73,27.73,0,0,1-14,1.07c1.59-3.1,1.38-4.32.9-4.86-1.42-1.61-6.92,1-10.52,2.94a33.12,33.12,0,0,1-12,19,31.9,31.9,0,0,1-5.21,5.8A32.81,32.81,0,0,1,600.42,162c-1.92-3-3.3,1-4.65,1.27a8.1,8.1,0,0,0-4.77-2,7.8,7.8,0,0,0-4,1c-15,7.92-20,12-20,12-6,4.79-10.94,9.64-17,14a33.75,33.75,0,0,1-7,4c-3.12,1.31-3.57.92-6,2-1.34.6-6.1,2.73-8.4,7.1-2.14,4.07.19,5.67-1.6,8.9-1.52,2.76-3.76,2.6-15,7-6.76,2.66-9.58,4.14-12,7a18.53,18.53,0,0,0-3,5,31.85,31.85,0,0,0-1,12c.4,3.61,1.12,4.15,1.68,8.12.77,5.5,1.56,11.09-1.68,14.88-3,3.57-9.09,4.94-11.68,2.94-1.37-1.06-1.27-2.54-2.93-3.58-.95-.59-2.48-.74-5.47.15-4.12-.59-5.15,2.33-3,5.34-4.23,3.09-6.85,7.8-11.81,10C442.34,290.42,415.16,275.6,397,297a115.15,115.15,0,0,0-67,76.26c-7.36,11.09-14.1,17.84-19,22a148.76,148.76,0,0,0-12,11c-3.55,3.66-6.26,6.86-8,9a2.69,2.69,0,0,0-2,1c-1,1.51,1,3.67,2,9,.55,2.84.24,3.59,0,4-.55.93-1.58,1.47-2,3-.2.72-.06.93,0,1,.39.48,1.41-.21,3,0,.78.11,1.95.46,2,1s-.54.83-1,1c-.73.28-1.1-.09-2,0a3,3,0,0,0-2,1c-.7.91-.72,2.47,0,3,.46.34,1.12.2,2,0a6.59,6.59,0,0,0,1.66-.61A14.7,14.7,0,0,1,303,441.29a15.66,15.66,0,0,1,4,5,25.1,25.1,0,0,1,3,9c1.53,9.9-2.35,22-3,24a28.65,28.65,0,0,0-7,14,29,29,0,0,0,1,14c2,6.8,5.8,11.24,9,15s3.62,3.27,7,7c6,6.67,9.32,13.37,13,21,2.87,6,2.84,6.92,6,13,4.22,8.12,6.43,10.53,8,12,2.3,2.17,2.15,1.31,8,6,4.78,3.84,7.18,5.76,8,7a7.63,7.63,0,0,0,3,3c1.51.75,2.15.27,3,1s1,1.83,1,6c0,1.48,0,3.16,0,5,1.56,2.15,3.68,5.2,6,9a77.5,77.5,0,0,1,5,9,38.57,38.57,0,0,1,3,17H485a14.31,14.31,0,0,0-5-9,12.15,12.15,0,0,0-2.55-1.51,61.1,61.1,0,0,0-9.65-8.35A47.71,47.71,0,0,0,455.5,613c-2.38-2.5-1.91-1.77-.05-4.13-.47-2.53-5.36-6.34-4.74-9.76a16.43,16.43,0,0,0-8.71-3.86c-1.63-.16-4.09-.42-6,1-.39.29-.14.2-2,2-1.46,1.43-2.47,2.32-2.24,2.8a.42.42,0,0,0,.24.2,45,45,0,0,1-14.71-21.37c1.51-8-13.3-14.9-16.31-6.15-.52-8.55-13.27-4.48-12.77-13.26.15-10.32-18-10.22-22.47-23-5.29-5.44-3.5-18.83-13.62-18.22-8-3-11.66-12.13-20.63-11.95-11.18,2-12.05-22-2.64-14.52,1.94-5.43,3.9-22.51-.4-28,32.77-39.05-41.61-31.37-6.41-56.73,18.83-8.09,13-36.76,29.3-41.27,2.44-18.74,17.84-43,36.51-47.29,2.69.11,8.32-5.57,7.18-8.13,5.53-7.19,24-8.74,31.54-16.69,10.7.67,18.72.52,29.36-5,3.17,2.08,15.25-1.61,11.86-4.45-.39-1,4.36.94,4.4-2.56,7.76-9.23,19.57-4.55,29.66-11.29,8.78-12.53-3-26.55,2.5-39.81,8.48,3.55,13.76-7.73,21.93-6.24,4.48-.55,2.4-3.47,2.23-6.3,3.27-.81,6.36-4.82,7.28-8.12,1.4-10,8.21-10.22,16-12.45,7.55-2.32,9.33-9.34,16.7-9,1.52-11,11.83-13.16,20.33-21C600,169.64,611,164.26,620.45,160c12.74,4.28,9.75-26.43,17.31-24,5.74,1.84,12.07,6.15,17.77,1.43,2.52-3.41,2.71,1.74,5.75,1,4.44,1.4,11.15-2.83,9.76-6.75,1.29-4.1,13.19-8.45,9.11-12.35.47-9.55-6.4-16.31-15-19.3-2.46-3.94-1.2-9.15-5.18-11.74-5-17.45-32.25-16-36.43-33.33-5.47-24.64-18-22.79-32.82-36Z"
+                  />
+                </g>
               
+              </g>
             </g>
-            <g id="salty-water">
+            
+            <g v-if="SeasonalChanges">
+             
               <path
-                fill="url(#linear)"
-                d="M580.22,12C592,25.43,615,28.58,615.67,49.67c5,18.71,32.73,20.1,40.24,37.65.81,12,3.32,16.36,6.18,18s7.08-.21,8.85,2.15c1.21,1.61.66,4.06.06,5.78-.7,5.79-4.25,9.33-7.18,9.12-.35,0-2.14-.21-3.89-2.69-1.4.32-.54,2.49-.83,3.29-1-1.12-.83-2.25-1.92-3.27-4.23-.38-1,9-5.61,6.4a27.73,27.73,0,0,1-14,1.07c1.59-3.1,1.38-4.32.9-4.86-1.42-1.61-6.92,1-10.52,2.94a33.12,33.12,0,0,1-12,19,31.9,31.9,0,0,1-5.21,5.8A32.81,32.81,0,0,1,597.42,157c-1.92-3-3.3,1-4.65,1.27a8.1,8.1,0,0,0-4.77-2,7.8,7.8,0,0,0-4,1c-15,7.92-20,12-20,12-6,4.79-10.94,9.64-17,14a33.75,33.75,0,0,1-7,4c-3.12,1.31-3.57.92-6,2-1.34.6-6.1,2.73-8.4,7.1-2.14,4.07.19,5.67-1.6,8.9-1.52,2.76-3.76,2.6-15,7-6.76,2.66-9.58,4.14-12,7a18.53,18.53,0,0,0-3,5,31.85,31.85,0,0,0-1,12c.4,3.61,1.12,4.15,1.68,8.12.77,5.5,1.56,11.09-1.68,14.88-3,3.57-9.09,4.94-11.68,2.94-1.37-1.06-1.27-2.54-2.93-3.58-.95-.59-2.48-.74-5.47.15-4.12-.59-5.15,2.33-3,5.34-4.23,3.09-6.85,7.8-11.81,10C439.34,285.42,412.16,270.6,394,292a115.15,115.15,0,0,0-67,76.26c-7.36,11.09-14.1,17.84-19,22a148.76,148.76,0,0,0-12,11c-3.55,3.66-6.26,6.86-8,9a2.69,2.69,0,0,0-2,1c-1,1.51,1,3.67,2,9,.55,2.84.24,3.59,0,4-.55.93-1.58,1.47-2,3-.2.72-.06.93,0,1,.39.48,1.41-.21,3,0,.78.11,1.95.46,2,1s-.54.83-1,1c-.73.28-1.1-.09-2,0a3,3,0,0,0-2,1c-.7.91-.72,2.47,0,3,.46.34,1.12.2,2,0a6.59,6.59,0,0,0,1.66-.61A14.7,14.7,0,0,1,300,436.29a15.66,15.66,0,0,1,4,5,25.1,25.1,0,0,1,3,9c1.53,9.9-2.35,22-3,24a28.65,28.65,0,0,0-7,14,29,29,0,0,0,1,14c2,6.8,5.8,11.24,9,15s3.62,3.27,7,7c6,6.67,9.32,13.37,13,21,2.87,6,2.84,6.92,6,13,4.22,8.12,6.43,10.53,8,12,2.3,2.17,2.15,1.31,8,6,4.78,3.84,7.18,5.76,8,7a7.63,7.63,0,0,0,3,3c1.51.75,2.15.27,3,1s1,1.83,1,6c0,1.48,0,3.16,0,5,1.56,2.15,3.68,5.2,6,9a77.5,77.5,0,0,1,5,9,38.57,38.57,0,0,1,3,17H482a14.31,14.31,0,0,0-5-9,12.15,12.15,0,0,0-2.55-1.51,61.1,61.1,0,0,0-9.65-8.35A47.71,47.71,0,0,0,452.5,608c-2.38-2.5-1.91-1.77-.05-4.13-.47-2.53-5.36-6.34-4.74-9.76a16.43,16.43,0,0,0-8.71-3.86c-1.63-.16-4.09-.42-6,1-.39.29-.14.2-2,2-1.46,1.43-2.47,2.32-2.24,2.8a.42.42,0,0,0,.24.2,45,45,0,0,1-14.71-21.37c1.51-8-13.3-14.9-16.31-6.15-.52-8.55-13.27-4.48-12.77-13.26.15-10.32-18-10.22-22.47-23-5.29-5.44-3.5-18.83-13.62-18.22-8-3-11.66-12.13-20.63-11.95-11.18,2-12.05-22-2.64-14.52,1.94-5.43,3.9-22.51-.4-28,32.77-39.05-41.61-31.37-6.41-56.73,18.83-8.09,13-36.76,29.3-41.27,2.44-18.74,17.84-43,36.51-47.29,2.69.11,8.32-5.57,7.18-8.13,5.53-7.19,24-8.74,31.54-16.69,10.7.67,18.72.52,29.36-5,3.17,2.08,15.25-1.61,11.86-4.45-.39-1,4.36.94,4.4-2.56,7.76-9.23,19.57-4.55,29.66-11.29,8.78-12.53-3-26.55,2.5-39.81,8.48,3.55,13.76-7.73,21.93-6.24,4.48-.55,2.4-3.47,2.23-6.3,3.27-.81,6.36-4.82,7.28-8.12,1.4-10,8.21-10.22,16-12.45,7.55-2.32,9.33-9.34,16.7-9,1.52-11,11.83-13.16,20.33-21C597,164.64,608,159.26,617.45,155c12.74,4.28,9.75-26.43,17.31-24,5.74,1.84,12.07,6.15,17.77,1.43,2.52-3.41,2.71,1.74,5.75,1,4.44,1.4,11.15-2.83,9.76-6.75,1.29-4.1,13.19-8.45,9.11-12.35.47-9.55-6.4-16.31-15-19.3-2.46-3.94-1.2-9.15-5.18-11.74-5-17.45-32.25-16-36.43-33.33-5.47-24.64-18-22.79-32.82-36Z"
+                id="arrow_drought"
+                d="M566,248.17A28.51,28.51,0,0,1,530,229l-4.5,11.25,3.38-13.5,12.37,1.13L530,229"
+                class="marker"
               />
-            </g>
-            <g v-if="isSeaLevelRiseMarkShowing">
+              <g>
+                <path d="M582.63,243.57s-.11.17-.08.2c0,.78,0,8.23-.34,10.44a.73.73,0,0,1-.81.62c-.92,0-2.46-.93-2.58-1.94-.08-.64-.05-2.12,0-3.75,0-1.45.11-3,.05-4.25a38.55,38.55,0,0,1-5.23,2.66,1.51,1.51,0,0,1-.31,0c-.76,0-1.88-.47-2-1.14a.93.93,0,0,1,.36-.79,37.09,37.09,0,0,1,3.64-2.18c1.6-.9,3.17-1.74,3.42-1.91a2.29,2.29,0,0,1,1.43-.5c.56,0,2.54.81,2.66,1.71A1.08,1.08,0,0,1,582.63,243.57Z" />
+                <path d="M595.65,258.13a.92.92,0,0,1-.75.34,2.13,2.13,0,0,1-1.91-1.85c-.11-.84.81-4,1.12-5a9.2,9.2,0,0,1-3.61,1.09c-1.12,0-3.72-1.21-3.92-2.63-.45-3.39,3.53-7.09,7.34-7.84a5.7,5.7,0,0,1,.92-.11,1.82,1.82,0,0,1,1.2.39,1.8,1.8,0,0,1,.4,0,1.87,1.87,0,0,1,2,1.54C598.76,246.45,596.91,256.23,595.65,258.13Zm-5.77-7.87a9.82,9.82,0,0,0,4.88-2.43,14.63,14.63,0,0,0,.44-2.8C592.74,245.59,590.08,247.85,589.88,250.26Z" />
+                <path d="M608.42,256.45a6.36,6.36,0,0,1-4.76-2.6,6.44,6.44,0,0,1-.87-2.63c-.56-4.54,2.49-10.59,5.83-13.19a1.75,1.75,0,0,1,1.14-.34c1,0,2.38.76,2.44,1.26a.56.56,0,0,1-.28.59c-1,.64-6,7.06-5.46,11.73.06.34.34,2.18.95,2.24,1.88.14,3.19-2.07,3.11-3.41-.31.05-.53.19-1.18,1.68-.19.44-.56,1-1.12,1a1.28,1.28,0,0,1-1-1.2,5.62,5.62,0,0,1,1.26-3.86,2.62,2.62,0,0,1,2-.65c1.35,0,3.11.48,3.33,2.19C614.13,251.78,611.47,256.45,608.42,256.45Z" />
+                <path d="M628.1,251.07a7.53,7.53,0,0,1-6,3.76,5.9,5.9,0,0,1-5.74-5.24c-.42-3.36,2.24-7.78,5.88-8.45a1.31,1.31,0,0,1,.34,0,2.64,2.64,0,0,1,1.31.42,2.45,2.45,0,0,1,1-.23,4.18,4.18,0,0,1,2.07.59c1.35.87,1.85,2.86,2,4.09A8.44,8.44,0,0,1,628.1,251.07Zm-3.69-7.44c-1.6,0-3.45,2.4-4.06,3.47s-1.23,5.18.87,5.18c1.26,0,2.52-.59,3.8-3a5.73,5.73,0,0,0,.65-3.39C625.61,245.36,625.39,243.63,624.41,243.63Z" />
+                <path d="M647.76,243.93a1.32,1.32,0,0,1-.7-.16,2.54,2.54,0,0,0-1.23-.23c-3.47,0-10.22,2.55-11.68,4a8.42,8.42,0,0,0,1.07.26c1.45.31,6.91,1.43,7.84,2a4.53,4.53,0,0,1,1.84,2.6,1.13,1.13,0,0,1-.44,1.15c-.9.73-5.63,2.82-6.81,2.82s-3.11-.81-3.19-1.54a.74.74,0,0,1,.14-.47c.56-.9,6.44-1.91,6.55-2.55,0,0-.08,0-.14,0s-.45-.08-.7-.14c-2.24-.59-7-1.06-8.65-2.8a2.75,2.75,0,0,1-.62-1.51,2.81,2.81,0,0,1,.56-2.24c1.32-1.23,8.21-4.51,13.42-4.51a5.27,5.27,0,0,1,4.25,1.85.92.92,0,0,1,.2.42C649.52,243.37,648.46,243.93,647.76,243.93Z" />
+                <path d="M661.65,255.7a3.27,3.27,0,0,1-.65.11,1.55,1.55,0,0,1-1.56-1.51,3,3,0,0,1,0-1.12,6,6,0,0,1-.67-2.44A36.67,36.67,0,0,1,659,242c-.67-.42-1.48-1.12-1.54-1.49s.17-.75.89-.81c1.6-.08,3.31-.17,5-.17,5.24,0,10.61.51,12.27,1.51,1.34.82,2.71,1.71,2.91,3.45C679,248.83,662.1,255.58,661.65,255.7Zm13.1-12.35c-1.29-.62-6.72-1.18-10.19-1.18a8.17,8.17,0,0,0-2.35.2,34.88,34.88,0,0,0,0,7.47,15.09,15.09,0,0,0,.29,1.51c1.73-.75,12.73-5.54,12.48-7.69A.42.42,0,0,0,674.75,243.35Z" />
+                <path d="M688.36,251.35c1.23.76,2.85,1.63,4.34,2.5a1,1,0,0,1,.5.7c.06.59-1,1.2-1.93,1.2a4.72,4.72,0,0,1-2.35-.95,36.33,36.33,0,0,0-3.59-2.16c.2.9.56,2.05.62,2.47.11.84-.78,1.12-1.4,1.12a2.28,2.28,0,0,1-1.82-.87,13.18,13.18,0,0,1-1.34-4.87,15.58,15.58,0,0,1-.14-1.82c-.12-2.89.56-7,1-7a41.44,41.44,0,0,1,4.85-.28A22.51,22.51,0,0,1,693,242c1.76.56,4,1.85,4.2,3.41C697.46,248,690.32,250.71,688.36,251.35Zm-.51-7.53c-.78,0-1.56,0-2.32.09a19.65,19.65,0,0,0-.48,5.4c2.52-.78,8.24-3.42,8.18-4.67C692.7,244.19,690.49,243.82,687.85,243.82Z" />
+                <path d="M703.48,254a5.11,5.11,0,0,1-5-4.45c-.33-2.74,1.57-7.42,5.55-7.42a2.7,2.7,0,0,1,1.85.59c1.17.06,2.91.87,3.27,3.87,0,.33.09.72.09,1.12C709.27,250.57,706.45,254,703.48,254Zm2.38-8.54a1.69,1.69,0,0,0-.62-.11c-1.93,0-4,2.94-3.81,4.62.06.45.2.7.68.7a4.25,4.25,0,0,0,2.8-1.62,7.76,7.76,0,0,0,1-3.56Z" />
+                <path d="M718.74,255.83a6.59,6.59,0,0,1-1.18.09c-1.09,0-2.94-.22-3.72-1.37a8.74,8.74,0,0,1-1.23-3.78,13.83,13.83,0,0,1,1.23-7.9.88.88,0,0,1,.81-.42c.67,0,2.35.76,2.46,1.54a1.78,1.78,0,0,1,0,.31,16.31,16.31,0,0,0-1,7.39,13.34,13.34,0,0,0,.23,1.46c0,.25,0,.42.17.42,2.54,0,6.16-7.17,6.24-12.07,0-.7,1.29-1.2,2.16-1.2,1.28,0,1.42.84,1.51,1.59C727,246.2,722.85,255.11,718.74,255.83Z" />
+                <path d="M744.53,249.93a14.6,14.6,0,0,1-10.08,4.59,6.42,6.42,0,0,1-5.44-3.36,2.12,2.12,0,0,1-.28-.87c-.33-2.83,3.59-8.82,9.44-10.44a1.32,1.32,0,0,1,.48-.06c.7,0,3,.64,3.13,1.79.06.54-.39,1-1.31,1.21-4.23,1-9.13,6.35-8.91,8.12.06.56,1.23.47,1.63.47,2.1,0,6-1.51,7.36-2.21-1.12.11-4.12.87-5.1.87-.44,0-1.87-.2-2-.95-.16-1.29,4.29-2.94,6.89-2.94.67,0,4.2,1.57,4.37,3A.91.91,0,0,1,744.53,249.93Z" />
+                <path d="M762.05,247.69c0,1.87,0,3.89-.08,5.51a11.41,11.41,0,0,1-.28,3.33,1,1,0,0,1-.81.42c-.67,0-2.3-.89-2.44-1.7a11.31,11.31,0,0,1,0-1.93c0-.51.06-1.07.09-1.54l-7.65,1.31a16.26,16.26,0,0,0,.09,2c0,.53-.14,1-.9,1a2.49,2.49,0,0,1-2-1.12,8,8,0,0,1-.62-2.58c-.36-2.94-.56-8.17.06-9.1a1,1,0,0,1,.84-.39c.84,0,2.27.9,2.38,1.82.08.67.06,3.61.08,5.1,2-.4,7.82-1.24,7.82-1.24s0-.36,0-.58c-.06-1.57-.25-6,.19-7.25a.83.83,0,0,1,.82-.51,2.73,2.73,0,0,1,2.4,1.91A54.12,54.12,0,0,1,762.05,247.69Z" />
+                <path d="M778,238.36a5.57,5.57,0,0,1-1,.28c-1.23.25-2.46.45-3.69.68-.42.05-.73.11-.76.19-.33.62-.59,14.36-.64,16.32,0,1.77-.09,3.11-.14,3.37s-.51.58-1.09.58a2.4,2.4,0,0,1-2.41-1.9c-.11-1.09.05-5.77.22-10.11.14-3.16.28-6.22.37-7.64a12,12,0,0,1-3.14.56c-1,0-2.63-.9-2.74-1.82-.14-1.15,1.73-.93,2.4-1,1-.17,2.13-.61,3.84-1a34.42,34.42,0,0,1,7.59-.73,1.75,1.75,0,0,1,1.73,1.29A.89.89,0,0,1,778,238.36Z" />
+              </g>
               
+              
+
+            </g>
+            <g
+              v-if="SeaLevelRise"
+              class="marker"
+            >
               <path
                 id="ft1"
-                class="marker"
                 d="M490.29 290.66c-.89-3.67-2.21-9-3.86-15.45-2.56-10-3.78-14.2-3.57-14.26.58-.19 10.87 31.61 11.36 31.46.29-.09-3-11.39-8.3-29.28"
               />
               <path
                 id="ft2"
-                class="marker"
                 d="M517.38 269.69c-2.48-1.63-5.92-3.87-10-6.53-11.51-7.43-16.28-10.34-16.18-10.52.25-.41 28.12 15.77 28.4 15.3.17-.28-9.06-6.13-25.34-16.17"
               />
               <path
                 id="ft3"
-                class="marker"
                 d="M488.54 232.11c18.47 4.35 29.78 7.13 29.71 7.42-.11.5-33-6.62-33.21-5.68-.08.38 5.08 1.91 14.86 4.81 6.26 1.86 11.51 3.33 15.29 4.37"
               />
               <path
                 id="intake"
-                class="marker"
                 d="M561.73 166.34l21 21"
               />
           
-              <g class="marker">
-                <path
-                  id="num1"
-                  d="M472.89 303.64l8-4.66v12"
-                />
-                <path
-                  id="ft1_f"
-                  d="M497.56 315.65c-.22-2-.11-3.67-.33-5.67.22-4.22.11-8.78.33-13l6.67-.67M505.56 309l-7.33.67"
-                />
-                <path
-                  id="ft1_t"
-                  d="M513.57 295.64q-.35 9.67-.67 19.34M508.23 297l12-2.67"
-                />
-              </g> 
-              <g class="marker">
-                <path
-                  id="num2"
-                  d="M522.38 273.61a14.21 14.21 0 014-2.67c1.47-.65 4.07-1.79 5.33-.66a2.55 2.55 0 01.67 2c-.14 1.32-1.36 2.16-2 2.66a13 13 0 00-4 6l6-.66"
-                />
-                <path
-                  id="ft2_f"
-                  d="M545 286.16c-.23-2-.12-3.66-.34-5.66.22-4.23.11-8.78.34-13l6.66-.66M553 279.5l-7.34.66"
-                />
-                <path
-                  id="ft2_t"
-                  d="M561 266.16q-.33 9.68-.67 19.34M555.67 267.49l12-2.66"
-                />
-              </g>
-              <g class="marker">
-                <path
-                  id="num3"
-                  d="M524.33 234.09l8.67-2 2 .66-4.66 4a5.31 5.31 0 013.33 1.34 4.55 4.55 0 011.33 2c.51 2-2.38 5.19-7.33 7.33"
-                />
-                <path
-                  id="ft3_f"
-                  d="M544.29 248.64c-.22-2-.11-3.67-.33-5.67.22-4.22.11-8.78.33-13l6.67-.67M552.29 242l-7.33.67"
-                />
-                <path
-                  id="ft3_t"
-                  d="M560.3 228.64q-.34 9.66-.67 19.33M555 230l12-2.67"
-                />
-              </g>
-
-            </g>
-            <g v-if="isDrinkingWaterIntakesShowing">
+              <path
+                id="num1"
+                d="M472.89 303.64l8-4.66v12"
+              />
+              <path
+                id="ft1_f"
+                d="M497.56 315.65c-.22-2-.11-3.67-.33-5.67.22-4.22.11-8.78.33-13l6.67-.67M505.56 309l-7.33.67"
+              />
+              <path
+                id="ft1_t"
+                d="M513.57 295.64q-.35 9.67-.67 19.34M508.23 297l12-2.67"
+              />
+            
+              <path
+                id="num2"
+                d="M522.38 273.61a14.21 14.21 0 014-2.67c1.47-.65 4.07-1.79 5.33-.66a2.55 2.55 0 01.67 2c-.14 1.32-1.36 2.16-2 2.66a13 13 0 00-4 6l6-.66"
+              />
+              <path
+                id="ft2_f"
+                d="M545 286.16c-.23-2-.12-3.66-.34-5.66.22-4.23.11-8.78.34-13l6.66-.66M553 279.5l-7.34.66"
+              />
+              <path
+                id="ft2_t"
+                d="M561 266.16q-.33 9.68-.67 19.34M555.67 267.49l12-2.66"
+              />
+                    
+              <path
+                id="num3"
+                d="M524.33 234.09l8.67-2 2 .66-4.66 4a5.31 5.31 0 013.33 1.34 4.55 4.55 0 011.33 2c.51 2-2.38 5.19-7.33 7.33"
+              />
+              <path
+                id="ft3_f"
+                d="M544.29 248.64c-.22-2-.11-3.67-.33-5.67.22-4.22.11-8.78.33-13l6.67-.67M552.29 242l-7.33.67"
+              />
+              <path
+                id="ft3_t"
+                d="M560.3 228.64q-.34 9.66-.67 19.33M555 230l12-2.67"
+              />
               <g
                 id="intakes-text"
                 class="marker"
@@ -251,7 +265,7 @@
                 id="city-labels"
                 class="marker"
               >
-                <g id="philly">
+                <!-- <g id="philly">
                   <path
                     id="dot_philly"
                     fill-rule="evenodd"
@@ -312,38 +326,9 @@
                     id="philly_l2"
                     d="M345 168.29a114.83 114.83 0 000 13c.2 3.58.56 6.92 1 10l8-4"
                   />
-                </g>
-                <!-- <g id="camden">
-                  <path
-                    id="camden_c"
-                    d="M522 245.29a17.81 17.81 0 00-6 3c-1 .8-5.8 4.48-6 10-.05 1.29-.12 3.15 1 4 1.72 1.32 5.68-.16 10-4"
-                  />
-                  <g id="camden_a">
-                    <path d="M525.14 267.42c1.35-3.74 2.53-6.88 3.44-9.27.58-1.53 1.07-2.78 1.38-3.59 1.27-3.24 2.37-6 3.22-8a2.63 2.63 0 011.61 0 3.05 3.05 0 011.6 1.61c.84 1.59 2.7 7.39 4.82 15.26M528.36 260.19L538 257" />
-                  </g>
-                  <path
-                    id="camden_m"
-                    d="M548.5 260.79l7-14 3 14 8-9 3 7"
-                  />
-                  <path
-                    id="camden_d"
-                    d="M578.61 247.79c0 2.45-.81 9.79.82 14.69a56.35 56.35 0 008.16-3.27 38.93 38.93 0 007.34-4.89c1.36-1 3.3-2.83 3.26-4.08s-.82-1.63-2.45-2.45c-3.72-1.86-17.53-2.34-19.57-2.44"
-                  />
-                  <g id="camden_e">
-                    <path d="M615 245.06l-8.84 1.61a42.37 42.37 0 00-.8 9.64 43 43 0 001.6 10.45l7.24-1.61" />
-                    <path d="M614.21 258.72a13.73 13.73 0 00-3.22 0 13.3 13.3 0 00-3.21.81" />
-                  </g>
-                  <path
-                    id="camden_n"
-                    d="M622.5 262.79v-13.86l13 12.23q.41-8.16.82-16.31"
-                  />
-                  <path
-                    id="dot_camden"
-                    fill-rule="evenodd"
-                    d="M518.42 237.4a3.88 3.88 0 10-3.87 3.85 3.86 3.86 0 003.87-3.85z"
-                  />
-                </g> -->
-              </g>
+                </g>-->
+              
+              </g> 
                 
               <g
                 id="skyline-sketch"
@@ -379,7 +364,7 @@
         </div>
       </div>
       <div class="salinity-sea-section-text">
-        <div id="sea-salt-wedge-text">
+        <div id="sea-salt-one">
           <h3
             id="header-salt-front-intro-text"
             class="text-content-side"
@@ -387,35 +372,81 @@
             The Salt Wedge
           </h3>
           <p class="text-content-side">
-            As freshwater spills from the river onto the saltier, ocean-influenced waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the intruding ocean. The bounds of that wedge – the “salt front” – migrate up and down the river channel over the daily cycle of ocean tides, the seasonal cycle of lower and higher river flows, and the multi-year fluctuations of higher and lower flows.
+            As freshwater spills from the river into the saltier waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the ocean as it intrudes into the bay and estuary. The boundary of that wedge is called the “salt front.”
           </p>
+          <div id="salt-wedge-container">
+            <figure><img src="@/assets/salinity/salinitySea/images/saltfront.png"><figcaption>Cross-section of the salt wedge</figcaption></figure>
+          </div>
         </div>
         <div
-          id="sea-level-scroll-target"
+          id="sea-level-scroll-target" 
           v-observe-visibility="{
-            callback: visibilityChanged,
+            callback: visibilityChangedTwo,
             intersection: {
-              rootMargin: '-10% 0% -50% 0%',
+              rootMargin: '-50% 0% -30% 0%',
               threshold: 0
             }
           }"
         >
           <div
-            id="sea-salt-rise-text"
+            id="sea-salt-two"
           >
             <h3
               id="header-salt-front-move-text"
               class="text-content-side"
             >
-              The salt front will likely move upstream as sea levels rise
+              Seasonal Changes
             </h3>
             <p class="text-content-side">
-              While these natural variations usually pose no problems, sea level rise is expected to push the salt front so far inland – especially during droughts – that water at the major Trenton, NJ intake could be contaminated. Salty water corrodes surface water intake pipes, raises the cost of drinking water treatment, and is potentially toxic to aquatic plants and fish.
+              The salt front migrates up and down the river channel over the daily cycle of ocean tides.  The location of the salt front is also impacted by occasional storm surges, the seasonal cycle of high or low river flows, and fluctuations as the river changes over the course of many years.
             </p>
             <p class="text-content-side">
-              Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. Remember the Supreme-Court-mandated flow targets at Montague and Trenton? One key motivation for setting the targets where they are is to keep pressing the salt front toward the ocean.  Maintaining the target flow is an important tool for protecting our current uses of freshwater in the lower Basin. Good data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location.
+              Fluctuations within a normal range are good for ecosystems that are used to brackish water. However, if there is not enough downstream flow the salt front can migrate further upstream. In the 1960s during a record drought, the salt front moved upstream within 8 miles of drinking water intakes that many depend on. 
             </p>
           </div>
+        </div>
+        <div
+          id="sea-salt-three"
+          v-observe-visibility="{
+            callback: visibilityChangedThree,
+            intersection: {
+              rootMargin: '-50% 0% -30% 0%',
+              threshold: 0
+            }
+          }"
+        >
+          <h3
+            class="text-content-side"
+          >
+            Sea levels are rising
+          </h3>
+          <p class="text-content-side">
+            Simultaneously, sea levels are rising and pushing the salt front further upstream. With just 3 feet of sea level rise, the salt front is predicted to travel once again within the reaches of Philadelphia and threaten fresh water supplies.
+          </p>
+          <p class="text-content-side">
+            Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. One key concerns for stakeholders, including the Supreme Court decree Parties, DRBC, Philadelphia and others, is to keep enough freshwater flowing down the Delaware River to press the salt front back toward the ocean. Accurate data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location. 
+          </p>
+        </div>
+        <div
+          id="RoadSalt"
+          v-observe-visibility="{
+            callback: visibilityChangedRoadSalt,
+            intersection: {
+              rootMargin: '-50% 0% -30% 0%',
+              threshold: 0
+            }
+          }"
+          class="salinity-road-text-container"
+        >
+          <h3 class="text-content-side">
+            Road Salt
+          </h3>
+          <p class="text-content-side">
+            Even as we manage river flow to keep the ocean salt out of the lower Delaware River, we work against ourselves by actively adding salt to waters throughout the Basin. Rock salt applied to roads in winter to makes driving and walking safer. But when the snow and ice melts, the runoff carries dissolved salt into streams and rivers, contaminating those waters with <a href="https://www.usgs.gov/news/urban-stream-contamination-increasing-rapidly-due-road-salt">levels of chloride that can be toxic</a> to aquatic plants and animals and can even threaten drinking water quality.
+          </p>
+          <p class="text-content-side">
+            Reducing road salt concentrations in streams can involve chemical deicing alternatives and moderating road salt applications. But safe roads are important too. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs.
+          </p>
         </div>
       </div>
     </div>
@@ -427,30 +458,86 @@ export default {
   name: 'SalinitySea',
   data() {
     return {
-      isSeaLevelRiseMarkShowing: false,
-      isDrinkingWaterIntakesShowing: false
+      SeasonalChanges: false,
+      SeaLevelRise: false,
     }
   },
   methods: {
-    visibilityChanged(isVisible, entry) {
+    visibilityChangedTwo(isVisible, entry) {
       this.isVisible = isVisible;
-      const targetElement = document.querySelector('#sea-salt-rise-text');
+      const targetElement = document.querySelector('#sea-salt-two');
       if (isVisible === true) {
+        console.log('in view');
         targetElement.classList.add('visible');
         switch(entry.target.id) { // this is set up for more conditions, right now the switch statement is not needed since there is only one condition
           case 'sea-level-scroll-target' :
-            this.isSeaLevelRiseMarkShowing = true;
-            this.isDrinkingWaterIntakesShowing = true;
+            this.SeasonalChanges = true;
+            this.SeaLevelRise = false;
             break;
           default:
             break;
         }
       } else if (isVisible !== true) {
         targetElement.classList.remove('visible');
-        switch(entry.target.id) {  // this is set up for more conditions, right now the switch statement is not needed since there is only one condition
+        console.log('out of view');
+        switch(entry.target.id) {  
           case 'sea-level-scroll-target' :
-            this.isSeaLevelRiseMarkShowing = false
-            this.isDrinkingWaterIntakesShowing = false;
+            this.SeasonalChanges = false;
+            this.SeaLevelRise = false;
+            break;
+          default:
+            break;
+        }
+      }
+    },
+    visibilityChangedThree(isVisible, entry) {
+      this.isVisible = isVisible;
+      const targetElement = document.querySelector('#sea-salt-three');
+      if (isVisible === true) {
+        console.log('in view');
+        targetElement.classList.add('visible');
+        switch(entry.target.id) { 
+          case 'sea-salt-three' :
+            this.SeasonalChanges = false;
+            this.SeaLevelRise = true;
+            break;
+          default:
+            break;
+        }
+      } else if (isVisible !== true) {
+        targetElement.classList.remove('visible');
+        console.log('out of view');
+        switch(entry.target.id) {  
+          case 'sea-salt-three' :
+            this.SeasonalChanges = false
+            this.SeaLevelRise = false;
+            break;
+          default:
+            break;
+        }
+      }
+    },
+    visibilityChangedRoadSalt(isVisible, entry) {
+      this.isVisible = isVisible;
+      const targetElement = document.querySelector('#RoadSalt');
+      if (isVisible === true) {
+        console.log('in view');
+        targetElement.classList.add('visible');
+        switch(entry.target.id) { 
+          case 'salinityMap' :
+            this.SeasonalChanges = false;
+            this.SeaLevelRise = true;
+            break;
+          default:
+            break;
+        }
+      } else if (isVisible !== true) {
+        targetElement.classList.remove('visible');
+        console.log('out of view');
+        switch(entry.target.id) {  
+          case 'salinityMap' :
+            this.SeasonalChanges = false
+            this.SeaLevelRise = false;
             break;
           default:
             break;
@@ -460,6 +547,137 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+
+/* clip-path animation for salt front */
+#salty-water  {
+  opacity: 0.9;
+  clip-path: square;
+  /* animation: salt-mvmt 5s ease-in-out infinite; */
+}
+
+.stop1, .stop2, .stop3, .stop4, .stop5 {
+  stop-color: #00ffff;
+}
+
+// what follows controls the general layout, grid pattern, and text fades
+#salinity-sea {
+  #salinity-sea-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: 10rem;
+  }
+  #salinityMap.visible  {
+    opacity: 1;
+  }
+  .salinity-sea-section-image {
+    align-self: start;
+    position: sticky;
+    top: 4em;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+    #container-salinity-sea-image-background {
+      grid-column: 1;
+      grid-row: 1;
+      align-self: start;
+      height: 80vh;
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+    }
+    .marker {
+      fill: none;
+      stroke: black;
+      stroke-width: 3px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .city-lines {
+      fill:none;
+      stroke:#000;
+      stroke-miterlimit:10;
+      stroke-width:1;
+    }
+    .river-reaches {
+      fill: #0a3d75;
+      opacity: 0.2;
+    }
+  }
+  .salinity-sea-section-text {
+    z-index: 2;
+    #sea-salt-one {
+      padding-top: 30vh;
+    }
+    #salt-wedge-container img {
+      padding-top: 2rem;
+    }
+    #salt-wedge-container figcaption {
+      text-align: center;
+    }
+
+    div:last-child {
+      padding-bottom: 30em;
+    }
+    #sea-salt-two {
+      opacity: 0;
+      transition: opacity 1s;
+      padding-bottom: 10rem;
+    }
+    #sea-salt-two.visible {
+      opacity: 1;
+    }
+    #sea-salt-three {
+      opacity: 0;
+      transition: opacity 1s;
+      padding-bottom: 10rem;
+    }
+    #sea-salt-three.visible {
+      opacity: 1;
+    }
+    #RoadSalt {
+      opacity: 0;
+      transition: opacity 1s;
+      padding-bottom: 20rem;
+    }
+    #RoadSalt.visible {
+      opacity: 1;
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  #salinity-sea {
+    #salinity-sea-container {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      .salinity-sea-section-image {
+        top: 15rem;
+      }
+      .salinity-sea-section-text {
+        padding-top: 40rem;
+        padding-bottom: 40rem;
+        .text-content-side  {
+          background-color: rgba(255,255,255, 0.75);
+        }
+        #header-salt-front-move-text {
+          margin-top: 10em;
+        }
+        #sea-salt-two {
+          opacity: 1;
+        }
+        #sea-salt-three {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+// will need to pad text at several break points
+
+</style>
 
 <style scoped lang="less">
 
@@ -475,7 +693,7 @@ export default {
   100% {stroke-dashoffset: 0px;}
 }
 
-//animation mixin for full browser support
+//animation mixin for brower prefixes
 .animation (@name, @duration: 1s, @delay: 0) {
 	-webkit-animation: @name @duration linear @delay forwards;
 	-moz-animation:    @name @duration linear @delay forwards;
@@ -552,128 +770,4 @@ export default {
     .animation(@name: ghostwrite-200, @duration: .5s, @delay: 5s);
 }
 
-.salinity-sea-section-image {
-
-  .marker {
-  fill: none;
-  stroke: black;
-  stroke-width: 3px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-
-}
- 
-  .city-lines {
-  fill:none;
-  stroke:#000;
-  stroke-miterlimit:10;
-  stroke-width:1;
-
-}
-}
-
-/* clip-path animation for salt front */
-#salty-water  {
-  opacity: 0.9;
-  clip-path: square;
-  /* animation: salt-mvmt 5s ease-in-out infinite; */
-}
-
-.stop1, .stop2, .stop3, .stop4, .stop5 {
-  stop-color: #00ffff;
-}
-/* paced to a constant rate */
-/* @keyframes salt-mvmt {
-  0%  {clip-path: inset(59.5% 0 0 0);}
-  9%  {clip-path: inset(57% 0 0 0);}
-  13%  {clip-path: inset(58% 0 0 0);}
-  28%  {clip-path: inset(62% 0 0 0);}
-  33%  {clip-path: inset(60.5% 0 0 0);}
-  37%  {clip-path: inset(59.5% 0 0 0);}
-  42%  {clip-path: inset(58% 0 0 0);}
-  44%  {clip-path: inset(58% 0 0 0);}
-  69%  {clip-path: inset(51% 0 0 0);}
-  85%  {clip-path: inset(55.5% 0 0 0);}
-  94%  {clip-path: inset(58% 0 0 0);}
-  100%  {clip-path: inset(59.5% 0 0 0);}
-} */
-/* paced to be even with time */
-/* @keyframes salt-mvmt {
-  0%  {clip-path: inset(59.5% 0 0 0);}
-  9%  {clip-path: inset(57% 0 0 0);}
-  18%  {clip-path: inset(58% 0 0 0);}
-  27%  {clip-path: inset(62% 0 0 0);}
-  36%  {clip-path: inset(60.5% 0 0 0);}
-  45%  {clip-path: inset(59.5% 0 0 0);}
-  54%  {clip-path: inset(58% 0 0 0);}
-  63%  {clip-path: inset(58% 0 0 0);}
-  72%  {clip-path: inset(51% 0 0 0);}
-  81%  {clip-path: inset(55.5% 0 0 0);}
-  90%  {clip-path: inset(58% 0 0 0);}
-  100%  {clip-path: inset(59.5% 0 0 0);}
-}
- */
-
-// what follows controls the general layout, grid pattern, and text fades
-#salinity-sea {
-  #salinity-sea-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
-  .salinity-sea-section-image {
-    align-self: start;
-    position: sticky;
-    top: 4em;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 1fr;
-    #container-salinity-sea-image-background {
-      grid-column: 1;
-      grid-row: 1;
-      align-self: start;
-    }
-  }
-  .salinity-sea-section-text {
-    z-index: 2;
-    #sea-salt-wedge-text {
-      padding-bottom: 15rem;
-    }
-    div:last-child {
-      padding-bottom: 30em;
-    }
-    #sea-salt-rise-text {
-      opacity: 0;
-      transition: opacity 2s;
-    }
-    #sea-salt-rise-text.visible {
-      opacity: 1;
-    }
-  }
-}
-@media only screen and (max-width: 992px) {
-  #salinity-sea {
-    #salinity-sea-container {
-      grid-template-columns: 1fr;
-      justify-items: center;
-      .salinity-sea-section-image {
-        top: 15em;
-      }
-      .salinity-sea-section-text {
-        padding-top: 40em;
-        padding-bottom: 0;
-        .text-content-side  {
-          background-color: rgba(255,255,255, 0.75);
-        }
-        #header-salt-front-move-text {
-          margin-top: 10em;
-        }
-        #sea-salt-rise-text {
-          opacity: 1;
-        }
-      }
-    }
-  }
-}
-
-// will need to pad text at several break points
 </style>
