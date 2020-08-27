@@ -439,7 +439,7 @@
           </p>
         </div>
         <div
-          id="RoadSalt"
+          id="RoadSalt"          
           v-observe-visibility="{
             callback: visibilityChangedRoadSalt,
             intersection: {
@@ -552,7 +552,7 @@ export default {
         targetElement.classList.remove('visible');
         console.log('road salt out of view');
         switch(entry.target.id) {  
-          case 'sRoadSalt' :
+          case 'RoadSalt' :
             this.SeasonalChanges = false
             this.SeaLevelRise = false;
             this.RoadSalt = false;
@@ -569,11 +569,6 @@ export default {
 <style scoped lang="scss">
 
 //snow animation
-
-.RoadSalt  {
-  height: 50vw;
-  width: auto;
-}
 
 $s1:"";
 $s2:"";
@@ -600,31 +595,31 @@ $s3:"";
 }
 
 .layer1 {
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.1rem;
+  height: 1.1rem;
   filter: blur(1.5px);
   box-shadow: #{$s1};
-  animation-duration: 14s;
+  animation-duration: 18s;
 }
 .layer1.a {
   animation-delay: -3s;
 }
 .layer2 {
-  width: 1rem;
-  height: 1rem;
-  filter: blur(3px);
+  width: .8rem;
+  height: .8rem;
+  filter: blur(2px);
   box-shadow: #{$s2};
-  animation-duration: 15s;
+  animation-duration: 20s;
 }
 .layer2.a {
   animation-delay: -4s;
 }
 .layer3 {
-  width: .5rem;
-  height: .5rem;
-  filter: blur(5px);
+  width: .4rem;
+  height: .4rem;
+  filter: blur(4px);
   box-shadow: #{$s3};
-  animation-duration: 16s;
+  animation-duration: 22s;
 }
 .layer3.a {
   animation-delay: -5s;
@@ -638,7 +633,6 @@ $s3:"";
 #salty-water  {
   opacity: 0.9;
   clip-path: square;
-  /* animation: salt-mvmt 5s ease-in-out infinite; */
 }
 
 .stop1, .stop2, .stop3, .stop4, .stop5 {
@@ -661,17 +655,14 @@ $s3:"";
     top: 4em;
     z-index: 1;
     display: grid;
-    grid-template-columns: 1fr;
-    
-
+    grid-template-columns: 1fr;  
 
     #container-salinity-sea-image-background {
       grid-column: 1;
       grid-row: 1;
       align-self: start;
-      height: 80vh;
-      margin-top: 10vh;
-      margin-bottom: 10vh;
+      margin-top: 15vh;
+      height: 70vh;
     }
     .marker {
       fill: none;
@@ -725,7 +716,7 @@ $s3:"";
     #RoadSalt {
       opacity: 0;
       transition: opacity 1s;
-      padding-bottom: 40rem;
+      padding-bottom: 40vh;
     }
     #RoadSalt.visible {
       opacity: 1;

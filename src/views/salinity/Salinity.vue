@@ -5,21 +5,21 @@
       :image="titleBackingImage"
     />
     <SalinitySea />
-    <SalinityRoad />
+    <!-- <SalinityRoad /> -->
   </div>
 </template>
 
 <script>
   import SectionTitle from "@/components/SectionTitle";
   import SalinitySea from "@/views/salinity/subViews/SalinitySea";
-  import SalinityRoad from "@/views/salinity/subViews/SalinityRoad";
+  /* import SalinityRoad from "@/views/salinity/subViews/SalinityRoad"; */
 
   export default {
       name: 'Salinity',
       components: {
         SectionTitle,
         SalinitySea,
-        SalinityRoad
+        /* SalinityRoad */
       },
       data() {
         return {
