@@ -71,6 +71,7 @@
   // Import Colors
 
   $offWhite: rgb(236,227,220);
+  $transparentWhite: rgba(255,255,255, 0.8);
   $darkBlue: rgb(30, 86,120);
   $lightBlue: rgb(73,166,206);
   $darkGreen: rgb(46,131,107);
@@ -130,12 +131,18 @@
       
 
     }
+
+    // Mobile-friendly Transparent-White Background around text blocks
+    .text-chunk {
+      background-color: $transparentWhite;
+      padding: 2em 0 2em 0;
+    }
     // Text-only
     .text-content {
       min-width: 350px;
       max-width: 700px;
       margin: 0 auto;
-      padding: 5em 20px 5em 20px;      
+      padding: 5em 20px 5em 20px;     
     }
 
     // Text and Content side-by-side
@@ -189,12 +196,14 @@
   }
 
   a:link {
-    color: $lightBlue;
+    color: black;
+    text-decoration-color: $lightBlue;
   }
 
   /* visited link */
   a:visited {
-    color: $lightBlue;
+    color: black;
+    text-decoration-color: $lightGreen;
   }
 
   /* mouse over link */
@@ -209,6 +218,7 @@
   /* selected link */
   a:active {
     font-style: bold;
+    color: black;
     text-decoration-color: $lightBlue;
     text-decoration-thickness: .01em;
     text-underline-offset: 3px;

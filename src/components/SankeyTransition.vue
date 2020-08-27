@@ -46,7 +46,7 @@
       >
         <div
           id="p-container-1"
-          class="p-container text-content-side"
+          class="p-container text-content-side text-chunk"
         >
           <h4
             id="sankey-title-1"
@@ -71,7 +71,7 @@
       >
         <div
           id="p-container-2"
-          class="p-container text-content-side"
+          class="p-container text-content-side text-chunk"
         >
           <h4
             id="sankey-title-2"
@@ -94,7 +94,7 @@
       >
         <div
           id="p-container-3"
-          class="p-container text-content-side"
+          class="p-container text-content-side text-chunk"
         >
           <h4
             id="sankey-title-3"
@@ -118,7 +118,7 @@
       >
         <div
           id="p-container-4"
-          class="p-container text-content-side"
+          class="p-container text-content-side text-chunk"
         >
           <h4
             id="sankey-title-4"
@@ -142,7 +142,7 @@
       >
         <div
           id="p-container-5"
-          class="p-container text-content-side"
+          class="p-container text-content-side text-chunk"
         >
           <h4
             id="sankey-title-5"

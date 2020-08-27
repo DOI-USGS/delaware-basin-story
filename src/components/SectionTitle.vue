@@ -37,7 +37,7 @@ export default {
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
-  margin: 10em auto 0 auto;
+  margin: -3em auto 0 auto;
   .title-cloud-backing {
     grid-column: 1;
     grid-row: 1;
