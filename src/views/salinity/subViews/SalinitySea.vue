@@ -27,34 +27,37 @@
                   stop-opacity="0"
                 />
                 <stop
-                  class="stop1"
+                  class="stop3"
                   stop-opacity=".1"
                 >
                   <animate
                     attributeName="offset"
-                    values=".51;.49;.50;.54;.52;.51;.50;.50;.43;.47;.50;.51"
+                    values=".5; .49; .5; .5; .5; .54; .5; .55; .47; .5; .48; .52;"
                     dur="12s"
                     repeatCount="indefinite"
                   />
-                </stop>
-                <stop
-                  class="stop2"
-                  stop-opacity=".3"
-                >
-                  <animate
-                    attributeName="offset"
-                    values=".56;.53;.54;.58;.57;.56;.54;.54;.47;.52;.54;.56"
-                    dur="12s"
-                    repeatCount="indefinite"
-                  />
-                </stop>
-                <stop
-                  class="stop3"
+
+                  </stop>
+
+                 <stop
+                  class="stop7"
                   stop-opacity=".7"
                 >
                   <animate
                     attributeName="offset"
-                    values=".595;.57;.58;.62;.605;.595;.58;.58;.51;.555;.58;.595"
+                    values=".51; .515; .51; .525; .51; .56; .51; .515; .48; .515; .5; .515;"
+                    dur="12s"
+                    repeatCount="indefinite"
+                  />
+                </stop>
+                                             
+                <stop
+                  class="stop3"
+                  stop-opacity=".8"
+                >
+                  <animate
+                    attributeName="offset"
+                    values=".6;.57;.58;.6;.605;.595;.58;.58;.51;.555;.58;.595"
                     dur="12s"
                     repeatCount="indefinite"
                   />
@@ -62,7 +65,67 @@
                 <stop
                   class="stop5"
                   offset="80%"
-                  stop-opacity=".6"
+                  stop-opacity=".7"
+                />
+              </linearGradient>
+
+              <linearGradient
+                id="linear-rising"
+                x1="0%"
+                y1="0%"
+                x2="-28%"
+                y2="100%"
+              >
+                <stop
+                  class="stop1"
+                  offset="0%"
+                  stop-opacity="0"
+                />
+                <stop
+                  class="stop1"
+                  offset="43%"
+                  stop-opacity="0"
+                />
+                <stop
+                  class="stop3"
+                  stop-opacity=".1"
+                >
+                  <animate
+                    attributeName="offset"
+                    values=".5; .49; .5; .55; .5; .55; .5; .55; .47; .5; .48; .52;"
+                    dur="12s"
+                    repeatCount="indefinite"
+                  />
+
+                  </stop>
+
+                 <stop
+                  class="stop3"
+                  stop-opacity=".7"
+                >
+                  <animate
+                    attributeName="offset"
+                    values=".51; .515; .51; .515; .51; .515; .51; .515; .48; .515; .5; .515;"
+                    dur="12s"
+                    repeatCount="indefinite"
+                  />
+                </stop>
+                                             
+                <stop
+                  class="stop7"
+                  stop-opacity=".8"
+                >
+                  <animate
+                    attributeName="offset"
+                    values=".6;.57;.58;.6;.605;.595;.58;.58;.51;.555;.58;.595"
+                    dur="12s"
+                    repeatCount="indefinite"
+                  />
+                </stop>
+                <stop
+                  class="stop5"
+                  offset="80%"
+                  stop-opacity=".7"
                 />
               </linearGradient>
               
@@ -380,13 +443,13 @@
             id="header-salt-front-intro-text"
             class="text-content-side"
           >
-            The Salt Wedge
+            The Salt Front
           </h3>
           <p class="text-content-side">
             As freshwater spills from the river into the saltier waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the ocean as it intrudes into the bay and estuary. The boundary of that wedge is called the “salt front.”
           </p>
           <div id="salt-wedge-container">
-            <figure><img src="@/assets/salinity/salinitySea/images/saltfront.png"><figcaption>Cross-section of the salt wedge</figcaption></figure>
+            <figure><img src="@/assets/salinity/salinitySea/images/saltfront.png"><!-- <figcaption>Cross-section of the salt wedge</figcaption> --></figure>
           </div>
         </div>
         <div
@@ -635,15 +698,17 @@ $s3:"";
   clip-path: square;
 }
 
-.stop1, .stop2, .stop3, .stop4, .stop5 {
-  stop-color: #00ffff;
+.stop1, .stop5 {
+  stop-color: #487F79;
 }
-
+.stop3{
+  stop-color: #1A424B;
+}
 // what follows controls the general layout, grid pattern, and text fades
 #salinity-sea {
   #salinity-sea-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     padding-bottom: 10rem;
   }
   #salinityMap.visible  {
@@ -728,6 +793,7 @@ $s3:"";
     #salinity-sea-container {
       grid-template-columns: 1fr;
       justify-items: center;
+      
       .salinity-sea-section-image {
         top: 15rem;
       }
