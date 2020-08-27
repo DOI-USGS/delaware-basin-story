@@ -5,7 +5,7 @@
       :image="titleBackingImage"
     />
 
-    <div class="text-content">
+    <div class="text-content text-chunk">
       <h4>
         Managing for Quality and Quantity
       </h4>
@@ -2909,7 +2909,7 @@
           id="monitoring-intro-text"
           class="conclusion-text-section"
         >
-          <div>
+          <div class="text-chunk">
             <h4
               id="text-block-intro"
               v-observe-visibility="{
@@ -2934,7 +2934,7 @@
         <div
           id="monitoring-text-details"
         >
-          <div class="number-cloud-title-container">
+          <div class="number-cloud-title-container text-chunk">
             <div class="subtext-cloud-number-container">
               <img
                 id="number-cloud-new_enhanced"
@@ -2966,7 +2966,7 @@
               <p>Measurements of real-time flow levels are critical to the decision makers of the Basin, especially in the River Master’s office during late-summer low flows. To better understand streamflow in various locations of the basin, 34 new stream gages have been installed the last three years, each housing delicate monitoring equipment that is collecting data all day, every day. </p>
             </div>
           </div>
-          <div class="number-cloud-title-container">
+          <div class="number-cloud-title-container text-chunk">
             <div class="subtext-cloud-number-container">
               <img
                 id="number-cloud-salinity"
@@ -3000,7 +3000,7 @@
               </div>
             </div>
           </div>
-          <div class="number-cloud-title-container">
+          <div class="number-cloud-title-container text-chunk">
             <div class="subtext-cloud-number-container">
               <img
                 id="number-cloud-temp"
@@ -3034,7 +3034,7 @@
               </div>
             </div>
           </div>
-          <div class="number-cloud-title-container">
+          <div class="number-cloud-title-container text-chunk">
             <div class="subtext-cloud-number-container">
               <img
                 id="number-cloud-cameras"
@@ -3070,7 +3070,7 @@
               </div>
             </div>
           </div>
-          <div class="number-cloud-title-container">
+          <div class="number-cloud-title-container text-chunk">
             <div class="subtext-cloud-number-container">
               <img
                 id="number-cloud-r-d"
@@ -3104,7 +3104,7 @@
               </div>
             </div>
           </div>
-          <div class="number-cloud-title-container">
+          <div class="number-cloud-title-container text-chunk">
             <div class="subtext-cloud-number-container">
               <img
                 id="number-cloud-all"
@@ -3139,7 +3139,7 @@
             </div>
           </div>
         </div>
-        <div class="text-content-side">
+        <div class="text-content-side text-chunk">
           <h4>A New Generation of Water Science in the Delaware River Basin</h4>
           <p>Water uses in the Delaware Basin are diverse and complicated, and the need for information that describes the present and future conditions of water availability and water quality are more pressing than ever.</p>
           <p>The advancements in water science and monitoring paint a clearer picture of how the DRB has changed, and new efforts are building models that better predict the health and function of the river in the future. As a result, the new advanced monitoring strategy of the NGWOS is enhancing water data collection, and the modernized data management – with increased public availability, rapid data downloads, and interactive views of current conditions – makes it easier to study the health of Basin.</p>
@@ -3378,7 +3378,7 @@ export default {
       fill: none;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke-width: 5px;
+      stroke-width: 2px;
 
     }
     .arrow {
@@ -3393,7 +3393,7 @@ export default {
       fill: none;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke-width: 5px;
+      stroke-width: 2px;
       z-index: 1;
 
       .sketch-1 {
@@ -3406,7 +3406,7 @@ export default {
         stroke-width: 3px;
       }
       .sketch-4 {
-        stroke-width: 4px;
+        stroke-width: 2px;
       }
       .sketch-fine {
         stroke-width: 1px;
@@ -3418,7 +3418,7 @@ export default {
       fill: none;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke-width: 7px;
+      stroke-width: 5px;
       z-index: -1;
       stroke-dasharray: 300px;
       stroke-dasharray: -300px;
@@ -4171,7 +4171,7 @@ export default {
         stroke-dasharray: 700px;
         stroke-dashoffset: -700px;
         $ord-group: 5;
-        stroke-width: 2.5px;
+        stroke-width: 2px;
         animation: draw700 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
         -webkit-animation: draw700 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
         -moz-animation: draw700 $time-dur-long linear $sect-start-temp+($ord-group*$time-delay-med) forwards;
@@ -4265,7 +4265,7 @@ export default {
   object-fit: cover;
   height: 100vh;
   width: 100%;
-  min-width: 900px;
+  min-width: 1000px;
   overflow: auto;
   position: sticky;
   display: block;

@@ -1,20 +1,20 @@
 <template>
   <section id="intro">
-    <SectionTitle
-      :title="title"
-      :image="titleBackingImage"
-    />
     <div
       id="intro-banner-container"
+      class="parallax"
     >
-      <img
+      <!-- <img
         id="watercolor"
         src="@/assets/intro/images/DRB_all-01.jpg"
         alt="watercolor map of delaware river basin"
         width="100%"
-      >
+      > -->      
     </div>
-
+    <SectionTitle
+      :title="title"
+      :image="titleBackingImage"
+    />
     <IntroTextContents />
     <ImageCarousel />
   </section>
@@ -56,57 +56,41 @@
 
 <style scoped lang="scss">
 
-  // #watercolor {
-  //   min-width: 900px;
+  // #intro-banner-container {
+  //   min-width: 1000px;
+  //   overflow: auto;
   // }
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
-    #intro-banner-container {
-      position: sticky;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      .container-section-title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        text-align: center;
 
-      }
-    }
+  .parallax {
+    background-image: url("../../assets/intro/images/DRB_all-01.jpg");
+    height: auto;
+    padding-top: 100%;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 120% auto;
   }
 
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-    #intro-banner-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-content: center;
-      .container-section-title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        right: 5%;
-        top: 70%;
-        text-align: center;
+  // // small Screens
+  // @media only screen and (max-width: 300px) {
+  //   .parallax {
+  //     height: 30vh;
+  //   }
+  // }
 
-        color: white;
-        img {
-          width: 100%;
-        }
-        .section-title {
-          position: absolute;
-          width: 100%;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-    }
-  }
+  // // Medium Screens
+  // @media only screen and (max-width: 500px) {
+  //   .parallax {
+  //     height: 50vh;
+  //   }
+  // }
+
+  
+  // // Large Screens
+  // @media only screen and (max-width: 700px) {
+  //   .parallax {
+  //     height: 70vh;
+  //   }
+  // }
+  
 </style>
