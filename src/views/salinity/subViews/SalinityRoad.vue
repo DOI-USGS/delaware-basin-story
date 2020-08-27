@@ -2,9 +2,14 @@
   <section id="salinity-road">
     <div id="salinity-road-container">
       <div class="salinity-road-image-container">
-        <img
-          src="@/assets/salinity/salinityRoad/images/truckin-slow.gif"
-        >
+        <div class="wrapper">
+          <div class="snow layer1 a"></div>
+          <div class="snow layer2 a"></div>
+          <div class="snow layer3 a"></div>
+          <div class="snow layer1"></div>
+          <div class="snow layer2"></div>
+          <div class="snow layer3"></div>
+        </div>
       </div>
       <div class="salinity-road-text-container">
         <h4 class="text-content-side">
@@ -28,6 +33,72 @@
 </script>
 
 <style scoped lang="scss">
+.wrapper  {
+  height: 50vw;
+  width: auto;
+  background: radial-gradient(farthest-corner at 30vw 20vh, #7397a1 1%, #3f2c41 100%);
+}
+
+//snow animation
+$s1:"";
+$s2:"";
+$s3:"";
+@for $i from 1 through 400  {
+  $s1: $s1 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + random(50)*-0.01rem + #fff;
+  $s2: $s2 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + random(50)*-0.01rem + #fff;
+  $s3: $s3 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + random(50)*-0.01rem + #fff;
+  @if $i < 400  {
+    $s1: $s1 + ",";
+    $s2: $s2 + ",";
+    $s3: $s3 + ",";
+  }
+}
+.snow {
+  border-radius: 50%;
+  opacity: 0.8;
+
+  top: -100vh;
+  position: relative;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.layer1 {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: blur(1.5px);
+  box-shadow: #{$s1};
+  animation-duration: 6s;
+}
+.layer1.a {
+  animation-delay: -3s;
+}
+.layer2 {
+  width: 1.1rem;
+  height: 1.1rem;
+  filter: blur(3px);
+  box-shadow: #{$s2};
+  animation-duration: 8s;
+}
+.layer2.a {
+  animation-delay: -4s;
+}
+.layer3 {
+  width: .7rem;
+  height: .7rem;
+  filter: blur(5px);
+  box-shadow: #{$s3};
+  animation-duration: 10s;
+}
+.layer3.a {
+  animation-delay: -5s;
+}
+
+@keyframes fall {
+  100%  {transform: translateY(200vh);}
+}
+
 #salinity-road-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
