@@ -364,7 +364,10 @@
         </div>
       </div>
       <div class="salinity-sea-section-text">
-        <div id="sea-salt-one" class="text-chunk">
+        <div
+          id="sea-salt-one"
+          class="text-chunk"
+        >
           <h3
             id="header-salt-front-intro-text"
             class="text-content-side"
