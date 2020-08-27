@@ -361,6 +361,17 @@
               </g>
             </g>
           </svg>
+          <div class="wrapper"
+            v-if="RoadSalt">
+          <div class="snow layer1"></div>
+          <div class="snow layer1 a"></div>
+          <div class="snow layer2 a"></div>
+          <div class="snow layer3 a"></div>
+          <div class="snow layer1"></div>
+          <div class="snow layer2"></div>
+          <div class="snow layer3"></div>
+          </div>
+
         </div>
       </div>
       <div class="salinity-sea-section-text">
@@ -383,7 +394,7 @@
           v-observe-visibility="{
             callback: visibilityChangedTwo,
             intersection: {
-              rootMargin: '-50% 0% -30% 0%',
+              rootMargin: '-50% 0% -50% 0%',
               threshold: 0
             }
           }"
@@ -410,7 +421,7 @@
           v-observe-visibility="{
             callback: visibilityChangedThree,
             intersection: {
-              rootMargin: '-50% 0% -30% 0%',
+              rootMargin: '-50% 0% -50% 0%',
               threshold: 0
             }
           }"
@@ -428,11 +439,11 @@
           </p>
         </div>
         <div
-          id="RoadSalt"
+          id="RoadSalt"          
           v-observe-visibility="{
             callback: visibilityChangedRoadSalt,
             intersection: {
-              rootMargin: '-50% 0% -30% 0%',
+              rootMargin: '-50% 0% -50% 0%',
               threshold: 0
             }
           }"
@@ -460,6 +471,7 @@ export default {
     return {
       SeasonalChanges: false,
       SeaLevelRise: false,
+      RoadSalt: false,
     }
   },
   methods: {
@@ -467,23 +479,25 @@ export default {
       this.isVisible = isVisible;
       const targetElement = document.querySelector('#sea-salt-two');
       if (isVisible === true) {
-        console.log('in view');
+        console.log('two in view');
         targetElement.classList.add('visible');
         switch(entry.target.id) { // this is set up for more conditions, right now the switch statement is not needed since there is only one condition
-          case 'sea-level-scroll-target' :
+          case 'sea-salt-two' :
             this.SeasonalChanges = true;
             this.SeaLevelRise = false;
+            this.RoadSalt = false;
             break;
           default:
             break;
         }
       } else if (isVisible !== true) {
         targetElement.classList.remove('visible');
-        console.log('out of view');
+        console.log('two out of view');
         switch(entry.target.id) {  
-          case 'sea-level-scroll-target' :
+          case 'sea-salt-two' :
             this.SeasonalChanges = false;
             this.SeaLevelRise = false;
+            this.RoadSalt = false;
             break;
           default:
             break;
@@ -494,23 +508,25 @@ export default {
       this.isVisible = isVisible;
       const targetElement = document.querySelector('#sea-salt-three');
       if (isVisible === true) {
-        console.log('in view');
+        console.log('three in view');
         targetElement.classList.add('visible');
         switch(entry.target.id) { 
           case 'sea-salt-three' :
             this.SeasonalChanges = false;
             this.SeaLevelRise = true;
+            this.RoadSalt = false;
             break;
           default:
             break;
         }
       } else if (isVisible !== true) {
         targetElement.classList.remove('visible');
-        console.log('out of view');
+        console.log('three out of view');
         switch(entry.target.id) {  
           case 'sea-salt-three' :
             this.SeasonalChanges = false
             this.SeaLevelRise = false;
+            this.RoadSalt = false;
             break;
           default:
             break;
@@ -521,23 +537,25 @@ export default {
       this.isVisible = isVisible;
       const targetElement = document.querySelector('#RoadSalt');
       if (isVisible === true) {
-        console.log('in view');
+        console.log('road salt in view');
         targetElement.classList.add('visible');
         switch(entry.target.id) { 
-          case 'salinityMap' :
+          case 'RoadSalt' :
             this.SeasonalChanges = false;
-            this.SeaLevelRise = true;
+            this.SeaLevelRise = false;
+            this.RoadSalt  = true;
             break;
           default:
             break;
         }
       } else if (isVisible !== true) {
         targetElement.classList.remove('visible');
-        console.log('out of view');
+        console.log('road salt out of view');
         switch(entry.target.id) {  
-          case 'salinityMap' :
+          case 'RoadSalt' :
             this.SeasonalChanges = false
             this.SeaLevelRise = false;
+            this.RoadSalt = false;
             break;
           default:
             break;
@@ -550,11 +568,71 @@ export default {
 
 <style scoped lang="scss">
 
+//snow animation
+
+$s1:"";
+$s2:"";
+$s3:"";
+@for $i from 1 through 400  {
+  $s1: $s1 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + random(50)*-0.01rem + #fff;
+  $s2: $s2 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + random(50)*-0.01rem + #fff;
+  $s3: $s3 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + random(50)*-0.01rem + #fff;
+  @if $i < 400  {
+    $s1: $s1 + ",";
+    $s2: $s2 + ",";
+    $s3: $s3 + ",";
+  }
+}
+.snow {
+  border-radius: 50%;
+  opacity: 0.8;
+
+  top: -100vh;
+  position: absolute;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.layer1 {
+  width: 1.1rem;
+  height: 1.1rem;
+  filter: blur(1.5px);
+  box-shadow: #{$s1};
+  animation-duration: 18s;
+}
+.layer1.a {
+  animation-delay: -3s;
+}
+.layer2 {
+  width: .8rem;
+  height: .8rem;
+  filter: blur(2px);
+  box-shadow: #{$s2};
+  animation-duration: 20s;
+}
+.layer2.a {
+  animation-delay: -4s;
+}
+.layer3 {
+  width: .4rem;
+  height: .4rem;
+  filter: blur(4px);
+  box-shadow: #{$s3};
+  animation-duration: 22s;
+}
+.layer3.a {
+  animation-delay: -5s;
+}
+
+@keyframes fall {
+  100%  {transform: translateY(200vh);}
+}
+
 /* clip-path animation for salt front */
 #salty-water  {
   opacity: 0.9;
   clip-path: square;
-  /* animation: salt-mvmt 5s ease-in-out infinite; */
 }
 
 .stop1, .stop2, .stop3, .stop4, .stop5 {
@@ -577,16 +655,14 @@ export default {
     top: 4em;
     z-index: 1;
     display: grid;
-    grid-template-columns: 1fr;
-
+    grid-template-columns: 1fr;  
 
     #container-salinity-sea-image-background {
       grid-column: 1;
       grid-row: 1;
       align-self: start;
-      height: 80vh;
-      margin-top: 10vh;
-      margin-bottom: 10vh;
+      margin-top: 15vh;
+      height: 70vh;
     }
     .marker {
       fill: none;
@@ -640,7 +716,7 @@ export default {
     #RoadSalt {
       opacity: 0;
       transition: opacity 1s;
-      padding-bottom: 20rem;
+      padding-bottom: 40vh;
     }
     #RoadSalt.visible {
       opacity: 1;
