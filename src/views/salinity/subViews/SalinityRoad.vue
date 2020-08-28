@@ -3,12 +3,12 @@
     <div id="salinity-road-container">
       <div class="salinity-road-image-container">
         <div class="wrapper">
-          <div class="snow layer1 a"></div>
-          <div class="snow layer2 a"></div>
-          <div class="snow layer3 a"></div>
-          <div class="snow layer1"></div>
-          <div class="snow layer2"></div>
-          <div class="snow layer3"></div>
+          <div class="snow layer1 a" />
+          <div class="snow layer2 a" />
+          <div class="snow layer3 a" />
+          <div class="snow layer1" />
+          <div class="snow layer2" />
+          <div class="snow layer3" />
         </div>
       </div>
       <div class="salinity-road-text-container">
