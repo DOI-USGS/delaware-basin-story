@@ -375,21 +375,16 @@
 </script>
 
 <style scoped lang="scss">
- #substrate  {
-          mask-image: linear-gradient(black 50%, transparent 59%);
-        }
+
 //structure of mussels section
   #mussels-swap-container {
-    height: 110vh;
+    height: auto;
     #row-mussels-container {
       display: grid;
       grid-template-columns: 1fr;
       #mussels  {
         width: 90vw;
-        margin-left: 3vw;
-        margin-top: -20vh;        
-
-    
+        margin-left: 3vw;    
         
       }     
     }
@@ -499,16 +494,6 @@
         }
       }
     }
-
-       /*  #fill-fade, #solita, #big_b-fill, #fanny-all, #bottom-right, #bottom-left, #bottom_right_big, #hungry {
-          display: block;
-          max-width: 100%;
-          height: auto;
-          grid-column: 1 ;
-          grid-row: 1;
-          z-index: 0;
-          opacity: .8;
-        } */
     }
   }
 
@@ -520,22 +505,7 @@
               -o-animation: fade-in 4s ease-in 2s forwards 1;
           }
          
-/* // growing mussel animation
-@keyframes grow-fanny {
-  0%    { transform: scale(.9);}
-  100%  { transform: scale(1.1);}
-}
 
-@keyframes grow-big_b {
-  0%    { transform: scale(.9);}
-  100%  { transform: scale(1.1);}
-}
-
-@keyframes grow-left_bottom {
-  0%    { transform: scale(.8); }
-  100%  { transform: scale(1.2); }
-}
- */
 //fish color change
 @keyframes color-change {
   0%   { opacity:0; }
@@ -644,6 +614,24 @@
 }
 
 @-moz-keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@-ms-keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
