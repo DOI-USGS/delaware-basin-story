@@ -40,7 +40,7 @@
         Cold Water
       </p>
     </div>
-    <div id="content">
+    <div id="content" >
       <div class="row-fish">
         <div class="text-content">
           <h4 id="trout-h3">
@@ -92,15 +92,15 @@
             key="mussels-animation"
             class="row-mussels"
           >
-            <div class="text-content">
+            <div class="text-content" id="mussel-text">
               <h4 
                 id="mussel-h3" 
-                class="appear"
+                style=" margin-top: -20%;"
               >
                 Now, meet the Dwarf Wedgemussel, an endangered species.
               </h4>
             </div>
-            <div class="text-content">
+            <div class="text-content" style=" margin-top: -5%;" >
               <p>Dwarf wedgemussels have their own preferences for water temperatures and river flow rates, preferences that are distinctly different than brookies. Wedgemussels like to live in <span class="emph">warmer water</span> than the brookies do.</p>
               <p>That’s why reservoir release decisions are such an important management tool.</p>
               <p>Reservoir water stays cool. When managers release reservoir water, the release sends an extra rush of cool reservoir water downstream.  With the right data and monitoring, managers can make sure that release decisions to maintain enough flow also keep water temperature in a healthy range for the species that live there.</p>
@@ -110,67 +110,20 @@
               v-show="isMusselsTextInView"
               class="image-stack"
             >
-              <img
-                id="substrate"
-                src="@/assets/temperature/images/substrate-01.png"
-                alt="sandy colored ground"
-              >
-              <img
-                id="fill-fade"
-                src="@/assets/temperature/images/mussel_fade-01.png"
-                alt="healthy freshwater mussels"
-                class="appear"
-              >
-              <img
-                id="solita"
-                src="@/assets/temperature/images/mussel_solitapng-01.png"
-                alt="small freshwater mussel"
-              >
-              <img
-                id="big_b-fill"
-                src="@/assets/temperature/images/big_b_all-01.png"
-                alt="large freshwater mussel"
-                class="grow"
-              >
-              <img
-                id="fanny-all"
-                src="@/assets/temperature/images/fanny_all-01.png"
-                alt="large freshwater mussel"
-                class="grow"
-              >
-              <img
-                id="bottom-right"
-                src="@/assets/temperature/images/bottom_right_all-01.png"
-                alt="large freshwater mussel"
-                class="grow"
-              >
-              <img
-                id="bottom-left"
-                src="@/assets/temperature/images/bottom_left_all-01.png"
-                alt="large freshwater mussel"
-                class="grow"
-              >
-              <img
-                id="hungry"
-                src="@/assets/temperature/images/hungry_all-01.png"
-                alt="small freshwater mussel"
-                class="slide"
-              >
-              <img
-                id="bottom_right_big"
-                src="@/assets/temperature/images/bottom_big_all-01.png"
-                alt="small freshwater mussel"
-                class="slide"
-              >
-
-              <svg
+            <div id="mussel-image-container">
+            <svg
                 id="mussels"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1920 483"
                 preserveAspectRatio="xMidYMid meet"
               >
-                <g>
-                  <path
+                <g id="sbstrate-fill" >
+              <image
+                id="substrate"
+                 xlink:href="@/assets/temperature/images/substrate-01.png"
+                alt="sandy colored ground" 
+              />
+                 <path
                     id="sub_d"
                     class="disappear"
                     d="M6 114l21-11 2-1a10 10 0 013-2 44 44 0 016 0 200 200 0 0026-1l20-2a55 55 0 0120 1l7 2a61 61 0 009 2l15 2 10 1 5 2c3 2 3 5 4 8a20 20 0 005 7 489 489 0 0050 17l21 5a165 165 0 0120 7 27 27 0 0112 10l4 7a27 27 0 007 7l6 4a26 26 0 016 7c5 9 6 20 15 24a22 22 0 009 3c1 0 1-2-1-2-5-1-10-3-13-8l-6-14a31 31 0 00-11-13 46 46 0 01-6-4 29 29 0 01-6-8 28 28 0 00-9-11c-6-4-13-6-19-8l-25-7-29-7-10-3a80 80 0 01-9-4 16 16 0 01-8-7l-3-7a11 11 0 00-4-5 26 26 0 00-7-2 176 176 0 00-18-2 64 64 0 01-15-3 56 56 0 00-18-3l-18 2-18 2a200 200 0 01-20 0h-5a14 14 0 00-3 1l-2 2-11 5-11 5 1 2z"
@@ -183,7 +136,12 @@
                     id="sub_b"
                     d="M790 375l-1 1c-1 1 1 2 2 2 13-5 28-7 41-4a39 39 0 0118 9 30 30 0 016 7 35 35 0 012 5l1 3c0 2 0 0 0 0a7 7 0 01-1 2c-3 5-4 11-1 16 3 4 9 7 14 8a99 99 0 0017 4l10 1a23 23 0 014 0l1 1s0-1 0 0 0-1 0 0 0-1 0 0v2a16 16 0 001 7 17 17 0 008 8l11 5a17 17 0 015 3 2 2 0 003 0l-1-2c-3-3-7-5-11-6-3-1-7-3-9-6a13 13 0 01-3-6 2 2 0 010-1v-2a9 9 0 000-2c0-2-2-3-4-4l-11-1a142 142 0 01-17-3 49 49 0 01-8-2 20 20 0 01-6-4 8 8 0 01-3-5l3-9a25 25 0 001-2v-3a38 38 0 00-2-5 34 34 0 00-6-9 41 41 0 00-18-10c-13-4-29-3-42 1l-5 2 2 2 1-1c2-1-1-3-2-2z"
                   />
-                  <path d="M1328 439v-2a7 7 0 012 0 8 8 0 013-2 9 9 0 016 2 16 16 0 015 5 11 11 0 011 4 8 8 0 010 4h1c2-1 0-5-1-7a18 18 0 00-5-7 10 10 0 00-7-2 9 9 0 00-4 1 7 7 0 00-1 1l-2 2c-1 1 2 1 2 1zM1277 442a10 10 0 012-2l2-2 3-4a62 62 0 018-8l6-1a40 40 0 015 2c3 1 6 3 6 7h1c1-3-2-6-4-8a20 20 0 00-6-2l-6-1c-2 0-3 2-5 3l-4 5-5 5-4 5c-1 1 1 2 1 1zM1601 445v-1 1c0-2 1-5 4-6a5 5 0 013 0 3 3 0 011 1 1 1 0 000 1h1a3 3 0 00-1-2 5 5 0 00-2-2 5 5 0 00-6 3 11 11 0 000 2l-1 1a3 3 0 010 1v1h1zM1599 445l1-2a7 7 0 000-2 9 9 0 00-2-4c-2-3-5-3-9-4h-5l-5 1a9 9 0 00-1 4l-1 3a12 12 0 000 3c0 1 1 2 2 1a7 7 0 000-2l1-2a12 12 0 010-4l4-2a43 43 0 014 1c3 0 6 0 8 2 2 1 3 5 2 7h1zM1558 466c-2-2 0-6 3-7 4-1 8 1 10 5a21 21 0 012 7c0 1 1 2 2 0 0-5-2-11-7-14-5-2-11-1-12 4a7 7 0 001 7c1 1 2-1 1-2z" />
+                  <g
+                  id="sub_a"
+                  class="disappear"
+                >
+                  <path d="M554 385a23 23 0 0112 3c7 3 10 10 10 18h1l13-1 15-1 9-1 19-3 12-3a57 57 0 0020 13 53 53 0 0019 3c6 0 11-2 17-3l24-6c1 0 1-2-1-1l-28 6a50 50 0 01-26 0 54 54 0 01-18-9l-5-4h-3l-25 4-16 3-25 1h-1l1 1a20 20 0 00-6-16 23 23 0 00-14-6 23 23 0 00-4 0c-1 1-2 3 0 2z" />
+                <path d="M1328 439v-2a7 7 0 012 0 8 8 0 013-2 9 9 0 016 2 16 16 0 015 5 11 11 0 011 4 8 8 0 010 4h1c2-1 0-5-1-7a18 18 0 00-5-7 10 10 0 00-7-2 9 9 0 00-4 1 7 7 0 00-1 1l-2 2c-1 1 2 1 2 1zM1277 442a10 10 0 012-2l2-2 3-4a62 62 0 018-8l6-1a40 40 0 015 2c3 1 6 3 6 7h1c1-3-2-6-4-8a20 20 0 00-6-2l-6-1c-2 0-3 2-5 3l-4 5-5 5-4 5c-1 1 1 2 1 1zM1601 445v-1 1c0-2 1-5 4-6a5 5 0 013 0 3 3 0 011 1 1 1 0 000 1h1a3 3 0 00-1-2 5 5 0 00-2-2 5 5 0 00-6 3 11 11 0 000 2l-1 1a3 3 0 010 1v1h1zM1599 445l1-2a7 7 0 000-2 9 9 0 00-2-4c-2-3-5-3-9-4h-5l-5 1a9 9 0 00-1 4l-1 3a12 12 0 000 3c0 1 1 2 2 1a7 7 0 000-2l1-2a12 12 0 010-4l4-2a43 43 0 014 1c3 0 6 0 8 2 2 1 3 5 2 7h1zM1558 466c-2-2 0-6 3-7 4-1 8 1 10 5a21 21 0 012 7c0 1 1 2 2 0 0-5-2-11-7-14-5-2-11-1-12 4a7 7 0 001 7c1 1 2-1 1-2z" />
                   <path d="M1546 453c-2-3 2-7 4-9s5-5 8-3c3 1 6 3 7 6a9 9 0 01-2 5l-1 2-1 3v1a21 21 0 002-1 13 13 0 002-3 13 13 0 001-4 10 10 0 00-3-9c-3-2-6-4-9-3s-5 4-7 6c-2 3-4 6-1 10v-1zM1561 437v-1a3 3 0 011 0 5 5 0 011-1 7 7 0 013 1 5 5 0 014 5 25 25 0 01-1 4l1 1a7 7 0 001-5 9 9 0 00-1-5 7 7 0 00-8-2 6 6 0 00-2 1l-1 1a1 1 0 001 1 1 1 0 001 0z" />
                   <path d="M1566 449v1a8 8 0 012-3 6 6 0 012-1l1 1 1 1a5 5 0 004 3 7 7 0 002 0 5 5 0 003-2v-1a9 9 0 00-3 1 5 5 0 01-3 0l-3-3a5 5 0 00-1-2 2 2 0 00-1 0l-1 1a9 9 0 00-2 1l-2 3h1zM1516 453c-1-1 2-2 3-2l4-1 8-2c3-1 6-1 8 1 1 1 2 7-1 7v2c2 0 3-1 3-2a10 10 0 000-6c-2-4-5-4-9-4a61 61 0 00-7 1l-6 2-4 2 1 3v-1z" />
                   <path d="M1519 451a5 5 0 001 4 14 14 0 001 1 2 2 0 002 1l1-3a6 6 0 00-2-1v-1h-1l2 2c1 0 1 2 3 2v-1a3 3 0 000-1 3 3 0 00-2-3v1a8 8 0 002 3 8 8 0 002 1 4 4 0 000 1 1 1 0 001-1 4 4 0 00-1-1 9 9 0 01-1-1 6 6 0 01-2-2l-1 1a1 1 0 011 1 1 1 0 010 1l-2-2a5 5 0 00-2-3v1a2 2 0 000 2 13 13 0 002 2c-1 1-2 0-2-1a3 3 0 01-1-2v-1-1l-1 1zM1822 427c-2-3 1-5 3-5a27 27 0 019 0c2 0 5 0 7 2a3 3 0 011 3l-2 2 1 1 2-2a5 5 0 00-1-4c-1-2-5-3-7-4a37 37 0 00-6 0 15 15 0 00-5 1 5 5 0 00-3 2 4 4 0 00-1 2v2h2zM1844 428c4 2 7-3 9-5l8-8a14 14 0 0111-3 11 11 0 019 6c2 4 1 8 1 12l1 1c2-7 0-15-7-19a13 13 0 00-11-1c-3 1-6 4-9 7l-5 6a18 18 0 01-3 2 8 8 0 01-4 1v1z" />
@@ -201,8 +159,7 @@
                   <path d="M1342 457a6 6 0 010-7 13 13 0 017-4c2-1 6-2 8 1v3c1 0 1 2 2 1a4 4 0 01-1-2 11 11 0 000-2 5 5 0 00-2-2c-3-2-6-1-9 0a12 12 0 00-6 5 7 7 0 000 8l1-1z" />
                   <path d="M1349 455a6 6 0 001 0 8 8 0 001 0 8 8 0 002-2 7 7 0 002-4l-1-1-1 3v1a7 7 0 000 2s0 1 0 0a4 4 0 001-1v-1l1-3-1-1a6 6 0 01-2 5 7 7 0 01-3 1c-2 0-1 2 0 1zM1337 462l1-2a4 4 0 000-3 7 7 0 00-4-2 41 41 0 00-5-1 14 14 0 00-10 2c-3 1-6 3-7 6s1 7 4 6v-1a2 2 0 01-3-3l3-3a22 22 0 017-5h9a20 20 0 014 2c2 1 2 2 0 3l1 1zM1616 460a3 3 0 00-2-2l-2-2a3 3 0 012-2 6 6 0 014 0l7 2 6 2v-1c-1-2-4-2-6-2-3-1-5-3-8-3s-5 1-6 3a3 3 0 001 3l3 2h1zM1368 446l1-4a24 24 0 012-3 6 6 0 012-3 3 3 0 013 1l4 5c1 1 2 3 4 3v-2a6 6 0 01-3-1 16 16 0 01-2-3c-1-2-2-4-4-4-3-1-4 2-6 3a19 19 0 00-1 4 9 9 0 00-1 2 11 11 0 010 2h1zM1305 452a8 8 0 010-3 21 21 0 011-3 24 24 0 012-5 24 24 0 013-4c2-2 3-3 6-3a12 12 0 018 6 17 17 0 012 6v7h1a21 21 0 00-1-11 16 16 0 00-5-7c-2-2-6-3-9-2s-5 5-6 8a24 24 0 00-3 8 19 19 0 010 3h1z" />
                   <path d="M1288 453a5 5 0 011-2l1-1a20 20 0 013-3 6 6 0 013-1 7 7 0 014 1 25 25 0 015 4 9 9 0 012 2 26 26 0 011 3s0 1 0 0c1-1 0-4-2-6a23 23 0 00-6-4 9 9 0 00-3-2 6 6 0 00-4 2 19 19 0 00-3 3l-3 3 1 1z" />
-                </g>
-                <g>
+                         <g>
                   <path d="M707 453c-2-4-8-4-11-2a14 14 0 00-5 5v7l1-1a4 4 0 01-1-3 10 10 0 012-3 13 13 0 014-4 9 9 0 015-1 6 6 0 015 2c0 1 1 0 0 0zM752 455a67 67 0 00-8-8l-4-3a10 10 0 00-4-3l-5 1a21 21 0 00-5 1c-2 2-5 4-4 6l1 1c0-3 2-5 5-6a34 34 0 014-1h5a23 23 0 014 3l3 3 4 3a27 27 0 003 3h1zM1072 465c0-3-2-5-4-6a5 5 0 00-3 1 2 2 0 00-2 2h1c0-1 2-2 4-1 2 0 3 2 3 4h1zM1074 465a4 4 0 011-5c2-2 5-2 7-2l4-1 3 1a5 5 0 011 3v2a9 9 0 001 1h1a15 15 0 00-1-4 6 6 0 00-1-4 5 5 0 00-4-1l-5 1c-3 0-5 1-7 3a6 6 0 00-1 6h1zM1110 481v-1a4 4 0 001-1 5 5 0 000-2 6 6 0 00-4-4 10 10 0 00-11 4 11 11 0 00-1 7h1a15 15 0 011-5 9 9 0 0110-4 4 4 0 013 3 2 2 0 01-1 2l-1 1a1 1 0 002 0z" />
                   <path d="M1120 471v-2a5 5 0 000-2 7 7 0 00-1-3 17 17 0 00-6-5c-3-1-5 0-8 1s-4 4-4 7a9 9 0 002 4 14 14 0 003 3v-1a43 43 0 01-2-4 4 4 0 01-1-4 7 7 0 013-3 10 10 0 014-1c3-1 6 2 7 4 1 1 3 2 2 3a2 2 0 010 1 2 2 0 01-1 1 1 1 0 001 1h1z" />
                   <path d="M1107 457a6 6 0 00-6-1 6 6 0 00-3 1 6 6 0 00-1 4 6 6 0 001 4h1v-1a10 10 0 01-1-2 4 4 0 011-3 6 6 0 015-2 3 3 0 013 1 1 1 0 000-1z" />
@@ -223,21 +180,40 @@
                   <path d="M689 466v-1h-1a6 6 0 01-1 0 6 6 0 01-2-1 4 4 0 01-1-3l-1 1 1 2v1a5 5 0 001 1v-1a5 5 0 000-1l-1-1v-2h-1a6 6 0 002 4 7 7 0 003 1 8 8 0 001 0v-1zM699 471v-2a3 3 0 011-1 24 24 0 013-1 17 17 0 018 0 19 19 0 016 3c1 0 3 1 2 2a3 3 0 01-2 2v1c4 1 4-3 3-5a13 13 0 00-4-3 17 17 0 00-5-2 14 14 0 00-6 0 23 23 0 00-5 2 3 3 0 00-2 2l1 2c1 0 1 0 0 0zM1060 477l2-2a2 2 0 000-2c0-2-2-3-4-2l-7 2c-2 0-5 0-6 2h1l5-1 5-2a7 7 0 014 0l2 2-2 1a2 2 0 00-1 1l1 1zM673 460v-2a7 7 0 00-1-1 13 13 0 00-2-3c-1-1-2-3-4-3l-4 4a12 12 0 01-2 2 7 7 0 01-2 1v1l4-2 3-4a3 3 0 012 0 4 4 0 012 1 19 19 0 012 3l1 2 1 1zM728 463l-1-4a17 17 0 00-2-3 19 19 0 00-5-6c-4-3-10 0-12 4a15 15 0 00-2 10h1v-5a12 12 0 012-4 11 11 0 017-5 5 5 0 015 1 18 18 0 013 4 16 16 0 012 3l1 5h1z" />
                   <path d="M742 463a16 16 0 00-5-5 5 5 0 00-3-1 7 7 0 00-3 1 21 21 0 00-5 3c-2 2-3 3-2 5 0 0 0 1 0 0l1-2a7 7 0 011-2 21 21 0 015-3 7 7 0 013-1 5 5 0 013 1 16 16 0 014 4h1z" />
                 </g>
-                <g
-                  id="sub_a"
-                  class="disappear"
-                >
-                  <path d="M554 385a23 23 0 0112 3c7 3 10 10 10 18h1l13-1 15-1 9-1 19-3 12-3a57 57 0 0020 13 53 53 0 0019 3c6 0 11-2 17-3l24-6c1 0 1-2-1-1l-28 6a50 50 0 01-26 0 54 54 0 01-18-9l-5-4h-3l-25 4-16 3-25 1h-1l1 1a20 20 0 00-6-16 23 23 0 00-14-6 23 23 0 00-4 0c-1 1-2 3 0 2z" />
-                </g>
-                <g>
+                  </g>
+
+                <g id="mussels-fade-in" class="appear">
+
+              <image
+                id="fill-fade"
+                xlink:href="@/assets/temperature/images/mussel_fade-01.png"
+                alt="healthy freshwater mussels"
+              />
+              <image
+                id="hungry"
+                xlink:href="@/assets/temperature/images/hungry_all-01.png"
+                alt="small freshwater mussel"
+                transform="translate(0 10)"
+              />
+              <image
+                id="bottom_right_big"
+                xlink:href="@/assets/temperature/images/bottom_big_all-01.png"
+                alt="small freshwater mussel"
+              />
+              <image
+                id="solita"
+                xlink:href="@/assets/temperature/images/mussel_solitapng-01.png"
+                alt="small freshwater mussel"
+              />
+               <g>
                   <path d="M66 367a6 6 0 000-1h-1l-6 9a71 71 0 01-8 8 61 61 0 01-18 11c-6 3-15 5-20 1-6-4-7-12-7-18a45 45 0 015-21c4-7 9-12 14-17s11-10 18-12c6-3 14-4 19 1 4 4 5 11 6 17l1 11-4 10a10 10 0 000 4c0 1 1 2 2 1 0-4 2-7 3-10 2-4 1-8 0-12 0-6-1-13-5-19-9-14-28-5-37 3a59 59 0 00-24 39c0 7 1 15 5 20a14 14 0 007 6 22 22 0 0011 0 61 61 0 0039-31l-1-1a4 4 0 010 1h1z" />
                   <path d="M49 381c-1-7 0-14 3-21a38 38 0 014-7c1-2 3-5 6-5l-2 1v1a2 2 0 002-2c-2 0-4 2-6 4a37 37 0 00-4 8c-3 6-5 14-4 21h1z" />
                   <path d="M43 382a55 55 0 015-24 52 52 0 014-7c1-3 3-5 6-6-3 1-5 3-6 5a46 46 0 00-4 8 56 56 0 00-5 24zM40 383c-3-7-2-16 1-23-4 7-5 16-2 23h1zM57 339l-1-1 1 1zM35 388l-2-16a139 139 0 002 16c0 1 0 1 0 0z" />
                   <path d="M29 389c2-9 0-19 1-28 2-7 7-15 13-20 3-3 7-5 11-6-7 1-13 7-18 13a37 37 0 00-5 10c-2 5-2 9-2 14v17zM19 389s0 1 0 0a3 3 0 01-1 0 9 9 0 01-1-2 17 17 0 01-1-4 40 40 0 011-9 41 41 0 015-17 49 49 0 018-10 40 40 0 00-12 18 45 45 0 00-2 18c0 2 1 5 3 7a1 1 0 001-1h-1z" />
                 </g>
 
-                <g class="appear">
-                  <path d="M548 423c-11-3-22-2-33 0a76 76 0 00-28 13c-7 6-16 14-14 24 0 4 3 7 6 9a65 65 0 0012 7c11 4 23 5 35 5a250 250 0 0028-3c8-1 17-3 24-7s14-11 12-20c-1-9-10-15-17-19l-13-6c-6-3-11-5-17-5a16 16 0 00-7 1l1 2a41 41 0 0115 1 114 114 0 0115 7c7 3 15 7 19 15a12 12 0 010 11 23 23 0 01-7 8c-6 5-14 7-21 9a172 172 0 01-24 3c-11 0-22 1-33-1a61 61 0 01-15-6c-4-1-7-3-10-6-2-4-2-9 0-12 1-5 5-8 8-12a71 71 0 0125-14 72 72 0 0131-4 53 53 0 018 1v-1z" />
+                <g  >
+                  <path  d="M548 423c-11-3-22-2-33 0a76 76 0 00-28 13c-7 6-16 14-14 24 0 4 3 7 6 9a65 65 0 0012 7c11 4 23 5 35 5a250 250 0 0028-3c8-1 17-3 24-7s14-11 12-20c-1-9-10-15-17-19l-13-6c-6-3-11-5-17-5a16 16 0 00-7 1l1 2a41 41 0 0115 1 114 114 0 0115 7c7 3 15 7 19 15a12 12 0 010 11 23 23 0 01-7 8c-6 5-14 7-21 9a172 172 0 01-24 3c-11 0-22 1-33-1a61 61 0 01-15-6c-4-1-7-3-10-6-2-4-2-9 0-12 1-5 5-8 8-12a71 71 0 0125-14 72 72 0 0131-4 53 53 0 018 1v-1z" />
                   <path d="M558 430c1 1 6 4 4 7l-4 3a17 17 0 01-6 2 34 34 0 01-13-2l-12-4a6 6 0 01-3-4 5 5 0 013-5 5 5 0 00-2 8 9 9 0 004 3 57 57 0 007 2l15 2c4 0 9-1 11-4s-2-7-4-9l-1 1z" />
                   <path d="M564 434c1 2 2 4 1 5l-4 3a33 33 0 01-14 2c-8-1-16-3-23-7-2-2-7-5-4-8-5 4 7 10 10 11a59 59 0 0016 4 36 36 0 0015-1l4-4v-5h-1z" />
                   <path d="M569 438a15 15 0 012 7 7 7 0 01-5 6l-9 1h-10c-10 0-22-2-31-8-3-2-9-6-5-9h-1c-3 2 1 6 3 7a40 40 0 0011 6 80 80 0 0022 5h10l10-1c2-1 5-3 5-6l-1-8h-1z" />
@@ -248,9 +224,8 @@
 
                 <g
                   id="top_left"
-                  class="appear"
                 >
-                  <path d="M31 96c2 2 2 5 3 8a14 14 0 007 6 63 63 0 008 3l11 3 10 3a69 69 0 0010 1 29 29 0 0015-3c10-5 15-14 19-24a33 33 0 000-23c-6-15-23-24-38-28a76 76 0 00-25-3 50 50 0 00-22 6c-8 5-19 13-18 24 1 6 4 11 8 15l10 12a70 70 0 014 7 3 3 0 002 1l1-1c0-5-4-10-7-13L19 78c-3-4-4-9-2-13s5-9 9-12a46 46 0 0121-9 68 68 0 0123 0l5 1 6 2a61 61 0 0110 4c6 4 12 8 16 14a29 29 0 015 20c-2 9-6 19-12 25a27 27 0 01-12 7c-6 2-12 1-17 0a154 154 0 01-21-6 78 78 0 01-8-3 11 11 0 01-6-6l-3-7c-1-1-3 0-2 1z" />
+                  <path  d="M31 96c2 2 2 5 3 8a14 14 0 007 6 63 63 0 008 3l11 3 10 3a69 69 0 0010 1 29 29 0 0015-3c10-5 15-14 19-24a33 33 0 000-23c-6-15-23-24-38-28a76 76 0 00-25-3 50 50 0 00-22 6c-8 5-19 13-18 24 1 6 4 11 8 15l10 12a70 70 0 014 7 3 3 0 002 1l1-1c0-5-4-10-7-13L19 78c-3-4-4-9-2-13s5-9 9-12a46 46 0 0121-9 68 68 0 0123 0l5 1 6 2a61 61 0 0110 4c6 4 12 8 16 14a29 29 0 015 20c-2 9-6 19-12 25a27 27 0 01-12 7c-6 2-12 1-17 0a154 154 0 01-21-6 78 78 0 01-8-3 11 11 0 01-6-6l-3-7c-1-1-3 0-2 1z" />
                   <path d="M33 90a29 29 0 00-1-4c0-1 0-2 2-2a24 24 0 016 2 55 55 0 017 3c6 4 11 10 15 16a11 11 0 011 4c0 2-1 3-3 4-1 0 0 0 0 0 1 0 3 0 3-2a5 5 0 000-4 39 39 0 00-6-9 33 33 0 00-9-9 50 50 0 00-8-3l-7-2c-3 0-1 4-1 6h1z" />
                   <path d="M28 83c1-2 1-6 5-6a19 19 0 016 2 33 33 0 016 3 54 54 0 0118 21c-3-7-8-13-14-18a39 39 0 00-9-7 30 30 0 00-6-2 6 6 0 00-3 0 3 3 0 00-2 3 29 29 0 01-1 4z" />
                   <path d="M25 79c1-3 2-6 5-8 3-1 6 0 9 1a46 46 0 0110 6 65 65 0 0110 9 45 45 0 018 13h1l-7-12a65 65 0 00-11-10 49 49 0 00-11-6c-3-1-6-2-9-1s-5 4-5 8h1z" />
@@ -262,7 +237,6 @@
                 </g>
                 <g
                   id="mid_left"
-                  class="appear"
                 >
                   <path d="M62 221c6 2 14 2 21 3a46 46 0 0110 3 44 44 0 019 5 102 102 0 018 6 31 31 0 016 6c3 5 5 11 6 17l4 19a79 79 0 012 18 42 42 0 01-6 20 21 21 0 01-12 9 43 43 0 01-13 2 86 86 0 01-18-2c-6-1-12-4-17-6l-14-8c-9-5-18-13-23-22a44 44 0 01-6-15 56 56 0 010-16c2-11 6-22 15-28 8-6 19-8 28-8a48 48 0 016 0 1 1 0 001-1 3 3 0 00-2-2 51 51 0 00-6-1 61 61 0 00-8 1 56 56 0 00-15 4 36 36 0 00-14 9 54 54 0 00-7 50c4 11 12 20 22 27a115 115 0 0015 9 156 156 0 0015 8 68 68 0 0022 4 77 77 0 0015 0 31 31 0 0014-6c5-4 8-10 10-16 3-13 0-27-2-40l-5-19a40 40 0 00-5-8 34 34 0 00-6-7c-5-4-11-9-18-12s-14-2-22-3a64 64 0 01-10-2c-2-1-2 1 0 2z" />
                   <path d="M93 229l4 8a24 24 0 010 6 14 14 0 010 2 5 5 0 01-1 3h-1-2a9 9 0 01-4-1c-2 0-2-2-3-4a3 3 0 00-3 0l-2 1a6 6 0 01-4 0l-5-3-8-1a11 11 0 01-2 3 6 6 0 01-2 1v1a8 8 0 005 4c2 1 5 1 6 3-3 2-6 0-9 0a5 5 0 00-5 3c-2 2-2 5-5 7h-2a4 4 0 00-2-1c-2 0-4 0-5-2-2-2-2-6-1-8a31 31 0 012-5 60 60 0 002-6c1-1 2-3 1-5s-2-1-4-1l1 1 1-10-1-1a85 85 0 00-1 11 1 1 0 001 0h2v2a19 19 0 01-1 5c-2 4-4 8-4 12a7 7 0 007 8 5 5 0 012 1 2 2 0 001 0 5 5 0 003-2 11 11 0 002-3 27 27 0 012-4 4 4 0 014-1h10v-1a9 9 0 00-5-3c-3-1-5-2-6-4h-1a7 7 0 003-2 11 11 0 001-3c2 2 5 1 7 2l5 2a7 7 0 006 0l2-1c2 0 2 1 2 3a4 4 0 004 2 11 11 0 003 1h1a7 7 0 002-1l2-4a21 21 0 000-6l-4-10-1 1zM103 260a1 1 0 011 0v-1a40 40 0 00-4 5 19 19 0 00-3 6 3 3 0 000 3 2 2 0 003 1 4 4 0 002-1 12 12 0 002-3l3-5a7 7 0 013-3l-1-1c-2 1-3 4-4 6l-2 4a5 5 0 01-2 2 3 3 0 01-3 0v-2a17 17 0 013-6 42 42 0 013-5v-1a2 2 0 00-2 1h1z" />
@@ -275,7 +249,6 @@
                 </g>
                 <g
                   id="top_mid"
-                  class="appear"
                 >
                   <path d="M141 66c10-5 19-12 29-16a90 90 0 0115-4 58 58 0 018-1 31 31 0 018 1 87 87 0 0115 5l12 6a29 29 0 019 7c2 3 4 7 3 11s-5 8-8 11a103 103 0 01-10 7 93 93 0 01-13 9 146 146 0 01-15 5c-11 4-21 7-32 8-10 1-20 0-28-6a24 24 0 01-8-11 16 16 0 011-11c3-8 10-15 17-20l4-3v-2a2 2 0 00-3 0l-2 1-3 2a65 65 0 00-5 4 54 54 0 00-9 11c-3 4-4 8-4 12 0 5 2 9 5 13 14 18 40 14 60 8 11-3 21-7 31-13a115 115 0 0013-8 48 48 0 009-10c3-4 4-8 3-12a22 22 0 00-7-11 47 47 0 00-12-6l-14-7c-5-2-11-3-16-3l-16 2a58 58 0 00-15 5l-15 10a85 85 0 01-8 4c-1 1 1 2 1 2z" />
                   <path d="M169 51a17 17 0 018 2 12 12 0 013 2 5 5 0 011 2l-1 1c-1 2-3 3-5 3h-4l-3 3a8 8 0 01-4 3 21 21 0 00-5 2l-5 3h-1a4 4 0 010 4h1c4 1 8-3 12-3-2 3-7 4-9 6v5l-1 5-5 2a6 6 0 01-6-1l-4-8a5 5 0 00-2-2c-2-1-3 0-3 1l-5-5a42 42 0 005 5s0 1 0 0c1-1 2-2 4 0a13 13 0 011 4c1 3 2 5 5 7a7 7 0 005 0l5-3a3 3 0 002-2 5 5 0 000-3l-1-3c0-2 3-3 5-4a10 10 0 004-4c-5-1-8 3-13 3h1a5 5 0 001-2 5 5 0 00-1-1l1-1 1-1 2-1a16 16 0 015-2 15 15 0 003-2 7 7 0 003-3 3 3 0 013-2 7 7 0 012 1c3 0 6-3 8-5 0-2-3-4-5-5a17 17 0 00-8-1c-1 0 0 0 0 0zM193 59a2 2 0 011-1 20 20 0 000 3 11 11 0 001 5 2 2 0 003 1 4 4 0 002-2 3 3 0 000-2c-1-2-2-5-1-7 1 0 0-1 0 0v5a9 9 0 010 3 3 3 0 01-1 2 2 2 0 01-1 0 1 1 0 01-1 0 9 9 0 01-1-4 21 21 0 01-1-4 2 2 0 00-1 1c-1 0 0 0 0 0z" />
@@ -286,10 +259,8 @@
                   <path d="M191 46c3 5 7 10 6 16s-5 11-9 14c-9 8-19 11-30 12a97 97 0 01-19 0v1c12 1 23 1 34-3a47 47 0 0014-8c5-4 9-8 10-14 2-7-2-13-6-18 0-1-1-1 0 0z" />
                   <path d="M183 48c2 2 2 5 3 8a29 29 0 01-1 9 15 15 0 01-6 8 24 24 0 01-10 4l1 1c6-1 13-6 15-12a29 29 0 001-10c0-3-1-6-3-8 0-1 0 0 0 0z" />
                 </g>
-
                 <g
                   id="top_right"
-                  class="appear"
                 >
                   <path d="M181 132c-3-2-3-7 0-9l10-7a141 141 0 0124-8l26-6 26-9c17-6 35-12 53-13 18-2 38 1 54 11a80 80 0 0118 19c6 7 10 15 9 24 0 16-13 30-26 39a112 112 0 01-46 19 97 97 0 01-27 0c-10-1-19-4-27-8l-27-11-26-11-26-12c-7-4-14-9-17-17-1-3-1-7 1-10l-2-1c-5 7 0 15 5 20 6 6 15 10 22 14 19 9 37 17 56 24l27 11a97 97 0 0028 3c18 0 36-5 51-14 15-7 29-19 34-34a34 34 0 00-1-26c-3-8-9-15-15-22a66 66 0 00-23-14 90 90 0 00-28-6c-19-1-38 3-56 9l-28 10-27 7-26 8a87 87 0 00-12 5c-3 2-7 4-8 8a8 8 0 003 8c0 1 2 0 1-1z" />
                   <path d="M178 130l4 2a31 31 0 014 2 30 30 0 013 3 4 4 0 011 2 1 1 0 01-1 1v1a2 2 0 002-2 5 5 0 00-1-2l-2-2a32 32 0 00-5-3 18 18 0 00-5-3v1z" />
@@ -317,7 +288,39 @@
                   <path d="M370 106a41 41 0 0111 18c2 7 2 15 1 22l1 1a48 48 0 00-1-24 43 43 0 00-11-18l-1 1zM323 93c21 8 44 24 48 48a32 32 0 01-2 17l1 1 2-15a30 30 0 00-3-11 46 46 0 00-17-18c-1-1-1 0-1 1 7 4 13 10 17 17a29 29 0 012 11c1 5 0 10-1 15h1c5-10 2-23-3-33s-15-19-25-25a94 94 0 00-19-9v1zM292 130c7 4 12 10 16 17 3 6 3 13 0 19a16 16 0 01-9 7l1 1c6-2 11-8 11-15 1-7-3-14-7-20a65 65 0 00-11-10l-1 1z" />
                   <path d="M284 172l6-2a28 28 0 005-6 18 18 0 002-16h-1a18 18 0 01-1 14 25 25 0 01-4 5c-2 2-4 4-7 4v1zM298 181c1 3 5 2 7 1a100 100 0 0010-3 82 82 0 0017-10c1-1-1-2-1-1a121 121 0 01-15 8l-8 4-4 1c-1 0-4 2-5 0h-1zM321 187c9-1 19-4 27-8 1-1 0-2-1-1a90 90 0 01-27 8l1 1zM264 165c3 0 4-2 6-4a19 19 0 003-7c0-7-1-13-4-19 0 0-2 0-1 1 2 5 3 10 3 16a19 19 0 01-2 7c-1 2-3 5-5 5v1zM232 112l24 3c6 2 13 4 17 10 1 0 2 0 1-1-4-5-11-8-17-10-8-2-17-2-25-3v1z" />
                 </g>
+              </g>
+              <g id="mussels-grow"
+              >
+              <image
+                id="big_b-fill"
+                xlink:href="@/assets/temperature/images/big_b_all-01.png"
+                alt="large freshwater mussel"
+                class="grow"
+                transform="translate(-30 0)"
+              />
+              <image
+                id="fanny-all"
+                xlink:href="@/assets/temperature/images/fanny_all-01.png"
+                alt="large freshwater mussel"
+                class="grow"
+                transform="translate(-10 0)"
+              />
+              <image
+                id="bottom-right"
+                xlink:href="@/assets/temperature/images/bottom_right_all-01.png"
+                alt="large freshwater mussel"
+                class="grow"
+              />
+              <image
+                id="bottom-left"
+                xlink:href="@/assets/temperature/images/bottom_left_all-01.png"
+                alt="large freshwater mussel"
+                class="grow"
+              />
+              </g>
+                </g> 
               </svg>
+              </div>
             </div>
           </div>
         </transition-group>
@@ -362,25 +365,33 @@
 </script>
 
 <style scoped lang="scss">
+
+//structure of mussels section
   #mussels-swap-container {
-    height: 80vh;
+    height: 110vh;
     #row-mussels-container {
-      display: block;
-      position: relative;;
-      top: 0;
-      left: 0;
-      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      #mussels  {
+        width: 90vw;
+        margin-left: 3vw;
+        margin-top: -20vh;        
+      }     
     }
+   
     .fade-enter-active, .fade-leave-active {
       transition: opacity 1.5s;
     }
     .fade-enter, .fade-leave-to {
       opacity: 0;
     }
+    .appear {
+      opacity: 0;
+    }
+    .appear.visible {
+      opacity: 1;
+    }
   }
-
-
-
 
 #temperature {
   padding: 2% 2% 2% 2%;
@@ -411,7 +422,7 @@
       margin-top: 3%;
     }
 
-    .temp-indicator{
+    .temp-indicator {
       grid-column: 1;
       grid-row: 1;
       font-family: chantal, 'Noto Sans', sans-serif;
@@ -420,7 +431,6 @@
       text-align: right;
       margin: 10% 10% 0 0;
     }
-
   }
 
   #content {
@@ -430,14 +440,6 @@
       max-width: 60rem;
       padding: 2em;
       margin-top: 5%;
-
-
-      #mussel-h3 {
-          animation: appear 30s ease-in 2s forwards 1;
-          -webkit-animation: appear 30s ease-in 2s forwards 1;
-          -moz-animation: appear 30s ease-in 2s forwards 1;
-          -o-animation: appear 30s ease-in 2s forwards 1;
-      }
     }
 
     .row-fish {
@@ -468,6 +470,7 @@
             animation: color-change 3s linear 3s forwards infinite;
             -webkit-animation: color-change 3s linear 3s forwards infinite;
             -moz-animation: color-change 3s linear 3s forwards infinite;
+            -ms-animation: color-change 3s linear 3s forwards infinite;
             -o-animation: color-change 3s linear 3s forwards infinite;
 
           }
@@ -475,33 +478,14 @@
             animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
             -webkit-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
             -moz-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
+            -ms-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
             -o-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
           }
         }
       }
     }
 
-    .row-mussels {
-      width: 100%;
-
-      .image-stack {
-        display: grid;
-        position: relative;
-        flex: 1;
-        grid-template-columns: 1;
-        height: auto;
-        width: 100%;
-
-        #substrate {
-          display: block;
-          max-width: 100%;
-          height: auto;
-          z-index:0;
-          grid-column: 1 ;
-          grid-row: 1;
-        }
-
-        #fill-fade, #solita, #big_b-fill, #fanny-all, #bottom-right, #bottom-left, #bottom_right_big, #hungry {
+       /*  #fill-fade, #solita, #big_b-fill, #fanny-all, #bottom-right, #bottom-left, #bottom_right_big, #hungry {
           display: block;
           max-width: 100%;
           height: auto;
@@ -509,154 +493,35 @@
           grid-row: 1;
           z-index: 0;
           opacity: .8;
-        }
-
-        .appear {
-              animation: fade-in 6s ease-in 2s forwards 1;
-              -webkit-animation: fade-in 6s ease-in 2s forwards 1;
-              -moz-animation: fade-in 6s ease-in 2s forwards 1;
-              -o-animation: fade-in 6s ease-in 2s forwards 1;
-          }
-          #big_b-fill {
-              animation: grow-big_b 6s linear 2s forwards 1;
-              -webkit-animation: grow-big_b 6s linear 2s forwards 1;
-              -moz-animation: grow-big_b 6s linear 2s forwards 1;
-              -o-animation: grow-big_b 6s linear 2s forwards 1;
-          }
-          #fanny-all {
-              animation: grow-fanny 6s linear 2s forwards 1;
-              -webkit-animation: grow-fanny 6s linear 2s forwards 1;
-              -moz-animation: grow-fanny 6s linear 2s forwards 1;
-              -o-animation: grow-fanny 6s linear 2s forwards 1;
-          }
-          #bottom-right {
-              animation: grow-rt_b 6s linear 2s forwards 1;
-              -webkit-animation: grow-rt_b 6s linear 2s forwards 1;
-              -moz-animation: grow-rt_b 6s linear 2s forwards 1;
-              -o-animation: grow-rt_b 6s linear 2s forwards 1;
-          }
-          #bottom-left {
-              animation: grow-left_bottom 6s linear 2s forwards 1;
-              -webkit-animation: grow-left_bottom 6s linear 2s forwards 1;
-              -moz-animation: grow-left_bottom 6s linear 2s forwards 1;
-              -o-animation: grow-left_bottom 6s linear 2s forwards 1;
-          }
-          #bottom_right_big  {
-            transform: scale(.9);
-            animation: slide-bottom_right_big 6s ease-out 2s forwards 1;
-            -webkit-animation: slide-bottom_right_big 6s ease-out 2s forwards 1;
-            -moz-animation: slide-bottom_right_big 6s ease-out 2s forwards 1;
-            -o-animation: slide-bottom_right_big 6s ease-out 2s forwards 1;
-
-          }
-          #hungry  {
-              animation: slide-hungry 6s ease-out 2s forwards 1;
-              -webkit-animation: slide-hungry 6s ease-out 2s forwards 1;
-              -moz-animation: slide-hungry 6s ease-out 2s forwards 1;
-              -o-animation: slide-hungry 6s ease-out 2s forwards 1;
-          }
-
-        #mussels {
-          position: absolute;
-          display: inline-block;
-          height: auto;
-          width: 100%;
-          top: 0;
-          left: 0;
-          z-index: 1;
-
-
-          .appear {
-              animation: fade-in 6s cubic-bezier(0,0,0.5,1) 2s forwards 1;
-              -webkit-animation: fade-in 6s cubic-bezier(0,0,0.5,1) 2s forwards 1;
-              -moz-animation: fade-in 6s cubic-bezier(0,0,0.5,1) 2s forwards 1;
-              -o-animation: fade-in 6s cubic-bezier(0,0,0.5,1) 2s forwards 1;
-          }
-
-          .disappear {
-            animation: fade-out 6s ease-out 2s forwards 1;
-            -webkit-animation: fade-out 6s ease-out 2s forwards 1;
-            -moz-animation: fade-out 6s ease-out 2s forwards 1;
-            -o-animation: fade-out 6s ease-out 2s forwards 1;
-          }
-
-        }
-      }
-
+        } */
     }
   }
-}
 
-
+       .appear {
+              animation: fade-in 4s ease-in 2s forwards 1;
+              -webkit-animation: fade-in 4s ease-in 2s forwards 1;
+              -moz-animation: fade-in 4s ease-in 2s forwards 1;
+              -ms-animation: fade-in 4s ease-in 2s forwards 1;
+              -o-animation: fade-in 4s ease-in 2s forwards 1;
+          }
+         
+/* // growing mussel animation
 @keyframes grow-fanny {
-  0%    { transform: scale(.9);
-          transform-origin: 0px 200px; }
-  100%  { transform: scale(1.1);
-          transform-origin: 0px 200px; }
+  0%    { transform: scale(.9);}
+  100%  { transform: scale(1.1);}
 }
 
 @keyframes grow-big_b {
-  0%    { transform: scale(.9);
-          transform-origin: 400px 170px; }
-  100%  { transform: scale(1.1);
-          transform-origin: 400px 130px; }
+  0%    { transform: scale(.9);}
+  100%  { transform: scale(1.1);}
 }
-@keyframes grow-rt_b {
-  0%    { transform: scale(1);
-          transform-origin: 350px 180px; }
-  100%  { transform: scale(1.25);
-          transform-origin: 350px 180px; }
-}
+
 @keyframes grow-left_bottom {
-  0%    { transform: scale(.8);
-          transform-origin: -50px 200px; }
-  100%  { transform: scale(1.2);
-          transform-origin: 100px 200px; }
+  0%    { transform: scale(.8); }
+  100%  { transform: scale(1.2); }
 }
-
-@keyframes slide-hungry {
-  0%    { opacity: 0;
-          transform: scale(1);
-          transform: translate(-100px,0px); }
-  70%    { opacity: 0;
-          transform: scale(1);
-          transform: translate(-20px,0px); }
-  100%  { opacity: 1;
-          transform: scale(1);
-          transform: translate(0px,0px); }
-}
-@keyframes slide-h3 {
-  0%    { transform: scale(1);
-          transform: translate(-2500px,0px); }
-
-  100%  { transform: scale(1);
-        transform: translate(0px,0px); }
-}
-@keyframes slide-bottom_right_big {
-  0%    { opacity: 0;
-          transform: scale(.9);
-          transform: translate(0px,200px); }
-  70%    { opacity: 0;
-          transform: scale(.9);
-          transform: translate(0px,30px); }
-  100%  { opacity: 1;
-          transform: scale(.9);
-          transform: translate(0px,0px); }
-}
-
-
-@keyframes fade-out {
-  0%   { opacity:1; }
-  55%  { opacity:0; }
-  100% { opacity:0; }
-}
-@keyframes fade-in {
-  0%   { opacity:0; }
-  30%   { opacity:0; }
-  75%  { opacity:1; }
-  100% { opacity:1; }
-}
-
+ */
+//fish color change
 @keyframes color-change {
   0%   { opacity:0; }
   35%  { opacity:1; }
@@ -679,6 +544,13 @@
   65%  { opacity:1; }
   100% { opacity:0; }
 }
+@-ms-keyframes color-change{
+  0%   { opacity:0; }
+  35%  { opacity:1; }
+  50%  { opacity:1; }
+  65%  { opacity:1; }
+  100% { opacity:0; }
+}
 @-webkit-keyframes color-change{
   0%   { opacity:0; }
   35%  { opacity:1; }
@@ -687,35 +559,38 @@
   100% { opacity:0; }
 }
 
-@keyframes disappear {
-  0%   { opacity:1; }
-  25%  { opacity:0; }
-  50%  { opacity:0; }
-  75%  { opacity:0; }
+@keyframes fade-in {
+  0%   { opacity:0; }
+  30%   { opacity:0; }
+  75%  { opacity:1; }
   100% { opacity:1; }
 }
-@-o-keyframes disappear {
-  0%   { opacity:1; }
-  25%  { opacity:0; }
-  50%  { opacity:0; }
-  75%  { opacity:0; }
+@-o-keyframes fade-in {
+  0%   { opacity:0; }
+  30%   { opacity:0; }
+  75%  { opacity:1; }
   100% { opacity:1; }
 }
-@-moz-keyframes disappear {
-  0%   { opacity:1; }
-  25%  { opacity:0; }
-  50%  { opacity:0; }
-  75%  { opacity:0; }
+@-moz-keyframes fade-in {
+  0%   { opacity:0; }
+  30%   { opacity:0; }
+  75%  { opacity:1; }
   100% { opacity:1; }
 }
-@-webkit-keyframes disappear {
-  0%   { opacity:1; }
-  25%  { opacity:0; }
-  50%  { opacity:0; }
-  75%  { opacity:0; }
+@-ms-keyframes fade-in {
+  0%   { opacity:0; }
+  30%   { opacity:0; }
+  75%  { opacity:1; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes fade-in {
+  0%   { opacity:0; }
+  30%   { opacity:0; }
+  75%  { opacity:1; }
   100% { opacity:1; }
 }
 
+// trout animation on hover
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
@@ -790,3 +665,4 @@
 }
 
 </style>
+
