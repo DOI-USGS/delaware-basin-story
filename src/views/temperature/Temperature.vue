@@ -375,7 +375,9 @@
 </script>
 
 <style scoped lang="scss">
-
+ #substrate  {
+          mask-image: linear-gradient(black 50%, transparent 59%);
+        }
 //structure of mussels section
   #mussels-swap-container {
     height: 110vh;
@@ -386,6 +388,9 @@
         width: 90vw;
         margin-left: 3vw;
         margin-top: -20vh;        
+
+    
+        
       }     
     }
    

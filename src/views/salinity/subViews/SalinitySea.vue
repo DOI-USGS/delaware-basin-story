@@ -68,35 +68,6 @@
               </linearGradient>
 
               <linearGradient
-                id="linear-risingdone"
-                gradientTransform="rotate(100)"
-              >
-                <stop
-                  class="stop1"
-                  offset="18%"
-                  stop-opacity=".1"
-                />
-                
-                <stop
-                  class="stop7"
-                  offset="25%"
-                  stop-opacity=".9"
-                />
-                <stop
-                  class="stop5"
-                  offset="43%"
-                  stop-opacity=".6"
-                />
-                <stop
-                  class="stop5"
-                  offset="53%"
-                  stop-opacity=".85"
-                />
-               
-                
-              </linearGradient>
-
-              <linearGradient
                 id="linear-rising"
                 gradientTransform="rotate(100)"
               >
