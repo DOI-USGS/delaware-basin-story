@@ -3081,7 +3081,7 @@
                 alt=""
               >
               <h2 class="monitoring-location-number">
-                1
+                <img src="@/assets/monitoring/images/ecomapper.png">
               </h2>
               <h4
                 id="text-block-r-d"
