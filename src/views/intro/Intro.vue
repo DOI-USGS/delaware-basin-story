@@ -57,7 +57,7 @@
 <style scoped lang="scss">
 
   #intro-banner-container {
-    min-width: 1200px;
+    min-width: 1400px;
     overflow: auto;
   }
 

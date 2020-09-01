@@ -88,6 +88,11 @@
     line-height: 1.5;
   }
   #app {
+
+    .section {
+      margin: 5em 0 5em 0;
+    }
+
     p {
       font-family: 'Noto Sans', sans-serif;
       font-weight: lighter;
@@ -146,7 +151,7 @@
       min-width: 350px;
       max-width: 700px;
       margin: 0 auto;
-      padding: 2em 1em 2em 1em;     
+      padding: 2em 2em 2em 2em;     
     }
 
     // Text and Content side-by-side
@@ -177,8 +182,8 @@
 
     .text-content-side {
       min-width: 350px;
-      max-width: 500px;
-      padding: 2em 1em 2em 1em;
+      max-width: 600px;
+      padding: 2em 2em 2em 2em;
     }
   }
 

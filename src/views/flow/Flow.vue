@@ -1,5 +1,5 @@
 <template>
-  <section id="flow">
+  <section id="flow" class="section">
     <SectionTitle
       :title="title"
       :image="image"

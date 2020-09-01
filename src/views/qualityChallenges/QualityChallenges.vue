@@ -1,5 +1,5 @@
 <template>
-  <section id="quality-challenges">
+  <section id="quality-challenges" class="section">
     <div class="quality-challenges-section-text text-content">
       <h4>Quality and Quantity</h4>
       <p>Taken alone, managing to make sure there’s <span class="emph">enough water is not enough.</span>  Water needs to be of <span class="emph">good quality,</span> too.</p>
