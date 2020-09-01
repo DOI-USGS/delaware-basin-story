@@ -808,23 +808,15 @@ $s3:"";
   }
   .salinity-sea-section-text {
     z-index: 2;
-    #sea-salt-one {
-      // margin-top: 30vh;
-    }
     #salt-wedge-container img {
       margin-top: 2rem;
     }
     #salt-wedge-container figcaption {
       text-align: center;
     }
-
-    div:last-child {
-      // margin-bottom: 30em;
-    }
     #sea-salt-two {
       opacity: 0;
       transition: opacity .5s;
-      // margin-bottom: 10rem;
     }
     #sea-salt-two.visible {
       opacity: 1;
@@ -832,7 +824,6 @@ $s3:"";
     #sea-salt-three {
       opacity: 0;
       transition: opacity .5s;
-      // margin-bottom: 10rem;
     }
     #sea-salt-three.visible {
       opacity: 1;
@@ -840,7 +831,6 @@ $s3:"";
     #RoadSalt {
       opacity: 0;
       transition: opacity .5s;
-      // margin-bottom: 20rem;
     }
     #RoadSalt.visible {
       opacity: 1;
@@ -854,15 +844,9 @@ $s3:"";
       justify-items: center;
       
       .salinity-sea-section-image {
-        top: 15rem;
-        
+        top: 15rem;        
       }
       .salinity-sea-section-text {
-        // margin-top: 40rem;
-        // margin-bottom: 40rem;
-        #header-salt-front-move-text {
-          // margin-top: 10em;
-        }
         #sea-salt-two {
           opacity: 1;
         }
@@ -873,8 +857,6 @@ $s3:"";
     }
   }
 }
-
-// will need to pad text at several break points
 
 </style>
 
