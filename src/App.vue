@@ -71,7 +71,7 @@
   // Import Colors
 
   $offWhite: rgb(236,227,220);
-  $transparentWhite: rgba(255,255,255, 0.8);
+  $transparentWhite: rgba(255,255,255, 0.85);
   $darkBlue: rgb(30, 86,120);
   $lightBlue: rgb(73,166,206);
   $darkGreen: rgb(46,131,107);
