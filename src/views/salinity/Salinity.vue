@@ -1,5 +1,8 @@
 <template>
-  <section id="salinity" class="section">
+  <section
+    id="salinity"
+    class="section"
+  >
     <SectionTitle
       :title="title"
       :image="titleBackingImage"

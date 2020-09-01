@@ -1,5 +1,8 @@
 <template>
-  <section id="temperature" class="section">
+  <section
+    id="temperature"
+    class="section"
+  >
     <SectionTitle
       :title="title"
       :image="titleBackingImage"

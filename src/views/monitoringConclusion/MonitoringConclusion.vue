@@ -1,5 +1,8 @@
 <template>
-  <section id="monitoringConclusion" class="section">
+  <section
+    id="monitoringConclusion"
+    class="section"
+  >
     <SectionTitle
       :title="title"
       :image="titleBackingImage"
