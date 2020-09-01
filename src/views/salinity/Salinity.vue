@@ -1,12 +1,15 @@
 <template>
-  <div id="salinity">
+  <section
+    id="salinity"
+    class="section"
+  >
     <SectionTitle
       :title="title"
       :image="titleBackingImage"
     />
     <SalinitySea />
     <!-- <SalinityRoad /> -->
-  </div>
+  </section>
 </template>
 
 <script>

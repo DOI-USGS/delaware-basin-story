@@ -1,18 +1,24 @@
 <template>
-  <section id="monitoringConclusion">
+  <section
+    id="monitoringConclusion"
+    class="section"
+  >
     <SectionTitle
       :title="title"
       :image="titleBackingImage"
     />
 
-    <div class="text-content text-chunk">
+    <div
+      id="monitoring-intro"
+      class="text-content text-chunk"
+    >
       <h4>
         Managing for Quality and Quantity
       </h4>
       <p>Managing water in the modern era requires that we consider as many facets of an ecosystem as possible, including <span class="emph">flow,</span> <span class="emph">temperature,</span> and <span class="emph">salinity,</span> as well as many other water-quality dimensions. These decisions impact economic and ecological health throughout the entire river basin.  To be able to know when, how, and what decisions to make, managers have to have lots of accurate data at their fingertips.</p>
       <p>That’s where the USGS comes in.</p>
     </div>
-    
+
     <div id="image-container">
       <div class="inking">
         <svg
@@ -211,7 +217,7 @@
               </g>
             </g>
           </g> -->
-           <g id="Temperature">
+           <!-- <g id="Temperature">
             <g id="Trout">
               <path
                 class="sketch-white"
@@ -279,127 +285,8 @@
                 </g>
               </g>
             </g>
-          </g>
-          <g id="Ecomapper">
-            <g
-              id="Ecomapper-arrow"
-              class="arrow"
-            >
-              <path
-                id="eco_arrow_body"
-                d="M469.1 837.05c-8.67-2.73-18.52-3.42-27.24-.78s-16 8.93-17.53 16.48"
-              />
-              <path
-                id="eco_arrow_head"
-                d="M418.52 845.15a20.69 20.69 0 002.73 10.4 2 2 0 001.43 1.17 2.44 2.44 0 001.16-.26l14.38-5.83"
-              />
-            </g>
-            <path
-              class="sketch-white"
-              d="M477.78 882.65c-23.32-6-68.6-12.13-93.27-12.17"
-            />
-            <g
-              id="Ecomapper-sketch"
-              class="sketch-black"
-            >
-              <g class="sketch-2">
-                <path d="M459,884.65a25.94,25.94,0,0,1,1.58,4.7,2,2,0,0,0,1.34,1.69c1.83.22,3.51.38,5.33.61a16.37,16.37,0,0,0,1.27-8.15c-.05,0,.14,1.44,0,0l-.13.06" />
-                <path
-                  d="M459.91,877.07a22.32,22.32,0,0,1,1.78-3.56,4.44,4.44,0,0,0,2,.48c1,.24,2,0,3.12.35a1.39,1.39,0,0,1,.43.52c.57,1.17.9,2.32,1.46,3.49a4.89,4.89,0,0,1,.56,1.75s-.06.14-.16.17"
-                  style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 1.8158688903654614px"
-                />
-                <path d="M455.85,874.46a.81.81,0,0,1,.35.25l.34-.12" />
-                <path d="M456.29,874.77a2.48,2.48,0,0,0-1.26,1.41,10.94,10.94,0,0,0,.31,8.82" />
-                <path
-                  d="M456.34,874.27c.22-.22-.23-.5-.54-.5-2.64,0-5.29-.07-7.92-.25s-5.43-.54-8.14-.88l-30.49-3.9a44.87,44.87,0,0,1-4.91-.81,5.56,5.56,0,0,0-2-.27,3.58,3.58,0,0,0-2.2,1.32,6.47,6.47,0,0,0-1.13,6.53,1.33,1.33,0,0,0,.46.67,1.53,1.53,0,0,0,.79.18c10.19.45,20.15,3,30.25,4.35,8.52,1.13,17.32,1.45,25.26,4.73"
-                  style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 1.8158688903654614px"
-                />
-                <path
-                  d="M449.09,867.51a1.67,1.67,0,0,0-1.2-1.57,4.64,4.64,0,0,0-2.1-.1c-.59.07-1.33.29-1.38.88a1.38,1.38,0,0,0,.11.57,50,50,0,0,1,1.64,5,7.88,7.88,0,0,1,.32,2.5c0,.51-.12,1.14.29,1.43a1.49,1.49,0,0,0,.55.18,7.73,7.73,0,0,0,4.6-.22c.36-.18.72-.58.51-.91a1.15,1.15,0,0,0-.36-.29,2.44,2.44,0,0,1-.8-1.3l-2.45-7.05"
-                  style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 1.8158688903654614px"
-                />
-                <path
-                  d="M400.76,867.44c-3.67-1.38-7.74,0-11.67,0a30.83,30.83,0,0,1-3.18-.19l-8.41-.77a5.8,5.8,0,0,0-1.95,0,2,2,0,0,0-1.45,1.19,1.94,1.94,0,0,0,.49,1.85,4.38,4.38,0,0,0,1.69,1,11.91,11.91,0,0,0,3.67.77c1,.06,2,0,2.94.12,2.85.38,5.27,2.43,8.12,2.81.87.12,1.76.07,2.63.15a9.43,9.43,0,0,1,5,2"
-                  style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 1.8158688903654614px"
-                />
-                <path d="M386.79,867.76a4.73,4.73,0,0,0-.89,2,3.33,3.33,0,0,0-.18,1,1.16,1.16,0,0,0,.45.91" />
-                <path d="M456.43,874.35a33.71,33.71,0,0,0,4,.07" />
-              </g>
-              <g class="sketch-fine">
-                <path
-                  d="M471.65,876l5.3.3a4.15,4.15,0,0,1,1.71.34,3.79,3.79,0,0,1,1.62,2.26,10.77,10.77,0,0,1,.23,7.56,2.47,2.47,0,0,1-.69,1,2.8,2.8,0,0,1-2,.33,67.52,67.52,0,0,1-8.37-1.34"
-                  style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 1.8158688903654614px"
-                />
-                <path d="M459,885.59l-2.54,0" />
-                <path d="M464.11,873.13a5.29,5.29,0,0,0,2.28-1.32.66.66,0,0,1,.32-.21h.18l4.79.6c.21,0,.48.1.53.31a.55.55,0,0,1-.13.4,7.28,7.28,0,0,0-1,6.17,5.8,5.8,0,0,0-1.71-.93" />
-                <path d="M428.26,871.53c-.32,1.26-.65,2.51-1,3.76a2,2,0,0,0-1.64-.65l-2.81-.16" />
-                <path d="M423.58,871.17a7.06,7.06,0,0,0-.49,3.34" />
-                <path d="M460.06,875a4.71,4.71,0,0,1-.32,1.7,2.32,2.32,0,0,0-1.79-.59l.57-1.29" />
-                <path d="M448.36,867.64l-1.17-.3a.47.47,0,0,0-.2,0c-.11,0-.17.15-.27.19a.39.39,0,0,1-.39-.11.76.76,0,0,0-.37-.21c-.14,0-.3.14-.22.26" />
-                <path d="M445.4,867.63l1.59-.09a.74.74,0,0,0,.62.3,2.35,2.35,0,0,0,.69-.14" />
-                <path d="M432.29,872.49a7.67,7.67,0,0,0-1.42,2.29,8.07,8.07,0,0,0-.32,4.79l.46-.11a6.62,6.62,0,0,1-.21-1.94,7.87,7.87,0,0,1,2.15-5" />
-                <path d="M419.17,870.48a7.81,7.81,0,0,0-1.42,2.29,8,8,0,0,0-.32,4.79l.45-.1a7.06,7.06,0,0,1-.2-1.94,7.9,7.9,0,0,1,2.15-5" />
-                <path
-                  d="M447.74,879.64a.85.85,0,0,0-.8.24.8.8,0,0,0-.1.94.81.81,0,0,0,1.11.24c.16-.12.19-.32.24-.66s.12-.75-.07-1a1.2,1.2,0,0,0-1.42-.21,1.35,1.35,0,0,0-.76,1.11,1.5,1.5,0,0,0,.55,1.15,1.69,1.69,0,0,0,1.91.34c.56-.37.54-1.17.52-1.66a2,2,0,0,0-.48-1.49,1.88,1.88,0,0,0-1.53-.49,2.09,2.09,0,0,0-1.49,1.18,2,2,0,0,0,2.15,3"
-                  style="fill: none;stroke: #1360a5;stroke-miterlimit: 10;stroke-width: 0.6809508338870484px"
-                />
-              </g>
-            </g>
-            <g
-              id="Ecomapper-label"
-              class="writing"
-            >
-              <g
-                id="eco_e1"
-                stroke-width="5.0312324"
-              >
-                <path d="M481.18 841.09c-.31 2.89-.5 5.34-.63 7.17a107.88 107.88 0 00.18 12.5 4.23 4.23 0 00.63 2.67c1.76 2.11 6.61-.24 7.76-.82M490.83 839.28l-11.72 1.94M488.28 853.9l-7.77 1.57" />
-              </g>
-              <path
-                id="eco_c"
-                stroke-width="4.80034756"
-                d="M513.41 842.39a9.68 9.68 0 00-5.79.27c-3.2 1.23-4.65 3.93-5.69 5.87s-4 7.56-1.43 10.66c2 2.35 6 1.73 6.56 1.64a10 10 0 006.59-4.42"
-              />
-              <path
-                id="eco_o"
-                stroke-width="5.36185078"
-                d="M528 846a5.84 5.84 0 00-3.79 1.12 6.48 6.48 0 00-2.36 5.13c0 .55 0 4 2.25 5.12s5.37-1.16 6.77-3.18c.11-.16 2.63-3.91.85-6.43A5 5 0 00528 846z"
-              />
-              <path
-                id="eco_m"
-                stroke-width="4.80034756"
-                d="M540.66 858.78l9.22-15q1.54 7.62 3.12 15.22 5.52-5.54 11.06-11.06 1.34 4.71 2.66 9.42"
-              />
-              <g
-                id="eco_a"
-                stroke-width="4.80034756"
-              >
-                <path d="M574.68 866q5-11.48 10-23l10.86 18.65M579.89 853.86l12.09-.41" />
-              </g>
-              <path
-                id="eco_p1"
-                stroke-width="5.36185078"
-                d="M604.19 862.06A30.8 30.8 0 01604 843a32 32 0 015.43-1.12c2.67-.32 10.81-1.28 12.57 2.15a5 5 0 01-.56 4.64c-.88 1.37-2.22 2-7.41 3.35-2 .53-4.76 1.18-8 1.84"
-              />
-              <path
-                id="eco_p2"
-                stroke-width="5.36185078"
-                d="M629.4 862.06a138.2 138.2 0 01-.4-14.34c0-1.6.1-3.18.19-4.72a20.3 20.3 0 015.43-1.12c4.76-.31 11.24 1 11.78 3.78.26 1.41-1.08 2.74-2.26 3.9-4 3.92-9.33 4.6-12.09 4.71"
-              />
-              <g
-                id="eco_e2"
-                stroke-width="5.0312324"
-                data-name="e1"
-              >
-                <path d="M656.39 842c-.31 2.89-.5 5.33-.63 7.17a107.89 107.89 0 00.18 12.5 4.2 4.2 0 00.63 2.66c1.76 2.12 6.6-.23 7.76-.82M666 840.18c-3.09.52-3.85 1.09-9 2M665.27 854.81c-2.59.52-7 1-9.55 1.57" />
-              </g>
-              <path
-                id="eco_r"
-                stroke-width="5.36185078"
-                d="M675.53 862.93a31 31 0 01-.2-19.06 35 35 0 015.43-1.12c7-.88 15.64.26 16 2.59.22 1.49-3 3.13-7.37 5.4a102.81 102.81 0 01-9.8 4.13l-2.93 1.13 10.55 5.43"
-              />
-            </g>
-          </g>
+          </g> -->
+
           
           <g
             id="gages"
@@ -1964,7 +1851,126 @@
             id="Ecomapper"
           >
 
-            <!--  ecomapper -->
+                      <g id="Ecomapper">
+            <g
+              id="Ecomapper-arrow"
+              class="arrow"
+            >
+              <path
+                id="eco_arrow_body"
+                d="M469.1 837.05c-8.67-2.73-18.52-3.42-27.24-.78s-16 8.93-17.53 16.48"
+              />
+              <path
+                id="eco_arrow_head"
+                d="M418.52 845.15a20.69 20.69 0 002.73 10.4 2 2 0 001.43 1.17 2.44 2.44 0 001.16-.26l14.38-5.83"
+              />
+            </g>
+            <path
+              class="sketch-white"
+              d="M477.78 882.65c-23.32-6-68.6-12.13-93.27-12.17"
+            />
+            <g
+              id="Ecomapper-sketch"
+              class="sketch-black"
+            >
+              <g class="sketch-2">
+                <path d="M459,884.65a25.94,25.94,0,0,1,1.58,4.7,2,2,0,0,0,1.34,1.69c1.83.22,3.51.38,5.33.61a16.37,16.37,0,0,0,1.27-8.15c-.05,0,.14,1.44,0,0l-.13.06" />
+                <path
+                  d="M459.91,877.07a22.32,22.32,0,0,1,1.78-3.56,4.44,4.44,0,0,0,2,.48c1,.24,2,0,3.12.35a1.39,1.39,0,0,1,.43.52c.57,1.17.9,2.32,1.46,3.49a4.89,4.89,0,0,1,.56,1.75s-.06.14-.16.17"
+                  style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 1.8158688903654614px"
+                />
+                <path d="M455.85,874.46a.81.81,0,0,1,.35.25l.34-.12" />
+                <path d="M456.29,874.77a2.48,2.48,0,0,0-1.26,1.41,10.94,10.94,0,0,0,.31,8.82" />
+                <path
+                  d="M456.34,874.27c.22-.22-.23-.5-.54-.5-2.64,0-5.29-.07-7.92-.25s-5.43-.54-8.14-.88l-30.49-3.9a44.87,44.87,0,0,1-4.91-.81,5.56,5.56,0,0,0-2-.27,3.58,3.58,0,0,0-2.2,1.32,6.47,6.47,0,0,0-1.13,6.53,1.33,1.33,0,0,0,.46.67,1.53,1.53,0,0,0,.79.18c10.19.45,20.15,3,30.25,4.35,8.52,1.13,17.32,1.45,25.26,4.73"
+                  style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 1.8158688903654614px"
+                />
+                <path
+                  d="M449.09,867.51a1.67,1.67,0,0,0-1.2-1.57,4.64,4.64,0,0,0-2.1-.1c-.59.07-1.33.29-1.38.88a1.38,1.38,0,0,0,.11.57,50,50,0,0,1,1.64,5,7.88,7.88,0,0,1,.32,2.5c0,.51-.12,1.14.29,1.43a1.49,1.49,0,0,0,.55.18,7.73,7.73,0,0,0,4.6-.22c.36-.18.72-.58.51-.91a1.15,1.15,0,0,0-.36-.29,2.44,2.44,0,0,1-.8-1.3l-2.45-7.05"
+                  style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 1.8158688903654614px"
+                />
+                <path
+                  d="M400.76,867.44c-3.67-1.38-7.74,0-11.67,0a30.83,30.83,0,0,1-3.18-.19l-8.41-.77a5.8,5.8,0,0,0-1.95,0,2,2,0,0,0-1.45,1.19,1.94,1.94,0,0,0,.49,1.85,4.38,4.38,0,0,0,1.69,1,11.91,11.91,0,0,0,3.67.77c1,.06,2,0,2.94.12,2.85.38,5.27,2.43,8.12,2.81.87.12,1.76.07,2.63.15a9.43,9.43,0,0,1,5,2"
+                  style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 1.8158688903654614px"
+                />
+                <path d="M386.79,867.76a4.73,4.73,0,0,0-.89,2,3.33,3.33,0,0,0-.18,1,1.16,1.16,0,0,0,.45.91" />
+                <path d="M456.43,874.35a33.71,33.71,0,0,0,4,.07" />
+              </g>
+              <g class="sketch-fine">
+                <path
+                  d="M471.65,876l5.3.3a4.15,4.15,0,0,1,1.71.34,3.79,3.79,0,0,1,1.62,2.26,10.77,10.77,0,0,1,.23,7.56,2.47,2.47,0,0,1-.69,1,2.8,2.8,0,0,1-2,.33,67.52,67.52,0,0,1-8.37-1.34"
+                  style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 1.8158688903654614px"
+                />
+                <path d="M459,885.59l-2.54,0" />
+                <path d="M464.11,873.13a5.29,5.29,0,0,0,2.28-1.32.66.66,0,0,1,.32-.21h.18l4.79.6c.21,0,.48.1.53.31a.55.55,0,0,1-.13.4,7.28,7.28,0,0,0-1,6.17,5.8,5.8,0,0,0-1.71-.93" />
+                <path d="M428.26,871.53c-.32,1.26-.65,2.51-1,3.76a2,2,0,0,0-1.64-.65l-2.81-.16" />
+                <path d="M423.58,871.17a7.06,7.06,0,0,0-.49,3.34" />
+                <path d="M460.06,875a4.71,4.71,0,0,1-.32,1.7,2.32,2.32,0,0,0-1.79-.59l.57-1.29" />
+                <path d="M448.36,867.64l-1.17-.3a.47.47,0,0,0-.2,0c-.11,0-.17.15-.27.19a.39.39,0,0,1-.39-.11.76.76,0,0,0-.37-.21c-.14,0-.3.14-.22.26" />
+                <path d="M445.4,867.63l1.59-.09a.74.74,0,0,0,.62.3,2.35,2.35,0,0,0,.69-.14" />
+                <path d="M432.29,872.49a7.67,7.67,0,0,0-1.42,2.29,8.07,8.07,0,0,0-.32,4.79l.46-.11a6.62,6.62,0,0,1-.21-1.94,7.87,7.87,0,0,1,2.15-5" />
+                <path d="M419.17,870.48a7.81,7.81,0,0,0-1.42,2.29,8,8,0,0,0-.32,4.79l.45-.1a7.06,7.06,0,0,1-.2-1.94,7.9,7.9,0,0,1,2.15-5" />
+                <path
+                  d="M447.74,879.64a.85.85,0,0,0-.8.24.8.8,0,0,0-.1.94.81.81,0,0,0,1.11.24c.16-.12.19-.32.24-.66s.12-.75-.07-1a1.2,1.2,0,0,0-1.42-.21,1.35,1.35,0,0,0-.76,1.11,1.5,1.5,0,0,0,.55,1.15,1.69,1.69,0,0,0,1.91.34c.56-.37.54-1.17.52-1.66a2,2,0,0,0-.48-1.49,1.88,1.88,0,0,0-1.53-.49,2.09,2.09,0,0,0-1.49,1.18,2,2,0,0,0,2.15,3"
+                  style="fill: none;stroke: #1360a5;stroke-miterlimit: 10;stroke-width: 0.6809508338870484px"
+                />
+              </g>
+            </g>
+            <g
+              id="Ecomapper-label"
+              class="writing"
+            >
+              <g
+                id="eco_e1"
+                stroke-width="5.0312324"
+              >
+                <path d="M481.18 841.09c-.31 2.89-.5 5.34-.63 7.17a107.88 107.88 0 00.18 12.5 4.23 4.23 0 00.63 2.67c1.76 2.11 6.61-.24 7.76-.82M490.83 839.28l-11.72 1.94M488.28 853.9l-7.77 1.57" />
+              </g>
+              <path
+                id="eco_c"
+                stroke-width="4.80034756"
+                d="M513.41 842.39a9.68 9.68 0 00-5.79.27c-3.2 1.23-4.65 3.93-5.69 5.87s-4 7.56-1.43 10.66c2 2.35 6 1.73 6.56 1.64a10 10 0 006.59-4.42"
+              />
+              <path
+                id="eco_o"
+                stroke-width="5.36185078"
+                d="M528 846a5.84 5.84 0 00-3.79 1.12 6.48 6.48 0 00-2.36 5.13c0 .55 0 4 2.25 5.12s5.37-1.16 6.77-3.18c.11-.16 2.63-3.91.85-6.43A5 5 0 00528 846z"
+              />
+              <path
+                id="eco_m"
+                stroke-width="4.80034756"
+                d="M540.66 858.78l9.22-15q1.54 7.62 3.12 15.22 5.52-5.54 11.06-11.06 1.34 4.71 2.66 9.42"
+              />
+              <g
+                id="eco_a"
+                stroke-width="4.80034756"
+              >
+                <path d="M574.68 866q5-11.48 10-23l10.86 18.65M579.89 853.86l12.09-.41" />
+              </g>
+              <path
+                id="eco_p1"
+                stroke-width="5.36185078"
+                d="M604.19 862.06A30.8 30.8 0 01604 843a32 32 0 015.43-1.12c2.67-.32 10.81-1.28 12.57 2.15a5 5 0 01-.56 4.64c-.88 1.37-2.22 2-7.41 3.35-2 .53-4.76 1.18-8 1.84"
+              />
+              <path
+                id="eco_p2"
+                stroke-width="5.36185078"
+                d="M629.4 862.06a138.2 138.2 0 01-.4-14.34c0-1.6.1-3.18.19-4.72a20.3 20.3 0 015.43-1.12c4.76-.31 11.24 1 11.78 3.78.26 1.41-1.08 2.74-2.26 3.9-4 3.92-9.33 4.6-12.09 4.71"
+              />
+              <g
+                id="eco_e2"
+                stroke-width="5.0312324"
+                data-name="e1"
+              >
+                <path d="M656.39 842c-.31 2.89-.5 5.33-.63 7.17a107.89 107.89 0 00.18 12.5 4.2 4.2 0 00.63 2.66c1.76 2.12 6.6-.23 7.76-.82M666 840.18c-3.09.52-3.85 1.09-9 2M665.27 854.81c-2.59.52-7 1-9.55 1.57" />
+              </g>
+              <path
+                id="eco_r"
+                stroke-width="5.36185078"
+                d="M675.53 862.93a31 31 0 01-.2-19.06 35 35 0 015.43-1.12c7-.88 15.64.26 16 2.59.22 1.49-3 3.13-7.37 5.4a102.81 102.81 0 01-9.8 4.13l-2.93 1.13 10.55 5.43"
+              />
+            </g>
+          </g>
           </g>
           <g
             v-if="isShowingSaltTruck"
@@ -1984,65 +1990,70 @@
             >
               <path
                 id="s2"
+                class="ink"
                 d="M105,749.17a20,20,0,0,0-6.14-1.33c-1.3-.07-8.74-.48-13.76,4.8-1.45,1.52-2.86,3-2.44,4.27,1.17,3.53,14.68.26,16.83,4.9a3.77,3.77,0,0,1-.25,3.08c-1.67,3.34-8.34,4.27-16.66,2.12"
-                
               />
               <path
                 id="s1"
+                class="ink"
                 d="M254.67,716.74a29.25,29.25,0,0,0-6.08-1.61c-5.49-.82-15.16-.64-17,3.9a5.21,5.21,0,0,0,.38,4.43c3.12,5.21,14.87,1.46,16.59,5.66a3.77,3.77,0,0,1-.38,3.06c-1.82,3.26-8.53,3.9-16.74,1.37"
-                
               />
               <path
+                class="ink"
                 d="M123.31,744.08l-10.24,1.38a57.93,57.93,0,0,0-.92,24.76l9.94-2.44"
-                
               />
               <path
+                class="ink"
                 d="M121,758.14l-7.34.62"
-                
               />
               <path
+                class="ink"
                 d="M132.64,766.09,132.18,749l16.2,15.44-.92-19.26"
-                
               />
               <path
+                class="ink"
                 d="M126.83,733.69l.92-16.21,15.59,15.29-.16-20.33"
-                
               />
               <path
+                class="ink"
                 d="M179.57,714.27l6.57,20.18,6.27-13.6,7.18,13.91q3-10,6-20"
-                
               />
               <path
+                class="ink"
                 d="M168.41,714.42a16.81,16.81,0,0,0-10.4,4.74c-1.4,1.44-4.26,4.38-3.51,7.65s5,5.25,8.25,5.35c5.38.17,10.42-4.44,9.79-6.42s-6.66-1.64-9.79-1.38"
-                
               />
               <path
+                class="ink"
                 d="M216.41,718.4c-2.72.46-4.85,4.18-4.28,7.49.36,2.13,2,4.81,4.74,5.2,3,.41,5.66-2.07,6.26-4.59C224.11,722.45,219.84,717.82,216.41,718.4Z"
-                
               />
               <path
+                class="ink"
                 d="M191.8,751.42c-1.55.24-4,.62-5.35,2.75a6.08,6.08,0,0,0,.76,7.34c2.44,2.41,6.33,1.39,8.41,0,2.89-1.94,4.67-6.21,3.06-8.56S192.84,751.26,191.8,751.42Z"
-                
               />
               <path
+                class="ink"
                 d="M206.78,766.25a106.14,106.14,0,0,1,.15-11.47c.12-1.74.27-3.42.46-5a31,31,0,0,1,10.55-.31c2.5.37,6.22.91,6.57,2.6s-3.11,3.89-4.74,4.89c-5.6,3.43-9.84,3.05-10.09,4.43-.18,1,1.63,2.72,10.86,6.12"
-                
               />
               <path
+                class="ink"
                 d="M254.78,749.13a16.77,16.77,0,0,0-4.89-1.69c-6.12-1.08-13.92,1.14-15.44,5.66-.47,1.39-.51,3.5.61,4.74.77.85,1.81,1,3.21,1.22,4.63.8,6.08.39,7.34,1.68a3.23,3.23,0,0,1,.91,3.06c-.29.86-1.18,1.43-4.43,2.29a52.78,52.78,0,0,1-7,1.38"
-                
               />
               <path
+                class="ink"
                 d="M176.86,748.21a29.82,29.82,0,0,0-5.35-.31c-2.4.07-13.57.1-14.83,4.28-.55,1.82,1,3.73,1.07,3.82.78.94,1.77,1.33,5.35,2.14,5.12,1.16,6.74,1.18,7,2.14s-1.32,2.49-2,3.06a11,11,0,0,1-7.49,2.29"
-                              />
+              />
             </g>
             <g class="arrow">
               <path
+                class="ink"
                 d="M230.12,704.38a25.44,25.44,0,0,1,5.81-6.56c6-4.76,12.41-5.41,15.83-5.71,1.32-.11,11-.85,17.5,3.65a11.42,11.42,0,0,1,4.07,4.45,11,11,0,0,1,1.11,5.11"
-                              />
+                style="fill: none;stroke: black;stroke-linecap: round;stroke-linejoin: round;"
+              />
               <path
+                class="ink"
                 d="M267,701.75l7.35,6.75L279,694.29"
-                              />
+                style="fill: none;stroke: black;stroke-linecap: round;stroke-linejoin: round;"
+              />
             </g>
           </g>
           <g
@@ -2068,249 +2079,221 @@
         </svg>
       </div>
     </div>
-    <div id="text-container">
-      <div id="text-position-container-left" />
-      <div id="text-position-container-right">
+
+
+    <div id="monitoring-container">
+      <div id="text-container">
         <div
-          id="monitoring-intro-text"
-          class="conclusion-text-section"
+          id="ngwos-intro-text"
+          class="text-content-side"
         >
-          <div class="text-chunk">
-            <h4
-              id="text-block-intro"
-              v-observe-visibility="{
-                callback: visibilityChanged,
-                intersection: {
-                  rootMargin: '-20% 0% -50% 0%',
-                  threshold: 0
-                }
-              }"
-              class="text-content-side"
-            >
-              The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators. 
-            </h4>
-            <div
-              id="p-container-intro"
-              class="p-container text-content-side"
-            >
-              <p>The US federal government chose the Delaware River Basin as the pilot site for the Next-Generation Water Observing System (NGWOS). As part of the pilot, the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep. Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current water availability and water quality.</p>
+          <div 
+            id="scroll-intro-monitoring"
+            class="scrolly-chunk"
+          >
+            <div class="text-content-side text-chunk">
+              <h4>
+                Introducing NGWOS
+              </h4>
+              <p>
+                The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators. 
+              </p>
+              <p>The US federal government chose the Delaware River Basin as the pilot site for the <a href="https://www.usgs.gov/mission-areas/water-resources/science/usgs-next-generation-water-observing-system-ngwos?qt-science_center_objects=0#">Next-Generation Water Observing System (NGWOS)</a>. As part of the pilot, the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep. Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current water availability and water quality.</p>
             </div>
           </div>
-        </div>
-        <div
-          id="monitoring-text-details"
-        >
-          <div class="number-cloud-title-container text-chunk">
-            <div class="subtext-cloud-number-container">
-              <img
-                id="number-cloud-new_enhanced"
-                class="cloud-as-number-backing"
-                src="@/assets/monitoring/images/orangeCircle1.png"
-                alt=""
-              >
-              <h2 class="monitoring-location-number">
-                34
-              </h2>
-              <h4
-                id="text-block-new_enhanced"
-                v-observe-visibility="{
-                  callback: visibilityChanged,
-                  intersection: {
-                    rootMargin: '-20% 0% -50% 0%',
-                    threshold: 0
-                  }
-                }"
-                class="monitoring-title"
-              >
-                New and Enhanced Gages
-              </h4>
+          <div
+            id="monitoring-text-details"
+            class="text-content-side"
+          >
+            <div class="scrolly-chunk">
+              <div class="number-cloud-title-container text-content-side text-chunk">
+                <div class="subtext-cloud-number-container">
+                  <img
+                    id="number-cloud-new_enhanced"
+                    class="cloud-as-number-backing"
+                    src="@/assets/monitoring/images/orangeCircle1.png"
+                    alt=""
+                  >
+                  <h2 class="monitoring-location-number">
+                    34
+                  </h2>
+                  <h4
+                    id="text-block-new_enhanced"
+                    v-observe-visibility="{
+                      callback: visibilityChanged,
+                      intersection: {
+                        rootMargin: '-20% 0% -50% 0%',
+                        threshold: 0
+                      }
+                    }"
+                    class="monitoring-title"
+                  >
+                    New and Enhanced Gages
+                  </h4>
+                </div>
+                <div
+                  id="p-container-new_enhanced"
+                  class="p-container"
+                >
+                  <p>Measurements of real-time flow levels are critical to the decision makers of the Basin, especially in the River Master’s office during late-summer low flows. To better understand streamflow in the basin and inform release decisions from reservoirs, 34 new or enhanced stream gages have been installed the last three years, each housing delicate monitoring equipment that is collecting data all day, every day.</p>
+                  <p>Not only can scientists receive near real-time measurements from the field with minimal delay, technicians can also change the timing and duration of data collection from a remote location, which allows for good data collection even during extreme weather events.</p>
+                </div>
+              </div>
             </div>
-            <div
-              id="p-container-new_enhanced"
-              class="p-container text-content-side"
-            >
-              <p>Measurements of real-time flow levels are critical to the decision makers of the Basin, especially in the River Master’s office during late-summer low flows. To better understand streamflow in various locations of the basin, 34 new stream gages have been installed the last three years, each housing delicate monitoring equipment that is collecting data all day, every day. </p>
+            <div class="scrolly-chunk">
+              <div class="number-cloud-title-container text-content-side text-chunk">
+                <div class="subtext-cloud-number-container">
+                  <img
+                    id="number-cloud-salinity"
+                    class="cloud-as-number-backing"
+                    src="@/assets/monitoring/images/blueCircle1.png"
+                    alt=""
+                  >
+                  <h2 class="monitoring-location-number">
+                    56
+                  </h2>
+                  <h4
+                    id="text-block-salinity"
+                    v-observe-visibility="{
+                      callback: visibilityChanged,
+                      intersection: {
+                        rootMargin: '-20% 0% -50% 0%',
+                        threshold: 0
+                      }
+                    }"
+                    class="monitoring-title"
+                  >
+                    Specific Conductivity
+                  </h4>
+                </div>
+                <div class="subtext-text-container">
+                  <div
+                    id="p-container-salinity"
+                    class="p-container"
+                  >
+                    <p>Specific conductivity sensors measure a variable related to salinity – the ability of the water to conduct electricity – and relationships between conductivity and salinity can be used to provide a picture of salt concentration in the water in 56 new locations in the Basin.</p>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="scrolly-chunk">
+              <div class="number-cloud-title-container text-content-side text-chunk">
+                <div class="subtext-cloud-number-container">
+                  <img
+                    id="number-cloud-temp"
+                    class="cloud-as-number-backing"
+                    src="@/assets/monitoring/images/greenCircle1.png"
+                    alt=""
+                  >
+                  <h2 class="monitoring-location-number">
+                    98
+                  </h2>
+                  <h4
+                    id="text-block-temp"
+                    v-observe-visibility="{
+                      callback: visibilityChanged,
+                      intersection: {
+                        rootMargin: '-20% 0% -50% 0%',
+                        threshold: 0
+                      }
+                    }"
+                    class="monitoring-title"
+                  >
+                    Temperature
+                  </h4>
+                </div>
+                <div class="subtext-text-container">
+                  <div
+                    id="p-container-temp"
+                    class="p-container"
+                  >
+                    <p>Water temperature is a key factor in the health of many aquatic organisms, and better, broader, and faster delivery of water temperature data can help inform reservoir releases and help anglers decide when to fish. New temperature sensors were added to 98 locations in the Basin.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="number-cloud-title-container text-chunk">
-            <div class="subtext-cloud-number-container">
-              <img
-                id="number-cloud-salinity"
-                class="cloud-as-number-backing"
-                src="@/assets/monitoring/images/blueCircle1.png"
-                alt=""
-              >
-              <h2 class="monitoring-location-number">
-                56
-              </h2>
-              <h4
-                id="text-block-salinity"
-                v-observe-visibility="{
-                  callback: visibilityChanged,
-                  intersection: {
-                    rootMargin: '-20% 0% -50% 0%',
-                    threshold: 0
-                  }
-                }"
-                class="monitoring-title"
-              >
-                Salinity
-              </h4>
+            <div class="scrolly-chunk">
+              <div class="number-cloud-title-container text-content-side text-chunk">
+                <div class="subtext-cloud-number-container">
+                  <img
+                    id="number-cloud-cameras"
+                    class="cloud-as-number-backing"
+                    src="@/assets/monitoring/images/orangeCircle1.png"
+                    alt=""
+                  >
+                  <h2 class="monitoring-location-number">
+                    8
+                  </h2>
+                  <h4
+                    id="text-block-cameras"
+                    v-observe-visibility="{
+                      callback: visibilityChanged,
+                      intersection: {
+                        rootMargin: '-20% 0% -50% 0%',
+                        threshold: 0
+                      }
+                    }"
+                    class="monitoring-title"
+                  >
+                    Cameras
+                  </h4>
+                </div>
+                <div class="subtext-text-container">
+                  <div
+                    id="p-container-cameras"
+                    class="p-container"
+                  >
+                    <p id="p-cameras">
+                      Eight new cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These cameras open up the potential for new realms of science and data processing for flow measurement, and support USGS visually sharing the dynamic lives of rivers and streams.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="subtext-text-container">
-              <div
-                id="p-container-salinity"
-                class="p-container text-content-side"
-              >
-                <p>Keeping tabs on the evolving salinity issues in the Delaware River is important to understanding how the location of the salt front is changing.  It also allows scientists to better understand ecosystem health in streams that are impacted by road salting. Specific conductivity sensors measure a variable related to salinity – the ability of the water to conduct electricity – and relationships between conductivity and salinity can be used to provide a picture of salt concentration in the water in 56 new locations in the Basin.</p>
+            <div class="scrolly-chunk">
+              <div class="number-cloud-title-container text-content-side text-chunk">
+                <div class="subtext-cloud-number-container">
+                  <img
+                    id="number-cloud-r-d"
+                    class="cloud-as-number-backing"
+                    src="@/assets/monitoring/images/blueCircle1.png"
+                    alt=""
+                  >
+                  <h2 class="monitoring-location-number">
+                    <img src="@/assets/monitoring/images/ecomapper.png">
+                  </h2>
+                  <h4
+                    id="text-block-r-d"
+                    v-observe-visibility="{
+                      callback: visibilityChanged,
+                      intersection: {
+                        rootMargin: '-20% 0% -50% 0%',
+                        threshold: 0
+                      }
+                    }"
+                    class="monitoring-title"
+                  >
+                    Research and Development 
+                  </h4>
+                </div>
+                <div class="subtext-text-container">
+                  <div
+                    id="p-container-r-d"
+                    class="p-container"
+                  >
+                    <p>USGS field staff collect various water-quality data using a programmable  underwater robot – the EcoMapper. The EcoMapper’s back-and-forth scanning of the lower waters of the Basin provides data that can be used to build maps of how water quality changes through the 3D space of the Delaware Bay.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="number-cloud-title-container text-chunk">
-            <div class="subtext-cloud-number-container">
-              <img
-                id="number-cloud-temp"
-                class="cloud-as-number-backing"
-                src="@/assets/monitoring/images/greenCircle1.png"
-                alt=""
-              >
-              <h2 class="monitoring-location-number">
-                98
-              </h2>
-              <h4
-                id="text-block-temp"
-                v-observe-visibility="{
-                  callback: visibilityChanged,
-                  intersection: {
-                    rootMargin: '-20% 0% -50% 0%',
-                    threshold: 0
-                  }
-                }"
-                class="monitoring-title"
-              >
-                Temperature
-              </h4>
-            </div>
-            <div class="subtext-text-container">
-              <div
-                id="p-container-temp"
-                class="p-container text-content-side"
-              >
-                <p>Water temperature is a key factor in the health of many aquatic organisms, and better, broader, and faster delivery of water temperature data can help inform reservoir releases and help anglers decide when to fish. New temperature sensors were added to 98 locations in the Basin.</p>
-              </div>
-            </div>
+          <div class="text-content-side text-chunk">
+            <h4>A New Generation of Water Science in the Delaware River Basin</h4>
+            <p>Water uses in the Delaware Basin are diverse and complicated, and the need for information that describes the present and future conditions of water availability and water quality are more pressing than ever.</p>
+            <p>The advancements in water science and monitoring paint a clearer picture of how the DRB has changed, and new efforts are building models that better predict the health and function of the river in the future. As a result, the new advanced monitoring strategy of the NGWOS is enhancing water data collection, and the modernized data management – with increased public availability, rapid data downloads, and interactive views of current conditions – makes it easier to study the health of Basin.</p>
+            <p>While this story focused on flow, salinity, and water temperature, the USGS and collaborators study a multitude of other water-quality factors in the Basin.  We could tell additional stories about sediment, turbidity, nutrients, dissolved oxygen, pathogens, heavy metals, and chemical contaminants.</p>
+            <p>With all these aspects of a healthy river basin, monitoring and modeling enables wiser management decisions, a more optimal balance of water uses, and a richer understanding of this beautiful and life-sustaining river.</p>
           </div>
-          <div class="number-cloud-title-container text-chunk">
-            <div class="subtext-cloud-number-container">
-              <img
-                id="number-cloud-cameras"
-                class="cloud-as-number-backing"
-                src="@/assets/monitoring/images/orangeCircle1.png"
-                alt=""
-              >
-              <h2 class="monitoring-location-number">
-                8
-              </h2>
-              <h4
-                id="text-block-cameras"
-                v-observe-visibility="{
-                  callback: visibilityChanged,
-                  intersection: {
-                    rootMargin: '-20% 0% -50% 0%',
-                    threshold: 0
-                  }
-                }"
-                class="monitoring-title"
-              >
-                Cameras
-              </h4>
-            </div>
-            <div class="subtext-text-container">
-              <div
-                id="p-container-cameras"
-                class="p-container text-content-side"
-              >
-                <p id="p-cameras">
-                  Eight new cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These cameras open up the potential for new realms of science and data processing for flow measurement, and support USGS visually sharing the dynamic lives of rivers and streams.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="number-cloud-title-container text-chunk">
-            <div class="subtext-cloud-number-container">
-              <img
-                id="number-cloud-r-d"
-                class="cloud-as-number-backing"
-                src="@/assets/monitoring/images/blueCircle1.png"
-                alt=""
-              >
-              <h2 class="monitoring-location-number">
-                3
-              </h2>
-              <h4
-                id="text-block-r-d"
-                v-observe-visibility="{
-                  callback: visibilityChanged,
-                  intersection: {
-                    rootMargin: '-20% 0% -50% 0%',
-                    threshold: 0
-                  }
-                }"
-                class="monitoring-title"
-              >
-                Ecomapper
-              </h4>
-            </div>
-            <div class="subtext-text-container">
-              <div
-                id="p-container-r-d"
-                class="p-container text-content-side"
-              >
-                <p>USGS field staff collect various water-quality data using a programmable  underwater robot – the EcoMapper. The EcoMapper’s back-and-forth scanning of the lower waters of the Basin provides data that can be used to build maps of how water quality changes through the 3D space of the Delaware Bay.</p>
-              </div>
-            </div>
-          </div>
-          <div class="number-cloud-title-container text-chunk">
-            <div class="subtext-cloud-number-container">
-              <img
-                id="number-cloud-all"
-                class="cloud-as-number-backing"
-                src="@/assets/monitoring/images/greenCircle1.png"
-                alt=""
-              >
-              <h2 class="monitoring-location-number">
-                190
-              </h2>
-              <h4
-                id="text-block-all"
-                v-observe-visibility="{
-                  callback: visibilityChanged,
-                  intersection: {
-                    rootMargin: '-20% 0% -50% 0%',
-                    threshold: 0
-                  }
-                }"
-                class="monitoring-title"
-              >
-                All
-              </h4>
-            </div>
-            <div class="subtext-text-container">
-              <div
-                id="p-container-all"
-                class="p-container text-content-side"
-              >
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-content-side text-chunk">
-          <h4>A New Generation of Water Science in the Delaware River Basin</h4>
-          <p>Water uses in the Delaware Basin are diverse and complicated, and the need for information that describes the present and future conditions of water availability and water quality are more pressing than ever.</p>
-          <p>The advancements in water science and monitoring paint a clearer picture of how the DRB has changed, and new efforts are building models that better predict the health and function of the river in the future. As a result, the new advanced monitoring strategy of the NGWOS is enhancing water data collection, and the modernized data management – with increased public availability, rapid data downloads, and interactive views of current conditions – makes it easier to study the health of Basin.</p>
-          <p>While this story focused on flow, salinity, and water temperature, the USGS and collaborators study a multitude of other water-quality factors in the Basin.  We could tell additional stories about sediment, turbidity, nutrients, dissolved oxygen, pathogens, heavy metals, and chemical contaminants.</p>
-          <p>With all these aspects of a healthy river basin, monitoring and modeling enables wiser management decisions, a more optimal balance of water uses, and a richer understanding of this beautiful and life-sustaining river.</p>
         </div>
       </div>
     </div>
@@ -2557,34 +2540,30 @@ export default {
     0% {stroke-dashoffset: -700px}
     100% {stroke-dashoffset: 0px;}
   }
-}
- .writing {
+ 
+  #Reservoirs-container, #Ecomapper, #Road_Salt, #Gages, #NYC-sketch, #Mussel, #Trout, #Bridge, #Temperature, #ngwos-label, #Salinity {
+
+    .writing, .ink {
       stroke: black;
       fill: none;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke-width: 6px;
+      stroke-width: 4px;
 
     }
-.arrow {
-  stroke: black;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3px;
-}
-#DRBgage  {
-  width: 18px;
-  height: 21px;
-}
-  #Reservoirs-container, #Ecomapper, #Road_Salt, #Gages, #NYC-sketch, #Mussel, #Trout, #Bridge, #Temperature, #ngwos-label, #Salinity {
-
+    .arrow {
+      stroke: black;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 4px;
+    }
     .sketch-black {
       stroke: black;
       fill: none;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke-width: 2px;
+      stroke-width: 3px;
       z-index: 1;
 
       .sketch-1 {
@@ -2624,6 +2603,7 @@ export default {
 
     }
   }
+}
 
  /* line animations in order of appearance */
   /*  $time-dur-long: .5s;
@@ -3452,11 +3432,29 @@ export default {
   } */
 
 
+// This section controls layout, grid pattern
+
+/// Parent Container
+#monitoring-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 992px) {
+  #monitoring-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+// Image Container
+
 #image-container {
+  align-self: start;
   object-fit: cover;
   height: 100vh;
   width: 100%;
-  min-width: 1000px;
+  min-width: 1400px;
   overflow: auto;
   position: sticky;
   display: block;
@@ -3491,21 +3489,27 @@ export default {
 // controls the text fades
 .p-container {
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity .5s;
 }
 .p-container.visible {
   opacity: 1;
 }
 
+// Text Container
+
+// Use dummy column to float it to the right
+
+#dummy-column {
+  grid-column: 1;
+}
 
 
 #text-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-column: 2;
   padding-bottom: 50em;
 
   .subtext-cloud-number-container {
-    padding-top: 5em;
     display: grid;
     grid-template-columns: 1fr 4fr;
     justify-items: center;

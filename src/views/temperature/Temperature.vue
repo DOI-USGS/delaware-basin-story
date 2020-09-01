@@ -1,5 +1,8 @@
 <template>
-  <div id="temperature">
+  <section
+    id="temperature"
+    class="section"
+  >
     <SectionTitle
       :title="title"
       :image="titleBackingImage"
@@ -336,7 +339,7 @@
         </transition-group>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

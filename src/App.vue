@@ -71,7 +71,7 @@
   // Import Colors
 
   $offWhite: rgb(236,227,220);
-  $transparentWhite: rgba(255,255,255, 0.8);
+  $transparentWhite: rgba(255,255,255, 0.85);
   $darkBlue: rgb(30, 86,120);
   $lightBlue: rgb(73,166,206);
   $darkGreen: rgb(46,131,107);
@@ -88,6 +88,11 @@
     line-height: 1.5;
   }
   #app {
+
+    .section {
+      margin: 5em 0 5em 0;
+    }
+
     p {
       font-family: 'Noto Sans', sans-serif;
       font-weight: lighter;
@@ -137,12 +142,16 @@
       background-color: $transparentWhite;
       padding: 2em 0 2em 0;
     }
+
+    .scrolly-chunk{
+      padding: 70vh 0 70vh 0;
+    }
     // Text-only
     .text-content {
       min-width: 350px;
       max-width: 700px;
       margin: 0 auto;
-      padding: 5em 20px 5em 20px;     
+      padding: 2em 2em 2em 2em;     
     }
 
     // Text and Content side-by-side
@@ -173,8 +182,8 @@
 
     .text-content-side {
       min-width: 350px;
-      max-width: 500px;
-      padding: 0 20px;
+      max-width: 600px;
+      padding: 2em 2em 2em 2em;
     }
   }
 

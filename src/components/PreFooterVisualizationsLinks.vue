@@ -1,16 +1,16 @@
 <template>
   <div class="pre-footer-links">
     <div class="inner-pre-footer-links-container">
-      <p>Other visualizations of interest</p>
+      <p>Other Visualizations of Interest</p>
       <div class="footer-viz-links">
         <a
           :href="LinkOne"
         >
           <figure>
-            <figcaption>Enter appropriate caption</figcaption>
+            <figcaption>Gages Through the Ages</figcaption>
             <img
-              src="@/assets/components/PreFooterVisualizationsLinks/images/thumbnailGeneric.png"
-              alt=""
+              src="@/assets/components/PreFooterVisualizationsLinks/images/conusThumb.png"
+              alt="Thumbnail for a link to the Gages Through the Ages Visualization"
             >
           </figure>
         </a>
@@ -18,10 +18,10 @@
           :href="LinkTwo"
         >
           <figure>
-            <figcaption>Enter appropriate caption</figcaption>
+            <figcaption>Hurricane Maria's Water Footprint</figcaption>
             <img
-              src="@/assets/components/PreFooterVisualizationsLinks/images/thumbnailGeneric.png"
-              alt=""
+              src="@/assets/components/PreFooterVisualizationsLinks/images/MariaThumb.png"
+              alt="Thumbnail for a link to the Hurricane Maria Water Footprint visualization"
             >
           </figure>
         </a>

@@ -56,10 +56,10 @@
 
 <style scoped lang="scss">
 
-  // #intro-banner-container {
-  //   min-width: 1000px;
-  //   overflow: auto;
-  // }
+  #intro-banner-container {
+    min-width: 1400px;
+    overflow: auto;
+  }
 
   .parallax {
     background-image: url("../../assets/intro/images/DRB_all-01.jpg");
