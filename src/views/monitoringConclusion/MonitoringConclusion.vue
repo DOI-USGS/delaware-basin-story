@@ -5,14 +5,14 @@
       :image="titleBackingImage"
     />
 
-    <div class="text-content text-chunk">
+    <div id="monitoring-intro" class="text-content text-chunk">
       <h4>
         Managing for Quality and Quantity
       </h4>
       <p>Managing water in the modern era requires that we consider as many facets of an ecosystem as possible, including <span class="emph">flow,</span> <span class="emph">temperature,</span> and <span class="emph">salinity,</span> as well as many other water-quality dimensions. These decisions impact economic and ecological health throughout the entire river basin.  To be able to know when, how, and what decisions to make, managers have to have lots of accurate data at their fingertips.</p>
       <p>That’s where the USGS comes in.</p>
     </div>
-    
+
     <div id="image-container">
       <div class="inking">
         <svg
@@ -2902,216 +2902,221 @@
         </svg>
       </div>
     </div>
-    <div id="text-container">
-      <div id="text-position-container-left" />
-      <div id="text-position-container-right">
+
+
+    <div id=monitoring-container>
+      <div id="text-container">
         <div
-          id="monitoring-intro-text"
-          class="conclusion-text-section"
+          id="ngwos-intro-text"
+          class="text-content-side"
         >
-          <div class="text-chunk">
-            <h4
-              id="text-block-intro"
-              v-observe-visibility="{
-                callback: visibilityChanged,
-                intersection: {
-                  rootMargin: '-20% 0% -50% 0%',
-                  threshold: 0
-                }
-              }"
-              class="text-content-side"
-            >
-              The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators. 
-            </h4>
-            <div
-              id="p-container-intro"
-              class="p-container text-content-side"
-            >
+          <div 
+            id="scroll-intro-monitoring"
+            class="scrolly-chunk"
+          >
+            <div class="text-content-side text-chunk">
+              <h4>
+                Introducing NGWOS
+              </h4>
+              <p>
+                The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators. 
+              </p>
               <p>The US federal government chose the Delaware River Basin as the pilot site for the Next-Generation Water Observing System (NGWOS). As part of the pilot, the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep. Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current water availability and water quality.</p>
             </div>
           </div>
-        </div>
-        <div
-          id="monitoring-text-details"
-        >
-          <div class="number-cloud-title-container text-chunk">
-            <div class="subtext-cloud-number-container">
-              <img
-                id="number-cloud-new_enhanced"
-                class="cloud-as-number-backing"
-                src="@/assets/monitoring/images/orangeCircle1.png"
-                alt=""
-              >
-              <h2 class="monitoring-location-number">
-                34
-              </h2>
-              <h4
-                id="text-block-new_enhanced"
-                v-observe-visibility="{
-                  callback: visibilityChanged,
-                  intersection: {
-                    rootMargin: '-20% 0% -50% 0%',
-                    threshold: 0
-                  }
-                }"
-                class="monitoring-title"
-              >
-                New and Enhanced Gages
-              </h4>
+          <div
+            id="monitoring-text-details"
+            class="text-content-side"
+          >
+            <div class="scrolly-chunk">
+              <div class="number-cloud-title-container text-content-side text-chunk">
+                <div class="subtext-cloud-number-container">
+                  <img
+                    id="number-cloud-new_enhanced"
+                    class="cloud-as-number-backing"
+                    src="@/assets/monitoring/images/orangeCircle1.png"
+                    alt=""
+                  >
+                  <h2 class="monitoring-location-number">
+                    34
+                  </h2>
+                  <h4
+                    id="text-block-new_enhanced"
+                    v-observe-visibility="{
+                      callback: visibilityChanged,
+                      intersection: {
+                        rootMargin: '-20% 0% -50% 0%',
+                        threshold: 0
+                      }
+                    }"
+                    class="monitoring-title"
+                  >
+                    New and Enhanced Gages
+                  </h4>
+                </div>
+                <div
+                  id="p-container-new_enhanced"
+                  class="p-container"
+                >
+                  <p>Measurements of real-time flow levels are critical to the decision makers of the Basin, especially in the River Master’s office during late-summer low flows. To better understand streamflow in the basin and inform release decisions from reservoirs, 34 new or enhanced stream gages have been installed the last three years, each housing delicate monitoring equipment that is collecting data all day, every day.</p>
+                  <p>Not only can scientists receive near real-time measurements from the field with minimal delay, technicians can also change the timing and duration of data collection from a remote location, which allows for good data collection even during extreme weather events.</p>
+                </div>
+              </div>
             </div>
-            <div
-              id="p-container-new_enhanced"
-              class="p-container text-content-side"
-            >
-              <p>Measurements of real-time flow levels are critical to the decision makers of the Basin, especially in the River Master’s office during late-summer low flows. To better understand streamflow in the basin and inform release decisions from reservoirs, 34 new or enhanced stream gages have been installed the last three years, each housing delicate monitoring equipment that is collecting data all day, every day.</p>
-              <p>Not only can scientists receive near real-time measurements from the field with minimal delay, technicians can also change the timing and duration of data collection from a remote location, which allows for good data collection even during extreme weather events.</p>
+            <div class="scrolly-chunk">
+              <div class="number-cloud-title-container text-content-side text-chunk">
+                <div class="subtext-cloud-number-container">
+                  <img
+                    id="number-cloud-salinity"
+                    class="cloud-as-number-backing"
+                    src="@/assets/monitoring/images/blueCircle1.png"
+                    alt=""
+                  >
+                  <h2 class="monitoring-location-number">
+                    56
+                  </h2>
+                  <h4
+                    id="text-block-salinity"
+                    v-observe-visibility="{
+                      callback: visibilityChanged,
+                      intersection: {
+                        rootMargin: '-20% 0% -50% 0%',
+                        threshold: 0
+                      }
+                    }"
+                    class="monitoring-title"
+                  >
+                    Specific Conductivity
+                  </h4>
+                </div>
+                <div class="subtext-text-container">
+                  <div
+                    id="p-container-salinity"
+                    class="p-container"
+                  >
+                    <p>Specific conductivity sensors measure a variable related to salinity – the ability of the water to conduct electricity – and relationships between conductivity and salinity can be used to provide a picture of salt concentration in the water in 56 new locations in the Basin.</p>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="scrolly-chunk">
+              <div class="number-cloud-title-container text-content-side text-chunk">
+                <div class="subtext-cloud-number-container">
+                  <img
+                    id="number-cloud-temp"
+                    class="cloud-as-number-backing"
+                    src="@/assets/monitoring/images/greenCircle1.png"
+                    alt=""
+                  >
+                  <h2 class="monitoring-location-number">
+                    98
+                  </h2>
+                  <h4
+                    id="text-block-temp"
+                    v-observe-visibility="{
+                      callback: visibilityChanged,
+                      intersection: {
+                        rootMargin: '-20% 0% -50% 0%',
+                        threshold: 0
+                      }
+                    }"
+                    class="monitoring-title"
+                  >
+                    Temperature
+                  </h4>
+                </div>
+                <div class="subtext-text-container">
+                  <div
+                    id="p-container-temp"
+                    class="p-container"
+                  >
+                    <p>Water temperature is a key factor in the health of many aquatic organisms, and better, broader, and faster delivery of water temperature data can help inform reservoir releases and help anglers decide when to fish. New temperature sensors were added to 98 locations in the Basin.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="number-cloud-title-container text-chunk">
-            <div class="subtext-cloud-number-container">
-              <img
-                id="number-cloud-salinity"
-                class="cloud-as-number-backing"
-                src="@/assets/monitoring/images/blueCircle1.png"
-                alt=""
-              >
-              <h2 class="monitoring-location-number">
-                56
-              </h2>
-              <h4
-                id="text-block-salinity"
-                v-observe-visibility="{
-                  callback: visibilityChanged,
-                  intersection: {
-                    rootMargin: '-20% 0% -50% 0%',
-                    threshold: 0
-                  }
-                }"
-                class="monitoring-title"
-              >
-                Specific Conductivity
-              </h4>
+            <div class="scrolly-chunk">
+              <div class="number-cloud-title-container text-content-side text-chunk">
+                <div class="subtext-cloud-number-container">
+                  <img
+                    id="number-cloud-cameras"
+                    class="cloud-as-number-backing"
+                    src="@/assets/monitoring/images/orangeCircle1.png"
+                    alt=""
+                  >
+                  <h2 class="monitoring-location-number">
+                    8
+                  </h2>
+                  <h4
+                    id="text-block-cameras"
+                    v-observe-visibility="{
+                      callback: visibilityChanged,
+                      intersection: {
+                        rootMargin: '-20% 0% -50% 0%',
+                        threshold: 0
+                      }
+                    }"
+                    class="monitoring-title"
+                  >
+                    Cameras
+                  </h4>
+                </div>
+                <div class="subtext-text-container">
+                  <div
+                    id="p-container-cameras"
+                    class="p-container"
+                  >
+                    <p id="p-cameras">
+                      Eight new cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These cameras open up the potential for new realms of science and data processing for flow measurement, and support USGS visually sharing the dynamic lives of rivers and streams.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="subtext-text-container">
-              <div
-                id="p-container-salinity"
-                class="p-container text-content-side"
-              >
-                <p>Specific conductivity sensors measure a variable related to salinity – the ability of the water to conduct electricity – and relationships between conductivity and salinity can be used to provide a picture of salt concentration in the water in 56 new locations in the Basin.</p>
+            <div class="scrolly-chunk">
+              <div class="number-cloud-title-container text-content-side text-chunk">
+                <div class="subtext-cloud-number-container">
+                  <img
+                    id="number-cloud-r-d"
+                    class="cloud-as-number-backing"
+                    src="@/assets/monitoring/images/blueCircle1.png"
+                    alt=""
+                  >
+                  <h2 class="monitoring-location-number">
+                    <img src="@/assets/monitoring/images/ecomapper.png">
+                  </h2>
+                  <h4
+                    id="text-block-r-d"
+                    v-observe-visibility="{
+                      callback: visibilityChanged,
+                      intersection: {
+                        rootMargin: '-20% 0% -50% 0%',
+                        threshold: 0
+                      }
+                    }"
+                    class="monitoring-title"
+                  >
+                    Research and Development 
+                  </h4>
+                </div>
+                <div class="subtext-text-container">
+                  <div
+                    id="p-container-r-d"
+                    class="p-container"
+                  >
+                    <p>USGS field staff collect various water-quality data using a programmable  underwater robot – the EcoMapper. The EcoMapper’s back-and-forth scanning of the lower waters of the Basin provides data that can be used to build maps of how water quality changes through the 3D space of the Delaware Bay.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="number-cloud-title-container text-chunk">
-            <div class="subtext-cloud-number-container">
-              <img
-                id="number-cloud-temp"
-                class="cloud-as-number-backing"
-                src="@/assets/monitoring/images/greenCircle1.png"
-                alt=""
-              >
-              <h2 class="monitoring-location-number">
-                98
-              </h2>
-              <h4
-                id="text-block-temp"
-                v-observe-visibility="{
-                  callback: visibilityChanged,
-                  intersection: {
-                    rootMargin: '-20% 0% -50% 0%',
-                    threshold: 0
-                  }
-                }"
-                class="monitoring-title"
-              >
-                Temperature
-              </h4>
-            </div>
-            <div class="subtext-text-container">
-              <div
-                id="p-container-temp"
-                class="p-container text-content-side"
-              >
-                <p>Water temperature is a key factor in the health of many aquatic organisms, and better, broader, and faster delivery of water temperature data can help inform reservoir releases and help anglers decide when to fish. New temperature sensors were added to 98 locations in the Basin.</p>
-              </div>
-            </div>
+          <div class="text-content-side text-chunk">
+            <h4>A New Generation of Water Science in the Delaware River Basin</h4>
+            <p>Water uses in the Delaware Basin are diverse and complicated, and the need for information that describes the present and future conditions of water availability and water quality are more pressing than ever.</p>
+            <p>The advancements in water science and monitoring paint a clearer picture of how the DRB has changed, and new efforts are building models that better predict the health and function of the river in the future. As a result, the new advanced monitoring strategy of the NGWOS is enhancing water data collection, and the modernized data management – with increased public availability, rapid data downloads, and interactive views of current conditions – makes it easier to study the health of Basin.</p>
+            <p>While this story focused on flow, salinity, and water temperature, the USGS and collaborators study a multitude of other water-quality factors in the Basin.  We could tell additional stories about sediment, turbidity, nutrients, dissolved oxygen, pathogens, heavy metals, and chemical contaminants.</p>
+            <p>With all these aspects of a healthy river basin, monitoring and modeling enables wiser management decisions, a more optimal balance of water uses, and a richer understanding of this beautiful and life-sustaining river.</p>
           </div>
-          <div class="number-cloud-title-container text-chunk">
-            <div class="subtext-cloud-number-container">
-              <img
-                id="number-cloud-cameras"
-                class="cloud-as-number-backing"
-                src="@/assets/monitoring/images/orangeCircle1.png"
-                alt=""
-              >
-              <h2 class="monitoring-location-number">
-                8
-              </h2>
-              <h4
-                id="text-block-cameras"
-                v-observe-visibility="{
-                  callback: visibilityChanged,
-                  intersection: {
-                    rootMargin: '-20% 0% -50% 0%',
-                    threshold: 0
-                  }
-                }"
-                class="monitoring-title"
-              >
-                Cameras
-              </h4>
-            </div>
-            <div class="subtext-text-container">
-              <div
-                id="p-container-cameras"
-                class="p-container text-content-side"
-              >
-                <p id="p-cameras">
-                  Eight new cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These cameras open up the potential for new realms of science and data processing for flow measurement, and support USGS visually sharing the dynamic lives of rivers and streams.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="number-cloud-title-container text-chunk">
-            <div class="subtext-cloud-number-container">
-              <img
-                id="number-cloud-r-d"
-                class="cloud-as-number-backing"
-                src="@/assets/monitoring/images/blueCircle1.png"
-                alt=""
-              >
-              <h2 class="monitoring-location-number">
-                <img src="@/assets/monitoring/images/ecomapper.png">
-              </h2>
-              <h4
-                id="text-block-r-d"
-                v-observe-visibility="{
-                  callback: visibilityChanged,
-                  intersection: {
-                    rootMargin: '-20% 0% -50% 0%',
-                    threshold: 0
-                  }
-                }"
-                class="monitoring-title"
-              >
-                Research and Development 
-              </h4>
-            </div>
-            <div class="subtext-text-container">
-              <div
-                id="p-container-r-d"
-                class="p-container text-content-side"
-              >
-                <p>USGS field staff collect various water-quality data using a programmable  underwater robot – the EcoMapper. The EcoMapper’s back-and-forth scanning of the lower waters of the Basin provides data that can be used to build maps of how water quality changes through the 3D space of the Delaware Bay.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-content-side text-chunk">
-          <h4>A New Generation of Water Science in the Delaware River Basin</h4>
-          <p>Water uses in the Delaware Basin are diverse and complicated, and the need for information that describes the present and future conditions of water availability and water quality are more pressing than ever.</p>
-          <p>The advancements in water science and monitoring paint a clearer picture of how the DRB has changed, and new efforts are building models that better predict the health and function of the river in the future. As a result, the new advanced monitoring strategy of the NGWOS is enhancing water data collection, and the modernized data management – with increased public availability, rapid data downloads, and interactive views of current conditions – makes it easier to study the health of Basin.</p>
-          <p>While this story focused on flow, salinity, and water temperature, the USGS and collaborators study a multitude of other water-quality factors in the Basin.  We could tell additional stories about sediment, turbidity, nutrients, dissolved oxygen, pathogens, heavy metals, and chemical contaminants.</p>
-          <p>With all these aspects of a healthy river basin, monitoring and modeling enables wiser management decisions, a more optimal balance of water uses, and a richer understanding of this beautiful and life-sustaining river.</p>
         </div>
       </div>
     </div>
@@ -4228,11 +4233,29 @@ export default {
   }
 }
 
+// This section controls layout, grid pattern
+
+/// Parent Container
+#monitoring-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 992px) {
+  #monitoring-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+// Image Container
+
 #image-container {
+  align-self: start;
   object-fit: cover;
   height: 100vh;
   width: 100%;
-  min-width: 1000px;
+  min-width: 1200px;
   overflow: auto;
   position: sticky;
   display: block;
@@ -4267,21 +4290,27 @@ export default {
 // controls the text fades
 .p-container {
   opacity: 0;
-  transition: opacity 2s;
+  transition: opacity .5s;
 }
 .p-container.visible {
   opacity: 1;
 }
 
+// Text Container
+
+// Use dummy column to float it to the right
+
+#dummy-column {
+  grid-column: 1;
+}
 
 
 #text-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-column: 2;
   padding-bottom: 50em;
 
   .subtext-cloud-number-container {
-    padding-top: 5em;
     display: grid;
     grid-template-columns: 1fr 4fr;
     justify-items: center;
