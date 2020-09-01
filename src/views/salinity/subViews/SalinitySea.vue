@@ -427,23 +427,24 @@
           v-observe-visibility="{
             callback: visibilityChangedOne,
             intersection: {
-              rootMargin: '-50% 0% -50% 0%',
+              rootMargin: '-49% 0% -50% 0%',
               threshold: 0
             }
           }"
-          class="text-chunk"
+          class="scrolly-chunk"
         >
-          <h3
-            id="header-salt-front-intro-text"
-            class="text-content-side"
-          >
-            The Salt Front
-          </h3>
-          <p class="text-content-side">
-            As freshwater spills from the river into the saltier waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the ocean as it intrudes into the bay and estuary. The boundary of that wedge is called the “salt front.”
-          </p>
-          <div id="salt-wedge-container">
-            <figure><img src="@/assets/salinity/salinitySea/images/saltfront.png"><!-- <figcaption>Cross-section of the salt wedge</figcaption> --></figure>
+          <div class="text-chunk text-content-side">
+            <h3
+              id="header-salt-front-intro-text"
+            >
+              The Salt Front
+            </h3>
+            <p>
+              As freshwater spills from the river into the saltier waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the ocean as it intrudes into the bay and estuary. The boundary of that wedge is called the “salt front.”
+            </p>
+            <div id="salt-wedge-container">
+              <figure><img src="@/assets/salinity/salinitySea/images/saltfront.png"><!-- <figcaption>Cross-section of the salt wedge</figcaption> --></figure>
+            </div>
           </div>
         </div>
         <div
@@ -451,25 +452,22 @@
           v-observe-visibility="{
             callback: visibilityChangedTwo,
             intersection: {
-              rootMargin: '-50% 0% -50% 0%',
+              rootMargin: '-49% 0% -50% 0%',
               threshold: 0
             }
           }"
+          class="scrolly-chunk"
         >
-          <div
-           
-            class="text-chunk"
-          >
+          <div class="text-chunk text-content-side">
             <h3
               id="header-salt-front-move-text"
-              class="text-content-side"
             >
               Seasonal Changes
             </h3>
-            <p class="text-content-side">
+            <p>
               The salt front migrates up and down the river channel over the daily cycle of ocean tides.  The location of the salt front is also impacted by occasional storm surges, the seasonal cycle of high or low river flows, and fluctuations as the river changes over the course of many years.
             </p>
-            <p class="text-content-side">
+            <p>
               Fluctuations within a normal range are good for ecosystems that are used to brackish water. However, if there is not enough downstream flow the salt front can migrate further upstream. In the 1960s during a record drought, the salt front was nearly 30 miles further upstream near Philadelphia. 
             </p>
           </div>
@@ -480,45 +478,47 @@
           v-observe-visibility="{
             callback: visibilityChangedThree,
             intersection: {
-              rootMargin: '-50% 0% -50% 0%',
+              rootMargin: '-49% 0% -50% 0%',
               threshold: 0
             }
           }"
-          class="text-chunk"
+          class="scrolly-chunk"
         >
-          <h3
-            class="text-content-side"
-          >
-            Sea levels are rising
-          </h3>
-          <p class="text-content-side">
-            Simultaneously, sea levels are rising and pushing the salt front further upstream. With just 3 feet of sea level rise, the salt front is predicted to travel once again within the reaches of Philadelphia and threaten fresh water supplies.
-          </p>
-          <p class="text-content-side">
-            Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. One key concerns for stakeholders, including the Supreme Court decree Parties, DRBC, Philadelphia and others, is to keep enough freshwater flowing down the Delaware River to press the salt front back toward the ocean. Accurate data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location. 
-          </p>
+          <div class="text-chunk text-content-side">
+            <h3>
+              Sea levels are rising
+            </h3>
+            <p>
+              Simultaneously, sea levels are rising and pushing the salt front further upstream. With just 3 feet of sea level rise, the salt front is predicted to travel once again within the reaches of Philadelphia and threaten fresh water supplies.
+            </p>
+            <p>
+              Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. One key concerns for stakeholders, including the Supreme Court decree Parties, DRBC, Philadelphia and others, is to keep enough freshwater flowing down the Delaware River to press the salt front back toward the ocean. Accurate data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location. 
+            </p>
+          </div>
         </div>
         <div
           id="RoadSalt"          
           v-observe-visibility="{
             callback: visibilityChangedRoadSalt,
             intersection: {
-              rootMargin: '-50% 0% -50% 0%',
+              rootMargin: '-49% 0% -50% 0%',
               threshold: 0
             }
           }"
-          class="salinity-road-text-container text-chunk"
+          class="scrolly-chunk"
         >
-          <h3 class="text-content-side">
-            Road Salt
-          </h3>
-          <p class="text-content-side">
-            Even as we manage river flow to keep the ocean salt out of the lower Delaware River, we work against ourselves by actively adding salt to waters throughout the Basin. Rock salt applied to roads in winter to makes driving and walking safer. But when the snow and ice melts, the runoff carries dissolved salt into streams and rivers, contaminating those waters with <a href="https://www.usgs.gov/news/urban-stream-contamination-increasing-rapidly-due-road-salt">levels of chloride that can be toxic</a> to aquatic plants and animals and can even threaten drinking water quality.
-          </p>
-          <p class="text-content-side">
-            Reducing road salt concentrations in streams can involve chemical deicing alternatives and moderating road salt applications. But safe roads are important too. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs.
-          </p>
-          <img src="@/assets/salinity/salinitySea/images/truckin.gif">
+          <div class="text-content-side text-chunk">
+            <h3>
+              Road Salt
+            </h3>
+            <p>
+              Even as we manage river flow to keep the ocean salt out of the lower Delaware River, we work against ourselves by actively adding salt to waters throughout the Basin. Rock salt applied to roads in winter to makes driving and walking safer. But when the snow and ice melts, the runoff carries dissolved salt into streams and rivers, contaminating those waters with <a href="https://www.usgs.gov/news/urban-stream-contamination-increasing-rapidly-due-road-salt">levels of chloride that can be toxic</a> to aquatic plants and animals and can even threaten drinking water quality.
+            </p>
+            <p>
+              Reducing road salt concentrations in streams can involve chemical deicing alternatives and moderating road salt applications. But safe roads are important too. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs.
+            </p>
+            <img src="@/assets/salinity/salinitySea/images/truckin.gif">
+          </div>         
         </div>
       </div>
     </div>
@@ -770,8 +770,6 @@ $s3:"";
   #salinity-sea-container {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    padding-bottom: 10rem;
-
   }
   
   .salinity-sea-section-image {
@@ -811,7 +809,7 @@ $s3:"";
   .salinity-sea-section-text {
     z-index: 2;
     #sea-salt-one {
-      margin-top: 30vh;
+      // margin-top: 30vh;
     }
     #salt-wedge-container img {
       margin-top: 2rem;
@@ -821,28 +819,28 @@ $s3:"";
     }
 
     div:last-child {
-      margin-bottom: 30em;
+      // margin-bottom: 30em;
     }
     #sea-salt-two {
       opacity: 0;
-      transition: opacity 1s;
-      margin-bottom: 10rem;
+      transition: opacity .5s;
+      // margin-bottom: 10rem;
     }
     #sea-salt-two.visible {
       opacity: 1;
     }
     #sea-salt-three {
       opacity: 0;
-      transition: opacity 1s;
-      margin-bottom: 10rem;
+      transition: opacity .5s;
+      // margin-bottom: 10rem;
     }
     #sea-salt-three.visible {
       opacity: 1;
     }
     #RoadSalt {
       opacity: 0;
-      transition: opacity 1s;
-      margin-bottom: 20rem;
+      transition: opacity .5s;
+      // margin-bottom: 20rem;
     }
     #RoadSalt.visible {
       opacity: 1;
@@ -860,10 +858,10 @@ $s3:"";
         
       }
       .salinity-sea-section-text {
-        margin-top: 40rem;
-        margin-bottom: 40rem;
+        // margin-top: 40rem;
+        // margin-bottom: 40rem;
         #header-salt-front-move-text {
-          margin-top: 10em;
+          // margin-top: 10em;
         }
         #sea-salt-two {
           opacity: 1;

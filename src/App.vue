@@ -137,12 +137,16 @@
       background-color: $transparentWhite;
       padding: 2em 0 2em 0;
     }
+
+    .scrolly-chunk{
+      padding: 80vh 0 80vh 0;
+    }
     // Text-only
     .text-content {
       min-width: 350px;
       max-width: 700px;
       margin: 0 auto;
-      padding: 5em 20px 5em 20px;     
+      padding: 5em 1em 5em 1em;     
     }
 
     // Text and Content side-by-side
@@ -174,7 +178,7 @@
     .text-content-side {
       min-width: 350px;
       max-width: 500px;
-      padding: 0 20px;
+      padding: 5em 1em 5em 1em;
     }
   }
 

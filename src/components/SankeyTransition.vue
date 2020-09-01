@@ -42,7 +42,7 @@
             threshold: 0
           }
         }"
-        class="sankey-text-and-title"
+        class="scrolly-chunk"
       >
         <div
           id="p-container-1"
@@ -67,7 +67,7 @@
             threshold: 0
           }
         }"
-        class="sankey-text-and-title"
+        class="scrolly-chunk"
       >
         <div
           id="p-container-2"
@@ -90,7 +90,7 @@
             threshold: 0
           }
         }"
-        class="sankey-text-and-title"
+        class="scrolly-chunk"
       >
         <div
           id="p-container-3"
@@ -114,7 +114,7 @@
             threshold: 0
           }
         }"
-        class="sankey-text-and-title"
+        class="scrolly-chunk"
       >
         <div
           id="p-container-4"
@@ -138,7 +138,7 @@
             threshold: 0
           }
         }"
-        class="sankey-text-and-title"
+        class="scrolly-chunk"
       >
         <div
           id="p-container-5"
@@ -222,11 +222,6 @@ export default {
       opacity: 1;
     }
   }
-  #sankey-text-container {
-    .sankey-text-and-title {
-      padding: 80vh 0 80vh 0;
-    }
-  }
 
   // controls the text fades
   .p-container {
@@ -247,12 +242,6 @@ export default {
 
     #sankey-text-container {
       z-index: 2;
-      .sankey-text-and-title {
-        padding: 80vh 0 80vh 0;
-      }
-      .text-content-side {
-        background-color: rgba(255,255,255, 0.75);
-      }
     }
   }
 
