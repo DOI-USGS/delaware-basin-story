@@ -38,7 +38,7 @@
         v-observe-visibility="{
           callback: visibilityChanged,
           intersection: {
-            rootMargin: '-48% 0% -50% 0%',
+            rootMargin: '-49% 0% -50% 0%',
             threshold: 0
           }
         }"
@@ -63,7 +63,7 @@
         v-observe-visibility="{
           callback: visibilityChanged,
           intersection: {
-            rootMargin: '-48% 0% -50% 0%',
+            rootMargin: '-49% 0% -50% 0%',
             threshold: 0
           }
         }"
@@ -86,7 +86,7 @@
         v-observe-visibility="{
           callback: visibilityChanged,
           intersection: {
-            rootMargin: '-48% 0% -50% 0%',
+            rootMargin: '-49% 0% -50% 0%',
             threshold: 0
           }
         }"
@@ -110,7 +110,7 @@
         v-observe-visibility="{
           callback: visibilityChanged,
           intersection: {
-            rootMargin: '-48% 0% -50% 0%',
+            rootMargin: '-49% 0% -50% 0%',
             threshold: 0
           }
         }"
@@ -134,7 +134,7 @@
         v-observe-visibility="{
           callback: visibilityChanged,
           intersection: {
-            rootMargin: '-48% 0% -50% 0%',
+            rootMargin: '-49% 0% -50% 0%',
             threshold: 0
           }
         }"
@@ -215,7 +215,7 @@ export default {
     }
     img {
       opacity: 0;
-      transition: opacity 1s;
+      transition: opacity .5s;
       max-height: 80vh;
     }
     img.visible {
@@ -224,17 +224,15 @@ export default {
   }
   #sankey-text-container {
     .sankey-text-and-title {
-      padding-top: 20em;
+      padding: 80vh 0 80vh 0;
     }
-  }
-  #sankey-text-and-title-5 {
-    padding-bottom: 20em;
   }
 
   // controls the text fades
   .p-container {
     opacity: 0;
-    transition: opacity 2s;
+    transition: opacity .5s;
+    padding: .5em .5em .5em .5em;
   }
   .p-container.visible {
     opacity: 1;
@@ -250,7 +248,7 @@ export default {
     #sankey-text-container {
       z-index: 2;
       .sankey-text-and-title {
-        padding-top: 40em;
+        padding: 80vh 0 80vh 0;
       }
       .text-content-side {
         background-color: rgba(255,255,255, 0.75);
