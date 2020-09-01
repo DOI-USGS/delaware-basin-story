@@ -2963,7 +2963,9 @@
               id="p-container-new_enhanced"
               class="p-container text-content-side"
             >
-              <p>Measurements of real-time flow levels are critical to the decision makers of the Basin, especially in the River Master’s office during late-summer low flows. To better understand streamflow in various locations of the basin, 34 new stream gages have been installed the last three years, each housing delicate monitoring equipment that is collecting data all day, every day. </p>
+            <p>Measurements of real-time flow levels are critical to the decision makers of the Basin, especially in the River Master’s office during late-summer low flows. To better understand streamflow in the basin and inform release decisions from reservoirs, 34 new or enhanced stream gages have been installed the last three years, each housing delicate monitoring equipment that is collecting data all day, every day.</p>
+            <p>Not only can scientists receive near real-time measurements from the field with minimal delay, technicians can also change the timing and duration of data collection from a remote location, which allows for good data collection even during extreme weather events.</p>
+
             </div>
           </div>
           <div class="number-cloud-title-container text-chunk">
@@ -2988,7 +2990,7 @@
                 }"
                 class="monitoring-title"
               >
-                Salinity
+                Specific Conductivity
               </h4>
             </div>
             <div class="subtext-text-container">
@@ -2996,7 +2998,7 @@
                 id="p-container-salinity"
                 class="p-container text-content-side"
               >
-                <p>Keeping tabs on the evolving salinity issues in the Delaware River is important to understanding how the location of the salt front is changing.  It also allows scientists to better understand ecosystem health in streams that are impacted by road salting. Specific conductivity sensors measure a variable related to salinity – the ability of the water to conduct electricity – and relationships between conductivity and salinity can be used to provide a picture of salt concentration in the water in 56 new locations in the Basin.</p>
+                <p>Specific conductivity sensors measure a variable related to salinity – the ability of the water to conduct electricity – and relationships between conductivity and salinity can be used to provide a picture of salt concentration in the water in 56 new locations in the Basin.</p>
               </div>
             </div>
           </div>
@@ -3079,7 +3081,7 @@
                 alt=""
               >
               <h2 class="monitoring-location-number">
-                3
+                <img src="@/assets/monitoring/images/ecomapper.png">
               </h2>
               <h4
                 id="text-block-r-d"
@@ -3092,7 +3094,7 @@
                 }"
                 class="monitoring-title"
               >
-                R+D
+                Research and Development 
               </h4>
             </div>
             <div class="subtext-text-container">
@@ -3101,40 +3103,6 @@
                 class="p-container text-content-side"
               >
                 <p>USGS field staff collect various water-quality data using a programmable  underwater robot – the EcoMapper. The EcoMapper’s back-and-forth scanning of the lower waters of the Basin provides data that can be used to build maps of how water quality changes through the 3D space of the Delaware Bay.</p>
-              </div>
-            </div>
-          </div>
-          <div class="number-cloud-title-container text-chunk">
-            <div class="subtext-cloud-number-container">
-              <img
-                id="number-cloud-all"
-                class="cloud-as-number-backing"
-                src="@/assets/monitoring/images/greenCircle1.png"
-                alt=""
-              >
-              <h2 class="monitoring-location-number">
-                190
-              </h2>
-              <h4
-                id="text-block-all"
-                v-observe-visibility="{
-                  callback: visibilityChanged,
-                  intersection: {
-                    rootMargin: '-20% 0% -50% 0%',
-                    threshold: 0
-                  }
-                }"
-                class="monitoring-title"
-              >
-                All
-              </h4>
-            </div>
-            <div class="subtext-text-container">
-              <div
-                id="p-container-all"
-                class="p-container text-content-side"
-              >
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
             </div>
           </div>
