@@ -2963,9 +2963,8 @@
               id="p-container-new_enhanced"
               class="p-container text-content-side"
             >
-            <p>Measurements of real-time flow levels are critical to the decision makers of the Basin, especially in the River Master’s office during late-summer low flows. To better understand streamflow in the basin and inform release decisions from reservoirs, 34 new or enhanced stream gages have been installed the last three years, each housing delicate monitoring equipment that is collecting data all day, every day.</p>
-            <p>Not only can scientists receive near real-time measurements from the field with minimal delay, technicians can also change the timing and duration of data collection from a remote location, which allows for good data collection even during extreme weather events.</p>
-
+              <p>Measurements of real-time flow levels are critical to the decision makers of the Basin, especially in the River Master’s office during late-summer low flows. To better understand streamflow in the basin and inform release decisions from reservoirs, 34 new or enhanced stream gages have been installed the last three years, each housing delicate monitoring equipment that is collecting data all day, every day.</p>
+              <p>Not only can scientists receive near real-time measurements from the field with minimal delay, technicians can also change the timing and duration of data collection from a remote location, which allows for good data collection even during extreme weather events.</p>
             </div>
           </div>
           <div class="number-cloud-title-container text-chunk">
