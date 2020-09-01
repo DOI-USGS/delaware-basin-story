@@ -434,11 +434,11 @@
           class="scrolly-chunk"
         >
           <div class="text-chunk text-content-side">
-            <h3
+            <h4
               id="header-salt-front-intro-text"
             >
               The Salt Front
-            </h3>
+            </h4>
             <p>
               As freshwater spills from the river into the saltier waters of the Delaware Bay, the less-dense river water forms a raised wedge that constantly pushes downstream against the ocean as it intrudes into the bay and estuary. The boundary of that wedge is called the “salt front.”
             </p>
@@ -459,16 +459,16 @@
           class="scrolly-chunk"
         >
           <div class="text-chunk text-content-side">
-            <h3
+            <h4
               id="header-salt-front-move-text"
             >
               Seasonal Changes
-            </h3>
+            </h4>
             <p>
               The salt front migrates up and down the river channel over the daily cycle of ocean tides.  The location of the salt front is also impacted by occasional storm surges, the seasonal cycle of high or low river flows, and fluctuations as the river changes over the course of many years.
             </p>
             <p>
-              Fluctuations within a normal range are good for ecosystems that are used to brackish water. However, if there is not enough downstream flow the salt front can migrate further upstream. In the 1960s during a record drought, the salt front was nearly 30 miles further upstream near Philadelphia. 
+              Fluctuations within a <a href="https://www.state.nj.us/drbc/library/documents/shallcross_saltfront_CDRWforum_oct2019.pdf">normal range</a> are good for ecosystems that are used to brackish water. However, if there is not enough downstream flow the salt front can migrate further upstream. In the 1960s during a record drought, the salt front was nearly 30 miles further upstream near Philadelphia. 
             </p>
           </div>
         </div>
@@ -485,11 +485,11 @@
           class="scrolly-chunk"
         >
           <div class="text-chunk text-content-side">
-            <h3>
-              Sea levels are rising
-            </h3>
+            <h4>
+              Rising Sea Levels
+            </h4>
             <p>
-              Simultaneously, sea levels are rising and pushing the salt front further upstream. With just 3 feet of sea level rise, the salt front is predicted to travel once again within the reaches of Philadelphia and threaten fresh water supplies.
+              Simultaneously, sea levels are rising and pushing the salt front further upstream. With just <a href="https://www.state.nj.us/drbc/library/documents/shallcross_saltfront_CDRWforum_oct2019.pdf">3 feet of sea level rise,</a> the salt front is predicted to travel once again within the reaches of Philadelphia and threaten fresh water supplies.
             </p>
             <p>
               Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. One key concerns for stakeholders, including the Supreme Court decree Parties, DRBC, Philadelphia and others, is to keep enough freshwater flowing down the Delaware River to press the salt front back toward the ocean. Accurate data and models allow smart timing of reservoir releases to maintain the flow targets and the salt front location. 
@@ -508,11 +508,11 @@
           class="scrolly-chunk"
         >
           <div class="text-content-side text-chunk">
-            <h3>
+            <h4>
               Road Salt
-            </h3>
+            </h4>
             <p>
-              Even as we manage river flow to keep the ocean salt out of the lower Delaware River, we work against ourselves by actively adding salt to waters throughout the Basin. Rock salt applied to roads in winter to makes driving and walking safer. But when the snow and ice melts, the runoff carries dissolved salt into streams and rivers, contaminating those waters with <a href="https://www.usgs.gov/news/urban-stream-contamination-increasing-rapidly-due-road-salt">levels of chloride that can be toxic</a> to aquatic plants and animals and can even threaten drinking water quality.
+              Even as we manage river flow to keep the ocean salt out of the lower Delaware River, we work against ourselves by actively adding salt to waters throughout the Basin. <a href="https://www.usgs.gov/mission-areas/water-resources/science/chloride-salinity-and-dissolved-solids?qt-science_center_objects=0#qt-science_center_objects">Rock salt applied to roads in winter</a> makes driving and walking safer. But when the snow and ice melts, the runoff carries dissolved salt into streams and rivers, contaminating those waters with <a href="https://www.usgs.gov/news/urban-stream-contamination-increasing-rapidly-due-road-salt">levels of chloride that can be toxic</a> to aquatic plants and animals and can even threaten drinking water quality.
             </p>
             <p>
               Reducing road salt concentrations in streams can involve chemical deicing alternatives and moderating road salt applications. But safe roads are important too. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs.
@@ -769,7 +769,7 @@ $s3:"";
 #salinity-sea {
   #salinity-sea-container {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr 1fr;
   }
   
   .salinity-sea-section-image {

@@ -78,7 +78,7 @@
           >
             Reservoirs
           </h4>
-          <p>All that water comes from tributaries upstream, where a system of reservoirs use sections of the river as storage tanks to store enormous amounts of water for times when we need it. They are also used for other kinds of water management - flood control, hydroelectric power, and recreation.</p>
+          <p>All that water comes from tributaries upstream, where a system of <a href="https://webapps.usgs.gov/odrm/data/data.html">reservoirs</a> use sections of the river as storage tanks to store enormous amounts of water for times when we need it. They are also used for other kinds of water management - flood control, hydroelectric power, and recreation.</p>
         </div>
       </div>
       <div
