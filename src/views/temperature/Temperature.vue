@@ -352,7 +352,7 @@
         },
         data() {
             return {
-              isMusselsTextInView: false,
+              isMusselsTextInView: true,
               isWaterCold: false,
               isWaterWarm: false,
               title: 'Temperature',
