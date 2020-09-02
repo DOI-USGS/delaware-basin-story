@@ -68,11 +68,9 @@
           <p>Brookies are the only native trout species within the Basin, and they love to live in reaches with <span class="emph">cold water.</span> This particular species is used as an indicator of water quality due to its sensitivity to water temperatures.</p>
           <p>In the summer, long hot days and low river flows can warm up the river water.  The heat can be lethal for Brookies and other trout species.</p>
           <p>In the fall, trout wait for a drop in water temperature drop begin their reproductive cycle. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection. The eggs rest there all winter, and require the water to stay cool to develop properly.</p>
-        </div>
-        <div class="text-content">
-          <h4>Water Temperature matters for the health of aquatic species</h4>
           <p>Warming temperatures can disrupt the reproductive cycle of Brook trout and ultimately its population stability.  If the river water doesn’t cool down enough in the fall, brookies could miss their reproductive cue.  If the waters stay warmer than usual in the winter, their eggs won’t develop properly.  Moreover, USGS research has shown that water temperature can influence their growth rates and disease susceptibility, which can make them poor competitors against non-native species like Brown trout.</p>
         </div>
+
       </div>
       <div
         id="scroll-target-mussel"
@@ -102,7 +100,7 @@
               <h4 
                 id="mussel-h3" 
               >
-                Now, meet the Dwarf Wedgemussel, an endangered species.
+                Now meet the Dwarf Wedgemussel, an endangered species.
               </h4>
             </div>
             <div
