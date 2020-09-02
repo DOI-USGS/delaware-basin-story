@@ -427,7 +427,7 @@
           v-observe-visibility="{
             callback: visibilityChangedOne,
             intersection: {
-              rootMargin: '-49% 0% -50% 0%',
+              rootMargin: '-48% 0% -50% 0%',
               threshold: 0
             }
           }"
@@ -461,7 +461,7 @@
           v-observe-visibility="{
             callback: visibilityChangedTwo,
             intersection: {
-              rootMargin: '-49% 0% -50% 0%',
+              rootMargin: '-48% 0% -50% 0%',
               threshold: 0
             }
           }"
@@ -490,7 +490,7 @@
           v-observe-visibility="{
             callback: visibilityChangedThree,
             intersection: {
-              rootMargin: '-49% 0% -50% 0%',
+              rootMargin: '-48% 0% -50% 0%',
               threshold: 0
             }
           }"
@@ -513,7 +513,7 @@
           v-observe-visibility="{
             callback: visibilityChangedRoadSalt,
             intersection: {
-              rootMargin: '-49% 0% -50% 0%',
+              rootMargin: '-48% 0% -50% 0%',
               threshold: 0
             }
           }"
@@ -567,7 +567,6 @@ export default {
             this.SeaLevelRise = false;
             this.RoadSalt = false;
             break;
-          default:
             break;
         }
       } else if (isVisible !== true) {
@@ -608,11 +607,11 @@ export default {
         console.log('two out of view');
         switch(entry.target.id) {  
           case 'sea-salt-two' :
-            this.SaltyWater = true;
+   /*          this.SaltyWater = true;
             this.SaltFront = false;
             this.SeasonalChanges = false;
-            this.SeaLevelRise = true;
-            this.RoadSalt = false;
+            this.SeaLevelRise = false;
+            this.RoadSalt = false; */
             break;
           default:
             break;
@@ -641,11 +640,11 @@ export default {
         console.log('three out of view');
         switch(entry.target.id) {  
           case 'sea-salt-three' :
-            this.SaltyWater = false;
+   /*          this.SaltyWater = false;
             this.SaltFront = false;
             this.SeasonalChanges = false
             this.SeaLevelRise = false;
-            this.RoadSalt = true;
+            this.RoadSalt = false; */
             break;
           default:
             break;
@@ -674,10 +673,10 @@ export default {
         console.log('road salt out of view');
         switch(entry.target.id) {  
           case 'RoadSalt' :
-            this.SaltyWater = false;
+/*             this.SaltyWater = false;
             this.SaltFront = false;
             this.SeasonalChanges = false
-            this.SeaLevelRise = false;
+            this.SeaLevelRise = false; */
             this.RoadSalt = false;
             break;
           default:
