@@ -70,7 +70,6 @@
           <p>In the fall, trout wait for a drop in water temperature drop begin their reproductive cycle. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection. The eggs rest there all winter, and require the water to stay cool to develop properly.</p>
           <p>Warming temperatures can disrupt the reproductive cycle of Brook trout and ultimately its population stability.  If the river water doesn’t cool down enough in the fall, brookies could miss their reproductive cue.  If the waters stay warmer than usual in the winter, their eggs won’t develop properly.  Moreover, USGS research has shown that water temperature can influence their growth rates and disease susceptibility, which can make them poor competitors against non-native species like Brown trout.</p>
         </div>
-
       </div>
       <div
         id="scroll-target-mussel"
