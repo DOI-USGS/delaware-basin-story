@@ -2626,8 +2626,7 @@
             class="scrolly-chunk"
           >
             <div class="text-chunk">
-              <h3>            
-              <h4
+              <h3            
                 id="text-block-intro"
                 v-observe-visibility="{
                   callback: visibilityChanged,
@@ -2803,8 +2802,10 @@
                     alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
-                    <img src="@/assets/monitoring/images/ecomapper.png">
-                    alt="Black and white illustration of the Ecomapper, a programmable underwater robot"
+                    <img
+                      src="@/assets/monitoring/images/ecomapper.png"
+                      alt="Black and white illustration of the Ecomapper, a programmable underwater robot"
+                    >
                   </h2>
                   <h3
                     id="text-block-r-d"
