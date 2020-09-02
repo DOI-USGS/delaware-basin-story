@@ -105,9 +105,9 @@
       font-size: 4em;
     }
     h2 {
-      font-family: 'Noto Sans', sans-serif;
-      font-weight: 500;
-      font-size: 2em;
+      font-family: chantal, sans-serif;
+      font-weight: bold;
+      font-size: 3em;
     }
     h3 {
       font-family: 'Noto Sans', sans-serif;
@@ -140,11 +140,11 @@
     // Mobile-friendly Transparent-White Background around text blocks
     .text-chunk {
       background-color: $transparentWhite;
-      padding: 2em 0 2em 0;
+      padding: 2em 2em 2em 2em;
     }
 
     .scrolly-chunk{
-      padding: 70vh 0 70vh 0;
+      padding: 50vh 0 50vh 0;
     }
     // Text-only
     .text-content {

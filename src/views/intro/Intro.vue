@@ -57,18 +57,18 @@
 <style scoped lang="scss">
 
   #intro-banner-container {
-    min-width: 1400px;
+    min-width: 1700px;
     overflow: auto;
   }
 
   .parallax {
     background-image: url("../../assets/intro/images/DRB_all-01.jpg");
-    height: auto;
-    padding-top: 100%;
+    height: 50vh;
+    // padding-top: 100%;
     background-attachment: fixed;
     background-position: top left;
     background-repeat: no-repeat;
-    background-size: 120% auto;
+    background-size: 100% auto;
   }
 
   // // small Screens

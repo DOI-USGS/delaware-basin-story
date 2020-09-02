@@ -5,9 +5,9 @@
       :src="image"
       alt="image of watercolor cloud of color"
     >
-    <h1 class="section-title">
+    <h2 class="section-title">
       {{ title }}
-    </h1>
+    </h2>
   </div>
 </template>
 
