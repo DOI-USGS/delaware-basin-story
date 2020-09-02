@@ -562,7 +562,7 @@ export default {
           case 'sea-salt-one' :
             this.SaltyWater = true;
             this.SaltFront = false;
-            this.SeasonalChanges = false;
+            this.SeasonalChanges = true;
             this.SeaLevelRise = false;
             this.RoadSalt = false;
             break;
@@ -596,7 +596,7 @@ export default {
             this.SaltyWater = true;
             this.SaltFront = false;
             this.SeasonalChanges = false;
-            this.SeaLevelRise = false;
+            this.SeaLevelRise = true;
             this.RoadSalt = false;
             break;
           default:
@@ -630,7 +630,7 @@ export default {
             this.SaltFront = false;
             this.SeasonalChanges = false
             this.SeaLevelRise = false;
-            this.RoadSalt = false;
+            this.RoadSalt = true;
             break;
           default:
             break;
@@ -743,9 +743,22 @@ $s3:"";
   animation-delay: -5s;
 }
 
+@-webkit-keyframes fall {
+  100%  {transform: translateY(200vh);}
+}
+@-moz-keyframes fall {
+  100%  {transform: translateY(200vh);}
+}
+@-ms-keyframes fall {
+  100%  {transform: translateY(200vh);}
+}
+@-o-keyframes fall {
+  100%  {transform: translateY(200vh);}
+}
 @keyframes fall {
   100%  {transform: translateY(200vh);}
 }
+
 
 /* clip-path animation for salt front */
 #salty-water  {
@@ -874,11 +887,6 @@ $s3:"";
   100% {stroke-dashoffset: 0px;}
 }
 
-.flow {
-  0%  {transform:translate(50 50);}
-  100%  {transform:translate(150 510);}
-}
-
 //animation mixin for brower prefixes
 .animation (@name, @duration: 1s, @delay: 0) {
 	-webkit-animation: @name @duration linear @delay forwards;
@@ -913,59 +921,137 @@ $s3:"";
   @-o-keyframes ghostwrite-500 {.ghostwrite-frames(500px);}
   @keyframes ghostwrite-500 {.ghostwrite-frames(500px);}
 
-//currently not working 
-    @-webkit-keyframes arrow-flow {.flow;}
-  @-moz-keyframes arrow-flow {.flow;}
-  @-ms-keyframes arrow-flow {.flow;}
-  @-o-keyframes arrow-flow {.flow;}
-  @keyframes arrow-flow {.flow;}
-
-  //arrow flow mvmt
-  #arrow_sea, #arrow_river  {
-    .animation(@name: arrow-flow, @duration: 1s, @delay: 0s);
-  }
-
 //apply keyframes for writing
+
 #num1, #num2, #num3, #ft1_f, #ft1_t, #ft2_f, #ft2_t, #ft3_f, #ft3_t, #intake  {
-  @stroke-length: 50px;
+   @stroke-length: 50px;
   .hide-text(@stroke-length);
-  .animation(@name: ghostwrite-50, @duration: 1s, @delay: .8s);
 }
+@stroke-length: 50px;
+@start: 0s;
+@delay-time: 0.1s;
+@write-time: 0.2s;
+#num1 {
+    .animation(@name: ghostwrite-50, @duration: @write-time, @delay: @start+(@delay-time*4));
+  }
+  #num2 {
+    .animation(@name: ghostwrite-50, @duration: @write-time, @delay: @start+(@delay-time*7));
+  }
+  #num3 {
+    .animation(@name: ghostwrite-50, @duration: @write-time, @delay: @start+(@delay-time*10));
+  }
+  #ft1_f {
+    .animation(@name: ghostwrite-50, @duration: @write-time, @delay: @start+(@delay-time*5));
+  }
+  #ft1_t {
+    .animation(@name: ghostwrite-50, @duration: @write-time, @delay: @start+(@delay-time*6));
+  }
+  #ft2_f {
+    .animation(@name: ghostwrite-50, @duration: @write-time, @delay: @start+(@delay-time*8));
+  }
+  #ft2_t {
+    .animation(@name: ghostwrite-50, @duration: @write-time, @delay: @start+(@delay-time*9));
+  }
+  #ft3_f {
+    .animation(@name: ghostwrite-50, @duration: @write-time, @delay: @start+(@delay-time*11));
+  }
+  #ft3_t {
+    .animation(@name: ghostwrite-50, @duration: @write-time, @delay: @start+(@delay-time*12));
+  }
+  #intake {
+    .animation(@name: ghostwrite-50, @duration: @write-time, @delay: @start+(@delay-time*10));
+  }
 
 #ft1, #ft2, #ft3 {
   @stroke-length: 100px;
     .hide-text(@stroke-length);
-    .animation(@name: ghostwrite-100, @duration: 1s, @delay: 0s);
-  }
+ }
+#ft1  {
+  .animation(@name: ghostwrite-100, @duration: @write-time, @delay: @start+(@delay-time*1));
+}
+#ft2  {
+  .animation(@name: ghostwrite-100, @duration: @write-time, @delay: @start+(@delay-time*2));
+}
+#ft3  {
+  .animation(@name: ghostwrite-100, @duration: @write-time, @delay: @start+(@delay-time*3));
+}
 
-#intakes-text, #arrow_intake, #cities, #philly, #camden {
+#arrow_intake {
     @stroke-length: 200px;
     .hide-text(@stroke-length);
-    .animation(@name: ghostwrite-200, @duration: 1.2s, @delay: 1.5s);
-  }
-  #silhouette, #city-details, #camden-skyline {
-    @stroke-length: 500px;
-    .hide-text(@stroke-length);
-    .animation(@name: ghostwrite-500, @duration: 2.3s, @delay: 2.5s);
+    .animation(@name: ghostwrite-200, @duration: @write-time, @delay: @start+(@delay-time*11));
   }
 
 #drink_d, #drink_r, #drink_i, #drink_n, #drink_k, #ing_i, #ing_n, #ing_g  {
   @stroke-length: 200px;
     .hide-text(@stroke-length);
-    .animation(@name: ghostwrite-200, @duration: 1.1s, @delay: 4.5s);
 }
 
-
-#arrow_intake, #dot_camden, #dot_philly { 
-  @stroke-length: 100px;
-    .hide-text(@stroke-length);
-    .animation(@name: ghostwrite-100, @duration: .55s, @delay: 4s);
+#drink_d  {
+    .animation(@name: ghostwrite-200, @duration: @write-time, @delay: @start+(@delay-time*12));
+}
+#drink_r {
+    .animation(@name: ghostwrite-200, @duration: @write-time, @delay: @start+(@delay-time*13));
+}
+#drink_i  {
+    .animation(@name: ghostwrite-200, @duration: @write-time, @delay: @start+(@delay-time*14));
+}
+#drink_n  {
+    .animation(@name: ghostwrite-200, @duration: @write-time, @delay: @start+(@delay-time*15));
+}
+#drink_k  {
+    .animation(@name: ghostwrite-200, @duration: @write-time, @delay: @start+(@delay-time*16));
+}
+#ing_i  {
+    .animation(@name: ghostwrite-200, @duration: @write-time, @delay: @start+(@delay-time*17));
+}
+#ing_n {
+    .animation(@name: ghostwrite-200, @duration: @write-time, @delay: @start+(@delay-time*18));
+}
+#ing_g  {
+    .animation(@name: ghostwrite-200, @duration: @write-time, @delay: @start+(@delay-time*19));
 }
 
 #water_w, #water_a, #water_t, #water_e , #water_r, #intakes_i, #intakes_n, #intakes_t, #intakes_a, #intakes_k, #intakes_e, #intakes_s {
   @stroke-length: 200px;
     .hide-text(@stroke-length);
-    .animation(@name: ghostwrite-200, @duration: .5s, @delay: 5s);
+}
+
+#water_w {
+    .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*20));
+}
+#water_a {
+    .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*21));
+}
+#water_t {
+    .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*22));
+}
+#water_e {
+    .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*23));
+}
+#water_r {
+    .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*24));
+}
+#intakes_i {
+    .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*25));
+}
+#intakes_n {
+    .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*26));
+}
+#intakes_t {
+    .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*27));
+}
+#intakes_a {
+    .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*28));
+}
+#intakes_k {
+    .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*29));
+}
+#intakes_e {
+    .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*30));
+}
+#intakes_s {
+    .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*31));
 }
 
 </style>
