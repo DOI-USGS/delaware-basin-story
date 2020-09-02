@@ -2141,8 +2141,6 @@
             <g
               v-if="isShowingNGWOS"
             >
-
-              <g id="ngwos">
                 <g
                   id="ngwos-label"
                   class="writing"
@@ -2212,17 +2210,10 @@
                   <path
                     d="M267,701.75l7.35,6.75L279,694.29"
                   />
-                </g>
+
               </g>
             </g>
           </g>        
-        </svg>
-        <svg
-          id="Annotations"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1920 1080"
-        >
-
           <g
             v-if="isShowingEcomapper"
             id="Ecomapper"
