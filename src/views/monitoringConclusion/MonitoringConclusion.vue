@@ -2922,7 +2922,7 @@
             id="scroll-intro-monitoring"
             class="scrolly-chunk"
           >
-            <div class="text-content-side text-chunk">
+            <div class="text-chunk">
               <h4>
                 Introducing NGWOS
               </h4>
@@ -2934,7 +2934,6 @@
           </div>
           <div
             id="monitoring-text-details"
-            class="text-content-side"
           >
             <div class="scrolly-chunk">
               <div class="number-cloud-title-container text-content-side text-chunk">
@@ -2972,7 +2971,7 @@
               </div>
             </div>
             <div class="scrolly-chunk">
-              <div class="number-cloud-title-container text-content-side text-chunk">
+              <div class="number-cloud-title-container text-chunk">
                 <div class="subtext-cloud-number-container">
                   <img
                     id="number-cloud-salinity"
@@ -3008,7 +3007,7 @@
               </div>
             </div>  
             <div class="scrolly-chunk">
-              <div class="number-cloud-title-container text-content-side text-chunk">
+              <div class="number-cloud-title-container text-chunk">
                 <div class="subtext-cloud-number-container">
                   <img
                     id="number-cloud-temp"
@@ -3044,7 +3043,7 @@
               </div>
             </div>
             <div class="scrolly-chunk">
-              <div class="number-cloud-title-container text-content-side text-chunk">
+              <div class="number-cloud-title-container text-chunk">
                 <div class="subtext-cloud-number-container">
                   <img
                     id="number-cloud-cameras"
@@ -3082,7 +3081,7 @@
               </div>
             </div>
             <div class="scrolly-chunk">
-              <div class="number-cloud-title-container text-content-side text-chunk">
+              <div class="number-cloud-title-container text-chunk">
                 <div class="subtext-cloud-number-container">
                   <img
                     id="number-cloud-r-d"
@@ -4262,14 +4261,26 @@ export default {
   align-self: start;
   object-fit: cover;
   height: 100vh;
-  width: 100%;
-  min-width: 1400px;
-  overflow: auto;
+  min-width: 2000px;
   position: sticky;
   display: block;
   top: 0;
   z-index: -1;
 
+  }
+
+  @media only screen and (max-width: 992px) {
+    #image-container {
+      min-width: 1200px;
+    }
+
+
+  @media only screen and (max-width: 600px) {
+    #image-container {
+      min-width: 900px;
+    }
+  }
+    
   .inking {
     position: relative;
     display: inline-block;
@@ -4317,7 +4328,6 @@ export default {
   display: grid;
   grid-column: 2;
   padding-bottom: 50em;
-
   .subtext-cloud-number-container {
     display: grid;
     grid-template-columns: 1fr 4fr;

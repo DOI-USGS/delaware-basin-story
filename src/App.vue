@@ -140,7 +140,7 @@
     // Mobile-friendly Transparent-White Background around text blocks
     .text-chunk {
       background-color: $transparentWhite;
-      padding: 2em 0 2em 0;
+      padding: 2em 2em 2em 2em;
     }
 
     .scrolly-chunk{

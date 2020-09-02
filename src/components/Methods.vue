@@ -3,7 +3,10 @@
     id="methods"
     class="text-content"
   >
-    <h2><a id="methods-anchor" />Methods</h2>
+    <SectionTitle
+      :title="title"
+      :image="titleBackingImage"
+    />
     <div class="usa-accordion usa-accordion--bordered">
       <div
         v-for="method in methods.methods"
@@ -30,12 +33,19 @@
 </template>
 
 <script>
+    import SectionTitle from "@/components/SectionTitle";
     import methods from '../assets/methods/methods';
     export default {
         'name': 'Methods',
+        components: {
+          SectionTitle
+        },
         data(){
             return{
+                title: 'Methods',
+                titleBackingImage:require('@/assets/flow/images/blue-min.png'),
                 methods: methods.methodContent
+                
             }
         },
         mounted() {
@@ -60,6 +70,10 @@ $lightGreen: rgb(184,215,203);
 $tan: rgb(223,196,163);
 $orange: rgb(222,121,38);
 
+#methods {
+  margin-bottom: 10em;
+}
+
 h2{
     margin-bottom: 10px;
   }
@@ -69,14 +83,14 @@ h2{
   .usa-accordion__button{
     background-image: url($chevronDown);
     background-size: 15px 10px;
-    background-color: $darkGreen;
+    background-color: $darkBlue;
     color: white;
   }
   .usa-accordion__button[aria-expanded=false]{
     background-image: url($chevronLeft);
     background-size: 10px 15px;
     background-color: $transparentWhite;
-    color: $darkGreen;
+    color: $darkBlue;
   }
 
 #app h2.usa-accordion__heading {
