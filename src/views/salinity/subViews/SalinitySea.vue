@@ -434,11 +434,11 @@
           class="scrolly-chunk"
         >
           <div class="text-chunk text-content-side">
-            <h4
+            <h3
               id="header-salt-front-intro-text"
             >
               The Salt Front
-            </h4>
+            </h3>
             <p>
               As freshwater spills from the river onto the saltier waters of the Delaware Bay, the fresh and salty water mix and form an angled wedge of brackish water.
             </p>
@@ -447,7 +447,12 @@
             </p>
 
             <div id="salt-wedge-container">
-              <figure><img src="@/assets/salinity/salinitySea/images/saltfront-02.png"><!-- <figcaption>Cross-section of the salt wedge</figcaption> --></figure>
+              <figure>
+                <img
+                  src="@/assets/salinity/salinitySea/images/saltfront-02.png"
+                  alt="Diagram of fresh water flowing ontop of salty ocean water, forming a wedge called the 'salt front.'"
+                ><!-- <figcaption>Cross-section of the salt wedge</figcaption> -->
+              </figure>
             </div>
           </div>
         </div>
@@ -463,11 +468,11 @@
           class="scrolly-chunk"
         >
           <div class="text-chunk text-content-side">
-            <h4
+            <h3
               id="header-salt-front-move-text"
             >
               Seasonal Changes
-            </h4>
+            </h3>
             <p>
               The salt front migrates up and down the river channel over the daily cycle of ocean tides.  The location of the salt front is also impacted by occasional storm surges, the seasonal cycle of high or low river flows, and fluctuations as the river changes over the course of many years.
             </p>
@@ -492,9 +497,9 @@
           class="scrolly-chunk"
         >
           <div class="text-chunk text-content-side">
-            <h4>
+            <h3>
               Rising Sea Levels
-            </h4>
+            </h3>
             <p>
               Sea level rise is expected to push the salt front further upstream. With just <a href="https://www.state.nj.us/drbc/library/documents/shallcross_saltfront_CDRWforum_oct2019.pdf">3 feet of sea level rise,</a> the salt front is predicted to travel once again within the reaches of Philadelphia and threaten fresh water supplies.
             </p>
@@ -515,16 +520,19 @@
           class="scrolly-chunk"
         >
           <div class="text-content-side text-chunk">
-            <h4>
+            <h3>
               Road Salt
-            </h4>
+            </h3>
             <p>
               Even as we try keep the ocean salt out of the lower Delaware River, we work against ourselves by actively adding salt elsewhere. <a href="https://www.usgs.gov/mission-areas/water-resources/science/chloride-salinity-and-dissolved-solids?qt-science_center_objects=0#qt-science_center_objects">Rock salt applied to roads in winter</a> makes driving and walking safer. But when the snow and ice melts, the runoff carries dissolved salt into streams and rivers, contaminating those waters with <a href="https://www.usgs.gov/news/urban-stream-contamination-increasing-rapidly-due-road-salt">levels of chloride that can be toxic</a> to aquatic plants and animals and can even threaten drinking water quality.
             </p>
             <p>
               Reducing road salt concentrations in streams can involve chemical de-icing alternatives and moderating road salt applications. But safe roads are important too. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs.
             </p>
-            <img src="@/assets/salinity/salinitySea/images/truckin.gif">
+            <img
+              src="@/assets/salinity/salinitySea/images/truckin.gif"
+              alt="Animated gif of a truck applying salt to winter roads"
+            >
           </div>         
         </div>
       </div>

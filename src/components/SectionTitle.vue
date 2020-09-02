@@ -3,7 +3,7 @@
     <img
       class="title-cloud-backing"
       :src="image"
-      alt="image of watercolor cloud of color"
+      alt="Colorful background with watercolor texture"
     >
     <h2 class="section-title">
       {{ title }}

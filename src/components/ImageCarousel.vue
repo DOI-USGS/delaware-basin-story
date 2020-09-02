@@ -9,7 +9,7 @@
       <div class="slider-image-container">
         <img
           src="@/assets/intro/images/imageSlider/slider_01.png"
-          alt=""
+          alt="Aerial view of a bridge crossing the Delaware River"
         >
       </div>
     </slide>
@@ -18,7 +18,7 @@
       <div class="slider-image-container">
         <img
           src="@/assets/intro/images/imageSlider/slider_02.png"
-          alt=""
+          alt="Aerial image of a tall sailing ship docked at the bank of the Delaware River"
         >
       </div>
     </slide>
@@ -27,7 +27,7 @@
       <div class="slider-image-container">
         <img
           src="@/assets/intro/images/imageSlider/slider_03.png"
-          alt=""
+          alt="A blue heron fishing on the Delaware River"
         >
       </div>
     </slide>
@@ -44,7 +44,7 @@
       <div class="slider-image-container">
         <img
           src="@/assets/intro/images/imageSlider/slider_05.png"
-          alt=""
+          alt="Aerial view of a wooded area on the banks of the Delaware River"
         >
       </div>
     </slide>

@@ -2215,8 +2215,14 @@
                 </g>
               </g>
             </g>
-          </g>
-        
+          </g>        
+        </svg>
+        <svg
+          id="Annotations"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1920 1080"
+        >
+
           <g
             v-if="isShowingEcomapper"
             id="Ecomapper"
@@ -2620,6 +2626,7 @@
             class="scrolly-chunk"
           >
             <div class="text-chunk">
+              <h3>            
               <h4
                 id="text-block-intro"
                 v-observe-visibility="{
@@ -2631,7 +2638,7 @@
                 }"
               >            
                 Introducing NGWOS
-              </h4>
+              </h3>
               <p>
                 The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators. 
               </p>
@@ -2648,12 +2655,12 @@
                     id="number-cloud-new_enhanced"
                     class="cloud-as-number-backing"
                     src="@/assets/monitoring/images/orangeCircle1.png"
-                    alt=""
+                    alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
                     91
                   </h2>
-                  <h4
+                  <h3
                     id="text-block-new_enhanced"
                     v-observe-visibility="{
                       callback: visibilityChanged,
@@ -2665,7 +2672,7 @@
                     class="monitoring-title"
                   >
                     New and Enhanced Gages
-                  </h4>
+                  </h3>
                 </div>
                 <div
                   id="p-container-new_enhanced"
@@ -2683,12 +2690,12 @@
                     id="number-cloud-salinity"
                     class="cloud-as-number-backing"
                     src="@/assets/monitoring/images/blueCircle1.png"
-                    alt=""
+                    alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
                     59
                   </h2>
-                  <h4
+                  <h3
                     id="text-block-salinity"
                     v-observe-visibility="{
                       callback: visibilityChanged,
@@ -2700,7 +2707,7 @@
                     class="monitoring-title"
                   >
                     Specific Conductivity
-                  </h4>
+                  </h3>
                 </div>
                 <div class="subtext-text-container">
                   <div
@@ -2719,12 +2726,12 @@
                     id="number-cloud-temp"
                     class="cloud-as-number-backing"
                     src="@/assets/monitoring/images/greenCircle1.png"
-                    alt=""
+                    alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
                     85
                   </h2>
-                  <h4
+                  <h3
                     id="text-block-temp"
                     v-observe-visibility="{
                       callback: visibilityChanged,
@@ -2736,7 +2743,7 @@
                     class="monitoring-title"
                   >
                     Temperature
-                  </h4>
+                  </h3>
                 </div>
                 <div class="subtext-text-container">
                   <div
@@ -2755,12 +2762,12 @@
                     id="number-cloud-cameras"
                     class="cloud-as-number-backing"
                     src="@/assets/monitoring/images/orangeCircle1.png"
-                    alt=""
+                    alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
                     8
                   </h2>
-                  <h4
+                  <h3
                     id="text-block-cameras"
                     v-observe-visibility="{
                       callback: visibilityChanged,
@@ -2772,7 +2779,7 @@
                     class="monitoring-title"
                   >
                     Cameras
-                  </h4>
+                  </h3>
                 </div>
                 <div class="subtext-text-container">
                   <div
@@ -2793,12 +2800,13 @@
                     id="number-cloud-r-d"
                     class="cloud-as-number-backing"
                     src="@/assets/monitoring/images/blueCircle1.png"
-                    alt=""
+                    alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
                     <img src="@/assets/monitoring/images/ecomapper.png">
+                    alt="Black and white illustration of the Ecomapper, a programmable underwater robot"
                   </h2>
-                  <h4
+                  <h3
                     id="text-block-r-d"
                     v-observe-visibility="{
                       callback: visibilityChanged,
@@ -2810,21 +2818,21 @@
                     class="monitoring-title"
                   >
                     Research and Development 
-                  </h4>
+                  </h3>
                 </div>
                 <div class="subtext-text-container">
                   <div
                     id="p-container-r-d"
                     class="p-container"
                   >
-                    <p>USGS field staff collect various water-quality data using a programmable  underwater robot – the EcoMapper. The EcoMapper’s back-and-forth scanning of the lower waters of the Basin provides data that can be used to build maps of how water quality changes through the 3D space of the Delaware Bay.</p>
+                    <p>USGS field staff collect various water-quality data using a programmable underwater robot – the EcoMapper. The EcoMapper’s back-and-forth scanning of the lower waters of the Basin provides data that can be used to build maps of how water quality changes through the 3D space of the Delaware Bay.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="text-content-side text-chunk">
-            <h4>A New Generation of Water Science in the Delaware River Basin</h4>
+            <h3>A New Generation of Water Science in the Delaware River Basin</h3>
             <p>Water uses in the Delaware Basin are diverse and complicated, and the need for information that describes the present and future conditions of water availability and water quality are more pressing than ever.</p>
             <p>The advancements in water science and monitoring paint a clearer picture of how the DRB has changed, and new efforts are building models that better predict the health and function of the river in the future. As a result, the new advanced monitoring strategy of the NGWOS is enhancing water data collection, and the modernized data management – with increased public availability, rapid data downloads, and interactive views of current conditions – makes it easier to study the health of Basin.</p>
             <p>While this story focused on flow, salinity, and water temperature, the USGS and collaborators study a multitude of other water-quality factors in the Basin.  We could tell additional stories about sediment, turbidity, nutrients, dissolved oxygen, pathogens, heavy metals, and chemical contaminants.</p>
