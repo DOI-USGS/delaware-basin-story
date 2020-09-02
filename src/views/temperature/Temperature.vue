@@ -101,7 +101,6 @@
             >
               <h4 
                 id="mussel-h3" 
-                style=" margin-top: -20%;"
               >
                 Now, meet the Dwarf Wedgemussel, an endangered species.
               </h4>
@@ -412,7 +411,7 @@
 
   #header {
     position: sticky;
-    width: 95%;
+    width: 90%;
     top: 0;
     display: grid;
     grid-template-columns: 1fr;
