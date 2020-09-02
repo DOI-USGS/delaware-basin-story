@@ -447,7 +447,12 @@
             </p>
 
             <div id="salt-wedge-container">
-              <figure><img src="@/assets/salinity/salinitySea/images/saltfront-02.png" alt="Diagram of fresh water flowing ontop of salty ocean water, forming a wedge called the 'salt front.'"><!-- <figcaption>Cross-section of the salt wedge</figcaption> --></figure>
+              <figure>
+                <img
+                  src="@/assets/salinity/salinitySea/images/saltfront-02.png"
+                  alt="Diagram of fresh water flowing ontop of salty ocean water, forming a wedge called the 'salt front.'"
+                ><!-- <figcaption>Cross-section of the salt wedge</figcaption> -->
+              </figure>
             </div>
           </div>
         </div>
@@ -524,7 +529,10 @@
             <p>
               Reducing road salt concentrations in streams can involve chemical de-icing alternatives and moderating road salt applications. But safe roads are important too. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs.
             </p>
-            <img src="@/assets/salinity/salinitySea/images/truckin.gif" alt="Animated gif of a truck applying salt to winter roads">
+            <img
+              src="@/assets/salinity/salinitySea/images/truckin.gif"
+              alt="Animated gif of a truck applying salt to winter roads"
+            >
           </div>         
         </div>
       </div>
