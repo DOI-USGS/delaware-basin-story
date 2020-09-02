@@ -105,9 +105,9 @@
       font-size: 4em;
     }
     h2 {
-      font-family: 'Noto Sans', sans-serif;
-      font-weight: 500;
-      font-size: 2em;
+      font-family: chantal, sans-serif;
+      font-weight: bold;
+      font-size: 3em;
     }
     h3 {
       font-family: 'Noto Sans', sans-serif;
