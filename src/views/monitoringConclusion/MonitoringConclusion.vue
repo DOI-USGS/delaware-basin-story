@@ -2215,14 +2215,7 @@
           </g>
             </g>
             </g>
-          
-        </svg>
-        <svg
-          id="Annotations"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1920 1080"
-        >
-    
+        
           <g
             v-if="isShowingEcomapper"
             id="Ecomapper"
@@ -2562,7 +2555,14 @@
             class="scrolly-chunk"
           >
             <div class="text-chunk">
-              <h4>            
+              <h4 v-observe-visibility="{
+                      callback: visibilityChanged,
+                      intersection: {
+                        rootMargin: '-20% 0% -50% 0%',
+                        threshold: 0
+                      }
+                    }"
+                    id="text-block-intro">            
                 Introducing NGWOS
               </h4>
               <p>
