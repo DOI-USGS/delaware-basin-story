@@ -2581,7 +2581,7 @@
                     id="number-cloud-new_enhanced"
                     class="cloud-as-number-backing"
                     src="@/assets/monitoring/images/orangeCircle1.png"
-                    alt=""
+                    alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
                     91
@@ -2616,7 +2616,7 @@
                     id="number-cloud-salinity"
                     class="cloud-as-number-backing"
                     src="@/assets/monitoring/images/blueCircle1.png"
-                    alt=""
+                    alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
                     59
@@ -2652,7 +2652,7 @@
                     id="number-cloud-temp"
                     class="cloud-as-number-backing"
                     src="@/assets/monitoring/images/greenCircle1.png"
-                    alt=""
+                    alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
                     85
@@ -2688,7 +2688,7 @@
                     id="number-cloud-cameras"
                     class="cloud-as-number-backing"
                     src="@/assets/monitoring/images/orangeCircle1.png"
-                    alt=""
+                    alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
                     8
@@ -2726,10 +2726,11 @@
                     id="number-cloud-r-d"
                     class="cloud-as-number-backing"
                     src="@/assets/monitoring/images/blueCircle1.png"
-                    alt=""
+                    alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
                     <img src="@/assets/monitoring/images/ecomapper.png">
+                    alt="Black and white illustration of the Ecomapper, a programmable underwater robot"
                   </h2>
                   <h4
                     id="text-block-r-d"
@@ -2750,7 +2751,7 @@
                     id="p-container-r-d"
                     class="p-container"
                   >
-                    <p>USGS field staff collect various water-quality data using a programmable  underwater robot – the EcoMapper. The EcoMapper’s back-and-forth scanning of the lower waters of the Basin provides data that can be used to build maps of how water quality changes through the 3D space of the Delaware Bay.</p>
+                    <p>USGS field staff collect various water-quality data using a programmable underwater robot – the EcoMapper. The EcoMapper’s back-and-forth scanning of the lower waters of the Basin provides data that can be used to build maps of how water quality changes through the 3D space of the Delaware Bay.</p>
                   </div>
                 </div>
               </div>
