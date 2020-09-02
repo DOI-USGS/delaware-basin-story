@@ -46,9 +46,9 @@
     <div id="content">
       <div class="row-fish">
         <div class="text-content">
-          <h4 id="trout-h3">
+          <h3 id="trout-h3">
             Take Brook trout, for example.
-          </h4>
+          </h3>
         </div>
         <div class="right">
           <div class="image-stack">
@@ -96,11 +96,11 @@
               id="mussel-text"
               class="text-content"
             >
-              <h4 
+              <h3 
                 id="mussel-h3" 
               >
                 Now meet the Dwarf Wedgemussel, an endangered species.
-              </h4>
+              </h3>
             </div>
             <div
               class="text-content"

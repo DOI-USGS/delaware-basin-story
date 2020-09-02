@@ -109,16 +109,19 @@
       font-weight: bold;
       font-size: 3em;
     }
-    h3 {
-      font-family: 'Noto Sans', sans-serif;
-      font-weight: bolder;
-      font-size: 1.6em;
-    }
-    h4{
+    // h3 {
+    //   font-family: 'Noto Sans', sans-serif;
+    //   font-weight: bolder;
+    //   font-size: 1.6em;
+    // }
+    h3{
       font-size: 1.2em;
       font-weight: bolder;
     }
-
+    // h4{
+    //   font-size: 1.2em;
+    //   font-weight: bolder;
+    // }
     .byline {
       font-family: 'Noto Sans', sans-serif;
       font-style: italic
