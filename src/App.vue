@@ -144,7 +144,7 @@
     }
 
     .scrolly-chunk{
-      padding: 70vh 0 70vh 0;
+      padding: 50vh 0 50vh 0;
     }
     // Text-only
     .text-content {
