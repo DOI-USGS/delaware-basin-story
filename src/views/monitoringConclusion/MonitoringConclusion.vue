@@ -3594,10 +3594,10 @@ fill:#f8f8f8;
   color: white;
 }
 
-#app h2.monitoring-title {
+#app h3.monitoring-title {
   font-family: chantal, sans-serif;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5em;
   color: black;
 }
 
