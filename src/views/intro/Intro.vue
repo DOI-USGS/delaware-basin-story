@@ -4,12 +4,45 @@
       id="intro-banner-container"
       class="parallax"
     >
-      <!-- <img
+     <!-- img
         id="watercolor"
         src="@/assets/intro/images/DRB_all-01.jpg"
         alt="watercolor map of delaware river basin"
         width="100%"
-      > -->      
+      >  -->
+      <svg
+          id="monitoring-locations"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 1920 1080"
+        >
+          <defs>
+            <mask id="mask-1" width="100px">
+              <image class="mask-test" href="@/assets/intro/images/stroke-1.png" />
+              <image class="mask-test" href="@/assets/intro/images/stroke-2.png" />
+              <image class="mask-test" href="@/assets/intro/images/stroke-3.png" />
+              <image class="mask-test" href="@/assets/intro/images/stroke-4.png" />
+              <image class="mask-test" href="@/assets/intro/images/stroke-5.png" />
+              <image class="mask-test" href="@/assets/intro/images/stroke-6.png" />
+              <image class="mask-test" href="@/assets/intro/images/stroke-7.png" />
+            </mask>
+
+          </defs>
+          <image
+            id="DRB-land-water"
+            href="@/assets/monitoringConclusion/images/DRB_land-01.jpg"
+            height="100%"
+            width="100%"
+          />
+          <image
+            id="DRB_land-green"
+            href="@/assets/monitoringConclusion/images/DRB_green-01.png"
+            height="100%"
+            width="100%"
+            mask="url(#mask-1)"
+          />
+
+          </svg>
     </div>
     <SectionTitle
       :title="title"
@@ -60,7 +93,7 @@
     min-width: 1700px;
     overflow: auto;
   }
-
+/* 
   .parallax {
     background-image: url("../../assets/intro/images/DRB_all-01.jpg");
     height: 50vh;
@@ -69,7 +102,29 @@
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 100% auto;
+  } */
+
+  //paint-in animation applied to just the green
+@keyframes  paint-in  {
+  to  {opacity: 1;}
+}
+
+
+//iterate through masks to apply delayed animation
+$n: 7;
+
+.mask-test {
+  opacity: 0;
+  animation: paint-in 1s 0ms forwards;
+
+  @for $x from 2 through $n {
+    &:nth-child(#{$x}) {
+      animation-delay: 300ms * ($x - 1);
+    }
   }
+}
+
+
 
   // // small Screens
   // @media only screen and (max-width: 300px) {
