@@ -52,11 +52,7 @@
               <use class="brush" xlink:href="#stroke-3" />
               <use class="brush" xlink:href="#stroke-3" />
               <use class="brush" xlink:href="#stroke-3" />       
-           
-              
-            </mask>
-            <mask id="mask-2" >
-              <use class="brush-2" xlink:href="#stroke-4" />
+           <use class="brush-2" xlink:href="#stroke-4" />
               <use class="brush-2" xlink:href="#stroke-2" />
               <use class="brush-2" xlink:href="#stroke-3" />
               <use class="brush-2" xlink:href="#stroke-4" />
@@ -76,40 +72,47 @@
               <use class="brush-2" xlink:href="#stroke-2" />
               <use class="brush-2" xlink:href="#stroke-2" />
               <use class="brush-2" xlink:href="#stroke-2" /> 
-      
-             
+              <use class="brush-3" xlink:href="#stroke-3" />
+              <use class="brush-3" xlink:href="#stroke-2" />
+              <use class="brush-3" xlink:href="#stroke-3" />
+              <use class="brush-3" xlink:href="#stroke-2" />
+              <use class="brush-3" xlink:href="#stroke-4" />
+              <use class="brush-3" xlink:href="#stroke-3" />
+              <use class="brush-3" xlink:href="#stroke-3" />
+              <use class="brush-3" xlink:href="#stroke-2" />
+              <use class="brush-3" xlink:href="#stroke-4" />
+              <use class="brush-3" xlink:href="#stroke-4" />
+              <use class="brush-3" xlink:href="#stroke-2" />
+              <use class="brush-3" xlink:href="#stroke-3" />
+              <use class="brush-3" xlink:href="#stroke-3" />
+              <use class="brush-3" xlink:href="#stroke-2" />
+              <use class="brush-3" xlink:href="#stroke-3" />
+              <use class="brush-3" xlink:href="#stroke-4" />
+              <use class="brush-3" xlink:href="#stroke-1" />
+              <use class="brush-3" xlink:href="#stroke-2" />
+              <use class="brush-3" xlink:href="#stroke-2" />
+              <use class="brush-3" xlink:href="#stroke-2" /> 
               
             </mask>
+          
 
           </defs>
           <image
             id="DRB-land-water"
             href="@/assets/monitoringConclusion/images/DRB_land-01.jpg"
             height="100%"
-            width="100%"         
+            width="100%"       
+            mask="url(#mask-1)"  
           />
-        <!--   <image
-            id="DRB-land-water"
-            href="@/assets/monitoringConclusion/images/DRB_land-01.jpg"
-            height="100%"
-            width="100%"
-            mask="url(#mask-2)"
-          /> -->
+
           <use
-            id="DRB_land-green"
             xlink:href="#DRB_land-green"
             height="100%"
             width="100%"
             mask="url(#mask-1)"
           />
-          <use
-            id="DRB_land-green"
-            xlink:href="#DRB_land-green"
-            height="100%"
-            width="100%"
-            mask="url(#mask-2)"
-          />
-                    </svg>
+
+    </svg>
     </div>
     <SectionTitle
       :title="title"
@@ -178,7 +181,7 @@
 
 
 //iterate through masks to apply delayed animation
-$n: 21;
+$n: 42;
 $degree: random(20);
 
 .brush {
@@ -187,7 +190,7 @@ $degree: random(20);
 
   @for $x from 1 through $n {
     &:nth-child(#{$x}) {
-      transform: translate(250px, 40px * ($x - 1));
+      transform: translate(250px, 30px * ($x - 1));
       animation-delay: 200ms * ($x - 1);
     }
   }
@@ -199,11 +202,24 @@ $degree: random(20);
 
   @for $x from 1 through $n {
     &:nth-child(#{$x}) {
-      transform: translate(300px + 10px * $x, 50px * ($x - 1));
+      transform: translate(100px + (5px * $x), 15px * ($x - 1));
       animation-delay: 170ms * ($x - 1);
     }
   }
 }
+
+.brush-3 {
+  opacity: 0;
+  animation: paint-in 1s 0ms forwards;
+
+  @for $x from 1 through $n {
+    &:nth-child(#{$x}) {
+      transform: translate(320px + -10px * $x, 45px * ($x - 1));
+      animation-delay: 150ms * ($x - 1);
+    }
+  }
+}
+
 
 
 
