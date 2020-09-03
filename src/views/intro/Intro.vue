@@ -71,6 +71,12 @@
     background-size: 100% auto;
   }
 
+  .parallax{
+    mask-image: url("../../assets/intro/images/stroke-1.png");
+    -webkit-mask-image: url("../../assets/intro/images/stroke-1.png");
+
+  }
+
   // // small Screens
   // @media only screen and (max-width: 300px) {
   //   .parallax {

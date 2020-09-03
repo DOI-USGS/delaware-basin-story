@@ -1059,7 +1059,8 @@ $s3:"";
     .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*28));
 }
 #intakes_k {
-    .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*29));
+  .hide-text(@stroke-length: 100px;);
+    .animation(@name: ghostwrite-100, @duration: @write-time*.7, @delay: @start+(@delay-time*29));
 }
 #intakes_e {
     .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*30));
