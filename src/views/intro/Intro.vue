@@ -17,32 +17,84 @@
           viewBox="0 0 1920 1080"
         >
           <defs>
-            <mask id="mask-1" width="100px">
-              <image class="mask-test" href="@/assets/intro/images/stroke-1.png" />
-              <image class="mask-test" href="@/assets/intro/images/stroke-2.png" />
-              <image class="mask-test" href="@/assets/intro/images/stroke-3.png" />
-              <image class="mask-test" href="@/assets/intro/images/stroke-4.png" />
-              <image class="mask-test" href="@/assets/intro/images/stroke-5.png" />
-              <image class="mask-test" href="@/assets/intro/images/stroke-6.png" />
-              <image class="mask-test" href="@/assets/intro/images/stroke-7.png" />
+            <image
+            id="DRB_land-green"
+            href="@/assets/monitoringConclusion/images/DRB_green-01.png"
+            height="100%"
+            width="100%"
+          />
+            <image id="stroke-1" href="@/assets/intro/images/stroke-1.png" width="300px" />
+            <image id="stroke-2" href="@/assets/intro/images/stroke-2-01.png" width="30px" />
+            <image id="stroke-3" href="@/assets/intro/images/stroke-3-01.png" width="200px" />
+            <image id="stroke-4" href="@/assets/intro/images/stroke-4-01.png" width="60px" />
+            <image id="stroke-5" href="@/assets/intro/images/stroke-5.png" width="300px" />
+            <image id="stroke-6" href="@/assets/intro/images/stroke-6.png" width="100px" />
+            <image id="stroke-7" href="@/assets/intro/images/stroke-7.png" width="100px" />
+
+            <mask id="mask-1" >
+              <g id="group-1">
+                <use class="brush" xlink:href="#stroke-2" y="10" />
+                <use class="brush" xlink:href="#stroke-2" y="-10" />
+                <use class="brush" xlink:href="#stroke-2" y="10" />
+                <use class="brush" xlink:href="#stroke-2" y="-10" />
+                <use class="brush" xlink:href="#stroke-2" y="10" />
+ 
+              </g>
+              <g id="group-2">
+                <use class="brush-2" xlink:href="#stroke-4" />
+                <use class="brush-2" xlink:href="#stroke-4" />
+                <use class="brush-2" xlink:href="#stroke-4" />
+                <use class="brush-2" xlink:href="#stroke-4" />
+                <use class="brush-2" xlink:href="#stroke-4" />
+
+              </g>
+              <g id="group-3">
+                <use class="brush-3" xlink:href="#stroke-4" />
+                <use class="brush-3" xlink:href="#stroke-4" />
+                <use class="brush-3" xlink:href="#stroke-4" />
+                <use class="brush-3" xlink:href="#stroke-4" />
+                <use class="brush-3" xlink:href="#stroke-4" />
+                <use class="brush-3" xlink:href="#stroke-4" />
+                <use class="brush-3" xlink:href="#stroke-4" />
+                <use class="brush-3" xlink:href="#stroke-4" />
+                <use class="brush-3" xlink:href="#stroke-4" />
+                <use class="brush-3" xlink:href="#stroke-4" />
+              </g>
+              <g id="group-3">
+                <use class="brush-4" xlink:href="#stroke-4" />
+                <use class="brush-4" xlink:href="#stroke-4" />
+                <use class="brush-4" xlink:href="#stroke-4" />
+                <use class="brush-4" xlink:href="#stroke-4" />
+                <use class="brush-4" xlink:href="#stroke-4" />
+                <use class="brush-4" xlink:href="#stroke-4" />
+                <use class="brush-4" xlink:href="#stroke-4" />
+                <use class="brush-4" xlink:href="#stroke-4" />
+                <use class="brush-4" xlink:href="#stroke-4" />
+                <use class="brush-4" xlink:href="#stroke-4" />
+              </g>
+              
+              
             </mask>
+          
 
           </defs>
           <image
             id="DRB-land-water"
             href="@/assets/monitoringConclusion/images/DRB_land-01.jpg"
             height="100%"
-            width="100%"
+            width="100%"       
+            
+            mask="url(#mask-1)"
           />
-          <image
-            id="DRB_land-green"
-            href="@/assets/monitoringConclusion/images/DRB_green-01.png"
+
+          <use
+            xlink:href="#DRB_land-green"
             height="100%"
             width="100%"
             mask="url(#mask-1)"
           />
 
-          </svg>
+    </svg>
     </div>
     <SectionTitle
       :title="title"
@@ -111,18 +163,33 @@
 
 
 //iterate through masks to apply delayed animation
-$n: 7;
+$n: 10;
+$degree: random(20);
 
-.mask-test {
+.brush {
   opacity: 0;
-  animation: paint-in 1s 0ms forwards;
+  animation: paint-in 300ms 0ms forwards;
 
-  @for $x from 2 through $n {
+  @for $x from 1 through $n {
     &:nth-child(#{$x}) {
-      animation-delay: 300ms * ($x - 1);
+      transform: translate(340px + 50 * ($x - 1), 130px);
+      animation-delay: 500ms * ($x - 1);
     }
   }
 }
+
+.brush-2 {
+  opacity: 0;
+  animation: paint-in 800ms 0ms forwards;
+
+  @for $x from 1 through $n {
+    &:nth-child(#{$x}) {
+      transform: translate(330px + 50 * ($x - 1), 140px);
+      animation-delay: 850ms * ($x - 1);
+    }
+  }
+}
+
 
 
 

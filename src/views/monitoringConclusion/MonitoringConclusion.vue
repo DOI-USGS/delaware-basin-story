@@ -26,13 +26,14 @@
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 1920 1080"
+          preserveAspectRatio="xMidYMid meet"
         >
           <defs>
             <symbol
               id="DRBgage"
               viewBox="0 0 11.88 14.24"
-              width="10"
-              height="14"
+              width="10px"
+              height="14px"
             >
               <path
                 id="b"
@@ -2817,7 +2818,7 @@
                     id="p-container-r-d"
                     class="p-container"
                   >
-                    <p>USGS field staff collect various water-quality data using a programmable underwater robot – the EcoMapper. The EcoMapper’s back-and-forth scanning of the lower waters of the Basin provides data that can be used to build maps of how water quality changes through the 3D space of the Delaware Bay.</p>
+                    <p>USGS field staff collect water-quality data using an autonomous underwater vehicle (AUV) - a programmable underwater robot. The AUV’s back-and-forth scanning of the lower waters of the Basin provides data that can be used to build maps of how water quality changes through the 3D space of the Delaware Bay.</p>
                   </div>
                 </div>
               </div>
