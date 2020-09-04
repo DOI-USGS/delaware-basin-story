@@ -20,6 +20,8 @@
     "core-js": "^3.6.5",
     "d3": "^5.16.0",
     "dns": "^0.2.2",
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^6.0.0",
     "less": "^3.12.2",
     "less-loader": "^6.2.0",
     "mapbox-gl": "^1.12.0",
