@@ -8,6 +8,7 @@
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 1000 638.59"
+            preserveAspectRatio="xMidYMid meet"
           >
             <defs>
               <linearGradient
@@ -146,9 +147,15 @@
             <g id="salinityMap">
               <image
                 xlink:href="@/assets/salinity/salinitySea/images/saltmap-background-01-01.jpg"
+               href="@/assets/salinity/salinitySea/images/saltmap-background-01-01.jpg"
+                 height="100%"
+            width="100%"
               />
               <image
                 xlink:href="@/assets/salinity/salinitySea/images/saltmap-river-01-01.png"
+                href="@/assets/salinity/salinitySea/images/saltmap-river-01-01.png"
+                 height="100%"
+            width="100%"
               />
             </g>
             <g v-if="SaltyWater">
@@ -1059,7 +1066,8 @@ $s3:"";
     .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*28));
 }
 #intakes_k {
-    .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*29));
+  .hide-text(@stroke-length: 100px;);
+    .animation(@name: ghostwrite-100, @duration: @write-time*.7, @delay: @start+(@delay-time*29));
 }
 #intakes_e {
     .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*30));

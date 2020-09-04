@@ -71,6 +71,7 @@
     background-size: 100% auto;
   }
 
+
   // // small Screens
   // @media only screen and (max-width: 300px) {
   //   .parallax {
