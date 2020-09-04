@@ -26,13 +26,14 @@
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 1920 1080"
+          preserveAspectRatio="xMidYMid meet"
         >
           <defs>
             <symbol
               id="DRBgage"
               viewBox="0 0 11.88 14.24"
-              width="10"
-              height="14"
+              width="10px"
+              height="14px"
             >
               <path
                 id="b"
