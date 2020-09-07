@@ -6,7 +6,7 @@
     >
       <!-- <img
         id="watercolor"
-        src="@/assets/intro/images/DRB_all-01.jpg"
+        src="@/assets/intro/images/DRB_all-01.png"
         alt="watercolor map of delaware river basin"
         width="100%"
       > -->      
@@ -62,7 +62,7 @@
   }
 
   .parallax {
-    background-image: url("../../assets/intro/images/DRB_all-01.jpg");
+    background-image: url("../../assets/intro/images/DRB_all-01.png");
     height: 50vh;
     // padding-top: 100%;
     background-attachment: fixed;

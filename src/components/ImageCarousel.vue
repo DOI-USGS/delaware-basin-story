@@ -7,28 +7,40 @@
   >
     <slide class="slide">
       <div class="slider-image-container">
+        <picture>
+          <source srcset="@/assets/intro/images/imageSlider/slider_01.webp"
+      media="(min-width: 992px)" >
         <img
           src="@/assets/intro/images/imageSlider/slider_01.png"
           alt="Aerial view of a bridge crossing the Delaware River"
         >
+        </picture>
       </div>
     </slide>
 
     <slide class="slide">
       <div class="slider-image-container">
+        <picture>
+        <source srcset="@/assets/intro/images/imageSlider/slider_02.webp"
+      media="(min-width: 992px)" >
         <img
           src="@/assets/intro/images/imageSlider/slider_02.png"
           alt="Aerial image of a tall sailing ship docked at the bank of the Delaware River"
         >
+        </picture>
       </div>
     </slide>
 
     <slide class="slide">
       <div class="slider-image-container">
+        <picture>
+          <source srcset="@/assets/intro/images/imageSlider/slider_03.webp"
+      media="(min-width: 992px)" >
         <img
           src="@/assets/intro/images/imageSlider/slider_03.png"
           alt="A blue heron fishing on the Delaware River"
         >
+        </picture>
       </div>
     </slide>
 
@@ -42,10 +54,14 @@
     </slide> -->
     <slide class="slide">
       <div class="slider-image-container">
+        <picture>
+          <source srcset="@/assets/intro/images/imageSlider/slider_05.webp"
+      media="(min-width: 992px)" >
         <img
           src="@/assets/intro/images/imageSlider/slider_05.png"
           alt="Aerial view of a wooded area on the banks of the Delaware River"
         >
+        </picture>
       </div>
     </slide>
   </carousel>
