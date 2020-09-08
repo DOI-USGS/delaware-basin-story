@@ -8,7 +8,6 @@
       :image="titleBackingImage"
     />
     <SalinitySea />
-    <!-- <SalinityRoad /> -->
   </section>
 </template>
 
@@ -21,7 +20,7 @@
       components: {
         SectionTitle,
         SalinitySea,
-        /* SalinityRoad */
+
       },
       data() {
         return {

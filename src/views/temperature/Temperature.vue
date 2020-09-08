@@ -129,8 +129,8 @@
                       href="@/assets/temperature/images/substrate-01.png"
                       alt="sandy colored ground" 
                       
-                        height="100%"
-                        width="100%"
+                      height="100%"
+                      width="100%"
                     />
                     <path
                       id="sub_d"
@@ -344,7 +344,6 @@
                         class="grow"
                         height="100%"
                         width="100%"
-                        
                       />
                       <image
                         id="bottom-left"
