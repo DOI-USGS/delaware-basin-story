@@ -8,6 +8,7 @@
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 1000 638.59"
+            preserveAspectRatio="xMidYMid meet"
           >
             <defs>
               <linearGradient
@@ -146,11 +147,19 @@
             <g id="salinityMap">
               <image
                 xlink:href="@/assets/salinity/salinitySea/images/saltmap-background-01-01.jpg"
+<<<<<<< HEAD
+=======
+               href="@/assets/salinity/salinitySea/images/saltmap-background-01-01.jpg"
+>>>>>>> 1cb0bbf48f8bddfe8360af3528adcad5eb1adced
                  height="100%"
             width="100%"
               />
               <image
                 xlink:href="@/assets/salinity/salinitySea/images/saltmap-river-01-01.png"
+<<<<<<< HEAD
+=======
+                href="@/assets/salinity/salinitySea/images/saltmap-river-01-01.png"
+>>>>>>> 1cb0bbf48f8bddfe8360af3528adcad5eb1adced
                  height="100%"
             width="100%"
               />

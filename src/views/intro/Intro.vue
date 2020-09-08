@@ -6,7 +6,7 @@
     >
      <!-- img
         id="watercolor"
-        src="@/assets/intro/images/DRB_all-01.jpg"
+        src="@/assets/intro/images/DRB_all-01.png"
         alt="watercolor map of delaware river basin"
         width="100%"
       >  -->
@@ -147,7 +147,7 @@
   }
 /* 
   .parallax {
-    background-image: url("../../assets/intro/images/DRB_all-01.jpg");
+    background-image: url("../../assets/intro/images/DRB_all-01.png");
     height: 50vh;
     // padding-top: 100%;
     background-attachment: fixed;
@@ -178,6 +178,7 @@ $degree: random(20);
   }
 }
 
+<<<<<<< HEAD
 .brush-2 {
   opacity: 0;
   animation: paint-in 800ms 0ms forwards;
@@ -192,6 +193,8 @@ $degree: random(20);
 
 
 
+=======
+>>>>>>> 1cb0bbf48f8bddfe8360af3528adcad5eb1adced
 
   // // small Screens
   // @media only screen and (max-width: 300px) {
