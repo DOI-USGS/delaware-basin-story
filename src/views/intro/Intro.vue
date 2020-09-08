@@ -16,14 +16,119 @@
         xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 1920 1080"
       >
-        <defs>
+       <defs>
           <image
             id="DRB_land-green"
-            href="@/assets/monitoringConclusion/images/DRB_green-01.png"
+            href="@/assets/intro/images/DRB-land-01.png"
             height="100%"
             width="100%"
           />
           <image
+            id="DRB-river"
+            href="@/assets/intro/images/DRB-water-01.png"
+            height="100%"
+            width="100%"
+          />
+          <image
+          id="DRB-land-water"
+          href="@/assets/monitoringConclusion/images/DRB_land-01.jpg"
+          height="100%"
+          width="100%"       
+            
+        />
+          <mask id="MASK" maskunits="userSpaceOnUse"
+              maskcontentunits="userSpaceOnUse">
+          <image 
+        xlink:href="@/assets/intro/images/ink_once.gif" 
+        height="50%"
+        width="50%"
+        x="0%" y="-7%"
+   />
+        </mask>
+
+        <mask id="MASK2" maskunits="userSpaceOnUse"
+              maskcontentunits="userSpaceOnUse">
+          <image 
+        xlink:href="@/assets/intro/images/ink_once.gif" 
+        height="60%"
+        width="55%"
+        x="-1%" y="7%"
+   />
+        </mask>
+
+        <mask id="MASK3" maskunits="userSpaceOnUse"
+              maskcontentunits="userSpaceOnUse">
+          <image 
+        xlink:href="@/assets/intro/images/ink_once.gif" 
+        height="60%"
+        width="55%"
+        x="5%" y="30%"
+   />
+        </mask>
+        <mask id="MASK4" maskunits="userSpaceOnUse"
+              maskcontentunits="userSpaceOnUse">
+          <image 
+        xlink:href="@/assets/intro/images/ink_once.gif" 
+        height="40%"
+        width="45%"
+        x="-1%" y="50%"
+   />
+        </mask>
+        <mask id="MASK5" maskunits="userSpaceOnUse"
+              maskcontentunits="userSpaceOnUse">
+          <image 
+        xlink:href="@/assets/intro/images/ink_once.gif" 
+        height="50%"
+        width="40%"
+        x="0%" y="30%"
+   />
+        </mask>
+        <mask id="MASK6" maskunits="userSpaceOnUse"
+              maskcontentunits="userSpaceOnUse">
+          <image 
+        xlink:href="@/assets/intro/images/ink_once.gif" 
+        height="40%"
+        width="45%"
+        x="-5%" y="60%"
+   />
+        </mask>
+        <mask id="MASK7" maskunits="userSpaceOnUse"
+              maskcontentunits="userSpaceOnUse">
+          <image 
+        xlink:href="@/assets/intro/images/ink_once.gif" 
+        height="40%"
+        width="45%"
+        x="0%" y="25%"
+   />
+        </mask>
+         <mask id="MASK8" maskunits="userSpaceOnUse"
+              maskcontentunits="userSpaceOnUse">
+          <image 
+        xlink:href="@/assets/intro/images/ink_once.gif" 
+        height="40%"
+        width="45%"
+        x="-3%" y="65%"
+   />
+        </mask>
+        <mask id="MASK9" maskunits="userSpaceOnUse"
+              maskcontentunits="userSpaceOnUse">
+          <image 
+        xlink:href="@/assets/intro/images/ink_once.gif" 
+        height="40%"
+        width="45%"
+        x="-7%" y="30%"
+   />
+        </mask>
+        <mask id="MASK10" maskunits="userSpaceOnUse"
+              maskcontentunits="userSpaceOnUse">
+          <image 
+        xlink:href="@/assets/intro/images/ink_once.gif" 
+        height="50%"
+        width="45%"
+        x="0%" y="13%"
+   />
+        </mask>
+          <!--  <image
             id="stroke-1"
             href="@/assets/intro/images/stroke-1.png"
             width="300px"
@@ -197,24 +302,119 @@
             </g>
               
               
-          </mask>
+          </mask> -->
           
 
         </defs>
-        <image
-          id="DRB-land-water"
-          href="@/assets/monitoringConclusion/images/DRB_land-01.jpg"
+        <use
+          xlink:href="#DRB-land-water"
           height="100%"
-          width="100%"       
-            
-          mask="url(#mask-1)"
+          width="100%"
+          
         />
-
+        
+        <g id="green" >
+<g mask="url(#MASK)"  >
+  
         <use
           xlink:href="#DRB_land-green"
           height="100%"
           width="100%"
-          mask="url(#mask-1)"
+          
+        />
+        </g>
+        <g mask="url(#MASK2)" >
+  
+        <use
+          xlink:href="#DRB_land-green"
+          height="100%"
+          width="100%"
+          
+        />
+        </g>
+
+        <g mask="url(#MASK3)" >
+  
+        <use
+          xlink:href="#DRB_land-green"
+          height="100%"
+          width="100%"
+          
+        />
+        </g>
+        <g mask="url(#MASK4)" >
+  
+        <use
+          xlink:href="#DRB_land-green"
+          height="100%"
+          width="100%"
+          
+        />
+        </g>
+        <g mask="url(#MASK5)" >
+  
+        <use
+          xlink:href="#DRB_land-green"
+          height="100%"
+          width="100%"
+          
+        />
+        </g>
+
+
+   
+               <g mask="url(#MASK6)"  >
+  
+        <use
+          xlink:href="#DRB_land-green"
+          height="100%"
+          width="100%"
+          
+        />
+        </g>
+        <g mask="url(#MASK7)"  >
+  
+        <use
+          xlink:href="#DRB_land-green"
+          height="100%"
+          width="100%"
+          
+        />
+        </g>
+        <g mask="url(#MASK8)"  >
+  
+        <use
+          xlink:href="#DRB_land-green"
+          height="100%"
+          width="100%"
+          
+        />
+        </g>
+        <g mask="url(#MASK9)"  >
+  
+        <use
+          xlink:href="#DRB_land-green"
+          height="100%"
+          width="100%"
+          
+        />
+        </g>
+        <g mask="url(#MASK10)"  >
+  
+        <use
+          xlink:href="#DRB_land-green"
+          height="100%"
+          width="100%"
+          
+        />
+        </g>
+        </g>
+        <use
+        id="blue"
+          xlink:href="#DRB-river"
+          height="100%"
+          width="100%"
+          
         />
 
       </svg>
@@ -281,30 +481,21 @@
 @keyframes  paint-in  {
   to  {opacity: 1;}
 }
-//iterate through masks to apply delayed animation
-$n: 10;
-
-.brush {
-  opacity: 0;
-  animation: paint-in 300ms 0ms forwards;
-  @for $x from 1 through $n {
-    &:nth-child(#{$x}) {
-      transform: translate(340px + 50 * ($x - 1), 130px);
-      animation-delay: 500ms * ($x - 1);
-    }
-  }
+#DRB-land-water  {
+  z-index: -1;
 }
-.brush-2 {
-  opacity: 0;
-  animation: paint-in 800ms 0ms forwards;
-  @for $x from 1 through $n {
-    &:nth-child(#{$x}) {
-      transform: translate(330px + 50 * ($x - 1), 140px);
-      animation-delay: 850ms * ($x - 1);
-    }
-  }
+#green  {
+  z-index: 10;
 }
 
+#DRB-river  {
+  z-index: 2;
+}
+#blue  {
+  z-index: 2;
+}
+
+//
 
   // // small Screens
   // @media only screen and (max-width: 300px) {
