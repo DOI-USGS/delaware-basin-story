@@ -126,7 +126,11 @@
                     <image
                       id="substrate"
                       xlink:href="@/assets/temperature/images/substrate-01.png"
+                      href="@/assets/temperature/images/substrate-01.png"
                       alt="sandy colored ground" 
+                      
+                      height="100%"
+                      width="100%"
                     />
                     <path
                       id="sub_d"
@@ -195,23 +199,35 @@
                       <image
                         id="fill-fade"
                         xlink:href="@/assets/temperature/images/mussel_fade-01.png"
+                        href="@/assets/temperature/images/mussel_fade-01.png"
                         alt="healthy freshwater mussels"
+                        height="100%"
+                        width="100%"
                       />
                       <image
                         id="hungry"
                         xlink:href="@/assets/temperature/images/hungry_all-01.png"
+                        href="@/assets/temperature/images/hungry_all-01.png"
                         alt="small freshwater mussel"
                         transform="translate(0 10)"
+                        height="100%"
+                        width="100%"
                       />
                       <image
                         id="bottom_right_big"
                         xlink:href="@/assets/temperature/images/bottom_big_all-01.png"
+                        href="@/assets/temperature/images/bottom_big_all-01.png"
                         alt="small freshwater mussel"
+                        height="100%"
+                        width="100%"
                       />
                       <image
                         id="solita"
                         xlink:href="@/assets/temperature/images/mussel_solitapng-01.png"
+                        href="@/assets/temperature/images/mussel_solitapng-01.png"
                         alt="small freshwater mussel"
+                        height="100%"
+                        width="100%"
                       />
                       <g>
                         <path d="M66 367a6 6 0 000-1h-1l-6 9a71 71 0 01-8 8 61 61 0 01-18 11c-6 3-15 5-20 1-6-4-7-12-7-18a45 45 0 015-21c4-7 9-12 14-17s11-10 18-12c6-3 14-4 19 1 4 4 5 11 6 17l1 11-4 10a10 10 0 000 4c0 1 1 2 2 1 0-4 2-7 3-10 2-4 1-8 0-12 0-6-1-13-5-19-9-14-28-5-37 3a59 59 0 00-24 39c0 7 1 15 5 20a14 14 0 007 6 22 22 0 0011 0 61 61 0 0039-31l-1-1a4 4 0 010 1h1z" />
@@ -303,28 +319,40 @@
                       <image
                         id="big_b-fill"
                         xlink:href="@/assets/temperature/images/big_b_all-01.png"
+                        href="@/assets/temperature/images/big_b_all-01.png"
                         alt="large freshwater mussel"
                         class="grow"
                         transform="translate(-30 0)"
+                        height="100%"
+                        width="100%"
                       />
                       <image
                         id="fanny-all"
                         xlink:href="@/assets/temperature/images/fanny_all-01.png"
+                        href="@/assets/temperature/images/fanny_all-01.png"
                         alt="large freshwater mussel"
                         class="grow"
                         transform="translate(-10 0)"
+                        height="100%"
+                        width="100%"
                       />
                       <image
                         id="bottom-right"
                         xlink:href="@/assets/temperature/images/bottom_right_all-01.png"
+                        href="@/assets/temperature/images/bottom_right_all-01.png"
                         alt="large freshwater mussel"
                         class="grow"
+                        height="100%"
+                        width="100%"
                       />
                       <image
                         id="bottom-left"
                         xlink:href="@/assets/temperature/images/bottom_left_all-01.png"
+                        href="@/assets/temperature/images/bottom_left_all-01.png"
                         alt="large freshwater mussel"
                         class="grow"
+                        height="100%"
+                        width="100%"
                       />
                     </g>
                   </g> 
