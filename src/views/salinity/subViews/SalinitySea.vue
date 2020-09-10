@@ -147,15 +147,15 @@
             <g id="salinityMap">
               <image
                 xlink:href="@/assets/salinity/salinitySea/images/saltmap-background-01-01.jpg"
-               href="@/assets/salinity/salinitySea/images/saltmap-background-01-01.jpg"
-                 height="100%"
-            width="100%"
+                href="@/assets/salinity/salinitySea/images/saltmap-background-01-01.jpg"
+                height="100%"
+                width="100%"
               />
               <image
                 xlink:href="@/assets/salinity/salinitySea/images/saltmap-river-01-01.png"
                 href="@/assets/salinity/salinitySea/images/saltmap-river-01-01.png"
-                 height="100%"
-            width="100%"
+                height="100%"
+                width="100%"
               />
             </g>
             <g v-if="SaltyWater">

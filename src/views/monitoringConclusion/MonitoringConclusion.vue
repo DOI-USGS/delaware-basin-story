@@ -29,7 +29,7 @@
           preserveAspectRatio="xMidYMid meet"
           height="100%"
           width="100%"
-          >
+        >
           <defs>
             <symbol
               id="DRBgage"
