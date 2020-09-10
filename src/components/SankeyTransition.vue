@@ -51,7 +51,7 @@
           <h3
             id="sankey-title-1"
           >
-            How the River Flows
+            Managing River Flows
           </h3>
           <p>Flow in the Basin today is managed through formal cooperation among federal, state, and local entities. The Supreme Court decree sets water withdrawal limits so that even at times of greatest need, there’s still plenty of water to flow downriver into the Delaware Bay.</p>
           <p><span class="emph">Reservoirs</span> help us manage that flow. </p>
@@ -78,7 +78,7 @@
           >
             Reservoirs
           </h3>
-          <p>All that water comes from tributaries upstream, where a system of <a href="https://webapps.usgs.gov/odrm/data/data.html">reservoirs</a> use sections of the river as storage tanks to store enormous amounts of water for times when we need it. They are also used for other kinds of water management - flood control, hydroelectric power, and recreation.</p>
+          <p><a href="https://webapps.usgs.gov/odrm/data/data.html">Reservoirs</a> use sections of the river as storage tanks to store enormous amounts of water for times when we need it. They are also used for other kinds of water management - flood control, hydroelectric power, and recreation.</p>
         </div>
       </div>
       <div
@@ -101,7 +101,7 @@
           >
             Using the Reservoirs
           </h3>
-          <p>Major water users like New York City, Philadelphia, and the entire state of New Jersey are allowed to draw lots of water out of the river for drinking water. The River Master and the DRBC use <a href="https://waterdata.usgs.gov/usa/nwis/">water monitoring data collected by the USGS</a> to decide how and when to store water in these reservoirs.</p>
+          <p>Major water users like New York City, Philadelphia, and the entire state of New Jersey are allowed to withdraw water from the river and reservoirs for public supply. The River Master and the DRBC use <a href="https://waterdata.usgs.gov/usa/nwis/">water data collected by the USGS</a> to decide how much water to store in reservoirs, and when to release it downstream to maintain flow levels.</p>
           <p>But the water cycle has a big say in how much water is available, too.</p>
         </div>
       </div>
