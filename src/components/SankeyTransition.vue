@@ -126,7 +126,7 @@
             Summer Lows
           </h3>
           <p>In the late summer of most years, the streams and rivers of the Basin have lower, slower flows.  The normal low flows are exacerbated during summers with droughts.  But even with low flows, human water demands don’t let up!</p>
-          <p>The flow targets at Montague, NJ and Trenton, NJ are designed to protect against water hoarding upstream that would deprive downstream users – human and otherwise – of fair access to water. With the right conditions, the river flow has a chance of falling below the target levels set by the 1954 Supreme Court decree.</p>
+          <p>The Supreme Court, as part of the decree, mandated two important flow targets at Montague, NJ and Trenton, NJ.  Those minimum-flow targets are designed to protect against water hoarding upstream that would deprive downstream users – human and otherwise – of fair access to water. Under drought conditions, the river flow has a chance of falling below the target levels set by the 1954 Supreme Court decree.</p>
         </div>
       </div>
       <div
@@ -149,7 +149,7 @@
           >
             Reservoir Releases
           </h3>
-          <p>But with careful management, reservoirs can provide a buffer against these excessively low flows.  When the River flow has a chance of dropping below the flow targets set by the 1954 decree, the River Master can decide to carefully release some of the stored water in the summer at just the right rate and time to fill the gap.</p>
+          <p>But with careful management, reservoirs can provide a buffer against these excessively low flows.  When there’s a chance that the amount of water in the river could drop below the flow targets, the River Master can decide to release some stored water at just the right rate and time to fill the gap.</p>
           <p>With accurate data and smart management, there’s enough water available for everyone. </p>
         </div>
       </div>
