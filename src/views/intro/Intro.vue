@@ -81,37 +81,37 @@
         <mask id="MASK6" maskunits="userSpaceOnUse"
               maskcontentunits="userSpaceOnUse">
           <image 
-        xlink:href="@/assets/intro/images/ink_curl.gif" 
-        height="60%"
-        width="45%"
-        x="0%" y="0%"
+        xlink:href="@/assets/intro/images/ink_scale_invert.gif" 
+        height="30%"
+        width="35%"
+        x="5%" y="9%"
    />
         </mask>
         <mask id="MASK7" maskunits="userSpaceOnUse"
               maskcontentunits="userSpaceOnUse">
           <image 
-        xlink:href="@/assets/intro/images/ink_once.gif" 
+        xlink:href="@/assets/intro/images/ink_scale_delay_invert.gif" 
         height="40%"
         width="45%"
-        x="0%" y="25%"
+        x="5%" y="65%"
    />
         </mask>
          <mask id="MASK8" maskunits="userSpaceOnUse"
               maskcontentunits="userSpaceOnUse">
           <image 
-        xlink:href="@/assets/intro/images/ink_once.gif" 
-        height="40%"
-        width="45%"
-        x="-3%" y="65%"
+        xlink:href="@/assets/intro/images/ink_scale_delay_invert.gif" 
+        height="70%"
+        width="75%"
+        x="-15%" y="22%"
    />
         </mask>
         <mask id="MASK9" maskunits="userSpaceOnUse"
               maskcontentunits="userSpaceOnUse">
           <image 
-        xlink:href="@/assets/intro/images/ink_once.gif" 
-        height="40%"
-        width="45%"
-        x="-7%" y="30%"
+        xlink:href="@/assets/intro/images/ink_scale_invert.gif" 
+        height="60%"
+        width="55%"
+        x="-15%" y="55%"
    />
         </mask>
         <mask id="MASK10" maskunits="userSpaceOnUse"
@@ -198,54 +198,38 @@
           
         />
         </g>
- <!--        <g mask="url(#MASK7)"  >
+        <g mask="url(#MASK7)"  >
   
         <use
         id="map-ink"
-          xlink:href="#DRB_land-green"
-          height="100%"
-          width="100%"
-          
-        />
-        </g> -->
-<!--         <g mask="url(#MASK8)"  >
-  
-        <use
-        id="map-ink"
-          xlink:href="#DRB_land-green"
-          height="100%"
-          width="100%"
-          
-        />
-        </g> -->
-<!--         <g mask="url(#MASK9)"  >
-  
-        <use
-        id="map-ink"
-          xlink:href="#DRB_land-green"
-          height="100%"
-          width="100%"
-          
-        />
-        </g> -->
-<!--         <g mask="url(#MASK10)"  >
-  
-        <use
-        id="map-ink"
-          xlink:href="#DRB_land-green"
-          height="100%"
-          width="100%"
-          
-        />
-        </g> -->
-        </g>
-        <!-- <use
-        id="blue"
           xlink:href="#DRB-river"
           height="100%"
           width="100%"
           
-        /> -->
+        />
+        </g>
+        <g mask="url(#MASK8)"  >
+  
+        <use
+        id="map-ink"
+          xlink:href="#DRB-river"
+          height="100%"
+          width="100%"
+          
+        />
+        </g>
+        <g mask="url(#MASK9)"  >
+  
+        <use
+        id="map-ink"
+          xlink:href="#DRB-river"
+          height="100%"
+          width="100%"
+          
+        />
+        </g>
+        </g>
+
 
       </svg>
     </div>
@@ -307,10 +291,8 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
   } */
-  //paint-in animation applied to just the green
-@keyframes  paint-in  {
-  to  {opacity: 1;}
-}
+
+ 
 #DRB-land-water  {
   z-index: -1;
 }
@@ -323,14 +305,6 @@
 }
 #blue  {
   z-index: 2;
-}
-.map-ink  {
-$n:10;
-@for $x from 1 through $n {
-  &:nth-child(#{$x})  {
-    animation-delay: 700ms * ($x - 1);
-  }
-}
 }
 
 
