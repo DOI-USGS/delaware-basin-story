@@ -51,7 +51,7 @@
           <h3
             id="sankey-title-1"
           >
-            How the River Flows
+            Managing River Flows
           </h3>
           <p>Flow in the Basin today is managed through formal cooperation among federal, state, and local entities. The Supreme Court decree sets water withdrawal limits so that even at times of greatest need, there’s still plenty of water to flow downriver into the Delaware Bay.</p>
           <p><span class="emph">Reservoirs</span> help us manage that flow. </p>
@@ -78,7 +78,7 @@
           >
             Reservoirs
           </h3>
-          <p>All that water comes from tributaries upstream, where a system of <a href="https://webapps.usgs.gov/odrm/data/data.html">reservoirs</a> use sections of the river as storage tanks to store enormous amounts of water for times when we need it. They are also used for other kinds of water management - flood control, hydroelectric power, and recreation.</p>
+          <p><a href="https://webapps.usgs.gov/odrm/data/data.html">Reservoirs</a> use sections of the river as storage tanks to store enormous amounts of water for times when we need it. They are also used for other kinds of water management - flood control, hydroelectric power, and recreation.</p>
         </div>
       </div>
       <div
@@ -101,7 +101,7 @@
           >
             Using the Reservoirs
           </h3>
-          <p>Major water users like New York City, Philadelphia, and the entire state of New Jersey are allowed to draw lots of water out of the river for drinking water. The River Master and the DRBC use <a href="https://waterdata.usgs.gov/usa/nwis/">water monitoring data collected by the USGS</a> to decide how and when to store water in these reservoirs.</p>
+          <p>Major water users like New York City, Philadelphia, and the entire state of New Jersey are allowed to withdraw water from the river and reservoirs for public supply. The River Master and the DRBC use <a href="https://waterdata.usgs.gov/usa/nwis/">water data collected by the USGS</a> to decide how much water to store in reservoirs, and when to release it downstream to maintain flow levels.</p>
           <p>But the water cycle has a big say in how much water is available, too.</p>
         </div>
       </div>
@@ -126,7 +126,7 @@
             Summer Lows
           </h3>
           <p>In the late summer of most years, the streams and rivers of the Basin have lower, slower flows.  The normal low flows are exacerbated during summers with droughts.  But even with low flows, human water demands don’t let up!</p>
-          <p>The flow targets at Montague, NJ and Trenton, NJ are designed to protect against water hoarding upstream that would deprive downstream users – human and otherwise – of fair access to water. With the right conditions, the river flow has a chance of falling below the target levels set by the 1954 Supreme Court decree.</p>
+          <p>The Supreme Court, as part of the decree, mandated two important flow targets at Montague, NJ and Trenton, NJ.  Those minimum-flow targets are designed to protect against water hoarding upstream that would deprive downstream users – human and otherwise – of fair access to water. Under drought conditions, the river flow has a chance of falling below the target levels set by the 1954 Supreme Court decree.</p>
         </div>
       </div>
       <div
@@ -149,7 +149,7 @@
           >
             Reservoir Releases
           </h3>
-          <p>But with careful management, reservoirs can provide a buffer against these excessively low flows.  When the River flow has a chance of dropping below the flow targets set by the 1954 decree, the River Master can decide to carefully release some of the stored water in the summer at just the right rate and time to fill the gap.</p>
+          <p>But with careful management, reservoirs can provide a buffer against these excessively low flows.  When there’s a chance that the amount of water in the river could drop below the flow targets, the River Master can decide to release some stored water at just the right rate and time to fill the gap.</p>
           <p>With accurate data and smart management, there’s enough water available for everyone. </p>
         </div>
       </div>

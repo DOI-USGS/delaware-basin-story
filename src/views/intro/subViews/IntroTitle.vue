@@ -1,13 +1,15 @@
 <template>
   <div id="container-intro-title">
     <picture>
-      <source srcset="@/assets/intro/images/rainbow-min.webp"
-      media="(min-width: 992px)" >
-    <img
-      class="title-intro-cloud-backing"
-      src="@/assets/intro/images/rainbow-min.png"
-      alt="image of watercolor cloud of color"
-    >
+      <source
+        srcset="@/assets/intro/images/rainbow-min.webp"
+        media="(min-width: 992px)"
+      >
+      <img
+        class="title-intro-cloud-backing"
+        src="@/assets/intro/images/rainbow-min.png"
+        alt="image of watercolor cloud of color"
+      >
     </picture>
     <h1 class="section-title">
       {{ title }}

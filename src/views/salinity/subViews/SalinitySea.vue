@@ -147,15 +147,15 @@
             <g id="salinityMap">
               <image
                 xlink:href="@/assets/salinity/salinitySea/images/saltmap-background-01-01.jpg"
-               href="@/assets/salinity/salinitySea/images/saltmap-background-01-01.jpg"
-                 height="100%"
-            width="100%"
+                href="@/assets/salinity/salinitySea/images/saltmap-background-01-01.jpg"
+                height="100%"
+                width="100%"
               />
               <image
                 xlink:href="@/assets/salinity/salinitySea/images/saltmap-river-01-01.png"
                 href="@/assets/salinity/salinitySea/images/saltmap-river-01-01.png"
-                 height="100%"
-            width="100%"
+                height="100%"
+                width="100%"
               />
             </g>
             <g v-if="SaltyWater">
@@ -447,7 +447,7 @@
               The Salt Front
             </h3>
             <p>
-              As freshwater spills from the river onto the saltier waters of the Delaware Bay, the fresh and salty water mix and form an angled wedge of brackish water.
+              As freshwater spills from the river into the saltier waters of the Delaware Bay, the fresh and salty water mix and form an angled wedge of brackish water.
             </p>
             <p>
               The boundary of that wedge is called the <span class="emph">salt front.</span>
@@ -481,13 +481,10 @@
               Seasonal Changes
             </h3>
             <p>
-              The salt front migrates up and down the river channel over the daily cycle of ocean tides.  The location of the salt front is also impacted by occasional storm surges, the seasonal cycle of high or low river flows, and fluctuations as the river changes over the course of many years.
+              The salt front <a href="https://www.state.nj.us/drbc/library/documents/shallcross_saltfront_CDRWforum_oct2019.pdf">migrates</a> up and down the river channel over the daily cycle of ocean tides. The location of the salt front is also impacted by occasional storm surges, the seasonal cycle of high or low river flows, and fluctuations as the river changes over the course of many years.
             </p>
             <p>
-              Fluctuations within a <a href="https://www.state.nj.us/drbc/library/documents/shallcross_saltfront_CDRWforum_oct2019.pdf">normal range</a> are good for ecosystems that are used to brackish water. But during low river flows, the salt front can migrate upstream.
-            </p>
-            <p>
-              In 1960, during a record drought, the salt front moved nearly 30 miles further upstream.  The high salt levels <span class="emph">hurt the freshwater ecosystems</span> and came close to <span class="emph">contaminating Philadelphia's drinking water intakes.</span>
+              In 1960, during a record drought, the salt front moved nearly 30 miles further upstream.  High salt levels in the upstream freshwater ecosysystems can be harmful, and the salt came close to <span class="emph">contaminating Philadelphia's drinking water intakes.</span>
             </p>
           </div>
         </div>
@@ -508,10 +505,10 @@
               Rising Sea Levels
             </h3>
             <p>
-              Sea level rise is expected to push the salt front further upstream. With just <a href="https://www.state.nj.us/drbc/library/documents/shallcross_saltfront_CDRWforum_oct2019.pdf">3 feet of sea level rise,</a> the salt front is predicted to travel once again within the reaches of Philadelphia and threaten fresh water supplies.
+              Sea level rise is expected to push the salt front further upstream. With just 3 feet of sea level rise, on average the salt front is predicted to once again travel close to Philadelphia and threaten fresh water supplies.
             </p>
             <p>
-              Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. One key concerns for stakeholders, including the Supreme Court decree Parties, DRBC, Philadelphia and others, is to keep enough freshwater flowing down the Delaware River to press the salt front back toward the ocean. Accurate data and models allow smart reservoir releases, which maintain the flow targets and the salt front location. 
+              Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. One key objective to keep enough freshwater flowing down the Delaware River to press the salt front back toward the ocean. Accurate data and models allow smart reservoir releases, which maintain the flow targets and the salt front location.
             </p>
           </div>
         </div>
