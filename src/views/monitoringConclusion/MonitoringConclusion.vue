@@ -3733,7 +3733,7 @@
                     alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
-                    91
+                    94
                   </h2>
                   <h3
                     id="text-block-new_enhanced"
@@ -3753,7 +3753,7 @@
                   id="p-container-new_enhanced"
                   class="p-container"
                 >
-                  <p>Measurements of real-time flow levels are critical to the decision makers of the Basin, especially in the River Master’s office during late-summer low flows. To better understand streamflow in the basin and inform release decisions from reservoirs, 34 new or enhanced stream gages have been installed the last three years, each housing delicate monitoring equipment that is collecting data all day, every day.</p>
+                  <p>Measurements of real-time flow levels are critical to the decision makers of the Basin, especially in the River Master’s office during late-summer low flows. To better understand streamflow in the basin and inform release decisions from reservoirs, 94 new or enhanced stream gages have been installed the last three years, each housing delicate monitoring equipment that is collecting data all day, every day.</p>
                   <p>Not only can scientists receive near real-time measurements from the field with minimal delay, technicians can also change the timing and duration of data collection from a remote location, which allows for good data collection even during extreme weather events.</p>
                 </div>
               </div>
@@ -3768,7 +3768,7 @@
                     alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
-                    59
+                    62
                   </h2>
                   <h3
                     id="text-block-salinity"
@@ -3789,7 +3789,7 @@
                     id="p-container-salinity"
                     class="p-container"
                   >
-                    <p>Specific conductivity sensors measure a variable related to salinity – the ability of the water to conduct electricity – and relationships between conductivity and salinity can be used to provide a picture of salt concentration in the water in 56 new locations in the Basin.</p>
+                    <p>Specific conductivity sensors measure a variable related to salinity – the ability of the water to conduct electricity – and relationships between conductivity and salinity can be used to provide a picture of salt concentration in the water in 62 new locations in the Basin.</p>
                   </div>
                 </div>
               </div>
@@ -3804,7 +3804,7 @@
                     alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
-                    85
+                    92
                   </h2>
                   <h3
                     id="text-block-temp"
@@ -3825,49 +3825,12 @@
                     id="p-container-temp"
                     class="p-container"
                   >
-                    <p>Water temperature is a key factor in the health of many aquatic organisms, and better, broader, and faster delivery of water temperature data can help inform reservoir releases and help anglers decide when to fish. New temperature sensors were added to 98 locations in the Basin.</p>
+                    <p>Water temperature is a key factor in the health of many aquatic organisms, and better, broader, and faster delivery of water temperature data can help inform reservoir releases and help anglers decide when to fish. New temperature sensors were added to 92 locations in the Basin.</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="scrolly-chunk">
-              <div class="number-cloud-title-container text-chunk">
-                <div class="subtext-cloud-number-container">
-                  <img
-                    id="number-cloud-cameras"
-                    class="cloud-as-number-backing"
-                    src="@/assets/monitoring/images/orangeCircle1.png"
-                    alt="Colorful background with watercolor texture"
-                  >
-                  <h2 class="monitoring-location-number">
-                    8
-                  </h2>
-                  <h3
-                    id="text-block-cameras"
-                    v-observe-visibility="{
-                      callback: visibilityChanged,
-                      intersection: {
-                        rootMargin: '-20% 0% -50% 0%',
-                        threshold: 0
-                      }
-                    }"
-                    class="monitoring-title"
-                  >
-                    Cameras
-                  </h3>
-                </div>
-                <div class="subtext-text-container">
-                  <div
-                    id="p-container-cameras"
-                    class="p-container"
-                  >
-                    <p id="p-cameras">
-                      Eight new cameras that are connected to a near real-time image delivery system were installed in various strategic locations in the DRB. These cameras open up the potential for new realms of science and data processing for flow measurement, and support USGS visually sharing the dynamic lives of rivers and streams.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
             <div class="scrolly-chunk">
               <div class="number-cloud-title-container text-chunk">
                 <div class="subtext-cloud-number-container">
@@ -3903,6 +3866,9 @@
                     class="p-container"
                   >
                     <p>USGS field staff collect water-quality data using an autonomous underwater vehicle (AUV) - a programmable underwater robot. The AUV’s back-and-forth scanning of the lower waters of the Basin provides data that can be used to build maps of how water quality changes through the 3D space of the Delaware Bay.</p>
+                    <p id="p-cameras">
+                      In addition, new cameras that are connected to a near real-time image delivery system were installed at 9 strategic locations in the DRB. These cameras open up the potential for new realms of science and data processing for flow measurement, and support USGS visually sharing the dynamic lives of rivers and streams.
+                    </p>
                   </div>
                 </div>
               </div>
