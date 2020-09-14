@@ -4496,7 +4496,7 @@ fill:#f8f8f8;
 // Image Container
 
 #image-container {
-  align-self: center;
+  vertical-align: middle;
   object-fit: contain;
   height: 100vh;
   max-width: auto;
@@ -4504,6 +4504,7 @@ fill:#f8f8f8;
   display: block;
   z-index: -1;
   top: 0;
+
   }
 
   @media only screen and (max-width: 992px) {
