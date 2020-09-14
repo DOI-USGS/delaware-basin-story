@@ -3867,7 +3867,7 @@
                   >
                     <p>USGS field staff collect water-quality data using an autonomous underwater vehicle (AUV) - a programmable underwater robot. The AUV’s back-and-forth scanning of the lower waters of the Basin provides data that can be used to build maps of how water quality changes through the 3D space of the Delaware Bay.</p>
                     <p id="p-cameras">
-                      In addition, new cameras that are connected to a near real-time image delivery system were installed at 9 strategic locations in the DRB. These cameras open up the potential for new realms of science and data processing for flow measurement, and support USGS visually sharing the dynamic lives of rivers and streams.
+                      In addition, sensors with cameras for a near real-time image delivery system were installed at 9 strategic locations in the DRB. These cameras open up the potential for new realms of science and data processing for flow measurement, and support USGS visually sharing the dynamic lives of rivers and streams.
                     </p>
                   </div>
                 </div>
@@ -3948,6 +3948,7 @@ export default {
             break;
           case 'r-d':
             this.isShowingEcomapper = true;
+            this.isShowingCamerasLocations = true;
             break;
           case 'intro':
             this.isShowingCity = true;
@@ -3980,6 +3981,9 @@ export default {
             break;
           case 'intro':
             this.isShowingAllLocations = false;
+            break;
+          case 'r-d':
+            this.isShowingCamerasLocations = false;
             break;
           default:
             break;
