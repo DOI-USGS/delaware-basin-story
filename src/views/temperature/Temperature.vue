@@ -8,9 +8,9 @@
       :image="titleBackingImage"
     />
     <div class="text-content">
-      <p>Water temperature is water-quality measure that is closely linked to the health of aquatic organisms.  Some habitats exist only when water remains within a certain temperature ranges.  When the water temperature exceeds a certain threshold, the heat can make organisms more or less susceptible to diseases or mess with a species’ reproductive cycle.</p>
-      <p>In the Basin, there are many different thermal habitats that support diverse, vibrant communities of aquatic life. Decisionmakers in the Basin need to know what species live where, what kinds of water temperature they prefer, and how their management decisions could impact those species.</p>
-      <p>Some factors that modify temperature – like weather and climate – cannot be controlled by decisionmakers in the Basin.  Other factors – like reservoir releases and land-use – can be strategically managed to maintain or modify temperatures in certain river reaches.</p>    
+      <p>Water temperature is closely linked to the health of aquatic organisms.  Some habitats exist only when water remains within a certain temperature range. When the water temperature exceeds that range, the heat can make organisms more or less susceptible to diseases or mess with their reproductive cycles.</p>
+      <p>In the Basin, there are many different thermal habitats that support diverse, vibrant communities of aquatic life. Decisionmakers in the Basin need to know what species live where, what water temperatures those species prefer, and how management decisions could impact those species.</p>
+      <p>Some factors that modify water temperatures – like weather and climate – cannot be controlled by decisionmakers in the Basin.  Other factors – like reservoir releases and land-use – can be strategically managed.</p>    
     </div>
     <div id="header">
       <img
@@ -47,7 +47,7 @@
       <div class="row-fish">
         <div class="text-content">
           <h3 id="trout-h3">
-            Take Brook trout, for example.
+            Brook Trout and Cold Water
           </h3>
         </div>
         <div class="right">
@@ -65,10 +65,10 @@
           </div>
         </div>
         <div class="text-content">
-          <p>Brookies are the only native trout species within the Basin, and they love to live in reaches with <span class="emph">cold water.</span> This particular species is used as an indicator of water quality due to its sensitivity to water temperatures.</p>
-          <p>In the summer, long hot days and low river flows can warm up the river water.  The heat can be lethal for Brookies and other trout species.</p>
-          <p>In the fall, trout wait for a drop in water temperature drop begin their reproductive cycle. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection. The eggs rest there all winter, and require the water to stay cool to develop properly.</p>
-          <p>Warming temperatures can disrupt the reproductive cycle of Brook trout and ultimately its population stability.  If the river water doesn’t cool down enough in the fall, brookies could miss their reproductive cue.  If the waters stay warmer than usual in the winter, their eggs won’t develop properly.  Moreover, USGS research has shown that water temperature can influence their growth rates and disease susceptibility, which can make them poor competitors against non-native species like Brown trout.</p>
+          <p>Brook trout are the only native trout species within the Basin, and they prefer to live in reaches with <span class="emph">cold water.</span> In fact, this particular species is used as an indicator of water quality due to its sensitivity to water temperatures.</p>
+          <p>In the summer, long hot days and low river flows can warm up the river water.  The heat can be lethal for the “brookies” and other trout species.</p>
+          <p>In the fall, trout wait for a drop in water temperature drop begin their reproductive cycle. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection. The eggs rest there all winter, and they require the water to stay cool to develop properly.</p>
+          <p>Warming temperatures can disrupt the reproductive cycle of brook trout and ultimately its population stability.  If the river water doesn’t cool down enough in the fall, brook trout could miss their reproductive cue.  If the waters stay warmer than usual in the winter, their eggs won’t develop properly.  Moreover, USGS research has shown that water temperature can influence their growth rates and disease susceptibility, which can make them poor competitors against non-native species like brown trout.</p>
         </div>
       </div>
       <div
@@ -99,14 +99,14 @@
               <h3 
                 id="mussel-h3" 
               >
-                Now meet the Dwarf Wedgemussel, an endangered species.
+                Dwarf Wedgemussels and Warm Water
               </h3>
             </div>
             <div
               class="text-content"
               style=" margin-top: -5%;"
             >
-              <p>Dwarf wedgemussels have their own preferences for water temperatures and river flow rates, preferences that are distinctly different than brookies. Wedgemussels like to live in <span class="emph">warmer water</span> than the brookies do.</p>
+              <p>Dwarf wedgemussels, an endangered species, have their own preferences for water temperatures and river flow rates, preferences that are distinctly different than brook trout. Wedgemussels like to live in <span class="emph">warmer water</span> than the brookies do.</p>
               <p>That’s why reservoir release decisions are such an important management tool.</p>
               <p>Reservoir water stays cool. When managers release reservoir water, the release sends an extra rush of cool reservoir water downstream.  With the right data and monitoring, managers can make sure that release decisions to maintain enough flow also keep water temperature in a healthy range for the species that live there.</p>
             </div>
@@ -122,12 +122,13 @@
                   viewBox="0 0 1920 483"
                   preserveAspectRatio="xMidYMid meet"
                 >
-                  <g id="substrate-fill">
+                  <g id="sbstrate-fill">
                     <image
                       id="substrate"
                       xlink:href="@/assets/temperature/images/substrate-01.png"
                       href="@/assets/temperature/images/substrate-01.png"
                       alt="sandy colored ground" 
+                      
                       height="100%"
                       width="100%"
                     />
@@ -339,7 +340,7 @@
                         id="bottom-right"
                         xlink:href="@/assets/temperature/images/bottom_right_all-01.png"
                         href="@/assets/temperature/images/bottom_right_all-01.png"
-                        alt="small freshwater mussel"
+                        alt="large freshwater mussel"
                         class="grow"
                         height="100%"
                         width="100%"
@@ -348,7 +349,7 @@
                         id="bottom-left"
                         xlink:href="@/assets/temperature/images/bottom_left_all-01.png"
                         href="@/assets/temperature/images/bottom_left_all-01.png"
-                        alt="small freshwater mussel"
+                        alt="large freshwater mussel"
                         class="grow"
                         height="100%"
                         width="100%"
@@ -367,7 +368,6 @@
 
 <script>
     import SectionTitle from "@/components/SectionTitle";
-
     export default {
         name: 'Temperature',
         components: {
@@ -384,7 +384,6 @@
         },
         methods: {
             visibilityChanged(isVisible, entry) {
-
                 this.isVisible = isVisible;
                 if (isVisible === true) {
                     this.isMusselsTextInView = true;
@@ -401,7 +400,6 @@
 </script>
 
 <style scoped lang="scss">
-
 //structure of mussels section
   #mussels-swap-container {
     height: auto;
@@ -428,11 +426,9 @@
       opacity: 1;
     }
   }
-
 #temperature {
   padding: 2% 2% 2% 2%;
   height: auto;
-
   #header {
     position: sticky;
     width: 90%;
@@ -440,7 +436,6 @@
     display: grid;
     grid-template-columns: 1fr;
     margin: 10em auto 0 auto;
-
     img {
       grid-column: 1;
       grid-row: 1;
@@ -449,15 +444,12 @@
       justify-self: center;
       width: 100%;
     }
-
     #cold-water {
       margin-top: 3%;
     }
-
     #warm-water {
       margin-top: 3%;
     }
-
     .temp-indicator {
       grid-column: 1;
       grid-row: 1;
@@ -468,24 +460,19 @@
       margin: 10% 10% 0 0;
     }
   }
-
   #content {
-
     .temperature-text {
       margin: 0 auto;
       max-width: 60rem;
       padding: 2em;
       margin-top: 5%;
     }
-
     .row-fish {
       width: 100%;
       height: auto;
-
       .right {
         float: right;
         width: 100%;
-
         .image-stack {
           display:grid;
           grid-template-columns: 1;
@@ -493,13 +480,11 @@
           margin-bottom: 5em;
           width: 80%;
           float: right;
-
           #sadfish {
             grid-column: 1 ;
             grid-row: 1;
             z-index: 1;
           }
-
           #happyfish {
             grid-column: 1 / span 12;
             grid-row: 1;
@@ -508,7 +493,6 @@
             -moz-animation: color-change 3s linear 3s forwards infinite;
             -ms-animation: color-change 3s linear 3s forwards infinite;
             -o-animation: color-change 3s linear 3s forwards infinite;
-
           }
           #sadfish:hover {
             animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
@@ -522,7 +506,6 @@
     }
     }
   }
-
        .appear {
               animation: fade-in 4s ease-in 2s forwards 1;
               -webkit-animation: fade-in 4s ease-in 2s forwards 1;
@@ -531,7 +514,6 @@
               -o-animation: fade-in 4s ease-in 2s forwards 1;
           }
          
-
 //fish color change
 @keyframes color-change {
   0%   { opacity:0; }
@@ -540,7 +522,6 @@
   65%  { opacity:1; }
   100% { opacity:0; }
 }
-
 @-o-keyframes color-change {
   0%   { opacity:0; }
   35%  { opacity:1; }
@@ -569,7 +550,6 @@
   65%  { opacity:1; }
   100% { opacity:0; }
 }
-
 @keyframes fade-in {
   0%   { opacity:0; }
   30%   { opacity:0; }
@@ -600,98 +580,75 @@
   75%  { opacity:1; }
   100% { opacity:1; }
 }
-
 // trout animation on hover
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
-
   30%, 50%, 70% {
     transform: translate3d(-4px, 0, 0);
   }
-
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
 }
-
-
 @-o-keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
-
   30%, 50%, 70% {
     transform: translate3d(-4px, 0, 0);
   }
-
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
 }
-
 @-moz-keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
-
   30%, 50%, 70% {
     transform: translate3d(-4px, 0, 0);
   }
-
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
 }
-
 @-ms-keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
-
   30%, 50%, 70% {
     transform: translate3d(-4px, 0, 0);
   }
-
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
 }
-
 @-webkit-keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
-
   30%, 50%, 70% {
     transform: translate3d(-4px, 0, 0);
   }
-
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
 }
-
 </style>
-
