@@ -184,7 +184,7 @@ export default {
   grid-template-columns: 1fr 1fr;
   #sankey-image-container-inner {
     position: sticky;
-    top: 10em;
+    top: 10%;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
