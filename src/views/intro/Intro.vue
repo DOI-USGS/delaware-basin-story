@@ -9,7 +9,7 @@
       :height="windowHeight"
     >
       <svg
-        id="monitoring-locations"
+        id="watercolor"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 1920 1080"
@@ -296,9 +296,10 @@
 </script>
 
 <style scoped lang="scss">
-  #map-container {
+  #watercolor {
+    align-self: center;
+  object-fit: contain;
 
-    overflow: visible;
   }
 /* 
   .parallax {

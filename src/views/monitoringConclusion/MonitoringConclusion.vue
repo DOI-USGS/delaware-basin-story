@@ -4496,15 +4496,14 @@ fill:#f8f8f8;
 // Image Container
 
 #image-container {
-  align-self: start;
-  object-fit: cover;
+  align-self: center;
+  object-fit: contain;
   height: 100vh;
   max-width: auto;
   position: sticky;
   display: block;
-  top: 0;
   z-index: -1;
-
+  top: 0;
   }
 
   @media only screen and (max-width: 992px) {
