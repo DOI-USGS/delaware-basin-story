@@ -31,21 +31,66 @@
           width="100%"
         >
           <defs>
-            <symbol id="DRBgage"  viewBox="0 0 9.74 11.7" width="9.74" height="11.7">
-              <path id="b" d="M9.74,5.94a15.57,15.57,0,0,0-.11-1.81,5.42,5.42,0,0,0-.61-2A3.89,3.89,0,0,0,7.42.55,5.19,5.19,0,0,0,5.17,0a5.26,5.26,0,0,0-4.1,2A4.67,4.67,0,0,0,.15,6.13,8.27,8.27,0,0,0,2,9.5a8.57,8.57,0,0,0,1.46,1.36,4.57,4.57,0,0,0,2,.82,3.8,3.8,0,0,0,2.17-.41A3.62,3.62,0,0,0,9.16,9.71a5.29,5.29,0,0,0,.52-2C9.74,7.08,9.74,6.51,9.74,5.94Z"/>
-                   <path id="w" style="fill: white;" d="M9.41,5.94A2.2,2.2,0,0,1,8.9,7.43a2.85,2.85,0,0,1-1.25.82c-.91.28-1.5.39-2.28.65a5,5,0,0,1-1.27.25,2.21,2.21,0,0,1-1.4-.43,2.34,2.34,0,0,1-.82-1.2,2.71,2.71,0,0,1,.05-1.44,4.27,4.27,0,0,1,1.39-2,3.74,3.74,0,0,1,1.94-.64,4.52,4.52,0,0,1,1,0,7.16,7.16,0,0,1,1.23.19,2.74,2.74,0,0,1,1.29.76A2.34,2.34,0,0,1,9.41,5.94Z"/>
-          </symbol>
-          <symbol id="DRBorange" viewBox="0 0 9.74 11.7" width="9.74" height="11.7">
-            <circle fill="rgb(205, 101, 40)" r="5.4" cx="4" cy="4" />
-          </symbol>
-          <symbol id="DRBblue" viewBox="0 0 9.74 11.7" width="9.74" height="11.7">
-            <circle fill="rgb(37, 86, 109)" r="5.4" cx="4" cy="4" />
-          </symbol>
-          <symbol id="DRBgreen" viewBox="0 0 9.74 11.7" width="9.74" height="11.7">
-            <circle fill="rgb(91, 161, 117)" r="5.4" cx="4" cy="4" />
-          </symbol>
-          <filter id="blurMe">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+            <symbol
+              id="DRBgage"
+              viewBox="0 0 9.74 11.7"
+              width="9.74"
+              height="11.7"
+            >
+              <path
+                id="b"
+                d="M9.74,5.94a15.57,15.57,0,0,0-.11-1.81,5.42,5.42,0,0,0-.61-2A3.89,3.89,0,0,0,7.42.55,5.19,5.19,0,0,0,5.17,0a5.26,5.26,0,0,0-4.1,2A4.67,4.67,0,0,0,.15,6.13,8.27,8.27,0,0,0,2,9.5a8.57,8.57,0,0,0,1.46,1.36,4.57,4.57,0,0,0,2,.82,3.8,3.8,0,0,0,2.17-.41A3.62,3.62,0,0,0,9.16,9.71a5.29,5.29,0,0,0,.52-2C9.74,7.08,9.74,6.51,9.74,5.94Z"
+              />
+              <path
+                id="w"
+                style="fill: white;"
+                d="M9.41,5.94A2.2,2.2,0,0,1,8.9,7.43a2.85,2.85,0,0,1-1.25.82c-.91.28-1.5.39-2.28.65a5,5,0,0,1-1.27.25,2.21,2.21,0,0,1-1.4-.43,2.34,2.34,0,0,1-.82-1.2,2.71,2.71,0,0,1,.05-1.44,4.27,4.27,0,0,1,1.39-2,3.74,3.74,0,0,1,1.94-.64,4.52,4.52,0,0,1,1,0,7.16,7.16,0,0,1,1.23.19,2.74,2.74,0,0,1,1.29.76A2.34,2.34,0,0,1,9.41,5.94Z"
+              />
+            </symbol>
+            <symbol
+              id="DRBorange"
+              viewBox="0 0 9.74 11.7"
+              width="9.74"
+              height="11.7"
+            >
+              <circle
+                fill="rgb(205, 101, 40)"
+                r="5.4"
+                cx="4"
+                cy="4"
+              />
+            </symbol>
+            <symbol
+              id="DRBblue"
+              viewBox="0 0 9.74 11.7"
+              width="9.74"
+              height="11.7"
+            >
+              <circle
+                fill="rgb(37, 86, 109)"
+                r="5.4"
+                cx="4"
+                cy="4"
+              />
+            </symbol>
+            <symbol
+              id="DRBgreen"
+              viewBox="0 0 9.74 11.7"
+              width="9.74"
+              height="11.7"
+            >
+              <circle
+                fill="rgb(91, 161, 117)"
+                r="5.4"
+                cx="4"
+                cy="4"
+              />
+            </symbol>
+            <filter id="blurMe">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="3"
+              />
             </filter>
           </defs>
           <image
@@ -133,70 +178,454 @@
                 v-if="isShowingSalinityLocations"
                 id="salinity"
               >
-                <use width="9.74" height="11.7" transform="translate(294.41 736.11)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(292.73 717.38)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(289.93 731.86)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(292.4 710.35)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(281.31 716.28)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(293.07 718.9)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(348.44 539.88)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(346.86 543.16)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(344.47 541.96)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(344.4 541.98)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(336.9 553.84)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(326.08 554.84)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(316.8 545.57)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(334.51 543.71)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(396.03 706.14)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(369.57 713.87)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(503.91 341.43)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(524.6 307.68)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(447.46 336.51)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(339.16 750.1)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(444.36 671.47)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(460.43 708.84)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(514.77 669.65)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(321.25 781.11)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(321.63 524.57)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(425.59 426.2)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(394.58 426.93)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(398.61 685.62)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(352.04 624.87)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(439.87 637.92)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(497.69 291.77)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(505.78 233.27)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(518.57 215.64)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(385.86 738.24)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(428.38 700.68)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(432 691.73)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(488.42 685.08)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(520.45 704.61)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(463.66 702.44)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(474.43 692.06)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(503.3 646.29)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(417.68 486.83)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(440.52 422.05)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(467.95 374.97)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(501.58 344.29)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(498.77 298.68)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(495.35 256.54)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(503.17 240.29)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(533.37 212.06)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(511.73 232.07)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(527.63 222.33)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(484.98 360.7)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(395.19 245.68)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(408.06 176.48)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(463.48 187.15)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(478.68 190.32)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(491.92 181.33)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(399.2 750.89)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(471.13 679.78)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(498.54 688.25)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(339.43 931.35)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(311.45 747.42)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(307.87 745.62)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(298.24 749.63)" xlink:href="#DRBblue" href="#DRBblue"/>
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(294.41 736.11)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(292.73 717.38)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(289.93 731.86)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(292.4 710.35)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(281.31 716.28)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(293.07 718.9)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(348.44 539.88)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(346.86 543.16)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(344.47 541.96)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(344.4 541.98)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(336.9 553.84)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(326.08 554.84)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(316.8 545.57)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(334.51 543.71)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(396.03 706.14)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(369.57 713.87)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(503.91 341.43)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(524.6 307.68)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(447.46 336.51)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(339.16 750.1)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(444.36 671.47)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(460.43 708.84)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(514.77 669.65)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(321.25 781.11)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(321.63 524.57)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(425.59 426.2)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(394.58 426.93)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(398.61 685.62)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(352.04 624.87)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(439.87 637.92)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(497.69 291.77)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(505.78 233.27)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(518.57 215.64)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(385.86 738.24)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(428.38 700.68)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(432 691.73)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(488.42 685.08)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(520.45 704.61)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(463.66 702.44)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(474.43 692.06)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(503.3 646.29)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(417.68 486.83)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(440.52 422.05)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(467.95 374.97)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(501.58 344.29)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(498.77 298.68)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(495.35 256.54)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(503.17 240.29)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(533.37 212.06)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(511.73 232.07)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(527.63 222.33)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(484.98 360.7)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(395.19 245.68)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(408.06 176.48)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(463.48 187.15)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(478.68 190.32)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(491.92 181.33)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(399.2 750.89)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(471.13 679.78)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(498.54 688.25)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(339.43 931.35)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(311.45 747.42)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(307.87 745.62)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(298.24 749.63)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
               </g>
             </transition>
             <g
@@ -606,100 +1035,664 @@
                 v-if="isShowingTempLocations"
                 id="temp"
               >
-                <use width="9.74" height="11.7" transform="translate(294.41 736.11)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(292.73 717.38)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(289.93 731.86)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(292.4 710.35)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(281.31 716.28)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(293.07 718.9)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(370.81 648.65)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(285.47 693.86)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(413.22 337.88)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(348.44 539.88)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(346.86 543.16)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(344.47 541.96)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(344.4 541.98)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(336.9 553.84)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(326.08 554.84)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(316.8 545.57)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(334.51 543.71)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(396.03 706.14)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(369.57 713.87)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(513.29 249.73)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(503.91 341.43)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(524.6 307.68)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(447.46 336.51)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(429.69 316.01)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(366.61 200.27)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(437.82 197.07)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(448.54 180.89)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(339.16 750.1)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(444.36 671.47)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(460.43 708.84)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(514.77 669.65)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(442.13 823.4)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(321.25 781.11)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(321.63 524.57)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(425.59 426.2)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(394.58 426.93)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(383.63 694.59)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(300.68 599.04)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(398.61 685.62)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(352.04 624.87)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(414.95 674.52)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(439.87 637.92)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(497.69 291.77)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(505.78 233.27)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(518.57 215.64)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(358.29 201.22)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(435.72 227.4)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(436.27 197.61)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(433.67 558.5)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(385.86 738.24)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(428.38 700.68)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(432 691.73)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(488.42 685.08)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(520.45 704.61)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(463.66 702.44)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(474.43 692.06)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(503.3 646.29)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(441.26 593.76)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(398.7 540.46)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(417.68 486.83)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(440.52 422.05)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(467.95 374.97)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(438.34 812.73)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(445.85 342.38)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(390.91 251.92)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(501.58 344.29)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(498.77 298.68)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(495.35 256.54)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(494.78 254.72)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(503.17 240.29)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(533.37 212.06)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(511.73 232.07)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(527.63 222.33)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(423.8 270.44)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(395.19 245.68)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(408.06 176.48)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(464.59 237.33)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(463.48 187.15)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(478.68 190.32)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(491.92 181.33)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(516.53 249)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(349.59 791.8)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(399.2 750.89)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(429.04 674.72)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(471.13 679.78)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(498.54 688.25)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(475.56 634.36)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(402.44 531.02)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(339.43 931.35)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(318.44 732.76)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(311.45 747.42)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(307.87 745.62)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(298.24 749.63)" xlink:href="#DRBgreen" href="#DRBgreen"/>
-    <use width="9.74" height="11.7" transform="translate(301.87 761.67)" xlink:href="#DRBgreen" href="#DRBgreen"/>
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(294.41 736.11)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(292.73 717.38)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(289.93 731.86)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(292.4 710.35)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(281.31 716.28)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(293.07 718.9)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(370.81 648.65)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(285.47 693.86)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(413.22 337.88)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(348.44 539.88)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(346.86 543.16)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(344.47 541.96)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(344.4 541.98)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(336.9 553.84)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(326.08 554.84)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(316.8 545.57)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(334.51 543.71)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(396.03 706.14)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(369.57 713.87)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(513.29 249.73)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(503.91 341.43)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(524.6 307.68)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(447.46 336.51)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(429.69 316.01)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(366.61 200.27)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(437.82 197.07)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(448.54 180.89)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(339.16 750.1)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(444.36 671.47)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(460.43 708.84)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(514.77 669.65)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(442.13 823.4)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(321.25 781.11)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(321.63 524.57)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(425.59 426.2)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(394.58 426.93)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(383.63 694.59)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(300.68 599.04)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(398.61 685.62)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(352.04 624.87)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(414.95 674.52)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(439.87 637.92)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(497.69 291.77)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(505.78 233.27)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(518.57 215.64)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(358.29 201.22)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(435.72 227.4)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(436.27 197.61)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(433.67 558.5)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(385.86 738.24)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(428.38 700.68)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(432 691.73)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(488.42 685.08)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(520.45 704.61)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(463.66 702.44)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(474.43 692.06)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(503.3 646.29)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(441.26 593.76)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(398.7 540.46)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(417.68 486.83)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(440.52 422.05)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(467.95 374.97)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(438.34 812.73)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(445.85 342.38)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(390.91 251.92)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(501.58 344.29)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(498.77 298.68)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(495.35 256.54)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(494.78 254.72)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(503.17 240.29)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(533.37 212.06)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(511.73 232.07)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(527.63 222.33)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(423.8 270.44)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(395.19 245.68)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(408.06 176.48)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(464.59 237.33)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(463.48 187.15)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(478.68 190.32)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(491.92 181.33)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(516.53 249)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(349.59 791.8)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(399.2 750.89)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(429.04 674.72)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(471.13 679.78)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(498.54 688.25)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(475.56 634.36)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(402.44 531.02)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(339.43 931.35)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(318.44 732.76)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(311.45 747.42)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(307.87 745.62)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(298.24 749.63)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(301.87 761.67)"
+                  xlink:href="#DRBgreen"
+                  href="#DRBgreen"
+                />
               </g>
             </transition>
             <g
@@ -782,102 +1775,678 @@
                 v-if="isShowingNewEnhancedLocations"
                 id="new_enhanced"
               >
-                 <use width="9.74" height="11.7" transform="translate(294.41 736.11)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(292.73 717.38)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(292.4 710.35)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(281.31 716.28)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(293.07 718.9)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(407.71 688.87)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(413.22 337.88)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(348.44 539.88)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(346.86 543.16)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(344.47 541.96)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(344.4 541.98)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(336.9 553.84)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(316.8 545.57)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(334.51 543.71)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(396.03 706.14)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(369.57 713.87)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(407.27 690.7)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(513.29 249.73)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(447.46 336.51)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(429.69 316.01)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(366.61 200.27)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(437.82 197.07)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(448.54 180.89)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(339.16 750.1)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(444.36 671.47)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(460.43 708.84)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(321.25 781.11)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(321.63 524.57)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(425.59 426.2)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(394.58 426.93)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(383.63 694.59)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(300.68 599.04)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(326.34 708.02)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(398.61 685.62)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(352.04 624.87)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(414.95 674.52)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(439.87 637.92)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(402.22 336.29)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(505.78 233.27)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(518.57 215.64)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(422.24 271.33)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(358.29 201.22)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(435.72 227.4)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(436.27 197.61)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(433.67 558.5)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(385.86 738.24)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(428.38 700.68)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(432 691.73)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(488.42 685.08)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(520.45 704.61)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(463.66 702.44)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(474.43 692.06)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(503.3 646.29)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(471.6 626.84)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(441.26 593.76)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(420.7 556.38)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(398.7 540.46)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(417.68 486.83)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(440.52 422.05)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(467.95 374.97)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(445.85 342.38)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(390.91 251.92)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(512.56 250.55)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(501.58 344.29)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(498.77 298.68)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(495.35 256.54)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(494.78 254.72)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(503.17 240.29)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(511.73 232.07)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(484.98 360.7)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(474.23 339.73)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(434.63 328.78)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(423.8 270.44)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(395.19 245.68)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(365.92 214.13)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(363.88 197.46)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(408.06 176.48)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(401.91 221.08)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(484.69 184.06)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(464.59 237.33)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(463.48 187.15)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(478.68 190.32)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(491.92 181.33)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(516.53 249)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(349.59 791.8)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(429.04 674.72)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(471.13 679.78)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(498.54 688.25)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(475.56 634.36)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(402.44 531.02)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(339.43 931.35)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(318.44 732.76)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(311.45 747.42)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(307.87 745.62)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(298.24 749.63)" xlink:href="#DRBorange" href="#DRBorange"/>
-    <use width="9.74" height="11.7" transform="translate(301.87 761.67)" xlink:href="#DRBorange" href="#DRBorange"/>
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(294.41 736.11)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(292.73 717.38)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(292.4 710.35)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(281.31 716.28)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(293.07 718.9)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(407.71 688.87)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(413.22 337.88)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(348.44 539.88)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(346.86 543.16)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(344.47 541.96)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(344.4 541.98)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(336.9 553.84)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(316.8 545.57)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(334.51 543.71)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(396.03 706.14)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(369.57 713.87)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(407.27 690.7)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(513.29 249.73)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(447.46 336.51)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(429.69 316.01)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(366.61 200.27)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(437.82 197.07)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(448.54 180.89)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(339.16 750.1)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(444.36 671.47)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(460.43 708.84)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(321.25 781.11)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(321.63 524.57)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(425.59 426.2)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(394.58 426.93)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(383.63 694.59)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(300.68 599.04)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(326.34 708.02)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(398.61 685.62)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(352.04 624.87)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(414.95 674.52)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(439.87 637.92)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(402.22 336.29)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(505.78 233.27)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(518.57 215.64)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(422.24 271.33)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(358.29 201.22)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(435.72 227.4)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(436.27 197.61)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(433.67 558.5)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(385.86 738.24)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(428.38 700.68)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(432 691.73)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(488.42 685.08)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(520.45 704.61)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(463.66 702.44)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(474.43 692.06)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(503.3 646.29)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(471.6 626.84)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(441.26 593.76)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(420.7 556.38)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(398.7 540.46)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(417.68 486.83)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(440.52 422.05)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(467.95 374.97)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(445.85 342.38)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(390.91 251.92)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(512.56 250.55)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(501.58 344.29)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(498.77 298.68)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(495.35 256.54)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(494.78 254.72)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(503.17 240.29)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(511.73 232.07)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(484.98 360.7)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(474.23 339.73)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(434.63 328.78)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(423.8 270.44)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(395.19 245.68)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(365.92 214.13)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(363.88 197.46)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(408.06 176.48)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(401.91 221.08)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(484.69 184.06)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(464.59 237.33)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(463.48 187.15)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(478.68 190.32)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(491.92 181.33)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(516.53 249)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(349.59 791.8)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(429.04 674.72)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(471.13 679.78)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(498.54 688.25)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(475.56 634.36)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(402.44 531.02)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(339.43 931.35)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(318.44 732.76)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(311.45 747.42)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(307.87 745.62)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(298.24 749.63)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(301.87 761.67)"
+                  xlink:href="#DRBorange"
+                  href="#DRBorange"
+                />
               </g>
             </transition>
             <transition name="fade">
@@ -885,15 +2454,69 @@
                 v-if="isShowingCamerasLocations"
                 id="cameras"
               >
-               <use width="9.74" height="11.7" transform="translate(407.71 688.87)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(407.27 690.7)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(326.34 708.02)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(439.87 637.92)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(471.6 626.84)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(417.68 486.83)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(501.58 344.29)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(484.98 360.7)" xlink:href="#DRBblue" href="#DRBblue"/>
-    <use width="9.74" height="11.7" transform="translate(365.92 214.13)" xlink:href="#DRBblue" href="#DRBblue"/>
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(407.71 688.87)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(407.27 690.7)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(326.34 708.02)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(439.87 637.92)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(471.6 626.84)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(417.68 486.83)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(501.58 344.29)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(484.98 360.7)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(365.92 214.13)"
+                  xlink:href="#DRBblue"
+                  href="#DRBblue"
+                />
               </g>
             </transition>
             <transition name="fade">
@@ -901,115 +2524,769 @@
                 v-if="isShowingAllLocations"
                 id="all"
               >
-                <use width="9.74" height="11.7" transform="translate(294.41 736.11) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(292.73 717.38) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(289.93 731.86) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(292.4 710.35) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(281.31 716.28) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(293.07 718.9) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(407.71 688.87) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(370.81 648.65) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(285.47 693.86) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(413.22 337.88) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(348.44 539.88) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(346.86 543.16) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(344.47 541.96) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(344.4 541.98) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(336.9 553.84) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(326.08 554.84) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(316.8 545.57) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(334.51 543.71) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(396.03 706.14) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(369.57 713.87) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(407.27 690.7) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(513.29 249.73) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(503.91 341.43) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(524.6 307.68) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(447.46 336.51) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(429.69 316.01) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(366.61 200.27) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(437.82 197.07) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(448.54 180.89) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(339.16 750.1) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(444.36 671.47) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(460.43 708.84) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(514.77 669.65) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(442.13 823.4) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(321.25 781.11) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(321.63 524.57) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(425.59 426.2) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(394.58 426.93) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(383.63 694.59) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(300.68 599.04) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(326.34 708.02) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(398.61 685.62) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(352.04 624.87) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(414.95 674.52) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(439.87 637.92) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(402.22 336.29) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(497.69 291.77) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(505.78 233.27) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(518.57 215.64) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(422.24 271.33) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(358.29 201.22) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(435.72 227.4) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(436.27 197.61) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(433.67 558.5) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(385.86 738.24) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(428.38 700.68) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(432 691.73) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(488.42 685.08) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(520.45 704.61) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(463.66 702.44) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(474.43 692.06) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(503.3 646.29) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(471.6 626.84) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(441.26 593.76) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(420.7 556.38) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(398.7 540.46) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(417.68 486.83) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(440.52 422.05) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(467.95 374.97) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(438.34 812.73) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(445.85 342.38) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(390.91 251.92) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(512.56 250.55) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(501.58 344.29) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(498.77 298.68) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(495.35 256.54) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(494.78 254.72) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(503.17 240.29) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(533.37 212.06) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(511.73 232.07) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(527.63 222.33) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(484.98 360.7) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(474.23 339.73) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(434.63 328.78) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(423.8 270.44) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(395.19 245.68) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(365.92 214.13) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(363.88 197.46) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(408.06 176.48) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(401.91 221.08) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(484.69 184.06) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(464.59 237.33) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(463.48 187.15) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(478.68 190.32) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(491.92 181.33) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(516.53 249) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(349.59 791.8) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(399.2 750.89) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(429.04 674.72) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(471.13 679.78) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(498.54 688.25) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(475.56 634.36) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(402.44 531.02) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(339.43 931.35) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(318.44 732.76) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(311.45 747.42) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(307.87 745.62) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(298.24 749.63) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
-    <use width="9.74" height="11.7" transform="translate(301.87 761.67) scale(0.7, 0.7)" xlink:href="#DRBgage" href="#DRBgage"/>
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(294.41 736.11) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(292.73 717.38) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(289.93 731.86) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(292.4 710.35) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(281.31 716.28) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(293.07 718.9) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(407.71 688.87) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(370.81 648.65) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(285.47 693.86) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(413.22 337.88) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(348.44 539.88) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(346.86 543.16) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(344.47 541.96) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(344.4 541.98) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(336.9 553.84) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(326.08 554.84) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(316.8 545.57) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(334.51 543.71) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(396.03 706.14) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(369.57 713.87) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(407.27 690.7) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(513.29 249.73) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(503.91 341.43) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(524.6 307.68) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(447.46 336.51) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(429.69 316.01) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(366.61 200.27) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(437.82 197.07) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(448.54 180.89) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(339.16 750.1) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(444.36 671.47) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(460.43 708.84) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(514.77 669.65) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(442.13 823.4) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(321.25 781.11) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(321.63 524.57) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(425.59 426.2) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(394.58 426.93) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(383.63 694.59) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(300.68 599.04) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(326.34 708.02) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(398.61 685.62) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(352.04 624.87) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(414.95 674.52) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(439.87 637.92) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(402.22 336.29) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(497.69 291.77) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(505.78 233.27) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(518.57 215.64) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(422.24 271.33) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(358.29 201.22) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(435.72 227.4) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(436.27 197.61) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(433.67 558.5) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(385.86 738.24) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(428.38 700.68) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(432 691.73) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(488.42 685.08) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(520.45 704.61) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(463.66 702.44) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(474.43 692.06) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(503.3 646.29) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(471.6 626.84) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(441.26 593.76) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(420.7 556.38) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(398.7 540.46) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(417.68 486.83) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(440.52 422.05) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(467.95 374.97) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(438.34 812.73) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(445.85 342.38) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(390.91 251.92) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(512.56 250.55) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(501.58 344.29) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(498.77 298.68) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(495.35 256.54) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(494.78 254.72) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(503.17 240.29) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(533.37 212.06) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(511.73 232.07) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(527.63 222.33) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(484.98 360.7) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(474.23 339.73) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(434.63 328.78) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(423.8 270.44) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(395.19 245.68) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(365.92 214.13) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(363.88 197.46) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(408.06 176.48) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(401.91 221.08) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(484.69 184.06) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(464.59 237.33) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(463.48 187.15) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(478.68 190.32) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(491.92 181.33) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(516.53 249) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(349.59 791.8) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(399.2 750.89) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(429.04 674.72) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(471.13 679.78) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(498.54 688.25) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(475.56 634.36) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(402.44 531.02) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(339.43 931.35) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(318.44 732.76) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(311.45 747.42) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(307.87 745.62) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(298.24 749.63) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
+                <use
+                  width="9.74"
+                  height="11.7"
+                  transform="translate(301.87 761.67) scale(0.7, 0.7)"
+                  xlink:href="#DRBgage"
+                  href="#DRBgage"
+                />
               </g>
             </transition>
             <g

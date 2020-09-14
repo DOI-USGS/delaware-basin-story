@@ -4,9 +4,10 @@
       id="intro-banner-container"
       class="parallax"
       width="auto"
+    /><div
+      id="map-container" 
+      :height="windowHeight"
     >
-    </div><div id="map-container" 
-      :height="windowHeight">
       <svg
         id="monitoring-locations"
         xmlns="http://www.w3.org/2000/svg"

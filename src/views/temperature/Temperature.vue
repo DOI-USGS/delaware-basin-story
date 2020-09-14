@@ -343,7 +343,6 @@
                         class="grow"
                         height="100%"
                         width="100%"
-                        
                       />
                       <image
                         id="bottom-left"
