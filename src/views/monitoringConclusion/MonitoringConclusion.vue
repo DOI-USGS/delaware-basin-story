@@ -31,22 +31,10 @@
           width="100%"
         >
           <defs>
-            <symbol
-              id="DRBgage"
-              viewBox="0 0 11.88 14.24"
-              width="10px"
-              height="14px"
-            >
-              <path
-                id="b"
-                d="M11.88,7a18.89,18.89,0,0,1-.13,2.2A6.71,6.71,0,0,1,11,11.63a4.79,4.79,0,0,1-1.95,1.94,6.36,6.36,0,0,1-2.74.67,6.42,6.42,0,0,1-5-2.41A5.76,5.76,0,0,1,.12,9.37a5.83,5.83,0,0,1,.06-2.6A10.13,10.13,0,0,1,2.41,2.66,10.12,10.12,0,0,1,4.19,1,5.55,5.55,0,0,1,6.62,0,4.64,4.64,0,0,1,9.27.5a4.36,4.36,0,0,1,1.9,1.9,6.51,6.51,0,0,1,.64,2.42C11.88,5.6,11.88,6.3,11.88,7Z"
-              />
-              <path
-                id="w"
-                d="M11.48,7a2.72,2.72,0,0,0-.62-1.82,3.45,3.45,0,0,0-1.53-1c-1.11-.34-1.83-.48-2.78-.79A5.84,5.84,0,0,0,5,3.08,2.69,2.69,0,0,0,3.3,3.6a2.75,2.75,0,0,0-1,1.47,3.25,3.25,0,0,0,.05,1.75,5.23,5.23,0,0,0,1.7,2.39A4.57,4.57,0,0,0,6.42,10a6,6,0,0,0,1.27,0,8.46,8.46,0,0,0,1.49-.24,3.38,3.38,0,0,0,1.58-.92A2.91,2.91,0,0,0,11.48,7Z"
-                style="fill: #f4f7f9"
-              />
-            </symbol>
+            <symbol id="DRBgage" data-name="DRBgage" viewBox="0 0 9.74 11.7" width="9.74" height="11.7">
+              <path id="b" d="M9.74,5.94a15.57,15.57,0,0,0-.11-1.81,5.42,5.42,0,0,0-.61-2A3.89,3.89,0,0,0,7.42.55,5.19,5.19,0,0,0,5.17,0a5.26,5.26,0,0,0-4.1,2A4.67,4.67,0,0,0,.15,6.13,8.27,8.27,0,0,0,2,9.5a8.57,8.57,0,0,0,1.46,1.36,4.57,4.57,0,0,0,2,.82,3.8,3.8,0,0,0,2.17-.41A3.62,3.62,0,0,0,9.16,9.71a5.29,5.29,0,0,0,.52-2C9.74,7.08,9.74,6.51,9.74,5.94Z"/>
+                   <path id="w" style="fill: white;" d="M9.41,5.94A2.2,2.2,0,0,1,8.9,7.43a2.85,2.85,0,0,1-1.25.82c-.91.28-1.5.39-2.28.65a5,5,0,0,1-1.27.25,2.21,2.21,0,0,1-1.4-.43,2.34,2.34,0,0,1-.82-1.2,2.71,2.71,0,0,1,.05-1.44,4.27,4.27,0,0,1,1.39-2,3.74,3.74,0,0,1,1.94-.64,4.52,4.52,0,0,1,1,0,7.16,7.16,0,0,1,1.23.19,2.74,2.74,0,0,1,1.29.76A2.34,2.34,0,0,1,9.41,5.94Z"/>
+          </symbol>
           </defs>
           <image
             id="DRB-land-water"
@@ -133,398 +121,69 @@
                 v-if="isShowingSalinityLocations"
                 id="salinity"
               >
-                <use
-                  transform="translate(348.96 623.46)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(291.68 734.03)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(290 715.42)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(287.23 729.82)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(289.67 708.43)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(278.67 714.33)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(290.35 716.93)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(345.39 538.99)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(343.81 542.25)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(341.43 541.05)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(341.38 541.09)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(333.91 552.87)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(323.16 553.86)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(313.92 544.66)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(331.53 542.8)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(392.69 704.25)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(366.39 711.93)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(336.16 747.95)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(440.72 669.79)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(318.36 778.77)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(318.74 523.77)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(422.07 426)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(391.25 426.73)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(395.24 683.87)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(436.25 636.46)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(493.73 292.37)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(501.77 234.22)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(514.48 216.69)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(382.58 736.17)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(424.85 698.83)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(428.43 689.94)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(484.53 683.31)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(516.37 702.73)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(459.91 700.58)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(436.91 421.86)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(464.18 375.08)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(497.6 344.59)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(494.81 299.24)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(491.41 257.36)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(499.17 241.2)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(529.2 213.14)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(507.69 233.04)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(523.49 223.35)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(481.09 360.9)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(391.84 246.56)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(404.65 177.78)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(459.74 188.39)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(474.84 191.54)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(487.99 182.6)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(395.83 748.73)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(467.35 678.06)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(494.58 686.47)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(336.42 928.11)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(308.6 745.28)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(305.05 743.5)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(295.48 747.49)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
+                <use width="9.74" height="11.7" transform="translate(290.88 715.29)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(288.09 729.72)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(290.55 708.28)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(279.5 714.19)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(291.23 716.8)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(346.43 538.32)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(344.85 541.59)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(342.47 540.39)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(342.4 540.41)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(334.92 552.24)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(324.14 553.23)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(314.88 543.99)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(509.23 231.43)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(525.08 221.73)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(482.56 359.68)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(393.04 245)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(405.87 176.01)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(461.13 186.64)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(476.28 189.81)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(489.48 180.84)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(397.03 748.69)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(468.75 677.8)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(496.07 686.25)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(337.44 928.61)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(309.55 745.24)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(305.98 743.45)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(296.37 747.44)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(512.26 667.7)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(319.32 778.83)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(319.7 523.06)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(423.35 424.98)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(392.43 425.71)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(396.45 683.63)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(350.02 623.05)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(437.58 636.07)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(495.23 290.96)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(503.29 232.63)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(516.04 215.05)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(383.74 736.09)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(426.12 698.64)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(429.73 689.71)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(485.99 683.08)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(517.93 702.55)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(461.3 700.4)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(472.04 690.05)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(500.82 644.4)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(415.46 485.43)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(438.23 420.84)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(465.58 373.9)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(499.11 343.32)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(496.31 297.84)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(492.9 255.83)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(500.69 239.63)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(530.8 211.49)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(332.54 542.14)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(393.88 704.08)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(367.5 711.79)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(501.43 340.46)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(522.06 306.82)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(445.15 335.56)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(337.18 747.91)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(442.06 669.51)" xlink:href="#DRBgage" href="#DRBgage"/>
+    <use width="9.74" height="11.7" transform="translate(458.08 706.77)" xlink:href="#DRBgage" href="#DRBgage"/>
               </g>
             </transition>
             <g
@@ -934,615 +593,100 @@
                 v-if="isShowingTempLocations"
                 id="temp"
               >
-                <use
-                  transform="translate(291.68 734.03)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(290 715.42)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(287.23 729.82)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(289.67 708.43)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(278.67 714.33)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(290.35 716.93)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(367.62 647.1)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(282.79 692.05)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(409.76 338.21)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(345.39 538.99)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(343.81 542.25)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(341.43 541.05)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(341.38 541.09)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(333.91 552.87)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(323.16 553.86)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(313.92 544.66)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(331.53 542.8)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(392.69 704.25)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(366.39 711.93)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(509.25 250.58)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(363.45 201.42)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(336.16 747.95)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(440.72 669.79)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(318.36 778.77)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(318.74 523.77)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(422.07 426)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(391.25 426.73)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(380.37 692.78)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(297.91 597.8)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(395.24 683.87)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(348.96 623.46)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(411.5 672.83)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(436.25 636.46)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(493.73 292.37)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(501.77 234.22)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(514.48 216.69)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(355.18 202.37)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(432.13 228.39)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(432.68 198.77)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(430.1 557.5)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(382.58 736.17)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(424.85 698.83)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(428.43 689.94)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(484.53 683.31)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(516.37 702.73)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(459.91 700.58)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(470.63 690.27)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(499.31 644.76)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(437.64 592.55)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(395.34 539.56)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(414.2 486.26)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(436.91 421.86)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(464.18 375.08)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(434.74 810.2)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(442.2 342.68)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(387.59 252.77)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(497.6 344.59)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(497.6 344.59)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(494.81 299.24)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(491.41 257.36)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(491.41 257.36)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(490.85 255.56)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(499.17 241.2)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(529.2 213.14)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(507.69 233.04)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(523.49 223.35)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(420.29 271.17)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(391.84 246.56)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(404.65 177.78)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(460.85 238.27)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(459.74 188.39)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(474.84 191.54)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(487.99 182.6)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(512.47 249.87)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(346.51 789.4)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(395.83 748.73)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(425.5 673.02)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(467.35 678.06)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(494.58 686.47)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(471.73 632.91)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(399.05 530.2)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(336.42 928.11)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(315.57 730.71)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(308.6 745.28)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(305.05 743.5)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(295.48 747.49)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(299.1 759.45)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
+                <use width="9.74" height="11.7" transform="translate(292.56 733.96)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(290.88 715.29)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(288.09 729.72)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(290.55 708.28)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(279.5 714.19)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(291.23 716.8)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(368.73 646.76)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(283.64 691.84)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(411.01 336.93)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(346.43 538.32)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(344.85 541.59)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(342.47 540.39)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(342.4 540.41)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(334.92 552.24)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(324.14 553.23)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(314.88 543.99)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(332.54 542.14)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(393.88 704.08)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(367.5 711.79)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(510.79 249.03)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(501.43 340.46)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(522.06 306.82)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(445.15 335.56)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(427.43 315.12)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(364.54 199.73)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(435.54 196.54)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(446.23 180.4)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(337.18 747.91)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(442.06 669.51)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(458.08 706.77)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(512.26 667.7)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(439.84 820.99)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(319.32 778.83)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(319.7 523.06)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(423.35 424.98)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(392.43 425.71)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(381.51 692.57)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(298.81 597.3)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(396.45 683.63)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(350.02 623.05)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(412.74 672.56)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(437.58 636.07)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(495.23 290.96)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(503.29 232.63)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(516.04 215.05)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(356.25 200.67)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(433.44 226.77)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(433.99 197.07)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(431.4 556.89)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(383.74 736.09)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(426.12 698.64)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(429.73 689.71)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(485.99 683.08)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(517.93 702.55)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(461.3 700.4)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(472.04 690.05)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(500.82 644.4)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(438.97 592.03)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(396.53 538.9)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(415.46 485.43)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(438.23 420.84)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(465.58 373.9)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(436.05 810.35)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(443.55 341.41)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(388.77 251.23)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(499.11 343.32)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(496.31 297.84)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(492.9 255.83)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(492.33 254.02)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(500.69 239.63)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(530.8 211.49)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(509.23 231.43)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(525.08 221.73)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(421.56 269.69)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(393.04 245)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(405.87 176.01)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(462.23 236.68)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(461.13 186.64)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(476.28 189.81)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(489.48 180.84)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(514.02 248.31)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(347.57 789.49)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(397.03 748.69)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(426.79 672.75)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(468.75 677.8)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(496.07 686.25)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(473.17 632.52)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(400.26 529.49)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(337.44 928.61)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(316.52 730.62)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(309.55 745.24)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(305.98 743.45)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(296.37 747.44)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(299.99 759.44)" xlink:href="#DRBgage" href="#DRBgage" />
               </g>
             </transition>
             <g
@@ -1625,734 +769,102 @@
                 v-if="isShowingNewEnhancedLocations"
                 id="new_enhanced"
               >
-                <use
-                  transform="translate(299.1 759.45)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(291.68 734.03)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(290 715.42)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(289.67 708.43)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(278.67 714.33)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(290.35 716.93)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(404.29 687.08)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(409.76 338.21)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(345.39 538.99)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(343.81 542.25)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(341.43 541.05)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(341.38 541.09)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(333.91 552.87)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(313.92 544.66)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(331.53 542.8)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(392.69 704.25)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(366.39 711.93)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(403.85 688.91)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(509.25 250.58)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(363.45 201.42)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(336.16 747.95)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(440.72 669.79)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(318.36 778.77)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(318.74 523.77)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(422.07 426)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(391.25 426.73)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(380.37 692.78)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(297.91 597.8)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(323.41 706.13)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(395.24 683.87)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(348.96 623.46)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(411.5 672.83)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(436.25 636.46)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(398.83 336.63)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(501.77 234.22)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(501.77 234.22)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(514.48 216.69)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(418.74 272.06)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(418.74 272.06)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(355.18 202.37)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(432.13 228.39)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(432.68 198.77)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(430.1 557.5)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(382.58 736.17)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(424.85 698.83)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(428.43 689.94)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(484.53 683.31)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(516.37 702.73)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(459.91 700.58)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(470.63 690.27)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(499.31 644.76)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(467.8 625.44)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(437.64 592.55)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(417.22 555.39)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(395.34 539.56)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(414.2 486.26)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(436.91 421.86)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(464.18 375.08)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(464.18 375.08)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(442.2 342.68)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(387.59 252.77)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(508.52 251.4)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(497.6 344.59)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(497.6 344.59)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(494.81 299.24)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(491.41 257.36)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(491.41 257.36)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(490.85 255.56)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(499.17 241.2)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(499.17 241.2)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(507.69 233.04)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(481.09 360.9)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(481.09 360.9)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(470.42 340.04)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(431.05 329.16)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(420.29 271.17)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(391.84 246.56)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(362.77 215.2)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(360.73 198.65)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(404.65 177.78)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(404.65 177.78)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(398.53 222.1)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(480.82 185.32)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(460.85 238.27)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(459.74 188.39)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(474.84 191.54)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(487.99 182.6)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(487.99 182.6)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(512.47 249.87)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(346.51 789.4)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(346.51 789.4)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(425.5 673.02)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(425.5 673.02)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(467.35 678.06)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(494.58 686.47)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(471.73 632.91)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(471.73 632.91)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(399.05 530.2)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(336.42 928.11)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(315.57 730.71)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(308.6 745.28)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(305.05 743.5)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(295.48 747.49)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(295.48 747.49)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
+                 <use width="9.74" height="11.7" transform="translate(292.56 733.96)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(290.88 715.29)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(290.55 708.28)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(279.5 714.19)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(291.23 716.8)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(405.52 686.86)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(411.01 336.93)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(346.43 538.32)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(344.85 541.59)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(342.47 540.39)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(342.4 540.41)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(334.92 552.24)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(314.88 543.99)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(332.54 542.14)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(393.88 704.08)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(367.5 711.79)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(405.08 688.68)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(510.79 249.03)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(445.15 335.56)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(427.43 315.12)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(364.54 199.73)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(435.54 196.54)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(446.23 180.4)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(337.18 747.91)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(442.06 669.51)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(458.08 706.77)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(319.32 778.83)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(319.7 523.06)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(423.35 424.98)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(392.43 425.71)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(381.51 692.57)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(298.81 597.3)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(324.39 705.95)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(396.45 683.63)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(350.02 623.05)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(412.74 672.56)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(437.58 636.07)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(400.04 335.33)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(503.29 232.63)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(516.04 215.05)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(420 270.58)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(356.25 200.67)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(433.44 226.77)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(433.99 197.07)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(431.4 556.89)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(383.74 736.09)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(426.12 698.64)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(429.73 689.71)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(485.99 683.08)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(517.93 702.55)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(461.3 700.4)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(472.04 690.05)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(500.82 644.4)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(469.22 625.02)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(438.97 592.03)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(418.47 554.77)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(396.53 538.9)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(415.46 485.43)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(438.23 420.84)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(465.58 373.9)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(443.55 341.41)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(388.77 251.23)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(510.06 249.85)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(499.11 343.32)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(496.31 297.84)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(492.9 255.83)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(492.33 254.02)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(500.69 239.63)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(509.23 231.43)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(482.56 359.68)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(471.84 338.77)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(432.36 327.85)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(421.56 269.69)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(393.04 245)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(363.86 213.54)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(361.82 196.93)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(405.87 176.01)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(399.73 220.47)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(482.27 183.57)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(462.23 236.68)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(461.13 186.64)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(476.28 189.81)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(489.48 180.84)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(514.02 248.31)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(347.57 789.49)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(426.79 672.75)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(468.75 677.8)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(496.07 686.25)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(473.17 632.52)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(400.26 529.49)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(337.44 928.61)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(316.52 730.62)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(309.55 745.24)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(305.98 743.45)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(296.37 747.44)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(299.99 759.44)" xlink:href="#DRBgage" href="#DRBgage" />
               </g>
             </transition>
             <transition name="fade">
@@ -2360,69 +872,15 @@
                 v-if="isShowingCamerasLocations"
                 id="cameras"
               >
-                <use
-                  transform="translate(404.29 687.08)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(403.85 688.91)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(323.41 706.13)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(436.25 636.46)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(467.8 625.44)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(414.2 486.26)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(497.6 344.59)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(481.09 360.9)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(362.77 215.2)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
+                <use width="9.74" height="11.7" transform="translate(405.52 686.86)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(405.08 688.68)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(324.39 705.95)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(437.58 636.07)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(469.22 625.02)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(415.46 485.43)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(499.11 343.32)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(482.56 359.68)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(363.86 213.54)" xlink:href="#DRBgage" href="#DRBgage" />
               </g>
             </transition>
             <transition name="fade">
@@ -2430,797 +888,119 @@
                 v-if="isShowingAllLocations"
                 id="all"
               >
-                <use
-                  transform="translate(367.62 647.1)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(282.79 692.05)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(434.74 810.2)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(287.23 729.82)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(323.16 553.86)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(493.73 292.37)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(529.2 213.14)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(523.49 223.35)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(395.83 748.73)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(291.68 734.03)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(290 715.42)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(289.67 708.43)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(278.67 714.33)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(290.35 716.93)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(404.29 687.08)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(409.76 338.21)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(345.39 538.99)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(343.81 542.25)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(341.43 541.05)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(341.38 541.09)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(333.91 552.87)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(313.92 544.66)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(331.53 542.8)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(392.69 704.25)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(366.39 711.93)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(403.85 688.91)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(509.25 250.58)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(363.45 201.42)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(336.16 747.95)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(440.72 669.79)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(318.36 778.77)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(318.74 523.77)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(422.07 426)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(391.25 426.73)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(380.37 692.78)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(297.91 597.8)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(323.41 706.13)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(395.24 683.87)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(348.96 623.46)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(411.5 672.83)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(436.25 636.46)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(398.83 336.63)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(501.77 234.22)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(501.77 234.22)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(514.48 216.69)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(418.74 272.06)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(418.74 272.06)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(355.18 202.37)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(432.13 228.39)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(432.68 198.77)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(430.1 557.5)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(382.58 736.17)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(424.85 698.83)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(428.43 689.94)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(484.53 683.31)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(516.37 702.73)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(459.91 700.58)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(470.63 690.27)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(499.31 644.76)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(467.8 625.44)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(437.64 592.55)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(417.22 555.39)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(395.34 539.56)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(414.2 486.26)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(436.91 421.86)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(464.18 375.08)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(464.18 375.08)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(442.2 342.68)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(387.59 252.77)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(508.52 251.4)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(497.6 344.59)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(497.6 344.59)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(494.81 299.24)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(491.41 257.36)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(491.41 257.36)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(490.85 255.56)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(499.17 241.2)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(499.17 241.2)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(507.69 233.04)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(481.09 360.9)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(481.09 360.9)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(470.42 340.04)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(431.05 329.16)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(420.29 271.17)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(391.84 246.56)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(362.77 215.2)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(360.73 198.65)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(404.65 177.78)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(404.65 177.78)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(398.53 222.1)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(480.82 185.32)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(460.85 238.27)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(459.74 188.39)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(474.84 191.54)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(487.99 182.6)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(487.99 182.6)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(512.47 249.87)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(346.51 789.4)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(346.51 789.4)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(425.5 673.02)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(425.5 673.02)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(467.35 678.06)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(494.58 686.47)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(471.73 632.91)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(471.73 632.91)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(399.05 530.2)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(336.42 928.11)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(315.57 730.71)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(308.6 745.28)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(305.05 743.5)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(295.48 747.49)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(295.48 747.49)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
-                <use
-                  transform="translate(299.1 759.45)"
-                  xlink:href="#DRBgage"
-                  href="#DRBgage"
-                  x="10px"
-                  y="13px"
-                />
+                <use width="9.74" height="11.7" transform="translate(370.34 648.93)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(285.1 694.09)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(437.78 812.82)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(289.56 732.04)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(325.67 555.23)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(497.07 292.47)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(532.7 212.86)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(526.97 223.12)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(398.69 751.04)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(294.03 736.28)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(292.35 717.58)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(292.02 710.56)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(280.95 716.48)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(292.69 719.09)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(407.2 689.1)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(412.7 338.53)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(348 540.29)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(346.41 543.56)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(344.03 542.36)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(343.96 542.39)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(336.47 554.23)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(316.39 545.97)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(334.08 544.12)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(395.53 706.35)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(369.1 714.07)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(406.76 690.93)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(512.65 250.48)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(366.14 201.08)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(338.73 750.26)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(443.81 671.72)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(320.84 781.23)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(321.22 525)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(425.05 426.74)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(394.08 427.47)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(383.14 694.82)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(300.29 599.38)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(325.92 708.23)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(398.1 685.86)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(351.59 625.17)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(414.43 674.77)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(439.32 638.22)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(401.71 336.93)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(505.15 234.04)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(505.15 234.04)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(517.92 216.43)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(421.7 272.06)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(421.7 272.06)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(357.84 202.02)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(435.17 228.18)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(435.72 198.42)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(433.13 558.89)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(385.37 738.41)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(427.84 700.9)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(431.45 691.96)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(487.81 685.31)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(519.81 704.82)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(463.08 702.66)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(473.84 692.29)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(502.67 646.57)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(471.01 627.15)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(440.7 594.1)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(420.17 556.77)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(398.19 540.87)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(417.16 487.3)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(439.97 422.59)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(467.36 375.57)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(467.36 375.57)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(445.29 343.02)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(390.42 252.67)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(511.92 251.3)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(500.95 344.93)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(500.95 344.93)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(498.15 299.37)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(494.73 257.29)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(494.73 257.29)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(494.17 255.47)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(502.54 241.05)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(502.54 241.05)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(511.09 232.84)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(484.37 361.32)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(484.37 361.32)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(473.64 340.37)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(434.08 329.44)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(423.27 271.17)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(394.69 246.44)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(365.46 214.92)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(363.42 198.28)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(407.54 177.32)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(407.54 177.32)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(401.4 221.86)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(484.09 184.89)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(464.01 238.1)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(462.9 187.97)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(478.09 191.15)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(491.31 182.16)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(491.31 182.16)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(515.89 249.76)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(349.14 791.91)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(349.14 791.91)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(428.5 674.97)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(428.5 674.97)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(470.54 680.02)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(497.91 688.49)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(474.97 634.66)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(474.97 634.66)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(401.93 531.44)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(339 931.29)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(318.04 732.93)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(311.05 747.58)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(307.48 745.79)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(297.85 749.79)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(297.85 749.79)" xlink:href="#DRBgage" href="#DRBgage" />
+    <use width="9.74" height="11.7" transform="translate(301.48 761.81)" xlink:href="#DRBgage" href="#DRBgage" />
               </g>
             </transition>
             <g
@@ -4339,6 +2119,13 @@ export default {
 </style>
 
 <style scoped lang="scss">
+
+#w  {
+  z-index: 1;
+}
+#b  {
+  z-index: 0;
+}
 
     .writing, .ink {
       stroke: black;
