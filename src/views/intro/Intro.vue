@@ -3,6 +3,10 @@
     <div
       id="intro-banner-container"
       class="parallax"
+      width="auto"
+    /><div
+      id="map-container" 
+      :height="windowHeight"
     >
       <svg
         id="monitoring-locations"
@@ -292,9 +296,9 @@
 </script>
 
 <style scoped lang="scss">
-  #intro-banner-container {
-    min-width: 1700px;
-    overflow: auto;
+  #map-container {
+
+    overflow: visible;
   }
 /* 
   .parallax {

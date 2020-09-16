@@ -664,7 +664,6 @@
 
 <script>
     import SectionTitle from "@/components/SectionTitle";
-
     export default {
         name: 'Temperature',
         components: {
@@ -681,7 +680,6 @@
         },
         methods: {
             visibilityChanged(isVisible, entry) {
-
                 this.isVisible = isVisible;
                 if (isVisible === true) {
                     this.isMusselsTextInView = true;
@@ -776,36 +774,35 @@
 
 
 //structure of mussels section
-  #mussels-swap-container {
-    height: auto;
-    #row-mussels-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      #mussels  {
-        width: 90vw;
-        margin-left: 3vw;    
-        
-      }     
-    }
-   
-    .fade-enter-active, .fade-leave-active {
-      transition: opacity 1.5s;
-    }
-    .fade-enter, .fade-leave-to {
-      opacity: 0;
-    }
-    .appear {
-      opacity: 0;
-    }
-    .appear.visible {
-      opacity: 1;
-    }
+#mussels-swap-container {
+  height: auto;
+  #row-mussels-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    #mussels  {
+      width: 90vw;
+      margin-left: 3vw;    
+      
+    }     
   }
+  
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 1.5s;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+  .appear {
+    opacity: 0;
+  }
+  .appear.visible {
+    opacity: 1;
+  }
+}
 
 #temperature {
   padding: 2% 2% 2% 2%;
   height: auto;
-
   #header {
     position: sticky;
     width: 90%;
@@ -813,7 +810,6 @@
     display: grid;
     grid-template-columns: 1fr;
     margin: 10em auto 0 auto;
-
     img {
       grid-column: 1;
       grid-row: 1;
@@ -822,15 +818,12 @@
       justify-self: center;
       width: 100%;
     }
-
     #cold-water {
       margin-top: 3%;
     }
-
     #warm-water {
       margin-top: 3%;
     }
-
     .temp-indicator {
       grid-column: 1;
       grid-row: 1;
@@ -841,24 +834,19 @@
       margin: 10% 10% 0 0;
     }
   }
-
   #content {
-
     .temperature-text {
       margin: 0 auto;
       max-width: 60rem;
       padding: 2em;
       margin-top: 5%;
     }
-
     .row-fish {
       width: 100%;
       height: auto;
-
       .right {
         float: right;
         width: 100%;
-
         .image-stack {
           display:grid;
           grid-template-columns: 1;
@@ -866,13 +854,11 @@
           margin-bottom: 5em;
           width: 80%;
           float: right;
-
           #sadfish {
             grid-column: 1 ;
             grid-row: 1;
             z-index: 1;
           }
-
           #happyfish {
             grid-column: 1 / span 12;
             grid-row: 1;
@@ -881,7 +867,6 @@
             -moz-animation: color-change 3s linear 3s forwards infinite;
             -ms-animation: color-change 3s linear 3s forwards infinite;
             -o-animation: color-change 3s linear 3s forwards infinite;
-
           }
           #sadfish:hover {
             animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
@@ -895,7 +880,6 @@
     }
     }
   }
-
        .appear {
               animation: fade-in 4s ease-in 2s forwards 1;
               -webkit-animation: fade-in 4s ease-in 2s forwards 1;
@@ -904,7 +888,6 @@
               -o-animation: fade-in 4s ease-in 2s forwards 1;
           }
          
-
 //fish color change
 @keyframes color-change {
   0%   { opacity:0; }
@@ -913,7 +896,6 @@
   65%  { opacity:1; }
   100% { opacity:0; }
 }
-
 @-o-keyframes color-change {
   0%   { opacity:0; }
   35%  { opacity:1; }
@@ -942,7 +924,6 @@
   65%  { opacity:1; }
   100% { opacity:0; }
 }
-
 @keyframes fade-in {
   0%   { opacity:0; }
   30%   { opacity:0; }
@@ -973,98 +954,75 @@
   75%  { opacity:1; }
   100% { opacity:1; }
 }
-
 // trout animation on hover
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
-
   30%, 50%, 70% {
     transform: translate3d(-4px, 0, 0);
   }
-
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
 }
-
-
 @-o-keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
-
   30%, 50%, 70% {
     transform: translate3d(-4px, 0, 0);
   }
-
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
 }
-
 @-moz-keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
-
   30%, 50%, 70% {
     transform: translate3d(-4px, 0, 0);
   }
-
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
 }
-
 @-ms-keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
-
   30%, 50%, 70% {
     transform: translate3d(-4px, 0, 0);
   }
-
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
 }
-
 @-webkit-keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-
   20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
-
   30%, 50%, 70% {
     transform: translate3d(-4px, 0, 0);
   }
-
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
 }
-
 </style>
-
