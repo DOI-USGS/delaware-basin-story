@@ -25,7 +25,7 @@
           id="monitoring-locations"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 1920 1080"
+          viewBox="0 75 1920 1080"
           preserveAspectRatio="xMidYMid meet"
           height="100%"
           width="100%"
@@ -54,8 +54,8 @@
               height="11.7"
             >
               <circle
-                fill="rgb(205, 101, 40)"
-                r="5.4"
+                fill="rgb(214, 130, 88)"
+                r="5"
                 cx="4"
                 cy="4"
               />
@@ -67,8 +67,8 @@
               height="11.7"
             >
               <circle
-                fill="rgb(37, 86, 109)"
-                r="5.4"
+                fill="rgb(86, 196, 239)"
+                r="5"
                 cx="4"
                 cy="4"
               />
@@ -80,8 +80,8 @@
               height="11.7"
             >
               <circle
-                fill="rgb(91, 161, 117)"
-                r="5.4"
+                fill="rgb(72, 170, 88)"
+                r="5"
                 cx="4"
                 cy="4"
               />
@@ -4405,15 +4405,6 @@ export default {
 
 <style scoped lang="scss">
 
-.glow {
-  border-radius: 50%;
-    background-color: #fff;
-    box-shadow:
-        0 0 60px 30px #fff,  /* inner white */
-        0 0 100px 60px #f0f, /* middle magenta */
-        0 0 140px 90px #0ff; /* outer cyan */
-}
-
 #w  {
   z-index: 1;
 }
@@ -4505,14 +4496,14 @@ fill:#f8f8f8;
 // Image Container
 
 #image-container {
-  align-self: start;
-  object-fit: cover;
+  vertical-align: middle;
+  object-fit: contain;
   height: 100vh;
-  min-width: 2000px;
+  max-width: auto;
   position: sticky;
   display: block;
-  top: 0;
   z-index: -1;
+  top: 0;
 
   }
 
@@ -4548,15 +4539,15 @@ fill:#f8f8f8;
 
 // controls the monitoring location fades
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+  transition: opacity .3s;
 }
 .fade-enter, .fade-leave-to {
-  opacity: 0;
+  opacity: 1;
 }
 // controls the text fades
 .p-container {
-  opacity: 0;
-  transition: opacity .5s;
+  opacity: 1;
+  transition: opacity .3s;
 }
 .p-container.visible {
   opacity: 1;
