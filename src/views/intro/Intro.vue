@@ -4,7 +4,9 @@
       id="intro-banner-container"
       class="parallax"
       width="auto"
-    /><div
+    /><h1 id="hidden-h1">
+      Delaware River Basin
+    </h1><div
       id="map-container" 
       :height="windowHeight"
     >
@@ -252,24 +254,24 @@
 
       </svg>
     </div>
-    <SectionTitle
+    <!-- <SectionTitle
       :title="title"
       :image="titleBackingImage"
-    />
+    /> -->
     <IntroTextContents />
     <ImageCarousel />
   </section>
 </template>
 
 <script>
-  import SectionTitle from "@/components/SectionTitle";
+  // import SectionTitle from "@/components/SectionTitle";
   import IntroTextContents from "./subViews/IntroTextContents";
   import ImageCarousel from "../../components/ImageCarousel";
 
     export default {
         name: 'Intro',
         components: {
-          SectionTitle,
+          // SectionTitle,
           ImageCarousel,
           IntroTextContents
         },
@@ -296,22 +298,12 @@
 </script>
 
 <style scoped lang="scss">
-  #watercolor {
+
+#watercolor {
     align-self: center;
   object-fit: contain;
 
   }
-/* 
-  .parallax {
-    background-image: url("../../assets/intro/images/DRB_all-01.jpg");
-    height: 50vh;
-    // padding-top: 100%;
-    background-attachment: fixed;
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  } */
-
  
 #DRB-land-water  {
   z-index: -1;
@@ -327,29 +319,8 @@
   z-index: 2;
 }
 
-
-//
-
-  // // small Screens
-  // @media only screen and (max-width: 300px) {
-  //   .parallax {
-  //     height: 30vh;
-  //   }
-  // }
-
-  // // Medium Screens
-  // @media only screen and (max-width: 500px) {
-  //   .parallax {
-  //     height: 50vh;
-  //   }
-  // }
-
-  
-  // // Large Screens
-  // @media only screen and (max-width: 700px) {
-  //   .parallax {
-  //     height: 70vh;
-  //   }
-  // }
+#hidden-h1{
+  opacity: 0;
+}
   
 </style>

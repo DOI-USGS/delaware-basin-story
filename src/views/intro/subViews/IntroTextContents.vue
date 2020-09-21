@@ -5,7 +5,8 @@
       class="text-content"
     >
       <div>
-        <h2>How science informs water management in the Delaware River Basin</h2>
+        <h2>Water Science and Management in the Delaware River Basin</h2>
+        <h3>How water quality and quantity are intertwined.</h3>
         <p class="byline">
           U.S. Geological Survey
         </p>
