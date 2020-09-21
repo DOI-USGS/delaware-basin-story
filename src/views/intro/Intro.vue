@@ -4,7 +4,7 @@
       id="intro-banner-container"
       class="parallax"
       width="auto"
-    /><div
+    /><h1 id="hidden-h1">Delaware River Basin</h1><div
       id="map-container" 
       :height="windowHeight"
     >
@@ -326,7 +326,9 @@
   z-index: 2;
 }
 
-
+#hidden-h1{
+  opacity: 0;
+}
 //
 
   // // small Screens
