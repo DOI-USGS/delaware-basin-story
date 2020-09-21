@@ -13,7 +13,7 @@
       <p>Some factors that modify water temperatures – like weather and climate – cannot be controlled by decisionmakers in the Basin.  Other factors – like reservoir releases and land-use – can be strategically managed.</p>    
     </div>
 
-    <!-- Sticky Header -->
+  <!-- Sticky Header -->
     <div id="header">
       <img
         v-show="isWaterWarm"
@@ -45,15 +45,15 @@
         Cold Water
       </p>
     </div>
+    <!-- End Sticky Header -->
 
-  <!-- End Sticky Header -->
   <!-- Begin side-by-side -->
     <div id="temp-wrapper">
       <!-- Begin Sticky Image Container -->
       <div id="temp-image-wrapper">
-        <div id="temp-image-container">
+        <div class="stacked-container" id="temp-image-container">
           <!-- Begin Trout -->
-          <div class="stacked-container" id="trout-container">
+          <div v-show="isWaterCold" class="stacked-container" id="trout-container">
             <img
               id="sadfish"
               src="@/assets/temperature/images/hank_freida_sad.png"
@@ -70,7 +70,7 @@
           <div
             v-show="isMusselsTextInView"
             id="mussels-container"
-            class="image-stack stacked-container"
+            class="stacked-container"
           >
             <svg
               id="mussels"
@@ -374,7 +374,7 @@
             return {
               isMusselsTextInView: true,
               isWaterCold: false,
-              isWaterWarm: false,
+              isWaterWarm: true,
               title: 'Temperature',
               titleBackingImage: require('@/assets/temperature/images/dark-orange-min.png')
             }
@@ -421,8 +421,25 @@
 
   }
 
+  // Text
   #temp-text-wrapper {
     z-index: 2;
+  }
+
+  .temperature-text {
+    margin: 0 auto;
+    max-width: 60rem;
+    padding: 2em;
+    margin-top: 5%;
+  }
+
+// Appear Animation
+  .appear {
+      animation: fade-in 4s ease-in 2s forwards 1;
+      -webkit-animation: fade-in 4s ease-in 2s forwards 1;
+      -moz-animation: fade-in 4s ease-in 2s forwards 1;
+      -ms-animation: fade-in 4s ease-in 2s forwards 1;
+      -o-animation: fade-in 4s ease-in 2s forwards 1;
   }
 
 // Small screen grid stack
@@ -442,144 +459,102 @@
 // General structure of trout and mussels image grid box
 
 
-//structure of mussels section
-#mussels-container {
-  // height: auto;
-  // #row-mussels-container {
-  //   display: grid;
-  //   grid-template-columns: 1fr;
-  //   #mussels  {
-  //     width: 90vw;
-  //     margin-left: 3vw;    
-  //   }     
-  // }
-  
-  .fade-enter-active, .fade-leave-active {
-    transition: opacity 1.5s;
-  }
-  .fade-enter, .fade-leave-to {
-    opacity: 0;
-  }
-  .appear {
-    opacity: 0;
-  }
-  .appear.visible {
-    opacity: 1;
-  }
-}
-
-
-#temperature {
-  
-  // Sticky Temp Header
-  #header {
-    position: sticky;
-    width: 90%;
-    top: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 10em auto 0 auto;
-    img {
-      grid-column: 1;
-      grid-row: 1;
-      background-color: none;
-      align-self: start;
-      justify-self: center;
-      width: 100%;
+  //structure of mussels section
+  #mussels-container {  
+    .fade-enter-active, .fade-leave-active {
+      transition: opacity 1.5s;
     }
-    #cold-water {
-      margin-top: 3%;
+    .fade-enter, .fade-leave-to {
+      opacity: 0;
     }
-    #warm-water {
-      margin-top: 3%;
+    .appear {
+      opacity: 0;
     }
-    .temp-indicator {
-      grid-column: 1;
-      grid-row: 1;
-      font-family: chantal, 'Noto Sans', sans-serif;
-      font-weight: bold;
-      color: white;
-      text-align: right;
-      margin: 10% 10% 0 0;
+    .appear.visible {
+      opacity: 1;
     }
   }
 
-  // Trout stacked image
-  #trout-container {
-    max-width: 500px;
-  }
-  .stacked-container {
-    position: sticky;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: auto;
-    img {
-      grid-column: 1;
-      grid-row: 1;
-      background-color: none;
-      align-self: start;
-      justify-self: center;
-      width: 100%;
-      padding: 2em;
-    }
-  }
 
-  #content {
-    .temperature-text {
-      margin: 0 auto;
-      max-width: 60rem;
-      padding: 2em;
-      margin-top: 5%;
-    }
-    .row-fish {
-      width: 100%;
-      height: auto;
-      .right {
-        float: right;
+  #temperature {
+    
+    // Sticky Temp Header
+    #header {
+      position: sticky;
+      width: 90%;
+      top: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 10em auto 0 auto;
+      img {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: none;
+        align-self: start;
+        justify-self: center;
         width: 100%;
-        .image-stack {
-          display:grid;
-          grid-template-columns: 1;
-          position: relative;
-          margin-bottom: 5em;
-          width: 80%;
-          float: right;
-          #sadfish {
-            grid-column: 1 ;
-            grid-row: 1;
-            z-index: 1;
-          }
-          #happyfish {
-            grid-column: 1 / span 12;
-            grid-row: 1;
-            animation: color-change 3s linear 3s forwards infinite;
-            -webkit-animation: color-change 3s linear 3s forwards infinite;
-            -moz-animation: color-change 3s linear 3s forwards infinite;
-            -ms-animation: color-change 3s linear 3s forwards infinite;
-            -o-animation: color-change 3s linear 3s forwards infinite;
-          }
-          #sadfish:hover {
-            animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
-            -webkit-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
-            -moz-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
-            -ms-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
-            -o-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
-          }
-        }
+      }
+      #cold-water {
+        margin-top: 3%;
+      }
+      #warm-water {
+        margin-top: 3%;
+      }
+      .temp-indicator {
+        grid-column: 1;
+        grid-row: 1;
+        font-family: chantal, 'Noto Sans', sans-serif;
+        font-weight: bold;
+        color: white;
+        text-align: right;
+        margin: 10% 10% 0 0;
       }
     }
+
+    // Trout stacked image
+    #trout-container {
+      max-width: 500px;
+    }
+
+    .stacked-container {
+      position: sticky;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: auto;
+      img {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: none;
+        align-self: start;
+        justify-self: center;
+        width: 100%;
+        padding: 2em;
+      }
     }
   }
-       .appear {
-              animation: fade-in 4s ease-in 2s forwards 1;
-              -webkit-animation: fade-in 4s ease-in 2s forwards 1;
-              -moz-animation: fade-in 4s ease-in 2s forwards 1;
-              -ms-animation: fade-in 4s ease-in 2s forwards 1;
-              -o-animation: fade-in 4s ease-in 2s forwards 1;
-          }
+
+
+
+// Assign fish animations 
+  #happyfish {
+    grid-column: 1 / span 12;
+    grid-row: 1;
+    animation: color-change 2s linear 2s forwards infinite;
+    -webkit-animation: color-change 2s linear 2s forwards infinite;
+    -moz-animation: color-change 2s linear 2s forwards infinite;
+    -ms-animation: color-change 2s linear 2s forwards infinite;
+    -o-animation: color-change 2s linear 2s forwards infinite;
+  }
+  #trout-container:hover {
+    animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
+    -webkit-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
+    -moz-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
+    -ms-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
+    -o-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
+  }
          
-//fish color change
+// Define fish color change
 @keyframes color-change {
   0%   { opacity:0; }
   35%  { opacity:1; }
@@ -645,6 +620,8 @@
   75%  { opacity:1; }
   100% { opacity:1; }
 }
+
+
 // trout animation on hover
 @keyframes shake {
   10%, 90% {
