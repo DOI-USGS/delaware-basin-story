@@ -47,6 +47,19 @@ export default {
     color: white;
     grid-column: 1;
     grid-row: 1;
+    max-width: 1000px;
+    text-align: center;    
   }
+
+  // @media only screen and (max-width: 992px) {
+  //   .section-title {
+  //     font-size:2em;
+  //   }
+  // }
+  // @media only screen and (max-width: 508px) {
+  //   .section-title {
+  //     font-size:1.5em;
+  //   }
+  // }
 }
 </style>

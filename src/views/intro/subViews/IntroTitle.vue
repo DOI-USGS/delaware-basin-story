@@ -6,6 +6,7 @@
         media="(min-width: 992px)"
       >
       <img
+        id='title-image'
         class="title-intro-cloud-backing"
         src="@/assets/intro/images/rainbow-min.png"
         alt="image of watercolor cloud of color"
@@ -20,7 +21,8 @@
 <script>
 export default {
   name: 'IntroTitle',
-  title: process.env.VUE_APP_TITLE
+  title: 'Water Science and Management in the Delaware River Basin'
+  // title: process.env.VUE_APP_TITLE
 }
 </script>
 
@@ -34,10 +36,14 @@ export default {
     grid-column: 1;
     grid-row: 1;
   }
+  #title-image {
+      max-width: 200%;
+    }
   .section-title {
     color: white;
     grid-column: 1;
     grid-row: 1;
   }
+
 }
 </style>
