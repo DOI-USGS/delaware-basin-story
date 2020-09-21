@@ -4,7 +4,9 @@
       id="intro-banner-container"
       class="parallax"
       width="auto"
-    /><h1 id="hidden-h1">Delaware River Basin</h1><div
+    /><h1 id="hidden-h1">
+      Delaware River Basin
+    </h1><div
       id="map-container" 
       :height="windowHeight"
     >

@@ -6,7 +6,7 @@
         media="(min-width: 992px)"
       >
       <img
-        id='title-image'
+        id="title-image"
         class="title-intro-cloud-backing"
         src="@/assets/intro/images/rainbow-min.png"
         alt="image of watercolor cloud of color"

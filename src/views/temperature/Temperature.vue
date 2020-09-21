@@ -13,7 +13,7 @@
       <p>Some factors that modify water temperatures – like weather and climate – cannot be controlled by decisionmakers in the Basin.  Other factors – like reservoir releases and land-use – can be strategically managed.</p>    
     </div>
 
-  <!-- Sticky Header -->
+    <!-- Sticky Header -->
     <div id="header">
       <img
         v-show="isWaterWarm"
@@ -47,13 +47,20 @@
     </div>
     <!-- End Sticky Header -->
 
-  <!-- Begin side-by-side -->
+    <!-- Begin side-by-side -->
     <div id="temp-wrapper">
       <!-- Begin Sticky Image Container -->
       <div id="temp-image-wrapper">
-        <div class="stacked-container" id="temp-image-container">
+        <div
+          id="temp-image-container"
+          class="stacked-container"
+        >
           <!-- Begin Trout -->
-          <div v-show="isWaterCold" class="stacked-container" id="trout-container">
+          <div
+            v-show="isWaterCold"
+            id="trout-container"
+            class="stacked-container"
+          >
             <img
               id="sadfish"
               src="@/assets/temperature/images/hank_freida_sad.png"
@@ -323,16 +330,31 @@
 
       <div id="temp-text-wrapper">
         <!-- ALL TROUT -->
-        <div id="temp-text-trout" class="text-content">
+        <div
+          id="temp-text-trout"
+          class="text-content"
+        >
           <div class="scrolly-chunk">
             <div class="text-chunk">
               <h3>Brook Trout and Cold Water</h3>
               <p>Brook trout are the only native trout species within the Basin, and they prefer to live in reaches with <span class="emph">cold water.</span> In fact, this particular species is used as an indicator of water quality due to its sensitivity to water temperatures.</p>
             </div>
           </div>
-          <div class="scrolly-chunk"><p class="text-chunk">In the summer, long hot days and low river flows can warm up the river water.  The heat can be lethal for the “brookies” and other trout species.</p></div>
-          <div class="scrolly-chunk"><p class="text-chunk">In the fall, trout wait for a drop in water temperature drop begin their reproductive cycle. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection. The eggs rest there all winter, and they require the water to stay cool to develop properly.</p></div>
-          <div class="scrolly-chunk"><p class="text-chunk">Warming temperatures can disrupt the reproductive cycle of brook trout and ultimately its population stability.  If the river water doesn’t cool down enough in the fall, brook trout could miss their reproductive cue.  If the waters stay warmer than usual in the winter, their eggs won’t develop properly.  Moreover, USGS research has shown that water temperature can influence their growth rates and disease susceptibility, which can make them poor competitors against non-native species like brown trout.</p></div>
+          <div class="scrolly-chunk">
+            <p class="text-chunk">
+              In the summer, long hot days and low river flows can warm up the river water.  The heat can be lethal for the “brookies” and other trout species.
+            </p>
+          </div>
+          <div class="scrolly-chunk">
+            <p class="text-chunk">
+              In the fall, trout wait for a drop in water temperature drop begin their reproductive cycle. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection. The eggs rest there all winter, and they require the water to stay cool to develop properly.
+            </p>
+          </div>
+          <div class="scrolly-chunk">
+            <p class="text-chunk">
+              Warming temperatures can disrupt the reproductive cycle of brook trout and ultimately its population stability.  If the river water doesn’t cool down enough in the fall, brook trout could miss their reproductive cue.  If the waters stay warmer than usual in the winter, their eggs won’t develop properly.  Moreover, USGS research has shown that water temperature can influence their growth rates and disease susceptibility, which can make them poor competitors against non-native species like brown trout.
+            </p>
+          </div>
         </div>
         <!-- ALL MUSSELS -->
         <!-- Mussels Scroll Target -->
@@ -347,15 +369,26 @@
           }"
         />
         <!-- Begin Mussels Text -->
-        <div id="temp-text-mussels" class="text-content">
+        <div
+          id="temp-text-mussels"
+          class="text-content"
+        >
           <div class="scrolly-chunk">
             <div class="text-chunk">
               <h3>Dwarf Wedgemussels and Warm Water</h3>
               <p>Dwarf wedgemussels, an endangered species, have their own preferences for water temperatures and river flow rates, preferences that are distinctly different than brook trout. Wedgemussels like to live in <span class="emph">warmer water</span> than the brookies do.</p>
             </div>
           </div>
-          <div class="scrolly-chunk"><p class="text-chunk">That’s why reservoir release decisions are such an important management tool.</p></div>
-          <div class="scrolly-chunk"><p class="text-chunk">Reservoir water stays cool. When managers release reservoir water, the release sends an extra rush of cool reservoir water downstream.  With the right data and monitoring, managers can make sure that release decisions to maintain enough flow also keep water temperature in a healthy range for the species that live there.</p></div>
+          <div class="scrolly-chunk">
+            <p class="text-chunk">
+              That’s why reservoir release decisions are such an important management tool.
+            </p>
+          </div>
+          <div class="scrolly-chunk">
+            <p class="text-chunk">
+              Reservoir water stays cool. When managers release reservoir water, the release sends an extra rush of cool reservoir water downstream.  With the right data and monitoring, managers can make sure that release decisions to maintain enough flow also keep water temperature in a healthy range for the species that live there.
+            </p>
+          </div>
         </div>
         <!-- End Mussels Text -->
       </div>
