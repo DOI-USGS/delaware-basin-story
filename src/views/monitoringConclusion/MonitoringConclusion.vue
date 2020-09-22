@@ -54,8 +54,9 @@
               height="11.7"
             >
               <circle
+                class="DRBorange"
                 fill="rgb(214, 130, 88)"
-                r="5"
+                r="6"
                 cx="4"
                 cy="4"
               />
@@ -68,7 +69,7 @@
             >
               <circle
                 fill="rgb(86, 196, 239)"
-                r="5"
+                r="6"
                 cx="4"
                 cy="4"
               />
@@ -81,7 +82,7 @@
             >
               <circle
                 fill="rgb(72, 170, 88)"
-                r="5"
+                r="6"
                 cx="4"
                 cy="4"
               />
@@ -4411,7 +4412,6 @@ export default {
 #b  {
   z-index: 0;
 }
-
     .writing, .ink {
       stroke: black;
       fill: none;
