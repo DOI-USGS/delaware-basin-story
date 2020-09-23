@@ -157,7 +157,67 @@
                 height="100%"
                 width="100%"
               />
+              
             </g>
+            <g v-if="Philly">
+                 <path class="sketch-white" d="M491.5,254.79c-2.45-14.66-4.66-25.12-6-25-1.95.19-.07,22.54-3,23s-9.34-19.32-13-40c-6.2-35-2.06-60.79-4-61-1.52-.15-6.05,15.47-7,35-1.95,40.09,12.37,71.89,12,72s-17-55.87-21-55c-3.82.84,4.53,53.93,4,54s-7.93-54.21-10-54,2.12,54.81,0,55c-1.42.13-4.39-24.15-6-24s-.22,21-1,21-4.33-26-6-59c-1.28-25.44-.79-40.94-2-41-1.39-.06-3.74,20.44-5,35-3.2,37-1.31,58.13-6,59-2.49.47-5.44-5-7-8-12.64-24-6.35-52-6-52s-.63,9.94-6,60"/>
+                <g class="sketch-black">
+                  <path d="M422.79 227.31l1-42.32 4.1-4.92L432 186v41.33" class="sketch-fine"/>
+                  <path d="M422.79 220.42l1-42.32 4.1-4.92 4.1 5.91v41.33" class="sketch-fine"/>
+                  <path d="M419.71 227.8q1-26.09 2.05-52.16l6.15-7.87c2.39 2.95 3.76 4.92 6.15 7.87-.68 17.39.69 35.76 0 53.14" class="sketch-fine"/>
+                  <path d="M417.66 226.81c.34-16.07.69-34.11 1-50.18l9.22-12.8c3.08 3 6.15 7.88 9.23 10.83q-.51 27.06-1 54.12" class="sketch-fine"/>
+                  <path d="M416.64 227.8c.68-17.39 1.36-37.72 2.05-55.11 3.41-3.61 5.81-6.23 9.22-9.84l9.23 7.87v58.05" class="sketch-1"/>
+                  <path d="M421.76 167.77v-4.92l6.15-3.94 5.13 3.94v3.94M423.81 158.91c.34-1.31.69-2.62 1-3.93H430c.34 1.31.69 2.62 1 3.93" class="sketch-1"/>
+                  <path d="M426.89 154l1-16.73q.51 8.37 1 16.73" class="cls-1"/>
+                  <path d="M414.39 244.46h10.37M414.39 243.82h10.37M414.23 248.75h10.37M414.23 249.38h10.37M415.11 252.1v-10.37" class="sketch-fine"/>
+                  <path d="M424.21 251.86V241.8" class="sketch-fine"/>
+                  <path d="M419 251.86V242" class="sketch-fine"/>
+                  <path d="M419.71 252v-9.89M430 251.18v-9.89M433 251.06v-9.89" class="sketch-fine"/>
+                  <path d="M436.3 246.87v-5.93" class="sketch-fine"/>
+                  <path d="M439.55 251.18v-9.89" class="sketch-fine"/>
+                  <path d="M443.28 246v-5.25" class="sketch-fine"/>
+                  <path d="M446.38 248.75v-7.81" class="sketch-fine"/>
+                  <path d="M449.78 248.88v-7.94" class="sketch-fine"/>
+                  <path d="M423.65 251.58v-9.89" class="sketch-fine"/>
+                  <path d="M424.76 237.36v-9.89" class="sketch-1"/>
+                  <path d="M415.91 251.82v-9.89" class="sketch-fine"/>
+                  <path d="M445.6 249.18v11.45M439.55 248.88v11.45" class="sketch-1"/>
+                  <path d="M463.05 147.2v21.47M465.84 147.2v21.47M468.63 147.2v21.47M471.42 147.2v21.47" class="sketch-fine"/>
+                  <path d="M460.55 162.72l13 .36M460.55 165.51l13 .36" class="sketch-fine"/>
+                  <path d="M460.55 168.3l3.2.09" class="ketch-fine"/>
+                  <path d="M460.55 171.1l1.81.05M460.55 173.89l1.81.05M460.55 176.68h1.81M460.55 179.47l1.81.05M460.55 182.26l1.81.05M460.55 185.05h1.81M460.55 187.84h1.81M460.55 190.63l1.81.06M460.55 194.82l1.81.05" class="sketch-fine"/>
+                  <path d="M460.57 160.7c4.42.12 6.52.22 11.57.36M460.59 158.67c4.43.13 6.53.22 11.58.37M460.62 156.65c4.42.12 6.52.22 11.57.36M460.64 154.62c4.43.13 6.53.23 11.57.37" class="sketch-fine"/>
+                  <path d="M461 152.61l11.16.31" class="ksetch-fine"/>
+                  <path d="M462.09 150.58c3.89.1 5.57.19 10 .31" class="sketch-fine"/>
+                  <path d="M399.5 253.07c.33-17.33.67-33.66 1-51 1.33-1.33 2.67-2.66 4-4 1.33 1.34 2.67 2.67 4 4v51" class="sketch-fine"/>
+                  <path d="M412 252.57l1-52h-2v-4l-7-14-7 15v3h-2v52" class="sketch-fine"/>
+                  <path d="M397 252.57v-61c2.33-2.33 4.67-5.66 7-8 2.33 2.34 4.67 5.67 7 8q-.5 30.51-1 61" class="sketch-1"/>
+                  <path d="M395 253.07v-58.31l9.25-6.69 9.25 6.69-1.32 58.31" class="sketch-1"/>
+                  <path d="M401 202.07v51" class="sketch-fine"/>
+                  <path d="M402.5 200.38v52.69" class="sketch-fine"/>
+                  <path d="M407 201.69v51.38" class="sketch-fine"/>
+                  <path d="M404 198.8v54" class="sketch-fine"/>
+                  <path d="M405.5 200v53.07" class="sketch-fine"/>
+                  <path d="M475 232.17q.69-34.89 1.39-69.78h-4.19V147H461l-2.79 2.8v13.95l-2.79 1.4q-.7 16-1.4 32.1" class="sketch-fine"/>
+                  <path d="M461.65 204.25q.71-18.13 1.4-36.28h9.76l1.4 60M460.25 204.25v-40.47q.71-7.68 1.4-15.35M474.21 163.78q.71 30 1.4 60" class="sketch-fine"/>
+                  <path d="M462.65 236.55v-30.08h-10.94v31.19h-2.43c0-2.07 0-4.15-.07-6.22l-24.11-.36c0 2.94-.09 5.87-.14 8.81H412.8v13.37h14.59v-14.48h24.32v10h-6.08l-2.43-3.35-3.65 3.35-2.43-2.23-2.43 2.23v8.91h2.43V260a7.27 7.27 0 003.05 0c.11 0 .43-.14.6 0 0 0 .14.11 0 1.11h23.1l-1.22-18.94h12.16v-14.53h18.24v29H476v5.57h-12.13" class="sketch-1"/>
+                  <path d="M440 231.47c0-1.86-.47-30.94-.47-32.8h18.24v6.69" class="sketch-fine"/>
+                  <path d="M440 207.05h11.16M440 201.46h17.44M440 223.79h11.16M440 218.21h11.16M440 212.63h11.16M440 228h11.16M440 208.44h11.16" class="sketch-fine"/>
+                  <path d="M413.26 227.8h11.67" class="sketch-fine"/>
+                  <path d="M440 202.86h17.44M440 225.19h11.16M440 219.61h11.16M440 214h11.16M440 229.38h11.16" class="sketch-fine"/>
+                  <path d="M451.9 212.76h10.54M451.9 210.65h10.54M451.9 208.44h10.54M451.9 214.77h10.54M451.9 218.92h10.54M451.9 216.7h10.54M451.9 221h10.54M451.9 227.31h10.54M451.9 225.19h10.54M451.9 223.1h10.54M452 230h10.53M451.9 234.77h10.54M451.9 232.41h10.54" class="sketch-fine"/>
+                  <path d="M487.98 229.99h2.88v4.78h-2.88zM482.53 229.78h2.88v4.78h-2.88zM477.25 229.78h2.88v4.78h-2.88zM487.98 236.87h2.88v4.78h-2.88zM482.61 236.46h2.88v4.78h-2.88zM477.25 236.38h2.88v4.78h-2.88zM488.26 243.35h2.88v4.78h-2.88zM483.54 243.14h2.88v4.78h-2.88zM478.95 242.99h2.88v4.78h-2.88zM488.26 250.03h2.88v4.78h-2.88zM483.54 249.83h2.88v4.78h-2.88zM479.42 249.71h2.88v4.78h-2.88zM474.37 243.65h2.88v4.78h-2.88zM474.95 250.18h2.88v4.78h-2.88zM470.06 250.13h2.88v4.78h-2.88zM465.21 250.13h2.88v4.78h-2.88zM469.6 243.73h2.88v4.78h-2.88z" class="sketch-fine"/>
+                  <path d="M419.7 229.47h3.39v4.1h-3.39zM420.38 235.08h3.39v4.1h-3.39zM414.62 235.03h3.39v4.1h-3.39zM414.08 229.54h3.39v4.1h-3.39z" class="sketch-fine"/>
+                  <path d="M464.83 243.85h2.88v4.78h-2.88zM471.5 256.32h2.88v4.78h-2.88zM466.22 256.32h2.88v4.78h-2.88z" class="sketch-fine"/>
+                  <path d="M450.39 251.29h-2.79l.58 3.69M451.99 255.72h-3.2l.4 3.67M455.97 241.69h-2.79l.58 3.69M460.35 244.99h-3.2l.41 3.67M456.16 250.97h-2.79l.58 3.7M462.34 250.94h-3.2l.42 3.56M459.56 255.36h-3.2l.4 3.67" class="sketch-fine"/>
+                  <path d="M433.82 233.19h-2.58l.34 3.56" class="sketch-fine"/>
+                  <path d="M428.98 233.13h-2.44l.32 3.56" class="sketch-fine"/>
+                  <path d="M442.85 233.19h-2.59l.34 3.56" class="sketch-fine"/>
+                  <path d="M447.6 233.3h-2.44l.32 3.56" class="sketch-fine"/>
+                  <path d="M438 233.13h-2.44l.32 3.56" class="sketch-fine"/>
+                  <path d="M460.35 236.87h-3.2l.41 3.66" class="sketch-fine"/>
+                  </g>
+              </g>
             <g v-if="SaltyWater">
               <g id="salty-water-rising">
                 <path
@@ -578,6 +638,7 @@ export default {
         switch(entry.target.id) { // this is set up for more conditions, right now the switch statement is not needed since there is only one condition
           case 'sea-salt-one' :
             this.SaltyWater = true;
+            this.Philly = false;
             this.SaltFront = true;
             this.SeasonalChanges = false;
             this.SeaLevelRise = false;
@@ -610,6 +671,7 @@ export default {
         switch(entry.target.id) { // this is set up for more conditions, right now the switch statement is not needed since there is only one condition
           case 'sea-salt-two' :
             this.SaltyWater = true;
+            this.Philly = true;
             this.SaltFront = false;
             this.SeasonalChanges = true;
             this.SeaLevelRise = false;
@@ -705,7 +767,22 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+.sketch-white   {
+  stroke-width: 8px;
+  fill:none;
+  stroke: white;
+  stroke-miterlimit: 10;
+}
+.sketch-black {
+  fill:none;
+  stroke:#000;
+  stroke-miterlimit:10
+  }
+.sketch-fine {
+  stroke-width:.4px
+  }
+  .sketch-1{stroke-width:1.5px}
+  
 #arrow_river, #arrow_sea  {
   stroke-width: 1.5px;
   stroke: white;
