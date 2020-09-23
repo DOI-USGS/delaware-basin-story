@@ -3779,12 +3779,17 @@
                   }
                 }"
               >            
-                Introducing NGWOS
+                Water Priorities for the Nation, reflected in the Delaware River Basin
               </h3>
               <p>
-                The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators. 
+                The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators.  But in 2019, the USGS chose the Delaware River Basin as a regional pilot site for two national priority programs - the <a href="https://www.usgs.gov/mission-areas/water-resources/science/usgs-next-generation-water-observing-system-ngwos?qt-science_center_objects=0#qt-science_center_objects">Next-Generation Water Observing System (NGWOS)</a> and <a href="https://pubs.usgs.gov/fs/2020/3044/fs20203044.pdf">Integrated Water Availability Assessments (IWAAs).</a>
               </p>
-              <p>The USGS has prioritized the Delaware River Basin as a pilot site for the Next-Generation Water Observing System (NGWOS) program. As part of the pilot, the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep. Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current and future water availability and water quality.</p>
+              <p>
+                As part of NGWOS, scientists at the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep. The data from NGWOS is then used to assess water availability through IWAAs seeks to improve water availability assessments and forecasts.
+              </p>
+              <p>
+                Each new piece of technology, placed at hundreds of locations throughout the DRB, helps paint a clearer picture of local water dynamics, including assessing current and future water availability and water quality.
+              </p>
             </div>
           </div>
           <div
@@ -3944,7 +3949,7 @@
           <div class="text-content-side text-chunk">
             <h3>A New Generation of Water Science in the Delaware River Basin</h3>
             <p>Water uses in the Delaware Basin are diverse and complicated, and the need for information that describes the present and future conditions of water availability and water quality is more pressing than ever.</p>
-            <p>The new advanced monitoring strategy of the NGWOS is enhancing water data collection, and the modernized data management – with increased public availability, rapid data downloads, and interactive views of current conditions – makes it easier to study the health of Basin. These advancements in water science and monitoring paint a clearer picture of how the DRB has changed, and modelers are now using those data to better predict the health and function of the river in the future.</p>
+            <p>The new advanced monitoring strategy of the NGWOS, combined with the assessment capabilities of IWAAs, is enhancing water data collection and the modernized data management.  With increased public availability, rapid data downloads, and interactive views of current conditions, it is easier to study the health and future of Basin.</p>
             <p>While this story focused on flow, salinity, and water temperature, the USGS and collaborators study a multitude of other water-quality factors in the Basin.  We could tell additional stories about sediment, turbidity, nutrients, dissolved oxygen, pathogens, heavy metals, and chemical contaminants.</p>
             <p>Given the complexity of understanding and managing a healthy river basin, monitoring and modeling are essential to enable wiser management decisions, a more optimal balance of water uses, and a richer understanding of this beautiful and life-sustaining river.</p>
           </div>
