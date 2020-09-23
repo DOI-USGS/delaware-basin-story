@@ -861,7 +861,7 @@
               Sea level rise is expected to push the salt front further upstream. With just 3 feet of sea level rise, on average the salt front is predicted to once again travel close to Philadelphia and threaten fresh water supplies.
             </p>
             <p>
-              Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. One key objective to keep enough freshwater flowing down the Delaware River to press the salt front back toward the ocean. Accurate data and models allow smart reservoir releases, which maintain the flow targets and the salt front location.
+              Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. One key objective is to keep the salt front from contaminating fresh water supplies and back toward the ocean. Accurate data and models allow smart reservoir releases, which maintain the flow targets and impact the salt front location.
             </p>
           </div>
         </div>
@@ -881,7 +881,7 @@
               Road Salt
             </h3>
             <p>
-              Even as we try keep the ocean salt out of the lower Delaware River, we work against ourselves by actively adding salt elsewhere. <a href="https://www.usgs.gov/mission-areas/water-resources/science/chloride-salinity-and-dissolved-solids?qt-science_center_objects=0#qt-science_center_objects">Rock salt applied to roads in winter</a> makes driving and walking safer. But when the snow and ice melts, the runoff carries dissolved salt into streams and rivers, contaminating those waters with <a href="https://www.usgs.gov/news/urban-stream-contamination-increasing-rapidly-due-road-salt">levels of chloride that can be toxic</a> to aquatic plants and animals and can even threaten drinking water quality.
+              Even as we manage river flow to keep the ocean salt out of drinking water supplies, we work against ourselves by actively adding salt elsewhere. <a href="https://www.usgs.gov/mission-areas/water-resources/science/chloride-salinity-and-dissolved-solids?qt-science_center_objects=0#qt-science_center_objects">Rock salt applied to roads in winter</a> makes driving and walking safer. But when the snow and ice melts, the runoff carries dissolved salt into streams and rivers, contaminating those waters with <a href="https://www.usgs.gov/news/urban-stream-contamination-increasing-rapidly-due-road-salt">levels of chloride that can be toxic</a> to aquatic plants and animals and can even threaten drinking water quality.
             </p>
             <p>
               Reducing road salt concentrations in streams can involve chemical de-icing alternatives and moderating road salt applications. But safe roads are important too. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs.
