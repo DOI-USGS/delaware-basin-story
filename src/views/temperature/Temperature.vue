@@ -347,7 +347,7 @@
           </div>
           <div class="scrolly-chunk">
             <p class="text-chunk">
-              In the fall, trout wait for a drop in water temperature drop begin their reproductive cycle. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection. The eggs rest there all winter, and they require the water to stay cool to develop properly.
+              In the fall, trout wait for the water temperature to drop to begin their reproductive cycle. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection. The eggs rest there all winter, and they require the water to stay cool to develop properly.
             </p>
           </div>
           <div class="scrolly-chunk">
