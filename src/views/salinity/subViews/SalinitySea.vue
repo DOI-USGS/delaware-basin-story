@@ -1251,17 +1251,19 @@ $s3:"";
     }
   }
 }
+
+//colapse to single column for mobile
 @media only screen and (max-width: 992px) {
   #salinity-sea-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-column:1;
 
   }
   #container-salinity-sea-image-background {
       grid-column: 1;
       grid-row: 1;
       align-self: start;
+      width: 98vw;
 
     } 
 
