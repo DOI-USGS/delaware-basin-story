@@ -5,7 +5,6 @@
       class="text-content"
     >
       <div>
- 
         <p class="byline">
           U.S. Geological Survey
         </p>
