@@ -5,7 +5,6 @@
       class="text-content"
     >
       <div>
- 
         <p class="byline">
           U.S. Geological Survey
         </p>
@@ -25,6 +24,13 @@
 </script>
 
 <style scoped lang="scss">
+
+#title {
+  @media only screen and (max-width: 600px) {
+    font-size: 2em;
+    
+  }
+}
 
 #section-title-container {
   display: flex;
