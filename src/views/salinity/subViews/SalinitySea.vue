@@ -837,7 +837,7 @@
               The salt front <a href="https://www.state.nj.us/drbc/library/documents/shallcross_saltfront_CDRWforum_oct2019.pdf" target="_blank">migrates</a> up and down the river channel over the daily cycle of ocean tides. The location of the salt front is also impacted by occasional storm surges, the seasonal cycle of high or low river flows, and fluctuations as the river changes over the course of many years.
             </p>
             <p>
-              In 1960, during a record drought, the salt front moved nearly 30 miles further upstream.  High salt levels in the upstream freshwater ecosysystems can be harmful, and the salt came close to <span class="emph">contaminating Philadelphia's drinking water intakes.</span>
+              In the 1960s, during a record drought, the salt front moved nearly 30 miles further upstream.  High salt levels in the upstream freshwater ecosysystems can be harmful, and the salt came close to <span class="emph">contaminating Philadelphia's drinking water intakes.</span>
             </p>
           </div>
         </div>
