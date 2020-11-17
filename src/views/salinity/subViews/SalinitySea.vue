@@ -932,7 +932,7 @@ export default {
       SeasonalChanges: false,
       SeaLevelRise: false,
       RoadSalt: false,
-      Philly: true,
+      Philly: false,
     }
   },
   methods: {
@@ -960,9 +960,10 @@ export default {
           case 'sea-salt-one' :
             this.SaltyWater = true;
             this.SaltFront = false;
-            this.SeasonalChanges = true;
+
             this.SeaLevelRise = false;
             this.RoadSalt = false;
+
             break;
           default:
             break;
