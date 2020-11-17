@@ -111,7 +111,7 @@
     }
 
     h3{
-      font-size: 1.2em;
+      font-size: 1.4em;
       font-weight: bolder;
     }
   
@@ -135,12 +135,20 @@
 
     // Mobile-friendly Transparent-White Background around text blocks
     .text-chunk {
+      min-width: 350px;
+      max-width: 600px;
       background-color: $transparentWhite;
       padding: 2em 2em 2em 2em;
+      @media only screen and (max-width: 600px) {
+        padding: 1em;
+      }
     }
 
     .scrolly-chunk{
-      padding: 50vh 0 50vh 0;
+      padding: 70vh 0;
+      @media only screen and (max-width: 600px) {
+        padding: 100vh 0;
+      }
     }
     // Text-only
     .text-content {

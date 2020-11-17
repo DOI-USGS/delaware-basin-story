@@ -227,7 +227,6 @@ export default {
   .p-container {
     opacity: 0;
     transition: opacity .5s;
-    padding: .5em .5em .5em .5em;
   }
   .p-container.visible {
     opacity: 1;

@@ -332,7 +332,6 @@
         <!-- ALL TROUT -->
         <div
           id="temp-text-trout"
-          class="text-content"
         >
           <div class="scrolly-chunk">
             <div class="text-chunk">
@@ -371,7 +370,6 @@
         <!-- Begin Mussels Text -->
         <div
           id="temp-text-mussels"
-          class="text-content"
         >
           <div class="scrolly-chunk">
             <div class="text-chunk">
@@ -515,7 +513,7 @@
     #header {
       position: sticky;
       width: 90%;
-      top: 0;
+      top: 80px;
       display: grid;
       grid-template-columns: 1fr;
       margin: 10em auto 0 auto;
@@ -537,10 +535,11 @@
         grid-column: 1;
         grid-row: 1;
         font-family: chantal, 'Noto Sans', sans-serif;
+        font-size: 1.3em;
         font-weight: bold;
         color: white;
-        text-align: right;
-        margin: 10% 10% 0 0;
+        text-align: left;
+        margin: 8% 0 0 10%;
       }
     }
 
