@@ -612,7 +612,7 @@
                 />
               </g>
             
-              <path
+              <!-- <path
                 id="ft1"
                 d="M490.29 290.66c-.89-3.67-2.21-9-3.86-15.45-2.56-10-3.78-14.2-3.57-14.26.58-.19 10.87 31.61 11.36 31.46.29-.09-3-11.39-8.3-29.28"
               />
@@ -623,13 +623,13 @@
               <path
                 id="ft3"
                 d="M488.54 232.11c18.47 4.35 29.78 7.13 29.71 7.42-.11.5-33-6.62-33.21-5.68-.08.38 5.08 1.91 14.86 4.81 6.26 1.86 11.51 3.33 15.29 4.37"
-              />
+              /> -->
               <path
                 id="intake"
                 d="M561.73 166.34l21 21"
               />
           
-              <path
+             <!--  <path
                 id="num1"
                 d="M472.89 303.64l8-4.66v12"
               />
@@ -666,7 +666,7 @@
               <path
                 id="ft3_t"
                 d="M560.3 228.64q-.34 9.66-.67 19.33M555 230l12-2.67"
-              />
+              /> -->
               <g
                 id="intakes-text"
                 class="marker"
@@ -858,7 +858,7 @@
               Rising Sea Levels
             </h3>
             <p>
-              Sea level rise is expected to push the salt front further upstream. With just 3 feet of sea level rise, on average the salt front is predicted to once again travel close to Philadelphia and threaten fresh water supplies.
+              Sea level rise is expected to push the salt front further upstream. With just 3 feet of sea level rise, the salt front is predicted to once again travel within the reaches of Philadelphia and nearby fresh water supplies.
             </p>
             <p>
               Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. One key objective is to keep the salt front from contaminating fresh water supplies and back toward the ocean. Accurate data and models allow smart reservoir releases, which maintain the flow targets and impact the salt front location.
