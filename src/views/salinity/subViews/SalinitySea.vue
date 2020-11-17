@@ -834,7 +834,7 @@
               Seasonal Changes
             </h3>
             <p>
-              The salt front <a href="https://www.state.nj.us/drbc/library/documents/shallcross_saltfront_CDRWforum_oct2019.pdf">migrates</a> up and down the river channel over the daily cycle of ocean tides. The location of the salt front is also impacted by occasional storm surges, the seasonal cycle of high or low river flows, and fluctuations as the river changes over the course of many years.
+              The salt front <a href="https://www.state.nj.us/drbc/library/documents/shallcross_saltfront_CDRWforum_oct2019.pdf" target="_blank">migrates</a> up and down the river channel over the daily cycle of ocean tides. The location of the salt front is also impacted by occasional storm surges, the seasonal cycle of high or low river flows, and fluctuations as the river changes over the course of many years.
             </p>
             <p>
               In 1960, during a record drought, the salt front moved nearly 30 miles further upstream.  High salt levels in the upstream freshwater ecosysystems can be harmful, and the salt came close to <span class="emph">contaminating Philadelphia's drinking water intakes.</span>
@@ -881,7 +881,7 @@
               Road Salt
             </h3>
             <p>
-              Even as we manage river flow to keep the ocean salt out of drinking water supplies, we work against ourselves by actively adding salt elsewhere. <a href="https://www.usgs.gov/mission-areas/water-resources/science/chloride-salinity-and-dissolved-solids?qt-science_center_objects=0#qt-science_center_objects">Rock salt applied to roads in winter</a> makes driving and walking safer. But when the snow and ice melts, the runoff carries dissolved salt into streams and rivers, contaminating those waters with <a href="https://www.usgs.gov/news/urban-stream-contamination-increasing-rapidly-due-road-salt">levels of chloride that can be toxic</a> to aquatic plants and animals and can even threaten drinking water quality.
+              Even as we manage river flow to keep the ocean salt out of drinking water supplies, we work against ourselves by actively adding salt elsewhere. <a href="https://www.usgs.gov/mission-areas/water-resources/science/chloride-salinity-and-dissolved-solids?qt-science_center_objects=0#qt-science_center_objects" target="_blank">Rock salt applied to roads in winter</a> makes driving and walking safer. But when the snow and ice melts, the runoff carries dissolved salt into streams and rivers, contaminating those waters with <a href="https://www.usgs.gov/news/urban-stream-contamination-increasing-rapidly-due-road-salt" target="_blank">levels of chloride that can be toxic</a> to aquatic plants and animals and can even threaten drinking water quality.
             </p>
             <p>
               Reducing road salt concentrations in streams can involve chemical de-icing alternatives and moderating road salt applications. But safe roads are important too. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs.
