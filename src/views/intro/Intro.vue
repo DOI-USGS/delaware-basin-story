@@ -299,11 +299,17 @@
 
 <style scoped lang="scss">
 
-#watercolor {
-    align-self: center;
-  object-fit: contain;
+#map-container {
+  overflow: hidden;
+}
 
+#watercolor {
+  align-self: center;
+  @media only screen and (max-width: 600px) {
+   align-self: left;
+    height: 75vh;
   }
+ }
  
 #DRB-land-water  {
   z-index: -1;
