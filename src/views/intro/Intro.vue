@@ -393,25 +393,96 @@
 </style>
 
 <style>
-.lonJFCVB_0{stroke-dasharray:671 673;stroke-dashoffset:672;animation:lonJFCVB_draw 467ms ease 0ms forwards;}
-.lonJFCVB_1{stroke-dasharray:824 826;stroke-dashoffset:825;animation:lonJFCVB_draw 550ms ease 467ms forwards;}
-.lonJFCVB_2{stroke-dasharray:348 350;stroke-dashoffset:349;animation:lonJFCVB_draw 180ms ease 1000ms forwards;}
-.lonJFCVB_3{stroke-dasharray:1295 1297;stroke-dashoffset:1296;animation:lonJFCVB_draw 1000ms ease 1175ms forwards;}
-.lonJFCVB_4{stroke-dasharray:118 120;stroke-dashoffset:119;animation:lonJFCVB_draw 82ms ease 2175ms forwards;}
-.lonJFCVB_5{stroke-dasharray:410 412;stroke-dashoffset:411;animation:lonJFCVB_draw 286ms ease 2270ms forwards;}
-.lonJFCVB_6{stroke-dasharray:978 980;stroke-dashoffset:979;animation:lonJFCVB_draw 681ms ease 2557ms forwards;}
-.lonJFCVB_7{stroke-dasharray:478 480;stroke-dashoffset:479;animation:lonJFCVB_draw 333ms ease 3238ms forwards;}
-.lonJFCVB_8{stroke-dasharray:613 615;stroke-dashoffset:614;animation:lonJFCVB_draw 427ms ease 3572ms forwards;}
+.lonJFCVB_0{
+  stroke-dasharray:671 673;stroke-dashoffset:672;
+  animation:lonJFCVB_draw 467ms ease 0ms forwards;
+  -webkit-animation:lonJFCVB_draw 467ms ease 0ms forwards;
+  -moz-animation:lonJFCVB_draw 467ms ease 0ms forwards;
+  -o-animation:lonJFCVB_draw 467ms ease 0ms forwards;}
+.lonJFCVB_1{
+  stroke-dasharray:824 826;stroke-dashoffset:825;
+  animation:lonJFCVB_draw 550ms ease 467ms forwards;
+  -webkit-animation:lonJFCVB_draw 550ms ease 467ms forwards;
+  -moz-animation:lonJFCVB_draw 550ms ease 467ms forwards;
+  -o-animation:lonJFCVB_draw 550ms ease 467ms forwards;}
+.lonJFCVB_2{
+  stroke-dasharray:348 350;stroke-dashoffset:349;
+  animation:lonJFCVB_draw 180ms ease 1000ms forwards;
+  -webkit-animation:lonJFCVB_draw 180ms ease 1000ms forwards;
+  -moz-animation:lonJFCVB_draw 180ms ease 1000ms forwards;
+  -o-animation:lonJFCVB_draw 180ms ease 1000ms forwards;}
+.lonJFCVB_3{
+  stroke-dasharray:1295 1297;stroke-dashoffset:1296;
+  animation:lonJFCVB_draw 1000ms ease 1175ms forwards;
+  -webkit-animation:lonJFCVB_draw 1000ms ease 1175ms forwards;
+  -moz-animation:lonJFCVB_draw 1000ms ease 1175ms forwards;
+  -o-animation:lonJFCVB_draw 1000ms ease 1175ms forwards;}
+.lonJFCVB_4{
+  stroke-dasharray:118 120;stroke-dashoffset:119;
+  animation:lonJFCVB_draw 60ms ease 2170ms forwards;
+  -webkit-animation:lonJFCVB_draw 60ms ease 2170ms forwards;
+  -moz-animation:lonJFCVB_draw 60ms ease 2170ms forwards;
+  -o-animation:lonJFCVB_draw 60ms ease 2170ms forwards;}
+.lonJFCVB_5{
+  stroke-dasharray:410 412;stroke-dashoffset:411;
+  animation:lonJFCVB_draw 200ms ease 2230ms forwards;
+  -webkit-animation:lonJFCVB_draw 200ms ease 2230ms forwards;
+  -moz-animation:lonJFCVB_draw 200ms ease 2230ms forwards;
+  -o-animation:lonJFCVB_draw 200ms ease 2230ms forwards;}
+.lonJFCVB_6{
+  stroke-dasharray:978 980;stroke-dashoffset:979;
+  animation:lonJFCVB_draw 550ms ease 2430ms forwards;
+  -webkit-animation:lonJFCVB_draw 550ms ease 2430ms forwards;
+  -moz-animation:lonJFCVB_draw 550ms ease 2430ms forwards;
+  -o-animation:lonJFCVB_draw 550ms ease 2430ms forwards;}
+.lonJFCVB_7{
+  stroke-dasharray:478 480;stroke-dashoffset:479;
+  animation:lonJFCVB_draw 270ms ease 2980ms forwards;
+  -webkit-animation:lonJFCVB_draw 270ms ease 2980ms forwards;
+  -moz-animation:lonJFCVB_draw 270ms ease 2980ms forwards;
+  -o-animation:lonJFCVB_draw 270ms ease 2980ms forwards;}
+.lonJFCVB_8{
+  stroke-dasharray:613 615;stroke-dashoffset:614;
+  animation:lonJFCVB_draw 400ms ease 3200ms forwards;
+  -webkit-animation:lonJFCVB_draw 400ms ease 3200ms forwards;
+  -moz-animation:lonJFCVB_draw 400ms ease 3200ms forwards;
+  -o-animation:lonJFCVB_draw 400ms ease 3200ms forwards;}
 #page-subtitle {
   opacity: 0;
-  animation: fadeIn 500ms ease 3000ms forwards 1;
+  animation: fadeIn 500ms ease 3200ms forwards 1;
+  -webkit-animation: fadeIn 500ms ease 3200ms forwards 1;
+  -moz-animation: fadeIn 500ms ease 3200ms forwards 1;
+  -o-animation: fadeIn 500ms ease 3200ms forwards 1;
 }
 @keyframes fadeIn {
   0% { opacity: 0; }
   90% { opacity: 1; }
   100% { opacity: 1; }
 }
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  90% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  90% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  90% { opacity: 1; }
+  100% { opacity: 1; }
+}
 @keyframes lonJFCVB_draw{100%{stroke-dashoffset:0;}}
+@-webkit-keyframes lonJFCVB_draw{100%{stroke-dashoffset:0;}}
+@-moz-keyframes lonJFCVB_draw{100%{stroke-dashoffset:0;}}
+@-o-keyframes lonJFCVB_draw{100%{stroke-dashoffset:0;}}
+
 @keyframes lonJFCVB_fade{0%{stroke-opacity:1;}95.1219512195122%{stroke-opacity:1;}100%{stroke-opacity:0;}}
+@-webkit-keyframes lonJFCVB_fade{0%{stroke-opacity:1;}95.1219512195122%{stroke-opacity:1;}100%{stroke-opacity:0;}}
+@-moz-keyframes lonJFCVB_fade{0%{stroke-opacity:1;}95.1219512195122%{stroke-opacity:1;}100%{stroke-opacity:0;}}
+@-o-keyframes lonJFCVB_fade{0%{stroke-opacity:1;}95.1219512195122%{stroke-opacity:1;}100%{stroke-opacity:0;}}
+
 </style>
 
