@@ -4417,63 +4417,63 @@ export default {
 #b  {
   z-index: 0;
 }
-    .writing, .ink {
-      stroke: black;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-width: 4px;
+.writing, .ink {
+  stroke: black;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4px;
 
-    }
-    .arrow {
-      stroke: black;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-width: 4px;
-    }
-    .sketch-black {
-      stroke: black;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-width: 3px;
-      z-index: 1;
+}
+.arrow {
+  stroke: black;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4px;
+}
+.sketch-black {
+  stroke: black;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3px;
+  z-index: 1;
 
-      .sketch-1 {
-        stroke-width: 1px;
-      }
-      .sketch-2 {
-        stroke-width: 2px;
-      }
-      .sketch-3 {
-        stroke-width: 3px;
-      }
-      .sketch-4 {
-        stroke-width: 2px;
-      }
-      .sketch-fine {
-        stroke-width: 1px;
-      }
+  .sketch-1 {
+    stroke-width: 1px;
+  }
+  .sketch-2 {
+    stroke-width: 2px;
+  }
+  .sketch-3 {
+    stroke-width: 3px;
+  }
+  .sketch-4 {
+    stroke-width: 2px;
+  }
+  .sketch-fine {
+    stroke-width: 1px;
+  }
 
-    }
-    .sketch-white {
-      stroke: white;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-width: 5px;
-      z-index: -1;
+}
+.sketch-white {
+  stroke: white;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 5px;
+  z-index: -1;
 
-    }
-    .sketch-white-3 {
-      stroke: white;
-      fill: white;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-width:1px;
+}
+.sketch-white-3 {
+  stroke: white;
+  fill: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width:1px;
 
-    }
+}
 
 .res-white  {
   opacity:.85;
@@ -4499,6 +4499,31 @@ fill:#f8f8f8;
 }
 
 // Image Container
+
+// .inking {
+//  overflow: hidden;
+//  z-index: -1;
+//  position: sticky;
+//  height: 100vh;
+//  width: auto;
+// }
+
+// #monitoring-locations {
+//   align-self: center;
+  
+//   @media only screen and (max-width: 600px) {
+//     height: 75vh;
+//   }
+//   @media only screen and (max-width: 500px) {
+//     height: 75vh;
+//     margin: -10% -10% -10% -15%;
+//   }
+//   @media only screen and (max-width: 320px) {
+//     height: 75vh;
+//     margin: -15% -15% -10% -25%;
+//   }
+// }
+
 
 #image-container {
   vertical-align: middle;
