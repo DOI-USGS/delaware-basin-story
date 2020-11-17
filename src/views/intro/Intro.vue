@@ -5,10 +5,10 @@
       class="parallax"
       width="auto"
     /><h1 id="hidden-h1">
-      Delaware River Basin
+      Water Science and Management in the Delaware River Basin
     </h1><div
       id="map-container" 
-      :height="windowHeight"
+      :width="windowWidth"
     >
       <svg
         id="watercolor"
@@ -321,6 +321,8 @@
 
 #hidden-h1{
   opacity: 0;
+  height: 0;
+  margin: 0;
 }
   
 </style>
