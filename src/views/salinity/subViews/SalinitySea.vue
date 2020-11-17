@@ -1250,7 +1250,7 @@ $s3:"";
     }
   }
 }
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
   #salinity-sea {
     #salinity-sea-container {
       grid-template-columns: 1fr;
@@ -1269,7 +1269,7 @@ $s3:"";
       }
     }
   }
-}
+} */
 
 </style>
 

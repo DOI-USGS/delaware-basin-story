@@ -16,6 +16,8 @@
         xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 1920 1080"
         aria-labelledby="page-title page-desc"
+        width="100%"
+        height="100%"
       >
       <title id="page-title">Water science and management in the delaware river basin</title>
       <desc id='page-desc'>An animation paints the map of the Delaware River Basin in watercolor</desc>
