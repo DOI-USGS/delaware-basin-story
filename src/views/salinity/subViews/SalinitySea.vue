@@ -886,7 +886,7 @@
             <p>
               Reducing road salt concentrations in streams can involve chemical de-icing alternatives and moderating road salt applications. But safe roads are important too. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs.
             </p>
-            <video
+           <!--  <video
               width="80%"
               height="80%"
               autoplay
@@ -901,7 +901,20 @@
                 type="video/mp4"
                 media="(max-width: 992px)"
               >
-            </video>
+            </video> -->
+            <picture
+              width="80%"
+              height="80%"
+            >
+              <source
+                srcset="@/assets/salinity/salinitySea/images/truckin.gif"
+              >
+              <source
+                srcset="@/assets/salinity/salinitySea/images/truckin_mobile.gif"
+                media="(max-width: 992px)"
+              >
+              <img src="@/assets/salinity/salinitySea/images/truckin.gif">
+            </picture>
           </div>         
         </div>
       </div>
