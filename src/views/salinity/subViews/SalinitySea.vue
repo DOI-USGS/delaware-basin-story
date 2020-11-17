@@ -919,6 +919,7 @@ export default {
       SeasonalChanges: false,
       SeaLevelRise: false,
       RoadSalt: false,
+      Philly: true,
     }
   },
   methods: {
@@ -1250,27 +1251,35 @@ $s3:"";
     }
   }
 }
-/* @media only screen and (max-width: 992px) {
-  #salinity-sea {
-    #salinity-sea-container {
-      grid-template-columns: 1fr;
-      justify-items: center;
-      
-      .salinity-sea-section-image {
-        top: 15rem;        
-      }
-      .salinity-sea-section-text {
-        #sea-salt-two {
-          opacity: 1;
-        }
-        #sea-salt-three {
-          opacity: 1;
-        }
-      }
-    }
-  }
-} */
+@media only screen and (max-width: 992px) {
+  #salinity-sea-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column:1;
 
+  }
+  #container-salinity-sea-image-background {
+      grid-column: 1;
+      grid-row: 1;
+      align-self: start;
+
+    } 
+
+  .salinity-sea-section-image {
+    align-self: start;
+    position: sticky;
+    top: 4em;
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 1;
+    
+  }
+  .salinity-sea-section-text {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+  }
+}
 </style>
 
 <style scoped lang="less">
