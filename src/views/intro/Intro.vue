@@ -306,7 +306,7 @@
 #watercolor {
   align-self: center;
   @media only screen and (max-width: 600px) {
-   align-self: left;
+    align-self: left;
     height: 75vh;
   }
  }

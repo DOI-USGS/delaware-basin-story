@@ -3796,7 +3796,7 @@
             id="monitoring-text-details"
           >
             <div class="scrolly-chunk">
-              <div class="number-cloud-title-container text-content-side text-chunk">
+              <div class="number-cloud-title-container text-chunk">
                 <div class="subtext-cloud-number-container">
                   <img
                     id="number-cloud-new_enhanced"
@@ -3946,7 +3946,7 @@
               </div>
             </div>
           </div>
-          <div class="text-content-side text-chunk">
+          <div class="text-chunk">
             <h3>A New Generation of Water Science in the Delaware River Basin</h3>
             <p>Water uses in the Delaware Basin are diverse and complicated, and the need for information that describes the present and future conditions of water availability and water quality is more pressing than ever.</p>
             <p>The new advanced monitoring strategy of the NGWOS, combined with the assessment capabilities of IWAAs, is enhancing water data collection and modernized data management.  With increased public availability, rapid data downloads, and interactive views of current conditions, it is easier to study the health and future of Basin.</p>
