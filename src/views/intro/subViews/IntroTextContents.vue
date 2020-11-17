@@ -5,14 +5,13 @@
       class="text-content"
     >
       <div>
-        <h2>Water Science and Management in the Delaware River Basin</h2>
-        <h3>How water quality and quantity are intertwined.</h3>
+ 
         <p class="byline">
           U.S. Geological Survey
         </p>
       </div>
       <div id="first-line">
-        <p><span class="intro-em">When rain falls and snow melts</span> in parts of New York, New Jersey, Pennsylvania, and Delaware, the water trickles over and through the ground into streams into <span class="emph">Delaware River,</span> which flows 330 miles from its headwaters to the Delaware Bay and Atlantic Ocean.</p>
+        <p><span class="intro-em">When rain falls and snow melts</span> in parts of New York, New Jersey, Pennsylvania, and Delaware, the water trickles through the ground into streams eventually entering the <span class="emph">Delaware River,</span> which flows 330 miles from its headwaters to the Delaware Bay and Atlantic Ocean.</p>
         <p>The Delaware River – named the <a href="https://endangeredrivers.americanrivers.org/delaware-river/">2020 River of the Year by American Rivers</a> for its rich history and thriving communities – forms a main artery that drains the river basin and connects the people, cities, industries, and ecosystems around it.</p>
       </div>      
     </div>
