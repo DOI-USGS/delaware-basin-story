@@ -1293,6 +1293,12 @@ $s3:"";
     grid-column: 1;
     grid-row: 1;
     align-self: start;
+    margin-left: 10vw;
+    width: 80vw;
+
+  }
+  .text-content-side {
+    width:100%;
   }
 }
 </style>
