@@ -139,8 +139,10 @@
       max-width: 600px;
       background-color: $transparentWhite;
       padding: 2em 2em 2em 2em;
+      margin: 2em;
       @media only screen and (max-width: 600px) {
         padding: 1em;
+        margin: 1em;
       }
     }
 
@@ -187,7 +189,6 @@
     .text-content-side {
       min-width: 350px;
       max-width: 600px;
-      padding: 2em 2em 2em 2em;
     }
   }
 

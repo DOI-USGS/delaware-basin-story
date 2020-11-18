@@ -524,8 +524,15 @@
 #watercolor {
   align-self: center;
   @media only screen and (max-width: 600px) {
-    align-self: left;
     height: 75vh;
+  }
+  @media only screen and (max-width: 500px) {
+    height: 75vh;
+    margin: -10% -10% -10% -15%;
+  }
+  @media only screen and (max-width: 320px) {
+    height: 75vh;
+    margin: -15% -15% -10% -25%;
   }
  }
  
