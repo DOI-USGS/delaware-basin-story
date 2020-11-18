@@ -3964,7 +3964,7 @@
 import SectionTitle from "@/components/SectionTitle";
 
 export default {
-  name: 'MonitoringConclusion',
+  name: 'Monitoring',
   components: {
     SectionTitle
   },

@@ -5,7 +5,7 @@
     <QualityChallenges v-if="checkIfIntroSectionIsRendered" />
     <Salinity v-if="checkIfIntroSectionIsRendered" />
     <Temperature v-if="checkIfIntroSectionIsRendered" />
-    <MonitoringConclusion v-if="checkIfIntroSectionIsRendered" />
+    <Monitoring v-if="checkIfIntroSectionIsRendered" />
     <!-- <Methods v-if="checkIfIntroSectionIsRendered" /> -->
   </div>
 </template>
@@ -19,7 +19,7 @@
             QualityChallenges:() => import( /* webpackPrefetch: true */ /*webpackChunkName: "quality-challenges"*/ "./qualityChallenges/QualityChallenges"),
             Temperature: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "temperature"*/ "./temperature/Temperature"),
             Salinity: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "salinity"*/ "./salinity/Salinity"),
-            MonitoringConclusion: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "monitoringConclusion"*/ "./monitoringConclusion/MonitoringConclusion")
+            Monitoring: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "monitoring"*/ "./monitoringConclusion/Monitoring")
             // Methods: () => import(/*webpackChunkName: "methods"*/ "../components/Methods")
         },
         computed: {
