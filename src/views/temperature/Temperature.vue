@@ -8,7 +8,7 @@
       :image="titleBackingImage"
     />
     <div class="text-content">
-      <p>Water temperature is closely linked to the health of aquatic organisms.  Some habitats exist only when water remains within a certain temperature range. When the water temperature exceeds that range, the heat can make organisms more or less susceptible to diseases or mess with their reproductive cycles.</p>
+      <p>Water temperature is a water-quality measure that is closely linked to the health of aquatic organisms.  Some habitats exist only when water remains within a certain temperature range. When the water temperature exceeds that range, the heat can make organisms more or less susceptible to diseases or mess with their reproductive cycles.</p>
       <p>In the Basin, there are many different thermal habitats that support diverse, vibrant communities of aquatic life. Decisionmakers in the Basin need to know what species live where, what water temperatures those species prefer, and how management decisions could impact those species.</p>
       <p>Some factors that modify water temperatures – like weather and climate – cannot be controlled by decisionmakers in the Basin.  Other factors – like reservoir releases and land-use – can be strategically managed.</p>    
     </div>
@@ -16,13 +16,13 @@
     <!-- Sticky Header -->
     <div id="header">
       <img
-        v-show="isWaterWarm"
+        v-if="isWaterWarm"
         id="warm-water"
         src="@/assets/temperature/images/warm.png"
         alt="light blue background color representing warmer water"
       >
       <img
-        v-show="isWaterCold"
+        v-if="isWaterCold"
         id="cold-water"
         src="@/assets/temperature/images/cold.png"
         alt="dark blue background color representing cold water"
@@ -33,13 +33,13 @@
         alt="water line for the top of a stream cross-section"
       >
       <p
-        v-show="isWaterWarm"
+        v-if="isWaterWarm"
         class="temp-indicator"
       >
         Warm Water
       </p>
       <p
-        v-show="isWaterCold"
+        v-if="isWaterCold"
         class="temp-indicator"
       >
         Cold Water
@@ -57,17 +57,19 @@
         >
           <!-- Begin Trout -->
           <div
-            v-show="isWaterCold"
+            v-if="isWaterCold"
             id="trout-container"
             class="stacked-container"
           >
             <img
               id="sadfish"
+              class="grayColor"
               src="@/assets/temperature/images/hank_freida_sad.png"
               alt="a couple of sad fishes"
             >
             <img
               id="happyfish"
+              class="grayColor"
               src="@/assets/temperature/images/hank_freida_happy.png"
               alt="a couple of happy fishes ready to spawn"
             >
@@ -75,14 +77,14 @@
           <!-- End Trout -->
           <!-- Begin Mussels -->
           <div
-            v-show="isMusselsTextInView"
+            v-if="isMusselsTextInView"
             id="mussels-container"
             class="stacked-container"
           >
             <svg
               id="mussels"
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1920 483"
+              viewBox="0 0 1020 483"
               preserveAspectRatio="xMidYMid meet"
             >
               <g id="substrate-fill">
@@ -131,27 +133,7 @@
                   <path d="M1342 457a6 6 0 010-7 13 13 0 017-4c2-1 6-2 8 1v3c1 0 1 2 2 1a4 4 0 01-1-2 11 11 0 000-2 5 5 0 00-2-2c-3-2-6-1-9 0a12 12 0 00-6 5 7 7 0 000 8l1-1z" />
                   <path d="M1349 455a6 6 0 001 0 8 8 0 001 0 8 8 0 002-2 7 7 0 002-4l-1-1-1 3v1a7 7 0 000 2s0 1 0 0a4 4 0 001-1v-1l1-3-1-1a6 6 0 01-2 5 7 7 0 01-3 1c-2 0-1 2 0 1zM1337 462l1-2a4 4 0 000-3 7 7 0 00-4-2 41 41 0 00-5-1 14 14 0 00-10 2c-3 1-6 3-7 6s1 7 4 6v-1a2 2 0 01-3-3l3-3a22 22 0 017-5h9a20 20 0 014 2c2 1 2 2 0 3l1 1zM1616 460a3 3 0 00-2-2l-2-2a3 3 0 012-2 6 6 0 014 0l7 2 6 2v-1c-1-2-4-2-6-2-3-1-5-3-8-3s-5 1-6 3a3 3 0 001 3l3 2h1zM1368 446l1-4a24 24 0 012-3 6 6 0 012-3 3 3 0 013 1l4 5c1 1 2 3 4 3v-2a6 6 0 01-3-1 16 16 0 01-2-3c-1-2-2-4-4-4-3-1-4 2-6 3a19 19 0 00-1 4 9 9 0 00-1 2 11 11 0 010 2h1zM1305 452a8 8 0 010-3 21 21 0 011-3 24 24 0 012-5 24 24 0 013-4c2-2 3-3 6-3a12 12 0 018 6 17 17 0 012 6v7h1a21 21 0 00-1-11 16 16 0 00-5-7c-2-2-6-3-9-2s-5 5-6 8a24 24 0 00-3 8 19 19 0 010 3h1z" />
                   <path d="M1288 453a5 5 0 011-2l1-1a20 20 0 013-3 6 6 0 013-1 7 7 0 014 1 25 25 0 015 4 9 9 0 012 2 26 26 0 011 3s0 1 0 0c1-1 0-4-2-6a23 23 0 00-6-4 9 9 0 00-3-2 6 6 0 00-4 2 19 19 0 00-3 3l-3 3 1 1z" />
-                  <g>
-                    <path d="M707 453c-2-4-8-4-11-2a14 14 0 00-5 5v7l1-1a4 4 0 01-1-3 10 10 0 012-3 13 13 0 014-4 9 9 0 015-1 6 6 0 015 2c0 1 1 0 0 0zM752 455a67 67 0 00-8-8l-4-3a10 10 0 00-4-3l-5 1a21 21 0 00-5 1c-2 2-5 4-4 6l1 1c0-3 2-5 5-6a34 34 0 014-1h5a23 23 0 014 3l3 3 4 3a27 27 0 003 3h1zM1072 465c0-3-2-5-4-6a5 5 0 00-3 1 2 2 0 00-2 2h1c0-1 2-2 4-1 2 0 3 2 3 4h1zM1074 465a4 4 0 011-5c2-2 5-2 7-2l4-1 3 1a5 5 0 011 3v2a9 9 0 001 1h1a15 15 0 00-1-4 6 6 0 00-1-4 5 5 0 00-4-1l-5 1c-3 0-5 1-7 3a6 6 0 00-1 6h1zM1110 481v-1a4 4 0 001-1 5 5 0 000-2 6 6 0 00-4-4 10 10 0 00-11 4 11 11 0 00-1 7h1a15 15 0 011-5 9 9 0 0110-4 4 4 0 013 3 2 2 0 01-1 2l-1 1a1 1 0 002 0z" />
-                    <path d="M1120 471v-2a5 5 0 000-2 7 7 0 00-1-3 17 17 0 00-6-5c-3-1-5 0-8 1s-4 4-4 7a9 9 0 002 4 14 14 0 003 3v-1a43 43 0 01-2-4 4 4 0 01-1-4 7 7 0 013-3 10 10 0 014-1c3-1 6 2 7 4 1 1 3 2 2 3a2 2 0 010 1 2 2 0 01-1 1 1 1 0 001 1h1z" />
-                    <path d="M1107 457a6 6 0 00-6-1 6 6 0 00-3 1 6 6 0 00-1 4 6 6 0 001 4h1v-1a10 10 0 01-1-2 4 4 0 011-3 6 6 0 015-2 3 3 0 013 1 1 1 0 000-1z" />
-                    <path d="M1102 467a7 7 0 00-3-3 2 2 0 00-1 0 2 2 0 00-1 0 4 4 0 00-1 1c-1 1-1 2-3 2a6 6 0 01-2 0 7 7 0 00-2 0v1a6 6 0 004 1 4 4 0 003-2l1-1a3 3 0 011-1l2 1a5 5 0 011 2l1-1zM1146 470a3 3 0 000-1 2 2 0 000-1l-4-2a107 107 0 00-11-2c-3 0-7 1-8 4a6 6 0 000 4 2 2 0 003 1v-1l-2-1a5 5 0 010-2 4 4 0 013-3h8l7 2a12 12 0 012 0l1 1c-1 1 1 1 1 1z" />
-                    <path d="M1142 468l-1 2-2 1a2 2 0 011 0 10 10 0 001-1 2 2 0 000-2l-1-1a3 3 0 00-1 2 5 5 0 01-1 1 2 2 0 01-1 1 1 1 0 010-1 1 1 0 011-1v-1a6 6 0 01-2 2 7 7 0 01-1 1 2 2 0 00-1 1c1 1 2 0 3-1a6 6 0 001-2v-1a2 2 0 00-2 2 2 2 0 000 1l1 1a2 2 0 002-1l2-2-1-1c0 1 0 0 0 0a1 1 0 010 1 3 3 0 00-1 1 2 2 0 001 3 1 1 0 001-1 12 12 0 001-1 3 3 0 001-3l-1-1v1zM881 455a7 7 0 000-1 3 3 0 00-1-1 5 5 0 00-3-2h-9c-2 0-5 1-6 3a4 4 0 00-1 3l2 1-1-2a3 3 0 011-2 12 12 0 016-2 34 34 0 016 0 8 8 0 013 0c1 1 3 2 2 3h1zM860 456a10 10 0 01-3 0 11 11 0 01-2-2l-5-4a29 29 0 00-7-5c-6-2-14-1-16 5a14 14 0 00-1 10l1-1c0-3 0-7 2-10s7-5 11-4 7 4 10 6l5 5c2 1 3 2 5 1v-1z" />
-                    <path d="M861 454v-1a4 4 0 00-1-1 4 4 0 00-2-1 4 4 0 00-3 0 4 4 0 00-1 1 2 2 0 000 1 5 5 0 014-1c1 0 2 0 3 2v-1 1zM824 456a5 5 0 00-1 1 4 4 0 00-1 0 3 3 0 00-1 2 2 2 0 000 1h1v-1a3 3 0 011 0 3 3 0 010-1 4 4 0 011-1 6 6 0 011 0 1 1 0 000-1 1 1 0 00-1 0zM819 457a10 10 0 00-4-3 29 29 0 00-6-2 5 5 0 00-5 3 8 8 0 00-1 5v1a9 9 0 012-5 4 4 0 015-2 31 31 0 015 1 12 12 0 012 1 7 7 0 011 1h1c1 0 1 0 0 0zM865 457l-5 2a41 41 0 00-5 1 20 20 0 00-4 2 8 8 0 01-4 1c3 1 5-2 8-3a34 34 0 015-1 25 25 0 005-2z" />
-                    <path d="M804 461a39 39 0 017-1h7a56 56 0 017 0h6v-1a34 34 0 01-3 0h-4a50 50 0 00-7 0c-4 0-9 0-14 2h1zM898 473h1a2 2 0 000-2 6 6 0 00-2-2 13 13 0 00-6-3 7 7 0 00-6 1 9 9 0 00-3 5l1 1a10 10 0 001-2 10 10 0 012-2 6 6 0 015-2 12 12 0 016 3l1 2-1 1h1zM905 464l2-2a6 6 0 001-3 13 13 0 00-3-7c-2-2-4-4-7-3a24 24 0 00-4 2 20 20 0 00-4 3c-2 2-4 5-3 8l1-1c-1-3 1-5 4-7a26 26 0 014-2l5-2c3 1 5 4 5 7a9 9 0 011 3 4 4 0 01-3 3l1 1z" />
-                    <path d="M894 455a9 9 0 001 4 10 10 0 002 2 12 12 0 001 1 3 3 0 001 0 5 5 0 00-1-1l-1-1a9 9 0 01-1-1 8 8 0 01-1-4h-1zM891 455v1a6 6 0 000 1 7 7 0 00-1 2 6 6 0 001 3h1l-1-2a7 7 0 010-2 7 7 0 010-1v-1h1a1 1 0 00-1-1zM912 466c-1-2-6-4-3-6 2-2 5-2 8-2h9a4 4 0 012 2 3 3 0 01-1 3l1 1c2-1 2-3 1-5s-4-3-6-3a28 28 0 00-5 0l-5 1c-2 0-5 1-6 4a4 4 0 001 3 9 9 0 004 2zM1030 458a13 13 0 001-2 7 7 0 000-1 8 8 0 000-3 9 9 0 00-3-6 9 9 0 00-3-1 7 7 0 00-4 0 15 15 0 00-7 4 8 8 0 00-2 9v-1c-1-5 4-9 8-10a13 13 0 013-1 6 6 0 014 1 8 8 0 013 4 6 6 0 01-1 6v1h1z" />
-                    <path d="M1022 447h-1a5 5 0 000 1 9 9 0 00-1 1 8 8 0 000 3 7 7 0 003 5 9 9 0 01-2-5 6 6 0 011-5s0-1 0 0zM1017 450a8 8 0 000 3 9 9 0 001 2 4 4 0 001 2v-1l-1-1a7 7 0 01-1-2 7 7 0 010-1 6 6 0 010-1 2 2 0 010-1c0-1-1-1 0 0zM1021 468a3 3 0 002-2 4 4 0 000-2 7 7 0 00-4-4 12 12 0 00-12 2c-1 1-3 4-1 6l1-1c-2-2 0-4 2-5a12 12 0 016-2 9 9 0 016 2 3 3 0 012 3 4 4 0 01-2 3c-1 0 0 0 0 0z" />
-                    <path d="M1012 467l-1-3-1 1a8 8 0 012 2v-1l-3-1a1 1 0 000 1 1 1 0 001 1v-1a1 1 0 01-1 0 182 182 0 003 1 8 8 0 00-1-3h-1v1l2 2zM1002 460c-1-3-4-6-8-5a7 7 0 00-5 2 6 6 0 000 6 5 5 0 011-5 6 6 0 015-2c3 0 5 2 7 5v-1zM934 451a12 12 0 00-6-4 38 38 0 00-7-1c-3-1-5 0-6 2a8 8 0 000 7c0-3-1-5 1-7s4-2 6-1a41 41 0 016 1 16 16 0 013 2l2 1h1z" />
-                    <path d="M931 454l2-1a13 13 0 012-1 39 39 0 016 0c3-1 7 0 10 1a6 6 0 014 4 4 4 0 01-3 5 18 18 0 01-5 1 52 52 0 00-5 2c-1 0-1 0 0 0 3 1 7 0 10-1s4-4 4-7c-1-7-11-7-16-7-4 0-7 1-10 3l1 1z" />
-                    <path d="M931 454l-1 1a6 6 0 000 1 5 5 0 00-1 2 1 1 0 000 1v-1a5 5 0 011-1 4 4 0 010-1 6 6 0 011-1h1a2 2 0 000-1h-1zM923 451a3 3 0 000 1 4 4 0 000 1 4 4 0 001 2h1a6 6 0 01-4-6s0-1 0 0a6 6 0 00-2 3 5 5 0 001 4v-1a23 23 0 00-1-2h-1v1l1 2 1-1a5 5 0 011-6 7 7 0 003 6c1 0 1 0 0 0a3 3 0 01-1-2 2 2 0 010-2c1 0 0-1 0 0zM972 465a5 5 0 011-1 7 7 0 000-1 8 8 0 000-1 9 9 0 000-4 16 16 0 00-2-3 17 17 0 00-2-3c-2-2-4-1-6 1a18 18 0 01-7 3l1 1a13 13 0 005-2l6-3 2 3a18 18 0 012 3c1 2 1 5-1 6l1 1z" />
-                    <path d="M969 457a5 5 0 01-1 0 6 6 0 01-1 1 7 7 0 01-2 0 5 5 0 01-3 0v-1l1-1c0-1 0 0 0 0h-1a1 1 0 00-1 1c1 2 2 2 3 2a7 7 0 004-1 6 6 0 001-1h1a1 1 0 00-1-1zM972 459a7 7 0 01-3 2 12 12 0 01-5 1v1a7 7 0 005-1 8 8 0 002-1 6 6 0 001 0v-1-1zM981 464a5 5 0 011 0 3 3 0 000-1 4 4 0 000-1 4 4 0 00-1-3 5 5 0 00-5-1 3 3 0 00-2 2v1l1-1a4 4 0 011-1 5 5 0 012 0 3 3 0 013 3 3 3 0 010 1v1zM978 464l-3 1a12 12 0 01-2 0 29 29 0 01-5-1l-4 1a8 8 0 01-6 0v1a6 6 0 005 0l5-1 3 1a12 12 0 002 0 11 11 0 005-1c1 0 0-1 0 0zM944 466a8 8 0 00-4-1l-4 1h-4-1a8 8 0 00-2 0c-1 0 0 0 0 0a8 8 0 003 1l4-1h6a12 12 0 002 0zM801 474c1 1 3 0 4-1l1-6a17 17 0 00-6-10 22 22 0 00-11-5h-7a11 11 0 00-2 2l-3 3-4 5a11 11 0 002 8l1-1c-1-2-2-5-1-7l5-5 2-3a5 5 0 014-1 22 22 0 017 1 18 18 0 0110 8 14 14 0 012 7 4 4 0 01-1 3l-3 1v1zM643 458c3 1 5-2 6-4 0-3-1-6-3-8-3-2-7-3-10-2a35 35 0 00-11 2c-3 1-7 3-7 7l1 1a36 36 0 013-4 16 16 0 014-2 35 35 0 0111-3c4 0 8 1 10 4v6c-1 2-2 1-4 2v1zM764 460a5 5 0 00-1-1 8 8 0 00-2 0 12 12 0 00-3-1 18 18 0 00-8 2c-2 2-4 4-4 6a6 6 0 000 4 8 8 0 002 1 5 5 0 002 1v-1a18 18 0 01-2-2 3 3 0 01-1-3l5-4c3-2 9-4 12-1v-1zM1219 467a22 22 0 00-4-7 20 20 0 00-8-4 16 16 0 00-8 0c-2 0-5 1-5 4v1l3-2a10 10 0 013-2 14 14 0 018 0 19 19 0 016 4 18 18 0 013 2 9 9 0 012 4s1 0 0 0zM1193 470a16 16 0 000-2 8 8 0 000-3 19 19 0 00-4-4c-3-3-6-5-10-6a10 10 0 00-9 4 11 11 0 00-2 5 12 12 0 001 6h1v-4a10 10 0 011-5 8 8 0 018-4 14 14 0 018 4c2 2 7 6 5 9h1zM1163 462v-1a5 5 0 00-1-2 6 6 0 00-2-2c-3-2-6-2-9-1a9 9 0 00-7 3 6 6 0 000 7v-1a6 6 0 011-5 8 8 0 016-3 18 18 0 017 0 7 7 0 013 2l1 3h1zM1185 478h-1l-1-2a17 17 0 00-3-2 11 11 0 00-7-1 8 8 0 00-5 3 9 9 0 00-2 6h1c0-3 2-7 6-8 5-1 9 2 12 5v-1zM1027 465c-4-4 3-6 6-7 2-1 4 0 6 1s3-1 4-1h6a36 36 0 016 3l5 4a31 31 0 003 1l3 2v-2l-5-4-5-3c-3-2-7-4-10-4-2-1-3 0-5 1s-3 0-5-1c-3 0-7 2-9 4a6 6 0 00-2 4 4 4 0 002 3z" />
-                    <path d="M650 463l-1-3a21 21 0 00-2-3l-2-2a3 3 0 00-1 1h-2a25 25 0 00-6 3l-2 4h1c0-2 1-3 3-4a35 35 0 015-2 12 12 0 012 0c1-1 2 1 2 1a17 17 0 012 2v1a3 3 0 011 2h1z" />
-                    <path d="M646 468l2-3a13 13 0 013-2 16 16 0 018-1h4a9 9 0 014 2 25 25 0 013 2 3 3 0 011 4v1c3-2 1-5 0-7a33 33 0 00-5-3 7 7 0 00-4-1h-5a17 17 0 00-5 1 16 16 0 00-4 3 23 23 0 00-3 3l1 1z" />
-                    <path d="M683 465a2 2 0 00-1-1 6 6 0 00-1 0 16 16 0 00-2 0 15 15 0 00-4 1 4 4 0 00-3 2 3 3 0 000 2l1 1v-1a2 2 0 011-2 5 5 0 012-1 22 22 0 014-1 10 10 0 011 0 10 10 0 002 0z" />
-                    <path d="M695 468a5 5 0 011-1 4 4 0 000-2 6 6 0 00-1-3 10 10 0 00-6-3c-2-1-5-2-7-1a3 3 0 00-2 2v3a1 1 0 000 1l1-1 1-3c1-2 4-1 6-1a13 13 0 016 3c1 1 2 4 1 6-1 0 0 1 0 0z" />
-                    <path d="M689 466v-1h-1a6 6 0 01-1 0 6 6 0 01-2-1 4 4 0 01-1-3l-1 1 1 2v1a5 5 0 001 1v-1a5 5 0 000-1l-1-1v-2h-1a6 6 0 002 4 7 7 0 003 1 8 8 0 001 0v-1zM699 471v-2a3 3 0 011-1 24 24 0 013-1 17 17 0 018 0 19 19 0 016 3c1 0 3 1 2 2a3 3 0 01-2 2v1c4 1 4-3 3-5a13 13 0 00-4-3 17 17 0 00-5-2 14 14 0 00-6 0 23 23 0 00-5 2 3 3 0 00-2 2l1 2c1 0 1 0 0 0zM1060 477l2-2a2 2 0 000-2c0-2-2-3-4-2l-7 2c-2 0-5 0-6 2h1l5-1 5-2a7 7 0 014 0l2 2-2 1a2 2 0 00-1 1l1 1zM673 460v-2a7 7 0 00-1-1 13 13 0 00-2-3c-1-1-2-3-4-3l-4 4a12 12 0 01-2 2 7 7 0 01-2 1v1l4-2 3-4a3 3 0 012 0 4 4 0 012 1 19 19 0 012 3l1 2 1 1zM728 463l-1-4a17 17 0 00-2-3 19 19 0 00-5-6c-4-3-10 0-12 4a15 15 0 00-2 10h1v-5a12 12 0 012-4 11 11 0 017-5 5 5 0 015 1 18 18 0 013 4 16 16 0 012 3l1 5h1z" />
-                    <path d="M742 463a16 16 0 00-5-5 5 5 0 00-3-1 7 7 0 00-3 1 21 21 0 00-5 3c-2 2-3 3-2 5 0 0 0 1 0 0l1-2a7 7 0 011-2 21 21 0 015-3 7 7 0 013-1 5 5 0 013 1 16 16 0 014 4h1z" />
-                  </g>
+                  
                 </g>
 
                 <g
@@ -284,8 +266,8 @@
                     xlink:href="@/assets/temperature/images/big_b_all-01.png"
                     href="@/assets/temperature/images/big_b_all-01.png"
                     alt="large freshwater mussel"
-                    class="grow"
-                    transform="translate(-30 0)"
+                    class="appear"
+                    transform="translate(-160 -330) scale(2 2)"
                     height="100%"
                     width="100%"
                   />
@@ -294,8 +276,7 @@
                     xlink:href="@/assets/temperature/images/fanny_all-01.png"
                     href="@/assets/temperature/images/fanny_all-01.png"
                     alt="large freshwater mussel"
-                    class="grow"
-                    transform="translate(-10 0)"
+                    transform="translate(150 120)"
                     height="100%"
                     width="100%"
                   />
@@ -336,7 +317,7 @@
           <div class="scrolly-chunk">
             <div class="text-chunk">
               <h3>Brook Trout and Cold Water</h3>
-              <p>Brook trout are the only native trout species within the Basin, and they prefer to live in reaches with <span class="emph">cold water.</span> In fact, this particular species is used as an indicator of water quality due to its sensitivity to water temperatures.</p>
+              <p>Brook trout are the only native trout species within the Basin, and they prefer to live in reaches with <span class="emph">cold water.</span> Due to their sensitivity to water temperatures, this species can be used as anindicator of water quality.</p>
             </div>
           </div>
           <div class="scrolly-chunk">
@@ -346,7 +327,7 @@
           </div>
           <div class="scrolly-chunk">
             <p class="text-chunk">
-              In the fall, trout wait for the water temperature to drop to begin their reproductive cycle. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection. The eggs rest there all winter, and they require the water to stay cool to develop properly.
+              In the fall, trout wait for the drop in water temperature to begin their reproductive cycle. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection. The eggs rest there all winter, and they require the water to stay cool to develop properly.
             </p>
           </div>
           <div class="scrolly-chunk">
@@ -362,7 +343,7 @@
           v-observe-visibility="{
             callback: visibilityChanged,
             intersection: {
-              rootMargin: '80% 0% -40% 0%',
+              rootMargin: '580% 0% 0% 0%',
               threshold: 0
             }
           }"
@@ -403,9 +384,9 @@
         },
         data() {
             return {
-              isMusselsTextInView: true,
-              isWaterCold: false,
-              isWaterWarm: true,
+              isMusselsTextInView: false,
+              isWaterCold: true,
+              isWaterWarm: false,
               title: 'Temperature',
               titleBackingImage: require('@/assets/temperature/images/dark-orange-min.png')
             }
@@ -428,7 +409,6 @@
 </script>
 
 <style scoped lang="scss">
-
 
   // What follows controls the general layout, grid pattern
   #temp-wrapper {
@@ -466,11 +446,10 @@
 
 // Appear Animation
   .appear {
-      animation: fade-in 4s ease-in 2s forwards 1;
-      -webkit-animation: fade-in 4s ease-in 2s forwards 1;
-      -moz-animation: fade-in 4s ease-in 2s forwards 1;
-      -ms-animation: fade-in 4s ease-in 2s forwards 1;
-      -o-animation: fade-in 4s ease-in 2s forwards 1;
+      animation: fade-in 4s ease-in 1s forwards 1;
+      -webkit-animation: fade-in 4s ease-in 1s forwards 1;
+      -moz-animation: fade-in 4s ease-in 1s forwards 1;
+      -o-animation: fade-in 4s ease-in 1s forwards 1;
   }
 
 // Small screen grid stack
@@ -569,20 +548,18 @@
 
 
 // Assign fish animations 
-  #happyfish {
+  .grayColor {
     grid-column: 1 / span 12;
     grid-row: 1;
-    animation: color-change 2s linear 2s forwards infinite;
-    -webkit-animation: color-change 2s linear 2s forwards infinite;
-    -moz-animation: color-change 2s linear 2s forwards infinite;
-    -ms-animation: color-change 2s linear 2s forwards infinite;
-    -o-animation: color-change 2s linear 2s forwards infinite;
+    animation: fromGray 4s linear 2s forwards infinite;
+    -webkit-animation: fromGray 4s linear 2s forwards infinite;
+    -moz-animation: fromGray 4s linear 2s forwards infinite;
+    -o-animation: fromGray 4s linear 2s forwards infinite;
   }
   #trout-container:hover {
     animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
     -webkit-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
     -moz-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
-    -ms-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
     -o-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
   }
          
@@ -608,13 +585,7 @@
   65%  { opacity:1; }
   100% { opacity:0; }
 }
-@-ms-keyframes color-change{
-  0%   { opacity:0; }
-  35%  { opacity:1; }
-  50%  { opacity:1; }
-  65%  { opacity:1; }
-  100% { opacity:0; }
-}
+
 @-webkit-keyframes color-change{
   0%   { opacity:0; }
   35%  { opacity:1; }
@@ -622,6 +593,45 @@
   65%  { opacity:1; }
   100% { opacity:0; }
 }
+
+@keyframes fromGray {
+  0%   { filter: grayscale(0.3); }
+  25%  { filter: grayscale(0.5); }
+  35%  { filter: grayscale(1); }
+  50%  { filter: grayscale(1); }
+  65%  { filter: grayscale(1); }
+  75%  { filter: grayscale(0.5); }
+  100% { filter: grayscale(0.3); }
+}
+@-o-keyframes fromGray {
+  0%   { filter: grayscale(0.3); }
+  25%  { filter: grayscale(0.5); }
+  35%  { filter: grayscale(1); }
+  50%  { filter: grayscale(1); }
+  65%  { filter: grayscale(1); }
+  75%  { filter: grayscale(0.5); }
+  100% { filter: grayscale(0.3); }
+}
+@-moz-keyframes fromGray{
+  0%   { filter: grayscale(0.3); }
+  25%  { filter: grayscale(0.5); }
+  35%  { filter: grayscale(1); }
+  50%  { filter: grayscale(1); }
+  65%  { filter: grayscale(1); }
+  75%  { filter: grayscale(0.5); }
+  100% { filter: grayscale(0.3); }
+}
+
+@-webkit-keyframes fromGray{
+  0%   { filter: grayscale(0.3); }
+  25%  { filter: grayscale(0.5); }
+  35%  { filter: grayscale(1); }
+  50%  { filter: grayscale(1); }
+  65%  { filter: grayscale(1); }
+  75%  { filter: grayscale(0.5); }
+  100% { filter: grayscale(0.3); }
+}
+
 @keyframes fade-in {
   0%   { opacity:0; }
   30%   { opacity:0; }
@@ -640,12 +650,7 @@
   75%  { opacity:1; }
   100% { opacity:1; }
 }
-@-ms-keyframes fade-in {
-  0%   { opacity:0; }
-  30%   { opacity:0; }
-  75%  { opacity:1; }
-  100% { opacity:1; }
-}
+
 @-webkit-keyframes fade-in {
   0%   { opacity:0; }
   30%   { opacity:0; }
@@ -697,20 +702,7 @@
     transform: translate3d(4px, 0, 0);
   }
 }
-@-ms-keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
+
 @-webkit-keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
