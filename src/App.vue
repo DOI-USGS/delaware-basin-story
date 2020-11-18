@@ -90,7 +90,7 @@
   #app {
 
     .section {
-      margin: 5em 0 5em 0;
+      margin: 0 0 5em 0;
     }
 
     p {
@@ -152,6 +152,20 @@
         padding: 100vh 0;
       }
     }
+    .last-scrolly-chunk {
+      padding-bottom: 0;
+      margin-bottom: 100vh;
+      @media only screen and (max-width: 1600px) {
+        margin-bottom: 50vh;
+      }
+      @media only screen and (max-width: 1400px) {
+        margin-bottom: 20vh;
+      }
+      @media only screen and (max-width: 1200px) {
+        margin-bottom: 30vh;
+      }
+    }
+    
     // Text-only
     .text-content {
       min-width: 350px;

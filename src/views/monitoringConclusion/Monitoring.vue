@@ -3813,7 +3813,7 @@
                     v-observe-visibility="{
                       callback: visibilityChanged,
                       intersection: {
-                        rootMargin: '-20% 0% -50% 0%',
+                        rootMargin: '-1% 0% -1% 0%',
                         threshold: 0
                       }
                     }"
@@ -3848,7 +3848,7 @@
                     v-observe-visibility="{
                       callback: visibilityChanged,
                       intersection: {
-                        rootMargin: '-20% 0% -50% 0%',
+                        rootMargin: '-1% 0% -1% 0%',
                         threshold: 0
                       }
                     }"
@@ -3884,7 +3884,7 @@
                     v-observe-visibility="{
                       callback: visibilityChanged,
                       intersection: {
-                        rootMargin: '-20% 0% -50% 0%',
+                        rootMargin: '-1% 0% -1% 0%',
                         threshold: 0
                       }
                     }"
@@ -3904,7 +3904,7 @@
               </div>
             </div>
             
-            <div class="scrolly-chunk">
+            <div class="scrolly-chunk last-scrolly-chunk">
               <div class="number-cloud-title-container text-chunk">
                 <div class="subtext-cloud-number-container">
                   <img
@@ -3924,7 +3924,7 @@
                     v-observe-visibility="{
                       callback: visibilityChanged,
                       intersection: {
-                        rootMargin: '-20% 0% -50% 0%',
+                        rootMargin: '-1% 0% -1% 0%',
                         threshold: 0
                       }
                     }"
@@ -3947,26 +3947,22 @@
               </div>
             </div>
           </div>
-          <div class="text-chunk">
-            <h3>A New Generation of Water Science in the Delaware River Basin</h3>
-            <p>Water uses in the Delaware Basin are diverse and complicated, and the need for information that describes the present and future conditions of water availability and water quality is more pressing than ever.</p>
-            <p>The new advanced monitoring strategy of the NGWOS, combined with the assessment capabilities of IWAAs, is enhancing water data collection and modernized data management.  With increased public availability, rapid data downloads, and interactive views of current conditions, it is easier to study the health and future of Basin.</p>
-            <p>While this story focused on flow, salinity, and water temperature, the USGS and collaborators study a multitude of other water-quality factors in the Basin.  We could tell additional stories about sediment, turbidity, nutrients, dissolved oxygen, pathogens, heavy metals, and chemical contaminants.</p>
-            <p>Given the complexity of understanding and managing a healthy river basin, monitoring and modeling are essential to enable wiser management decisions, a more optimal balance of water uses, and a richer understanding of this beautiful and life-sustaining river.</p>
-          </div>
         </div>
       </div>
     </div>
+    <!-- <Conclusion /> -->
   </section>
 </template>
 
 <script>
 import SectionTitle from "@/components/SectionTitle";
+// import Conclusion from "@/views/monitoringConclusion/Conclusion";
 
 export default {
   name: 'Monitoring',
   components: {
-    SectionTitle
+    SectionTitle, 
+    // Conclusion
   },
   data() {
     return {
@@ -4066,6 +4062,11 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+
+// remove white space below
+#monitoringConclusion {
+  margin: 0 0 0 0;
+}
 
 // center highlights
 #salinity, #temp, #new_enhanced, #cameras {
@@ -4536,7 +4537,7 @@ fill:#f8f8f8;
 #image-container {
   vertical-align: middle;
   object-fit: contain;
-  height: 100vh;
+  height: 80vh;
   max-width: auto;
   position: sticky;
   display: block;
@@ -4548,12 +4549,13 @@ fill:#f8f8f8;
   @media only screen and (max-width: 992px) {
     #image-container {
       min-width: 1200px;
+      // height: 100%;
     }
 
 
   @media only screen and (max-width: 600px) {
     #image-container {
-      min-width: 900px;
+      min-width: 1000px;
     }
   }
     
@@ -4603,7 +4605,6 @@ fill:#f8f8f8;
 #text-container {
   display: grid;
   grid-column: 2;
-  padding-bottom: 50em;
   .subtext-cloud-number-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
