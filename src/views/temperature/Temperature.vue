@@ -63,11 +63,13 @@
           >
             <img
               id="sadfish"
+              class="grayColor"
               src="@/assets/temperature/images/hank_freida_sad.png"
               alt="a couple of sad fishes"
             >
             <img
               id="happyfish"
+              class="grayColor"
               src="@/assets/temperature/images/hank_freida_happy.png"
               alt="a couple of happy fishes ready to spawn"
             >
@@ -546,13 +548,13 @@
 
 
 // Assign fish animations 
-  #happyfish {
+  .grayColor {
     grid-column: 1 / span 12;
     grid-row: 1;
-    animation: color-change 2s linear 2s forwards infinite;
-    -webkit-animation: color-change 2s linear 2s forwards infinite;
-    -moz-animation: color-change 2s linear 2s forwards infinite;
-    -o-animation: color-change 2s linear 2s forwards infinite;
+    animation: fromGray 4s linear 2s forwards infinite;
+    -webkit-animation: fromGray 4s linear 2s forwards infinite;
+    -moz-animation: fromGray 4s linear 2s forwards infinite;
+    -o-animation: fromGray 4s linear 2s forwards infinite;
   }
   #trout-container:hover {
     animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
@@ -591,6 +593,45 @@
   65%  { opacity:1; }
   100% { opacity:0; }
 }
+
+@keyframes fromGray {
+  0%   { filter: grayscale(0.3); }
+  25%  { filter: grayscale(0.5); }
+  35%  { filter: grayscale(1); }
+  50%  { filter: grayscale(1); }
+  65%  { filter: grayscale(1); }
+  75%  { filter: grayscale(0.5); }
+  100% { filter: grayscale(0.3); }
+}
+@-o-keyframes fromGray {
+  0%   { filter: grayscale(0.3); }
+  25%  { filter: grayscale(0.5); }
+  35%  { filter: grayscale(1); }
+  50%  { filter: grayscale(1); }
+  65%  { filter: grayscale(1); }
+  75%  { filter: grayscale(0.5); }
+  100% { filter: grayscale(0.3); }
+}
+@-moz-keyframes fromGray{
+  0%   { filter: grayscale(0.3); }
+  25%  { filter: grayscale(0.5); }
+  35%  { filter: grayscale(1); }
+  50%  { filter: grayscale(1); }
+  65%  { filter: grayscale(1); }
+  75%  { filter: grayscale(0.5); }
+  100% { filter: grayscale(0.3); }
+}
+
+@-webkit-keyframes fromGray{
+  0%   { filter: grayscale(0.3); }
+  25%  { filter: grayscale(0.5); }
+  35%  { filter: grayscale(1); }
+  50%  { filter: grayscale(1); }
+  65%  { filter: grayscale(1); }
+  75%  { filter: grayscale(0.5); }
+  100% { filter: grayscale(0.3); }
+}
+
 @keyframes fade-in {
   0%   { opacity:0; }
   30%   { opacity:0; }
