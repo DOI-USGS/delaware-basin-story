@@ -22,7 +22,7 @@
         alt="light blue background color representing warmer water"
       >
       <img
-        v-show="isWaterCold"
+        v-if="isWaterCold"
         id="cold-water"
         src="@/assets/temperature/images/cold.png"
         alt="dark blue background color representing cold water"
@@ -57,7 +57,7 @@
         >
           <!-- Begin Trout -->
           <div
-            v-show="isWaterCold"
+            v-if="isWaterCold"
             id="trout-container"
             class="stacked-container"
           >
@@ -75,7 +75,7 @@
           <!-- End Trout -->
           <!-- Begin Mussels -->
           <div
-            v-show="isMusselsTextInView"
+            v-if="isMusselsTextInView"
             id="mussels-container"
             class="stacked-container"
           >
@@ -341,7 +341,7 @@
           v-observe-visibility="{
             callback: visibilityChanged,
             intersection: {
-              rootMargin: '80% 0% -40% 0%',
+              rootMargin: '580% 0% 0% 0%',
               threshold: 0
             }
           }"
@@ -382,9 +382,9 @@
         },
         data() {
             return {
-              isMusselsTextInView: true,
-              isWaterCold: false,
-              isWaterWarm: true,
+              isMusselsTextInView: false,
+              isWaterCold: true,
+              isWaterWarm: false,
               title: 'Temperature',
               titleBackingImage: require('@/assets/temperature/images/dark-orange-min.png')
             }
@@ -408,7 +408,12 @@
 
 <style scoped lang="scss">
 
-
+#scroll-target-mussel{
+  background-color: red;
+}
+#temp-text-mussels {
+  background-color: yellow;
+}
   // What follows controls the general layout, grid pattern
   #temp-wrapper {
     display: grid;
