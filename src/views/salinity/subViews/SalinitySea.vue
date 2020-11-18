@@ -781,7 +781,7 @@
           </div>
         </div>
       </div>
-      <div class="salinity-sea-section-text">
+      <div class="salinity-sea-section-text text-content-side">
         <div
           id="sea-salt-one"
           v-observe-visibility="{
@@ -793,7 +793,7 @@
           }"
           class="scrolly-chunk"
         >
-          <div class="text-chunk text-content-side">
+          <div class="text-chunk">
             <h3
               id="header-salt-front-intro-text"
             >
@@ -827,7 +827,7 @@
           }"
           class="scrolly-chunk"
         >
-          <div class="text-chunk text-content-side">
+          <div class="text-chunk">
             <h3
               id="header-salt-front-move-text"
             >
@@ -853,7 +853,7 @@
           }"
           class="scrolly-chunk"
         >
-          <div class="text-chunk text-content-side">
+          <div class="text-chunk">
             <h3>
               Rising Sea Levels
             </h3>
@@ -876,7 +876,7 @@
           }"
           class="scrolly-chunk"
         >
-          <div class="text-content-side text-chunk">
+          <div class="text-chunk">
             <h3>
               Road Salt
             </h3>
@@ -1294,13 +1294,9 @@ $s3:"";
     grid-column: 1;
     grid-row: 1;
     align-self: start;
-    margin-left: 10vw;
-    width: 80vw;
-
+  
   }
-  .text-content-side {
-    width:100%;
-  }
+  
 }
 </style>
 
