@@ -612,7 +612,7 @@
                 />
               </g>
             
-              <path
+              <!-- <path
                 id="ft1"
                 d="M490.29 290.66c-.89-3.67-2.21-9-3.86-15.45-2.56-10-3.78-14.2-3.57-14.26.58-.19 10.87 31.61 11.36 31.46.29-.09-3-11.39-8.3-29.28"
               />
@@ -623,13 +623,13 @@
               <path
                 id="ft3"
                 d="M488.54 232.11c18.47 4.35 29.78 7.13 29.71 7.42-.11.5-33-6.62-33.21-5.68-.08.38 5.08 1.91 14.86 4.81 6.26 1.86 11.51 3.33 15.29 4.37"
-              />
+              /> -->
               <path
                 id="intake"
                 d="M561.73 166.34l21 21"
               />
           
-              <path
+             <!--  <path
                 id="num1"
                 d="M472.89 303.64l8-4.66v12"
               />
@@ -666,7 +666,7 @@
               <path
                 id="ft3_t"
                 d="M560.3 228.64q-.34 9.66-.67 19.33M555 230l12-2.67"
-              />
+              /> -->
               <g
                 id="intakes-text"
                 class="marker"
@@ -834,10 +834,10 @@
               Seasonal Changes
             </h3>
             <p>
-              The salt front <a href="https://www.state.nj.us/drbc/library/documents/shallcross_saltfront_CDRWforum_oct2019.pdf">migrates</a> up and down the river channel over the daily cycle of ocean tides. The location of the salt front is also impacted by occasional storm surges, the seasonal cycle of high or low river flows, and fluctuations as the river changes over the course of many years.
+              The salt front <a href="https://www.state.nj.us/drbc/library/documents/shallcross_saltfront_CDRWforum_oct2019.pdf" target="_blank">migrates</a> up and down the river channel over the daily cycle of ocean tides. The location of the salt front is also impacted by occasional storm surges, the seasonal cycle of high or low river flows, and fluctuations as the river changes over the course of many years.
             </p>
             <p>
-              In 1960, during a record drought, the salt front moved nearly 30 miles further upstream.  High salt levels in the upstream freshwater ecosysystems can be harmful, and the salt came close to <span class="emph">contaminating Philadelphia's drinking water intakes.</span>
+              In the 1960s, during a record drought, the salt front moved nearly 30 miles further upstream.  High salt levels in the upstream freshwater ecosysystems can be harmful, and the salt came close to <span class="emph">contaminating Philadelphia's drinking water intakes.</span>
             </p>
           </div>
         </div>
@@ -858,7 +858,7 @@
               Rising Sea Levels
             </h3>
             <p>
-              Sea level rise is expected to push the salt front further upstream. With just 3 feet of sea level rise, on average the salt front is predicted to once again travel close to Philadelphia and threaten fresh water supplies.
+              Sea level rise is expected to push the salt front further upstream. With just 3 feet of sea level rise, the salt front is predicted to once again travel within the reaches of Philadelphia and nearby fresh water supplies.
             </p>
             <p>
               Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. One key objective is to keep the salt front from contaminating fresh water supplies and back toward the ocean. Accurate data and models allow smart reservoir releases, which maintain the flow targets and impact the salt front location.
@@ -881,12 +881,12 @@
               Road Salt
             </h3>
             <p>
-              Even as we manage river flow to keep the ocean salt out of drinking water supplies, we work against ourselves by actively adding salt elsewhere. <a href="https://www.usgs.gov/mission-areas/water-resources/science/chloride-salinity-and-dissolved-solids?qt-science_center_objects=0#qt-science_center_objects">Rock salt applied to roads in winter</a> makes driving and walking safer. But when the snow and ice melts, the runoff carries dissolved salt into streams and rivers, contaminating those waters with <a href="https://www.usgs.gov/news/urban-stream-contamination-increasing-rapidly-due-road-salt">levels of chloride that can be toxic</a> to aquatic plants and animals and can even threaten drinking water quality.
+              Even as we manage river flow to keep the ocean salt out of drinking water supplies, we work against ourselves by actively adding salt elsewhere. <a href="https://www.usgs.gov/mission-areas/water-resources/science/chloride-salinity-and-dissolved-solids?qt-science_center_objects=0#qt-science_center_objects" target="_blank">Rock salt applied to roads in winter</a> makes driving and walking safer. But when the snow and ice melts, the runoff carries dissolved salt into streams and rivers, contaminating those waters with <a href="https://www.usgs.gov/news/urban-stream-contamination-increasing-rapidly-due-road-salt" target="_blank">levels of chloride that can be toxic</a> to aquatic plants and animals and can even threaten drinking water quality.
             </p>
             <p>
               Reducing road salt concentrations in streams can involve chemical de-icing alternatives and moderating road salt applications. But safe roads are important too. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs.
             </p>
-            <video
+           <!--  <video
               width="80%"
               height="80%"
               autoplay
@@ -901,7 +901,20 @@
                 type="video/mp4"
                 media="(max-width: 992px)"
               >
-            </video>
+            </video> -->
+            <picture
+              width="80%"
+              height="80%"
+            >
+              <source
+                srcset="@/assets/salinity/salinitySea/images/truckin.gif"
+              >
+              <source
+                srcset="@/assets/salinity/salinitySea/images/truckin_mobile.gif"
+                media="(max-width: 992px)"
+              >
+              <img src="@/assets/salinity/salinitySea/images/truckin.gif">
+            </picture>
           </div>         
         </div>
       </div>
@@ -919,6 +932,7 @@ export default {
       SeasonalChanges: false,
       SeaLevelRise: false,
       RoadSalt: false,
+      Philly: false,
     }
   },
   methods: {
@@ -946,9 +960,10 @@ export default {
           case 'sea-salt-one' :
             this.SaltyWater = true;
             this.SaltFront = false;
-            this.SeasonalChanges = true;
+
             this.SeaLevelRise = false;
             this.RoadSalt = false;
+
             break;
           default:
             break;
@@ -1250,27 +1265,43 @@ $s3:"";
     }
   }
 }
+
+//colapse to single column for mobile
 @media only screen and (max-width: 992px) {
-  #salinity-sea {
-    #salinity-sea-container {
-      grid-template-columns: 1fr;
-      justify-items: center;
-      
-      .salinity-sea-section-image {
-        top: 15rem;        
-      }
-      .salinity-sea-section-text {
-        #sea-salt-two {
-          opacity: 1;
-        }
-        #sea-salt-three {
-          opacity: 1;
-        }
-      }
-    }
+  #salinity-sea-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+  #container-salinity-sea-image-background {
+      grid-column: 1;
+      grid-row: 1;
+      align-self: start;
+      width: 98vw;
+
+    } 
+
+  .salinity-sea-section-image {
+    align-self: start;
+    position: sticky;
+    top: 4em;
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 1;
+    
+  }
+  .salinity-sea-section-text {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+    margin-left: 10vw;
+    width: 80vw;
+
+  }
+  .text-content-side {
+    width:100%;
   }
 }
-
 </style>
 
 <style scoped lang="less">
