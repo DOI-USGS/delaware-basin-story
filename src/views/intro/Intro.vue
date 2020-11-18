@@ -1,15 +1,6 @@
 <template>
   <section id="intro">
     <div
-      id="intro-banner-container"
-      class="hidden-title"
-      width="auto"
-    ><h1>
-      Water Science and Management in the Delaware River Basin. 
-      
-    </h1><h2>How water quality and quantity are intertwined.</h2>
-    </div>
-    <div
       id="map-container" 
       :width="windowWidth"
     >
@@ -484,11 +475,11 @@
           <path id="river_mobile" d="M440.39,582.79a152.28,152.28,0,0,1-1.2-23.4c0-2.3.2-4.8,1.8-6.4,1.9-1.9,4.8-1.8,7.5-1.6l14.2,1c1.7.1,3.7.5,4.5,2,1.2,2.3-1.6,4.6-4,5.8l-21.8,10.7c6.7-1.6,12.8,4,19.4,6.2,4.8,1.6,10,1.3,14.9.1,2.8-.7,4-1.3,4.9-2.3,1.3-1.6,1.6-3.9.4-10.9-1.6-9.3-3.2-11.6-1.8-13.8.9-1.4,3.2-2.8,9.6-2.1,5.5,9,11,18.1,16.6,27.1,4.2-9.4,13.8-30,20.9-32.8.9-.3,3.3-1.3,4-.4s-1.2,3.1-2.2,5.6c-2.7,6.5.6,9.3,1.2,23.9.2,4.2,0,6.1,1.5,7.3,2.6,2.3,7.9.5,10.7-1.2,1.4-.9,3.2-2,3.9-4.3a7.28,7.28,0,0,0-1.3-5.8,7,7,0,0,0-4.6-2.4c-4.6-.8-8.3,2.1-9.1,2.7l-2.2-20.2c2.3,1.7,5.6.8,8.3-.1s6.2-1.4,8.2.7c1.3,1.5,1.4,3.6,1.5,5.5a61,61,0,0,0,8.1,27.3c.4.7.9,1.4,1.7,1.4,1.2,0,1.4-1.7,1.3-2.9l-2.1-15.6c-1.9-8.6.3-10.5,1-11,2.3-1.5,5.7,1,10.5.4a9.82,9.82,0,0,1,4.3.3,5.23,5.23,0,0,1,1.6.6c1.8.9,3.3,2.8,2.9,4.8a6.25,6.25,0,0,1-1.9,3.1,30.24,30.24,0,0,1-13.6,8.2l23.8,11.9" style="fill: none;stroke: #000;stroke-width: 11px" class="vpvIMbOV_7"></path>
           <path id="basin_mobile" d="M302.72,602.31c.3,9.6.5,19.1.8,28.7a7.1,7.1,0,0,0,3.4,3.4c2.6,1.2,6.4.7,7.6-1.5,1-1.8,0-4-.5-5.1a11.8,11.8,0,0,0-7-5.9c3.6-.2,9.6-1.1,13.9-5.5,1.3-1.3,4-4,3.1-6.1-.7-1.6-3.2-2.4-6.2-2.1-4.5-.7-8.9-1.3-13.4-2a73.52,73.52,0,0,1,23.6-4.8c2.4-.1,5,0,6.7,1.6,2.1,2,2,5.5.7,8.1s-3.5,4.6-5.4,6.8a34.19,34.19,0,0,0-8.4,20.2c-.1,1.4.2,3.2,1.5,3.6s2.6-1.1,3.4-2.3l17.9-31.5a98.72,98.72,0,0,1,12.5,29.1,14.52,14.52,0,0,0-5.8-8.1,13.35,13.35,0,0,0-6.1-2.1c-4.3-.4-8.5,1-12.6,2.4l20.4-3.1a8.37,8.37,0,0,0,4-1.4c2.7-2.3,1-6.8,1.5-10.3.4-3.2,2.9-5.8,5.8-7.3a27.48,27.48,0,0,1,9.4-2.2,99.9,99.9,0,0,1,13.4-.2c2.6.1,5.9,1,6.1,3.7.1,1.8-2.2,3.4-2.4,3.5-2.1,1.4-4.2,1-6.6.9-2.7-.1-9.6-.4-13.7,2.5a11.77,11.77,0,0,0-4.4,6.5,35.77,35.77,0,0,0,7.6,2.2c3.6.6,5.6.4,7.7,2,1,.8,3.1,2.8,2.6,4.3-1.1,3.4-13.3.4-15.1,4.4-1,2.3,2,5.5,3.1,6.7a19.62,19.62,0,0,0,20,5.2c.7-.2,8.3-2.9,10.8-9.6,1.6-4.5-.3-7,0-15a50.24,50.24,0,0,1,1.8-11.5c4.3,3.4,5.5,9.4,6.2,14.8s1.1,11.3,4.5,15.6c.8,1,2.1,2,3.4,1.6,1.6-.5,1.7-2.7,1.5-4.4-.6-9.3-1.2-18.7-1.7-28,8.1,8.5,16.3,17,24.4,25.4a100.71,100.71,0,0,1-3.1-13.3,107.37,107.37,0,0,1-1.5-21.6" style="fill: none;stroke: #000;stroke-width: 11px" class="vpvIMbOV_8"></path>
         </g>
-        <text
+        <!-- <text
           id="page-subtitle"
           transform="translate(700 820)"
           style="font-size: 28px;font-family: NotoSans-Bold, Noto Sans;font-weight: 700"
-        >How water quality and quantity are intertwined</text>
+        >How water quality and quantity are intertwined</text> -->
 
 
 
@@ -535,40 +526,73 @@
 </script>
 
 <style scoped lang="scss">
+// title writing 
+  #title_draw {
+    clip-path: url(#title_clip);
+  }
+  #title_draw_mobile {
+    clip-path: url(#title_clip_mobile);
+  }
 
-// Big screens
-@media only screen and (min-width: 601px) {
+
+// Extra Large screens
+@media only screen and (min-width: 901px) {
   #map-container {
     overflow: hidden;
     width: 100%;
   }
   #title_draw {
-    clip-path: url(#title_clip);
-    transform: translate(50px, 0)
+    transform: translate(50px, 0);
+    display: block; 
+  }
+  #title_draw_mobile {
+    display: none;    
+  }
+  #watercolor {
+    align-self: center;
+    margin: 0;
+    max-height:
+  }
+}
+// Large Screens
+@media only screen and (max-width: 900px) {
+  #map-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  #title_draw {
+    transform: translate(50px, -50px);
+    display: block; 
+  }
+  #title_draw_mobile {
+    display: none;    
   }
   #watercolor {
     align-self: center;
     margin: 0;
   }
 }
+
 // Medium screens
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   #map-container {
     overflow: hidden;
-    width: 100%;
+    width: 150%;
   }
   #title_draw {
-    clip-path: url(#title_clip);
-    transform: translate(50px, 0)
+    display: none; 
   }
+  #title_draw_mobile {
+    display: block; 
+    transform: translate(530px, 200px);
+  }
+  
   #watercolor {
     align-self: center;
     margin: 0;
   }
 }
-#title_draw_mobile {
-  clip-path: url(#title_clip_mobile);
-}
+
 
 // Small screens
 @media only screen and (max-width: 500px) {
@@ -577,15 +601,11 @@
     width: 230%;
   }
   #title_draw {
-    clip-path: url(#title_clip);
-    transform: translate(-800px,-500px) scale(1.5);
-    // #and-management {
-    //   transform: translate(-200px,100px)
-
-    // }
+    display: none; 
   }
-  #watercolor {
-  //  margin: 0 0 200px 0;
+  #title_draw_mobile {  
+    display: block; 
+    transform: translate(0, -50px) scale(1.1);
   }
   
 }
@@ -594,22 +614,20 @@
 @media only screen and (max-width: 320px) {
   #map-container {
     overflow: hidden;
-    width: 100%;
   }
   #title_draw {
-    clip-path: url(#title_clip);
-    transform: translate(50px, 0)
+    display: none; 
   }
-  #watercolor {
-    align-self: center;
-    margin: -15% -15% -10% -25%;
+  #title_draw_mobile {   
+    display: block; 
+
   }
-  
 }
 
  
 #DRB-land-water  {
   z-index: -1;
+  opacity: .5;
 }
 #green  {
   z-index: 10;
