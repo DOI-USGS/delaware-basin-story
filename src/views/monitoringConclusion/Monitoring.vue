@@ -4541,10 +4541,6 @@ fill:#f8f8f8;
 
 
 #image-container {
-  vertical-align: middle;
-  object-fit: contain;
-  height: 80vh;
-  max-width: auto;
   position: sticky;
   display: block;
   z-index: -1;
