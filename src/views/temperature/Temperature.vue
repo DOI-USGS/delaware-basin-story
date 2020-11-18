@@ -8,7 +8,7 @@
       :image="titleBackingImage"
     />
     <div class="text-content">
-      <p>Water temperature is closely linked to the health of aquatic organisms.  Some habitats exist only when water remains within a certain temperature range. When the water temperature exceeds that range, the heat can make organisms more or less susceptible to diseases or mess with their reproductive cycles.</p>
+      <p>Water temperature is a water-quality measure that is closely linked to the health of aquatic organisms.  Some habitats exist only when water remains within a certain temperature range. When the water temperature exceeds that range, the heat can make organisms more or less susceptible to diseases or mess with their reproductive cycles.</p>
       <p>In the Basin, there are many different thermal habitats that support diverse, vibrant communities of aquatic life. Decisionmakers in the Basin need to know what species live where, what water temperatures those species prefer, and how management decisions could impact those species.</p>
       <p>Some factors that modify water temperatures – like weather and climate – cannot be controlled by decisionmakers in the Basin.  Other factors – like reservoir releases and land-use – can be strategically managed.</p>    
     </div>
@@ -315,7 +315,7 @@
           <div class="scrolly-chunk">
             <div class="text-chunk">
               <h3>Brook Trout and Cold Water</h3>
-              <p>Brook trout are the only native trout species within the Basin, and they prefer to live in reaches with <span class="emph">cold water.</span> In fact, this particular species is used as an indicator of water quality due to its sensitivity to water temperatures.</p>
+              <p>Brook trout are the only native trout species within the Basin, and they prefer to live in reaches with <span class="emph">cold water.</span> Due to their sensitivity to water temperatures, this species can be used as anindicator of water quality.</p>
             </div>
           </div>
           <div class="scrolly-chunk">
@@ -325,7 +325,7 @@
           </div>
           <div class="scrolly-chunk">
             <p class="text-chunk">
-              In the fall, trout wait for the water temperature to drop to begin their reproductive cycle. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection. The eggs rest there all winter, and they require the water to stay cool to develop properly.
+              In the fall, trout wait for the drop in water temperature to begin their reproductive cycle. With the right temperature cue, the spawning males develop vibrant red colors and pink-and-blue spots all over their bodies.  Then females dig a nest in a gravel streambed with cold water.  Once the eggs are fertilized, the mating pair bury the nest in the gravel for protection. The eggs rest there all winter, and they require the water to stay cool to develop properly.
             </p>
           </div>
           <div class="scrolly-chunk">
@@ -444,11 +444,10 @@
 
 // Appear Animation
   .appear {
-      animation: fade-in 4s ease-in 2s forwards 1;
-      -webkit-animation: fade-in 4s ease-in 2s forwards 1;
-      -moz-animation: fade-in 4s ease-in 2s forwards 1;
-      -ms-animation: fade-in 4s ease-in 2s forwards 1;
-      -o-animation: fade-in 4s ease-in 2s forwards 1;
+      animation: fade-in 4s ease-in 1s forwards 1;
+      -webkit-animation: fade-in 4s ease-in 1s forwards 1;
+      -moz-animation: fade-in 4s ease-in 1s forwards 1;
+      -o-animation: fade-in 4s ease-in 1s forwards 1;
   }
 
 // Small screen grid stack
@@ -553,14 +552,12 @@
     animation: color-change 2s linear 2s forwards infinite;
     -webkit-animation: color-change 2s linear 2s forwards infinite;
     -moz-animation: color-change 2s linear 2s forwards infinite;
-    -ms-animation: color-change 2s linear 2s forwards infinite;
     -o-animation: color-change 2s linear 2s forwards infinite;
   }
   #trout-container:hover {
     animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
     -webkit-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
     -moz-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
-    -ms-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
     -o-animation: shake 1s cubic-bezier(.36, .1, .2, .9) both;
   }
          
