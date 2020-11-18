@@ -101,7 +101,12 @@
           >
             Using the Reservoirs
           </h3>
-          <p>Major water users like New York City, Philadelphia, and the entire state of New Jersey are allowed to withdraw water from the river and reservoirs for public supply. The River Master and others use <a href="https://waterdata.usgs.gov/usa/nwis/" target="_blank">water data collected by the USGS</a> to inform major users on how much water is stored in these reservoirs and when releases are needed to manage flow objectives on the river.</p>
+          <p>
+            Major water users like New York City, Philadelphia, and the entire state of New Jersey are allowed to withdraw water from the river and reservoirs for public supply. The River Master and others use <a
+              href="https://waterdata.usgs.gov/usa/nwis/"
+              target="_blank"
+            >water data collected by the USGS</a> to inform major users on how much water is stored in these reservoirs and when releases are needed to manage flow objectives on the river.
+          </p>
           <p>But the water cycle has a big say in how much water is available, too.</p>
         </div>
       </div>
