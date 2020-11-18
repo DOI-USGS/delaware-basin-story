@@ -20,7 +20,5 @@
 </script>
 
 <style lang="css" scoped>
-    /* #conclusion-section{ 
-        margin: -5em 0 0 5em;
-    } */
+   
 </style>
