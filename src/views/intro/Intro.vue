@@ -551,7 +551,7 @@
   #watercolor {
     align-self: center;
     margin: 0;
-    max-height:
+    max-height: 100vh;
   }
 }
 // Large Screens
