@@ -5,7 +5,8 @@
     <QualityChallenges v-if="checkIfIntroSectionIsRendered" />
     <Salinity v-if="checkIfIntroSectionIsRendered" />
     <Temperature v-if="checkIfIntroSectionIsRendered" />
-    <MonitoringConclusion v-if="checkIfIntroSectionIsRendered" />
+    <Monitoring v-if="checkIfIntroSectionIsRendered" />
+    <Conclusion v-if="checkIfIntroSectionIsRendered" />
     <!-- <Methods v-if="checkIfIntroSectionIsRendered" /> -->
   </div>
 </template>
@@ -14,12 +15,13 @@
     export default {
         name: 'Visualization',
         components: {
-            Intro: () => import(/* webpackPrefetch: true */ /*webpackChunkName: "intro"*/ "./intro/Intro"),
-            Flow: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "flow"*/ "./flow/Flow"),
+            Intro: () => import(/* webpackPreload: true */ /*webpackChunkName: "intro"*/ "./intro/Intro"),
+            Flow: () => import( /* webpackPreload: true */ /*webpackChunkName: "flow"*/ "./flow/Flow"),
             QualityChallenges:() => import( /* webpackPrefetch: true */ /*webpackChunkName: "quality-challenges"*/ "./qualityChallenges/QualityChallenges"),
             Temperature: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "temperature"*/ "./temperature/Temperature"),
             Salinity: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "salinity"*/ "./salinity/Salinity"),
-            MonitoringConclusion: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "monitoringConclusion"*/ "./monitoringConclusion/MonitoringConclusion")
+            Monitoring: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "monitoring"*/ "./monitoringConclusion/Monitoring"),
+            Conclusion: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "conclusion"*/ "./monitoringConclusion/Conclusion")            
             // Methods: () => import(/*webpackChunkName: "methods"*/ "../components/Methods")
         },
         computed: {
