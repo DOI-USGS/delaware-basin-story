@@ -3818,7 +3818,7 @@
                     }"
                     class="monitoring-title"
                   >
-                    New and Enhanced Gages
+                    New or Enhanced Gages
                   </h3>
                 </div>
                 <div
