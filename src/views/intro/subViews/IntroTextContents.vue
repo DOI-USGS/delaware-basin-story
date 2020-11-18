@@ -5,6 +5,7 @@
       class="text-content"
     >
       <div>
+        <h3>How water quality and quantity are intertwined</h3>
         <p class="byline">
           U.S. Geological Survey
         </p>

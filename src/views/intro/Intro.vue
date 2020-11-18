@@ -1,14 +1,7 @@
 <template>
   <section id="intro">
     <div
-      id="intro-banner-container"
-      class="parallax"
-      width="auto"
-    /><h1 id="hidden-h1">
-      Water Science and Management in the Delaware River Basin
-    </h1><div
       id="map-container" 
-      :width="windowWidth"
     >
       <svg
         id="watercolor"
@@ -22,6 +15,11 @@
         <title id="page-title">Water science and management in the delaware river basin</title>
         <desc id="page-desc">An animation paints the map of the Delaware River Basin in watercolor</desc>
         <defs>
+          <radialGradient id="radialGradient">
+            <stop offset="50%" stop-color="white" stop-opacity=".7" />
+            <stop offset="90%" stop-color="white" stop-opacity=".3" />
+            <stop offset="100%" stop-color="white" stop-opacity=".0" />
+          </radialGradient>
           <clipPath id="title_clip_mobile">
             <path d="M216.2 383.7c-.6 1.3-3 3.4-4.8 3.3-2.5-.4-5.8-7.7-6.9-10-1 2-4.9 8.7-5.9 9.4a6.4 6.4 0 01-3.3 1 3.3 3.3 0 01-3-1.9c-.6-1.5-1.9-6-3.3-10.5s-2.8-8.7-3.5-9.8a1.6 1.6 0 01-.3-.9c-.2-1.7 2.1-2.6 3.7-2.6a5 5 0 013.6 1.4c1.5 1.7 3.7 8.1 5.3 12.8 1-1.7 1.7-4.5 2.6-6.3s1.6-2.6 4.3-2.6 3.8 1.3 5 3.3c1 1.5 2 4.1 2.7 5.6.8-2.3 1.3-5.6 2-7.9a3.7 3.7 0 014-2.7c.7 0 2.8.4 3 2.2.3 2.5-3.9 13.3-5.2 16.2zM252.1 388.5a6.7 6.7 0 01-4.9-2c-.7-.9-1.6-4.6-2-6a116.2 116.2 0 01-11.8 2c-1.5 3-2.5 6-3.8 8.8-.2.4-3.8 3.3-4.8 3.3a2.8 2.8 0 01-3-2.3c-.3-5.5 13-32.4 14.6-33.4a9.8 9.8 0 014.7-1.3 5.4 5.4 0 014 1.5 87.7 87.7 0 0110.3 26c.3 2.2-.9 3.4-3.3 3.4zm-11.7-22.2a86.3 86.3 0 00-3.6 8 41.5 41.5 0 016.1-1.4c-.7-1.9-1.7-4.8-2.5-6.6zM282.8 357.6c-1.7.8-6.9 1.4-8.9 1.8h-.9c-.4.8-1 25.5-1.2 28.8 0 3.1-.2 5.6-.3 6.1a2.9 2.9 0 01-2.9 1.7c-2.3 0-5-1.6-5.4-4.3-.3-2 .1-10.5.5-18.2l.6-12.4a18.3 18.3 0 01-4.6.7c-1.9 0-5.9-1.7-6.2-4-.4-3 3.3-2.5 5.2-2.8s4-1 7.1-1.7A62 62 0 01280 352c1.7 0 4 1.1 4.2 3.2a2.2 2.2 0 01-1.4 2.4z" />
             <path d="M300.3 362c-2.8.5-5.6.8-8.3 1.5-.4 2.7-.9 8.5-1.2 12.2a17 17 0 015-1c3.4 0 7.8.7 8 2.7-.2 2-3 3.3-4.6 3.3h-.5c-1.9 0-5.8 1.3-7.7 1.8v.4l.1 3.6a22.9 22.9 0 015.8-1c2 0 7.1 2 7.2 3.2.4 3-9.2 4.8-11.9 5.6a8.5 8.5 0 01-2.2.4c-5.4 0-6.6-6.4-7-10a93 93 0 011-23 7 7 0 01-.7-2 2.4 2.4 0 011.8-2.7h.2l7.3-1.3a38.5 38.5 0 015.8-.8c2 0 7.2 2.1 7.4 4.2.1.6-2.3 2.1-5.5 2.8zM323.8 380.2c2 1 4.8 2.2 7 3.4a2.5 2.5 0 011.3 2c.3 1.7-2.6 2.8-4.4 2.8-2.9 0-7.3-4.3-9.9-5.8a18.4 18.4 0 01.3 3.3 3 3 0 01-2.5 3.3h-.4a5.7 5.7 0 01-4.2-1.9 20 20 0 01-2.7-8.9c-.2-1-.2-2.2-.3-3.3 0-5.4 1.8-12.9 2.7-13a69.4 69.4 0 019.1-.5 45.9 45.9 0 0111.1 1c3.2 1 8.1 3.4 8.5 6.8.7 4.4-10.5 9-15.6 10.8zm-2.2-12.5l-3.6.1a48 48 0 00-.8 8.5c4.5-1.4 12.4-5.5 13.3-7.7a33.2 33.2 0 00-8.9-.9zM389 367.8c-1.5 0-2-.7-3.7-.7-5.5 0-16.7 3.4-20.8 5.8 6.5 2.1 14 2.6 16 3.6 1 .6 3.5 3 4 5.3a3 3 0 01-1.2 2.7 46.5 46.5 0 01-13.3 5.1c-2.7 0-6.8-2.4-6.9-3.5a1.8 1.8 0 01.4-1.4c1-1.6 4.4-.5 12.6-3.5-4.5-1-14.5-1.9-17.8-5a5.5 5.5 0 01-1.4-3.3 5 5 0 011.3-4.5 53.8 53.8 0 0125.5-8 11.3 11.3 0 018.7 3.5 3.4 3.4 0 01.6 1.2c.1 1.7-2.8 2.7-4 2.7zM405.2 389.6a7.3 7.3 0 01-2.5.4c-5.3 0-9.4-3.3-9.9-8-.9-7.2 8.6-24.7 19.5-24.7 1.7 0 4.6 1.1 5 3.3a2.1 2.1 0 01-1.8 2.3c-2.3.7-15.9 12.1-14.8 20.2v.2c2.8-.5 9.1-3.8 10.5-5.8a3.2 3.2 0 012.4-1 3.7 3.7 0 013.7 3.2c.3 3.3-8 8.5-12 10zM430.7 386.2a2.6 2.6 0 01-1.7.5c-1.6 0-3.6-2.3-4.3-3.6a10.9 10.9 0 01-.7-3c-.5-4-.6-12.3.2-13.6.5-1 2-1.3 3-1.3s4 .3 5 2.3a8.7 8.7 0 01.5 2.3c.5 4.6-.6 15.5-2 16.4zM457 362c-2.9.5-5.7.8-8.4 1.5-.4 2.7-.9 8.5-1.2 12.2a17 17 0 015-1c3.4 0 7.8.7 8 2.7-.2 2-3 3.3-4.6 3.3h-.5c-1.9 0-5.8 1.3-7.7 1.8v.4l.1 3.6a22.9 22.9 0 015.8-1c2 0 7.1 2 7.2 3.2.4 3-9.2 4.8-11.9 5.6a8.5 8.5 0 01-2.2.4c-5.4 0-6.6-6.4-7-10a93 93 0 011-23 7 7 0 01-.7-2 2.4 2.4 0 011.8-2.7h.2l7.3-1.3a38.5 38.5 0 015.8-.8c2 0 7.2 2.1 7.4 4.2.1.6-2.3 2.1-5.5 2.8zM496.2 365.8c-.3 6-.9 12-.5 18 .1 2-3.3 3.3-5 3.3a5 5 0 01-2-.5c-1.4-.8-5-4.2-8.6-7.5-1.7-1.6-3.3-3-4.9-4.7.2 5 .2 11.6 0 13.5a2.4 2.4 0 01-2.5 2.2c-2.9 0-5.6-3.3-5.8-5.2-.3-2.6.5-17.2.1-20.6-.2-2 2.4-2.9 3.8-2.9a4.7 4.7 0 012.3.6 258.3 258.3 0 0114.3 13.5c0-5.3-.3-13.9.2-16.6a2.5 2.5 0 012.5-1.9 6.5 6.5 0 016 5.1 11.7 11.7 0 01.1 3.7zM516.1 389.6a7.3 7.3 0 01-2.5.4c-5.3 0-9.4-3.3-9.9-8-.9-7.2 8.6-24.7 19.5-24.7 1.7 0 4.6 1.1 5 3.3a2.1 2.1 0 01-1.8 2.3c-2.3.7-15.9 12.1-14.8 20.2v.2c2.8-.5 9.1-3.8 10.5-5.8a3.2 3.2 0 012.4-1 3.7 3.7 0 013.7 3.2c.3 3.3-8 8.5-12 10zM551.7 362c-2.8.5-5.6.8-8.3 1.5-.4 2.7-.9 8.5-1.2 12.2a17 17 0 015-1c3.4 0 7.8.7 8 2.7-.2 2-3 3.3-4.6 3.3h-.5c-1.9 0-5.8 1.3-7.7 1.8v.4l.1 3.6a22.9 22.9 0 015.8-1c2 0 7.1 2 7.2 3.2.4 3-9.2 4.8-11.9 5.6a8.5 8.5 0 01-2.2.4c-5.4 0-6.6-6.4-7-10a93 93 0 011-23 7 7 0 01-.7-2 2.4 2.4 0 011.8-2.7h.2l7.3-1.3a38.5 38.5 0 015.8-.8c2 0 7.2 2.1 7.4 4.2.2.6-2.3 2.1-5.5 2.8z" />
@@ -521,6 +519,11 @@
             class="vpvIMbOV_8"
           />
         </g>
+        <g id="title-background-mobile">
+           <rect
+              id="background-box"
+            />
+        </g>
         <g id="title_draw_mobile">
           <path
             id="water_mobile"
@@ -577,11 +580,11 @@
             class="vpvIMbOV_8"
           />
         </g>
-        <text
+        <!-- <text
           id="page-subtitle"
-          transform="translate(625 800)"
+          transform="translate(700 820)"
           style="font-size: 28px;font-family: NotoSans-Bold, Noto Sans;font-weight: 700"
-        >How water quality and quantity are intertwined</text>
+        >How water quality and quantity are intertwined</text> -->
 
 
 
@@ -628,34 +631,126 @@
 </script>
 
 <style scoped lang="scss">
+// title writing 
+  #title_draw {
+    clip-path: url(#title_clip);
+  }
+  #title_draw_mobile {
+    clip-path: url(#title_clip_mobile);
+    background-color: white;
+  }
+  #background-box {
+    transform: translate(50px, 200px);
+    z-index: 2;
+    width: 700px;
+    height: 600px;
+    fill: url(#radialGradient);
+  }
 
-#map-container {
-  overflow: hidden;
+
+// Extra Large screens
+@media only screen and (min-width: 901px) {
+  #map-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  #title_draw {
+    transform: translate(50px, 0);
+    display: block; 
+  }
+  #title_draw_mobile {
+    display: none;    
+  }
+  #watercolor {
+    align-self: center;
+    margin: 0;
+    max-height: 100vh;
+  }
+  #background-box{
+    display: none;
+  }
 }
-#title_draw {
-  clip-path: url(#title_clip);
-}
-#title_draw_mobile {
-  clip-path: url(#title_clip_mobile);
+// Large Screens
+@media only screen and (max-width: 900px) {
+  #map-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  #title_draw {
+    transform: translate(50px, -50px);
+    display: block; 
+  }
+  #title_draw_mobile {
+    display: none;    
+  }
+  #watercolor {
+    align-self: center;
+    margin: 0;
+  }
+  #background-box{
+    display: none;
+  }
 }
 
-#watercolor {
-  align-self: center;
-  @media only screen and (max-width: 600px) {
-    height: 75vh;
+// Medium screens
+@media only screen and (max-width: 650px) {
+  #map-container {
+    overflow: hidden;
+    width: 150%;
   }
-  @media only screen and (max-width: 500px) {
-    height: 75vh;
-    margin: -10% -10% -10% -15%;
+  #title_draw {
+    display: none; 
   }
-  @media only screen and (max-width: 320px) {
-    height: 75vh;
-    margin: -15% -15% -10% -25%;
+  #title_draw_mobile {
+    display: block; 
+    transform: translate(530px, 200px);
   }
- }
+  
+  #watercolor {
+    align-self: center;
+    margin: 0;
+  }
+}
+
+
+// Small screens
+@media only screen and (max-width: 500px) {
+  #map-container {
+    overflow: hidden;
+    width: 230%;
+  }
+  #title_draw {
+    display: none; 
+  }
+  #title_draw_mobile {  
+    display: block; 
+    transform: translate(0, -50px) scale(1.1);
+  }
+  #background-box{
+    display: block;
+  }
+}
+
+// Smallest screens
+@media only screen and (max-width: 320px) {
+  #map-container {
+    overflow: hidden;
+  }
+  #title_draw {
+    display: none; 
+  }
+  #title_draw_mobile {   
+    display: block; 
+  }
+  #background-box{
+    display: block;
+  }
+}
+
  
 #DRB-land-water  {
   z-index: -1;
+  opacity: .5;
 }
 #green  {
   z-index: 10;
@@ -668,10 +763,14 @@
   z-index: 2;
 }
 
-#hidden-h1{
+.hidden-title{
   opacity: 0;
   height: 0;
   margin: 0;
+  h1,h2{
+    margin: 0;
+    height: 0;
+  }
 }
   
 </style>
