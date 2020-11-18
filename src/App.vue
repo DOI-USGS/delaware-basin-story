@@ -25,10 +25,10 @@
             WindowSize,
             HeaderUSWDSBanner,
             HeaderUSGS,
-            InternetExplorerPage: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "internet-explorer-page"*/ "./components/InternetExplorerPage"),
-            WorkInProgressWarning: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "work-in-progress-warning"*/ "./components/WorkInProgressWarning"),
-            PreFooterVisualizationsLinks: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "pre-footer-links-visualizations"*/ "./components/PreFooterVisualizationsLinks"),
-            PreFooterCodeLinks: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "pre-footer-links-code"*/ "./components/PreFooterCodeLinks"),
+            InternetExplorerPage: () => import( /*webpackChunkName: "internet-explorer-page"*/ "./components/InternetExplorerPage"),
+            WorkInProgressWarning: () => import( /*webpackChunkName: "work-in-progress-warning"*/ "./components/WorkInProgressWarning"),
+            PreFooterVisualizationsLinks: () => import(  /*webpackChunkName: "pre-footer-links-visualizations"*/ "./components/PreFooterVisualizationsLinks"),
+            PreFooterCodeLinks: () => import( /*webpackChunkName: "pre-footer-links-code"*/ "./components/PreFooterCodeLinks"),
             FooterUSGS: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "usgs-footer"*/ "./components/FooterUSGS")
         },
         data() {
