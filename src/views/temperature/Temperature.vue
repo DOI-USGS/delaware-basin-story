@@ -108,7 +108,7 @@
                   id="sub_b"
                   d="M790 375l-1 1c-1 1 1 2 2 2 13-5 28-7 41-4a39 39 0 0118 9 30 30 0 016 7 35 35 0 012 5l1 3c0 2 0 0 0 0a7 7 0 01-1 2c-3 5-4 11-1 16 3 4 9 7 14 8a99 99 0 0017 4l10 1a23 23 0 014 0l1 1s0-1 0 0 0-1 0 0 0-1 0 0v2a16 16 0 001 7 17 17 0 008 8l11 5a17 17 0 015 3 2 2 0 003 0l-1-2c-3-3-7-5-11-6-3-1-7-3-9-6a13 13 0 01-3-6 2 2 0 010-1v-2a9 9 0 000-2c0-2-2-3-4-4l-11-1a142 142 0 01-17-3 49 49 0 01-8-2 20 20 0 01-6-4 8 8 0 01-3-5l3-9a25 25 0 001-2v-3a38 38 0 00-2-5 34 34 0 00-6-9 41 41 0 00-18-10c-13-4-29-3-42 1l-5 2 2 2 1-1c2-1-1-3-2-2z"
                 />
-              <g
+                <g
                   id="sub_a"
                   class="disappear"
                 >
@@ -408,12 +408,6 @@
 
 <style scoped lang="scss">
 
-#scroll-target-mussel{
-  background-color: red;
-}
-#temp-text-mussels {
-  background-color: yellow;
-}
   // What follows controls the general layout, grid pattern
   #temp-wrapper {
     display: grid;

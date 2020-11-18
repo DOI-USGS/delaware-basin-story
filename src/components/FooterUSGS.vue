@@ -8,19 +8,34 @@
           <!-- footer nav links -->
           <ul class="menu nav">
             <li class="first leaf menu-links menu-level-1">
-              <a href="https://www.doi.gov/privacy" target="_blank">DOI Privacy Policy</a>
+              <a
+                href="https://www.doi.gov/privacy"
+                target="_blank"
+              >DOI Privacy Policy</a>
             </li>
             <li class="leaf menu-links menu-level-1">
-              <a href="https://www.usgs.gov/laws/policies_notices.html" target="_blank">Legal</a>
+              <a
+                href="https://www.usgs.gov/laws/policies_notices.html"
+                target="_blank"
+              >Legal</a>
             </li>
             <li class="leaf menu-links menu-level-1">
-              <a href="https://www2.usgs.gov/laws/accessibility.html" target="_blank">Accessibility</a>
+              <a
+                href="https://www2.usgs.gov/laws/accessibility.html"
+                target="_blank"
+              >Accessibility</a>
             </li>
             <li class="leaf menu-links menu-level-1">
-              <a href="https://www.usgs.gov/sitemap.html" target="_blank">Site Map</a>
+              <a
+                href="https://www.usgs.gov/sitemap.html"
+                target="_blank"
+              >Site Map</a>
             </li>
             <li class="last leaf menu-links menu-level-1">
-              <a href="https://answers.usgs.gov/" target="_blank">Contact USGS</a>
+              <a
+                href="https://answers.usgs.gov/"
+                target="_blank"
+              >Contact USGS</a>
             </li>
           </ul>
           <!--/ footer nav links -->
@@ -33,22 +48,40 @@
         <div class="footer-doi">
           <ul class="menu nav">
             <li class="first leaf menu-links menu-level-1">
-              <a href="https://www.doi.gov/" target="_blank">U.S. Department of the Interior</a>
+              <a
+                href="https://www.doi.gov/"
+                target="_blank"
+              >U.S. Department of the Interior</a>
             </li>
             <li class="leaf menu-links menu-level-1">
-              <a href="https://www.doioig.gov/" target="_blank">DOI Inspector General</a>
+              <a
+                href="https://www.doioig.gov/"
+                target="_blank"
+              >DOI Inspector General</a>
             </li>
             <li class="leaf menu-links menu-level-1">
-              <a href="https://www.whitehouse.gov/" target="_blank">White House</a>
+              <a
+                href="https://www.whitehouse.gov/"
+                target="_blank"
+              >White House</a>
             </li>
             <li class="leaf menu-links menu-level-1">
-              <a href="https://www.whitehouse.gov/omb/management/egov/" target="_blank">E-gov</a>
+              <a
+                href="https://www.whitehouse.gov/omb/management/egov/"
+                target="_blank"
+              >E-gov</a>
             </li>
             <li class="leaf menu-links menu-level-1">
-              <a href="https://www.doi.gov/pmb/eeo/no-fear-act" target="_blank">No Fear Act</a>
+              <a
+                href="https://www.doi.gov/pmb/eeo/no-fear-act"
+                target="_blank"
+              >No Fear Act</a>
             </li>
             <li class="last leaf menu-links menu-level-1">
-              <a href="https://www2.usgs.gov/foia" target="_blank">FOIA</a>
+              <a
+                href="https://www2.usgs.gov/foia"
+                target="_blank"
+              >FOIA</a>
             </li>
           </ul>
         </div>

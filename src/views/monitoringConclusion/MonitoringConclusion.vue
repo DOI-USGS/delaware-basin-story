@@ -3782,7 +3782,13 @@
                 Water Priorities for the Nation, reflected in the Delaware River Basin
               </h3>
               <p>
-                The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators.  But in 2019, the USGS chose the Delaware River Basin as a regional pilot site for two national priority programs - the <a href="https://www.usgs.gov/mission-areas/water-resources/science/usgs-next-generation-water-observing-system-ngwos?qt-science_center_objects=0#qt-science_center_objects" target="_blank">Next-Generation Water Observing System (NGWOS)</a> and <a href="https://pubs.usgs.gov/fs/2020/3044/fs20203044.pdf" target="_blank">Integrated Water Availability Assessments (IWAAs).</a>
+                The USGS has a long history of monitoring water resources in the Delaware River Basin, in partnership with numerous stakeholders and cooperators.  But in 2019, the USGS chose the Delaware River Basin as a regional pilot site for two national priority programs - the <a
+                  href="https://www.usgs.gov/mission-areas/water-resources/science/usgs-next-generation-water-observing-system-ngwos?qt-science_center_objects=0#qt-science_center_objects"
+                  target="_blank"
+                >Next-Generation Water Observing System (NGWOS)</a> and <a
+                  href="https://pubs.usgs.gov/fs/2020/3044/fs20203044.pdf"
+                  target="_blank"
+                >Integrated Water Availability Assessments (IWAAs).</a>
               </p>
               <p>
                 As part of NGWOS, scientists at the USGS designed new sensors and new deployment strategies, upgraded old infrastructure, and developed non-contact measurement techniques that required less in-person upkeep. The data from NGWOS is then used to assess water availability through IWAAs, which seeks to improve water availability assessments and forecasts.
