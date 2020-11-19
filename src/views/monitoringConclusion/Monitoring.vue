@@ -59,7 +59,7 @@
                 fill="white"
                 filter="url(#blurMe)"
                 opacity="0.8"
-                r="6"
+                r="7"
                 cx="6"
                 cy="6"
               />
@@ -74,7 +74,7 @@
                 fill="white"
                 filter="url(#blurMe)"
                  opacity="0.8"
-                r="6"
+                r="7"
                 cx="6"
                 cy="6"
               />
@@ -89,7 +89,7 @@
                 fill="white"
                 filter="url(#blurMe)"
                  opacity="0.8"
-                r="6"
+                r="7"
                 cx="6"
                 cy="6"
               />
@@ -97,7 +97,7 @@
             <filter id="blurMe">
               <feGaussianBlur
                 in="SourceGraphic"
-                stdDeviation="2"
+                stdDeviation="1"
               />
             </filter>
           </defs>
