@@ -1158,9 +1158,7 @@ $s3:"";
 @-moz-keyframes fall {
   100%  {transform: translateY(200vh);}
 }
-@-ms-keyframes fall {
-  100%  {transform: translateY(200vh);}
-}
+
 @-o-keyframes fall {
   100%  {transform: translateY(200vh);}
 }
@@ -1188,9 +1186,7 @@ $s3:"";
 
 
 // what follows controls the general layout, grid pattern, and text fades
-.salinity-sea-section-text .text-content-side {
 
-}
 #salinity-sea {
   #salinity-sea-container {
     display: grid;
