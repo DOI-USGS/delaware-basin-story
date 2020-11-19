@@ -16,7 +16,7 @@
         name: 'Visualization',
         components: {
             Intro: () => import(/* webpackPreload: true */ /*webpackChunkName: "intro"*/ "./intro/Intro"),
-            Flow: () => import( /* webpackPreload: true */ /*webpackChunkName: "flow"*/ "./flow/Flow"),
+            Flow: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "flow"*/ "./flow/Flow"),
             QualityChallenges:() => import( /* webpackPrefetch: true */ /*webpackChunkName: "quality-challenges"*/ "./qualityChallenges/QualityChallenges"),
             Temperature: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "temperature"*/ "./temperature/Temperature"),
             Salinity: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "salinity"*/ "./salinity/Salinity"),
