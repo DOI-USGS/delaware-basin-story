@@ -78,7 +78,7 @@
           >
             Reservoirs
           </h3>
-          <p><a href="https://webapps.usgs.gov/odrm/data/data.html">Reservoirs</a> use sections of the river as storage tanks to store enormous amounts of water for times when we need it. They are also used for other kinds of water management - flood control, hydroelectric power, and recreation.</p>
+          <p><a href="https://webapps.usgs.gov/odrm/data/data.html" target="_blank">Reservoirs</a> act as storage tanks that hold enormous amounts of water for times when we need it. They are also used for other kinds of water management - flood control, hydroelectric power, and recreation.</p>
         </div>
       </div>
       <div

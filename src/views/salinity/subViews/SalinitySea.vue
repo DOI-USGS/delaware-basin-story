@@ -868,7 +868,7 @@
               Rising Sea Levels
             </h3>
             <p>
-              Sea level rise is expected to push the salt front further upstream. With just 3 feet of sea level rise, the salt front is predicted to once again travel within the reaches of Philadelphia and nearby fresh water supplies.
+              Sea level rise is expected to push the salt front further upstream. With a few <a href="https://www.state.nj.us/drbc/library/documents/shallcross_saltfront_CDRWforum_oct2019.pdf" target="_blank"> feet of sea level rise</a>, the salt front is predicted to once again travel within the reaches of Philadelphia and nearby fresh water supplies.
             </p>
             <p>
               Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. One key objective is to keep the salt front from contaminating fresh water supplies and back toward the ocean. Accurate data and models allow smart reservoir releases, which maintain the flow targets and impact the salt front location.
@@ -902,22 +902,7 @@
             <p>
               Reducing road salt concentrations in streams can involve chemical de-icing alternatives and moderating road salt applications. But safe roads are important too. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs.
             </p>
-            <!--  <video
-              width="80%"
-              height="80%"
-              autoplay
-              loop
-            >
-              <source
-                src="@/assets/salinity/salinitySea/images/truckin.mp4"
-                type="video/mp4"
-              >
-              <source
-                src="@/assets/salinity/salinitySea/images/truckin_mobile.mp4"
-                type="video/mp4"
-                media="(max-width: 992px)"
-              >
-            </video> -->
+
             <picture
               width="80%"
               height="80%"
@@ -1187,9 +1172,7 @@ $s3:"";
 @-moz-keyframes fall {
   100%  {transform: translateY(200vh);}
 }
-@-ms-keyframes fall {
-  100%  {transform: translateY(200vh);}
-}
+
 @-o-keyframes fall {
   100%  {transform: translateY(200vh);}
 }
@@ -1217,6 +1200,7 @@ $s3:"";
 
 
 // what follows controls the general layout, grid pattern, and text fades
+
 #salinity-sea {
   #salinity-sea-container {
     display: grid;
@@ -1317,10 +1301,21 @@ $s3:"";
     grid-column: 1;
     grid-row: 1;
     align-self: start;
+    margin-left: 5%;
+    width: 90%;
   
   }
+  @media only screen and (min-width: 700px) {
+  .salinity-sea-section-text {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+}
   
 }
+
+
 </style>
 
 <style scoped lang="less">
@@ -1341,7 +1336,6 @@ $s3:"";
 .animation (@name, @duration: 1s, @delay: 0) {
 	-webkit-animation: @name @duration linear @delay forwards;
 	-moz-animation:    @name @duration linear @delay forwards;
-  -ms-animation:     @name @duration linear @delay forwards;
   -o-animation:     @name @duration linear @delay forwards;
   animation:     @name @duration linear @delay forwards;
 }
@@ -1349,25 +1343,21 @@ $s3:"";
 //write animations
   @-webkit-keyframes ghostwrite-100 {.ghostwrite-frames(100px);}
   @-moz-keyframes ghostwrite-100 {.ghostwrite-frames(100px);}
-  @-ms-keyframes ghostwrite-100 {.ghostwrite-frames(100px);}
   @-o-keyframes ghostwrite-100 {.ghostwrite-frames(100px);}
   @keyframes ghostwrite-100 {.ghostwrite-frames(100px);}
 
   @-webkit-keyframes ghostwrite-200 {.ghostwrite-frames(200px);}
   @-moz-keyframes ghostwrite-200 {.ghostwrite-frames(200px);}
-  @-ms-keyframes ghostwrite-200 {.ghostwrite-frames(200px);}
   @-o-keyframes ghostwrite-200 {.ghostwrite-frames(200px);}
   @keyframes ghostwrite-200 {.ghostwrite-frames(200px);}
 
   @-webkit-keyframes ghostwrite-50 {.ghostwrite-frames(50px);}
   @-moz-keyframes ghostwrite-50 {.ghostwrite-frames(50px);}
-  @-ms-keyframes ghostwrite-50 {.ghostwrite-frames(50px);}
   @-o-keyframes ghostwrite-50 {.ghostwrite-frames(50px);}
   @keyframes ghostwrite-50 {.ghostwrite-frames(50px);}
 
   @-webkit-keyframes ghostwrite-500 {.ghostwrite-frames(500px);}
   @-moz-keyframes ghostwrite-500 {.ghostwrite-frames(500px);}
-  @-ms-keyframes ghostwrite-500 {.ghostwrite-frames(500px);}
   @-o-keyframes ghostwrite-500 {.ghostwrite-frames(500px);}
   @keyframes ghostwrite-500 {.ghostwrite-frames(500px);}
 

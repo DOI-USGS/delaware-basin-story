@@ -20,7 +20,7 @@
         >Water Quality Portal.</a>
       </p>
       <p>The USGS and collaborators study a multitude of water-quality factors in the Basin. These include sediment, turbidity, nutrients, dissolved oxygen, pathogens, heavy metals, and chemical contaminants, each with a story of its own.</p>
-      <p>In this story, we’ll dive into two water-quality variables that have drawn recent attention – salinity and temperature – and a new USGS monitoring program that is improving our ability to provide the data needed to manage both the quantity and the quality of water in the Delaware River.</p>
+      <p>In this story, we’ll dive into two water-quality variables that have drawn recent attention – <span class="emph">salinity and temperature</span> – and a new USGS monitoring program that is improving our ability to provide the data needed to manage both the quantity and the quality of water in the Delaware River.</p>
     </div>
   </section>
 </template>

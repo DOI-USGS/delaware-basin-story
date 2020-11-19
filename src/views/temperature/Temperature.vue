@@ -135,6 +135,7 @@
                   <path d="M1288 453a5 5 0 011-2l1-1a20 20 0 013-3 6 6 0 013-1 7 7 0 014 1 25 25 0 015 4 9 9 0 012 2 26 26 0 011 3s0 1 0 0c1-1 0-4-2-6a23 23 0 00-6-4 9 9 0 00-3-2 6 6 0 00-4 2 19 19 0 00-3 3l-3 3 1 1z" />
                   
                 </g>
+                </g>
 
                 <g
                   id="mussels-fade-in"
@@ -257,7 +258,7 @@
                     <path d="M370 106a41 41 0 0111 18c2 7 2 15 1 22l1 1a48 48 0 00-1-24 43 43 0 00-11-18l-1 1zM323 93c21 8 44 24 48 48a32 32 0 01-2 17l1 1 2-15a30 30 0 00-3-11 46 46 0 00-17-18c-1-1-1 0-1 1 7 4 13 10 17 17a29 29 0 012 11c1 5 0 10-1 15h1c5-10 2-23-3-33s-15-19-25-25a94 94 0 00-19-9v1zM292 130c7 4 12 10 16 17 3 6 3 13 0 19a16 16 0 01-9 7l1 1c6-2 11-8 11-15 1-7-3-14-7-20a65 65 0 00-11-10l-1 1z" />
                     <path d="M284 172l6-2a28 28 0 005-6 18 18 0 002-16h-1a18 18 0 01-1 14 25 25 0 01-4 5c-2 2-4 4-7 4v1zM298 181c1 3 5 2 7 1a100 100 0 0010-3 82 82 0 0017-10c1-1-1-2-1-1a121 121 0 01-15 8l-8 4-4 1c-1 0-4 2-5 0h-1zM321 187c9-1 19-4 27-8 1-1 0-2-1-1a90 90 0 01-27 8l1 1zM264 165c3 0 4-2 6-4a19 19 0 003-7c0-7-1-13-4-19 0 0-2 0-1 1 2 5 3 10 3 16a19 19 0 01-2 7c-1 2-3 5-5 5v1zM232 112l24 3c6 2 13 4 17 10 1 0 2 0 1-1-4-5-11-8-17-10-8-2-17-2-25-3v1z" />
                   </g>
-                </g>
+
                 <g
                   id="mussels-grow"
                 >
@@ -343,7 +344,7 @@
           v-observe-visibility="{
             callback: visibilityChanged,
             intersection: {
-              rootMargin: '580% 0% 0% 0%',
+              rootMargin: '700% 0% 0% 0%',
               threshold: 0
             }
           }"
@@ -419,7 +420,8 @@
   #temp-image-wrapper {
     align-self: start;
     position: sticky;
-    top: 25%;
+    top: 40%;
+    left: 5%;
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr;  
@@ -460,7 +462,18 @@
       justify-items: center;
       
       #temp-image-wrapper {
-        top: 10rem;        
+        top: 25vh;        
+        max-height: 50vh;
+        width:90%;
+        left: 5%;
+      }
+
+      #mussels-container, #temp-image-container {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: start;
+        width:100%;
+
       }
     }
   }
@@ -544,8 +557,6 @@
       }
     }
   }
-
-
 
 // Assign fish animations 
   .grayColor {

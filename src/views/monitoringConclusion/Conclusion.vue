@@ -20,7 +20,8 @@
 </script>
 
 <style lang="css" scoped>
-   #conclusion-section {
-     background-color: white;
-   }
+#conclusion-section {
+  background-color: white;
+  opacity: 1;
+}
 </style>
