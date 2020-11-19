@@ -7,7 +7,8 @@
   >
     <slide class="slide">
       <div class="slider-image-container">
-        <picture>
+        <picture
+        >
           <!-- <source srcset="@/assets/intro/images/imageSlider/slider_01.webp"
                 media="(max-width: 992px)"
                 type = "image/webp"  > -->
@@ -17,6 +18,7 @@
             type="image/jpeg"
           >
           <img
+            v-img:group-1
             src="@/assets/intro/images/imageSlider/slider_01.png"
             alt="Aerial view of a bridge crossing the Delaware River"
           >
@@ -26,7 +28,8 @@
 
     <slide class="slide">
       <div class="slider-image-container">
-        <picture>
+        <picture
+        >
           <!-- <source srcset="@/assets/intro/images/imageSlider/slider_02.webp"
                 media="(max-width: 992px)" 
                 type = "image/webp"  > -->
@@ -36,6 +39,7 @@
             type="image/jpeg"
           >
           <img
+            v-img:group-1
             src="@/assets/intro/images/imageSlider/slider_02.png"
             alt="Aerial image of a tall sailing ship docked at the bank of the Delaware River"
           >
@@ -45,7 +49,8 @@
 
     <slide class="slide">
       <div class="slider-image-container">
-        <picture>
+        <picture
+        >
           <!-- <source srcset="@/assets/intro/images/imageSlider/slider_03.webp"
                   media="(max-width: 992px)"  
                   type = "image/webp" > -->
@@ -55,6 +60,7 @@
             type="image/jpeg"
           >
           <img
+            v-img:group-1
             src="@/assets/intro/images/imageSlider/slider_03.png"
             alt="A blue heron fishing on the Delaware River"
           >
@@ -63,7 +69,8 @@
     </slide>
     <slide class="slide">
       <div class="slider-image-container">
-        <picture>
+        <picture
+        >
           <!-- <source srcset="@/assets/intro/images/imageSlider/slider_05.webp"
                   media="(max-width: 992px)" 
                   type = "image/webp" > -->
@@ -73,6 +80,7 @@
             type="image/jpeg"
           >
           <img
+            v-img:group-1
             src="@/assets/intro/images/imageSlider/slider_05.png"
             alt="Aerial view of a wooded area on the banks of the Delaware River"
           >
