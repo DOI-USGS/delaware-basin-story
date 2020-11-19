@@ -73,7 +73,7 @@
               <circle
                 fill="white"
                 filter="url(#blurMe)"
-                 opacity="0.8"
+                opacity="0.8"
                 r="7"
                 cx="6"
                 cy="6"
@@ -88,7 +88,7 @@
               <circle
                 fill="white"
                 filter="url(#blurMe)"
-                 opacity="0.8"
+                opacity="0.8"
                 r="7"
                 cx="6"
                 cy="6"

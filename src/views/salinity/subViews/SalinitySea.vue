@@ -868,7 +868,10 @@
               Rising Sea Levels
             </h3>
             <p>
-              Sea level rise is expected to push the salt front further upstream. With a few <a href="https://www.state.nj.us/drbc/library/documents/shallcross_saltfront_CDRWforum_oct2019.pdf" target="_blank"> feet of sea level rise</a>, the salt front is predicted to once again travel within the reaches of Philadelphia and nearby fresh water supplies.
+              Sea level rise is expected to push the salt front further upstream. With a few <a
+                href="https://www.state.nj.us/drbc/library/documents/shallcross_saltfront_CDRWforum_oct2019.pdf"
+                target="_blank"
+              > feet of sea level rise</a>, the salt front is predicted to once again travel within the reaches of Philadelphia and nearby fresh water supplies.
             </p>
             <p>
               Monitoring, modeling, and management of river flows are essential to our peaceful coexistence with the salt front. One key objective is to keep the salt front from contaminating fresh water supplies and back toward the ocean. Accurate data and models allow smart reservoir releases, which maintain the flow targets and impact the salt front location.

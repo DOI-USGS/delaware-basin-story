@@ -16,9 +16,21 @@
         <desc id="page-desc">An animation paints the map of the Delaware River Basin in watercolor</desc>
         <defs>
           <radialGradient id="radialGradient">
-            <stop offset="50%" stop-color="white" stop-opacity=".7" />
-            <stop offset="90%" stop-color="white" stop-opacity=".3" />
-            <stop offset="100%" stop-color="white" stop-opacity=".0" />
+            <stop
+              offset="50%"
+              stop-color="white"
+              stop-opacity=".7"
+            />
+            <stop
+              offset="90%"
+              stop-color="white"
+              stop-opacity=".3"
+            />
+            <stop
+              offset="100%"
+              stop-color="white"
+              stop-opacity=".0"
+            />
           </radialGradient>
           <clipPath id="title_clip_mobile">
             <path d="M216.2 383.7c-.6 1.3-3 3.4-4.8 3.3-2.5-.4-5.8-7.7-6.9-10-1 2-4.9 8.7-5.9 9.4a6.4 6.4 0 01-3.3 1 3.3 3.3 0 01-3-1.9c-.6-1.5-1.9-6-3.3-10.5s-2.8-8.7-3.5-9.8a1.6 1.6 0 01-.3-.9c-.2-1.7 2.1-2.6 3.7-2.6a5 5 0 013.6 1.4c1.5 1.7 3.7 8.1 5.3 12.8 1-1.7 1.7-4.5 2.6-6.3s1.6-2.6 4.3-2.6 3.8 1.3 5 3.3c1 1.5 2 4.1 2.7 5.6.8-2.3 1.3-5.6 2-7.9a3.7 3.7 0 014-2.7c.7 0 2.8.4 3 2.2.3 2.5-3.9 13.3-5.2 16.2zM252.1 388.5a6.7 6.7 0 01-4.9-2c-.7-.9-1.6-4.6-2-6a116.2 116.2 0 01-11.8 2c-1.5 3-2.5 6-3.8 8.8-.2.4-3.8 3.3-4.8 3.3a2.8 2.8 0 01-3-2.3c-.3-5.5 13-32.4 14.6-33.4a9.8 9.8 0 014.7-1.3 5.4 5.4 0 014 1.5 87.7 87.7 0 0110.3 26c.3 2.2-.9 3.4-3.3 3.4zm-11.7-22.2a86.3 86.3 0 00-3.6 8 41.5 41.5 0 016.1-1.4c-.7-1.9-1.7-4.8-2.5-6.6zM282.8 357.6c-1.7.8-6.9 1.4-8.9 1.8h-.9c-.4.8-1 25.5-1.2 28.8 0 3.1-.2 5.6-.3 6.1a2.9 2.9 0 01-2.9 1.7c-2.3 0-5-1.6-5.4-4.3-.3-2 .1-10.5.5-18.2l.6-12.4a18.3 18.3 0 01-4.6.7c-1.9 0-5.9-1.7-6.2-4-.4-3 3.3-2.5 5.2-2.8s4-1 7.1-1.7A62 62 0 01280 352c1.7 0 4 1.1 4.2 3.2a2.2 2.2 0 01-1.4 2.4z" />
@@ -520,9 +532,9 @@
           />
         </g>
         <g id="title-background-mobile">
-           <rect
-              id="background-box"
-            />
+          <rect
+            id="background-box"
+          />
         </g>
         <g id="title_draw_mobile">
           <path
