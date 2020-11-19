@@ -3956,7 +3956,6 @@
         </div>
       </div>
     </div>
-    <!-- <Conclusion /> -->
   </section>
 </template>
 
@@ -4068,6 +4067,14 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+
+#DRB-land-water {
+  opacity: .5;
+}
+
+#state-labels{
+  opacity: .2;
+}
 
 // remove white space below
 #monitoringConclusion {
@@ -4562,10 +4569,10 @@ fill:#f8f8f8;
   }
     
   .inking {
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    width: 100%;
+    // position: relative;
+    // display: inline-block;
+    // text-align: left;
+    // width: 100%;
     top: 0;
     z-index: -1;
 
