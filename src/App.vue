@@ -29,7 +29,7 @@
             WorkInProgressWarning: () => import( /*webpackChunkName: "work-in-progress-warning"*/ "./components/WorkInProgressWarning"),
             PreFooterVisualizationsLinks: () => import(  /*webpackChunkName: "pre-footer-links-visualizations"*/ "./components/PreFooterVisualizationsLinks"),
             PreFooterCodeLinks: () => import( /*webpackChunkName: "pre-footer-links-code"*/ "./components/PreFooterCodeLinks"),
-            FooterUSGS: () => import( /* webpackPrefetch: true */ /*webpackChunkName: "usgs-footer"*/ "./components/FooterUSGS")
+            FooterUSGS: () => import( /*webpackChunkName: "usgs-footer"*/ "./components/FooterUSGS")
         },
         data() {
             return {
@@ -90,7 +90,7 @@
   #app {
 
     .section {
-      margin: 0 0 5em 0;
+      margin: 0 0 2em 0;
     }
 
     p {

@@ -59,7 +59,7 @@
                 fill="white"
                 filter="url(#blurMe)"
                 opacity="0.8"
-                r="6"
+                r="7"
                 cx="6"
                 cy="6"
               />
@@ -73,8 +73,8 @@
               <circle
                 fill="white"
                 filter="url(#blurMe)"
-                 opacity="0.8"
-                r="6"
+                opacity="0.8"
+                r="7"
                 cx="6"
                 cy="6"
               />
@@ -88,8 +88,8 @@
               <circle
                 fill="white"
                 filter="url(#blurMe)"
-                 opacity="0.8"
-                r="6"
+                opacity="0.8"
+                r="7"
                 cx="6"
                 cy="6"
               />
@@ -97,7 +97,7 @@
             <filter id="blurMe">
               <feGaussianBlur
                 in="SourceGraphic"
-                stdDeviation="2"
+                stdDeviation="1"
               />
             </filter>
           </defs>
@@ -660,7 +660,7 @@
                     width="3232"
                     height="738"
                     transform="matrix(-0.03, 0, 0, -0.04, 658.71, 275.6)"
-                    xlink:href="@/assets/salinity/salinitySea/images/truckin1.png"
+                    xlink:href="@/assets/salinity/salinitySea/images/white-fill.png"
                   />
                 </g>
                 <path d="M537.76,273.89a2,2,0,0,0,0,1.76h0c.27.2.63,0,1.19,0a3.45,3.45,0,0,1,2.08.87c2.87,2.06,6.31,6,10.09,7,1.76.46,3.35.12,6.53-.58a27.9,27.9,0,0,0,7.12-2.63c14.06-2,24.5-1.08,31.76.29,3.32.62,9.37,2.18,12.17-.88,1.9-2.08,1.57-5.5,1-7.94a34.34,34.34,0,0,1-13.39,2.68,31,31,0,0,1-4.35-.34C571.36,271.22,538.4,272.11,537.76,273.89Z" />
@@ -702,7 +702,7 @@
                     width="3232"
                     height="738"
                     transform="translate(523.07 241.69) scale(0.04 0.05)"
-                    xlink:href="@/assets/salinity/salinitySea/images/truckin1.png"
+                    xlink:href="@/assets/salinity/salinitySea/images/white-fill.png"
                   />
                 </g>
                 <g style="clip-path: url(#clip-path-3)">
@@ -710,7 +710,7 @@
                     width="3232"
                     height="738"
                     transform="matrix(0.02, 0, 0, 0.02, 517.98, 260.09)"
-                    xlink:href="@/assets/salinity/salinitySea/images/truckin1.png"
+                    xlink:href="@/assets/salinity/salinitySea/images/white-fill.png"
                   />
                 </g>
                 <g id="salt-rocks">
@@ -976,7 +976,7 @@
                     width="3232"
                     height="738"
                     transform="matrix(0.02, 0, 0, 0.03, 573.05, 271.32)"
-                    xlink:href="@/assets/salinity/salinitySea/images/truckin1.png"
+                    xlink:href="@/assets/salinity/salinitySea/images/white-fill.png"
                   />
                 </g>
                 <path d="M647.8,272.71c.86.27,1.86.72,2,1.49.22,1.07-1.69,1.49-2.52,3.36-1.62,3.62-1.44,8.07,1.67,10.37l.37.7c.2.14,0,.8-.36,1.11a1.62,1.62,0,0,1-1.18.37c-1.18,0-27.2-.08-29.78-.67a5.58,5.58,0,0,1-1-.34,4.34,4.34,0,0,1-.6-.31,3.62,3.62,0,0,1-1.08-1.36c-1.2-1.87-1.33-5.69-1.33-5.69a42.93,42.93,0,0,1,.33-9.36,32.28,32.28,0,0,1,1.34-5.36c1.45-4.23,2.67-4.85,3.34-5a16,16,0,0,1,3.35.67C631.4,267,638.65,269.14,647.8,272.71Z" />
@@ -985,7 +985,7 @@
                     width="3232"
                     height="738"
                     transform="matrix(0.04, 0, -0.01, 0.05, 612.51, 252.39)"
-                    xlink:href="@/assets/salinity/salinitySea/images/truckin1.png"
+                    xlink:href="@/assets/salinity/salinitySea/images/white-fill.png"
                   />
                 </g>
                 <g id="snow-big">
@@ -3941,7 +3941,6 @@
         </div>
       </div>
     </div>
-    <!-- <Conclusion /> -->
   </section>
 </template>
 
@@ -4053,6 +4052,14 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+
+#DRB-land-water {
+  opacity: .5;
+}
+
+#state-labels{
+  opacity: .2;
+}
 
 // remove white space below
 #monitoringConclusion {
@@ -4284,12 +4291,17 @@ export default {
 #fins, #fin_top, #fin_belly, #fin_front, #fin_tail, #eye, #spots {
   @stroke-length: 200px;
   .hide-text(@stroke-length);
+
 }
 
 #outline {   
   @stroke-length: 700px;
 .hide-text(@stroke-length);
 }
+}
+
+#Temperature{
+    transform: translate(-60px,-10px);
 }
 #Mussel {
    .sketch-1 {
@@ -4537,10 +4549,10 @@ fill:#f8f8f8;
   }
     
   .inking {
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    width: 100%;
+    // position: relative;
+    // display: inline-block;
+    // text-align: left;
+    // width: 100%;
     top: 0;
     z-index: -1;
 

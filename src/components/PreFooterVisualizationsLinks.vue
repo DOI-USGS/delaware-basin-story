@@ -18,10 +18,10 @@
           :href="LinkTwo"
         >
           <figure>
-            <figcaption>Hurricane Maria's Water Footprint</figcaption>
+            <figcaption>How Wildfires Threaten U.S. Water Supplies</figcaption>
             <img
-              src="@/assets/components/PreFooterVisualizationsLinks/images/MariaThumb.png"
-              alt="Thumbnail for a link to the Hurricane Maria Water Footprint visualization"
+              src="@/assets/components/PreFooterVisualizationsLinks/images/fire-hydro-square.jpg"
+              alt="Thumbnail for a link to the Wildfire and Water Supplies visualization"
             >
           </figure>
         </a>
