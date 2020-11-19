@@ -5,6 +5,7 @@
       <div class="footer-viz-links">
         <a
           :href="LinkOne"
+          target="_blank"
         >
           <figure>
             <figcaption>Gages Through the Ages</figcaption>
@@ -16,6 +17,7 @@
         </a>
         <a
           :href="LinkTwo"
+          target="_blank"
         >
           <figure>
             <figcaption>How Wildfires Threaten U.S. Water Supplies</figcaption>
