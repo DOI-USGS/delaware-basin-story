@@ -4497,6 +4497,7 @@ fill:#f8f8f8;
   #monitoring-container {
     grid-template-columns: 1fr;
     justify-items: center;
+    
   }
 }
 

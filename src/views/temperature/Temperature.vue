@@ -344,7 +344,7 @@
           v-observe-visibility="{
             callback: visibilityChanged,
             intersection: {
-              rootMargin: '700% 0% 0% 0%',
+              rootMargin: '800% 0% 0% 0%',
               threshold: 0
             }
           }"
