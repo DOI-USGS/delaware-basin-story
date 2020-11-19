@@ -382,6 +382,13 @@
                   class="sketch-fine"
                 />
               </g>
+              <text
+                height="100%"
+                width="100%"
+                class="philly-label"
+              >
+                Philadelphia
+              </text>
             </g>
             <g v-if="SaltyWater">
               <g id="salty-water-rising">
@@ -1107,6 +1114,13 @@ export default {
   stroke-linejoin: round;
 }
 
+.philly-label {
+  z-index: 100;
+  transform: translate(350px, 130px);
+  font-family: chantal;
+  font-weight: bold;
+  font-size: 1.3em;
+}
 #salt-svg {
   mask-image: linear-gradient(black 85%, transparent 89%);
 }
