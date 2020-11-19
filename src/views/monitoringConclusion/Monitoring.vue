@@ -50,9 +50,9 @@
             <symbol
               id="DRBorange"
               
-              viewBox="0 0 12 14"
-              width="10"
-              height="10"
+              viewBox="0 0 20 20"
+              width="20"
+              height="20"
             >
               <circle
                 class="DRBorange"
@@ -60,38 +60,38 @@
                 filter="url(#blurMe)"
                 opacity="0.8"
                 r="7"
-                cx="6"
-                cy="6"
+                cx="10"
+                cy="10"
               />
             </symbol>
             <symbol
               id="DRBblue"
-              viewBox="0 0 12 14"
-              width="10"
-              height="10"
+              viewBox="0 0 20 20"
+              width="20"
+              height="20"
             >
               <circle
                 fill="white"
                 filter="url(#blurMe)"
                 opacity="0.8"
                 r="7"
-                cx="6"
-                cy="6"
+                cx="10"
+                cy="10"
               />
             </symbol>
             <symbol
               id="DRBgreen"
-              viewBox="0 0 12 14"
-              width="10"
-              height="10"
+              viewBox="0 0 20 20"
+              width="20"
+              height="20"
             >
               <circle
                 fill="white"
                 filter="url(#blurMe)"
                 opacity="0.8"
                 r="7"
-                cx="6"
-                cy="6"
+                cx="10"
+                cy="10"
               />
             </symbol>
             <filter id="blurMe">
@@ -166,449 +166,449 @@
                 id="salinity"
               >
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(294.41 736.11)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(292.73 717.38)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(289.93 731.86)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(292.4 710.35)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(281.31 716.28)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(293.07 718.9)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(348.44 539.88)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(346.86 543.16)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(344.47 541.96)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(344.4 541.98)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(336.9 553.84)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(326.08 554.84)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(316.8 545.57)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(334.51 543.71)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(396.03 706.14)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(369.57 713.87)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(503.91 341.43)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(524.6 307.68)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(447.46 336.51)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(339.16 750.1)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(444.36 671.47)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(460.43 708.84)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(514.77 669.65)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(321.25 781.11)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(321.63 524.57)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(425.59 426.2)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(394.58 426.93)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(398.61 685.62)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(352.04 624.87)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(439.87 637.92)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(497.69 291.77)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(505.78 233.27)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(518.57 215.64)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(385.86 738.24)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(428.38 700.68)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(432 691.73)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(488.42 685.08)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(520.45 704.61)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(463.66 702.44)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(474.43 692.06)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(503.3 646.29)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(417.68 486.83)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(440.52 422.05)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(467.95 374.97)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(501.58 344.29)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(498.77 298.68)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(495.35 256.54)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(503.17 240.29)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(533.37 212.06)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(5143 232.07)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(527.63 222.33)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(484.98 360.7)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(395.19 245.68)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(408.06 176.48)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(463.48 187.15)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(478.68 190.32)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(491.92 181.33)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(399.2 750.89)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(471.13 679.78)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(498.54 688.25)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(339.43 931.35)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(311.45 747.42)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(307.87 745.62)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(298.24 749.63)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
@@ -1023,659 +1023,659 @@
                 id="temp"
               >
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(294.41 736.11)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(292.73 717.38)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(289.93 731.86)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(292.4 710.35)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(281.31 716.28)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(293.07 718.9)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(370.81 648.65)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(285.47 693.86)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(413.22 337.88)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(348.44 539.88)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(346.86 543.16)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(344.47 541.96)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(344.4 541.98)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(336.9 553.84)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(326.08 554.84)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(316.8 545.57)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(334.51 543.71)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(396.03 706.14)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(369.57 713.87)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(513.29 249.73)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(503.91 341.43)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(524.6 307.68)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(447.46 336.51)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(429.69 316.01)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(366.61 200.27)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(437.82 197.07)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(448.54 180.89)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(339.16 750.1)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(444.36 671.47)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(460.43 708.84)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(514.77 669.65)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(442.13 823.4)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(321.25 781.11)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(321.63 524.57)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(425.59 426.2)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(394.58 426.93)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(383.63 694.59)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(300.68 599.04)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(398.61 685.62)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(352.04 624.87)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(414.95 674.52)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(439.87 637.92)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(497.69 291.77)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(505.78 233.27)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(518.57 215.64)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(358.29 201.22)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(435.72 227.4)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(436.27 197.61)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(433.67 558.5)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(385.86 738.24)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(428.38 700.68)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(432 691.73)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(488.42 685.08)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(520.45 704.61)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(463.66 702.44)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(474.43 692.06)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(503.3 646.29)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(441.26 593.76)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(398.7 540.46)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(417.68 486.83)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(440.52 422.05)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(467.95 374.97)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(438.34 812.73)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(445.85 342.38)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(390.91 251.92)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(501.58 344.29)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(498.77 298.68)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(495.35 256.54)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(494.78 254.72)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(503.17 240.29)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(533.37 212.06)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(511.73 232.07)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(527.63 222.33)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(423.8 270.44)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(395.19 245.68)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(408.06 176.48)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(464.59 237.33)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(463.48 187.15)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(478.68 190.32)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(491.92 181.33)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(516.53 249)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(349.59 791.8)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(399.2 750.89)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(429.04 674.72)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(471.13 679.78)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(498.54 688.25)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(475.56 634.36)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(402.44 531.02)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(339.43 931.35)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(318.44 732.76)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(311.45 747.42)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(307.87 745.62)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(298.24 749.63)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(301.87 761.67)"
                   xlink:href="#DRBgreen"
                   href="#DRBgreen"
@@ -1763,673 +1763,673 @@
                 id="new_enhanced"
               >
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(294.41 736.11)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(292.73 717.38)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(292.4 710.35)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(281.31 716.28)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(293.07 718.9)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(407.71 688.87)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(413.22 337.88)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(348.44 539.88)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(346.86 543.16)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(344.47 541.96)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(344.4 541.98)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(336.9 553.84)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(316.8 545.57)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(334.51 543.71)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(396.03 706.14)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(369.57 713.87)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(407.27 690.7)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(513.29 249.73)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(447.46 336.51)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(429.69 316.01)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(366.61 200.27)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(437.82 197.07)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(448.54 180.89)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(339.16 750.1)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(444.36 671.47)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(460.43 708.84)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(321.25 781.11)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(321.63 524.57)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(425.59 426.2)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(394.58 426.93)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(383.63 694.59)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(300.68 599.04)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(326.34 708.02)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(398.61 685.62)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(352.04 624.87)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(414.95 674.52)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(439.87 637.92)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(402.22 336.29)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(505.78 233.27)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(518.57 215.64)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(422.24 271.33)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(358.29 201.22)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(435.72 227.4)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(436.27 197.61)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(433.67 558.5)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(385.86 738.24)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(428.38 700.68)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(432 691.73)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(488.42 685.08)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(520.45 704.61)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(463.66 702.44)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(474.43 692.06)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(503.3 646.29)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(471.6 626.84)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(441.26 593.76)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(420.7 556.38)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(398.7 540.46)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(417.68 486.83)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(440.52 422.05)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(467.95 374.97)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(445.85 342.38)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(390.91 251.92)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(512.56 250.55)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(501.58 344.29)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(498.77 298.68)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(495.35 256.54)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(494.78 254.72)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(503.17 240.29)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(511.73 232.07)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(484.98 360.7)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(474.23 339.73)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(434.63 328.78)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(423.8 270.44)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(395.19 245.68)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(365.92 214.13)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(363.88 197.46)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(408.06 176.48)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(401.91 221.08)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(484.69 184.06)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(464.59 237.33)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(463.48 187.15)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(478.68 190.32)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(491.92 181.33)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(516.53 249)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(349.59 791.8)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(429.04 674.72)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(471.13 679.78)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(498.54 688.25)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(475.56 634.36)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(402.44 531.02)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(339.43 931.35)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(318.44 732.76)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(311.45 747.42)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(307.87 745.62)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(298.24 749.63)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(301.87 761.67)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
@@ -2442,64 +2442,64 @@
                 id="cameras"
               >
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(407.71 688.87)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(407.27 690.7)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(326.34 708.02)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(439.87 637.92)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(471.6 626.84)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(417.68 486.83)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(501.58 344.29)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(484.98 360.7)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
                 />
                 <use
-                  width="10"
-                  height="12"
+                  width="20"
+                  height="20"
                   transform="translate(365.92 214.13)"
                   xlink:href="#DRBblue"
                   href="#DRBblue"
@@ -4068,7 +4068,7 @@ export default {
 
 // center highlights
 #salinity, #temp, #new_enhanced, #cameras {
-  transform: translate(-2px,-2px)
+  transform: translate(-6px,-5px);
 }
 
 //base animation mixin for browser prefixes
