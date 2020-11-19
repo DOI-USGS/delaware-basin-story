@@ -419,7 +419,8 @@
   #temp-image-wrapper {
     align-self: start;
     position: sticky;
-    top: 25%;
+    top: 40%;
+    left: 5%;
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr;  
