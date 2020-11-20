@@ -267,7 +267,7 @@
                     xlink:href="@/assets/temperature/images/big_b_all-01.png"
                     href="@/assets/temperature/images/big_b_all-01.png"
                     alt="large freshwater mussel"
-                    class="appear"
+
                     transform="translate(-160 -330) scale(2 2)"
                     height="100%"
                     width="100%"
@@ -344,7 +344,7 @@
           v-observe-visibility="{
             callback: visibilityChanged,
             intersection: {
-              rootMargin: '800% 0% 0% 0%',
+              rootMargin: '800% 0% -30% 0%',
               threshold: 0
             }
           }"
@@ -448,10 +448,10 @@
 
 // Appear Animation
   .appear {
-      animation: fade-in 4s ease-in 1s forwards 1;
-      -webkit-animation: fade-in 4s ease-in 1s forwards 1;
-      -moz-animation: fade-in 4s ease-in 1s forwards 1;
-      -o-animation: fade-in 4s ease-in 1s forwards 1;
+      animation: fade-in 3s ease-in 1s forwards 1;
+      -webkit-animation: fade-in 3s ease-in 1s forwards 1;
+      -moz-animation: fade-in 3s ease-in 1s forwards 1;
+      -o-animation: fade-in 3s ease-in 1s forwards 1;
   }
 
 // Small screen grid stack
@@ -484,9 +484,9 @@
 
   //structure of mussels section
   #mussels-container {  
-    .fade-enter-active, .fade-leave-active {
+   /*  .fade-enter-active, .fade-leave-active {
       transition: opacity 1.5s;
-    }
+    } */
     .fade-enter, .fade-leave-to {
       opacity: 0;
     }
