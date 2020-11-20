@@ -24,6 +24,7 @@
     "less": "^3.12.2",
     "less-loader": "^6.2.0",
     "uswds": "^2.8.1",
+    "v-img": "^0.2.0",
     "vue": "^2.6.12",
     "vue-browser-detect-plugin": "^0.1.13",
     "vue-carousel": "^0.18.0",

@@ -8,6 +8,7 @@ import uswds from 'uswds';
 import browserDetect from 'vue-browser-detect-plugin';
 import VueObserveVisibility from 'vue-observe-visibility'
 import VueCarousel from 'vue-carousel';
+import VueImg from 'v-img';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -35,6 +36,7 @@ Vue.config.productionTip = false;
 Vue.use(uswds);
 Vue.use(browserDetect);
 Vue.use(VueObserveVisibility);
+Vue.use(VueImg);
 
 const app = new Vue({
   router,

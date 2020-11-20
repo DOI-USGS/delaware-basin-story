@@ -4,7 +4,8 @@
       <p>Other Visualizations of Interest</p>
       <div class="footer-viz-links">
         <a
-          :href="LinkOne"
+          href="https://labs.waterdata.usgs.gov/visualizations/fire-hydro/index.html#/"
+          target="_blank"
         >
           <figure>
             <figcaption>Gages Through the Ages</figcaption>
@@ -15,7 +16,8 @@
           </figure>
         </a>
         <a
-          :href="LinkTwo"
+          href="https://labs.waterdata.usgs.gov/visualizations/gages-through-the-ages/index.html#/"
+          target="_blank"
         >
           <figure>
             <figcaption>How Wildfires Threaten U.S. Water Supplies</figcaption>
@@ -33,12 +35,12 @@
 <script>
     export default {
         name: 'PreFooterVisualizationsLinks',
-        data() {
-            return {
-                LinkOne: process.env.VUE_APP_FOOTER_LINK_1,
-                LinkTwo: process.env.VUE_APP_FOOTER_LINK_2
-            };
-        }
+        // data() {
+        //     return {
+        //         LinkOne: process.env.VUE_APP_FOOTER_LINK_1,
+        //         LinkTwo: process.env.VUE_APP_FOOTER_LINK_2
+        //     };
+        // }
     }
 </script>
 
