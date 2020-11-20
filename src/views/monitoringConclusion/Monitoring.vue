@@ -1762,678 +1762,54 @@
                 v-if="isShowingNewEnhancedLocations"
                 id="new_enhanced"
               >
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(294.41 736.11)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(292.73 717.38)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(292.4 710.35)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(281.31 716.28)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(293.07 718.9)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(407.71 688.87)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(413.22 337.88)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(348.44 539.88)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(346.86 543.16)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(344.47 541.96)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(344.4 541.98)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(336.9 553.84)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(316.8 545.57)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(334.51 543.71)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(396.03 706.14)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(369.57 713.87)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(407.27 690.7)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(513.29 249.73)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(447.46 336.51)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(429.69 316.01)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(366.61 200.27)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(437.82 197.07)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(448.54 180.89)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(339.16 750.1)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(444.36 671.47)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(460.43 708.84)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(321.25 781.11)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(321.63 524.57)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(425.59 426.2)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(394.58 426.93)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(383.63 694.59)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(300.68 599.04)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(326.34 708.02)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(398.61 685.62)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(352.04 624.87)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(414.95 674.52)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(439.87 637.92)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(402.22 336.29)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(505.78 233.27)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(518.57 215.64)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(422.24 271.33)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(358.29 201.22)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(435.72 227.4)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(436.27 197.61)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(433.67 558.5)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(385.86 738.24)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(428.38 700.68)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(432 691.73)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(488.42 685.08)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(520.45 704.61)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(463.66 702.44)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(474.43 692.06)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(503.3 646.29)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(471.6 626.84)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(441.26 593.76)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(420.7 556.38)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(398.7 540.46)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(417.68 486.83)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(440.52 422.05)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(467.95 374.97)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(445.85 342.38)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(390.91 251.92)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(512.56 250.55)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(501.58 344.29)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(498.77 298.68)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(495.35 256.54)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(494.78 254.72)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(503.17 240.29)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(511.73 232.07)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(484.98 360.7)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(474.23 339.73)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(434.63 328.78)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(423.8 270.44)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(395.19 245.68)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(365.92 214.13)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(363.88 197.46)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(408.06 176.48)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(401.91 221.08)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(484.69 184.06)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(464.59 237.33)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(463.48 187.15)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(478.68 190.32)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(491.92 181.33)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(516.53 249)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(349.59 791.8)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(429.04 674.72)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(471.13 679.78)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(498.54 688.25)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(475.56 634.36)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(402.44 531.02)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(339.43 931.35)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(318.44 732.76)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(311.45 747.42)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(307.87 745.62)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(298.24 749.63)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
-                <use
-                  width="20"
-                  height="20"
-                  transform="translate(301.87 761.67)"
-                  xlink:href="#DRBorange"
-                  href="#DRBorange"
-                />
+
+                <use width="20" height="20" transform="translate(308.28 747.98)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(402.71 533.69)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(475.74 636.87)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(429.29 677.18)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(349.93 794.1" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(516.66 252.05)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(464.78 240.41)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(424.05 273.47)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(494.93 257.77)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(512.68 253.58)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(391.21 254.98)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(446.06 345.31)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(399.47 753.23)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(527.73 225.42)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(533.46 215.16)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(433.9 561.12)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(301.08 601.6)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(383.93 697.03)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(438.55 815)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(321.64 783.42)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(460.63 711.24)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(444.57 673.93)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(339.52 752.45)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(438.05 200.2)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(366.93 203.39)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(407.53 693.14)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(429.91 318.97)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(513.4 252.77)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(334.87 546.35)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(317.19 548.2)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(337.26 556.47)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(344.76 544.63)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(344.82 544.6)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(413.48 340.81)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(293.51 721.29)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(281.76 718.67)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(292.83 712.76)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(442.35 825.65)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(407.98 691.29)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(514.89 672.12)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(524.7 310.65)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(504.05 344.35)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(326.46 557.47)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(285.9 696.29)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(371.13 651.14)" xlink:href="#DRBorange" href="#DRBorange" />
+                <use width="20" height="20" transform="translate(290.37 734.23)" xlink:href="#DRBorange" href="#DRBorange" />
+                
               </g>
             </transition>
             <transition name="fade">
@@ -3797,7 +3173,7 @@
                     alt="Colorful background with watercolor texture"
                   >
                   <h2 class="monitoring-location-number">
-                    94
+                    45
                   </h2>
                   <h3
                     id="text-block-new_enhanced"
@@ -3810,14 +3186,14 @@
                     }"
                     class="monitoring-title"
                   >
-                    New or Enhanced Gages
+                    New Flow Gages
                   </h3>
                 </div>
                 <div
                   id="p-container-new_enhanced"
                   class="p-container"
                 >
-                  <p>Measurements of real-time flow levels are critical to the decision makers of the Basin, especially in the River Master’s office during late-summer low flows. To better understand streamflow in the basin and inform release decisions from reservoirs, 94 new or enhanced stream gages have been installed over the last three years, each housing delicate monitoring equipment that is collecting data all day, every day.</p>
+                  <p>Measurements of real-time flow levels are critical to the decision makers of the Basin, especially in the River Master’s office during late-summer low flows. To better understand streamflow in the basin and inform release decisions from reservoirs, 45 new stream gages have been installed over the last three years, each housing delicate monitoring equipment that is collecting flow data all day, every day.</p>
                   <p>Not only can scientists receive near real-time measurements from the field with minimal delay, technicians can also change the timing and duration of data collection from a remote location, which allows for good data collection even during extreme weather events.</p>
                 </div>
               </div>
