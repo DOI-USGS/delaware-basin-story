@@ -8,7 +8,7 @@
       :image="image"
     />
     <div class="text-flow-section text-content">
-      <p>The Delaware River Basin supplies water to 16 million people in four states.  Some is even piped many miles out of the Basin to provide water to New York City. How water is shared among those millions of users – not to mention the countless fish, birds, and other organisms that rely on the river for food and habitat – has been the focus of decades inter-state discussion, negotiation, and research.</p>
+      <p>The Delaware River Basin supplies water to 16 million people in four states.  Some is even piped many miles out of the Basin to provide water to New York City. How water is shared among those millions of users – not to mention the countless fish, birds, and other organisms that rely on the river for food and habitat – has been the focus of decades of inter-state discussion, negotiation, and research.</p>
       <p>Users in the Basin during 19th and 20th century struggled to reach agreements on how to share the water in the Delaware River.</p>
       <p>
         In 1954, <a

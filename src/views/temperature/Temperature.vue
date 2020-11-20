@@ -318,7 +318,7 @@
           <div class="scrolly-chunk">
             <div class="text-chunk">
               <h3>Brook Trout and Cold Water</h3>
-              <p>Brook trout are the only native trout species within the Basin, and they prefer to live in reaches with <span class="emph">cold water.</span> Due to their sensitivity to water temperatures, this species can be used as anindicator of water quality.</p>
+              <p>Brook trout are the only native trout species within the Basin, and they prefer to live in reaches with <span class="emph">cold water.</span> Due to their sensitivity to water temperatures, this species can be used as an indicator of water quality.</p>
             </div>
           </div>
           <div class="scrolly-chunk">
