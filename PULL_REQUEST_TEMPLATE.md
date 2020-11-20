@@ -1,7 +1,7 @@
 Description
 -----------
-Describe the changes made, reference related issues. Note anything that you want the reviewers to know while
-reviewing your pull request
+Describe the changes made reference related issues. Note anything that you want the reviewers to know while
+reviewing your pull request. 
 
 Before making this pull request I:
 ----------------------------
@@ -9,7 +9,7 @@ Before making this pull request I:
 - [ ] Made sure all tests run
 - [ ] Ran the WAVE plugin 508 compliance tool
 
-Can confirm this application works on:
+and can confirm this application works on:
 ----------------------------
 - [ ] Chrome
 - [ ] Safari
