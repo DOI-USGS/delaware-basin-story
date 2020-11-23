@@ -151,7 +151,7 @@
       @media only screen and (max-width: 600px) {
         padding: 100vh 0;
       }
-      @media creen and (max-width: 900px) {
+      @media screen and (max-width: 900px) {
         padding: 30vh 0;
       }
       @media screen and (max-width: 1900px) {
