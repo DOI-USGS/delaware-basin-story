@@ -151,18 +151,24 @@
       @media only screen and (max-width: 600px) {
         padding: 100vh 0;
       }
+      @media screen and (max-width: 900px) {
+        padding: 30vh 0;
+      }
+      @media screen and (max-width: 1900px) {
+        padding: 30vh 0;
+      }
     }
     .last-scrolly-chunk {
       padding-bottom: 0;
       margin-bottom: 100vh;
       @media only screen and (max-width: 1600px) {
-        margin-bottom: 50vh;
+        margin-bottom: 40vh;
       }
       @media only screen and (max-width: 1400px) {
         margin-bottom: 20vh;
       }
       @media only screen and (max-width: 1200px) {
-        margin-bottom: 30vh;
+        margin-bottom: 20vh;
       }
     }
     
