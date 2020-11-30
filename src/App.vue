@@ -152,10 +152,10 @@
         padding: 100vh 0;
       }
       @media screen and (max-width: 900px) {
-        padding: 30vh 0;
+        padding: 40vh 0;
       }
       @media screen and (max-width: 1900px) {
-        padding: 30vh 0;
+        padding: 40vh 0;
       }
     }
     .last-scrolly-chunk {
