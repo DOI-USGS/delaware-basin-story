@@ -4,6 +4,7 @@
       class="title-cloud-backing"
       :src="image"
       alt="Colorful background with watercolor texture"
+      loading="lazy"
     >
     <h2 class="section-title">
       {{ title }}

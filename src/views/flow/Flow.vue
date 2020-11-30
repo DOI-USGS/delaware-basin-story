@@ -42,7 +42,7 @@
     data() {
       return {
         title: 'Flow',
-        image: require('../../assets/flow/images/blue-min.png')
+        image: require('../../assets/flow/images/blue-min-992.png')
       }
     }
   }
