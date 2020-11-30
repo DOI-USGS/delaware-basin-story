@@ -12,6 +12,7 @@
             <img
               src="@/assets/components/PreFooterVisualizationsLinks/images/conusThumb.png"
               alt="Thumbnail for a link to the Gages Through the Ages Visualization"
+              loading="lazy"
             >
           </figure>
         </a>
@@ -22,8 +23,9 @@
           <figure>
             <figcaption>How Wildfires Threaten U.S. Water Supplies</figcaption>
             <img
-              src="@/assets/components/PreFooterVisualizationsLinks/images/fire-hydro-square.jpg"
+              src="@/assets/components/PreFooterVisualizationsLinks/images/fire-hydro-square-75.jpg"
               alt="Thumbnail for a link to the Wildfire and Water Supplies visualization"
+              loading="lazy"
             >
           </figure>
         </a>

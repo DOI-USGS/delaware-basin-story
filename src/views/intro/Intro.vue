@@ -609,7 +609,6 @@
 </template>
 
 <script>
-  // import SectionTitle from "@/components/SectionTitle";
   import IntroTextContents from "./subViews/IntroTextContents";
   import ImageCarousel from "../../components/ImageCarousel";
 
@@ -622,8 +621,7 @@
         },
         data() {
             return {
-              title: process.env.VUE_APP_TITLE,
-              titleBackingImage: require('@/assets/intro/images/rainbow-min.png')
+              title: process.env.VUE_APP_TITLE
             }
         },
         computed: {
