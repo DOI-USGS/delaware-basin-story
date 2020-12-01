@@ -7,8 +7,7 @@
   >
     <slide class="slide">
       <div class="slider-image-container">
-        <picture
-        >
+        <picture>
           <!-- <source srcset="@/assets/intro/images/imageSlider/slider_01.webp"
                 media="(max-width: 992px)"
                 type = "image/webp"  > -->
@@ -28,8 +27,7 @@
 
     <slide class="slide">
       <div class="slider-image-container">
-        <picture
-        >
+        <picture>
           <!-- <source srcset="@/assets/intro/images/imageSlider/slider_02.webp"
                 media="(max-width: 992px)" 
                 type = "image/webp"  > -->
@@ -49,8 +47,7 @@
 
     <slide class="slide">
       <div class="slider-image-container">
-        <picture
-        >
+        <picture>
           <!-- <source srcset="@/assets/intro/images/imageSlider/slider_03.webp"
                   media="(max-width: 992px)"  
                   type = "image/webp" > -->
@@ -69,8 +66,7 @@
     </slide>
     <slide class="slide">
       <div class="slider-image-container">
-        <picture
-        >
+        <picture>
           <!-- <source srcset="@/assets/intro/images/imageSlider/slider_05.webp"
                   media="(max-width: 992px)" 
                   type = "image/webp" > -->
