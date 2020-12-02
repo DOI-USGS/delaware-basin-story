@@ -28,6 +28,7 @@
     "vue": "^2.6.12",
     "vue-browser-detect-plugin": "^0.1.13",
     "vue-carousel": "^0.18.0",
+    "vue-meta": "^2.4.0",
     "vue-observe-visibility": "^0.4.6",
     "vue-responsive-video-background-player": "^1.1.2",
     "vue-router": "^3.4.3",
