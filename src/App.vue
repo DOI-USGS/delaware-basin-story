@@ -18,6 +18,7 @@
     import WindowSize from "./components/WindowSize";
     import HeaderUSWDSBanner from './components/HeaderUSWDSBanner'
     import HeaderUSGS from './components/HeaderUSGS'
+    let ROOT_PATH = 'https://labs.waterdata.usgs.gov/visualizations/delaware-basin-story/index.html#/'
 
     export default {
         name: 'App',
@@ -36,7 +37,8 @@
                 isInternetExplorer: false,
                 title: process.env.VUE_APP_TITLE,
                 publicPath: process.env.BASE_URL, // this is need for the data files in the public folder
-                card: publicPath + require('./assets/DRBmetacard.jpg')
+                card: publicPath + require('./assets/DRBmetacard.jpg'),
+                logo: ROOT_PATH + require('./assets/DRBmetacard.jpg')
             }
         },
         computed: {
@@ -57,9 +59,6 @@
         destroyed() {
             window.removeEventListener('resize', this.handleResize);
         },
-        metaInfo: {
-          title: process.env.VUE_APP_TITLE
-        },
         metaInfo() {
           return {
             meta: [
@@ -73,7 +72,7 @@
               {property: 'og:title', content: 'Water Science and Management in the Delaware River Basin'},
               {property: 'og:site_name', content: 'Water Science and Management in the Delaware River Basin'},
               {property: 'og:type', content: 'website'},
-              {property: 'og:image', content:  this.card},
+              {property: 'og:image', content:  this.logo},
               {property: 'og:description', content: 'A visualization that tells the story of the Delaware River Basin (DRB).'}
             ]
           }
