@@ -16,8 +16,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1">
     <%= process.env.VUE_APP_TIER !== '' ? '<meta name="robots" content="noindex,nofollow">' : '' %><!-- an empty string in this case means the 'prod' version of the application   -->
-   
-   
     <!-- Primary Meta Tags -->
     <title><%= VUE_APP_TIER %><%= VUE_APP_TITLE %></title>
     <meta name="title" content="<%= VUE_APP_TITLE %>">
@@ -28,14 +26,14 @@
     <meta property="og:url" content="https://labs.waterdata.usgs.gov/visualizations/delaware-basin-story/index.html#/">
     <meta property="og:title" content="<%= VUE_APP_TITLE %>">
     <meta property="og:description" content="How water quality and quantity are intertwined.">
-    <meta property="og:image" content="<%= BASE_URL %>DRBmetacard.jpg">
+    <meta property="og:image" content="https://i.ibb.co/XLkSXFj/DRBmetacard.jpg">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="A visualization that tells the story of the Delaware River Basin (DRB).">
+    <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://labs.waterdata.usgs.gov/visualizations/delaware-basin-story/index.html#/">
     <meta property="twitter:title" content="<%= VUE_APP_TITLE %>">
     <meta property="twitter:description" content="How water quality and quantity are intertwined.">
-    <meta property="twitter:image" content="<%= BASE_URL %>DRBmetacard.jpg">
+    <meta property="twitter:image" content="https://i.ibb.co/XLkSXFj/DRBmetacard.jpg">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
 
     <script type='application/ld+json'>
@@ -123,7 +121,6 @@
     </script>
   </head>
   <body>
-  <!-- Google Tag Manager (noscript) -->
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNBXXGR" height="0" width="0"
     style="display:none;visibility:hidden"></iframe></noscript>

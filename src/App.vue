@@ -38,7 +38,7 @@
                 title: process.env.VUE_APP_TITLE,
                 publicPath: process.env.BASE_URL, // this is need for the data files in the public folder
                 card: publicPath + require('./assets/DRBmetacard.jpg'),
-                logo: ROOT_PATH + require('./assets/DRBmetacard.jpg')
+                logo: ROOT_PATH + require('./../public/DRBmetacard.jpg')
             }
         },
         computed: {
