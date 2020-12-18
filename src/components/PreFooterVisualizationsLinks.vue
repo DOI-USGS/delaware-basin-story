@@ -4,7 +4,8 @@
       <p>Other Visualizations of Interest</p>
       <div class="footer-viz-links">
         <a
-          href="https://labs.waterdata.usgs.gov/visualizations/fire-hydro/index.html#/"
+        href="https://labs.waterdata.usgs.gov/visualizations/gages-through-the-ages/index.html#/"
+          
           target="_blank"
         >
           <figure>
@@ -17,7 +18,7 @@
           </figure>
         </a>
         <a
-          href="https://labs.waterdata.usgs.gov/visualizations/gages-through-the-ages/index.html#/"
+          href="https://labs.waterdata.usgs.gov/visualizations/fire-hydro/index.html#/"
           target="_blank"
         >
           <figure>
