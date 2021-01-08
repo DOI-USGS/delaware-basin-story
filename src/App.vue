@@ -37,8 +37,6 @@
                 isInternetExplorer: false,
                 title: process.env.VUE_APP_TITLE,
                 publicPath: process.env.BASE_URL, // this is need for the data files in the public folder
-                card: publicPath + require('./assets/DRBmetacard.jpg'),
-                logo: ROOT_PATH + require('./../public/DRBmetacard.jpg')
             }
         },
         computed: {
@@ -58,24 +56,6 @@
         },
         destroyed() {
             window.removeEventListener('resize', this.handleResize);
-        },
-        metaInfo() {
-          return {
-            meta: [
-              // Twitter Card
-              {name: 'twitter:card', content: 'How water quality and quantity are intertwined'},
-              {name: 'twitter:title', content: 'Water Science and Management in the Delaware River Basin'},
-              {name: 'twitter:description', content: 'A visualization that tells the story of the Delaware River Basin (DRB).'},
-              // image must be an absolute path
-              {name: 'twitter:image', content: this.card},
-              // Facebook OpenGraph
-              {property: 'og:title', content: 'Water Science and Management in the Delaware River Basin'},
-              {property: 'og:site_name', content: 'Water Science and Management in the Delaware River Basin'},
-              {property: 'og:type', content: 'website'},
-              {property: 'og:image', content:  this.logo},
-              {property: 'og:description', content: 'A visualization that tells the story of the Delaware River Basin (DRB).'}
-            ]
-          }
         },
         methods: {
             handleResize() {
