@@ -944,7 +944,6 @@ export default {
       this.isVisible = isVisible;
       const targetElement = document.querySelector('#sea-salt-one');
       if (isVisible === true) {
-        console.log('one in view');
         targetElement.classList.add('visible');
         switch(entry.target.id) { // this is set up for more conditions, right now the switch statement is not needed since there is only one condition
           case 'sea-salt-one' :
@@ -959,7 +958,6 @@ export default {
         }
       } else if (isVisible !== true) {
         targetElement.classList.remove('visible');
-        console.log('one out of view');
         switch(entry.target.id) {  
           case 'sea-salt-one' :
             this.SaltyWater = true;
@@ -978,7 +976,6 @@ export default {
       this.isVisible = isVisible;
       const targetElement = document.querySelector('#sea-salt-two');
       if (isVisible === true) {
-        console.log('two in view');
         targetElement.classList.add('visible');
         switch(entry.target.id) { // this is set up for more conditions, right now the switch statement is not needed since there is only one condition
           case 'sea-salt-two' :
@@ -994,7 +991,6 @@ export default {
         }
       } else if (isVisible !== true) {
         targetElement.classList.remove('visible');
-        console.log('two out of view');
         switch(entry.target.id) {  
           case 'sea-salt-two' :
    /*          this.SaltyWater = true;
@@ -1012,7 +1008,6 @@ export default {
       this.isVisible = isVisible;
       const targetElement = document.querySelector('#sea-salt-three');
       if (isVisible === true) {
-        console.log('three in view');
         targetElement.classList.add('visible');
         switch(entry.target.id) { 
           case 'sea-salt-three' :
@@ -1027,7 +1022,6 @@ export default {
         }
       } else if (isVisible !== true) {
         targetElement.classList.remove('visible');
-        console.log('three out of view');
         switch(entry.target.id) {  
           case 'sea-salt-three' :
    /*          this.SaltyWater = false;
@@ -1045,7 +1039,6 @@ export default {
       this.isVisible = isVisible;
       const targetElement = document.querySelector('#RoadSalt');
       if (isVisible === true) {
-        console.log('road salt in view');
         targetElement.classList.add('visible');
         switch(entry.target.id) { 
           case 'RoadSalt' :
@@ -1060,7 +1053,6 @@ export default {
         }
       } else if (isVisible !== true) {
         targetElement.classList.remove('visible');
-        console.log('road salt out of view');
         switch(entry.target.id) {  
           case 'RoadSalt' :
 /*             this.SaltyWater = false;
