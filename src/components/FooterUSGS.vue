@@ -21,7 +21,7 @@
             </li>
             <li class="leaf menu-links menu-level-1">
               <a
-                href="https://www2.usgs.gov/laws/accessibility.html"
+                href="https://www.usgs.gov/accessibility"
                 target="_blank"
               >Accessibility</a>
             </li>
@@ -79,7 +79,7 @@
             </li>
             <li class="last leaf menu-links menu-level-1">
               <a
-                href="https://www2.usgs.gov/foia"
+                href="https://www.usgs.gov/foia"
                 target="_blank"
               >FOIA</a>
             </li>
