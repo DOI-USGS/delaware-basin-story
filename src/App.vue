@@ -3,7 +3,7 @@
     <WindowSize v-if="checkTypeOfEnv === '-test build-'" />
     <HeaderUSWDSBanner />
     <HeaderUSGS />
-    <ShutdownBanner />
+    <!-- <ShutdownBanner /> -->
     <InternetExplorerPage v-if="isInternetExplorer" />
     <WorkInProgressWarning v-if="checkTypeOfEnv !== '' & !isInternetExplorer" /> <!-- an empty string in this case means the 'prod' version of the application   -->
     <router-view
@@ -18,7 +18,7 @@
 <script>
     import WindowSize from "./components/WindowSize";
     import HeaderUSWDSBanner from './components/HeaderUSWDSBanner'
-    import ShutdownBanner from './components/ShutdownBanner.vue';
+    // import ShutdownBanner from './components/ShutdownBanner.vue';
     import HeaderUSGS from './components/HeaderUSGS'
     let ROOT_PATH = 'https://labs.waterdata.usgs.gov/visualizations/delaware-basin-story/index.html#/'
 
@@ -28,7 +28,7 @@
             WindowSize,
             HeaderUSWDSBanner,
             HeaderUSGS,
-            ShutdownBanner,
+            // ShutdownBanner,
             InternetExplorerPage: () => import( /*webpackChunkName: "internet-explorer-page"*/ "./components/InternetExplorerPage"),
             WorkInProgressWarning: () => import( /*webpackChunkName: "work-in-progress-warning"*/ "./components/WorkInProgressWarning"),
             PreFooterVisualizationsLinks: () => import(  /*webpackChunkName: "pre-footer-links-visualizations"*/ "./components/PreFooterVisualizationsLinks"),
