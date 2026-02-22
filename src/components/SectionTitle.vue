@@ -32,28 +32,24 @@ defineProps({
   align-items: center;
   justify-items: center;
   margin: -3em auto 0 auto;
+  width: min(90vw, 700px);
   .title-cloud-backing {
     grid-column: 1;
     grid-row: 1;
     min-height: 6em;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
   .section-title {
     color: white;
     grid-column: 1;
     grid-row: 1;
-    max-width: 1000px;
-    text-align: center;    
+    max-width: 90%;
+    text-align: center;
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    margin: 0.5em 0;
+    padding: 0 0.5em;
   }
-
-  // @media only screen and (max-width: 992px) {
-  //   .section-title {
-  //     font-size:2em;
-  //   }
-  // }
-  // @media only screen and (max-width: 508px) {
-  //   .section-title {
-  //     font-size:1.5em;
-  //   }
-  // }
 }
 </style>

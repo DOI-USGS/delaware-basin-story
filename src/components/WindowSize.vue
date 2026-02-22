@@ -5,10 +5,9 @@
 </template>
 
 <script setup>
-  import { useWindowSizeStore } from '../stores/WindowSizeStore';
+  import { useAppStore } from '@/stores/appStore';
 
-  const windowSizeStore = useWindowSizeStore();
-
+  const windowSizeStore = useAppStore();
 </script>
 
 <style scoped lang="scss">
