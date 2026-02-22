@@ -14,7 +14,7 @@
   import { nextTick, onMounted } from 'vue';
   import IntroWatercolorGraphic from "./IntroWatercolorGraphic.vue";
   import IntroTextContents from "./subViews/IntroTextContents.vue";
-  import ImageCarousel from "../../components/ImageCarousel.vue";
+  import ImageCarousel from "@/components/ImageCarousel.vue";
   import { useAppStore } from '@/stores/appStore.js';
 
   const appStore = useAppStore();
@@ -28,14 +28,14 @@
 
 <style scoped lang="scss">
 // title writing 
-  #title_draw {
+  :deep(#title_draw) {
     clip-path: url(#title_clip);
   }
-  #title_draw_mobile {
+  :deep(#title_draw_mobile) {
     clip-path: url(#title_clip_mobile);
     background-color: white;
   }
-  #background-box {
+  :deep(#background-box) {
     transform: translate(50px, 200px);
     z-index: 2;
     width: 700px;
@@ -50,19 +50,19 @@
     overflow: hidden;
     width: 100%;
   }
-  #title_draw {
+  :deep(#title_draw) {
     transform: translate(50px, 0);
     display: block; 
   }
-  #title_draw_mobile {
+  :deep(#title_draw_mobile) {
     display: none;    
   }
-  #watercolor {
+  :deep(#watercolor) {
     align-self: center;
     margin: 0;
     max-height: 100vh;
   }
-  #background-box{
+  :deep(#background-box){
     display: none;
   }
 }
@@ -72,18 +72,18 @@
     overflow: hidden;
     width: 100%;
   }
-  #title_draw {
+  :deep(#title_draw) {
     transform: translate(50px, -50px);
     display: block; 
   }
-  #title_draw_mobile {
+  :deep(#title_draw_mobile) {
     display: none;    
   }
-  #watercolor {
+  :deep(#watercolor) {
     align-self: center;
     margin: 0;
   }
-  #background-box{
+  :deep(#background-box){
     display: none;
   }
 }
@@ -94,15 +94,15 @@
     overflow: hidden;
     width: 150%;
   }
-  #title_draw {
+  :deep(#title_draw) {
     display: none; 
   }
-  #title_draw_mobile {
+  :deep(#title_draw_mobile) {
     display: block; 
     transform: translate(530px, 200px);
   }
   
-  #watercolor {
+  :deep(#watercolor) {
     align-self: center;
     margin: 0;
   }
@@ -115,14 +115,14 @@
     overflow: hidden;
     width: 230%;
   }
-  #title_draw {
+  :deep(#title_draw) {
     display: none; 
   }
-  #title_draw_mobile {  
+  :deep(#title_draw_mobile) {  
     display: block; 
     transform: translate(0, -50px) scale(1.1);
   }
-  #background-box{
+  :deep(#background-box){
     display: block;
   }
 }
@@ -132,10 +132,10 @@
   #map-container {
     overflow: hidden;
   }
-  #title_draw {
+  :deep(#title_draw) {
     display: none; 
   }
-  #title_draw_mobile {   
+  :deep(#title_draw_mobile) {   
     display: block; 
   }
   #background-box{
