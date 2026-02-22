@@ -12,24 +12,17 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'SectionTitle',
-  props: {
-    title: {
-      type: String,
-      required:true
-    },
-    image: {
-      type: String,
-      required: true
-    }
+<script setup>
+defineProps({
+  title: {
+    type: String,
+    required: true
   },
-  data() {
-    return {
-    }
+  image: {
+    type: String,
+    required: true
   }
-}
+});
 </script>
 
 <style scoped lang="scss">
