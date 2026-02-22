@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Updated README and DOI DGEC documentation
 - Reworked vue 2 vuex state management to use pinia store
 - restructured directory views and components moving most content to components. 
+- created a new PreFooterCodeLinks component that links to portfolio site and github 
 
 
 ## [1.0.0] - 2020-12-01 Released

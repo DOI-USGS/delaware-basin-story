@@ -31,7 +31,7 @@ defineProps({
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
-  margin: -3em auto 0 auto;
+  margin: -3em auto 2.5em auto;
   width: min(90vw, 700px);
   .title-cloud-backing {
     grid-column: 1;

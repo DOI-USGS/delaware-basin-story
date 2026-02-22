@@ -1803,7 +1803,7 @@
                 <use
                   width="20"
                   height="20"
-                  transform="translate(349.93 794.1"
+                  transform="translate(349.93 794.1)"
                   xlink:href="#DRBorange"
                   href="#DRBorange"
                 />

@@ -27,6 +27,9 @@
 </script>
 
 <style scoped lang="scss">
+#intro {
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+}
 // title writing 
   :deep(#title_draw) {
     clip-path: url(#title_clip);

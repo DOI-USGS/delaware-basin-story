@@ -376,37 +376,27 @@
   </section>
 </template>
 
-<script>
-    import SectionTitle from "@/components/SectionTitle.vue";
-    export default {
-        name: 'Temperature',
-        components: {
-          SectionTitle
-        },
-        data() {
-            return {
-              isMusselsTextInView: false,
-              isWaterCold: true,
-              isWaterWarm: false,
-              title: 'Temperature',
-              titleBackingImage: require('@/assets/temperature/images/dark-orange-min.png')
-            }
-        },
-        methods: {
-            visibilityChanged(isVisible, entry) {
-                this.isVisible = isVisible;
-                if (isVisible === true) {
-                    this.isMusselsTextInView = true;
-                    this.isWaterWarm = true;
-                    this.isWaterCold = false;
-                } else if (isVisible !== true) {
-                    this.isMusselsTextInView = false;
-                    this.isWaterCold = true;
-                    this.isWaterWarm = false;
-                }
-            }
-        }
+<script setup>
+  import { ref } from 'vue';
+  import SectionTitle from "@/components/SectionTitle.vue";
+  import titleBackingImage from '@/assets/temperature/images/dark-orange-min.png';
+
+  const title = 'Temperature';
+  const isMusselsTextInView = ref(false);
+  const isWaterCold = ref(true);
+  const isWaterWarm = ref(false);
+
+  function visibilityChanged(isVisible) {
+    if (isVisible === true) {
+      isMusselsTextInView.value = true;
+      isWaterWarm.value = true;
+      isWaterCold.value = false;
+    } else {
+      isMusselsTextInView.value = false;
+      isWaterCold.value = true;
+      isWaterWarm.value = false;
     }
+  }
 </script>
 
 <style scoped lang="scss">
