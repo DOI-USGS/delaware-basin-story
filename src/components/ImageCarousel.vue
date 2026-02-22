@@ -1,16 +1,15 @@
 <template>
-  <carousel
+  <Carousel
     id="image-slider"
-    :autoplay="true"
-    :autoplay-hover-pause="true"
-    :per-page="3"
+    :items-to-show="3"
+    :wrap-around="true"
+    :autoplay="3000"
+    :pause-autoplay-on-hover="true"
+    :breakpoints="breakpoints"
   >
-    <slide class="slide">
+    <Slide class="slide">
       <div class="slider-image-container">
         <picture>
-          <!-- <source srcset="@/assets/intro/images/imageSlider/slider_01.webp"
-                media="(max-width: 992px)"
-                type = "image/webp"  > -->
           <source
             srcset="@/assets/intro/images/imageSlider/slider_01_mobile.jpg"
             media="(max-width: 992px)"
@@ -23,17 +22,14 @@
           >
         </picture>
       </div>
-    </slide>
+    </Slide>
 
-    <slide class="slide">
+    <Slide class="slide">
       <div class="slider-image-container">
         <picture>
-          <!-- <source srcset="@/assets/intro/images/imageSlider/slider_02.webp"
-                media="(max-width: 992px)" 
-                type = "image/webp"  > -->
           <source
             srcset="@/assets/intro/images/imageSlider/slider_02_mobile.jpg"
-            media="(max-width: 992px)" 
+            media="(max-width: 992px)"
             type="image/jpeg"
           >
           <img
@@ -43,17 +39,14 @@
           >
         </picture>
       </div>
-    </slide>
+    </Slide>
 
-    <slide class="slide">
+    <Slide class="slide">
       <div class="slider-image-container">
         <picture>
-          <!-- <source srcset="@/assets/intro/images/imageSlider/slider_03.webp"
-                  media="(max-width: 992px)"  
-                  type = "image/webp" > -->
           <source
             srcset="@/assets/intro/images/imageSlider/slider_03_mobile.jpg"
-            media="(max-width: 992px)"  
+            media="(max-width: 992px)"
             type="image/jpeg"
           >
           <img
@@ -63,16 +56,14 @@
           >
         </picture>
       </div>
-    </slide>
-    <slide class="slide">
+    </Slide>
+
+    <Slide class="slide">
       <div class="slider-image-container">
         <picture>
-          <!-- <source srcset="@/assets/intro/images/imageSlider/slider_05.webp"
-                  media="(max-width: 992px)" 
-                  type = "image/webp" > -->
           <source
             srcset="@/assets/intro/images/imageSlider/slider_05_mobile.jpg"
-            media="(max-width: 992px)" 
+            media="(max-width: 992px)"
             type="image/jpeg"
           >
           <img
@@ -82,27 +73,37 @@
           >
         </picture>
       </div>
-    </slide>
-  </carousel>
+    </Slide>
+  </Carousel>
 </template>
 
-<script>
-  export default {
-      name: 'ImageCarousel'
-  }
+<script setup>
+  import { Carousel, Slide } from 'vue3-carousel';
+  import 'vue3-carousel/dist/carousel.css';
 
+  const breakpoints = {
+    0: {
+      itemsToShow: 1
+    },
+    768: {
+      itemsToShow: 2
+    },
+    1024: {
+      itemsToShow: 3
+    }
+  };
 </script>
 
 <style scoped lang="scss">
   #image-slider {
-    *:focus{
+    *:focus {
       outline: none;
     }
   }
   .slide {
     margin: 0;
     padding: 0;
-    select:focus{
+    select:focus {
       outline: none;
     }
   }
