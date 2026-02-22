@@ -17,13 +17,13 @@
     export default {
         name: 'Visualization',
         components: {
-            Intro: () => import("./intro/StoryIntro.vue"),
-            Flow: () => import("./flow/ManagingFlow.vue"),
-            QualityChallenges: () => import("./qualityChallenges/QualityChallenges.vue"),
-            Temperature: () => import("./temperature/StoryTemperature.vue"),
-            Salinity: () => import("./salinity/ManagingSalinity.vue"),
-            Monitoring: () => import("./monitoringConclusion/StoryMonitoring.vue"),
-            Conclusion: () => import("./conclusion/StoryConclusion.vue")
+            Intro: () => import("@/components/story/intro/StoryIntro.vue"),
+            Flow: () => import("@/components/story/flow/ManagingFlow.vue"),
+            QualityChallenges: () => import("@/components/story/qualityChallenges/QualityChallenges.vue"),
+            Temperature: () => import("@/components/story/temperature/StoryTemperature.vue"),
+            Salinity: () => import("@/components/story/salinity/ManagingSalinity.vue"),
+            Monitoring: () => import("@/components/story/monitoringConclusion/StoryMonitoring.vue"),
+            Conclusion: () => import("@/components/story/conclusion/StoryConclusion.vue")
         },
         computed: {
             checkIfIntroSectionIsRendered() {

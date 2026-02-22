@@ -13,7 +13,7 @@
 
 <script>
   import SectionTitle from "@/components/SectionTitle";
-  import SalinitySea from "@/views/salinity/subViews/SalinitySea";
+  import SalinitySea from "@/components/story/salinity/subViews/SalinitySea";
 
   export default {
       name: 'Salinity',

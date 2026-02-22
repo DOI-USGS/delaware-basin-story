@@ -3607,7 +3607,7 @@
 
 <script>
 import SectionTitle from "@/components/SectionTitle";
-// import Conclusion from "@/views/monitoringConclusion/Conclusion";
+// import Conclusion from "@/components/story/monitoringConclusion/Conclusion";
 
 export default {
   name: 'Monitoring',
