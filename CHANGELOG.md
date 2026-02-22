@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Cleaned up dependency tree
 - Switched domain to water.usgs.gov/vizlab/delaware-basin-story 
 - Updated README and DOI DGEC documentation
+- Reworked vue 2 vuex state management to use pinia store
+- restructured directory views and components moving most content to components. 
 
 
 ## [1.0.0] - 2020-12-01 Released

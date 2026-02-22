@@ -27,7 +27,7 @@
             Temperature: defineAsyncComponent(() => import("@/components/story/temperature/StoryTemperature.vue")),
             Salinity: defineAsyncComponent(() => import("@/components/story/salinity/StorySalinity.vue")),
             Monitoring: defineAsyncComponent(() => import("@/components/story/monitoringConclusion/StoryMonitoring.vue")),
-            Conclusion: defineAsyncComponent(() => import("@/components/story/conclusion/StoryConclusion.vue"))
+            Conclusion: defineAsyncComponent(() => import("@/components/story/monitoringConclusion/MonitoringConclusion.vue"))
         },
         computed: {
             ...mapState(useAppStore, {
