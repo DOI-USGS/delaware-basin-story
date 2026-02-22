@@ -1069,6 +1069,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@use "sass:math";
 .sketch-white   {
   stroke-width: 8px;
   fill:none;
@@ -1107,8 +1108,6 @@ export default {
 $s1:"";
 $s2:"";
 $s3:"";
-@use "sass:math";
-
 @for $i from 1 through 400  {
   $s1: $s1 + math.random(1000)*0.1vw + " " + math.random(1000)*0.1vh + " " + 0 + math.random(50)*-0.01rem + #fff;
   $s2: $s2 + math.random(1000)*0.1vw + " " + math.random(1000)*0.1vh + " " + 0 + math.random(50)*-0.01rem + #fff;

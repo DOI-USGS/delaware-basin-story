@@ -3565,7 +3565,7 @@
                     src="@/assets/monitoring/images/blueCircle1.png"
                     alt="Colorful background with watercolor texture"
                   >
-                  <h2 class="monitoring-location-number">
+                  <h2 class="monitoring-location-number monitoring-location-number--icon">
                     <img
                       src="@/assets/monitoring/images/ecomapper.png"
                       alt="Black and white illustration of the Ecomapper, a programmable underwater robot"
@@ -4251,6 +4251,14 @@ fill:#f8f8f8;
     .monitoring-location-number {
       grid-column: 1;
       grid-row: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.monitoring-location-number--icon img {
+        width: min(65%, 100px);
+        height: auto;
+      }
     }
     .monitoring-title {
       grid-column: 2;
