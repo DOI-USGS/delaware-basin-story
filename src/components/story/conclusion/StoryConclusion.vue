@@ -5,7 +5,7 @@
     <div class="inking">
       <img
         id="watercolor"
-        src="@/assets/conclusion/images/DRBWatercolor-01.png"
+        src="@/assets/monitoringConclusion/images/DRB_land-01.jpg"
         alt="watercolor map of delaware river basin"
       >
 
@@ -1754,27 +1754,28 @@
 <style scoped lang="scss">
   .inking {
     position: sticky;
-    display: inline-block;
-    text-align: left;
-    width: 100%;
     top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     z-index: -1;
-   
 
     img {
       display: block;
-      max-height: 100%;
+      width: min(90vw, 600px);
+      max-width: 100%;
       height: auto;
-      left: 0;
-      overflow-x: hidden;
+      margin: 0 auto 2rem auto;
     }
+
     svg {
-      position: absolute;
-      display: inline-block;
+      width: min(92vw, 620px);
       height: auto;
-      width: 92%;
-      top: 15px;
-      left: 0px;
+      position: absolute;
+      top: clamp(10px, 2vw, 40px);
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 

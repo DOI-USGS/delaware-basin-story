@@ -3605,112 +3605,95 @@
   </section>
 </template>
 
-<script>
-import SectionTitle from "@/components/SectionTitle";
-// import Conclusion from "@/components/story/monitoringConclusion/Conclusion";
+<script setup>
+  import { ref } from 'vue';
+  import SectionTitle from "@/components/SectionTitle.vue";
+  import titleBackingImageAsset from '@/assets/intro/images/rainbow-min.png';
 
-export default {
-  name: 'Monitoring',
-  components: {
-    SectionTitle, 
-    // Conclusion
-  },
-  data() {
-    return {
-      isShowingCity: false,
-      isShowingReservoirs: false,
-      isShowingSaltTruck: false,
-      isShowingMussels: false,
-      isShowingTroutMussel: false,
-      isShowingEcomapper: false,
-      isShowingSalinityLocations: false,
-      isShowingTempLocations: false,
-      isShowingNewEnhancedLocations: false,
-      isShowingCamerasLocations: false,
-      isShowingAllLocations: false,
-      isShowingNGWOS: false,
-      title: 'Monitoring',
-      titleBackingImage:require('@/assets/intro/images/rainbow-min.png')
+  const title = 'Monitoring';
+  const titleBackingImage = titleBackingImageAsset;
+
+  const isShowingCity = ref(false);
+  const isShowingReservoirs = ref(false);
+  const isShowingSaltTruck = ref(false);
+  const isShowingMussels = ref(false);
+  const isShowingTroutMussel = ref(false);
+  const isShowingEcomapper = ref(false);
+  const isShowingSalinityLocations = ref(false);
+  const isShowingTempLocations = ref(false);
+  const isShowingNewEnhancedLocations = ref(false);
+  const isShowingCamerasLocations = ref(false);
+  const isShowingAllLocations = ref(false);
+  const isShowingNGWOS = ref(false);
+
+  const visibilityChanged = (isVisible, entry) => {
+    const sectionId = entry.target.id.slice(11);
+    const paragraphContainerTargetId = `p-container-${sectionId}`;
+    const paragraphContainerTargetElement = document.querySelector(`#${paragraphContainerTargetId}`);
+
+    if (paragraphContainerTargetElement) {
+      paragraphContainerTargetElement.classList.toggle('visible', isVisible === true);
     }
-  },
-  methods: {
-    visibilityChanged(isVisible, entry) {
-      this.isVisible = isVisible;
-      const monitoringLocationTargetId = entry.target.id.slice(11);
-      const paragraphContainerTargetId = 'p-container-' + entry.target.id.slice(11);
-      const paragraphContainerTargetElement = document.querySelector('#' + paragraphContainerTargetId);
 
-      if (isVisible === true) {
-        if (paragraphContainerTargetElement) {
-          paragraphContainerTargetElement.classList.add('visible');
-        }
-
-        switch(monitoringLocationTargetId) {
-          case 'new_enhanced':
-            this.isShowingNewEnhancedLocations = true;
-            this.isShowingReservoirs = true;
-            break;
-          case 'cameras':
-            this.isShowingCamerasLocations = true;
-            break;
-          case 'all':
-            this.isShowingAllLocations = true;
-            this.isShowingNGWOS = true;
-            break;
-          case 'salinity':
-            this.isShowingSaltTruck = true;
-            this.isShowingSalinityLocations = true;
-            break;
-          case 'temp':
-            this.isShowingMussels = true;
-            this.isShowingTroutMussel = true;
-            this.isShowingTempLocations = true;
-            break;
-          case 'r-d':
-            this.isShowingEcomapper = true;
-            this.isShowingCamerasLocations = true;
-            break;
-          case 'intro':
-            this.isShowingCity = true;
-            this.isShowingAllLocations = true;
-            this.isShowingNGWOS = true;
-            break;
-          default:
-            break;
-        }
-      } else if (isVisible !== true) {
-        if (paragraphContainerTargetElement) {
-          paragraphContainerTargetElement.classList.remove('visible');
-        }
-
-        switch(monitoringLocationTargetId) {
-          case 'new_enhanced':
-            this.isShowingNewEnhancedLocations = false;
-            break;
-          case 'cameras':
-            this.isShowingCamerasLocations = false;
-            break;
-          case 'all':
-            this.isShowingAllLocations = false;
-            break;
-          case 'salinity':
-            this.isShowingSalinityLocations = false;
-            break;
-          case 'temp':
-            this.isShowingTempLocations = false;
-            break;
-          case 'intro':
-            break;
-          case 'r-d':
-            this.isShowingCamerasLocations = false;
-            break;
-          default:
-            break;
-        }
+    if (isVisible === true) {
+      switch (sectionId) {
+        case 'new_enhanced':
+          isShowingNewEnhancedLocations.value = true;
+          isShowingReservoirs.value = true;
+          break;
+        case 'cameras':
+          isShowingCamerasLocations.value = true;
+          break;
+        case 'all':
+          isShowingAllLocations.value = true;
+          isShowingNGWOS.value = true;
+          break;
+        case 'salinity':
+          isShowingSaltTruck.value = true;
+          isShowingSalinityLocations.value = true;
+          break;
+        case 'temp':
+          isShowingMussels.value = true;
+          isShowingTroutMussel.value = true;
+          isShowingTempLocations.value = true;
+          break;
+        case 'r-d':
+          isShowingEcomapper.value = true;
+          isShowingCamerasLocations.value = true;
+          break;
+        case 'intro':
+          isShowingCity.value = true;
+          isShowingAllLocations.value = true;
+          isShowingNGWOS.value = true;
+          break;
+        default:
+          break;
+      }
+    } else {
+      switch (sectionId) {
+        case 'new_enhanced':
+          isShowingNewEnhancedLocations.value = false;
+          break;
+        case 'cameras':
+          isShowingCamerasLocations.value = false;
+          break;
+        case 'all':
+          isShowingAllLocations.value = false;
+          break;
+        case 'salinity':
+          isShowingSalinityLocations.value = false;
+          break;
+        case 'temp':
+          isShowingTempLocations.value = false;
+          break;
+        case 'r-d':
+          isShowingCamerasLocations.value = false;
+          break;
+        default:
+          break;
       }
     }
-  }
-}
+  };
 </script>
 <style scoped lang="scss">
 

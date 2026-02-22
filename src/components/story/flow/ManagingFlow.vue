@@ -29,23 +29,13 @@
   </section>
 </template>
 
-<script>
-  import SectionTitle from "@/components/SectionTitle";
-  import SankeyTransition from "../../components/SankeyTransition";
+<script setup>
+  import SectionTitle from "@/components/SectionTitle.vue";
+  import SankeyTransition from "./SankeyTransition.vue";
+  import flowTitleImage from "@/assets/flow/images/blue-min-992.png";
 
-  export default {
-    name: 'Flow',
-    components: {
-      SectionTitle,
-      SankeyTransition
-    },
-    data() {
-      return {
-        title: 'Flow',
-        image: require('../../assets/flow/images/blue-min-992.png')
-      }
-    }
-  }
+  const title = 'Flow';
+  const image = flowTitleImage;
 </script>
 
 <style scoped lang="scss">

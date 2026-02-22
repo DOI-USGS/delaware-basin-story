@@ -907,10 +907,7 @@
               Reducing road salt concentrations in streams can involve chemical de-icing alternatives and moderating road salt applications. But safe roads are important too. Monitoring and modeling of stream chloride concentrations give us the data we need to make informed decisions about the options and tradeoffs.
             </p>
 
-            <picture
-              width="80%"
-              height="80%"
-            >
+            <picture class="salt-truck-image">
               <source
                 srcset="@/assets/salinity/salinitySea/images/truckin.gif"
               >
@@ -1110,10 +1107,12 @@ export default {
 $s1:"";
 $s2:"";
 $s3:"";
+@use "sass:math";
+
 @for $i from 1 through 400  {
-  $s1: $s1 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + random(50)*-0.01rem + #fff;
-  $s2: $s2 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + random(50)*-0.01rem + #fff;
-  $s3: $s3 + random(1000)*0.1vw + " " + random(1000)*0.1vh + " " + 0 + random(50)*-0.01rem + #fff;
+  $s1: $s1 + math.random(1000)*0.1vw + " " + math.random(1000)*0.1vh + " " + 0 + math.random(50)*-0.01rem + #fff;
+  $s2: $s2 + math.random(1000)*0.1vw + " " + math.random(1000)*0.1vh + " " + 0 + math.random(50)*-0.01rem + #fff;
+  $s3: $s3 + math.random(1000)*0.1vw + " " + math.random(1000)*0.1vh + " " + 0 + math.random(50)*-0.01rem + #fff;
   @if $i < 400  {
     $s1: $s1 + ",";
     $s2: $s2 + ",";
@@ -1204,6 +1203,9 @@ $s3:"";
   }
   
   .salinity-sea-section-image {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
     align-self: start;
     position: sticky;
     top: 4em;
@@ -1217,6 +1219,7 @@ $s3:"";
       align-self: start;
       margin-top: 15vh;
       height: 70vh;
+      max-width: 720px;
     }
     .marker {
       fill: none;
@@ -1265,6 +1268,18 @@ $s3:"";
     }
     #RoadSalt.visible {
       opacity: 1;
+    }
+    .salt-truck-image,
+    #salt-wedge-container,
+    #salt-wedge-container img {
+      width: 100%;
+      max-width: 540px;
+      margin: 2rem auto 0 auto;
+    }
+    .salt-truck-image img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
   }
 }
