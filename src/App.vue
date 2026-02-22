@@ -6,7 +6,6 @@
     <!-- <ShutdownBanner /> -->
     <WorkInProgressWarning v-if="checkTypeOfEnv !== ''" /> <!-- an empty string in this case means the 'prod' version of the application   -->
     <router-view />
-    <PreFooterVisualizationsLinks />
     <PreFooterCodeLinks />
     <FooterUSGS />
   </div>
@@ -20,7 +19,6 @@
   import { useAppStore } from './stores/appStore';
 
   const WorkInProgressWarning = defineAsyncComponent(() => import("./components/WorkInProgressWarning.vue"));
-  const PreFooterVisualizationsLinks = defineAsyncComponent(() => import("./components/PreFooterVisualizationsLinks.vue"));
   const PreFooterCodeLinks = defineAsyncComponent(() => import("./components/PreFooterCodeLinks.vue"));
   const FooterUSGS = defineAsyncComponent(() => import("./components/FooterUSGS.vue"));
 

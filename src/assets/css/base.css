@@ -36,6 +36,7 @@
   --color-map-focal: var(--medium-orange);
   --color-map-default: var(--white);
   --color-USGS-header-footer: var(--usgs-blue);
+  --color-prefooter-highlight: var(--medium-blue);
 }
 
 /* @media (prefers-color-scheme: dark) {
