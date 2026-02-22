@@ -3,14 +3,14 @@
     <p
       class="warning-open"
     >
-        Due to a lapse in government funding, this website is not currently being updated. For more information please visit: 
-        <a 
-          href="https://www.doi.gov/shutdown"
-          target="_blank"
-        >
-          www.doi.gov/shutdown
-        </a>
-        .
+      Due to a lapse in government funding, this website is not currently being updated. For more information please visit: 
+      <a 
+        href="https://www.doi.gov/shutdown"
+        target="_blank"
+      >
+        www.doi.gov/shutdown
+      </a>
+      .
     </p>
   </div>
 </template>
