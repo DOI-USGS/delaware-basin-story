@@ -1,42 +1,22 @@
-# Delaware River Basin Story
-A visualization that tells the story of the Delaware River Basin (DRB). The people and industries that live in the 
-DRB need water, and the riverways and estuary where the river meets the ocean supports important ecosystems that
-have special species and habitat.  In order for humans, society, and ecosystems to all get the water they need, 
-the system needs to stay balanced - no one takes more than they need, and we release what extra we have back into the basin. 
+# Water science and management in the Delaware River Basin
+A visualization that tells the story of the Delaware River Basin (DRB). The people and industries that live in the DRB need water, and the riverways and estuary where the river meets the ocean supports important ecosystems that have special species and habitat.  In order for humans, society, and ecosystems to all get the water they need, the system needs to stay balanced - no one takes more than they need, and we release what extra we have back into the basin. 
 
-The final website can be found here: https://labs.waterdata.usgs.gov/visualizations/delaware-basin-story/index.html#/ 
+**The data visualization website can be viewed at [https://water.usgs.gov/vizlab/delaware-basin-story/](https://water.usgs.gov/vizlab/delaware-basin-story/).**
 
-## The Code
-The project is Open Source and uses the Vue JavaScript framework in conjunction with animated Scalable Vector
-Graphics (SVG) and raster graphics. The build process uses the Jenkins task 
-runner and Docker containerisation.
+## Building the website locally
 
-## Project Setup
-- Clone the project to your local system
-- `cd` to the cloned directory
-- Download the Node Package Manager(NPM) dependencies by running `npm install` in your terminal window
-- Start the project by running `npm run serve` -- the address of the project will show on completion usually `localhost:8080`
-- Start your browser, enter the address found above
-- And that's it, easy peasie
+Clone the repo. In the directory, run `npm install` to install the required modules. Once the dependencies have been installed, run `npm run dev` to run locally from your browser.
 
-### Notes on Setup
-- You will need 'node.js' installed on your system
-- If you run into trouble starting the project, it is usually fixed by running `npm rebuild node-sass`
-- The Windows operating system does not like our environment variables and messes up the local build.
+To build the website locally you'll need `node.js` `v24` and `npm` `v111` or higher installed. To manage multiple versions of `npm`, you may [try using `nvm`](https://betterprogramming.pub/how-to-change-node-js-version-between-projects-using-nvm-3ad2416bda7e).
 
-To fix that, do the following: 
-- Open the 'package.json' at the root of the project
-- Go to the 'scripts' name value pair
-- Go to the 'serve' name value pair
-- Delete `NODE_ENV=development` from that value
-- That value should now look like `"serve": "vue-cli-service serve --mode test_tier",`
-- Run `npm run serve` again, and the project should start
+## Citation
 
-On Windows -
-You might get this error when running ``npm run serve``
+Bechtel, E., Read, J., Appling, A., Rhoades, A., Briggs, A., and Nell, C. 2020. Water science and management in the Delaware River Basin. U.S. Geological Survey website. Reston, VA. https://water.usgs.gov/vizlab/delaware-basin-story/
 
-``'vue-cli-service' is not recognized as an internal or external command,
-  operable program or batch file.``
-  
-- To fix, run ``npm install @vue/cli-service -g`` to install the Vue CLI-Service globally.
+## Consulting subject matter experts
+Kendra Russell, the Delaware River Master in 2020, was consulted on the development of this website as a subject matter expert.
 
+## Additional information
+* We welcome contributions from the community. See the [guidelines for contributing](https://github.com/DOI-USGS/delaware-basin-story/) to this repository on GitHub.
+* [Disclaimer](https://code.usgs.gov/wma/vizlab/delaware-basin-story/-/blob/main/DISCLAIMER.md)
+* [License](https://code.usgs.gov/wma/vizlab/delaware-basin-story/-/blob/main/LICENSE.md)
