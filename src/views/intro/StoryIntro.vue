@@ -786,7 +786,7 @@
 </style>
 
 
-<style >
+<style>
 .vpvIMbOV_0{
   stroke-dasharray:689 691;stroke-dashoffset:690;
   animation:vpvIMbOV_draw 2800ms ease 1500ms forwards;
