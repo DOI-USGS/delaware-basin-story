@@ -25,7 +25,7 @@
             Flow: defineAsyncComponent(() => import("@/components/story/flow/ManagingFlow.vue")),
             QualityChallenges: defineAsyncComponent(() => import("@/components/story/qualityChallenges/QualityChallenges.vue")),
             Temperature: defineAsyncComponent(() => import("@/components/story/temperature/StoryTemperature.vue")),
-            Salinity: defineAsyncComponent(() => import("@/components/story/salinity/ManagingSalinity.vue")),
+            Salinity: defineAsyncComponent(() => import("@/components/story/salinity/StorySalinity.vue")),
             Monitoring: defineAsyncComponent(() => import("@/components/story/monitoringConclusion/StoryMonitoring.vue")),
             Conclusion: defineAsyncComponent(() => import("@/components/story/conclusion/StoryConclusion.vue"))
         },

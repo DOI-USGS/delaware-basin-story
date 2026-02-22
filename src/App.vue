@@ -4,69 +4,45 @@
     <HeaderUSWDSBanner />
     <HeaderUSGS />
     <!-- <ShutdownBanner /> -->
-    <InternetExplorerPage v-if="isInternetExplorer" />
-    <WorkInProgressWarning v-if="checkTypeOfEnv !== '' & !isInternetExplorer" /> <!-- an empty string in this case means the 'prod' version of the application   -->
-    <router-view
-      v-if="!isInternetExplorer & checkIfUSGSHeaderIsRendered"
-    />
-    <PreFooterVisualizationsLinks v-if="!isInternetExplorer" />
-    <PreFooterCodeLinks v-if="!isInternetExplorer" />
+    <WorkInProgressWarning v-if="checkTypeOfEnv !== ''" /> <!-- an empty string in this case means the 'prod' version of the application   -->
+    <router-view />
+    <PreFooterVisualizationsLinks />
+    <PreFooterCodeLinks />
     <FooterUSGS />
   </div>
 </template>
 
-<script>
-    import WindowSize from "./components/WindowSize";
-    import HeaderUSWDSBanner from './components/HeaderUSWDSBanner'
-    // import ShutdownBanner from './components/ShutdownBanner.vue';
-    import HeaderUSGS from './components/HeaderUSGS'
-    let ROOT_PATH = 'https://labs.waterdata.usgs.gov/visualizations/delaware-basin-story/index.html#/'
+<script setup>
+  import { computed, defineAsyncComponent, onBeforeUnmount, onMounted } from 'vue';
+  import WindowSize from "./components/WindowSize.vue";
+  import HeaderUSWDSBanner from './components/HeaderUSWDSBanner.vue';
+  import HeaderUSGS from './components/HeaderUSGS.vue';
+  import { useAppStore } from './stores/appStore';
 
-    export default {
-        name: 'App',
-        components: {
-            WindowSize,
-            HeaderUSWDSBanner,
-            HeaderUSGS,
-            // ShutdownBanner,
-            InternetExplorerPage: () => import( /*webpackChunkName: "internet-explorer-page"*/ "./components/InternetExplorerPage"),
-            WorkInProgressWarning: () => import( /*webpackChunkName: "work-in-progress-warning"*/ "./components/WorkInProgressWarning"),
-            PreFooterVisualizationsLinks: () => import(  /*webpackChunkName: "pre-footer-links-visualizations"*/ "./components/PreFooterVisualizationsLinks"),
-            PreFooterCodeLinks: () => import( /*webpackChunkName: "pre-footer-links-code"*/ "./components/PreFooterCodeLinks"),
-            FooterUSGS: () => import( /*webpackChunkName: "usgs-footer"*/ "./components/FooterUSGS")
-        },
-        data() {
-            return {
-                isInternetExplorer: false,
-                title: process.env.VUE_APP_TITLE,
-                publicPath: process.env.BASE_URL, // this is need for the data files in the public folder
-            }
-        },
-        computed: {
-            checkIfUSGSHeaderIsRendered() {
-                return this.$store.state.usgsHeaderRendered;
-            },
-            checkTypeOfEnv() {
-              return process.env.VUE_APP_TIER
-            }
-        },
-        created() {
-            // We are ending support for Internet Explorer, so let's test to see if the browser used is IE.
-            this.$browserDetect.isIE ? this.isInternetExplorer = true : this.isInternetExplorer = false;
-            // Add window size tracking by adding a listener and a way to store the values in the Vuex state
-            window.addEventListener('resize', this.handleResize);
-            this.handleResize();
-        },
-        unmounted() {
-            window.removeEventListener('resize', this.handleResize);
-        },
-        methods: {
-            handleResize() {
-                this.$store.commit('recordWindowWidth', window.innerWidth);
-                this.$store.commit('recordWindowHeight', window.innerHeight);
-            }
-        }
-    }
+  const WorkInProgressWarning = defineAsyncComponent(() => import("./components/WorkInProgressWarning.vue"));
+  const PreFooterVisualizationsLinks = defineAsyncComponent(() => import("./components/PreFooterVisualizationsLinks.vue"));
+  const PreFooterCodeLinks = defineAsyncComponent(() => import("./components/PreFooterCodeLinks.vue"));
+  const FooterUSGS = defineAsyncComponent(() => import("./components/FooterUSGS.vue"));
+
+  const appStore = useAppStore();
+
+  const envTier = import.meta.env.VITE_APP_TIER ?? '';
+
+  const checkTypeOfEnv = computed(() => envTier);
+
+  const handleResize = () => {
+    appStore.recordWindowWidth(window.innerWidth);
+    appStore.recordWindowHeight(window.innerHeight);
+  };
+
+  onMounted(() => {
+    window.addEventListener('resize', handleResize);
+    handleResize();
+  });
+
+  onBeforeUnmount(() => {
+    window.removeEventListener('resize', handleResize);
+  });
 </script>
 
 <style lang="scss">
