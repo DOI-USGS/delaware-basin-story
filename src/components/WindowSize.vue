@@ -1,27 +1,21 @@
 <template>
-  <section id="window-size-component">
-    <p>window width {{ windowWidth }} -- height {{ windowHeight }}</p>
-  </section>
+  <div id="window-size-component">
+    <p>window width {{ windowSizeStore.windowWidth }} -- height {{ windowSizeStore.windowHeight }}</p>
+  </div>
 </template>
 
-<script>
-export default {
-    name: 'WindowSize',
-    computed: {
-        windowWidth: function() {
-            return this.$store.state.windowWidth
-        },
-        windowHeight: function () {
-            return this.$store.state.windowHeight
-        }
-    }
-}
+<script setup>
+  import { useWindowSizeStore } from '../stores/WindowSizeStore';
+
+  const windowSizeStore = useWindowSizeStore();
+
 </script>
 
 <style scoped lang="scss">
 #window-size-component {
   width: 100%;
   position: fixed;
+  top:0;
   z-index: 999;
   color: white;
   font-size: 8pt;

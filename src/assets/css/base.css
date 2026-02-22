@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* semantic color variables for this project */
+/* Define colors */
+:root {
+  --white: #ffffff;
+  --white-soft: #F0F0F0;
+
+  --black-soft: #151515;
+  --dodger-blue: #1e90ff;
+  --medium-grey: #B5B5B5;
+  --medium-purple: #8F00DB;
+  --medium-blue: #4365A8;
+  --medium-orange: #E48951;
+  --usgs-blue: #00264c;
+  --usgs-green: #006F41;
+
+  font-size: 62.5%;
+
+  --title-font: Roboto Slab;
+  --default-font: Source Sans Pro;
+}
+
+/* Declare color variables */
+:root {
+  --color-background: var(--white);
+  --color-text: var(--black-soft);
+  --color-title-text: var(--dodger-blue);
+  --color-overlay: var(--black-soft);
+  --color-overlay-text: var(--white-soft);
+  --color-code-links-background: var(--medium-grey);
+  --color-link: var(--medium-purple);
+  --color-bar-focal: var(--medium-blue);
+  --color-bar-default: var(--medium-grey);
+  --color-map-focal: var(--medium-orange);
+  --color-map-default: var(--white);
+  --color-USGS-header-footer: var(--usgs-blue);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--black-soft);
+    --color-text: var(--white-soft);
+  }
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  /* font-weight: normal; */
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  fill: var(--color-text); /* Needed for text added w/ d3 */
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.2;
+  font-family: sans-serif; /* This is fallback font for old browsers */
+  font-family: var(--default-font);
+  font-size: 2rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  padding: 0rem 0 1rem 0;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 3rem 0 1rem 0;
+}
+p, text, li {
+  padding: 0 0 1rem 0;
+}

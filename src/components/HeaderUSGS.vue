@@ -1,74 +1,64 @@
 <template>
-  <div id="usgs-header">
-    <header
-      id="navbar"
-      class="header-nav"
-      role="banner"
-    >
-      <div class="tmp-container">
+  <header
+    id="navbar"
+    class="header-nav"
+    role="banner"
+  >
+    <div class="tmp-container">
+      <!-- primary navigation bar -->
+      <!-- search bar-->
+      <div class="header-search">
         <a
           class="logo-header"
           href="https://www.usgs.gov/"
-          title="Home"
+          target="_blank"
+          title="USGS.gov homepage"
+          aria-label="USGS.gov homepage"
         >
           <img
             class="img"
-            src="@/assets/usgsHeaderAndFooter/images/logo.png"
-            alt="Home"
+            src="@/assets/usgsHeaderAndFooter/images/usgsLogo_white-01.png"
+            alt="USGS logo. Science for a changing world."
+            target="_blank"
           >
         </a>
+        <form
+          id="search-box"
+          action="https://www.usgs.gov/science-explorer-results"
+          method="GET"
+        >
+          <div class="fa-wrapper">
+            <label
+              for="se_search"
+              class="only"
+            >Search</label>
+            <input
+              id="se_search"
+              type="search"
+              name="es"
+              placeholder="Search"
+            >
+            <button
+              class="fa fa-search"
+              type="submit"
+            >
+              <span class="only">Search</span>
+            </button>
+          </div>
+        </form>
       </div>
-    </header>
-  </div>
+      <!-- end search bar-->
+    </div> 
+    <!-- end header-container-->
+  </header>
 </template>
 
-<script>
-    export default {
-        name: 'HeaderUSGS',
-        mounted() {
-            // The following code will only run after the entire 'intro' section has been rendered
-            // it will change the Vuex state so that other components will know the 'intro' section has loaded
-            this.$nextTick(function () {
-                this.$store.commit('changeBooleanStateWhenUSGSHeaderRendered');
-            });
-        }
-    }
+<script setup>
 </script>
 
-<style scoped lang="scss">
-  header {
-    display: block;
-  }
-  .tmp-container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .tmp-container a {
-    text-decoration: none;
-    background: transparent;
-  }
-  .tmp-container:after {
-    clear: both;
-  }
-  @media only screen and (max-width:490px) {
-    hr {
-      margin-top: 60px;
-    }
-  }
-  /* header (only) nav */
-  .header-nav {
-    background: #00264c;
-  }
-  .logo-header img {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    border: 0;
-    max-width: 100%;
-    height: auto;
-  }
-  .logo-header img {
-    height: 65px;
-  }
+<style scoped>
+/* Moved from common.js so that it doesn't affect USWDS banner css */
+footer, header, main, nav, div {
+  display: block;
+}
 </style>
