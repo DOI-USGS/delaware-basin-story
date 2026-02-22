@@ -2,7 +2,7 @@
   {
     "name": "delaware-basin-story",
     "organization": "U.S. Geological Survey",
-    "description": "A JavaScript Project Using the Vue Framework.",
+    "description": "How water quality and quantity are intertwined",
     "version": "main",
     "status": "Production",
     "permissions": {
@@ -14,10 +14,10 @@
         }
       ]
     },
-    "homepageURL": "https://github.com/usgs-makerspace/delaware-basin-story/",
-    "downloadURL": "https://github.com/usgs-makerspace/delaware-basin-story/archive/refs/heads/main.zip",
-    "disclaimerURL": "https://github.com/usgs-makerspace/delaware-basin-story/blob/main/DISCLAIMER.md",
-    "repositoryURL": "https://github.com/usgs-makerspace/delaware-basin-story.git",
+    "homepageURL": "https://water.usgs.gov/vizlab/delaware-basin-story/",
+    "downloadURL": "https://code.usgs.gov/wma/vizlab/delaware-basin-story/-/archive/main/delaware-basin-story-main.zip",
+    "disclaimerURL": "https://code.usgs.gov/wma/vizlab/delaware-basin-story/-/raw/main/DISCLAIMER.md",
+    "repositoryURL": "https://code.usgs.gov/wma/vizlab/delaware-basin-story.git",
     "vcs": "git",
     "laborHours": 100,
     "tags": [
@@ -35,7 +35,7 @@
       "email": "cnell@usgs.gov"
     },
     "date": {
-      "metadataLastUpdated": "2023-05-05"
+      "metadataLastUpdated": "2026-02-22"
     }
   }
 ]
