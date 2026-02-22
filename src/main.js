@@ -1,49 +1,23 @@
-import "core-js/stable";
-import "regenerator-runtime/runtime";
-import Vue from 'vue';
-import router from "./router";
-import { store } from './store/store'
-import App from './App.vue';
-import uswds from 'uswds';
-import browserDetect from 'vue-browser-detect-plugin';
-import VueObserveVisibility from 'vue-observe-visibility'
-import VueCarousel from 'vue-carousel';
-import VueImg from 'v-img';
-import Meta from 'vue-meta';
+import './assets/css/main.css'
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+import VueUswds from "vue-uswds"
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 // social icons
-import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
-import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faFlickr } from '@fortawesome/free-brands-svg-icons'
-import { faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faSquareXTwitter, faFacebookSquare, faGithub, faFlickr, faYoutubeSquare, faInstagram } from "@fortawesome/free-brands-svg-icons";
+library.add(faSquareXTwitter, faFacebookSquare, faGithub, faFlickr, faYoutubeSquare, faInstagram);
 
-Vue.component('font-awesome-icon', FontAwesomeIcon);
-Vue.use(VueCarousel);
+import App from './App.vue'
+import router from './router'
 
-// social icons
-library.add(faTwitterSquare);
-library.add(faFacebookSquare);
-library.add(faGithub);
-library.add(faFlickr);
-library.add(faYoutubeSquare);
-library.add(faInstagram);
+const app = createApp(App)
 
-Vue.config.productionTip = false;
-Vue.use(uswds);
-Vue.use(browserDetect);
-Vue.use(VueObserveVisibility);
-Vue.use(VueImg);
-Vue.use(Meta);
+app.use(createPinia())
+app.use(VueUswds)
+app.use(router)
+app.component("FontAwesomeIcon", FontAwesomeIcon)
 
-const app = new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app');
-
-
+app.mount('#app')
