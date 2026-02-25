@@ -1,5 +1,8 @@
 <template>
-  <section id="salinity-sea">
+  <section
+    id="salinity-sea"
+    :class="{ 'safari-no-stroke-anim': isSafariBrowser }"
+  >
     <div id="salinity-sea-container">
       <div class="salinity-sea-section-image">
         <div id="container-salinity-sea-image-background">
@@ -935,9 +938,20 @@ export default {
       SeaLevelRise: false,
       RoadSalt: false,
       Philly: false,
+      isSafariBrowser: false,
     }
   },
+  mounted() {
+    this.isSafariBrowser = this.detectSafari();
+  },
   methods: {
+    detectSafari() {
+      const userAgent = navigator.userAgent;
+      const vendor = navigator.vendor;
+      return /Safari/i.test(userAgent)
+        && /Apple Computer/i.test(vendor)
+        && !/CriOS|FxiOS|EdgiOS|Chrome|Android/i.test(userAgent);
+    },
     visibilityChangedOne(isVisible, entry) {
       this.isVisible = isVisible;
       const targetElement = document.querySelector('#sea-salt-one');
@@ -1635,6 +1649,23 @@ $s3:"";
 }
 #intakes_s {
     .animation(@name: ghostwrite-200, @duration: @write-time*.7, @delay: @start+(@delay-time*31));
+}
+
+.safari-no-stroke-anim {
+  #salt-svg {
+    path,
+    line,
+    polyline,
+    polygon,
+    circle,
+    ellipse,
+    rect {
+      -webkit-animation: none !important;
+      animation: none !important;
+      stroke-dasharray: none !important;
+      stroke-dashoffset: 0 !important;
+    }
+  }
 }
 
 </style>

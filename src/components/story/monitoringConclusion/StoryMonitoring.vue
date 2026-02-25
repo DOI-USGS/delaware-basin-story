@@ -2,6 +2,7 @@
   <section
     id="monitoringConclusion"
     class="section"
+    :class="{ 'safari-no-stroke-anim': isSafariBrowser }"
   >
     <SectionTitle
       :title="title"
@@ -3603,7 +3604,7 @@
 </template>
 
 <script setup>
-  import { ref } from 'vue';
+  import { onMounted, ref } from 'vue';
   import SectionTitle from "@/components/SectionTitle.vue";
   import titleBackingImageAsset from '@/assets/intro/images/rainbow-min.png';
 
@@ -3622,6 +3623,15 @@
   const isShowingCamerasLocations = ref(false);
   const isShowingAllLocations = ref(false);
   const isShowingNGWOS = ref(false);
+  const isSafariBrowser = ref(false);
+
+  const detectSafari = () => {
+    const userAgent = navigator.userAgent;
+    const vendor = navigator.vendor;
+    return /Safari/i.test(userAgent)
+      && /Apple Computer/i.test(vendor)
+      && !/CriOS|FxiOS|EdgiOS|Chrome|Android/i.test(userAgent);
+  };
 
   const visibilityChanged = (isVisible, entry) => {
     const sectionId = entry.target.id.slice(11);
@@ -3691,6 +3701,10 @@
       }
     }
   };
+
+  onMounted(() => {
+    isSafariBrowser.value = detectSafari();
+  });
 </script>
 <style scoped lang="scss">
 
@@ -3741,8 +3755,18 @@
 
 //define frames
 .ghostwrite-frames(@stroke-length) {
-  0% {stroke-dashoffset: 0px-@stroke-length;}
-  100% {stroke-dashoffset: 0px;}
+  0% {
+    stroke-dasharray: @stroke-length;
+    stroke-dashoffset: 0px-@stroke-length;
+  }
+  99% {
+    stroke-dasharray: @stroke-length;
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dasharray: none;
+    stroke-dashoffset: 0px;
+  }
 }
 
 //animation mixin for brower prefixes
@@ -4048,6 +4072,23 @@
     }
   }
 
+.safari-no-stroke-anim {
+  #monitoring-locations {
+    path,
+    line,
+    polyline,
+    polygon,
+    circle,
+    ellipse,
+    rect {
+      -webkit-animation: none !important;
+      animation: none !important;
+      stroke-dasharray: none !important;
+      stroke-dashoffset: 0 !important;
+    }
+  }
+}
+
 </style>
 
 <style scoped lang="scss">
@@ -4172,7 +4213,7 @@ fill:#f8f8f8;
 #image-container {
   position: sticky;
   display: block;
-  z-index: -1;
+  z-index: 0;
   top: 0;
 
   }
@@ -4196,7 +4237,7 @@ fill:#f8f8f8;
     // text-align: left;
     // width: 100%;
     top: 0;
-    z-index: -1;
+    z-index: 0;
 
     svg {
       position: absolute;
@@ -4234,6 +4275,8 @@ fill:#f8f8f8;
 
 
 #text-container {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-column: 2;
   .subtext-cloud-number-container {
