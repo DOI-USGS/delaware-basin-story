@@ -3397,9 +3397,6 @@
             />
 
           </g>
-
-         
-          <div class="box" />
         </svg>
       </div>
     </div>
