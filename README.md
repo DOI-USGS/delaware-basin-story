@@ -7,7 +7,7 @@ A visualization that tells the story of the Delaware River Basin (DRB). The peop
 
 Clone the repo. In the directory, run `npm install` to install the required modules. Once the dependencies have been installed, run `npm run dev` to run locally from your browser.
 
-To build the website locally you'll need `node.js` `v24` and `npm` `v111` or higher installed. To manage multiple versions of `npm`, you may [try using `nvm`](https://betterprogramming.pub/how-to-change-node-js-version-between-projects-using-nvm-3ad2416bda7e).
+To build the website locally you'll need `node.js` `v24` and `npm` `v11` or higher installed. To manage multiple versions of `npm`, you may [try using `nvm`](https://betterprogramming.pub/how-to-change-node-js-version-between-projects-using-nvm-3ad2416bda7e).
 
 ## Citation
 
